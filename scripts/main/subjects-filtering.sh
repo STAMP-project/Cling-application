@@ -15,7 +15,7 @@ for ((i=0;i<END;i++)); do
         CPEntriesContent=$( cat $CPEntriesDir)
         preparedCPs=$( python scripts/python/reassemble-cps.py $CPEntriesContent "$case")
 
-        java -jar tools/coupling.jar "-project_prefix" $prefix "-project_cp" "$preparedCPs" "-out_dir" "temp-csvs/$case"
+        java -Xmx4000m -jar tools/coupling.jar "-project_prefix" $prefix "-project_cp" "$preparedCPs" "-out_dir" "temp-csvs/$case"
     else
       echo "could not find cp-entries file"
     fi
