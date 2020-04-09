@@ -11,7 +11,7 @@ RUN         dnf install java-1.8.0-openjdk-devel --assumeyes
 RUN         dnf install java-1.8.0-openjdk-openjfx --assumeyes
 RUN         dnf install java-1.8.0-openjdk-openjfx-devel --assumeyes
 RUN         dnf install procps --assumeyes
-RUN         dnf install R --assumeyes
+# RUN         dnf install R --assumeyes
 
 WORKDIR /experiment
 #
