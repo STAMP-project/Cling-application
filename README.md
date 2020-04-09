@@ -4,7 +4,7 @@ This repository contains the replication package for the application of Cling (a
 
 
 ## Run case filtering
-Run subjects-filtering.sh bash file.
+Run `subjects-filtering.sh` bash file.
 The filtered cases will be saved in `data/filtered-class-pairs.csv`.
 
 Also, the sampled class pairs from the filtered ones are avaialable in `subject_generator/selected-class-pairs.csv`.
