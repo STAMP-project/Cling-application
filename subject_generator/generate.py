@@ -4,7 +4,7 @@ import csv
 dir_path = os.path.dirname(os.path.realpath(__file__))
 csvDir = os.path.join(dir_path,"selected-class-pairs.csv")
 
-tools = ["botsing","evosuite-callee5","evosuite-caller5"]
+tools = ["cling","evosuite-callee5","evosuite-caller5"]
 
 rounds = range(1, 21)
 
