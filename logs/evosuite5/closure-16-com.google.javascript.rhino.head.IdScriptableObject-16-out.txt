@@ -1,0 +1,92 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.IdScriptableObject
+* Starting Client-0
+* Connecting to master process on port 18880
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.IdScriptableObject
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 251
+* Using seed 1565734680624
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 87 / 251
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.24302788844621515
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.30278884462151395
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.40239043824701193
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.41832669322709165
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.46613545816733065
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5139442231075697
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5179282868525896
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5179282868525896
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5258964143426295
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5418326693227091
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.545816733067729
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5617529880478087
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5697211155378487
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+* Search finished after 309s and 68 generations, 21226 statements, best individual has fitness: 107.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 57%
+* Total number of goals: 251
+* Number of covered goals: 142
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+* Generated 30 tests with total length 98
+* Resulting test suite's coverage: 57%
+* Generating assertions
+* Resulting test suite's mutation score: 16%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+* Compiling and checking tests
+[MASTER] 00:25:36.923 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 00:25:36.923 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, false);
+NativeBoolean nativeBoolean0 = new NativeBoolean(false);
+nativeBoolean0.defineOwnProperty(context0, importerTopLevel0, importerTopLevel0);
+
+[MASTER] 00:25:52.537 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 00:25:52.538 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+NativeString nativeString0 = new NativeString("error reporter");
+IdFunctionObject idFunctionObject0 = new IdFunctionObject(nativeString0, context0, 4, "", 100, nativeString0);
+IdScriptableObject.incompatibleCallError(idFunctionObject0);
+
+[MASTER] 00:26:04.636 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:26:04.636 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+NativeBoolean nativeBoolean0 = new NativeBoolean(false);
+NativeArray nativeArray0 = new NativeArray(context0.emptyArgs);
+nativeArray0.setInstanceIdValue(308, nativeBoolean0);
+
+[MASTER] 00:26:20.499 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 5
+* Writing tests to file
+* Writing JUnit test case 'IdScriptableObject_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.IdScriptableObject-16
+* Done!
+
+* Computation finished

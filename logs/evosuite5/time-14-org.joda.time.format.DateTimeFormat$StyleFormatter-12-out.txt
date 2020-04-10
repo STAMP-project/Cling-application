@@ -1,0 +1,51 @@
+entry: sources/time-14/build/classes
+entry: defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+** CP: sources/time-14/build/classes:defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.joda.time.format.DateTimeFormat$StyleFormatter
+* Starting Client-0
+* Connecting to master process on port 5593
+* Analyzing classpath: 
+  - sources/time-14/build/classes
+  - defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* Finished analyzing classpath
+* Generating tests for class org.joda.time.format.DateTimeFormat$StyleFormatter
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 22
+* Using seed 1565729858895
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 22 / 22
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8636363636363636
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9545454545454546
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9545454545454546
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Search finished after 28s and 13 generations, 12259 statements, best individual has fitness: 0.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 91%
+* Total number of goals: 22
+* Number of covered goals: 20
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Generated 8 tests with total length 36
+* Resulting test suite's coverage: 100%
+* Generating assertions
+* Resulting test suite's mutation score: 10%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Compiling and checking tests
+[MASTER] 22:58:56.174 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.IllegalArgumentException: Illegal time style -527
+[MASTER] 22:58:56.175 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DateTimeFormat.StyleFormatter dateTimeFormat_StyleFormatter0 = new DateTimeFormat.StyleFormatter(1, (-527), 1);
+DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetMillis((-527));
+CopticChronology copticChronology0 = CopticChronology.getInstance(dateTimeZone0);
+Locale locale0 = Locale.FRANCE;
+DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(0L, copticChronology0, locale0, (Integer) copticChronology0.AM, (-1123));
+dateTimeFormat_StyleFormatter0.parseInto(dateTimeParserBucket0, "-d!F:T7Z", 0);
+
+* Writing tests to file
+* Writing JUnit test case 'DateTimeFormat$StyleFormatter_ESTest' to results/evosuite5/time-14-org.joda.time.format.DateTimeFormat$StyleFormatter-12
+* Done!
+
+* Computation finished

@@ -1,0 +1,89 @@
+entry: sources/time-14/build/classes
+entry: defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+** CP: sources/time-14/build/classes:defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.joda.time.format.DateTimeFormat
+* Starting Client-0
+* Connecting to master process on port 9050
+* Analyzing classpath: 
+  - sources/time-14/build/classes
+  - defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* Finished analyzing classpath
+* Generating tests for class org.joda.time.format.DateTimeFormat
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 434
+* Using seed 1565729074639
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 64 / 434
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5529953917050692
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6566820276497696
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7235023041474654
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7419354838709677
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7626728110599078
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7672811059907834
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.771889400921659
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7972350230414746
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8110599078341014
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8225806451612904
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8341013824884793
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8410138248847926
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.847926267281106
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8594470046082949
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8594470046082949
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8640552995391705
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8663594470046083
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.868663594470046
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.868663594470046
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8709677419354839
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8732718894009217
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8732718894009217
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8732718894009217
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8755760368663594
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8755760368663594
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8755760368663594
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8778801843317973
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8778801843317973
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8778801843317973
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8778801843317973
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8778801843317973
+* Search finished after 301s and 1020 generations, 157034 statements, best individual has fitness: 53.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8778801843317973
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 83%
+* Total number of goals: 434
+* Number of covered goals: 361
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8778801843317973
+* Generated 78 tests with total length 99
+* Resulting test suite's coverage: 88%
+* Generating assertions
+[MASTER] 22:50:51.381 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.7729166666666667% of time used, but only 22/78 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 13%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8778801843317973
+* Compiling and checking tests
+[MASTER] 22:51:21.948 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<[12:59:56 AM]> but was:<[January 1, 1970 12:59:56 AM +01:00]>
+[MASTER] 22:51:21.949 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DateTimeFormatter dateTimeFormatter0 = DateTimeFormat.longDateTime();
+StringWriter stringWriter0 = new StringWriter(3681);
+dateTimeFormatter0.printTo((Appendable) stringWriter0, (-3035L));
+assertEquals("12:59:56 AM", stringWriter0.toString());
+
+
+[MASTER] 22:51:47.886 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: Illegal pattern component: A
+[MASTER] 22:51:47.886 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DateTimeFormat.forPattern("x1AB-NlIH\"fbX@hp:");
+
+[MASTER] 22:51:49.910 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: Illegal pattern component: B
+[MASTER] 22:51:49.910 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DateTimeFormat.forPattern("BW`sXck{n> n");
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 12
+* Writing tests to file
+* Writing JUnit test case 'DateTimeFormat_ESTest' to results/evosuite5/time-14-org.joda.time.format.DateTimeFormat-18
+* Done!
+
+* Computation finished

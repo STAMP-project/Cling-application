@@ -1,0 +1,81 @@
+entry: sources/time-14/build/classes
+entry: defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+** CP: sources/time-14/build/classes:defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.joda.time.DateTimeZone
+* Starting Client-0
+* Connecting to master process on port 14139
+* Analyzing classpath: 
+  - sources/time-14/build/classes
+  - defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* Finished analyzing classpath
+* Generating tests for class org.joda.time.DateTimeZone
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 194
+* Using seed 1564031406569
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 94 / 194
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5154639175257731
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7938144329896907
+[MASTER] 07:10:22.488 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class org.joda.time.tz.CachedDateTimeZone canUseFunctionalMocks=false, canBeMocked: false
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8195876288659794
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8247422680412371
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8298969072164949
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8298969072164949
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8402061855670103
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8402061855670103
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8402061855670103
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8402061855670103
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+* Search finished after 301s and 1603 generations, 409926 statements, best individual has fitness: 30.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 85%
+* Total number of goals: 194
+* Number of covered goals: 164
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+* Generated 59 tests with total length 117
+* Resulting test suite's coverage: 85%
+* Generating assertions
+* Resulting test suite's mutation score: 50%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.845360824742268
+* Compiling and checking tests
+[MASTER] 07:15:39.174 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<[UTC]> but was:<[Europe/Amsterdam]>
+[MASTER] 07:15:39.174 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ UTCProvider uTCProvider0 = new UTCProvider();
+DateTimeZone.setProvider(uTCProvider0);
+DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+assertEquals("UTC", dateTimeZone0.getID());
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 4
+* Writing tests to file
+* Writing JUnit test case 'DateTimeZone_ESTest' to results/evosuite5/time-14-org.joda.time.DateTimeZone-7
+* Done!
+
+* Computation finished

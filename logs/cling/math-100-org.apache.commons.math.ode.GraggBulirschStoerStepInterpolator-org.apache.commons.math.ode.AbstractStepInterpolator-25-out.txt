@@ -1,0 +1,26 @@
+12:19:47.349 [main] INFO  e.s.b.i.i.IntegrationTesting - Starting ...
+12:19:47.393 [main] INFO  e.s.b.i.i.IntegrationTesting - Instrumenting target classes org.apache.commons.math.ode.GraggBulirschStoerStepInterpolator and org.apache.commons.math.ode.AbstractStepInterpolator
+12:19:50.639 [main] INFO  e.s.b.i.i.IntegrationTesting - Instrumented caller class: org.apache.commons.math.ode.GraggBulirschStoerStepInterpolator
+12:19:50.639 [main] INFO  e.s.b.i.i.IntegrationTesting - Instrumented callee class: org.apache.commons.math.ode.AbstractStepInterpolator
+12:19:50.707 [main] WARN  e.s.b.i.graphs.cfg.CFGGenerator - There is no branch fo call_site INVOKESPECIAL org/apache/commons/math/ode/AbstractStepInterpolator.<init>([DZ)V
+12:19:50.708 [main] WARN  e.s.b.i.graphs.cfg.CFGGenerator - There is no branch fo call_site INVOKEVIRTUAL org/apache/commons/math/ode/GraggBulirschStoerStepInterpolator.setInterpolatedTime(D)V
+12:19:50.708 [main] INFO  e.s.b.i.graphs.cfg.CFGGenerator - Branch pairs are registered.
+12:19:50.708 [main] INFO  e.s.b.i.i.IntegrationTesting - Analyzing dependencies...
+12:19:50.708 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 1.
+12:19:54.160 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+12:19:54.167 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+12:19:54.236 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 40: 
+12:19:54.236 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+12:19:57.084 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 37/40
+12:19:59.229 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+12:19:59.231 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 39/40
+12:20:00.510 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+12:20:00.511 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 39/40
+12:20:01.042 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - SubFront is empty!
+12:20:01.043 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #3 is created.
+12:20:01.044 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: ZeroFitness :                      0 / 0            Finished!
+12:20:01.570 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+12:20:13.617 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+12:20:51.169 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+12:20:55.041 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'GraggBulirschStoerStepInterpolator_ESTest' to results/botsing/math-100-org.apache.commons.math.ode.GraggBulirschStoerStepInterpolator-org.apache.commons.math.ode.AbstractStepInterpolator-25
+12:20:55.570 [main] INFO  e.s.b.i.i.IntegrationTesting - The solution test is saved!

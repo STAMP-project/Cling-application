@@ -1,0 +1,91 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.NativeArray
+* Starting Client-0
+* Connecting to master process on port 18159
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.NativeArray
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 934
+* Using seed 1566406538640
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 280 / 934
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.14132762312633834
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.1948608137044968
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.22698072805139186
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3094218415417559
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.35974304068522484
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.39079229122055675
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3961456102783726
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4197002141327623
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.42505353319057815
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.42505353319057815
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4486081370449679
+[MASTER] 18:58:10.829 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.45717344753747324
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4582441113490364
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4593147751605996
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47109207708779444
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47109207708779444
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47109207708779444
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47109207708779444
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4732334047109208
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.480728051391863
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.480728051391863
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.480728051391863
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4817987152034261
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4817987152034261
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4817987152034261
+* Search finished after 305s and 101 generations, 48936 statements, best individual has fitness: 484.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4817987152034261
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 48%
+* Total number of goals: 934
+* Number of covered goals: 450
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4817987152034261
+* Generated 98 tests with total length 331
+* Resulting test suite's coverage: 48%
+* Generating assertions
+[MASTER] 19:02:44.203 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 12%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4817987152034261
+* Compiling and checking tests
+[MASTER] 19:03:42.585 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 19:03:42.586 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeArray nativeArray0 = new NativeArray(1L);
+Object[] objectArray0 = nativeArray0.getAllIds();
+StringBuilder stringBuilder0 = new StringBuilder();
+NativeString nativeString0 = new NativeString(stringBuilder0);
+IdFunctionObject idFunctionObject0 = nativeArray0.exportAsJSClass(13, nativeArray0, false);
+Context context0 = Context.getCurrentContext();
+NativeArray nativeArray1 = (NativeArray)nativeArray0.execIdCall(idFunctionObject0, context0, nativeString0, idFunctionObject0, objectArray0);
+nativeArray1.getIndexIds();
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing tests to file
+* Writing JUnit test case 'NativeArray_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.NativeArray-15
+* Done!
+
+* Computation finished

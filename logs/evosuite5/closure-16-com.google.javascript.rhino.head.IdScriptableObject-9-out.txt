@@ -1,0 +1,107 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.IdScriptableObject
+* Starting Client-0
+* Connecting to master process on port 16663
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.IdScriptableObject
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 251
+* Using seed 1564036415717
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 87 / 251
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2549800796812749
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3545816733067729
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4302788844621514
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4701195219123506
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5258964143426295
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5298804780876494
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5378486055776892
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5418326693227091
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.545816733067729
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.545816733067729
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.545816733067729
+* Search finished after 311s and 33 generations, 12506 statements, best individual has fitness: 114.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.545816733067729
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 52%
+* Total number of goals: 251
+* Number of covered goals: 131
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.545816733067729
+* Generated 25 tests with total length 79
+* Resulting test suite's coverage: 55%
+* Generating assertions
+* Resulting test suite's mutation score: 12%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.545816733067729
+* Compiling and checking tests
+[MASTER] 08:40:07.434 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 08:40:07.435 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImporterTopLevel importerTopLevel0 = new ImporterTopLevel();
+Context context0 = Context.getContext();
+importerTopLevel0.initStandardObjects(context0, false);
+importerTopLevel0.getAllIds();
+
+[MASTER] 08:40:30.223 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 08:40:30.223 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImporterTopLevel importerTopLevel0 = new ImporterTopLevel();
+Context context0 = Context.getContext();
+importerTopLevel0.initStandardObjects(context0, false);
+NativeArray nativeArray0 = new NativeArray(context0.emptyArgs);
+nativeArray0.defineOwnProperty(context0, importerTopLevel0, importerTopLevel0);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+
+
+[MASTER] 08:40:32.283 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 08:40:32.283 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+importerTopLevel0.getIds();
+
+[MASTER] 08:40:37.708 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 08:40:37.709 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+importerTopLevel0.delete("language version");
+
+[MASTER] 08:40:40.954 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: Property 78dEf)o_Fs5 not found.
+[MASTER] 08:40:40.954 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImporterTopLevel importerTopLevel0 = new ImporterTopLevel();
+importerTopLevel0.getAttributes("78dEf)o_Fs5");
+
+[MASTER] 08:40:42.951 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 08:40:42.951 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImporterTopLevel importerTopLevel0 = new ImporterTopLevel();
+Context context0 = new Context();
+importerTopLevel0.initStandardObjects(context0, false);
+importerTopLevel0.getAttributes("78dEf)o_Fs5");
+
+[MASTER] 08:41:17.149 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing tests to file
+[MASTER] 08:41:20.001 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 27 seconds more than allowed.
+* Writing JUnit test case 'IdScriptableObject_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.IdScriptableObject-9
+* Done!
+
+* Computation finished

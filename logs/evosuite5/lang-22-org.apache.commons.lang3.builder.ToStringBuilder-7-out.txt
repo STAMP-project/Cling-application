@@ -1,0 +1,131 @@
+entry: sources/lang-22/target/classes
+** CP: sources/lang-22/target/classes
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.lang3.builder.ToStringBuilder
+* Starting Client-0
+* Connecting to master process on port 2769
+* Analyzing classpath: 
+  - sources/lang-22/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.builder.ToStringBuilder
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 70
+* Using seed 1564012732174
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 70 / 70
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9428571428571428
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Search finished after 5s and 2 generations, 5403 statements, best individual has fitness: 0.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 70
+* Number of covered goals: 70
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Generated 57 tests with total length 219
+* Resulting test suite's coverage: 100%
+* Generating assertions
+* Resulting test suite's mutation score: 29%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Compiling and checking tests
+[MASTER] 01:59:24.830 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<10> but was:<4>
+[MASTER] 01:59:24.830 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringBuilder.getDefaultStyle();
+StringBuffer stringBuffer0 = new StringBuffer(0);
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+toStringBuilder0.append((double) 0);
+assertEquals(10, stringBuffer0.length());
+assertEquals("0.0,<null>", stringBuffer0.toString());
+
+
+[MASTER] 01:59:25.088 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<={0,0,0,0,0},[<null>]> but was:<={0,0,0,0,0},[]>
+[MASTER] 01:59:25.088 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringBuilder.getDefaultStyle();
+StringBuffer stringBuffer0 = new StringBuffer(0);
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+int[] intArray0 = new int[5];
+toStringBuilder0.append("", intArray0, true);
+assertEquals("={0,0,0,0,0},<null>", stringBuffer0.toString());
+assertEquals(19, stringBuffer0.length());
+
+
+[MASTER] 01:59:26.309 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<23> but was:<17>
+[MASTER] 01:59:26.309 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+StringBuffer stringBuffer0 = new StringBuffer("1!B:QXYff[{6A*Y");
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+toStringBuilder0.append(" M~u,3qY^epm.g", (int) (byte)0);
+assertEquals(23, stringBuffer0.length());
+assertEquals("1!B:QXYff[{6A*Y0,<null>", stringBuffer0.toString());
+
+
+[MASTER] 01:59:27.865 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<93> but was:<94>
+[MASTER] 01:59:27.867 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
+Object object0 = new Object();
+StringBuffer stringBuffer0 = new StringBuffer("#H8Buhfu");
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0, stringBuffer0);
+float[] floatArray0 = new float[8];
+toStringBuilder0.append("The style must not be null", floatArray0, true);
+assertEquals(93, stringBuffer0.length());
+
+
+[MASTER] 01:59:28.959 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<x,[<null>]> but was:<x,[]>
+[MASTER] 01:59:28.960 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringBuilder.getDefaultStyle();
+StringBuffer stringBuffer0 = new StringBuffer(0);
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+toStringBuilder0.append('x');
+assertEquals("x,<null>", stringBuffer0.toString());
+
+
+[MASTER] 01:59:30.027 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<69> but was:<70>
+[MASTER] 01:59:30.027 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
+Object object0 = new Object();
+StringBuffer stringBuffer0 = new StringBuffer("#H8Buhfu");
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0, stringBuffer0);
+toStringBuilder0.append("The style must not be null", (-2712.844));
+assertEquals(69, stringBuffer0.length());
+
+
+[MASTER] 01:59:31.311 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<20> but was:<14>
+[MASTER] 01:59:31.312 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringBuilder.getDefaultStyle();
+StringBuffer stringBuffer0 = new StringBuffer(0);
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+long[] longArray0 = new long[6];
+toStringBuilder0.append("Lk}J", longArray0, false);
+assertEquals(20, stringBuffer0.length());
+assertEquals("Lk}J=<size=6>,<null>", stringBuffer0.toString());
+
+
+[MASTER] 01:59:32.094 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<42> but was:<31>
+[MASTER] 01:59:32.096 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.MULTI_LINE_STYLE;
+Object object0 = new Object();
+StringBuffer stringBuffer0 = new StringBuffer("#H8Buhfu");
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0, stringBuffer0);
+ToStringBuilder.reflectionToString((Object) toStringBuilder0);
+assertEquals(42, stringBuffer0.length());
+
+
+[MASTER] 01:59:33.073 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<81> but was:<82>
+[MASTER] 01:59:33.073 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
+StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "true,true,false,false,false,false,false,false,},,,{,,,=,,,<null>,>,<size=,>,<");
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0, stringBuffer0);
+toStringBuilder0.append("true,true,false,false,false,false,false,false,},,,{,,,=,,,<null>,>,<size=,>,<", (short)2983);
+assertEquals(81, stringBuffer0.length());
+assertEquals("true,true,false,false,false,false,false,false,},,,{,,,=,,,<null>,>,<size=,>,<2983", stringBuffer0.toString());
+
+
+* Writing tests to file
+* Writing JUnit test case 'ToStringBuilder_ESTest' to results/evosuite5/lang-22-org.apache.commons.lang3.builder.ToStringBuilder-7
+* Done!
+
+* Computation finished

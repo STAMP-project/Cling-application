@@ -1,0 +1,50 @@
+entry: sources/math-100/target/classes
+** CP: sources/math-100/target/classes
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.math.ode.GraggBulirschStoerIntegrator
+* Starting Client-0
+* Connecting to master process on port 4898
+* Analyzing classpath: 
+  - sources/math-100/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.math.ode.GraggBulirschStoerIntegrator
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 281
+* Using seed 1566335100178
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 51 / 281
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2775800711743772
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.28113879003558717
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5444839857651246
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5551601423487544
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5551601423487544
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6227758007117438
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6227758007117438
+* Search finished after 350s and 5 generations, 5895 statements, best individual has fitness: 106.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6227758007117438
+[MASTER] 23:11:00.158 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 49 seconds more than allowed.
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 62%
+* Total number of goals: 281
+* Number of covered goals: 175
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6227758007117438
+* Generated 19 tests with total length 63
+* Resulting test suite's coverage: 62%
+* Generating assertions
+* Resulting test suite's mutation score: 3%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6227758007117438
+* Compiling and checking tests
+[MASTER] 23:12:42.398 [logback-1] WARN  JUnitAnalyzer - Failed to create tmp dir
+[MASTER] 23:13:53.591 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+[MASTER] 23:13:53.592 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 14 seconds more than allowed.
+         writeFileDescriptor: 6
+* Writing tests to file
+* Writing JUnit test case 'GraggBulirschStoerIntegrator_ESTest' to results/evosuite5/math-100-org.apache.commons.math.ode.GraggBulirschStoerIntegrator-8
+* Done!
+
+* Computation finished

@@ -1,0 +1,54 @@
+entry: sources/lang-22/target/classes
+** CP: sources/lang-22/target/classes
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.lang3.ArrayUtils
+* Starting Client-0
+* Connecting to master process on port 13754
+* Analyzing classpath: 
+  - sources/lang-22/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.ArrayUtils
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 963
+* Using seed 1565713954678
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 355 / 963
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3063343717549325
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4766355140186916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6033229491173416
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8130841121495327
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9283489096573209
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9574247144340602
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9844236760124611
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9937694704049844
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9948078920041536
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.995846313603323
+* Search finished after 310s and 61 generations, 50182 statements, best individual has fitness: 4.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.995846313603323
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.995846313603323
+* Minimizing test suite
+[MASTER] 18:39:31.493 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+[MASTER] 18:39:31.495 [logback-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 19 seconds more than allowed.
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 963
+* Number of covered goals: 959
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.995846313603323
+* Generated 463 tests with total length 4682
+* Resulting test suite's coverage: 100%
+* Generating assertions
+[MASTER] 18:40:42.458 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 11%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.995846313603323
+* Compiling and checking tests
+[MASTER] 18:40:49.846 [logback-1] WARN  TimeController - Phase ASSERTION_GENERATION lasted too long, 12 seconds more than allowed.
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing tests to file
+* Writing JUnit test case 'ArrayUtils_ESTest' to results/evosuite5/lang-22-org.apache.commons.lang3.ArrayUtils-17
+* Done!
+
+* Computation finished

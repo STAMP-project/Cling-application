@@ -1,0 +1,73 @@
+entry: sources/time-14/build/classes
+entry: defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+** CP: sources/time-14/build/classes:defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.joda.time.tz.ZoneInfoCompiler
+* Starting Client-0
+* Connecting to master process on port 5830
+* Analyzing classpath: 
+  - sources/time-14/build/classes
+  - defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* Finished analyzing classpath
+* Generating tests for class org.joda.time.tz.ZoneInfoCompiler
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 228
+* Using seed 1566338758495
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 82 / 228
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2149122807017544
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4298245614035088
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4298245614035088
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4473684210526316
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.45614035087719296
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4649122807017544
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4824561403508772
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.49122807017543857
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.49122807017543857
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.49122807017543857
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5043859649122807
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5175438596491229
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5175438596491229
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5219298245614035
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5394736842105263
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.543859649122807
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.543859649122807
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5526315789473685
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5526315789473685
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5526315789473685
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5526315789473685
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5701754385964912
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5701754385964912
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5701754385964912
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5701754385964912
+* Search finished after 305s and 134 generations, 48520 statements, best individual has fitness: 98.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5701754385964912
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 57%
+* Total number of goals: 228
+* Number of covered goals: 129
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5701754385964912
+* Generated 50 tests with total length 117
+* Resulting test suite's coverage: 57%
+* Generating assertions
+* Resulting test suite's mutation score: 24%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5701754385964912
+* Compiling and checking tests
+[MASTER] 00:11:42.058 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:11:42.059 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ boolean boolean0 = ZoneInfoCompiler.verbose();
+assertFalse(boolean0);
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 49
+* Writing tests to file
+* Writing JUnit test case 'ZoneInfoCompiler_ESTest' to results/evosuite5/time-14-org.joda.time.tz.ZoneInfoCompiler-1
+* Done!
+
+* Computation finished

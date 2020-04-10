@@ -1,0 +1,89 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.IdScriptableObject
+* Starting Client-0
+* Connecting to master process on port 9955
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.IdScriptableObject
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 251
+* Using seed 1565734694594
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 87 / 251
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.30677290836653387
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.33067729083665337
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.350597609561753
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.35856573705179284
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.46215139442231074
+[MASTER] 00:20:15.052 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4940239043824701
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5537848605577689
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5657370517928287
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5657370517928287
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5697211155378487
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5776892430278885
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5776892430278885
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5776892430278885
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5856573705179283
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5856573705179283
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5856573705179283
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5856573705179283
+* Search finished after 341s and 66 generations, 23954 statements, best individual has fitness: 104.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5856573705179283
+[MASTER] 00:24:49.206 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 41 seconds more than allowed.
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 59%
+* Total number of goals: 251
+* Number of covered goals: 147
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5856573705179283
+* Generated 34 tests with total length 124
+* Resulting test suite's coverage: 59%
+* Generating assertions
+[MASTER] 00:26:06.252 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.6831% of time used, but only 10/34 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 5%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5856573705179283
+* Compiling and checking tests
+[MASTER] 00:27:34.504 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 00:27:34.505 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ BaseFunction baseFunction0 = new BaseFunction();
+ContextFactory contextFactory0 = new ContextFactory();
+Context context0 = contextFactory0.makeContext();
+context0.scratchScriptable = (Scriptable) baseFunction0;
+NativeArray nativeArray0 = new NativeArray(13);
+IdFunctionObject idFunctionObject0 = nativeArray0.exportAsJSClass(603, context0.scratchScriptable, true);
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, false);
+importerTopLevel0.execIdCall(idFunctionObject0, context0, baseFunction0, context0.scratchScriptable, context0.emptyArgs);
+
+[MASTER] 00:27:34.506 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing tests to file
+[MASTER] 00:27:34.508 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 25 seconds more than allowed.
+* Writing JUnit test case 'IdScriptableObject_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.IdScriptableObject-17
+* Done!
+
+* Computation finished

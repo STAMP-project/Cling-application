@@ -1,0 +1,970 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.regexp.NativeRegExp
+* Starting Client-0
+* Connecting to master process on port 13845
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.regexp.NativeRegExp
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 1450
+* Using seed 1566407505112
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 382 / 1450
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.07586206896551724
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.1
+[MASTER] 19:12:44.578 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.19655172413793104
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.20413793103448277
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.22
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2675862068965517
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2924137931034483
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2979310344827586
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2993103448275862
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3027586206896552
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3027586206896552
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.30689655172413793
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.30689655172413793
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.30689655172413793
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.30896551724137933
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.31310344827586206
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3137931034482759
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.31517241379310346
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.31655172413793103
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3296551724137931
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.33241379310344826
+* Search finished after 306s and 168 generations, 56058 statements, best individual has fitness: 968.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.33241379310344826
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 34%
+* Total number of goals: 1450
+* Number of covered goals: 487
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.33241379310344826
+* Generated 61 tests with total length 168
+* Resulting test suite's coverage: 33%
+* Generating assertions
+[MASTER] 19:18:20.347 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.7224833333333334% of time used, but only 10/61 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 3%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.33241379310344826
+* Compiling and checking tests
+[MASTER] 19:19:09.227 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 19:19:09.227 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeRegExp nativeRegExp0 = new NativeRegExp();
+Context context0 = Context.enter();
+TopLevel topLevel0 = new TopLevel();
+nativeRegExp0.compile(context0, topLevel0, context0.emptyArgs);
+Object object0 = nativeRegExp0.getInstanceIdValue(5);
+assertEquals(false, object0);
+
+
+[MASTER] 19:19:11.175 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 19:19:11.176 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeRegExp nativeRegExp0 = new NativeRegExp();
+Context context0 = new Context();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+Object[] objectArray0 = new Object[1];
+NativeRegExp nativeRegExp1 = (NativeRegExp)nativeRegExp0.compile(context0, importerTopLevel0, objectArray0);
+assertFalse(nativeRegExp1.isSealed());
+
+
+[MASTER] 19:19:12.746 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 19:19:12.755 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeRegExp nativeRegExp0 = new NativeRegExp();
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(0, NativeRegExp.TEST);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertNotNull(nativeRegExp0);
+assertTrue(nativeRegExp0.isExtensible());
+assertFalse(nativeRegExp0.hasPrototypeMap());
+assertTrue(nativeRegExp0.isEmpty());
+assertFalse(nativeRegExp0.avoidObjectDetection());
+assertFalse(nativeRegExp0.isSealed());
+assertEquals("object", nativeRegExp0.getTypeOf());
+assertEquals("RegExp", nativeRegExp0.getClassName());
+
+Context context0 = new Context();
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(100, Context.VERSION_1_0);
+assertFalse(context0.generateObserverCount);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertNotNull(context0);
+assertEquals(0, context0.getOptimizationLevel());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isGeneratingDebug());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isSealed());
+
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(100, Context.VERSION_1_0);
+assertFalse(context0.generateObserverCount);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertNotNull(importerTopLevel0);
+assertEquals(0, context0.getOptimizationLevel());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isGeneratingDebug());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isSealed());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertTrue(importerTopLevel0.hasPrototypeMap());
+assertTrue(importerTopLevel0.isExtensible());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertFalse(importerTopLevel0.isEmpty());
+assertEquals("global", importerTopLevel0.getClassName());
+assertFalse(importerTopLevel0.isSealed());
+
+Object[] objectArray0 = new Object[1];
+objectArray0[0] = (Object) nativeRegExp0;
+NativeRegExp nativeRegExp1 = (NativeRegExp)nativeRegExp0.compile(context0, importerTopLevel0, objectArray0);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(0, NativeRegExp.TEST);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(100, Context.VERSION_1_0);
+assertFalse(context0.generateObserverCount);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(0, NativeRegExp.TEST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(1, objectArray0.length);
+assertNotNull(nativeRegExp1);
+assertSame(nativeRegExp0, nativeRegExp1);
+assertSame(nativeRegExp1, nativeRegExp0);
+assertTrue(nativeRegExp0.isExtensible());
+assertFalse(nativeRegExp0.hasPrototypeMap());
+assertTrue(nativeRegExp0.isEmpty());
+assertFalse(nativeRegExp0.avoidObjectDetection());
+assertFalse(nativeRegExp0.isSealed());
+assertEquals("object", nativeRegExp0.getTypeOf());
+assertEquals("RegExp", nativeRegExp0.getClassName());
+assertEquals(0, context0.getOptimizationLevel());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isGeneratingDebug());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isSealed());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertTrue(importerTopLevel0.hasPrototypeMap());
+assertTrue(importerTopLevel0.isExtensible());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertFalse(importerTopLevel0.isEmpty());
+assertEquals("global", importerTopLevel0.getClassName());
+assertFalse(importerTopLevel0.isSealed());
+assertFalse(nativeRegExp1.hasPrototypeMap());
+assertTrue(nativeRegExp1.isExtensible());
+assertFalse(nativeRegExp1.avoidObjectDetection());
+assertTrue(nativeRegExp1.isEmpty());
+assertFalse(nativeRegExp1.isSealed());
+assertEquals("RegExp", nativeRegExp1.getClassName());
+assertEquals("object", nativeRegExp1.getTypeOf());
+
+
+[MASTER] 19:19:15.434 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 19:19:15.439 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeRegExp nativeRegExp0 = new NativeRegExp();
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(0, NativeRegExp.TEST);
+assertNotNull(nativeRegExp0);
+assertFalse(nativeRegExp0.avoidObjectDetection());
+assertEquals("RegExp", nativeRegExp0.getClassName());
+assertTrue(nativeRegExp0.isEmpty());
+assertFalse(nativeRegExp0.hasPrototypeMap());
+assertEquals("object", nativeRegExp0.getTypeOf());
+assertTrue(nativeRegExp0.isExtensible());
+assertFalse(nativeRegExp0.isSealed());
+
+Context context0 = Context.getCurrentContext();
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertFalse(context0.generateObserverCount);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertNotNull(context0);
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebugChanged());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getOptimizationLevel());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isSealed());
+assertFalse(context0.isGeneratingDebug());
+
+NativeRegExp nativeRegExp1 = (NativeRegExp)nativeRegExp0.compile(context0, (Scriptable) null, context0.emptyArgs);
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(0, NativeRegExp.TEST);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertFalse(context0.generateObserverCount);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(0, NativeRegExp.TEST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(0, ScriptableObject.EMPTY);
+assertNotNull(nativeRegExp1);
+assertSame(nativeRegExp0, nativeRegExp1);
+assertSame(nativeRegExp1, nativeRegExp0);
+assertFalse(nativeRegExp0.avoidObjectDetection());
+assertEquals("RegExp", nativeRegExp0.getClassName());
+assertTrue(nativeRegExp0.isEmpty());
+assertFalse(nativeRegExp0.hasPrototypeMap());
+assertEquals("object", nativeRegExp0.getTypeOf());
+assertTrue(nativeRegExp0.isExtensible());
+assertFalse(nativeRegExp0.isSealed());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebugChanged());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getOptimizationLevel());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isSealed());
+assertFalse(context0.isGeneratingDebug());
+assertFalse(nativeRegExp1.isSealed());
+assertFalse(nativeRegExp1.hasPrototypeMap());
+assertTrue(nativeRegExp1.isExtensible());
+assertFalse(nativeRegExp1.avoidObjectDetection());
+assertTrue(nativeRegExp1.isEmpty());
+assertEquals("object", nativeRegExp1.getTypeOf());
+assertEquals("RegExp", nativeRegExp1.getClassName());
+
+String string0 = nativeRegExp0.toString();
+assertEquals("/(?:)/", string0);
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(0, NativeRegExp.TEST);
+assertNotNull(string0);
+assertSame(nativeRegExp0, nativeRegExp1);
+assertFalse(nativeRegExp0.avoidObjectDetection());
+assertEquals("RegExp", nativeRegExp0.getClassName());
+assertTrue(nativeRegExp0.isEmpty());
+assertFalse(nativeRegExp0.hasPrototypeMap());
+assertEquals("object", nativeRegExp0.getTypeOf());
+assertTrue(nativeRegExp0.isExtensible());
+assertFalse(nativeRegExp0.isSealed());
+
+
+[MASTER] 19:19:16.913 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 19:19:16.944 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeRegExp nativeRegExp0 = new NativeRegExp();
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(0, NativeRegExp.TEST);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertNotNull(nativeRegExp0);
+assertFalse(nativeRegExp0.avoidObjectDetection());
+assertFalse(nativeRegExp0.isSealed());
+assertFalse(nativeRegExp0.hasPrototypeMap());
+assertEquals("object", nativeRegExp0.getTypeOf());
+assertTrue(nativeRegExp0.isExtensible());
+assertEquals("RegExp", nativeRegExp0.getClassName());
+assertTrue(nativeRegExp0.isEmpty());
+
+Context context0 = Context.getCurrentContext();
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertFalse(context0.generateObserverCount);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(100, Context.VERSION_1_0);
+assertNotNull(context0);
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isSealed());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isGeneratingDebug());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getOptimizationLevel());
+
+TopLevel topLevel0 = new TopLevel();
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertNotNull(topLevel0);
+assertFalse(topLevel0.hasPrototypeMap());
+assertEquals("object", topLevel0.getTypeOf());
+assertFalse(topLevel0.isSealed());
+assertEquals("global", topLevel0.getClassName());
+assertFalse(topLevel0.avoidObjectDetection());
+assertTrue(topLevel0.isExtensible());
+assertTrue(topLevel0.isEmpty());
+
+NativeRegExp nativeRegExp1 = (NativeRegExp)nativeRegExp0.compile(context0, topLevel0, context0.emptyArgs);
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(0, NativeRegExp.TEST);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertFalse(context0.generateObserverCount);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(0, NativeRegExp.TEST);
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertNotNull(nativeRegExp1);
+assertSame(nativeRegExp0, nativeRegExp1);
+assertSame(nativeRegExp1, nativeRegExp0);
+assertFalse(nativeRegExp0.avoidObjectDetection());
+assertFalse(nativeRegExp0.isSealed());
+assertFalse(nativeRegExp0.hasPrototypeMap());
+assertEquals("object", nativeRegExp0.getTypeOf());
+assertTrue(nativeRegExp0.isExtensible());
+assertEquals("RegExp", nativeRegExp0.getClassName());
+assertTrue(nativeRegExp0.isEmpty());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isSealed());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isGeneratingDebug());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(topLevel0.hasPrototypeMap());
+assertEquals("object", topLevel0.getTypeOf());
+assertFalse(topLevel0.isSealed());
+assertEquals("global", topLevel0.getClassName());
+assertFalse(topLevel0.avoidObjectDetection());
+assertTrue(topLevel0.isExtensible());
+assertTrue(topLevel0.isEmpty());
+assertEquals("RegExp", nativeRegExp1.getClassName());
+assertEquals("object", nativeRegExp1.getTypeOf());
+assertTrue(nativeRegExp1.isEmpty());
+assertFalse(nativeRegExp1.avoidObjectDetection());
+assertFalse(nativeRegExp1.isSealed());
+assertFalse(nativeRegExp1.hasPrototypeMap());
+assertTrue(nativeRegExp1.isExtensible());
+
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel();
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertNotNull(importerTopLevel0);
+assertTrue(importerTopLevel0.isExtensible());
+assertFalse(importerTopLevel0.isSealed());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertTrue(importerTopLevel0.isEmpty());
+assertEquals("JavaImporter", importerTopLevel0.getClassName());
+assertFalse(importerTopLevel0.hasPrototypeMap());
+assertEquals("object", importerTopLevel0.getTypeOf());
+
+Object[] objectArray0 = new Object[4];
+NativeArray nativeArray0 = (NativeArray)context0.newArray((Scriptable) importerTopLevel0, objectArray0);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertFalse(context0.generateObserverCount);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(4, objectArray0.length);
+assertNotNull(nativeArray0);
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isSealed());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isGeneratingDebug());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getOptimizationLevel());
+assertTrue(importerTopLevel0.isExtensible());
+assertFalse(importerTopLevel0.isSealed());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertTrue(importerTopLevel0.isEmpty());
+assertEquals("JavaImporter", importerTopLevel0.getClassName());
+assertFalse(importerTopLevel0.hasPrototypeMap());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertEquals(4L, nativeArray0.jsGet_length());
+assertFalse(nativeArray0.avoidObjectDetection());
+assertFalse(nativeArray0.hasPrototypeMap());
+assertEquals("object", nativeArray0.getTypeOf());
+assertTrue(nativeArray0.isExtensible());
+assertFalse(nativeArray0.isSealed());
+assertEquals(4L, nativeArray0.getLength());
+assertEquals("Array", nativeArray0.getClassName());
+assertTrue(nativeArray0.isEmpty());
+
+NativeArray nativeArray1 = (NativeArray)nativeRegExp1.call(context0, nativeArray0, nativeArray0, objectArray0);
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(0, NativeRegExp.TEST);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertFalse(context0.generateObserverCount);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, NativeRegExp.JSREG_GLOB);
+assertEquals(1, NativeRegExp.MATCH);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(2, NativeRegExp.PREFIX);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(2, NativeRegExp.JSREG_FOLD);
+assertEquals(0, NativeRegExp.TEST);
+assertEquals(4, NativeRegExp.JSREG_MULTILINE);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(4, objectArray0.length);
+assertNotNull(nativeArray1);
+assertSame(nativeRegExp0, nativeRegExp1);
+assertSame(nativeRegExp1, nativeRegExp0);
+assertNotSame(nativeArray0, nativeArray1);
+assertNotSame(nativeArray1, nativeArray0);
+assertFalse(nativeArray1.equals((Object)nativeArray0));
+assertFalse(nativeRegExp0.avoidObjectDetection());
+assertFalse(nativeRegExp0.isSealed());
+assertFalse(nativeRegExp0.hasPrototypeMap());
+assertEquals("object", nativeRegExp0.getTypeOf());
+assertTrue(nativeRegExp0.isExtensible());
+assertEquals("RegExp", nativeRegExp0.getClassName());
+assertTrue(nativeRegExp0.isEmpty());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isSealed());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isGeneratingDebug());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(topLevel0.hasPrototypeMap());
+assertEquals("object", topLevel0.getTypeOf());
+assertFalse(topLevel0.isSealed());
+assertEquals("global", topLevel0.getClassName());
+assertFalse(topLevel0.avoidObjectDetection());
+assertTrue(topLevel0.isExtensible());
+assertTrue(topLevel0.isEmpty());
+assertEquals("RegExp", nativeRegExp1.getClassName());
+assertEquals("object", nativeRegExp1.getTypeOf());
+assertTrue(nativeRegExp1.isEmpty());
+assertFalse(nativeRegExp1.avoidObjectDetection());
+assertFalse(nativeRegExp1.isSealed());
+assertFalse(nativeRegExp1.hasPrototypeMap());
+assertTrue(nativeRegExp1.isExtensible());
+assertTrue(importerTopLevel0.isExtensible());
+assertFalse(importerTopLevel0.isSealed());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertTrue(importerTopLevel0.isEmpty());
+assertEquals("JavaImporter", importerTopLevel0.getClassName());
+assertFalse(importerTopLevel0.hasPrototypeMap());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertEquals(4L, nativeArray0.jsGet_length());
+assertFalse(nativeArray0.avoidObjectDetection());
+assertFalse(nativeArray0.hasPrototypeMap());
+assertEquals("object", nativeArray0.getTypeOf());
+assertTrue(nativeArray0.isExtensible());
+assertFalse(nativeArray0.isSealed());
+assertEquals(4L, nativeArray0.getLength());
+assertEquals("Array", nativeArray0.getClassName());
+assertTrue(nativeArray0.isEmpty());
+assertFalse(nativeArray1.isEmpty());
+assertEquals("Array", nativeArray1.getClassName());
+assertFalse(nativeArray1.hasPrototypeMap());
+assertEquals("object", nativeArray1.getTypeOf());
+assertEquals(1L, nativeArray1.getLength());
+assertTrue(nativeArray1.isExtensible());
+assertEquals(1L, nativeArray1.jsGet_length());
+assertFalse(nativeArray1.avoidObjectDetection());
+assertFalse(nativeArray1.isSealed());
+
+
+[MASTER] 19:19:18.187 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 19:19:18.188 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertFalse(context0.generateObserverCount);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertNotNull(context0);
+assertEquals(0, context0.getOptimizationLevel());
+assertTrue(context0.isGeneratingSource());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isSealed());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getInstructionObserverThreshold());
+
+NativeRegExp.compileRE(context0, "msg.unterm.class", "msg.unterm.class", true);
+
+[MASTER] 19:19:20.549 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 19:19:20.551 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertFalse(context0.generateObserverCount);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertNotNull(context0);
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isSealed());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getLanguageVersion());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(context0.isGeneratingDebugChanged());
+
+Object object0 = NativeRegExp.compileRE(context0, "j_?dPG6<mv", (String) null, false);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertFalse(context0.generateObserverCount);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertNotNull(object0);
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isSealed());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getLanguageVersion());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(context0.isGeneratingDebugChanged());
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing tests to file
+* Writing JUnit test case 'NativeRegExp_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.regexp.NativeRegExp-19
+* Done!
+
+* Computation finished

@@ -1,0 +1,82 @@
+entry: sources/time-14/build/classes
+entry: defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+** CP: sources/time-14/build/classes:defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.joda.time.format.DateTimeFormatterBuilder
+* Starting Client-0
+* Connecting to master process on port 6376
+* Analyzing classpath: 
+  - sources/time-14/build/classes
+  - defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* Finished analyzing classpath
+* Generating tests for class org.joda.time.format.DateTimeFormatterBuilder
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 730
+* Using seed 1565731220947
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 308 / 730
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.236986301369863
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.42876712328767125
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5287671232876713
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6273972602739726
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6520547945205479
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6616438356164384
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6698630136986301
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7232876712328767
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7424657534246575
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7534246575342466
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7643835616438356
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7671232876712328
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7931506849315069
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7972602739726027
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8041095890410959
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8082191780821918
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8082191780821918
+* Search finished after 311s and 130 generations, 136616 statements, best individual has fitness: 140.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8082191780821918
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 80%
+* Total number of goals: 730
+* Number of covered goals: 582
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8082191780821918
+* Generated 162 tests with total length 777
+* Resulting test suite's coverage: 81%
+* Generating assertions
+* Resulting test suite's mutation score: 10%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8082191780821918
+[MASTER] 23:27:58.148 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 127
+* Writing tests to file
+* Writing JUnit test case 'DateTimeFormatterBuilder_ESTest' to results/evosuite5/time-14-org.joda.time.format.DateTimeFormatterBuilder-18
+* Done!
+
+* Computation finished
+r of covered goals: 617
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8452054794520548
+* Generated 216 tests with total length 2764
+* Resulting test suite's coverage: 85%
+* Generating assertions
+[MASTER] 23:22:47.174 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.8426% of time used, but only 11/216 tests minimized), falling back to using all assertions
+[MASTER] 23:23:13.053 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 8%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8452054794520548
+* Compiling and checking tests
+[MASTER] 23:23:28.863 [logback-1] WARN  TimeController - Phase ASSERTION_GENERATION lasted too long, 32 seconds more than allowed.
+[MASTER] 23:25:07.442 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+[MASTER] 23:25:07.442 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 38 seconds more than allowed.
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 19
+* Writing tests to file
+* Writing JUnit test case 'DateTimeFormatterBuilder_ESTest' to results/evosuite5/time-14-org.joda.time.format.DateTimeFormatterBuilder-18
+[MASTER] 23:26:20.981 [logback-1] WARN  TimeController - Phase WRITING_TESTS lasted too long, 13 seconds more than allowed.
+* Done!
+
+* Computation finished

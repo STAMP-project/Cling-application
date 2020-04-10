@@ -1,0 +1,40 @@
+20:46:41.398 [main] INFO  e.s.c.i.IntegrationTesting - Starting ...
+20:46:41.475 [main] INFO  e.s.c.i.IntegrationTesting - Instrumenting target classes com.google.javascript.rhino.head.ScriptRuntime and com.google.javascript.rhino.head.ScriptableObject
+20:49:30.078 [main] INFO  e.s.c.i.IntegrationTesting - Instrumented caller class: com.google.javascript.rhino.head.ScriptRuntime
+20:49:30.078 [main] INFO  e.s.c.i.IntegrationTesting - Instrumented callee class: com.google.javascript.rhino.head.ScriptableObject
+20:49:30.252 [main] ERROR e.stamp.cling.graphs.cfg.CalleeClass - method getClassName()Ljava/lang/String; is not available in hierarchy tree!
+20:49:30.554 [main] ERROR e.stamp.cling.graphs.cfg.CalleeClass - method getClassName()Ljava/lang/String; is not available in hierarchy tree!
+20:49:30.992 [main] ERROR e.stamp.cling.graphs.cfg.CalleeClass - method getClassName()Ljava/lang/String; is not available in hierarchy tree!
+20:49:31.954 [main] WARN  e.s.cling.graphs.cfg.CFGGenerator - There is no branch fo call_site INVOKEVIRTUAL com/google/javascript/rhino/head/ScriptableObject.setPrototype(Lcom/google/javascript/rhino/head/Scriptable;)V
+20:49:31.954 [main] WARN  e.s.cling.graphs.cfg.CFGGenerator - There is no branch fo call_site INVOKEVIRTUAL com/google/javascript/rhino/head/ScriptableObject.setParentScope(Lcom/google/javascript/rhino/head/Scriptable;)V
+20:49:31.954 [main] WARN  e.s.cling.graphs.cfg.CFGGenerator - There is no branch fo call_site INVOKEVIRTUAL com/google/javascript/rhino/head/ScriptableObject.getClassName()Ljava/lang/String;
+20:49:32.533 [main] WARN  e.s.cling.graphs.cfg.CFGGenerator - There is no branch fo call_site INVOKEINTERFACE com/google/javascript/rhino/head/Scriptable.getClassName()Ljava/lang/String;
+20:49:35.246 [main] INFO  e.s.cling.graphs.cfg.CFGGenerator - Branch pairs are registered.
+20:49:35.246 [main] INFO  e.s.c.i.IntegrationTesting - Analyzing dependencies...
+20:49:35.246 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 8.
+20:49:45.700 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:49:45.709 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+20:49:45.771 [main] INFO  e.s.c.t.CallableMethodPool - method notXmlError(Ljava/lang/Object;)Ljava/lang/RuntimeException; is not detected!
+20:49:45.773 [main] INFO  e.s.c.t.CallableMethodPool - method getPropFunctionAndThisHelper(Ljava/lang/Object;Ljava/lang/String;Lcom/google/javascript/rhino/head/Context;Lcom/google/javascript/rhino/head/Scriptable;)Lcom/google/javascript/rhino/head/Callable; is not detected!
+20:49:45.776 [main] INFO  e.s.c.t.CallableMethodPool - method getPropFunctionAndThisHelper(Ljava/lang/Object;Ljava/lang/String;Lcom/google/javascript/rhino/head/Context;Lcom/google/javascript/rhino/head/Scriptable;)Lcom/google/javascript/rhino/head/Callable; is not detected!
+20:49:45.827 [main] INFO  e.s.c.t.CallableMethodPool - method doScriptableIncrDecr(Lcom/google/javascript/rhino/head/Scriptable;Ljava/lang/String;Lcom/google/javascript/rhino/head/Scriptable;Ljava/lang/Object;I)Ljava/lang/Object; is not detected!
+20:49:45.859 [main] INFO  e.s.c.t.CallableMethodPool - method nameOrFunction(Lcom/google/javascript/rhino/head/Context;Lcom/google/javascript/rhino/head/Scriptable;Lcom/google/javascript/rhino/head/Scriptable;Ljava/lang/String;Z)Ljava/lang/Object; is not detected!
+20:49:45.885 [main] INFO  e.s.c.t.CallableMethodPool - method nameOrFunction(Lcom/google/javascript/rhino/head/Context;Lcom/google/javascript/rhino/head/Scriptable;Lcom/google/javascript/rhino/head/Scriptable;Ljava/lang/String;Z)Ljava/lang/Object; is not detected!
+20:49:45.887 [main] INFO  e.s.c.t.CallableMethodPool - method topScopeName(Lcom/google/javascript/rhino/head/Context;Lcom/google/javascript/rhino/head/Scriptable;Ljava/lang/String;)Ljava/lang/Object; is not detected!
+20:49:45.891 [main] INFO  e.s.c.t.CallableMethodPool - method eqString(Ljava/lang/CharSequence;Ljava/lang/Object;)Z is not detected!
+20:49:46.196 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 34116: 
+20:49:53.110 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+20:51:56.030 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 108/34116
+20:53:05.254 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+20:53:05.400 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 139/34116
+20:55:41.365 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+20:55:41.468 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: MaxTime :                        348 / 300          Finished!
+20:55:41.468 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are: 160
+20:55:41.558 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 13
+20:55:42.199 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+21:00:10.105 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 17
+21:00:10.106 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+21:01:03.412 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+21:01:12.561 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'ScriptRuntime_ESTest' to results/botsing/closure-16-com.google.javascript.rhino.head.ScriptRuntime-com.google.javascript.rhino.head.ScriptableObject-11
+21:01:13.128 [main] INFO  e.s.c.i.IntegrationTesting - test size 7: 17
+21:01:13.128 [main] INFO  e.s.c.i.IntegrationTesting - The solution test is saved!

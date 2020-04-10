@@ -1,0 +1,82 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.ScriptableObject
+* Starting Client-0
+* Connecting to master process on port 11667
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.ScriptableObject
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 916
+* Using seed 1565740012937
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 254 / 916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.17903930131004367
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.1888646288209607
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2445414847161572
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.314410480349345
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3624454148471616
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3646288209606987
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3864628820960699
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.40065502183406115
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.40829694323144106
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4148471615720524
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4203056768558952
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.43231441048034935
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.44541484716157204
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4574235807860262
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4606986899563319
+* Search finished after 304s and 24 generations, 11635 statements, best individual has fitness: 494.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4606986899563319
+* Minimizing test suite
+[MASTER] 01:53:41.412 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 46%
+* Total number of goals: 916
+* Number of covered goals: 422
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4606986899563319
+* Generated 94 tests with total length 1004
+* Resulting test suite's coverage: 46%
+* Generating assertions
+[MASTER] 01:55:10.560 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 2%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4606986899563319
+* Compiling and checking tests
+[MASTER] 01:55:47.824 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: Cannot modify a property of a sealed object: Boolean.
+[MASTER] 01:55:47.825 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeNumber nativeNumber0 = new NativeNumber(772.7092643844206);
+ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+NativeJavaTopPackage nativeJavaTopPackage0 = new NativeJavaTopPackage(classLoader0);
+nativeNumber0.isAccessorDescriptor(nativeJavaTopPackage0);
+ContextFactory contextFactory0 = new ContextFactory();
+ScriptableObject.deleteProperty((Scriptable) nativeJavaTopPackage0, (-5));
+Context context0 = contextFactory0.makeContext();
+NativeCall nativeCall0 = context0.currentActivationCall;
+NativeBoolean.init((Scriptable) null, true);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing tests to file
+* Writing JUnit test case 'ScriptableObject_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.ScriptableObject-19
+* Done!
+
+* Computation finished

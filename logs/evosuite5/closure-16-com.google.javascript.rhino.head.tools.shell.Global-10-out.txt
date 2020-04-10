@@ -1,0 +1,353 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.tools.shell.Global
+* Starting Client-0
+* Connecting to master process on port 20283
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.tools.shell.Global
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 320
+* Using seed 1566340144365
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 94 / 320
+[MASTER] 00:29:41.365 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.05625
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.084375
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.140625
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.20625
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.384375
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.384375
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.409375
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.459375
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4625
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.46875
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.475
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.490625
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.49375
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.49375
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.49375
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.49375
+* Search finished after 302s and 138 generations, 48615 statements, best individual has fitness: 162.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.49375
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 49%
+* Total number of goals: 320
+* Number of covered goals: 157
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.49375
+* Generated 57 tests with total length 256
+* Resulting test suite's coverage: 49%
+* Generating assertions
+* Resulting test suite's mutation score: 20%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.49375
+* Compiling and checking tests
+[MASTER] 00:35:29.246 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: doctest failure running:
+error reporter
+expected: actual: js: "doctest input", line 1: missing ; before statement
+js: error reporter
+js: .............^
+js: "doctest input", line 1: Compilation produced 1 syntax errors.
+
+
+
+[MASTER] 00:35:29.246 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+Global global0 = new Global();
+global0.runDoctest(context0, (Scriptable) null, "js>error reporter", (String) null, 7);
+
+[MASTER] 00:35:31.423 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 00:35:31.424 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+Global global0 = new Global(context0);
+global0.setSealedStdLib(false);
+assertEquals(13, ScriptableObject.CONST);
+
+
+[MASTER] 00:35:32.213 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:32.213 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+Global global0 = new Global(context0);
+Synchronizer synchronizer0 = new Synchronizer(global0);
+Global.runCommand(context0, global0, context0.emptyArgs, synchronizer0);
+
+[MASTER] 00:35:33.088 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:33.088 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+Global global0 = new Global(context0);
+QuitAction quitAction0 = mock(QuitAction.class, new ViolatedAssumptionAnswer());
+global0.initQuitAction(quitAction0);
+QuitAction quitAction1 = mock(QuitAction.class, new ViolatedAssumptionAnswer());
+global0.initQuitAction(quitAction1);
+
+[MASTER] 00:35:38.001 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:38.002 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+Global global0 = new Global(context0);
+TopLevel.Builtins topLevel_Builtins0 = TopLevel.Builtins.Boolean;
+IdFunctionObject idFunctionObject0 = (IdFunctionObject)TopLevel.getBuiltinCtor(context0, (Scriptable) global0, topLevel_Builtins0);
+Object[] objectArray0 = new Object[3];
+Global.print(context0, idFunctionObject0, objectArray0, idFunctionObject0);
+assertFalse(idFunctionObject0.isSealed());
+
+
+[MASTER] 00:35:38.999 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:39.000 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+Global global0 = new Global(context0);
+TopLevel.Builtins topLevel_Builtins0 = TopLevel.Builtins.Error;
+BaseFunction baseFunction0 = global0.getBuiltinCtor(topLevel_Builtins0);
+Global.quit(context0, baseFunction0, context0.emptyArgs, baseFunction0);
+assertFalse(baseFunction0.isSealed());
+
+
+[MASTER] 00:35:41.122 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:41.123 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Global global0 = new Global();
+Context context0 = Context.enter();
+Delegator delegator0 = new Delegator(global0);
+double double0 = Global.version(context0, global0, context0.emptyArgs, delegator0);
+assertEquals(0.0, double0, 0.01);
+
+
+[MASTER] 00:35:42.141 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:42.142 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Global global0 = new Global();
+Context context0 = Context.getCurrentContext();
+String[] stringArray0 = Locale.getISOLanguages();
+LinkedList<String> linkedList0 = new LinkedList<String>();
+Require require0 = global0.installRequire(context0, linkedList0, true);
+double double0 = Global.version(context0, global0, stringArray0, require0);
+assertEquals(0.0, double0, 0.01);
+assertTrue(require0.isEmpty());
+
+
+[MASTER] 00:35:43.252 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:43.253 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+NativeContinuation nativeContinuation0 = new NativeContinuation();
+Global global0 = new Global(context0);
+Global.load(context0, global0, context0.emptyArgs, nativeContinuation0);
+assertFalse(global0.avoidObjectDetection());
+
+
+[MASTER] 00:35:45.374 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: Class "aa" not found.
+[MASTER] 00:35:45.374 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+String[] stringArray0 = Locale.getISOLanguages();
+BaseFunction baseFunction0 = new BaseFunction();
+Global.loadClass(context0, baseFunction0, stringArray0, baseFunction0);
+
+[MASTER] 00:35:46.168 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.tools.shell.Global.getClass(Global.java:338): java.lang.NullPointerException
+[MASTER] 00:35:46.168 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.enter();
+NativeArray nativeArray0 = new NativeArray(12);
+IdFunctionObject idFunctionObject0 = new IdFunctionObject(nativeArray0, nativeArray0, 1612, "language version", 2, nativeArray0);
+Global.loadClass(context0, nativeArray0, context0.emptyArgs, idFunctionObject0);
+
+[MASTER] 00:35:47.552 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.tools.shell.Global.serialize(Global.java:360): java.lang.NullPointerException
+[MASTER] 00:35:47.552 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Global global0 = new Global();
+Context context0 = Context.getCurrentContext();
+NativeContinuation nativeContinuation0 = new NativeContinuation();
+Global.serialize(context0, global0, context0.emptyArgs, nativeContinuation0);
+
+[MASTER] 00:35:49.034 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:49.035 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+Global global0 = new Global(context0);
+Synchronizer synchronizer0 = new Synchronizer(global0);
+BaseFunction baseFunction0 = new BaseFunction();
+Global.deserialize(context0, baseFunction0, context0.emptyArgs, synchronizer0);
+
+[MASTER] 00:35:51.441 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:51.442 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.enter();
+NativeArray nativeArray0 = new NativeArray(12);
+IdFunctionObject idFunctionObject0 = new IdFunctionObject(nativeArray0, nativeArray0, 1612, "language version", 2, nativeArray0);
+Object object0 = Global.doctest(context0, idFunctionObject0, context0.emptyArgs, idFunctionObject0);
+assertEquals(false, object0);
+
+
+[MASTER] 00:35:54.081 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: doctest failure running:
+error reporter
+expected: actual: js: "doctest input", line 1: missing ; before statement
+js: error reporter
+js: .............^
+js: "doctest input", line 1: Compilation produced 1 syntax errors.
+
+
+
+[MASTER] 00:35:54.082 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+Global global0 = new Global();
+global0.runDoctest(context0, global0, "js>error reporter", "js>error reporter", 130);
+
+[MASTER] 00:35:55.010 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.tools.shell.Global.spawn(Global.java:574): java.lang.NullPointerException
+[MASTER] 00:35:55.010 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+BaseFunction baseFunction0 = new BaseFunction();
+Global.spawn(context0, baseFunction0, context0.emptyArgs, baseFunction0);
+
+[MASTER] 00:35:55.915 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: Argument to spawn() must be a function or script.
+[MASTER] 00:35:55.916 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Global global0 = new Global();
+Context context0 = Context.getCurrentContext();
+Synchronizer synchronizer0 = new Synchronizer(global0);
+Object[] objectArray0 = new Object[1];
+Global.spawn(context0, global0, objectArray0, synchronizer0);
+
+[MASTER] 00:35:56.900 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:56.901 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Global global0 = new Global();
+Context context0 = Context.getCurrentContext();
+Synchronizer synchronizer0 = new Synchronizer(global0);
+Object[] objectArray0 = new Object[1];
+objectArray0[0] = (Object) synchronizer0;
+MockThread mockThread0 = (MockThread)Global.spawn(context0, global0, objectArray0, synchronizer0);
+assertFalse(mockThread0.isInterrupted());
+
+
+[MASTER] 00:35:57.856 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:57.856 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+BaseFunction baseFunction0 = new BaseFunction();
+Object[] objectArray0 = new Object[2];
+objectArray0[0] = (Object) baseFunction0;
+MockThread mockThread0 = (MockThread)Global.spawn(context0, baseFunction0, objectArray0, baseFunction0);
+assertEquals(0, mockThread0.countStackFrames());
+
+
+[MASTER] 00:35:58.650 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:35:58.650 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+BaseFunction baseFunction0 = new BaseFunction();
+Object[] objectArray0 = new Object[2];
+objectArray0[0] = (Object) baseFunction0;
+objectArray0[1] = (Object) baseFunction0;
+MockThread mockThread0 = (MockThread)Global.spawn(context0, baseFunction0, objectArray0, baseFunction0);
+assertFalse(mockThread0.isDaemon());
+
+
+[MASTER] 00:35:59.477 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.tools.ToolErrorReporter but in com.google.javascript.rhino.head.tools.shell.Global.sync(Global.java:616): java.lang.NullPointerException
+[MASTER] 00:35:59.477 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+NativeContinuation nativeContinuation0 = new NativeContinuation();
+Global.sync(context0, nativeContinuation0, context0.emptyArgs, nativeContinuation0);
+
+[MASTER] 00:36:00.646 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:36:00.646 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Global global0 = new Global();
+Context context0 = Context.getCurrentContext();
+Synchronizer synchronizer0 = new Synchronizer(global0);
+LinkedList<String> linkedList0 = new LinkedList<String>();
+Require require0 = global0.installRequire(context0, linkedList0, false);
+Object[] objectArray0 = new Object[1];
+Global.sync(context0, require0, objectArray0, synchronizer0);
+
+[MASTER] 00:36:02.511 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:36:02.512 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Global global0 = new Global();
+Context context0 = Context.getCurrentContext();
+Synchronizer synchronizer0 = new Synchronizer(global0);
+LinkedList<String> linkedList0 = new LinkedList<String>();
+Require require0 = global0.installRequire(context0, linkedList0, false);
+Object[] objectArray0 = new Object[1];
+objectArray0[0] = (Object) synchronizer0;
+Global.sync(context0, require0, objectArray0, synchronizer0);
+assertFalse(require0.isEmpty());
+
+
+[MASTER] 00:36:05.757 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:36:05.757 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+Global global0 = new Global(context0);
+Synchronizer synchronizer0 = new Synchronizer(global0);
+Object[] objectArray0 = new Object[1];
+objectArray0[0] = (Object) global0;
+Global.runCommand(context0, global0, objectArray0, synchronizer0);
+
+[MASTER] 00:36:06.679 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:36:06.679 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+Global global0 = new Global(context0);
+Synchronizer synchronizer0 = new Synchronizer(global0);
+Object[] objectArray0 = new Object[2];
+objectArray0[1] = (Object) global0;
+Global.runCommand(context0, global0, objectArray0, synchronizer0);
+
+[MASTER] 00:36:08.514 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:36:08.514 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+Global global0 = new Global(context0);
+Synchronizer synchronizer0 = new Synchronizer(global0);
+Object[] objectArray0 = new Object[1];
+Global.seal(context0, synchronizer0, objectArray0, synchronizer0);
+
+[MASTER] 00:36:09.509 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:36:09.509 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+Global global0 = new Global(context0);
+Synchronizer synchronizer0 = new Synchronizer(global0);
+Object[] objectArray0 = new Object[1];
+objectArray0[0] = (Object) global0;
+Global.seal(context0, synchronizer0, objectArray0, synchronizer0);
+assertTrue(global0.isSealed());
+
+
+[MASTER] 00:36:10.465 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: seal function supports only sealing of ScriptableObject instances
+[MASTER] 00:36:10.465 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Global global0 = new Global();
+Context context0 = Context.getCurrentContext();
+Synchronizer synchronizer0 = new Synchronizer(global0);
+Object[] objectArray0 = new Object[7];
+objectArray0[0] = (Object) synchronizer0;
+Global.seal(context0, global0, objectArray0, synchronizer0);
+
+[MASTER] 00:36:11.555 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.tools.shell.Global.readFile(Global.java:815): java.lang.NullPointerException
+[MASTER] 00:36:11.555 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ BaseFunction baseFunction0 = new BaseFunction();
+Context context0 = Context.enter();
+Global.readFile(context0, baseFunction0, context0.emptyArgs, baseFunction0);
+
+[MASTER] 00:36:14.789 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.tools.shell.Global.readUrl(Global.java:845): java.lang.NullPointerException
+[MASTER] 00:36:14.790 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+NativeContinuation nativeContinuation0 = new NativeContinuation();
+Global.readUrl(context0, nativeContinuation0, context0.emptyArgs, nativeContinuation0);
+
+[MASTER] 00:36:16.934 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:36:16.934 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+NativeContinuation nativeContinuation0 = new NativeContinuation();
+Object object0 = Global.toint32(context0, nativeContinuation0, context0.emptyArgs, nativeContinuation0);
+assertEquals(0, object0);
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 12
+* Writing tests to file
+* Writing JUnit test case 'Global_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.tools.shell.Global-10
+* Done!
+
+* Computation finished

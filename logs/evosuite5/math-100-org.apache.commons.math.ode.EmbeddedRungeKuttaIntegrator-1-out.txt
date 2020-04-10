@@ -1,0 +1,75 @@
+entry: sources/math-100/target/classes
+** CP: sources/math-100/target/classes
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.math.ode.EmbeddedRungeKuttaIntegrator
+* Starting Client-0
+* Connecting to master process on port 2149
+* Analyzing classpath: 
+  - sources/math-100/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.math.ode.EmbeddedRungeKuttaIntegrator
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 76
+* Using seed 1566310709841
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 14 / 76
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.10526315789473684
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.39473684210526316
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.40789473684210525
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47368421052631576
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47368421052631576
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4868421052631579
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4868421052631579
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+* Search finished after 323s and 34 generations, 25507 statements, best individual has fitness: 37.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 51%
+* Total number of goals: 76
+* Number of covered goals: 39
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+* Generated 8 tests with total length 36
+* Resulting test suite's coverage: 51%
+* Generating assertions
+[MASTER] 16:25:19.628 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 31%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5131578947368421
+* Compiling and checking tests
+[MASTER] 16:25:27.717 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 16:25:27.718 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DormandPrince853Integrator dormandPrince853Integrator0 = new DormandPrince853Integrator(0.0, 0.0, 0.0, 0.0);
+double double0 = dormandPrince853Integrator0.getMinReduction();
+assertEquals(0.2, double0, 0.01);
+assertEquals(10.0, dormandPrince853Integrator0.getMaxGrowth(), 0.01);
+assertEquals(0.9, dormandPrince853Integrator0.getSafety(), 0.01);
+
+
+[MASTER] 16:25:30.241 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 16:25:30.241 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DormandPrince853Integrator dormandPrince853Integrator0 = new DormandPrince853Integrator(0.0, 0.0, 0.0, 0.0);
+SwitchingFunction switchingFunction0 = mock(SwitchingFunction.class, new ViolatedAssumptionAnswer());
+dormandPrince853Integrator0.addSwitchingFunction(switchingFunction0, 2668.744071, 2668.744071, 3364);
+SecondOrderDifferentialEquations secondOrderDifferentialEquations0 = mock(SecondOrderDifferentialEquations.class, new ViolatedAssumptionAnswer());
+doReturn(0).when(secondOrderDifferentialEquations0).getDimension();
+FirstOrderConverter firstOrderConverter0 = new FirstOrderConverter(secondOrderDifferentialEquations0);
+double[] doubleArray0 = new double[0];
+dormandPrince853Integrator0.integrate(firstOrderConverter0, 0, doubleArray0, 67.377, doubleArray0);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 6
+* Writing tests to file
+* Writing JUnit test case 'EmbeddedRungeKuttaIntegrator_ESTest' to results/evosuite5/math-100-org.apache.commons.math.ode.EmbeddedRungeKuttaIntegrator-1
+* Done!
+
+* Computation finished

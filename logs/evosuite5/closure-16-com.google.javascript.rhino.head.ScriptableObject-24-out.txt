@@ -1,0 +1,200 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.ScriptableObject
+* Starting Client-0
+* Connecting to master process on port 8813
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.ScriptableObject
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 916
+* Using seed 1566111292787
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 254 / 916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.18668122270742357
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.26200873362445415
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.28820960698689957
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3406113537117904
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.36790393013100436
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.37336244541484714
+[MASTER] 08:56:42.730 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3930131004366812
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.435589519650655
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4410480349344978
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.44759825327510916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4497816593886463
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4596069868995633
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.46397379912663755
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4737991266375546
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47489082969432317
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47925764192139736
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48799126637554585
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48799126637554585
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48799126637554585
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48799126637554585
+* Search finished after 303s and 39 generations, 16669 statements, best individual has fitness: 469.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48799126637554585
+* Minimizing test suite
+[MASTER] 09:01:27.802 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 49%
+* Total number of goals: 916
+* Number of covered goals: 451
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48799126637554585
+* Generated 103 tests with total length 882
+* Resulting test suite's coverage: 49%
+* Generating assertions
+[MASTER] 09:02:42.827 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.8259333333333333% of time used, but only 6/103 tests minimized), falling back to using all assertions
+[MASTER] 09:02:53.481 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 1%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48799126637554585
+* Compiling and checking tests
+[MASTER] 09:03:27.636 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 09:03:27.636 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ContextFactory contextFactory0 = new ContextFactory();
+Context context0 = new Context(contextFactory0);
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+context0.generateObserverCount = context0.generateObserverCount;
+NativeArray nativeArray0 = new NativeArray(context0.emptyArgs);
+
+[MASTER] 09:03:32.173 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 09:03:32.174 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ContextFactory contextFactory0 = new ContextFactory();
+Context context0 = new Context();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+ContextFactory.getGlobal();
+NativeGenerator nativeGenerator0 = NativeGenerator.init(importerTopLevel0, true);
+importerTopLevel0.checkPropertyChange("language version", nativeGenerator0, nativeGenerator0);
+
+[MASTER] 09:03:41.801 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: Cannot modify a property of a sealed object: 13.
+[MASTER] 09:03:41.802 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeError nativeError0 = new NativeError();
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals("Error", nativeError0.getClassName());
+assertFalse(nativeError0.isSealed());
+assertFalse(nativeError0.avoidObjectDetection());
+assertTrue(nativeError0.isExtensible());
+assertEquals("object", nativeError0.getTypeOf());
+assertFalse(nativeError0.hasPrototypeMap());
+assertTrue(nativeError0.isEmpty());
+assertNotNull(nativeError0);
+
+nativeError0.sealObject();
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals("Error", nativeError0.getClassName());
+assertFalse(nativeError0.avoidObjectDetection());
+assertTrue(nativeError0.isSealed());
+assertTrue(nativeError0.isExtensible());
+assertEquals("object", nativeError0.getTypeOf());
+assertFalse(nativeError0.hasPrototypeMap());
+assertTrue(nativeError0.isEmpty());
+
+boolean boolean0 = ScriptableObject.deleteProperty((Scriptable) nativeError0, 13);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertTrue(boolean0);
+assertEquals("Error", nativeError0.getClassName());
+assertFalse(nativeError0.avoidObjectDetection());
+assertTrue(nativeError0.isSealed());
+assertTrue(nativeError0.isExtensible());
+assertEquals("object", nativeError0.getTypeOf());
+assertFalse(nativeError0.hasPrototypeMap());
+assertTrue(nativeError0.isEmpty());
+
+NativeIterator.StopIteration nativeIterator_StopIteration0 = new NativeIterator.StopIteration();
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertTrue(nativeIterator_StopIteration0.isExtensible());
+assertTrue(nativeIterator_StopIteration0.isEmpty());
+assertFalse(nativeIterator_StopIteration0.hasPrototypeMap());
+assertEquals("object", nativeIterator_StopIteration0.getTypeOf());
+assertEquals("StopIteration", nativeIterator_StopIteration0.getClassName());
+assertFalse(nativeIterator_StopIteration0.isSealed());
+assertFalse(nativeIterator_StopIteration0.avoidObjectDetection());
+assertNotNull(nativeIterator_StopIteration0);
+
+nativeIterator_StopIteration0.put(13, (Scriptable) nativeError0, (Object) nativeError0);
+
+[MASTER] 09:03:47.613 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: TypeError: redeclaration of var Z-*Q`HY3gg9t,3C_Qg&.
+[MASTER] 09:03:47.614 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+assertNotNull(classLoader0);
+
+NativeJavaTopPackage nativeJavaTopPackage0 = new NativeJavaTopPackage(classLoader0);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertFalse(nativeJavaTopPackage0.avoidObjectDetection());
+assertEquals("JavaPackage", nativeJavaTopPackage0.getClassName());
+assertFalse(nativeJavaTopPackage0.isSealed());
+assertTrue(nativeJavaTopPackage0.isEmpty());
+assertEquals("object", nativeJavaTopPackage0.getTypeOf());
+assertTrue(nativeJavaTopPackage0.isExtensible());
+assertNotNull(nativeJavaTopPackage0);
+
+NativeError nativeError0 = new NativeError();
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(13, ScriptableObject.CONST);
+assertFalse(nativeError0.avoidObjectDetection());
+assertEquals("Error", nativeError0.getClassName());
+assertTrue(nativeError0.isEmpty());
+assertTrue(nativeError0.isExtensible());
+assertEquals("object", nativeError0.getTypeOf());
+assertFalse(nativeError0.isSealed());
+assertFalse(nativeError0.hasPrototypeMap());
+assertNotNull(nativeError0);
+
+String string0 = "Z-*Q`HY3gg9t,3C_Qg&";
+ScriptableObject.redefineProperty(nativeJavaTopPackage0, "Z-*Q`HY3gg9t,3C_Qg&", true);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 4
+* Writing tests to file
+* Writing JUnit test case 'ScriptableObject_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.ScriptableObject-24
+* Done!
+
+* Computation finished

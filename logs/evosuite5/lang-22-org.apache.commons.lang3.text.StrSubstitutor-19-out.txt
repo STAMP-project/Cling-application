@@ -1,0 +1,75 @@
+entry: sources/lang-22/target/classes
+** CP: sources/lang-22/target/classes
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.lang3.text.StrSubstitutor
+* Starting Client-0
+* Connecting to master process on port 5517
+* Analyzing classpath: 
+  - sources/lang-22/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.text.StrSubstitutor
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 102
+* Using seed 1566404013715
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 68 / 102
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5882352941176471
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8627450980392157
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8823529411764706
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8921568627450981
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9117647058823529
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9313725490196079
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9313725490196079
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9313725490196079
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9313725490196079
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9411764705882353
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9411764705882353
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9411764705882353
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9411764705882353
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+* Search finished after 302s and 1017 generations, 471797 statements, best individual has fitness: 5.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 95%
+* Total number of goals: 102
+* Number of covered goals: 97
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+* Generated 36 tests with total length 107
+* Resulting test suite's coverage: 95%
+* Generating assertions
+* Resulting test suite's mutation score: 49%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9509803921568627
+* Compiling and checking tests
+[MASTER] 18:19:23.729 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+[MASTER] 18:19:23.731 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StrSubstitutor strSubstitutor0 = new StrSubstitutor();
+StrBuilder strBuilder0 = new StrBuilder();
+strSubstitutor0.replace(strBuilder0, Integer.MAX_VALUE, Integer.MAX_VALUE);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 4
+* Writing tests to file
+* Writing JUnit test case 'StrSubstitutor_ESTest' to results/evosuite5/lang-22-org.apache.commons.lang3.text.StrSubstitutor-19
+* Done!
+
+* Computation finished

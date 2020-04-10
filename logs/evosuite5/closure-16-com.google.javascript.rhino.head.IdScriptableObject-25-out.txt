@@ -1,0 +1,148 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.IdScriptableObject
+* Starting Client-0
+* Connecting to master process on port 13697
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.IdScriptableObject
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 251
+* Using seed 1566102874210
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 87 / 251
+[MASTER] 06:35:01.211 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.29880478087649404
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4262948207171315
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.43824701195219123
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4701195219123506
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4701195219123506
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4701195219123506
+[MASTER] 06:36:06.252 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class java.lang.reflect.Method canUseFunctionalMocks=true, canBeMocked: false
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4940239043824701
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5139442231075697
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5338645418326693
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5338645418326693
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5617529880478087
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5617529880478087
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5617529880478087
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5617529880478087
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5776892430278885
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5776892430278885
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5816733067729084
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5936254980079682
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5976095617529881
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5976095617529881
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5976095617529881
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5976095617529881
+* Search finished after 301s and 125 generations, 44731 statements, best individual has fitness: 101.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5976095617529881
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 58%
+* Total number of goals: 251
+* Number of covered goals: 145
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5976095617529881
+* Generated 34 tests with total length 116
+* Resulting test suite's coverage: 60%
+* Generating assertions
+* Resulting test suite's mutation score: 16%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5976095617529881
+* Compiling and checking tests
+[MASTER] 06:41:17.682 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 06:41:17.683 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, false);
+IdFunctionObject idFunctionObject0 = new IdFunctionObject(importerTopLevel0, importerTopLevel0, 8, "language version", 6, importerTopLevel0);
+idFunctionObject0.setInstanceIdAttributes(2, 16);
+
+[MASTER] 06:41:24.867 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 06:41:24.867 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, false);
+IdFunctionObject idFunctionObject0 = new IdFunctionObject(importerTopLevel0, "yK2cB*;-", 2809, 65535);
+IdScriptableObject.incompatibleCallError(idFunctionObject0);
+
+[MASTER] 06:41:29.453 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 06:41:29.453 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, false);
+IdFunctionObject idFunctionObject0 = new IdFunctionObject(importerTopLevel0, importerTopLevel0, 8, "language version", 6, importerTopLevel0);
+NativeError nativeError0 = new NativeError();
+nativeError0.execIdCall(idFunctionObject0, context0, importerTopLevel0, idFunctionObject0, context0.emptyArgs);
+
+[MASTER] 06:41:32.555 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 06:41:32.555 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.enter();
+NativeIterator.StopIteration nativeIterator_StopIteration0 = new NativeIterator.StopIteration();
+NativeArray nativeArray0 = new NativeArray(context0.emptyArgs);
+Object object0 = nativeArray0.get(5, (Scriptable) nativeIterator_StopIteration0);
+nativeIterator_StopIteration0.setInstanceIdValue(9, object0);
+
+[MASTER] 06:41:44.427 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 06:41:44.427 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+IdFunctionObject idFunctionObject0 = new IdFunctionObject(importerTopLevel0, importerTopLevel0, 8, "language version", 6, importerTopLevel0);
+idFunctionObject0.initPrototypeValue(1957, "language version", idFunctionObject0, 0);
+
+[MASTER] 06:41:46.945 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 06:41:46.946 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, false);
+Object[] objectArray0 = importerTopLevel0.getAllIds();
+assertEquals(59, objectArray0.length);
+
+
+[MASTER] 06:41:48.957 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 06:41:48.959 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+NativeIterator.StopIteration nativeIterator_StopIteration0 = new NativeIterator.StopIteration();
+nativeIterator_StopIteration0.defaultPut("language version", context0);
+assertFalse(nativeIterator_StopIteration0.hasPrototypeMap());
+
+
+[MASTER] 06:41:56.712 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 06:41:56.713 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, false);
+IdFunctionObject idFunctionObject0 = new IdFunctionObject(importerTopLevel0, importerTopLevel0, 8, "language version", 6, importerTopLevel0);
+idFunctionObject0.defineOwnProperty(context0, importerTopLevel0, importerTopLevel0);
+assertEquals(6, idFunctionObject0.getArity());
+
+
+[MASTER] 06:42:00.734 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 06:42:00.734 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, false);
+NativeIterator.StopIteration nativeIterator_StopIteration0 = new NativeIterator.StopIteration();
+nativeIterator_StopIteration0.defineOwnProperties(context0, importerTopLevel0);
+assertTrue(nativeIterator_StopIteration0.isEmpty());
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 6
+* Writing tests to file
+* Writing JUnit test case 'IdScriptableObject_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.IdScriptableObject-25
+* Done!
+
+* Computation finished

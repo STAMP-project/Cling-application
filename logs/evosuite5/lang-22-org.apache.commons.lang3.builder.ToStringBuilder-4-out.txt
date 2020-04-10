@@ -1,0 +1,47 @@
+entry: sources/lang-22/target/classes
+** CP: sources/lang-22/target/classes
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.lang3.builder.ToStringBuilder
+* Starting Client-0
+* Connecting to master process on port 18369
+* Analyzing classpath: 
+  - sources/lang-22/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.builder.ToStringBuilder
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 70
+* Using seed 1564012685915
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 70 / 70
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9285714285714286
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Search finished after 6s and 3 generations, 7298 statements, best individual has fitness: 0.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 70
+* Number of covered goals: 70
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Generated 57 tests with total length 200
+* Resulting test suite's coverage: 100%
+* Generating assertions
+* Resulting test suite's mutation score: 12%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Compiling and checking tests
+[MASTER] 01:58:42.629 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<1[,1]> but was:<1[]>
+[MASTER] 01:58:42.630 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Integer integer0 = new Integer(1);
+ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
+Class<Object> class0 = Object.class;
+String string0 = ToStringBuilder.reflectionToString(integer0, toStringStyle0, false, (Class<? super Integer>) class0);
+assertEquals("1,1", string0);
+
+
+* Writing tests to file
+* Writing JUnit test case 'ToStringBuilder_ESTest' to results/evosuite5/lang-22-org.apache.commons.lang3.builder.ToStringBuilder-4
+* Done!
+
+* Computation finished

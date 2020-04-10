@@ -1,0 +1,100 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.tools.debugger.Dim
+* Starting Client-0
+* Connecting to master process on port 4061
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.tools.debugger.Dim
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 311
+* Using seed 1566407543990
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 133 / 311
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.09646302250803858
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.1639871382636656
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.1639871382636656
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.16720257234726688
+[MASTER] 19:14:04.535 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.17041800643086816
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.17041800643086816
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.21543408360128619
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2282958199356913
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.24115755627009647
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.24115755627009647
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.24437299035369775
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.24437299035369775
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.24437299035369775
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.24758842443729903
+* Search finished after 301s and 77 generations, 23350 statements, best individual has fitness: 234.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.24758842443729903
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 25%
+* Total number of goals: 311
+* Number of covered goals: 77
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.24758842443729903
+* Generated 32 tests with total length 110
+* Resulting test suite's coverage: 25%
+* Generating assertions
+* Resulting test suite's mutation score: 7%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.24758842443729903
+* Compiling and checking tests
+[MASTER] 19:18:40.451 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Expecting exception: IllegalStateException
+[MASTER] 19:18:40.452 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Dim dim0 = new Dim();
+ContextFactory contextFactory0 = ContextFactory.getGlobal();
+dim0.attachTo(contextFactory0);
+NativeContinuation nativeContinuation0 = new NativeContinuation();
+dim0.getObjectProperty(nativeContinuation0, dim0.GO);
+
+[MASTER] 19:19:21.284 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Expecting exception: IllegalStateException
+[MASTER] 19:19:21.284 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Dim dim0 = new Dim();
+ContextFactory contextFactory0 = ContextFactory.getGlobal();
+dim0.attachTo(contextFactory0);
+NativeArray nativeArray0 = new NativeArray(120);
+dim0.getObjectProperty(nativeArray0, "error reporter");
+
+[MASTER] 19:19:22.215 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Expecting exception: IllegalStateException
+[MASTER] 19:19:22.215 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Dim dim0 = new Dim();
+ContextFactory contextFactory0 = ContextFactory.getGlobal();
+dim0.attachTo(contextFactory0);
+dim0.getObjectIds(dim0);
+
+[MASTER] 19:19:24.006 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Expecting exception: IllegalStateException
+[MASTER] 19:19:24.007 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Dim dim0 = new Dim();
+ContextFactory contextFactory0 = ContextFactory.getGlobal();
+dim0.attachTo(contextFactory0);
+NativeArray nativeArray0 = new NativeArray(3709L);
+Synchronizer synchronizer0 = new Synchronizer(nativeArray0, (Object) null);
+dim0.getObjectIds(synchronizer0);
+
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         execute /usr/bin/xprop: 1
+* Writing tests to file
+* Writing JUnit test case 'Dim_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.tools.debugger.Dim-19
+* Done!
+
+* Computation finished

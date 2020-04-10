@@ -1,0 +1,71 @@
+Aug 20, 2019 4:26:24 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-14794: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=14794] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 16:26:24.731 [logback-2] ERROR ClientNodeImpl - Error when exporting statistics: TotalExceptionsTimeline=0
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketException: Connection reset
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:307) ~[na:1.8.0_222]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202) ~[na:1.8.0_222]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:129) ~[na:1.8.0_222]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_222]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_222]
+	at com.sun.proxy.$Proxy7.evosuite_collectStatistics(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl$2.run(ClientNodeImpl.java:400) ~[evosuite.jar:1.0.7-SNAPSHOT]
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_222]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_222]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_222]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[na:1.8.0_222]
+	at java.io.DataInputStream.readByte(DataInputStream.java:265) ~[na:1.8.0_222]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246) ~[na:1.8.0_222]
+	... 6 common frames omitted
+Aug 20, 2019 4:26:27 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-14794: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=14794] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 16:26:27.787 [logback-2] ERROR ClientNodeImpl - Cannot inform master of change of state
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketException: Connection reset
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:307) ~[na:1.8.0_222]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202) ~[na:1.8.0_222]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:129) ~[na:1.8.0_222]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_222]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_222]
+	at com.sun.proxy.$Proxy7.evosuite_informChangeOfStateInClient(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl.changeState(ClientNodeImpl.java:254) ~[evosuite.jar:1.0.7-SNAPSHOT]
+	at org.evosuite.ProgressMonitor.updateStatus(ProgressMonitor.java:72) [evosuite.jar:1.0.7-SNAPSHOT]
+	at org.evosuite.ProgressMonitor.iteration(ProgressMonitor.java:105) [evosuite.jar:1.0.7-SNAPSHOT]
+	at org.evosuite.ga.metaheuristics.GeneticAlgorithm.notifyIteration(GeneticAlgorithm.java:897) [evosuite.jar:1.0.7-SNAPSHOT]
+	at org.evosuite.ga.metaheuristics.mosa.DynaMOSA.generateSolution(DynaMOSA.java:165) [evosuite.jar:1.0.7-SNAPSHOT]
+	at org.evosuite.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:115) [evosuite.jar:1.0.7-SNAPSHOT]
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:676) [evosuite.jar:1.0.7-SNAPSHOT]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:244) [evosuite.jar:1.0.7-SNAPSHOT]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:160) [evosuite.jar:1.0.7-SNAPSHOT]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_222]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_222]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_222]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_222]
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_222]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_222]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_222]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[na:1.8.0_222]
+	at java.io.DataInputStream.readByte(DataInputStream.java:265) ~[na:1.8.0_222]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246) ~[na:1.8.0_222]
+	... 19 common frames omitted

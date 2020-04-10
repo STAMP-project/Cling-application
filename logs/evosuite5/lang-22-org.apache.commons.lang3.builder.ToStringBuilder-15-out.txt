@@ -1,0 +1,99 @@
+entry: sources/lang-22/target/classes
+** CP: sources/lang-22/target/classes
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.lang3.builder.ToStringBuilder
+* Starting Client-0
+* Connecting to master process on port 20064
+* Analyzing classpath: 
+  - sources/lang-22/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.builder.ToStringBuilder
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 70
+* Using seed 1565712761798
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 70 / 70
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9142857142857143
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Search finished after 10s and 3 generations, 7037 statements, best individual has fitness: 0.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 70
+* Number of covered goals: 70
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Generated 58 tests with total length 196
+* Resulting test suite's coverage: 100%
+* Generating assertions
+* Resulting test suite's mutation score: 15%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Compiling and checking tests
+[MASTER] 18:13:55.343 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<12> but was:<6>
+[MASTER] 18:13:55.343 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
+StringBuffer stringBuffer0 = new StringBuffer();
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+toStringBuilder0.append((long) (-4111));
+assertEquals(12, stringBuffer0.length());
+assertEquals("-4111,<null>", stringBuffer0.toString());
+
+
+[MASTER] 18:14:04.176 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<0.0,[<null>]> but was:<0.0,[]>
+[MASTER] 18:14:04.177 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
+StringBuffer stringBuffer0 = new StringBuffer();
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+toStringBuilder0.append(";!C-&:*", 0.0F);
+assertEquals("0.0,<null>", stringBuffer0.toString());
+assertEquals(10, stringBuffer0.length());
+
+
+[MASTER] 18:14:09.468 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<9> but was:<3>
+[MASTER] 18:14:09.469 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
+StringBuffer stringBuffer0 = new StringBuffer();
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+char[] charArray0 = new char[0];
+toStringBuilder0.append("java.lang.Object@2[]", charArray0, true);
+assertEquals(9, stringBuffer0.length());
+assertEquals("{},<null>", stringBuffer0.toString());
+
+
+[MASTER] 18:14:17.567 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<55> but was:<49>
+[MASTER] 18:14:17.567 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
+StringBuffer stringBuffer0 = new StringBuffer();
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+toStringBuilder0.appendSuper("org.apache.commons.lang3.builder.ToStringBuilder");
+assertEquals(55, stringBuffer0.length());
+assertEquals("org.apache.commons.lang3.builder.ToStringBuilder,<null>", stringBuffer0.toString());
+
+
+[MASTER] 18:14:18.760 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<55> but was:<49>
+[MASTER] 18:14:18.760 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
+StringBuffer stringBuffer0 = new StringBuffer();
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+toStringBuilder0.appendToString("org.apache.commons.lang3.builder.ToStringBuilder");
+assertEquals(55, stringBuffer0.length());
+assertEquals("org.apache.commons.lang3.builder.ToStringBuilder,<null>", stringBuffer0.toString());
+
+
+[MASTER] 18:14:19.168 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<19> but was:<13>
+[MASTER] 18:14:19.169 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
+StringBuffer stringBuffer0 = new StringBuffer();
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+toStringBuilder0.append("The style must not be null", (Object) toStringBuilder0);
+assertEquals(19, stringBuffer0.length());
+assertEquals("<null><null>,<null>", stringBuffer0.toString());
+
+
+* Writing tests to file
+* Writing JUnit test case 'ToStringBuilder_ESTest' to results/evosuite5/lang-22-org.apache.commons.lang3.builder.ToStringBuilder-15
+* Done!
+
+* Computation finished

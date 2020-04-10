@@ -1,0 +1,50 @@
+[MASTER] 00:21:43.163 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:43.210 [logback-2] ERROR FunctionalMockStatement - Cannot use Mockito on interface com.google.javascript.rhino.head.ast.NodeVisitor due to IAE: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:245)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+[MASTER] 00:21:43.297 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:44.122 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:44.373 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:44.789 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:46.315 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:46.875 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:51.757 [logback-2] ERROR FunctionalMockStatement - Cannot use Mockito on java.util.function.Consumer<com.google.javascript.rhino.head.Node> due to IAE: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:245)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+[MASTER] 00:23:45.970 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]

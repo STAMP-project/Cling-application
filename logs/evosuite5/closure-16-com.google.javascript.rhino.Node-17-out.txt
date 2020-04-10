@@ -1,0 +1,82 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.Node
+* Starting Client-0
+* Connecting to master process on port 13663
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.Node
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 724
+* Using seed 1565736546251
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 570 / 724
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.26657458563535913
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3756906077348066
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.494475138121547
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5883977900552486
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6229281767955801
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6505524861878453
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.664364640883978
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6795580110497238
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6961325966850829
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7113259668508287
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7140883977900553
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7251381215469613
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7361878453038674
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.738950276243094
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.744475138121547
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7486187845303868
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7527624309392266
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.761049723756906
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7803867403314917
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7983425414364641
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8052486187845304
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8093922651933702
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.819060773480663
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8232044198895028
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8314917127071824
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.835635359116022
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8397790055248618
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8439226519337016
+* Search finished after 304s and 225 generations, 131228 statements, best individual has fitness: 113.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8439226519337016
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 85%
+* Total number of goals: 724
+* Number of covered goals: 613
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8439226519337016
+* Generated 265 tests with total length 819
+* Resulting test suite's coverage: 84%
+* Generating assertions
+[MASTER] 00:56:19.097 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.6719% of time used, but only 25/265 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 7%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8439226519337016
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 7
+* Writing tests to file
+* Writing JUnit test case 'Node_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.Node-17
+* Done!
+
+* Computation finished

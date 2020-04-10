@@ -1,0 +1,354 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.FunctionObject
+* Starting Client-0
+* Connecting to master process on port 4408
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.FunctionObject
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 183
+* Using seed 1565734330567
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 59 / 183
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.24043715846994534
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2786885245901639
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.29508196721311475
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3551912568306011
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4918032786885246
+[MASTER] 00:13:54.136 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4972677595628415
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5136612021857924
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5683060109289617
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737704918032787
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.644808743169399
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6502732240437158
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6502732240437158
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6502732240437158
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6502732240437158
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6502732240437158
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6502732240437158
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6612021857923497
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6830601092896175
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6830601092896175
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6885245901639344
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6885245901639344
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6885245901639344
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6885245901639344
+* Search finished after 305s and 256 generations, 89975 statements, best individual has fitness: 57.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6885245901639344
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 69%
+* Total number of goals: 183
+* Number of covered goals: 126
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6885245901639344
+* Generated 30 tests with total length 134
+* Resulting test suite's coverage: 69%
+* Generating assertions
+[MASTER] 00:18:59.492 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.9237166666666666% of time used, but only 1/30 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 9%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6885245901639344
+* Compiling and checking tests
+[MASTER] 00:19:40.449 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<13> but was:<14>
+[MASTER] 00:19:40.509 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Class<NativeJavaArray> class0 = NativeJavaArray.class;
+Method[] methodArray0 = FunctionObject.getMethodList(class0);
+assertNotNull(methodArray0);
+assertEquals(13, methodArray0.length);
+
+Method method0 = FunctionObject.findSingleMethod(methodArray0, "getPrototype");
+assertNotNull(method0);
+assertEquals(13, methodArray0.length);
+assertEquals("getPrototype", method0.getName());
+assertFalse(method0.isSynthetic());
+assertEquals(1, method0.getModifiers());
+assertEquals("public com.google.javascript.rhino.head.Scriptable com.google.javascript.rhino.head.NativeJavaArray.getPrototype()", method0.toString());
+assertFalse(method0.isBridge());
+assertFalse(method0.isAccessible());
+assertFalse(method0.isVarArgs());
+
+NativeContinuation nativeContinuation0 = new NativeContinuation();
+assertNotNull(nativeContinuation0);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, ScriptableObject.READONLY);
+assertTrue(nativeContinuation0.isEmpty());
+assertFalse(nativeContinuation0.avoidObjectDetection());
+assertFalse(nativeContinuation0.isSealed());
+assertEquals("Continuation", nativeContinuation0.getClassName());
+assertTrue(nativeContinuation0.isExtensible());
+assertFalse(nativeContinuation0.hasPrototypeMap());
+assertEquals("object", nativeContinuation0.getTypeOf());
+
+FunctionObject functionObject0 = new FunctionObject("msg.no.overload", method0, nativeContinuation0);
+assertNotNull(functionObject0);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, FunctionObject.JAVA_DOUBLE_TYPE);
+assertEquals(6, FunctionObject.JAVA_OBJECT_TYPE);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(3, FunctionObject.JAVA_BOOLEAN_TYPE);
+assertEquals(2, FunctionObject.JAVA_INT_TYPE);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(1, FunctionObject.JAVA_STRING_TYPE);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, FunctionObject.JAVA_UNSUPPORTED_TYPE);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(5, FunctionObject.JAVA_SCRIPTABLE_TYPE);
+assertEquals(13, methodArray0.length);
+assertEquals("getPrototype", method0.getName());
+assertFalse(method0.isSynthetic());
+assertEquals(1, method0.getModifiers());
+assertEquals("public com.google.javascript.rhino.head.Scriptable com.google.javascript.rhino.head.NativeJavaArray.getPrototype()", method0.toString());
+assertFalse(method0.isBridge());
+assertFalse(method0.isAccessible());
+assertFalse(method0.isVarArgs());
+assertTrue(nativeContinuation0.isEmpty());
+assertFalse(nativeContinuation0.avoidObjectDetection());
+assertFalse(nativeContinuation0.isSealed());
+assertEquals("Continuation", nativeContinuation0.getClassName());
+assertTrue(nativeContinuation0.isExtensible());
+assertFalse(nativeContinuation0.hasPrototypeMap());
+assertEquals("object", nativeContinuation0.getTypeOf());
+assertTrue(functionObject0.isExtensible());
+assertEquals("msg.no.overload", functionObject0.getFunctionName());
+assertFalse(functionObject0.hasPrototypeMap());
+assertEquals("function", functionObject0.getTypeOf());
+assertEquals(0, functionObject0.getArity());
+assertTrue(functionObject0.isEmpty());
+assertFalse(functionObject0.isSealed());
+assertEquals(0, functionObject0.getLength());
+assertFalse(functionObject0.avoidObjectDetection());
+assertEquals("Function", functionObject0.getClassName());
+
+functionObject0.addAsConstructor(nativeContinuation0, nativeContinuation0);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, FunctionObject.JAVA_DOUBLE_TYPE);
+assertEquals(6, FunctionObject.JAVA_OBJECT_TYPE);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(3, FunctionObject.JAVA_BOOLEAN_TYPE);
+assertEquals(2, FunctionObject.JAVA_INT_TYPE);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(1, FunctionObject.JAVA_STRING_TYPE);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, FunctionObject.JAVA_UNSUPPORTED_TYPE);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(5, FunctionObject.JAVA_SCRIPTABLE_TYPE);
+assertEquals(13, methodArray0.length);
+assertEquals("getPrototype", method0.getName());
+assertFalse(method0.isSynthetic());
+assertEquals(1, method0.getModifiers());
+assertEquals("public com.google.javascript.rhino.head.Scriptable com.google.javascript.rhino.head.NativeJavaArray.getPrototype()", method0.toString());
+assertFalse(method0.isBridge());
+assertFalse(method0.isAccessible());
+assertFalse(method0.isVarArgs());
+assertFalse(nativeContinuation0.avoidObjectDetection());
+assertFalse(nativeContinuation0.isSealed());
+assertFalse(nativeContinuation0.isEmpty());
+assertEquals("Continuation", nativeContinuation0.getClassName());
+assertTrue(nativeContinuation0.isExtensible());
+assertFalse(nativeContinuation0.hasPrototypeMap());
+assertEquals("object", nativeContinuation0.getTypeOf());
+assertTrue(functionObject0.isExtensible());
+assertEquals("msg.no.overload", functionObject0.getFunctionName());
+assertFalse(functionObject0.hasPrototypeMap());
+assertEquals("function", functionObject0.getTypeOf());
+assertEquals(0, functionObject0.getArity());
+assertTrue(functionObject0.isEmpty());
+assertFalse(functionObject0.isSealed());
+assertEquals(0, functionObject0.getLength());
+assertFalse(functionObject0.avoidObjectDetection());
+assertEquals("Function", functionObject0.getClassName());
+
+
+[MASTER] 00:19:57.480 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<13> but was:<14>
+[MASTER] 00:19:57.482 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Class<NativeJavaArray> class0 = NativeJavaArray.class;
+Method[] methodArray0 = FunctionObject.getMethodList(class0);
+assertNotNull(methodArray0);
+assertEquals(13, methodArray0.length);
+
+Method method0 = FunctionObject.findSingleMethod(methodArray0, "getDefaultValue");
+assertNotNull(method0);
+assertEquals(13, methodArray0.length);
+assertFalse(method0.isVarArgs());
+assertFalse(method0.isBridge());
+assertFalse(method0.isAccessible());
+assertEquals(1, method0.getModifiers());
+assertFalse(method0.isSynthetic());
+assertEquals("getDefaultValue", method0.getName());
+assertEquals("public java.lang.Object com.google.javascript.rhino.head.NativeJavaArray.getDefaultValue(java.lang.Class)", method0.toString());
+
+NativeContinuation nativeContinuation0 = new NativeContinuation();
+assertNotNull(nativeContinuation0);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertFalse(nativeContinuation0.avoidObjectDetection());
+assertEquals("Continuation", nativeContinuation0.getClassName());
+assertTrue(nativeContinuation0.isEmpty());
+assertFalse(nativeContinuation0.hasPrototypeMap());
+assertEquals("object", nativeContinuation0.getTypeOf());
+assertTrue(nativeContinuation0.isExtensible());
+assertFalse(nativeContinuation0.isSealed());
+
+FunctionObject functionObject0 = new FunctionObject("rrj9!H", method0, nativeContinuation0);
+
+[MASTER] 00:20:07.075 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<13> but was:<14>
+[MASTER] 00:20:07.080 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Class<NativeJavaArray> class0 = NativeJavaArray.class;
+Method[] methodArray0 = FunctionObject.getMethodList(class0);
+assertNotNull(methodArray0);
+assertEquals(13, methodArray0.length);
+
+NativeContinuation nativeContinuation0 = new NativeContinuation();
+assertNotNull(nativeContinuation0);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertTrue(nativeContinuation0.isExtensible());
+assertFalse(nativeContinuation0.hasPrototypeMap());
+assertEquals("object", nativeContinuation0.getTypeOf());
+assertTrue(nativeContinuation0.isEmpty());
+assertFalse(nativeContinuation0.avoidObjectDetection());
+assertFalse(nativeContinuation0.isSealed());
+assertEquals("Continuation", nativeContinuation0.getClassName());
+
+FunctionObject functionObject0 = new FunctionObject("error reporter", methodArray0[1], nativeContinuation0);
+assertNotNull(functionObject0);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, FunctionObject.JAVA_INT_TYPE);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(5, FunctionObject.JAVA_SCRIPTABLE_TYPE);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(6, FunctionObject.JAVA_OBJECT_TYPE);
+assertEquals(0, FunctionObject.JAVA_UNSUPPORTED_TYPE);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(4, FunctionObject.JAVA_DOUBLE_TYPE);
+assertEquals(3, FunctionObject.JAVA_BOOLEAN_TYPE);
+assertEquals(1, FunctionObject.JAVA_STRING_TYPE);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(13, methodArray0.length);
+assertTrue(nativeContinuation0.isExtensible());
+assertFalse(nativeContinuation0.hasPrototypeMap());
+assertEquals("object", nativeContinuation0.getTypeOf());
+assertTrue(nativeContinuation0.isEmpty());
+assertFalse(nativeContinuation0.avoidObjectDetection());
+assertFalse(nativeContinuation0.isSealed());
+assertEquals("Continuation", nativeContinuation0.getClassName());
+assertFalse(functionObject0.isSealed());
+assertFalse(functionObject0.hasPrototypeMap());
+assertEquals(2, functionObject0.getArity());
+assertTrue(functionObject0.isExtensible());
+assertEquals("error reporter", functionObject0.getFunctionName());
+assertEquals(2, functionObject0.getLength());
+assertFalse(functionObject0.avoidObjectDetection());
+assertEquals("Function", functionObject0.getClassName());
+assertEquals("function", functionObject0.getTypeOf());
+assertTrue(functionObject0.isEmpty());
+
+Method method0 = (Method)functionObject0.getMethodOrConstructor();
+assertNotNull(method0);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, FunctionObject.JAVA_INT_TYPE);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(5, FunctionObject.JAVA_SCRIPTABLE_TYPE);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(6, FunctionObject.JAVA_OBJECT_TYPE);
+assertEquals(0, FunctionObject.JAVA_UNSUPPORTED_TYPE);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(4, FunctionObject.JAVA_DOUBLE_TYPE);
+assertEquals(3, FunctionObject.JAVA_BOOLEAN_TYPE);
+assertEquals(1, FunctionObject.JAVA_STRING_TYPE);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(13, methodArray0.length);
+assertTrue(nativeContinuation0.isExtensible());
+assertFalse(nativeContinuation0.hasPrototypeMap());
+assertEquals("object", nativeContinuation0.getTypeOf());
+assertTrue(nativeContinuation0.isEmpty());
+assertFalse(nativeContinuation0.avoidObjectDetection());
+assertFalse(nativeContinuation0.isSealed());
+assertEquals("Continuation", nativeContinuation0.getClassName());
+assertFalse(functionObject0.isSealed());
+assertFalse(functionObject0.hasPrototypeMap());
+assertEquals(2, functionObject0.getArity());
+assertTrue(functionObject0.isExtensible());
+assertEquals("error reporter", functionObject0.getFunctionName());
+assertEquals(2, functionObject0.getLength());
+assertFalse(functionObject0.avoidObjectDetection());
+assertEquals("Function", functionObject0.getClassName());
+assertEquals("function", functionObject0.getTypeOf());
+assertTrue(functionObject0.isEmpty());
+assertFalse(method0.isBridge());
+assertFalse(method0.isSynthetic());
+assertFalse(method0.isVarArgs());
+assertFalse(method0.isAccessible());
+assertEquals("public boolean com.google.javascript.rhino.head.NativeJavaArray.has(java.lang.String,com.google.javascript.rhino.head.Scriptable)", method0.toString());
+assertEquals(1, method0.getModifiers());
+assertEquals("has", method0.getName());
+
+
+[MASTER] 00:20:07.103 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 5
+* Writing tests to file
+* Writing JUnit test case 'FunctionObject_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.FunctionObject-17
+* Done!
+
+* Computation finished

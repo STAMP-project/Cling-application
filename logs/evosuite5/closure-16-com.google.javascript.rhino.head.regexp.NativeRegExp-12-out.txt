@@ -1,0 +1,84 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.regexp.NativeRegExp
+* Starting Client-0
+* Connecting to master process on port 9125
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.regexp.NativeRegExp
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 1450
+* Using seed 1566407353691
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 382 / 1450
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.06620689655172414
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.06896551724137931
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.12
+[MASTER] 19:10:37.791 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.15172413793103448
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.22620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.23517241379310344
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.29724137931034483
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2986206896551724
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.30551724137931036
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.30689655172413793
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.31724137931034485
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.32275862068965516
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3289655172413793
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.34206896551724136
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.34206896551724136
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.34206896551724136
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.34206896551724136
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.34620689655172415
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3510344827586207
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.35172413793103446
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.35724137931034483
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.35724137931034483
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.35724137931034483
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.35724137931034483
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.35724137931034483
+* Search finished after 312s and 286 generations, 88572 statements, best individual has fitness: 932.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.35724137931034483
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 28%
+* Total number of goals: 1450
+* Number of covered goals: 409
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.35724137931034483
+* Generated 55 tests with total length 163
+* Resulting test suite's coverage: 36%
+* Generating assertions
+[MASTER] 19:16:07.153 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.6849833333333334% of time used, but only 12/55 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 2%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.35724137931034483
+* Compiling and checking tests
+[MASTER] 19:16:47.851 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.regexp.NativeRegExp but in com.google.javascript.rhino.head.ScriptRuntime.getRegExpProxy(ScriptRuntime.java:3848): java.lang.NullPointerException
+[MASTER] 19:16:47.852 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeRegExp nativeRegExp0 = new NativeRegExp();
+Context context0 = Context.getCurrentContext();
+nativeRegExp0.call(context0, (Scriptable) null, (Scriptable) null, context0.emptyArgs);
+
+[MASTER] 19:17:10.161 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+* Writing tests to file
+* Writing JUnit test case 'NativeRegExp_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.regexp.NativeRegExp-12
+* Done!
+
+* Computation finished

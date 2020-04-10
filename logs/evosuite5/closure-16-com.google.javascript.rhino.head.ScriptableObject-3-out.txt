@@ -1,0 +1,111 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.ScriptableObject
+* Starting Client-0
+* Connecting to master process on port 15863
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.ScriptableObject
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 916
+* Using seed 1564041116918
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 254 / 916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2336244541484716
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2423580786026201
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.25327510917030566
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3056768558951965
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.38100436681222705
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4017467248908297
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.42358078602620086
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.44759825327510916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48034934497816595
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4890829694323144
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5032751091703057
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.517467248908297
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.517467248908297
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5207423580786026
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.527292576419214
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5316593886462883
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5349344978165939
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5491266375545851
+[MASTER] 09:57:02.096 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5502183406113537
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5524017467248908
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5534934497816594
+* Search finished after 302s and 70 generations, 31926 statements, best individual has fitness: 409.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5534934497816594
+* Minimizing test suite
+[MASTER] 09:58:26.015 [logback-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 56%
+* Total number of goals: 916
+* Number of covered goals: 510
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5534934497816594
+* Generated 121 tests with total length 965
+* Resulting test suite's coverage: 55%
+* Generating assertions
+[MASTER] 09:59:32.550 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.77135% of time used, but only 7/121 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 4%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5534934497816594
+* Compiling and checking tests
+[MASTER] 10:00:38.468 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 10:00:38.469 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ContextFactory contextFactory0 = new ContextFactory();
+Context context0 = new Context(contextFactory0);
+contextFactory0.getApplicationClassLoader();
+NativeJavaTopPackage nativeJavaTopPackage0 = new NativeJavaTopPackage((ClassLoader) null);
+NativeArray nativeArray0 = new NativeArray(context0.emptyArgs);
+ScriptableObject.redefineProperty(nativeJavaTopPackage0, "error reporter", false);
+NativeString nativeString0 = new NativeString("language version");
+Context context1 = Context.getContext();
+context1.removeActivationName("getLength");
+BoundFunction boundFunction0 = new BoundFunction(context0, nativeString0, nativeJavaTopPackage0, nativeJavaTopPackage0, context1.emptyArgs);
+ScriptableObject.getProperty((Scriptable) nativeString0, 13);
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel();
+IdFunctionObject idFunctionObject0 = new IdFunctionObject(boundFunction0, importerTopLevel0, 12, (-835));
+
+[MASTER] 10:00:42.557 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: Property J94> not found.
+[MASTER] 10:00:42.557 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeObject nativeObject0 = new NativeObject();
+ScriptableObject.getProperty((Scriptable) nativeObject0, 8);
+nativeObject0.getAttributes("J94>", (Scriptable) null);
+
+[MASTER] 10:00:43.485 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 10:00:43.486 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeIterator.StopIteration nativeIterator_StopIteration0 = new NativeIterator.StopIteration();
+NativeError nativeError0 = new NativeError();
+Context context0 = Context.enter();
+nativeError0.defineOwnProperties(context0, nativeIterator_StopIteration0);
+nativeIterator_StopIteration0.put("error reporter", (Scriptable) nativeError0, (Object) context0);
+Context context1 = Context.enter();
+NativeArray nativeArray0 = new NativeArray(context1.emptyArgs);
+assertFalse(nativeArray0.hasPrototypeMap());
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 5
+* Writing tests to file
+* Writing JUnit test case 'ScriptableObject_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.ScriptableObject-3
+* Done!
+
+* Computation finished

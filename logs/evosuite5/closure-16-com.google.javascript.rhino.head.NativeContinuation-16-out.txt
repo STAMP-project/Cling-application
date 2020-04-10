@@ -1,0 +1,98 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.NativeContinuation
+* Starting Client-0
+* Connecting to master process on port 4820
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.NativeContinuation
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 29
+* Using seed 1565742117993
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 19 / 29
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5517241379310345
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+[MASTER] 02:22:51.747 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8620689655172413
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9310344827586207
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9310344827586207
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9310344827586207
+* Search finished after 304s and 254 generations, 93673 statements, best individual has fitness: 2.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9310344827586207
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 93%
+* Total number of goals: 29
+* Number of covered goals: 27
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9310344827586207
+* Generated 11 tests with total length 39
+* Resulting test suite's coverage: 93%
+* Generating assertions
+* Resulting test suite's mutation score: 59%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9310344827586207
+* Compiling and checking tests
+[MASTER] 02:28:22.602 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 02:28:22.602 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeContinuation nativeContinuation0 = new NativeContinuation();
+Context context0 = Context.enter();
+NativeObject nativeObject0 = new NativeObject();
+Object object0 = nativeContinuation0.call(context0, nativeObject0, nativeObject0, context0.emptyArgs);
+assertNotNull(object0);
+
+
+[MASTER] 02:28:27.928 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: Direct call is not supported
+[MASTER] 02:28:27.928 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeContinuation nativeContinuation0 = new NativeContinuation();
+Context context0 = new Context();
+nativeContinuation0.construct(context0, nativeContinuation0, context0.emptyArgs);
+
+[MASTER] 02:28:51.749 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: Direct call is not supported
+[MASTER] 02:28:51.751 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeContinuation nativeContinuation0 = new NativeContinuation();
+IdFunctionObject idFunctionObject0 = nativeContinuation0.exportAsJSClass(13, nativeContinuation0, false);
+Context context0 = Context.getCurrentContext();
+NativeArray nativeArray0 = new NativeArray(1);
+nativeContinuation0.execIdCall(idFunctionObject0, context0, nativeContinuation0, nativeArray0, context0.emptyArgs);
+
+[MASTER] 02:29:04.995 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+* Writing tests to file
+* Writing JUnit test case 'NativeContinuation_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.NativeContinuation-16
+* Done!
+
+* Computation finished

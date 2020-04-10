@@ -1,0 +1,157 @@
+[MASTER] 00:21:37.758 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:38.066 [logback-2] ERROR FunctionalMockStatement - Cannot use Mockito on interface com.google.javascript.rhino.head.ast.NodeVisitor due to IAE: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:245)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+[MASTER] 00:21:38.178 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:41.696 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:44.066 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:44.181 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:45.233 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:49.988 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:51.652 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:53.812 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:55.784 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:58.300 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:59.199 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:21:59.809 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:01.602 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:01.981 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:03.631 [logback-2] ERROR FunctionalMockStatement - Cannot use Mockito on java.util.function.Consumer<java.lang.Object> due to IAE: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:245)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+[MASTER] 00:22:04.581 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:05.600 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:06.610 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:08.840 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:08.864 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:09.804 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:11.471 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:12.220 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:13.139 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:16.311 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:16.748 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:17.418 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:18.777 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:18.867 [logback-2] ERROR FunctionalMockStatement - Cannot use Mockito on java.util.function.Consumer<com.google.javascript.rhino.head.Node> due to IAE: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:245)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+[MASTER] 00:22:19.018 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:19.601 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:20.327 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:20.417 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:21.542 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:23.084 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:23.410 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:26.007 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:27.223 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:27.548 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:29.665 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:30.671 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:30.996 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:36.512 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:36.917 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:38.959 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:40.396 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:42.870 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:44.395 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:45.312 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:55.193 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:22:57.391 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:00.583 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:01.912 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:02.180 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:03.841 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:05.060 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:06.358 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:08.199 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:08.319 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:09.303 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:09.799 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:10.244 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:12.449 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:13.006 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:13.224 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:13.482 [logback-2] ERROR FunctionalMockStatement - Cannot use Mockito on interface com.google.javascript.rhino.head.ContextFactory$Listener due to IAE: 
+Misplaced or misused argument matcher detected here:
+
+-> at org.evosuite.testcase.fm.MethodDescriptor.executeMatcher(MethodDescriptor.java:245)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+[MASTER] 00:23:17.527 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:19.842 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:20.814 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:20.927 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:21.538 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:22.394 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:22.507 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:22.697 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]
+[MASTER] 00:23:22.775 [logback-2] ERROR FunctionalMockStatement - IAE on <public abstract boolean com.google.javascript.rhino.head.ast.NodeVisitor.visit(com.google.javascript.rhino.head.ast.AstNode)> when called with [[]]

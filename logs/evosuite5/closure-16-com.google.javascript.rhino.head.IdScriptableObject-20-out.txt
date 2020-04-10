@@ -1,0 +1,211 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.IdScriptableObject
+* Starting Client-0
+* Connecting to master process on port 16534
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.IdScriptableObject
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 251
+* Using seed 1565734432171
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 87 / 251
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.28286852589641437
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2948207171314741
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.398406374501992
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4900398406374502
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5179282868525896
+[MASTER] 00:15:30.385 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5298804780876494
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5338645418326693
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5338645418326693
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5378486055776892
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5617529880478087
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5657370517928287
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+* Search finished after 334s and 49 generations, 16347 statements, best individual has fitness: 107.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+[MASTER] 00:20:03.917 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 34 seconds more than allowed.
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 56%
+* Total number of goals: 251
+* Number of covered goals: 141
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+* Generated 29 tests with total length 101
+* Resulting test suite's coverage: 57%
+* Generating assertions
+[MASTER] 00:21:04.028 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.7285% of time used, but only 4/29 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 3%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5737051792828686
+* Compiling and checking tests
+[MASTER] 00:21:49.060 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 00:21:49.061 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+BaseFunction baseFunction0 = new BaseFunction(importerTopLevel0, importerTopLevel0);
+baseFunction0.setInstanceIdAttributes(8, 1);
+
+[MASTER] 00:21:54.882 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 00:21:54.882 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, false);
+IdFunctionObject idFunctionObject0 = new IdFunctionObject(importerTopLevel0, (Object) null, (-1867), 8);
+IdScriptableObject.incompatibleCallError(idFunctionObject0);
+
+[MASTER] 00:22:06.831 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 00:22:06.834 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isGeneratingDebug());
+assertFalse(context0.isSealed());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(context0.isGeneratingDebugChanged());
+assertTrue(context0.isGeneratingSource());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertFalse(context0.generateObserverCount);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(170, Context.VERSION_1_7);
+assertNotNull(context0);
+
+NativeString nativeString0 = new NativeString("error reporter");
+assertTrue(nativeString0.isExtensible());
+assertEquals("String", nativeString0.getClassName());
+assertEquals("object", nativeString0.getTypeOf());
+assertFalse(nativeString0.hasPrototypeMap());
+assertTrue(nativeString0.isEmpty());
+assertFalse(nativeString0.isSealed());
+assertFalse(nativeString0.avoidObjectDetection());
+assertEquals("error reporter", nativeString0.toString());
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(0, ScriptableObject.EMPTY);
+assertNotNull(nativeString0);
+
+IdFunctionObject idFunctionObject0 = new IdFunctionObject(nativeString0, context0, 0, 100);
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isGeneratingDebug());
+assertFalse(context0.isSealed());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(context0.isGeneratingDebugChanged());
+assertTrue(context0.isGeneratingSource());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertTrue(nativeString0.isExtensible());
+assertEquals("String", nativeString0.getClassName());
+assertEquals("object", nativeString0.getTypeOf());
+assertFalse(nativeString0.hasPrototypeMap());
+assertTrue(nativeString0.isEmpty());
+assertFalse(nativeString0.isSealed());
+assertFalse(nativeString0.avoidObjectDetection());
+assertEquals("error reporter", nativeString0.toString());
+assertEquals(0, idFunctionObject0.methodId());
+assertTrue(idFunctionObject0.isEmpty());
+assertTrue(idFunctionObject0.isExtensible());
+assertEquals("function", idFunctionObject0.getTypeOf());
+assertFalse(idFunctionObject0.hasPrototypeMap());
+assertFalse(idFunctionObject0.isSealed());
+assertEquals("", idFunctionObject0.getFunctionName());
+assertEquals(100, idFunctionObject0.getArity());
+assertEquals(100, idFunctionObject0.getLength());
+assertEquals("Function", idFunctionObject0.getClassName());
+assertFalse(idFunctionObject0.avoidObjectDetection());
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertFalse(context0.generateObserverCount);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertNotNull(idFunctionObject0);
+
+nativeString0.execIdCall(idFunctionObject0, context0, idFunctionObject0, idFunctionObject0, (Object[]) null);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 4
+* Writing tests to file
+* Writing JUnit test case 'IdScriptableObject_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.IdScriptableObject-20
+* Done!
+
+* Computation finished

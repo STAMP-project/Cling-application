@@ -1,0 +1,97 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.FunctionObject
+* Starting Client-0
+* Connecting to master process on port 19625
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.FunctionObject
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 183
+* Using seed 1566102529156
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 59 / 183
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.19672131147540983
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2786885245901639
+[MASTER] 06:29:31.329 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.34972677595628415
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47540983606557374
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47540983606557374
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47540983606557374
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47540983606557374
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47540983606557374
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47540983606557374
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47540983606557374
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47540983606557374
+[MASTER] 06:32:04.719 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for java.lang.reflect.Constructor<com.google.javascript.rhino.head.NativeJavaObject> canUseFunctionalMocks=false, canBeMocked: false
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47540983606557374
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47540983606557374
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48633879781420764
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48633879781420764
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48633879781420764
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48633879781420764
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48633879781420764
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48633879781420764
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6338797814207651
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.644808743169399
+* Search finished after 302s and 232 generations, 53696 statements, best individual has fitness: 65.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.644808743169399
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 64%
+* Total number of goals: 183
+* Number of covered goals: 117
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.644808743169399
+* Generated 30 tests with total length 134
+* Resulting test suite's coverage: 64%
+* Generating assertions
+* Resulting test suite's mutation score: 33%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.644808743169399
+* Compiling and checking tests
+[MASTER] 06:35:28.614 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 06:35:28.615 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Class<NativeCall> class0 = NativeCall.class;
+Method[] methodArray0 = FunctionObject.getMethodList(class0);
+Method method0 = FunctionObject.findSingleMethod(methodArray0, "getClassName");
+Context context0 = new Context();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+FunctionObject functionObject0 = new FunctionObject("error reporter", method0, importerTopLevel0);
+functionObject0.getLength();
+
+[MASTER] 06:36:08.891 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 06:36:08.892 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Class<NativeCall> class0 = NativeCall.class;
+Method[] methodArray0 = FunctionObject.getMethodList(class0);
+Method method0 = FunctionObject.findSingleMethod(methodArray0, "getClassName");
+Context context0 = new Context();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+FunctionObject functionObject0 = new FunctionObject("error reporter", method0, importerTopLevel0);
+Scriptable scriptable0 = functionObject0.createObject(context0, importerTopLevel0);
+functionObject0.addAsConstructor(scriptable0, importerTopLevel0);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing tests to file
+* Writing JUnit test case 'FunctionObject_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.FunctionObject-30
+* Done!
+
+* Computation finished

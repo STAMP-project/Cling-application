@@ -1,0 +1,468 @@
+entry: sources/lang-22/target/classes
+** CP: sources/lang-22/target/classes
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.lang3.builder.ToStringBuilder
+* Starting Client-0
+* Connecting to master process on port 8511
+* Analyzing classpath: 
+  - sources/lang-22/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.builder.ToStringBuilder
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 70
+* Using seed 1566045245457
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 70 / 70
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9428571428571428
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Search finished after 6s and 2 generations, 6334 statements, best individual has fitness: 0.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 70
+* Number of covered goals: 70
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Generated 57 tests with total length 213
+* Resulting test suite's coverage: 100%
+* Generating assertions
+* Resulting test suite's mutation score: 9%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Compiling and checking tests
+[MASTER] 14:34:45.222 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:34:45.224 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringBuilder.getDefaultStyle();
+StringBuffer stringBuffer0 = new StringBuffer();
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0, stringBuffer0);
+toStringBuilder0.append(141.0852F);
+assertEquals(28, stringBuffer0.length());
+
+
+[MASTER] 14:34:47.224 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<496> but was:<490>
+[MASTER] 14:34:47.225 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle@1[arrayContentDetail=true,defaultFullDetail=true,fieldSeparatorAtEnd=false,fieldSeparatorAtStart=false,useClassName=true,useFieldNames=true,useIdentityHashCode=true,useShortClassName=false,arrayEnd=},arraySeparator=,,arrayStart={,contentEnd=],contentStart=[,fieldNameValueSeparator==,fieldSeparator=,,nullText=java.lang.String@3,sizeEndText=>,sizeStartText=<size=,summaryObjectEndText=>,summaryObjectStartText=<]");
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+int[] intArray0 = new int[4];
+toStringBuilder0.append("", intArray0, false);
+assertEquals(496, stringBuffer0.length());
+
+
+[MASTER] 14:34:50.910 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:34:50.911 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringBuilder.getDefaultStyle();
+StringBuffer stringBuffer0 = new StringBuffer();
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0, stringBuffer0);
+boolean[] booleanArray0 = new boolean[1];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append(booleanArray0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:34:52.620 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:34:52.628 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append(false);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:34:53.785 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:34:53.788 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder("");
+double[] doubleArray0 = new double[5];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("[^d]", doubleArray0, false);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:34:54.363 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:34:54.365 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+byte[] byteArray0 = new byte[0];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append((String) null, byteArray0);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:34:57.697 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:34:57.698 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+Class<Object> class0 = Object.class;
+String string0 = ToStringBuilder.reflectionToString("The style must not be null", toStringStyle0, false, (Class<? super String>) class0);
+assertNotNull(string0);
+
+
+[MASTER] 14:34:58.508 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:34:58.513 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder("{},0");
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("{},0", (boolean[]) null, false);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:34:59.487 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:34:59.489 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder("");
+int[] intArray0 = new int[0];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append(intArray0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:00.054 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:00.075 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append((String) null, (short)1);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:00.309 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:00.314 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+boolean[] booleanArray0 = new boolean[2];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("", booleanArray0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:02.297 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:02.297 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringBuilder.getDefaultStyle();
+StringBuffer stringBuffer0 = new StringBuffer();
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0, stringBuffer0);
+long[] longArray0 = new long[0];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append((String) null, longArray0);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:03.565 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:03.566 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder.setDefaultStyle(toStringStyle0);
+
+[MASTER] 14:35:05.244 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:05.258 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.appendToString("v+$fHGY");
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:05.533 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:05.533 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null);
+Object[] objectArray0 = new Object[6];
+objectArray0[4] = (Object) toStringBuilder0;
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append((String) null, objectArray0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:06.824 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test07 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.825 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append(617L);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:06.825 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test29 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.826 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+String string0 = ToStringBuilder.reflectionToString((Object) toStringBuilder0, toStringStyle0, false);
+assertNotNull(string0);
+
+
+[MASTER] 14:35:06.826 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test06 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.827 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = ToStringBuilder.reflectionToString((Object) null);
+assertEquals("<null>", string0);
+
+
+[MASTER] 14:35:06.827 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test28 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.829 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+Object[] objectArray0 = new Object[7];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append(objectArray0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:06.829 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test09 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.830 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null);
+long[] longArray0 = new long[3];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append(longArray0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:06.830 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test08 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.830 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+byte[] byteArray0 = new byte[0];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("kF}ThP@^\"N8;azrcn", byteArray0, false);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:06.831 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test21 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.831 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+long[] longArray0 = new long[1];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("", longArray0, false);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:06.831 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test20 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.832 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder("{},0");
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("{},0", (byte)1);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:06.832 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test42 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.832 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test01 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.833 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+String string0 = toStringBuilder0.build();
+assertNotNull(string0);
+
+
+[MASTER] 14:35:06.833 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test23 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.833 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("VL+\"m6sB6hZb1xp\">^w", (Object[]) null, true);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:06.834 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test00 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.834 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0);
+char[] charArray0 = new char[5];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append(charArray0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:06.834 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test03 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.835 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null);
+ToStringStyle toStringStyle0 = ToStringStyle.SIMPLE_STYLE;
+String string0 = ToStringBuilder.reflectionToString((Object) toStringBuilder0, toStringStyle0);
+assertNotNull(string0);
+
+
+[MASTER] 14:35:06.835 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test25 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.835 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append(object0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:06.836 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test02 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.836 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+byte[] byteArray0 = new byte[0];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append(byteArray0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:06.836 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test24 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.837 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null);
+double[] doubleArray0 = new double[0];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append(doubleArray0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:06.837 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test05 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.837 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+float[] floatArray0 = new float[0];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("", floatArray0, false);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:06.838 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test04 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.838 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("&Yn.vuX>NXQ#", (Object) toStringBuilder0, false);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:06.838 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test26 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.839 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test41 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.839 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test40 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.846 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test18 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.846 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+short[] shortArray0 = new short[3];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("", shortArray0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:06.848 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test39 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.848 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test19 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.849 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder("org.apache.commons.lang3.builder.ToStringBuilder");
+float[] floatArray0 = new float[9];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append(floatArray0);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:06.850 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test10 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.850 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder("org.apache.commons.lang3.builder.ToStringBuilder");
+double[] doubleArray0 = new double[1];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("", doubleArray0);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:06.851 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test12 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.852 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("org.apache.commons.lang3.builder.ToStringBuilder", '(');
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:06.852 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test34 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.853 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test11 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.853 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("<null>,-1.0,{0,0,1},{java.lang.Object@32d4677c,<null>,java.lang.Object@7339b48b,0,<null>-1.0,{0,0,1},{java.lang.Object@32d4677c,<null>,java.lang.Object@7339b48b,0,<null>,<null>},{java.lang.Object@32d4677c,<null>,java.lang.Object@7339b48b,0,<null>-1.0,{0,0,1},{java.lang.Object@32d4677c,<null>,java.lang.Object@7339b48b,0,<null>-1.0,{0,0,1},{java.lang.Object@32d4677c,<null>,java.lang.Object@7339b48b,0,<null>,<null>},{java.lang.Object@32d4677c,<null>,java.lang.Object@7339b48b,0,<null>,<null>},,org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle@4", (char[]) null);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:06.854 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test14 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.855 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle", 0L);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:06.856 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test36 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.856 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test35 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.857 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test16 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.857 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder.setDefaultStyle((ToStringStyle) null);
+
+[MASTER] 14:35:06.857 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test38 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.858 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test15 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:06.858 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append((byte)0);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:07.708 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test17 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:07.715 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append((-1.0));
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:07.717 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test05 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:07.718 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder("{},0");
+float[] floatArray0 = new float[3];
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append((String) null, floatArray0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:07.719 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test16 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:07.719 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test04 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:07.720 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringBuilder.getDefaultStyle();
+StringBuffer stringBuffer0 = new StringBuffer();
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0, stringBuffer0);
+char[] charArray0 = new char[0];
+toStringBuilder0.append((String) null, charArray0, true);
+assertEquals(22, stringBuffer0.length());
+
+
+[MASTER] 14:35:07.721 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test15 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:07.722 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test13 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:07.723 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append("g<TJU'^!", 0);
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+[MASTER] 14:35:07.724 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test01 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:07.724 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.appendSuper("org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle");
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:07.725 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test12 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:07.726 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.DEFAULT_STYLE;
+StringBuffer stringBuffer0 = new StringBuffer((CharSequence) "org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle@1[arrayContentDetail=true,defaultFullDetail=true,fieldSeparatorAtEnd=false,fieldSeparatorAtStart=false,useClassName=true,useFieldNames=true,useIdentityHashCode=true,useShortClassName=false,arrayEnd=},arraySeparator=,,arrayStart={,contentEnd=],contentStart=[,fieldNameValueSeparator==,fieldSeparator=,,nullText=java.lang.String@3,sizeEndText=>,sizeStartText=<size=,summaryObjectEndText=>,summaryObjectStartText=<]");
+ToStringBuilder toStringBuilder0 = new ToStringBuilder((Object) null, toStringStyle0, stringBuffer0);
+int[] intArray0 = new int[4];
+toStringBuilder0.append("", intArray0, false);
+//  // Unstable assertion: assertEquals(496, stringBuffer0.length());
+
+
+[MASTER] 14:35:07.728 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test00 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:07.729 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringBuilder toStringBuilder0 = new ToStringBuilder("{},0");
+ToStringBuilder toStringBuilder1 = toStringBuilder0.appendToString((String) null);
+assertSame(toStringBuilder1, toStringBuilder0);
+
+
+[MASTER] 14:35:07.730 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test11 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:07.730 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test10 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 14:35:07.730 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+ToStringStyle toStringStyle0 = ToStringStyle.NO_FIELD_NAMES_STYLE;
+ToStringBuilder toStringBuilder0 = new ToStringBuilder(object0, toStringStyle0);
+ToStringBuilder toStringBuilder1 = toStringBuilder0.append((short) (-4986));
+assertSame(toStringBuilder0, toStringBuilder1);
+
+
+* Writing tests to file
+* Writing JUnit test case 'ToStringBuilder_ESTest' to results/evosuite5/lang-22-org.apache.commons.lang3.builder.ToStringBuilder-26
+* Done!
+
+* Computation finished

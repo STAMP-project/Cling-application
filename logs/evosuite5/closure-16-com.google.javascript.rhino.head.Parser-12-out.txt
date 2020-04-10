@@ -1,0 +1,82 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.Parser
+* Starting Client-0
+* Connecting to master process on port 16896
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.Parser
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 1289
+* Using seed 1565734923809
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 597 / 1289
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.186966640806827
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2629945694336695
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.30023273855702093
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.31497284716834756
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.33902249806051205
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3529868114817688
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3638479441427463
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3638479441427463
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.36850271528316525
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3770364623739333
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.37936384794414274
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3847944142746315
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.38712179984484096
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.39100077579519005
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.39410395655546937
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.39720713731574864
+[MASTER] 00:26:05.962 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.40806826997672613
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.40884406516679594
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.41117145073700545
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4197051978277735
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4197051978277735
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.430566330488751
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4313421256788208
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4352211016291699
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4383242823894492
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4383242823894492
+* Search finished after 304s and 101 generations, 50633 statements, best individual has fitness: 724.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4383242823894492
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 44%
+* Total number of goals: 1289
+* Number of covered goals: 569
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4383242823894492
+* Generated 75 tests with total length 270
+* Resulting test suite's coverage: 44%
+* Generating assertions
+[MASTER] 00:29:39.239 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.7617166666666667% of time used, but only 6/75 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 1%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4383242823894492
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing tests to file
+[MASTER] 00:30:47.564 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+* Writing JUnit test case 'Parser_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.Parser-12
+* Done!
+
+* Computation finished

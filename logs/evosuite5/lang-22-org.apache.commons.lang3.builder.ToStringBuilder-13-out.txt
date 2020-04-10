@@ -1,0 +1,46 @@
+entry: sources/lang-22/target/classes
+** CP: sources/lang-22/target/classes
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.lang3.builder.ToStringBuilder
+* Starting Client-0
+* Connecting to master process on port 21500
+* Analyzing classpath: 
+  - sources/lang-22/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.builder.ToStringBuilder
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 70
+* Using seed 1565712447760
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 70 / 70
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Search finished after 7s and 0 generations, 1601 statements, best individual has fitness: 0.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 70
+* Number of covered goals: 70
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Generated 57 tests with total length 186
+* Resulting test suite's coverage: 100%
+* Generating assertions
+* Resulting test suite's mutation score: 9%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Compiling and checking tests
+[MASTER] 18:08:53.861 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<...,(,Q,?,i,T,{,9,],s},[value={G,(,Q,?,i,T,{,9,],s},hash=-2047026642]hash=-2047026642,value={G,(,Q,?,i,T,{,9,],s},hash=-2047026642]]]> but was:<...,(,Q,?,i,T,{,9,],s},[hash=-2047026642]]>
+[MASTER] 18:08:53.862 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ToStringStyle toStringStyle0 = ToStringStyle.SHORT_PREFIX_STYLE;
+Class<Object> class0 = Object.class;
+String string0 = ToStringBuilder.reflectionToString((Object) "G(Q?iT{9]s", toStringStyle0, true, (Class<? super Object>) class0);
+assertEquals("String[value={G,(,Q,?,i,T,{,9,],s},value={G,(,Q,?,i,T,{,9,],s},hash=-2047026642]hash=-2047026642,value={G,(,Q,?,i,T,{,9,],s},hash=-2047026642]]", string0);
+
+
+* Writing tests to file
+* Writing JUnit test case 'ToStringBuilder_ESTest' to results/evosuite5/lang-22-org.apache.commons.lang3.builder.ToStringBuilder-13
+* Done!
+
+* Computation finished

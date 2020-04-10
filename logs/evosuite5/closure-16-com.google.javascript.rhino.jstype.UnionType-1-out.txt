@@ -1,0 +1,90 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.jstype.UnionType
+* Starting Client-0
+* Connecting to master process on port 4217
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.jstype.UnionType
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 177
+* Using seed 1564034779383
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 73 / 177
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.13559322033898305
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.751412429378531
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8926553672316384
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.96045197740113
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.96045197740113
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.96045197740113
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.96045197740113
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.96045197740113
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9661016949152542
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+* Search finished after 301s and 162 generations, 132105 statements, best individual has fitness: 5.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 97%
+* Total number of goals: 177
+* Number of covered goals: 172
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+* Generated 63 tests with total length 459
+* Resulting test suite's coverage: 97%
+* Generating assertions
+* Resulting test suite's mutation score: 50%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9717514124293786
+* Compiling and checking tests
+[MASTER] 08:12:27.615 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 08:12:27.617 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ SimpleErrorReporter simpleErrorReporter0 = new SimpleErrorReporter();
+JSTypeRegistry jSTypeRegistry0 = new JSTypeRegistry(simpleErrorReporter0, true);
+LinkedList<JSType> linkedList0 = new LinkedList<JSType>();
+UnionType unionType0 = new UnionType(jSTypeRegistry0, linkedList0);
+linkedList0.add((JSType) unionType0);
+unionType0.matchConstraint((ObjectType) null);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing tests to file
+* Writing JUnit test case 'UnionType_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.jstype.UnionType-1
+* Done!
+
+* Computation finished

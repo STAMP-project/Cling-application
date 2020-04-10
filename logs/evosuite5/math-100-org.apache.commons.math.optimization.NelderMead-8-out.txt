@@ -1,0 +1,47 @@
+entry: sources/math-100/target/classes
+** CP: sources/math-100/target/classes
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.math.optimization.NelderMead
+* Starting Client-0
+* Connecting to master process on port 5692
+* Analyzing classpath: 
+  - sources/math-100/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.math.optimization.NelderMead
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 34
+* Using seed 1566335210924
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 6 / 34
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6176470588235294
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9117647058823529
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9117647058823529
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9117647058823529
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9411764705882353
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9411764705882353
+* Search finished after 322s and 8 generations, 9967 statements, best individual has fitness: 2.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9411764705882353
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 94%
+* Total number of goals: 34
+* Number of covered goals: 32
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9411764705882353
+* Generated 5 tests with total length 23
+* Resulting test suite's coverage: 94%
+* Generating assertions
+* Resulting test suite's mutation score: 22%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9411764705882353
+* Compiling and checking tests
+* Permissions denied during test execution: 
+[MASTER] 23:14:01.929 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+  - java.lang.RuntimePermission: 
+[MASTER] 23:14:01.930 [logback-1] WARN  TimeController - Phase JUNIT_CHECK lasted too long, 32 seconds more than allowed.
+         writeFileDescriptor: 1
+* Writing tests to file
+* Writing JUnit test case 'NelderMead_ESTest' to results/evosuite5/math-100-org.apache.commons.math.optimization.NelderMead-8
+* Done!
+
+* Computation finished

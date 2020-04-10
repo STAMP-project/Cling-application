@@ -1,0 +1,88 @@
+entry: sources/time-14/build/classes
+entry: defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+** CP: sources/time-14/build/classes:defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.joda.time.DateTime
+* Starting Client-0
+* Connecting to master process on port 7500
+* Analyzing classpath: 
+  - sources/time-14/build/classes
+  - defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* Finished analyzing classpath
+* Generating tests for class org.joda.time.DateTime
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 166
+* Using seed 1566092249260
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 156 / 166
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3132530120481928
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.963855421686747
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+* Search finished after 301s and 1443 generations, 363482 statements, best individual has fitness: 5.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 97%
+* Total number of goals: 166
+* Number of covered goals: 161
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+* Generated 125 tests with total length 285
+* Resulting test suite's coverage: 97%
+* Generating assertions
+* Resulting test suite's mutation score: 54%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9698795180722891
+* Compiling and checking tests
+[MASTER] 03:43:27.378 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected not same
+[MASTER] 03:43:27.379 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DateTime dateTime0 = DateTime.now();
+DateTimeZone dateTimeZone0 = DateTimeZone.getDefault();
+DateTime dateTime1 = dateTime0.toDateTime(dateTimeZone0);
+assertNotSame(dateTime1, dateTime0);
+
+
+[MASTER] 03:43:29.824 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected not same
+[MASTER] 03:43:29.825 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DateTime dateTime0 = new DateTime();
+DateTime dateTime1 = dateTime0.withZoneRetainFields((DateTimeZone) null);
+assertEquals(1392409281320L, dateTime1.getMillis());
+assertNotSame(dateTime1, dateTime0);
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing tests to file
+* Writing JUnit test case 'DateTime_ESTest' to results/evosuite5/time-14-org.joda.time.DateTime-21
+* Done!
+
+* Computation finished

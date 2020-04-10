@@ -1,0 +1,132 @@
+entry: sources/time-14/build/classes
+entry: defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+** CP: sources/time-14/build/classes:defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.joda.time.format.DateTimeFormat
+* Starting Client-0
+* Connecting to master process on port 3608
+* Analyzing classpath: 
+  - sources/time-14/build/classes
+  - defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* Finished analyzing classpath
+* Generating tests for class org.joda.time.format.DateTimeFormat
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 434
+* Using seed 1565728968767
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 64 / 434
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3640552995391705
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7004608294930875
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7442396313364056
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7672811059907834
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7857142857142857
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7926267281105991
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.7972350230414746
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8064516129032258
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8202764976958525
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8248847926267281
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8387096774193549
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.847926267281106
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.847926267281106
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.847926267281106
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8502304147465438
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8525345622119815
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8525345622119815
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8594470046082949
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8617511520737328
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8617511520737328
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8663594470046083
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8663594470046083
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8663594470046083
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8824884792626728
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8847926267281107
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8847926267281107
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8847926267281107
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8847926267281107
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8894009216589862
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8894009216589862
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8917050691244239
+* Search finished after 301s and 1068 generations, 154310 statements, best individual has fitness: 47.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8917050691244239
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 85%
+* Total number of goals: 434
+* Number of covered goals: 369
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8917050691244239
+* Generated 75 tests with total length 91
+* Resulting test suite's coverage: 89%
+* Generating assertions
+[MASTER] 22:49:00.674 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.6733333333333333% of time used, but only 6/75 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 8%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8917050691244239
+* Compiling and checking tests
+[MASTER] 22:49:28.636 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<[12:59:59 AM]> but was:<[January 1, 1970 12:59:59 AM +01:00]>
+[MASTER] 22:49:28.637 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DateTimeFormatter dateTimeFormatter0 = DateTimeFormat.longDateTime();
+String string0 = dateTimeFormatter0.print((-60L));
+assertEquals("12:59:59 AM", string0);
+
+
+[MASTER] 22:49:41.327 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<1[:00:02 AM +01:0]0> but was:<1[/1/7]0>
+[MASTER] 22:49:41.328 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DateTimeFormatter dateTimeFormatter0 = DateTimeFormat.shortDate();
+assertNotNull(dateTimeFormatter0);
+assertEquals(2000, dateTimeFormatter0.getDefaultYear());
+assertNull(dateTimeFormatter0.getPivotYear());
+assertTrue(dateTimeFormatter0.isPrinter());
+assertTrue(dateTimeFormatter0.isParser());
+assertFalse(dateTimeFormatter0.isOffsetParsed());
+
+StringWriter stringWriter0 = new StringWriter(2014);
+assertNotNull(stringWriter0);
+assertEquals("", stringWriter0.toString());
+
+dateTimeFormatter0.printTo((Writer) stringWriter0, (long) 2014);
+assertEquals(2000, dateTimeFormatter0.getDefaultYear());
+assertNull(dateTimeFormatter0.getPivotYear());
+assertTrue(dateTimeFormatter0.isPrinter());
+assertTrue(dateTimeFormatter0.isParser());
+assertFalse(dateTimeFormatter0.isOffsetParsed());
+assertEquals("1:00:02 AM +01:00", stringWriter0.toString());
+
+
+[MASTER] 22:49:54.514 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<[HH:mm' Uhr 'z]> but was:<[EEEE, d. MMMM yyyy]>
+[MASTER] 22:49:54.515 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Locale locale0 = Locale.GERMAN;
+assertNotNull(locale0);
+assertEquals("", locale0.getVariant());
+assertEquals("", locale0.getISO3Country());
+assertEquals("de", locale0.toString());
+assertEquals("de", locale0.getLanguage());
+assertEquals("deu", locale0.getISO3Language());
+assertEquals("", locale0.getCountry());
+
+String string0 = DateTimeFormat.patternForStyle("F-", locale0);
+assertEquals("HH:mm' Uhr 'z", string0);
+assertNotNull(string0);
+assertEquals("", locale0.getVariant());
+assertEquals("", locale0.getISO3Country());
+assertEquals("de", locale0.toString());
+assertEquals("de", locale0.getLanguage());
+assertEquals("deu", locale0.getISO3Language());
+assertEquals("", locale0.getCountry());
+
+
+[MASTER] 22:49:56.274 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<[h:mm:ss a z]> but was:<[EEEE, MMMM d, yyyy]>
+[MASTER] 22:49:56.275 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = DateTimeFormat.patternForStyle("F-", (Locale) null);
+assertEquals("h:mm:ss a z", string0);
+assertNotNull(string0);
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 8
+* Writing tests to file
+* Writing JUnit test case 'DateTimeFormat_ESTest' to results/evosuite5/time-14-org.joda.time.format.DateTimeFormat-15
+* Done!
+
+* Computation finished

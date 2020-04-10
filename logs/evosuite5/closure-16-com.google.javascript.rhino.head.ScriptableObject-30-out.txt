@@ -1,0 +1,821 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.ScriptableObject
+* Starting Client-0
+* Connecting to master process on port 8639
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.ScriptableObject
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 916
+* Using seed 1566111966093
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 254 / 916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.20305676855895197
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.2925764192139738
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3624454148471616
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.388646288209607
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4028384279475983
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.42139737991266374
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.43122270742358076
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.47161572052401746
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4890829694323144
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.490174672489083
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.49890829694323147
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5054585152838428
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5054585152838428
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5120087336244541
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5185589519650655
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5207423580786026
+[MASTER] 09:09:58.456 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5218340611353712
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5294759825327511
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5534934497816594
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5556768558951966
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5567685589519651
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5589519650655022
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5644104803493449
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5687772925764192
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5687772925764192
+* Search finished after 303s and 129 generations, 44791 statements, best individual has fitness: 395.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5687772925764192
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 57%
+* Total number of goals: 916
+* Number of covered goals: 522
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5687772925764192
+* Generated 94 tests with total length 316
+* Resulting test suite's coverage: 57%
+* Generating assertions
+[MASTER] 09:13:37.010 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.8703833333333333% of time used, but only 11/94 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 7%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5687772925764192
+* Compiling and checking tests
+[MASTER] 09:14:06.112 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 09:14:06.113 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+importerTopLevel0.hasInstance((Scriptable) null);
+
+[MASTER] 09:14:10.984 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 09:14:10.984 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeJavaPackage nativeJavaPackage0 = new NativeJavaPackage("n02");
+Class<FieldAndMethods> class0 = FieldAndMethods.class;
+ScriptableObject.defineClass((Scriptable) nativeJavaPackage0, class0, false);
+
+[MASTER] 09:14:13.666 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 09:14:13.667 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, true);
+NativeCall nativeCall0 = new NativeCall();
+nativeCall0.defineConst("msg.varargs.ctor", importerTopLevel0);
+assertTrue(nativeCall0.isExtensible());
+
+
+[MASTER] 09:14:15.966 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: Property -1808118735 not found.
+[MASTER] 09:14:15.967 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeIterator.StopIteration nativeIterator_StopIteration0 = new NativeIterator.StopIteration();
+TopLevel topLevel0 = new TopLevel();
+nativeIterator_StopIteration0.getAttributes((-1808118735), (Scriptable) topLevel0);
+
+[MASTER] 09:14:19.113 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 09:14:19.113 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeJavaPackage nativeJavaPackage0 = new NativeJavaPackage("|_#");
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals("object", nativeJavaPackage0.getTypeOf());
+assertEquals("JavaPackage", nativeJavaPackage0.getClassName());
+assertFalse(nativeJavaPackage0.isSealed());
+assertFalse(nativeJavaPackage0.avoidObjectDetection());
+assertTrue(nativeJavaPackage0.isEmpty());
+assertTrue(nativeJavaPackage0.isExtensible());
+assertNotNull(nativeJavaPackage0);
+
+Class<NativeArray> class0 = NativeArray.class;
+ScriptableObject.defineClass((Scriptable) nativeJavaPackage0, class0);
+
+[MASTER] 09:14:20.856 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 09:14:20.857 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertFalse(context0.generateObserverCount);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getOptimizationLevel());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isSealed());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(0, context0.getLanguageVersion());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertTrue(context0.isGeneratingSource());
+assertNotNull(context0);
+
+NativeObject nativeObject0 = new NativeObject();
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(13, ScriptableObject.CONST);
+assertFalse(nativeObject0.isSealed());
+assertEquals("object", nativeObject0.getTypeOf());
+assertFalse(nativeObject0.hasPrototypeMap());
+assertTrue(nativeObject0.isEmpty());
+assertEquals("Object", nativeObject0.getClassName());
+assertTrue(nativeObject0.isExtensible());
+assertFalse(nativeObject0.avoidObjectDetection());
+assertNotNull(nativeObject0);
+
+ScriptableObject.callMethod((Scriptable) nativeObject0, "{;cio1&pj29f]", context0.emptyArgs);
+
+[MASTER] 09:14:22.230 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 09:14:22.231 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeJavaPackage nativeJavaPackage0 = new NativeJavaPackage("n02");
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertFalse(nativeJavaPackage0.avoidObjectDetection());
+assertTrue(nativeJavaPackage0.isExtensible());
+assertTrue(nativeJavaPackage0.isEmpty());
+assertEquals("object", nativeJavaPackage0.getTypeOf());
+assertFalse(nativeJavaPackage0.isSealed());
+assertEquals("JavaPackage", nativeJavaPackage0.getClassName());
+assertNotNull(nativeJavaPackage0);
+
+nativeJavaPackage0.setAttributes(1155, (Scriptable) null, (-3263));
+
+[MASTER] 09:14:23.452 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 09:14:23.454 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertFalse(context0.generateObserverCount);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isSealed());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getOptimizationLevel());
+assertTrue(context0.isGeneratingSource());
+assertNotNull(context0);
+
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, true);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertFalse(context0.generateObserverCount);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isSealed());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getOptimizationLevel());
+assertTrue(context0.isGeneratingSource());
+assertFalse(importerTopLevel0.isSealed());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertTrue(importerTopLevel0.hasPrototypeMap());
+assertFalse(importerTopLevel0.isEmpty());
+assertTrue(importerTopLevel0.isExtensible());
+assertEquals("global", importerTopLevel0.getClassName());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertNotNull(importerTopLevel0);
+
+NativeArray nativeArray0 = (NativeArray)ScriptableObject.getArrayPrototype(importerTopLevel0);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertFalse(context0.generateObserverCount);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isSealed());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getOptimizationLevel());
+assertTrue(context0.isGeneratingSource());
+assertFalse(importerTopLevel0.isSealed());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertTrue(importerTopLevel0.hasPrototypeMap());
+assertFalse(importerTopLevel0.isEmpty());
+assertTrue(importerTopLevel0.isExtensible());
+assertEquals("global", importerTopLevel0.getClassName());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertTrue(nativeArray0.isEmpty());
+assertEquals("object", nativeArray0.getTypeOf());
+assertTrue(nativeArray0.isSealed());
+assertEquals(0L, nativeArray0.getLength());
+assertTrue(nativeArray0.isExtensible());
+assertEquals(0L, nativeArray0.jsGet_length());
+assertEquals("Array", nativeArray0.getClassName());
+assertTrue(nativeArray0.hasPrototypeMap());
+assertFalse(nativeArray0.avoidObjectDetection());
+assertNotNull(nativeArray0);
+
+
+[MASTER] 09:14:24.948 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.Context.reportRuntimeError(Context.java:947): org.evosuite.runtime.mock.java.lang.MockThrowable: Property put not found.
+[MASTER] 09:14:24.949 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeIterator.StopIteration nativeIterator_StopIteration0 = new NativeIterator.StopIteration();
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals("StopIteration", nativeIterator_StopIteration0.getClassName());
+assertTrue(nativeIterator_StopIteration0.isExtensible());
+assertTrue(nativeIterator_StopIteration0.isEmpty());
+assertFalse(nativeIterator_StopIteration0.isSealed());
+assertFalse(nativeIterator_StopIteration0.hasPrototypeMap());
+assertEquals("object", nativeIterator_StopIteration0.getTypeOf());
+assertFalse(nativeIterator_StopIteration0.avoidObjectDetection());
+assertNotNull(nativeIterator_StopIteration0);
+
+NativeJavaClass nativeJavaClass0 = new NativeJavaClass();
+assertEquals("JavaClass", nativeJavaClass0.getClassName());
+assertNotNull(nativeJavaClass0);
+
+nativeIterator_StopIteration0.getAttributes("put", (Scriptable) nativeJavaClass0);
+
+[MASTER] 09:14:26.499 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 09:14:26.501 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertFalse(context0.generateObserverCount);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertTrue(context0.isGeneratingSource());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(0, context0.getLanguageVersion());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isSealed());
+assertEquals(0, context0.getOptimizationLevel());
+assertNotNull(context0);
+
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertFalse(context0.generateObserverCount);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertTrue(context0.isGeneratingSource());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(0, context0.getLanguageVersion());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isSealed());
+assertEquals(0, context0.getOptimizationLevel());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertTrue(importerTopLevel0.isExtensible());
+assertFalse(importerTopLevel0.isEmpty());
+assertTrue(importerTopLevel0.hasPrototypeMap());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertEquals("global", importerTopLevel0.getClassName());
+assertFalse(importerTopLevel0.isSealed());
+assertNotNull(importerTopLevel0);
+
+ImporterTopLevel importerTopLevel1 = (ImporterTopLevel)context0.initStandardObjects((ScriptableObject) importerTopLevel0, false);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertFalse(context0.generateObserverCount);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertSame(importerTopLevel0, importerTopLevel1);
+assertSame(importerTopLevel1, importerTopLevel0);
+assertTrue(context0.isGeneratingSource());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(0, context0.getLanguageVersion());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertFalse(context0.isSealed());
+assertEquals(0, context0.getOptimizationLevel());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertTrue(importerTopLevel0.isExtensible());
+assertFalse(importerTopLevel0.isEmpty());
+assertTrue(importerTopLevel0.hasPrototypeMap());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertEquals("global", importerTopLevel0.getClassName());
+assertFalse(importerTopLevel0.isSealed());
+assertTrue(importerTopLevel1.hasPrototypeMap());
+assertFalse(importerTopLevel1.isEmpty());
+assertFalse(importerTopLevel1.avoidObjectDetection());
+assertEquals("global", importerTopLevel1.getClassName());
+assertFalse(importerTopLevel1.isSealed());
+assertEquals("object", importerTopLevel1.getTypeOf());
+assertTrue(importerTopLevel1.isExtensible());
+assertNotNull(importerTopLevel1);
+
+
+[MASTER] 09:14:33.237 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 09:14:33.241 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(110, Context.VERSION_1_1);
+assertFalse(context0.generateObserverCount);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(170, Context.VERSION_1_7);
+assertFalse(context0.isSealed());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(0, context0.getLanguageVersion());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebugChanged());
+assertNotNull(context0);
+
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0, true);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(110, Context.VERSION_1_1);
+assertFalse(context0.generateObserverCount);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertFalse(context0.isSealed());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(0, context0.getLanguageVersion());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertEquals("global", importerTopLevel0.getClassName());
+assertTrue(importerTopLevel0.isExtensible());
+assertTrue(importerTopLevel0.hasPrototypeMap());
+assertFalse(importerTopLevel0.isSealed());
+assertFalse(importerTopLevel0.isEmpty());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertNotNull(importerTopLevel0);
+
+boolean boolean0 = ScriptableObject.hasProperty((Scriptable) importerTopLevel0, 1729365000);
+assertFalse(boolean0);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(110, Context.VERSION_1_1);
+assertFalse(context0.generateObserverCount);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertFalse(context0.isSealed());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(0, context0.getLanguageVersion());
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertEquals("global", importerTopLevel0.getClassName());
+assertTrue(importerTopLevel0.isExtensible());
+assertTrue(importerTopLevel0.hasPrototypeMap());
+assertFalse(importerTopLevel0.isSealed());
+assertFalse(importerTopLevel0.isEmpty());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+
+
+[MASTER] 09:14:34.905 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 09:14:34.909 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertFalse(context0.generateObserverCount);
+assertEquals(100, Context.VERSION_1_0);
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isSealed());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertNotNull(context0);
+
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertFalse(context0.generateObserverCount);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isSealed());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertTrue(importerTopLevel0.hasPrototypeMap());
+assertEquals("global", importerTopLevel0.getClassName());
+assertFalse(importerTopLevel0.isEmpty());
+assertFalse(importerTopLevel0.isSealed());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertTrue(importerTopLevel0.isExtensible());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertNotNull(importerTopLevel0);
+
+Float float0 = new Float((double) 2);
+assertEquals(2.0F, (float)float0, 0.01F);
+assertNotNull(float0);
+
+Object object0 = importerTopLevel0.get((Object) float0);
+assertEquals(2, Context.FEATURE_MEMBER_EXPR_AS_FUNCTION_NAME);
+assertEquals(120, Context.VERSION_1_2);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPRTIES);
+assertEquals(5, Context.FEATURE_PARENT_PROTO_PROPERTIES);
+assertEquals(3, Context.FEATURE_RESERVED_KEYWORD_AS_IDENTIFIER);
+assertEquals(110, Context.VERSION_1_1);
+assertEquals(12, Context.FEATURE_WARNING_AS_ERROR);
+assertEquals(160, Context.VERSION_1_6);
+assertEquals(10, Context.FEATURE_LOCATION_INFORMATION_IN_ERROR);
+assertEquals(4, Context.FEATURE_TO_STRING_AS_SOURCE);
+assertEquals(180, Context.VERSION_1_8);
+assertEquals(7, Context.FEATURE_DYNAMIC_SCOPE);
+assertEquals(140, Context.VERSION_1_4);
+assertEquals(6, Context.FEATURE_E4X);
+assertEquals(170, Context.VERSION_1_7);
+assertEquals(13, Context.FEATURE_ENHANCED_JAVA_ACCESS);
+assertEquals(130, Context.VERSION_1_3);
+assertEquals((-1), Context.VERSION_UNKNOWN);
+assertEquals(8, Context.FEATURE_STRICT_VARS);
+assertEquals(9, Context.FEATURE_STRICT_EVAL);
+assertEquals(1, Context.FEATURE_NON_ECMA_GET_YEAR);
+assertEquals(0, Context.VERSION_DEFAULT);
+assertEquals(150, Context.VERSION_1_5);
+assertEquals(11, Context.FEATURE_STRICT_MODE);
+assertFalse(context0.generateObserverCount);
+assertEquals(100, Context.VERSION_1_0);
+assertEquals(0, ScriptableObject.EMPTY);
+assertEquals(2, ScriptableObject.DONTENUM);
+assertEquals(8, ScriptableObject.UNINITIALIZED_CONST);
+assertEquals(1, ScriptableObject.READONLY);
+assertEquals(13, ScriptableObject.CONST);
+assertEquals(4, ScriptableObject.PERMANENT);
+assertTrue(context0.isGeneratingSource());
+assertEquals(0, context0.getInstructionObserverThreshold());
+assertFalse(context0.isSealed());
+assertEquals(0, context0.getLanguageVersion());
+assertFalse(context0.isGeneratingDebug());
+assertEquals(0, context0.getOptimizationLevel());
+assertFalse(context0.isGeneratingDebugChanged());
+assertEquals(Integer.MAX_VALUE, context0.getMaximumInterpreterStackDepth());
+assertTrue(importerTopLevel0.hasPrototypeMap());
+assertEquals("global", importerTopLevel0.getClassName());
+assertFalse(importerTopLevel0.isEmpty());
+assertFalse(importerTopLevel0.isSealed());
+assertFalse(importerTopLevel0.avoidObjectDetection());
+assertTrue(importerTopLevel0.isExtensible());
+assertEquals("object", importerTopLevel0.getTypeOf());
+assertNull(object0);
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 6
+* Writing tests to file
+* Writing JUnit test case 'ScriptableObject_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.ScriptableObject-30
+* Done!
+
+* Computation finished

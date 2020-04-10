@@ -1,0 +1,66 @@
+entry: sources/time-14/build/classes
+entry: defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+** CP: sources/time-14/build/classes:defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.joda.time.format.DateTimeFormat$StyleFormatter
+* Starting Client-0
+* Connecting to master process on port 8622
+* Analyzing classpath: 
+  - sources/time-14/build/classes
+  - defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
+* Finished analyzing classpath
+* Generating tests for class org.joda.time.format.DateTimeFormat$StyleFormatter
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 22
+* Using seed 1566096642260
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 22 / 22
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8181818181818182
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.8636363636363636
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9090909090909091
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.9545454545454546
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Search finished after 38s and 43 generations, 26589 statements, best individual has fitness: 0.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Generated 8 tests with total length 38
+* Resulting test suite's coverage: 100%
+* Generating assertions
+* Resulting test suite's mutation score: 32%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 1.0
+* Compiling and checking tests
+[MASTER] 04:51:54.152 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.IllegalArgumentException: Illegal date style -1
+[MASTER] 04:51:54.152 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DateTimeFormat.StyleFormatter dateTimeFormat_StyleFormatter0 = new DateTimeFormat.StyleFormatter((-1), 0, 0);
+Locale locale0 = Locale.UK;
+StringBuffer stringBuffer0 = new StringBuffer();
+MockGregorianCalendar mockGregorianCalendar0 = new MockGregorianCalendar((-1), 10209375, 492, 0, 492);
+MonthDay monthDay0 = MonthDay.fromCalendarFields(mockGregorianCalendar0);
+dateTimeFormat_StyleFormatter0.printTo(stringBuffer0, (ReadablePartial) monthDay0, locale0);
+
+[MASTER] 04:51:55.821 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.IllegalArgumentException: Illegal date style 3978
+[MASTER] 04:51:55.822 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DateTimeFormat.StyleFormatter dateTimeFormat_StyleFormatter0 = new DateTimeFormat.StyleFormatter(3978, 2, 2);
+MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("org.joda.time.field.DecoratedDateTimeField");
+MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0, true);
+OutputStreamWriter outputStreamWriter0 = new OutputStreamWriter(mockPrintStream0);
+GJChronology gJChronology0 = GJChronology.getInstanceUTC();
+FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone)DateTimeZone.UTC;
+Locale locale0 = Locale.GERMAN;
+dateTimeFormat_StyleFormatter0.printTo((Writer) outputStreamWriter0, (long) 2, (Chronology) gJChronology0, 161, (DateTimeZone) fixedDateTimeZone0, locale0);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing tests to file
+* Writing JUnit test case 'DateTimeFormat$StyleFormatter_ESTest' to results/evosuite5/time-14-org.joda.time.format.DateTimeFormat$StyleFormatter-29
+* Done!
+
+* Computation finished

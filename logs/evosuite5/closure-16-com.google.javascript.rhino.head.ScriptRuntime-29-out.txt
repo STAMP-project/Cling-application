@@ -1,0 +1,149 @@
+entry: sources/closure-16/build/classes
+entry: sources/closure-16/lib/args4j.jar
+entry: sources/closure-16/lib/guava.jar
+entry: sources/closure-16/lib/json.jar
+entry: sources/closure-16/lib/jsr305.jar
+entry: sources/closure-16/lib/protobuf-java.jar
+entry: sources/closure-16/build/lib/rhino.jar
+entry: sources/closure-16/lib/ant.jar
+** CP: sources/closure-16/build/classes:sources/closure-16/lib/args4j.jar:sources/closure-16/lib/guava.jar:sources/closure-16/lib/json.jar:sources/closure-16/lib/jsr305.jar:sources/closure-16/lib/protobuf-java.jar:sources/closure-16/build/lib/rhino.jar:sources/closure-16/lib/ant.jar
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: com.google.javascript.rhino.head.ScriptRuntime
+* Starting Client-0
+* Connecting to master process on port 12878
+* Analyzing classpath: 
+  - sources/closure-16/build/classes
+  - sources/closure-16/lib/args4j.jar
+  - sources/closure-16/lib/guava.jar
+  - sources/closure-16/lib/json.jar
+  - sources/closure-16/lib/jsr305.jar
+  - sources/closure-16/lib/protobuf-java.jar
+  - sources/closure-16/build/lib/rhino.jar
+  - sources/closure-16/lib/ant.jar
+* Finished analyzing classpath
+* Generating tests for class com.google.javascript.rhino.head.ScriptRuntime
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 1430
+* Using seed 1566117398651
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 432 / 1430
+[MASTER] 10:37:10.946 [logback-1] WARN  TestUsageChecker - class com.google.javascript.rhino.head.ContextFactory$1GlobalSetterImpl looks like an anonymous class, ignoring it (although reflection says false) GlobalSetterImpl
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.07412587412587412
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.11048951048951049
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.22657342657342658
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3132867132867133
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3503496503496504
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.37902097902097903
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.3944055944055944
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.41468531468531467
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.4734265734265734
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.48321678321678324
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5020979020979021
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.527972027972028
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5475524475524476
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5629370629370629
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5706293706293706
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5846153846153846
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.5951048951048951
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6020979020979021
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6216783216783217
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.627972027972028
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6496503496503496
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6559440559440559
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6629370629370629
+* Search finished after 305s and 191 generations, 78281 statements, best individual has fitness: 482.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6629370629370629
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 63%
+* Total number of goals: 1430
+* Number of covered goals: 901
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6629370629370629
+* Generated 297 tests with total length 810
+* Resulting test suite's coverage: 66%
+* Generating assertions
+[MASTER] 10:43:38.017 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 24%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.6629370629370629
+* Compiling and checking tests
+[MASTER] 10:44:01.696 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 10:44:01.696 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+ScriptRuntime.checkRegExpProxy(context0);
+
+[MASTER] 10:44:06.579 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockIllegalStateException: null
+[MASTER] 10:44:06.580 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ScriptRuntime scriptRuntime0 = new ScriptRuntime();
+Context context0 = Context.enter();
+ScriptRuntime.elemIncrDecr(" jL1", scriptRuntime0, context0, 8);
+
+[MASTER] 10:44:07.325 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 10:44:07.325 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = new Context();
+ScriptableObject scriptableObject0 = ScriptRuntime.getGlobal(context0);
+ScriptRuntime.nameIncrDecr((Scriptable) scriptableObject0, "error reporter", (-3561));
+
+[MASTER] 10:44:08.275 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.ScriptRuntime.getTopCallScope(ScriptRuntime.java:3115): org.evosuite.runtime.mock.java.lang.MockThrowable
+[MASTER] 10:44:08.275 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ContextFactory contextFactory0 = ContextFactory.getGlobal();
+Context context0 = contextFactory0.enter();
+ScriptRuntime.setDefaultNamespace((Object) null, context0);
+
+[MASTER] 10:44:10.018 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 10:44:10.018 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+ImporterTopLevel importerTopLevel0 = new ImporterTopLevel();
+Synchronizer synchronizer0 = new Synchronizer(importerTopLevel0);
+ScriptRuntime.nameRef((Object) synchronizer0, context0, (Scriptable) synchronizer0, 8);
+
+[MASTER] 10:44:16.250 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 10:44:16.250 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NativeArray nativeArray0 = new NativeArray(100L);
+Context context0 = new Context();
+BaseFunction baseFunction0 = new BaseFunction(nativeArray0, nativeArray0);
+Object[] objectArray0 = context0.getElements(baseFunction0);
+assertEquals(0, objectArray0.length);
+
+
+[MASTER] 10:44:16.902 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.ScriptRuntime.currentXMLLib(ScriptRuntime.java:3870): org.evosuite.runtime.mock.java.lang.MockThrowable
+[MASTER] 10:44:16.902 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Byte byte0 = new Byte((byte)21);
+ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+NativeJavaTopPackage nativeJavaTopPackage0 = new NativeJavaTopPackage(classLoader0);
+Context context0 = Context.enter();
+ScriptRuntime.nameRef((Object) byte0, (Object) nativeJavaTopPackage0, context0, (Scriptable) nativeJavaTopPackage0, 118);
+
+[MASTER] 10:44:20.965 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 10:44:20.965 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Float float0 = new Float((double) 2);
+Context context0 = Context.getContext();
+ScriptRuntime.delete((Object) float0, (Object) null, context0);
+
+[MASTER] 10:44:23.333 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.ScriptRuntime.currentXMLLib(ScriptRuntime.java:3870): org.evosuite.runtime.mock.java.lang.MockThrowable
+[MASTER] 10:44:23.333 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ContextFactory contextFactory0 = new ContextFactory();
+Context context0 = contextFactory0.enterContext();
+ScriptRuntime.escapeAttributeValue("RHINO USAGE WARNING: Missed Context.javaToJS() conversion:\nRhino runtime detected object ", context0);
+
+[MASTER] 10:44:32.769 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.google.javascript.rhino.head.DefaultErrorReporter but in com.google.javascript.rhino.head.ScriptRuntime.currentXMLLib(ScriptRuntime.java:3869): java.lang.NullPointerException
+[MASTER] 10:44:32.769 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getCurrentContext();
+ScriptRuntime.escapeTextValue((Object) null, context0);
+
+[MASTER] 10:44:34.546 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockRuntimeException: No Context associated with current Thread
+[MASTER] 10:44:34.547 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Context context0 = Context.getContext();
+Scriptable scriptable0 = ScriptRuntime.lastStoredScriptable(context0);
+assertNull(scriptable0);
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing tests to file
+* Writing JUnit test case 'ScriptRuntime_ESTest' to results/evosuite5/closure-16-com.google.javascript.rhino.head.ScriptRuntime-29
+* Done!
+
+* Computation finished

@@ -1,0 +1,28 @@
+20:43:20.924 [main] INFO  e.s.c.i.IntegrationTesting - Starting ...
+20:43:20.995 [main] INFO  e.s.c.i.IntegrationTesting - Instrumenting target classes com.google.javascript.rhino.head.Interpreter and com.google.javascript.rhino.head.ScriptableObject
+20:48:46.284 [main] INFO  e.s.c.i.IntegrationTesting - Instrumented caller class: com.google.javascript.rhino.head.Interpreter
+20:48:46.309 [main] INFO  e.s.c.i.IntegrationTesting - Instrumented callee class: com.google.javascript.rhino.head.ScriptableObject
+20:52:43.771 [main] INFO  e.s.cling.graphs.cfg.CFGGenerator - Branch pairs are registered.
+20:52:43.772 [main] INFO  e.s.c.i.IntegrationTesting - Analyzing dependencies...
+20:52:43.772 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 8.
+20:52:55.897 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:52:55.903 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - test generation strategy: MOSuite
+20:52:55.938 [main] INFO  e.s.c.t.CallableMethodPool - method interpretLoop(Lcom/google/javascript/rhino/head/Context;Lcom/google/javascript/rhino/head/Interpreter$CallFrame;Ljava/lang/Object;)Ljava/lang/Object; is not detected!
+20:52:55.938 [main] INFO  e.s.c.t.CallableMethodPool - method initFrame(Lcom/google/javascript/rhino/head/Context;Lcom/google/javascript/rhino/head/Scriptable;Lcom/google/javascript/rhino/head/Scriptable;[Ljava/lang/Object;[DIILcom/google/javascript/rhino/head/InterpretedFunction;Lcom/google/javascript/rhino/head/Interpreter$CallFrame;Lcom/google/javascript/rhino/head/Interpreter$CallFrame;)V is not detected!
+20:52:55.938 [main] INFO  e.s.c.t.CallableMethodPool - method processThrowable(Lcom/google/javascript/rhino/head/Context;Ljava/lang/Object;Lcom/google/javascript/rhino/head/Interpreter$CallFrame;IZ)Lcom/google/javascript/rhino/head/Interpreter$CallFrame; is not detected!
+20:52:56.367 [main] INFO  e.s.b.c.t.strategy.MOSuiteStrategy - The number of goals are 57928: 
+20:53:30.823 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Generating solution in MOSA
+20:55:39.226 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 101/57928
+20:57:07.707 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #1 is created.
+20:57:07.868 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are 101/57928
+20:59:02.388 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - generation #2 is created.
+20:59:02.571 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Stopping reason: MaxTime :                        331 / 300          Finished!
+20:59:02.571 [main] INFO  e.s.b.commons.ga.strategy.mosa.MOSA - Number of covered goals are: 101
+20:59:02.704 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 4
+20:59:03.149 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+21:03:05.784 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 6
+21:03:05.785 [main] INFO  e.s.b.commons.PostProcessUtility - Generating assertions
+21:05:35.998 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+21:05:41.535 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Interpreter_ESTest' to results/botsing/closure-16-com.google.javascript.rhino.head.Interpreter-com.google.javascript.rhino.head.ScriptableObject-5
+21:05:41.753 [main] INFO  e.s.c.i.IntegrationTesting - test size 7: 6
+21:05:41.762 [main] INFO  e.s.c.i.IntegrationTesting - The solution test is saved!

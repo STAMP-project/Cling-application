@@ -1,0 +1,78 @@
+entry: sources/lang-22/target/classes
+** CP: sources/lang-22/target/classes
+* EvoSuite 1.0.7-SNAPSHOT
+* Going to generate test cases for class: org.apache.commons.lang3.builder.EqualsBuilder
+* Starting Client-0
+* Connecting to master process on port 16889
+* Analyzing classpath: 
+  - sources/lang-22/target/classes
+* Finished analyzing classpath
+* Generating tests for class org.apache.commons.lang3.builder.EqualsBuilder
+* Test criterion:
+  - Branch Coverage
+* Total number of test goals for DYNAMOSA: 250
+* Using seed 1564015800929
+* Starting evolution
+* Initialsss Number of Goals in DynMOSA = 60 / 250
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.504
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.724
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.824
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.896
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.912
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+* Search finished after 301s and 954 generations, 797731 statements, best individual has fitness: 21.0
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 73%
+* Total number of goals: 250
+* Number of covered goals: 182
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+* Generated 76 tests with total length 259
+* Resulting test suite's coverage: 92%
+* Generating assertions
+* Resulting test suite's mutation score: 64%
+Current fitness function value: class org.evosuite.coverage.branch.BranchCoverageSuiteFitness ** 0.916
+* Compiling and checking tests
+[MASTER] 02:55:36.196 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 02:55:36.197 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Set<Pair<IDKey, IDKey>> set0 = EqualsBuilder.getRegistry();
+Class<HashCodeBuilder> class0 = HashCodeBuilder.class;
+boolean boolean0 = EqualsBuilder.reflectionEquals((Object) set0, (Object) null, false, (Class<?>) class0);
+assertFalse(boolean0);
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing tests to file
+* Writing JUnit test case 'EqualsBuilder_ESTest' to results/evosuite5/lang-22-org.apache.commons.lang3.builder.EqualsBuilder-9
+* Done!
+
+* Computation finished
