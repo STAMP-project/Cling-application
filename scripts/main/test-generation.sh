@@ -13,7 +13,7 @@ echo "Reading tasks"
 job_list=()
 
 counter=0
-while read tool execution_id project caller_class callee_class
+while read tool execution_id project caller_class callee_class type
 do
   # skip the title row
   if [[ "$counter" -eq "0" ]]; then
