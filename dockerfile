@@ -4,6 +4,7 @@ ARG experiment
 FROM	  	  fedora:latest
 
 RUN         dnf upgrade --assumeyes
+RUN         dnf install findutils --assumeyes
 RUN         dnf install python2 --assumeyes
 RUN         ln -sfn /usr/bin/python2 /usr/bin/python
 RUN         dnf install java-1.8.0-openjdk --assumeyes
@@ -22,4 +23,5 @@ COPY data /experiment/data
 COPY projects /experiment/projects
 COPY scripts /experiment/scripts
 COPY tools /experiment/tools
+COPY libs /experiment/libs
 COPY consoleLog /experiment/consoleLog
