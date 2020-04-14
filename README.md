@@ -121,4 +121,12 @@ docker exec -it cling-application-container bash scripts/main/rq2-mutation-score
 The output of PIT will be saved in `data/rq2/pit/` directory. Also, the execution logs of PIT runs will be stored in `logs/pit/` directory.
 
 ## Collect Mutation Scores
-To collect all of the mutation scores reported in PIT outputs, run the following bash file:
+To collect all of the mutation scores reported in PIT outputs, run the following python script:
+
+```
+python scripts/python/mutation/collect-mutation-score.py
+```
+**docker**
+```
+docker exec -it cling-application-container python scripts/python/mutation/collect-mutation-score.py
+```
