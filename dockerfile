@@ -17,9 +17,9 @@ RUN         dnf install procps --assumeyes
 WORKDIR /experiment
 #
 COPY logs /experiment/logs
-COPY results /experiment/results
+# COPY results /experiment/results
 COPY defects4j /experiment/defects4j
-COPY data /experiment/data
+# COPY data /experiment/data
 COPY projects /experiment/projects
 COPY scripts /experiment/scripts
 COPY tools /experiment/tools
