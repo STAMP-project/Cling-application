@@ -33,8 +33,10 @@ else
 fi
 if [[ "$tool" == "cling" ]]; then
 executionLogDir="logs/pit/cling-$project-$caller_class-$callee_class-$execution_id.txt"
+elif [[ "$tool" == "evosuite-callee5" ]]; then
+executionLogDir="logs/pit/evocallee5-$project-$caller_class-$callee_class-$execution_id.txt"
 else
-executionLogDir="logs/pit/evosuite5-$project-$caller_class-$callee_class-$execution_id.txt"
+executionLogDir="logs/pit/evocaller5-$project-$caller_class-$callee_class-$execution_id.txt"
 fi
 
 # Run PIT
