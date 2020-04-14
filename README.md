@@ -94,3 +94,13 @@ docker exec -it cling-application-container bash scripts/main/rq1-cbc-coverage.s
 The CBC Coverages of Cling and EvoSuite applied to the caller classes will be saved in `data/rq1/cbc-coverage.csv`. The current `cbc-coverage.csv` is the CSV file that we have used in our study. 
 
 Moreover, the execution results of CBC coverage tool applied to EvoSuite generated tests are stored in `logs/cbc/`.
+
+## Data Analysis
+
+Run the following R Script:
+
+```
+Rscript data_analysis/r-scripts/cbc-coverage.r 
+```
+
+The output is two boxplots indicating the CBC coverage of EvoSuite and Cling. These boxplots are saved as `data_analysis/figures/cbc-total.pdf` and `data_analysis/figures/cbc-per-project.pdf`.
