@@ -104,3 +104,21 @@ Rscript data_analysis/r-scripts/cbc-coverage.r
 ```
 
 The output is two boxplots indicating the CBC coverage of EvoSuite and Cling. These boxplots are saved as `data_analysis/figures/cbc-total.pdf` and `data_analysis/figures/cbc-per-project.pdf`.
+
+
+# RQ1: Mutation Score
+## Run PIT
+To calculate the mutation score of the genrated test cases by Cling and EvoSuite, we need to execute PIT. to run PIT on all of the test cases, generated in this study, run the following bash file:
+
+```
+. scripts/main/rq2-mutation-score.sh <number of parallel processes>
+```
+
+**docker**
+```
+docker exec -it cling-application-container bash scripts/main/rq2-mutation-score.sh <number of parallel processes>
+```
+The output of PIT will be saved in `data/rq2/pit/` directory. Also, the execution logs of PIT runs will be stored in `logs/pit/` directory.
+
+## Collect Mutation Scores
+To collect all of the mutation scores reported in PIT outputs, run the following bash file:
