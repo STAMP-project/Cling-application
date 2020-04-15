@@ -56,6 +56,6 @@ with open(os.path.join(root_path, "subject_generator", "subjects.csv"), 'r') as 
             if totalMutants != 0:
                 MSRow = ["Cling",execution_id, project, caller_class, callee_class, str(clingKilled/totalMutants),int(clingKilled),int(totalMutants)]
                 mutationCoverageWriter.writerow(MSRow)
-            else:
-                string=row["tool"]+","+row["execution_id"]+","+row["project"]+","+row["caller_class"]+","+row["callee_class"]+","+row["type"]
-                print string
+            # else:
+            #     string=row["tool"]+","+row["execution_id"]+","+row["project"]+","+row["caller_class"]+","+row["callee_class"]+","+row["type"]
+            #     # print string
