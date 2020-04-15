@@ -13,11 +13,18 @@ getResultsOfRQ1 <- function(){
   return(df)
 }
 
+getMutationScores <- function(){
+  df <- read.csv("data/rq2/mutation-scores.csv", stringsAsFactors = FALSE)
+  return(df)
+}
+
 # Produces an easy to process dataframe from rq2 results csv file.
 getResultsOfRQ2 <- function(){
   df <- read.csv("../../main/RQ1-2/final_result.csv", stringsAsFactors = FALSE)
   return(df)
 }
+
+
 
 getCER <- function(){
   df <- read.csv("data/rq2/cling-evoe-evor-final.csv", stringsAsFactors = FALSE)
@@ -41,7 +48,7 @@ getE <- function(){
 }
 
 getFinalForMutation <- function(){
-  df <- read.csv("../../main/new/final_result.csv", stringsAsFactors = FALSE)
+  df <- read.csv(paste(dataDir,"final_mutants-table.csv",sep=""), stringsAsFactors = FALSE)
   return(df)
 }
 
