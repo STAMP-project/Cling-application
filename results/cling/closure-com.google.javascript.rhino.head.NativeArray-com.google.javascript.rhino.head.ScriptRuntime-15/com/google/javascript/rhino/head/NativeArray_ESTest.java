@@ -356,6 +356,7 @@ public class NativeArray_ESTest extends NativeArray_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test29()  throws Throwable  {
       NativeArray nativeArray0 = new NativeArray(462);
       ScriptableObject.putProperty((Scriptable) nativeArray0, 462, (Object) nativeArray0);

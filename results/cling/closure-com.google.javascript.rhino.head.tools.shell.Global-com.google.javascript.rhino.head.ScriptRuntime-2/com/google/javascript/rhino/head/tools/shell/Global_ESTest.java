@@ -111,6 +111,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test05()  throws Throwable  {
       Global global0 = new Global();
       Context context0 = mock(Context.class, new ViolatedAssumptionAnswer());
@@ -167,6 +168,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test08()  throws Throwable  {
       Context context0 = new Context();
       NativeJavaClass nativeJavaClass0 = new NativeJavaClass();
@@ -232,6 +234,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test12()  throws Throwable  {
       Scriptable scriptable0 = mock(Scriptable.class, new ViolatedAssumptionAnswer());
       doReturn((Object) null, (Object) null, (Object) null, (Object) null, (Object) null).when(scriptable0).get(anyString() , any(com.google.javascript.rhino.head.Scriptable.class));
@@ -255,6 +258,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test13()  throws Throwable  {
       Context context0 = Context.getCurrentContext();
       Global global0 = new Global(context0);
@@ -265,6 +269,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test14()  throws Throwable  {
       StringReader stringReader0 = new StringReader("js>-8d;h{zQm");
       Scriptable scriptable0 = mock(Scriptable.class, new ViolatedAssumptionAnswer());

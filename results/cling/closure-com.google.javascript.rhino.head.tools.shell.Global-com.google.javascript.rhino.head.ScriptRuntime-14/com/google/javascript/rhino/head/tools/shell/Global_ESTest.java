@@ -129,6 +129,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test05()  throws Throwable  {
       Context context0 = new Context();
       Object[] objectArray0 = new Object[0];
@@ -147,6 +148,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test06()  throws Throwable  {
       Context context0 = mock(Context.class, new ViolatedAssumptionAnswer());
       Scriptable scriptable0 = mock(Scriptable.class, new ViolatedAssumptionAnswer());
@@ -182,6 +184,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test09()  throws Throwable  {
       NativeJavaClass nativeJavaClass0 = new NativeJavaClass();
       Object[] objectArray0 = new Object[6];
@@ -199,6 +202,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test10()  throws Throwable  {
       NativeJavaClass nativeJavaClass0 = new NativeJavaClass();
       Global global0 = new Global();
@@ -220,6 +224,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test11()  throws Throwable  {
       NativeJavaClass nativeJavaClass0 = new NativeJavaClass();
       NativeJavaPackage nativeJavaPackage0 = new NativeJavaPackage((String) null);

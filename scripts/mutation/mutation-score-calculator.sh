@@ -36,10 +36,10 @@ do
   fi
   if [[ -d $resultDir ]]; then
     # Do not repeat the analysis
-    if [[ -f "$outDir/index.html" ]]; then
-      echo "Already exists"
-      continue
-    fi
+    # if [[ -f "$outDir/index.html" ]]; then
+    #   echo "Already exists"
+    #   continue
+    # fi
     . scripts/mutation/run-pit.sh $tool $execution_id $project $caller_class $callee_class $type $resultDir $outDir
   else
     echo "WARNING: Directory $resultDir does not exist."

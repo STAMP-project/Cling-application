@@ -92,6 +92,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test03()  throws Throwable  {
       Context context0 = Context.getCurrentContext();
       ScriptableObject scriptableObject0 = context0.initStandardObjects();
@@ -160,6 +161,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test07()  throws Throwable  {
       Scriptable scriptable0 = mock(Scriptable.class, new ViolatedAssumptionAnswer());
       doReturn((Object) null, (Object) null, (Object) null, (Object) null, (Object) null).when(scriptable0).get(anyString() , any(com.google.javascript.rhino.head.Scriptable.class));
@@ -244,6 +246,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test12()  throws Throwable  {
       Function function0 = mock(Function.class, new ViolatedAssumptionAnswer());
       Function function1 = mock(Function.class, new ViolatedAssumptionAnswer());
@@ -267,6 +270,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test13()  throws Throwable  {
       Function function0 = mock(Function.class, new ViolatedAssumptionAnswer());
       Function function1 = mock(Function.class, new ViolatedAssumptionAnswer());
@@ -311,6 +315,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test17()  throws Throwable  {
       Context context0 = mock(Context.class, new ViolatedAssumptionAnswer());
       Function function0 = mock(Function.class, new ViolatedAssumptionAnswer());
@@ -328,6 +333,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test18()  throws Throwable  {
       Scriptable scriptable0 = mock(Scriptable.class, new ViolatedAssumptionAnswer());
       Context context0 = new Context();
@@ -351,6 +357,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test20()  throws Throwable  {
       Scriptable scriptable0 = mock(Scriptable.class, new ViolatedAssumptionAnswer());
       Context context0 = new Context();
@@ -387,6 +394,7 @@ public class Global_ESTest extends Global_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test23()  throws Throwable  {
       Context context0 = new Context();
       ImporterTopLevel importerTopLevel0 = new ImporterTopLevel(context0);

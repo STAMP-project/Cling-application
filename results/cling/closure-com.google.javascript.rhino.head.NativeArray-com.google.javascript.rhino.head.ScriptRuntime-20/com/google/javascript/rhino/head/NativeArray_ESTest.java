@@ -490,6 +490,7 @@ public class NativeArray_ESTest extends NativeArray_ESTest_scaffolding {
   }
 
   @Test(timeout = 4000)
+  @Ignore
   public void test41()  throws Throwable  {
       NativeArray nativeArray0 = new NativeArray(910L);
       IdFunctionObject idFunctionObject0 = mock(IdFunctionObject.class, new ViolatedAssumptionAnswer());
