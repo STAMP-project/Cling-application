@@ -32,6 +32,7 @@ with open(os.path.join(data_path,'cling-evoe-raw.csv'), 'r') as t1, open(os.path
 
 with open(os.path.join(data_path,'cling-evoe-evor.csv'), 'r') as CER:
     with open(os.path.join(data_path,'cling-evoe-evor-final.csv'), 'w') as outFile:
+        outFile.write("executionId"+",project"+",caller"+",callee"+",mutator"+",method"+",line"+",TRstatus"+",TEstatus"+"\r\n")
         counter = 0
         for line in CER:
             tempArr = line.split(',')

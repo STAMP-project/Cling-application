@@ -2,7 +2,7 @@ library(dplyr)
 SIGNIFICANCE_LEVEL=0.05
 
 COLOR_PALETTE="Spectral" # Use photocopy friendly colors (http://colorbrewer2.org/)
-
+dataDir="data/rq2/"
 # Labels to use in the graphs
 EVO_NAME="E.10"
 APPROACH_NAME="Cling"
@@ -20,18 +20,18 @@ getResultsOfRQ2 <- function(){
 }
 
 getCER <- function(){
-  df <- read.csv("../../main/new/cling-evoe-evor-final.csv", stringsAsFactors = FALSE)
+  df <- read.csv("data/rq2/cling-evoe-evor-final.csv", stringsAsFactors = FALSE)
   return(df)
 }
 
 
 getCE <- function(){
-  df <- read.csv("../../main/new/cling-evoe.csv", stringsAsFactors = FALSE)
+  df <- read.csv(paste(dataDir,"cling-evoe.csv",sep=""), stringsAsFactors = FALSE)
   return(df)
 }
 
 getCR <- function(){
-  df <- read.csv("../../main/new/cling-evor.csv", stringsAsFactors = FALSE)
+  df <- read.csv(paste(dataDir,"cling-evor.csv",sep=""), stringsAsFactors = FALSE)
   return(df)
 }
 
@@ -57,7 +57,7 @@ getR <- function(){
 
 
 getC <- function(){
-  df <- read.csv("../../main/new/cling.csv", stringsAsFactors = FALSE)
+  df <- read.csv(paste(dataDir,"clingKilled.csv",sep=""), stringsAsFactors = FALSE)
   return(df)
 }
 

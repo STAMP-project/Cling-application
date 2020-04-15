@@ -13,6 +13,8 @@ with open(os.path.join(data_path,'evoeKilled.csv'), 'r') as t1, open(os.path.joi
     filethree = frozenset(filetwo)
     counter = 0
     with open(os.path.join(data_path,'cling-evoe.csv'), 'w') as outFile:
+        outFile.write("executionId"+",project"+",caller"+",callee"+",mutator"+",method"+",line"+",TEstatus"+"\r\n")
+        "executionId","project","caller","callee","mutator","method","line","TEstatus"
         for line in t2:
             if line.startswith("execution_id"):
                 continue

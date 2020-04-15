@@ -13,6 +13,7 @@ with open(os.path.join(data_path,'evorKilled.csv'), 'r') as t1, open(os.path.joi
     filethree = frozenset(filetwo)
     counter = 0
     with open(os.path.join(data_path,'cling-evor.csv'), 'w') as outFile:
+        outFile.write("executionId"+",project"+",caller"+",callee"+",mutator"+",method"+",line"+",TRstatus"+"\r\n")
         for line in t2:
             counter+=1
             print counter
