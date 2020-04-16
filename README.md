@@ -204,3 +204,5 @@ docker exec -it cling-application-container python scripts/python/captured-excep
 The interesting stack traces will be saved in `data/rq3/stack-traces/interesting`. The courrent content of this directory is the interesting stack traces that we have found during our study. 
 
 ## Manual Analysis
+
+We have analyzed all of the interesting stack traces to find the failure and non-failure stack traces. The achieved results in `data_analysis/manual-analysis`. Moreover,the full explanations related to stack traces stemming from a failure are available in `data_analysis/manual-analysis/failure-explanation.md`.
