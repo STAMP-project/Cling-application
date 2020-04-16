@@ -1,0 +1,21 @@
+----------
+test2
+org.joda.time.IllegalFieldValueException: Value 3238 for minuteOfHour must be in the range [0,59]
+org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:218)
+org.joda.time.field.PreciseDateTimeField.set(PreciseDateTimeField.java:111)
+org.joda.time.chrono.BaseChronology.getDateTimeMillis(BaseChronology.java:164)
+org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:151)
+org.joda.time.chrono.LimitChronology.getDateTimeMillis(LimitChronology.java:200)
+org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:148)
+org.joda.time.chrono.ZonedChronology.getDateTimeMillis(ZonedChronology.java:129)
+----------
+test7
+org.joda.time.IllegalFieldValueException: Value -2037 for millisOfDay must be in the range [0,86399999]
+org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:218)
+org.joda.time.field.PreciseDateTimeField.set(PreciseDateTimeField.java:111)
+org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:724)
+org.joda.time.chrono.BaseChronology.getDateTimeMillis(BaseChronology.java:105)
+org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:122)
+org.joda.time.chrono.LimitChronology.getDateTimeMillis(LimitChronology.java:177)
+org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:120)
+org.joda.time.chrono.ZonedChronology.getDateTimeMillis(ZonedChronology.java:110)

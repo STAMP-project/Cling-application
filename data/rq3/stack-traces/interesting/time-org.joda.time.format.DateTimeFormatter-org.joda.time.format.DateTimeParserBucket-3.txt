@@ -1,0 +1,27 @@
+----------
+test64
+org.joda.time.IllegalFieldValueException: Cannot parse "01": Value 1401 for clockhourOfHalfday must be in the range [1,12]
+org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:218)
+org.joda.time.field.ZeroIsMaxDateTimeField.set(ZeroIsMaxDateTimeField.java:85)
+org.joda.time.format.DateTimeParserBucket$SavedField.set(DateTimeParserBucket.java:483)
+org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket.java:365)
+org.joda.time.format.DateTimeFormatter.parseLocalDateTime(DateTimeFormatter.java:812)
+org.joda.time.format.DateTimeFormatter.parseLocalTime(DateTimeFormatter.java:787)
+----------
+test65
+org.joda.time.IllegalFieldValueException: Cannot parse "14": Value 1414 for clockhourOfHalfday must be in the range [1,12]
+org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:218)
+org.joda.time.field.ZeroIsMaxDateTimeField.set(ZeroIsMaxDateTimeField.java:85)
+org.joda.time.format.DateTimeParserBucket$SavedField.set(DateTimeParserBucket.java:483)
+org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket.java:365)
+org.joda.time.format.DateTimeFormatter.parseMutableDateTime(DateTimeFormatter.java:898)
+----------
+test66
+org.joda.time.IllegalFieldValueException: Cannot parse "14": Value 292273014 for monthOfYear must be in the range [1,12]
+org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:218)
+org.joda.time.chrono.BasicMonthOfYearDateTimeField.set(BasicMonthOfYearDateTimeField.java:298)
+org.joda.time.format.DateTimeParserBucket$SavedField.set(DateTimeParserBucket.java:483)
+org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket.java:365)
+org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket.java:358)
+org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:853)
+org.joda.time.MutableDateTime.parse(MutableDateTime.java:161)

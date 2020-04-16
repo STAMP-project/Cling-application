@@ -1,0 +1,11 @@
+----------
+test0
+org.joda.time.IllegalFieldValueException: Value -1 for minuteOfHour must be in the range [0,59]
+org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:218)
+org.joda.time.field.PreciseDateTimeField.set(PreciseDateTimeField.java:111)
+org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:724)
+org.joda.time.chrono.BaseChronology.getDateTimeMillis(BaseChronology.java:136)
+org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:136)
+org.joda.time.chrono.LimitChronology.getDateTimeMillis(LimitChronology.java:187)
+org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:133)
+org.joda.time.chrono.ZonedChronology.getDateTimeMillis(ZonedChronology.java:119)

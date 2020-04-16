@@ -1,0 +1,23 @@
+----------
+test02
+org.joda.time.IllegalFieldValueException: Value -954 for monthOfYear must be in the range [1,12]
+org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:218)
+org.joda.time.chrono.BasicMonthOfYearDateTimeField.set(BasicMonthOfYearDateTimeField.java:298)
+org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:724)
+org.joda.time.chrono.ZonedChronology$ZonedDateTimeField.set(ZonedChronology.java:466)
+org.joda.time.chrono.BaseChronology.getDateTimeMillis(BaseChronology.java:103)
+org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:122)
+org.joda.time.chrono.LimitChronology.getDateTimeMillis(LimitChronology.java:177)
+org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:120)
+----------
+test04
+org.joda.time.IllegalFieldValueException: Value -2146605330 for minuteOfHour must be in the range [0,59]
+org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:236)
+org.joda.time.chrono.BasicChronology.getDateTimeMillis(BasicChronology.java:173)
+org.joda.time.chrono.GregorianChronology.getDateTimeMillis(GregorianChronology.java:45)
+org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:133)
+org.joda.time.chrono.ZonedChronology.getDateTimeMillis(ZonedChronology.java:119)
+org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:133)
+org.joda.time.base.BaseDateTime.<init>(BaseDateTime.java:254)
+org.joda.time.base.BaseDateTime.<init>(BaseDateTime.java:195)
+org.joda.time.MutableDateTime.<init>(MutableDateTime.java:324)
