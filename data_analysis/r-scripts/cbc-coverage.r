@@ -34,13 +34,33 @@ avgCBCPP <- results %>%
 cat("Average CBC Per Project")
 show(avgCBCPP)
 
+results$project_f = factor(results$project, levels=c('closure','mockito','time','lang','math'))
 
-p <- ggplot(results, aes(x = factor(testSuite), y= CBC, fill = factor(project))) +
+higher50 <- results %>%
+  group_by(tool,project_f,testSuite,caller_class,callee_class) %>%
+  summarise(avgP = max(coveragePercentage)) %>%
+  filter(avgP >0.5 & tool == "cling") %>%
+  group_by(project_f) %>%
+  summarise(count = n())
+
+
+p <- ggplot(data=higher50, aes(x=project_f, y=count)) +
+  geom_bar(stat="identity") +
+  geom_text(aes(label=count), vjust=-1.0, color="black",
+            position = position_dodge(0.9), size=3.5)+
+  theme(text = element_text(size=13),axis.text.x = element_text(size=11)) +
+  scale_y_discrete(expand = c(0, 0)) +
+  expand_limits( y=c(0, 40))+
+  scale_fill_manual(values=c('black','lightgray')) +
+  ylab("# of class pairs") + xlab("Project")
+ggsave("data_analysis/figures/cbc-higher-than-50.pdf", width=160, height=105, units = "mm")
+
+p <- ggplot(results, aes(x = factor(testSuite), y= CBC, fill = factor(project_f))) +
   geom_boxplot() +
   stat_summary(fun.data = "mean_cl_boot", geom="point", shape=23, size=2, fill = 'white') +
   xlab("Test Suites") + ylab("Coupled Branches Coverage") +
   labs(fill = "Projects") +
-  facet_grid(. ~ project, margins = TRUE, scales = "free_x") +
+  facet_grid(. ~ project_f, margins = TRUE, scales = "free_x") +
   scale_fill_brewer(palette=COLOR_PALETTE) +
   guides(fill=FALSE) +
   theme(text = element_text(size=15),axis.text.x = element_text(size=13, angle = 90)) + 
