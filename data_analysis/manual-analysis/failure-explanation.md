@@ -1,41 +1,10 @@
-# ST8
 
-test0
-```
-java.lang.NullPointerException
-org.joda.time.format.DateTimeFormatterBuilder.appendUnknownString(DateTimeFormatterBuilder.java:1152)
-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber.printTo(DateTimeFormatterBuilder.java:1460)
-```
+# Time
 
-Generated test:
+## ST10
 
-```java
-  public void test0()  throws Throwable  {
-      DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.centuryOfEra();
-      Partial partial0 = new Partial(dateTimeFieldType0, 284);
-      partial0.getFormatter();
-      DateTimeFormatterBuilder.FixedNumber dateTimeFormatterBuilder_FixedNumber0 = new DateTimeFormatterBuilder.FixedNumber(dateTimeFieldType0, 284, true);
-      // Undeclared exception!
-      try { 
-        dateTimeFormatterBuilder_FixedNumber0.printTo((StringBuffer) null, (ReadablePartial) partial0, (Locale) null);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("org.joda.time.format.DateTimeFormatterBuilder", e);
-      }
-  }
-```
+[Stack trace](stacktraces.md#st10-f2):
 
-This test passess null as StringBuffer of printTo. The documentation of the class does not say anything about the permitted value of this object. This method does not check it and pass it to `appendUnknownString` in `DateTimeFormatterBuilder`. and the called method uses it without check if the passed value is null.
-
-
-# ST10
-
-
-test2
 ```
 java.lang.IllegalArgumentException: Invalid min days in first week: 175
 org.joda.time.chrono.JulianChronology.getInstance(JulianChronology.java:138)
@@ -44,25 +13,73 @@ org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:220)
 org.joda.time.chrono.GJChronology.getInstance(GJChronology.java:252)
 ```
 
-The generated test passes 175 as the value of minimum number of days per week. Naturally, the maximum number of days in a week is 7! but there is no check in the code of the caller and callee. And caller is called from outside. Also, it is not mentioned in the document that the value must be lower than 7. The caller class gets the wrong value and passes it to callee without checking it. 
+Generated test ([test2](../../results/cling/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-2/org/joda/time/chrono/GJChronology_ESTest.java#L52)):
+
+```java
+@Test(timeout = 4000)
+public void test2()  throws Throwable  {
+    DateTimeZone dateTimeZone0 = mock(DateTimeZone.class, new ViolatedAssumptionAnswer());
+    doReturn("8i?{Nb)fS#1Zq,zj+v", "ZjC Ua").when(dateTimeZone0).getID();
+    JulianChronology.getInstance(dateTimeZone0);
+    DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis((-1839));
+    // Undeclared exception!
+    try { 
+      GJChronology.getInstance(dateTimeZone1, 10800000L, 175);
+      fail("Expecting exception: IllegalArgumentException");
+    
+    } catch(IllegalArgumentException e) {
+        //
+        // Invalid min days in first week: 175
+        //
+        verifyException("org.joda.time.chrono.JulianChronology", e);
+    }
+}
+```
+
+The generated test passes 175 as the value of minimum number of days per week. Naturally, the maximum number of days in a week is 7! but there is no check in the code of the caller and callee. And caller is called from outside. Also, it is not mentioned in the [documentation](projects/time/src/main/java/org/joda/time/chrono/GJChronology.java#L234) that the value must be lower than 7. The caller class gets the wrong value and passes it to callee without checking it. 
 
 
-# ST11
+## ST11
 
-## time-14-org.joda.time.chrono.GJChronology-org.joda.time.chrono.GJChronology$CutoverField-14
-test6
+[Stack trace](stacktraces.md#st11-f3):
+
 ```
 org.joda.time.IllegalFieldValueException: Value 14 for dayOfMonth is not supported
 org.joda.time.chrono.GJChronology$CutoverField.set(GJChronology.java:719)
 org.joda.time.chrono.ZonedChronology$ZonedDateTimeField.set(ZonedChronology.java:466)
 org.joda.time.chrono.BaseChronology.set(BaseChronology.java:240)
 ```
-Caller method calls a method `set` in `ZonedChronology$ZonedDateTime`. This method changes one of the inputs and passes them to the set method in callee. Callee throws and exception because the returned value from one of the passed objects is not equal to the other passed value. There is no pre-checking before calling the callee.
 
-# ST16
-## mockito-31-org.mockito.cglib.proxy.Mixin$Generator-org.mockito.cglib.core.ReflectUtils-20
+Generated test ([test6](../../results/cling/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.GJChronology$CutoverField-14/org/joda/time/chrono/GJChronology_ESTest.java#L95)):
 
-test2
+```java
+@Test(timeout = 4000)
+public void test6()  throws Throwable  {
+    DateTime dateTime0 = new DateTime();
+    GJChronology gJChronology0 = GJChronology.getInstance((DateTimeZone) null, (ReadableInstant) dateTime0);
+    LocalDateTime localDateTime0 = dateTime0.toLocalDateTime();
+    // Undeclared exception!
+    try { 
+      gJChronology0.set(localDateTime0, (-748L));
+      fail("Expecting exception: IllegalFieldValueException");
+    
+    } catch(IllegalFieldValueException e) {
+        //
+        // Value 13 for dayOfMonth is not supported
+        //
+        verifyException("org.joda.time.chrono.GJChronology$CutoverField", e);
+    }
+}
+```
+
+Caller method [calls a method `set` in `ZonedChronology$ZonedDateTime`](projects/time/src/main/java/org/joda/time/chrono/BaseChronology.java#L240). This method changes one of the inputs and passes them to the set method in callee. Callee throws and exception because the returned value from one of the passed objects is not equal to the other passed value. There is no pre-checking before calling the callee.
+
+# Mockito
+
+## ST16
+
+[Stack trace](stacktraces.md#st16-f4):
+
 ```
 org.mockito.cglib.core.CodeGenerationException: java.beans.IntrospectionException-->java.lang.Object not superclass of java.lang.Object
 org.mockito.cglib.core.ReflectUtils.getPropertiesHelper(ReflectUtils.java:324)
@@ -75,56 +92,77 @@ org.mockito.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrateg
 org.mockito.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:217)
 org.mockito.cglib.proxy.Mixin$Generator.create(Mixin.java:165)
 ```
-The generated test is:
+
+Generated test ([test2](../../results/cling/mockito-org.mockito.cglib.proxy.Mixin$Generator-org.mockito.cglib.core.ReflectUtils-20/org/mockito/cglib/proxy/Mixin$Generator_ESTest.java#L79)):
 
 ```java
-  public void test2()  throws Throwable  {
-      Mixin.Generator mixin_Generator0 = new Mixin.Generator();
-      ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
-      Object[] objectArray0 = new Object[5];
-      objectArray0[0] = (Object) mixin_Generator0;
-      objectArray0[1] = (Object) mixin_Generator0;
-      Object object0 = new Object();
-      objectArray0[2] = object0;
-      objectArray0[3] = (Object) classLoader0;
-      objectArray0[4] = (Object) mixin_Generator0;
-      mixin_Generator0.setDelegates(objectArray0);
-      mixin_Generator0.setStyle(1);
-      // Undeclared exception!
-      try { 
-        mixin_Generator0.create();
-        fail("Expecting exception: CodeGenerationException");
-      
-      } catch(CodeGenerationException e) {
-         //
-         // java.beans.IntrospectionException-->java.lang.Object not superclass of java.lang.Object
-         //
-         verifyException("org.mockito.cglib.core.ReflectUtils", e);
-      }
-  }
+@Test(timeout = 4000)
+public void test2()  throws Throwable  {
+    Mixin.Generator mixin_Generator0 = new Mixin.Generator();
+    ClassLoader classLoader0 = ClassLoader.getSystemClassLoader();
+    Object[] objectArray0 = new Object[5];
+    objectArray0[0] = (Object) mixin_Generator0;
+    objectArray0[1] = (Object) mixin_Generator0;
+    Object object0 = new Object();
+    objectArray0[2] = object0;
+    objectArray0[3] = (Object) classLoader0;
+    objectArray0[4] = (Object) mixin_Generator0;
+    mixin_Generator0.setDelegates(objectArray0);
+    mixin_Generator0.setStyle(1);
+    // Undeclared exception!
+    try { 
+      mixin_Generator0.create();
+      fail("Expecting exception: CodeGenerationException");
+    
+    } catch(CodeGenerationException e) {
+        //
+        // java.beans.IntrospectionException-->java.lang.Object not superclass of java.lang.Object
+        //
+        verifyException("org.mockito.cglib.core.ReflectUtils", e);
+    }
+}
 ```
 
-The fault is the passed objects to method `setDelegates` in caller class. If the values are not in the same hierarchy tree, and we call `create()` method in caller class afterward, wthe caller class passes these objects to the callee class inderectly. the callee class expect that these passed ojects are in the same hierarchy tree. Hence, it throws exception if they dont fulfill this precondition.
+The fault is the passed objects to method `setDelegates` in caller class. If the values are not in the same hierarchy tree, and we [call `create()` method in caller class](projects/mockito/cglib-and-asm/src/org/mockito/cglib/proxy/Mixin.java#L132) afterward, the caller class passes these objects to the callee class indirectly. the callee class expect that these passed objects are in the same hierarchy tree. Hence, it throws exception if they do not fulfill this precondition.
 
-# ST17
+## ST17
 
-## mockito-31-org.mockito.asm.tree.analysis.BasicVerifier-org.mockito.asm.tree.analysis.SimpleVerifier-3
+[Stack trace](stacktraces.md#st17-f5):
 
-test12
 ```
 java.lang.NullPointerException
 org.mockito.asm.tree.analysis.SimpleVerifier.isSubTypeOf(SimpleVerifier.java:166)
 org.mockito.asm.tree.analysis.BasicVerifier.unaryOperation(BasicVerifier.java:179)
 ```
 
-Cling passes null to `BasicVerifier.unaryOperation`. The documentation of the caller class does not have limitation for input. The caller class passes the null value to the callee class without checking. The callee class uses null value without checking it. There is no input limitation in the callee method, as well.
+Generated test ([test12](../../results/cling/mockito-org.mockito.asm.tree.analysis.BasicVerifier-org.mockito.asm.tree.analysis.SimpleVerifier-3/org/mockito/asm/tree/analysis/SimpleVerifier_ESTest.java#L154)):
+
+```java
+@Test(timeout = 4000)
+public void test12()  throws Throwable  {
+    SimpleVerifier simpleVerifier0 = new SimpleVerifier();
+    IntInsnNode intInsnNode0 = new IntInsnNode(119, (-4156));
+    // Undeclared exception!
+    try { 
+      simpleVerifier0.unaryOperation(intInsnNode0, (Value) null);
+      fail("Expecting exception: NullPointerException");
+    
+    } catch(NullPointerException e) {
+        //
+        // no message in exception (getMessage() returned null)
+        //
+        verifyException("org.mockito.asm.tree.analysis.SimpleVerifier", e);
+    }
+}
+```
+
+`SimpleVerifier` is a subclass of `BasicVerifier`. Cling calls the `unaryOperation` method with a null `Value`. The [documentation of the caller class](projects/mockito/cglib-and-asm/src/org/mockito/asm/tree/analysis/BasicVerifier.java#L96) does not have limitation for input. The caller class passes the null value to the callee class without checking. The callee class uses null value without checking it. There is no input limitation in the callee method, as well.
 
 
-# ST18
+## ST18
 
-## mockito-31-org.mockito.asm.MethodWriter-org.mockito.asm.ClassWriter-1
+[Stack trace](stacktraces.md#st18-f6):
 
-test18
 ```
 java.lang.NullPointerException
 org.mockito.asm.Item.set(Item.java:203)
@@ -133,114 +171,47 @@ org.mockito.asm.Frame.initInputFrame(Frame.java:797)
 org.mockito.asm.MethodWriter.visitMaxs(MethodWriter.java:1238)
 ```
 
-The generated test:
+Generated test ([test18](../../results/cling/mockito-org.mockito.asm.MethodWriter-org.mockito.asm.ClassWriter-1/org/mockito/asm/MethodWriter_ESTest.java#L243)):
+
 ```java
-  public void test18()  throws Throwable  {
-      ClassWriter classWriter0 = new ClassWriter(30);
-      String[] stringArray0 = new String[2];
-      stringArray0[0] = "<init>";
-      stringArray0[1] = "=Yi?_@2lHb";
-      MethodWriter methodWriter0 = new MethodWriter(classWriter0, 1, "[);3sXCG~s%#m", "[);3sXCG~s%#m", "[);3sXCG~s%#m", stringArray0, true, true);
-      methodWriter0.visitVarInsn(2, 1105);
-      // Undeclared exception!
-      try { 
-        methodWriter0.visitMaxs((-3), 1516);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-      }
-  }
+@Test(timeout = 4000)
+public void test18()  throws Throwable  {
+    ClassWriter classWriter0 = new ClassWriter(30);
+    String[] stringArray0 = new String[2];
+    stringArray0[0] = "<init>";
+    stringArray0[1] = "=Yi?_@2lHb";
+    MethodWriter methodWriter0 = new MethodWriter(classWriter0, 1, "[);3sXCG~s%#m", "[);3sXCG~s%#m", "[);3sXCG~s%#m", stringArray0, true, true);
+    methodWriter0.visitVarInsn(2, 1105);
+    // Undeclared exception!
+    try { 
+      methodWriter0.visitMaxs((-3), 1516);
+      fail("Expecting exception: NullPointerException");
+    
+    } catch(NullPointerException e) {
+        //
+        // no message in exception (getMessage() returned null)
+        //
+    }
+}
 ```
 
-`ClassWriter` (callee) is an input parameter for the constructor of `MethodWriter` (caller). caller needs two method calls before passing it to the caller class. the second method call is `public void visit(
+The [`ClassWriter` (callee)](projects/mockito/cglib-and-asm/src/org/mockito/asm/ClassWriter.java) and the [`MethodWriter` (caller)](projects/mockito/cglib-and-asm/src/org/mockito/asm/MethodWriter.java) classes are both implementing a visitor pattern and make implicit assumptions about the underlying data structure. Those assumptions are not documents. 
+
+More specifically, the [`ClassWriter` (callee)](projects/mockito/cglib-and-asm/src/org/mockito/asm/ClassWriter.java) instance is an input parameter for the constructor of the [`MethodWriter` (caller)](projects/mockito/cglib-and-asm/src/org/mockito/asm/MethodWriter.java) class. The caller needs two method calls before passing it to the callee class. The second method call is `public void visit(
         final int version,
         final int access,
         final String name,
         final String signature,
         final String superName,final String[] interfaces)`.
-If we dont call visit or call it with null input parameter `name` and pass it to the caller class. Then, if we call `visitMaxs` in the caller class. It throws null pointer exception because caller does not check the value of name in the callee class. Also, when we set the name in the callee class there is no check. Moreover, there is no annotation about these facts in the documentation of involved classes.
+If we do not call visit or call it with null input parameter `name` and pass it to the caller class. Then, if we call `visitMaxs` in the caller class. It throws null pointer exception because caller does not check the value of name in the callee class. Also, when we set the name in the callee class there is no check. Moreover, there is no annotation about these facts in the documentation of involved classes.
 
 
-# ST19
+# Math
 
-## math-100-org.apache.commons.math.ode.SwitchingFunctionsHandler-org.apache.commons.math.ode.SwitchState-8
+## ST23
 
-test10
-```
-java.lang.NullPointerException
-org.apache.commons.math.ode.EulerStepInterpolator.computeInterpolatedState(EulerStepInterpolator.java:85)
-org.apache.commons.math.ode.AbstractStepInterpolator.setInterpolatedTime(AbstractStepInterpolator.java:260)
-org.apache.commons.math.ode.SwitchState.evaluateStep(SwitchState.java:155)
-org.apache.commons.math.ode.SwitchingFunctionsHandler.evaluateStep(SwitchingFunctionsHandler.java:109)
-```
+[Stack trace](stacktraces.md#st23-f11):
 
-The generated test looks like this:
-
-```java
-      EulerStepInterpolator eulerStepInterpolator0 = new EulerStepInterpolator();
-      // Undeclared exception!
-      try { 
-        switchingFunctionsHandler0.evaluateStep(eulerStepInterpolator0);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("org.apache.commons.math.ode.DormandPrince54StepInterpolator", e);
-      }
-```
-
-By instantiating `EulerStepInterpolator` with a specific constructor (`EulerStepInterpolator()`), and passing it as the input of the caller class method (`SwitchingFunctionsHandler.evaluateStep`) we will have this exception. The exception happens because constructor `EulerStepInterpolator()` sets null value for a local variable called `interpolatedState`. When we pass an object instntiated by this constructor to caller, The caller class passes this object to the callee class. Then, the callee class calls `setInterpolatedTime` method of the passed object. This method calls another method called `computeInterpolatedState`, which checks the length of the local variable `interpolatedState`. Since this local variable is set to null, it throws `NullPointerException`.
-
-# ST20 & 21
-## math-100-org.apache.commons.math.ode.SwitchingFunctionsHandler-org.apache.commons.math.ode.SwitchState-5
-
-test12
-```
-java.lang.NullPointerException
-org.apache.commons.math.ode.MidpointStepInterpolator.computeInterpolatedState(MidpointStepInterpolator.java:90)
-org.apache.commons.math.ode.AbstractStepInterpolator.setInterpolatedTime(AbstractStepInterpolator.java:260)
-org.apache.commons.math.ode.SwitchState.evaluateStep(SwitchState.java:155)
-org.apache.commons.math.ode.SwitchingFunctionsHandler.evaluateStep(SwitchingFunctionsHandler.java:109)
-```
-
-test14
-```
-java.lang.NullPointerException
-org.apache.commons.math.ode.ThreeEighthesStepInterpolator.computeInterpolatedState(ThreeEighthesStepInterpolator.java:99)
-org.apache.commons.math.ode.AbstractStepInterpolator.setInterpolatedTime(AbstractStepInterpolator.java:260)
-org.apache.commons.math.ode.SwitchState.evaluateStep(SwitchState.java:155)
-org.apache.commons.math.ode.SwitchingFunctionsHandler.evaluateStep(SwitchingFunctionsHandler.java:109)
-```
-
-Same as __ST19__
-
-
-# ST22
-
-## math-100-org.apache.commons.math.ode.SwitchingFunctionsHandler-org.apache.commons.math.ode.SwitchState-2
-
-test17
-```
-java.lang.NullPointerException
-org.apache.commons.math.ode.DormandPrince54StepInterpolator.computeInterpolatedState(DormandPrince54StepInterpolator.java:129)
-org.apache.commons.math.ode.AbstractStepInterpolator.setInterpolatedTime(AbstractStepInterpolator.java:260)
-org.apache.commons.math.ode.SwitchState.evaluateStep(SwitchState.java:155)
-org.apache.commons.math.ode.SwitchingFunctionsHandler.evaluateStep(SwitchingFunctionsHandler.java:109)
-```
-
-Same as __ST19__
-
-
-# ST23
-
-## math-100-org.apache.commons.math.ode.GraggBulirschStoerStepInterpolator-org.apache.commons.math.ode.AbstractStepInterpolator-17
-
-test5
 ```
 java.lang.ArrayIndexOutOfBoundsException: 2
 org.apache.commons.math.ode.GraggBulirschStoerStepInterpolator.computeInterpolatedState(GraggBulirschStoerStepInterpolator.java:326)
@@ -248,13 +219,31 @@ org.apache.commons.math.ode.AbstractStepInterpolator.setInterpolatedTime(Abstrac
 org.apache.commons.math.ode.GraggBulirschStoerStepInterpolator.readExternal(GraggBulirschStoerStepInterpolator.java:388)
 ```
 
+Generated test ([test5](../../results/cling/math-org.apache.commons.math.ode.GraggBulirschStoerStepInterpolator-org.apache.commons.math.ode.AbstractStepInterpolator-17/org/apache/commons/math/ode/GraggBulirschStoerStepInterpolator_ESTest.java#L102)):
 
+```java
+@Test(timeout = 4000)
+public void test5()  throws Throwable  {
+    GraggBulirschStoerStepInterpolator graggBulirschStoerStepInterpolator0 = new GraggBulirschStoerStepInterpolator();
+    ObjectInput objectInput0 = mock(ObjectInput.class, new ViolatedAssumptionAnswer());
+    doReturn(true).when(objectInput0).readBoolean();
+    doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(objectInput0).readDouble();
+    doReturn(1, 1).when(objectInput0).readInt();
+    // Undeclared exception!
+    try { 
+      graggBulirschStoerStepInterpolator0.readExternal(objectInput0);
+      fail("Expecting exception: ArrayIndexOutOfBoundsException");
+    
+    } catch(ArrayIndexOutOfBoundsException e) {
+        //
+        // 2
+        //
+        verifyException("org.apache.commons.math.ode.GraggBulirschStoerStepInterpolator", e);
+    }
+}
+```
 
-In this case, Caller is the sub-class and Callee is the super-class. 
-Number of **dimensions** are fetched from a file by calling one of the methods of super class.
-Besides, we have a two-dimension array called `polynoms` which is defined in sub-class. Also, this array is set by calling constructors of the sub-class. 
-The generated test by Cling, first, set `polynoms` array to an empty one by calling one of the constructors of the caller/sub class. Then it calls the setter of  **dimensions** variable, which is a method from super class to set this value to `2`. Finally, it calls a method which use the dimention size to access the `polynoms` array which leads to an ArrayIndexOutOfBoundException.
-
+The [documentation of the `readExternal` method](projects/math/src/java/org/apache/commons/math/ode/GraggBulirschStoerStepInterpolator.java#L364) specifies that the method reads `the state of the instance`. When looking at the [documentation of the `Externalizable` interface](https://docs.oracle.com/javase/8/docs/api/) defining the `readExternal` and `writeExternal` methods, the documentation specifies that the `readExternal method must read the values in the same sequence and with the same types as were written by writeExternal` and that the `Overriding methods should use this tag [@serialData] to describe the data layout of this Externalizable object`. Without any description of the format, CLING is unable to determine the right sequence of values to mock in the `objectInput0` object. However, none of the classes in the hierarchy of the `GraggBulirschStoerStepInterpolator` class describe the file format, as prescribed by the documentation of the `Externalizable` interface. Therefore, we count this as positive case, as Cling emphasizes the lack of documentation required to decide if the exception should be thrown or not. 
 
 
 # ST24
