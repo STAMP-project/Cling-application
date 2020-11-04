@@ -836,31 +836,32 @@ com.google.javascript.rhino.Node.copyInformationFromForTree(Node.java:1754)
 com.google.javascript.jscomp.NodeUtil.setDebugInformation(NodeUtil.java:2345)
 ```
 
-Generated test ([test003](../../results/cling/closure-com.google.javascript.jscomp.NodeUtil-com.google.javascript.rhino.Node-10/com/google/javascript/jscomp/NodeUtil_ESTest.java#L81)):
+Generated test ([test083](../../results/cling/closure-com.google.javascript.jscomp.NodeUtil-com.google.javascript.rhino.Node-10/com/google/javascript/jscomp/NodeUtil_ESTest.java#L1005)):
 
 ```java
 @Test(timeout = 4000)
-public void test003()  throws Throwable  {
+public void test083()  throws Throwable  {
+    CodingConvention codingConvention0 = mock(CodingConvention.class, new ViolatedAssumptionAnswer());
+    doReturn(false).when(codingConvention0).isConstant(anyString());
     Node node0 = mock(Node.class, new ViolatedAssumptionAnswer());
-    doReturn((Node) null).when(node0).getFirstChild();
-    doReturn(true).when(node0).isExprResult();
+    doReturn("", "").when(node0).getProp(anyInt());
+    Node node1 = NodeUtil.newName(codingConvention0, "", node0);
     // Undeclared exception!
     try { 
-      NodeUtil.isExprCall(node0);
-      fail("Expecting exception: NullPointerException");
+      NodeUtil.setDebugInformation(node1, node1, "m<,g&!T^UYBGU\"(%4");
+      fail("Expecting exception: ClassCastException");
     
-    } catch(NullPointerException e) {
+    } catch(ClassCastException e) {
         //
         // no message in exception (getMessage() returned null)
         //
-        verifyException("com.google.javascript.jscomp.NodeUtil", e);
     }
 }
 ```
 
-# /!\ Description does not match the generated test /!\
+The [`NodeUtil.setDebugInformation` static method](projects/closure/src/com/google/javascript/jscomp/NodeUtil.java#L2343) calls the [`copyInformationFromForTree` method](projects/closure/src/com/google/javascript/rhino/Node.java#L1553) on the first node object provided as parameter in the test. A [`TODO` note](projects/closure/src/com/google/javascript/rhino/Node.java#L1552) indicates that the `copyInformationFromForTree` method should be deleted as the _semantics of this method are ill-defined_. 
 
-The generated test calls a method in the caller class (`newQualifiedNameNode`) to generate a `Node` object. Then, it uses that object as an input parameter to another method of the caller class (`NodeUtil.setDebugInformation`). This method call leads to a class cast exception later. In this case, the generated test laverages the existing usages of callee class in the caller class to throw this exception.
+The `Node` class encapsulates the different setters and getters for the different properties using dedicated setters and getters. But in the same time, allows one to set and get arbitrary properties (or replace existing ones) using the [`putProp` method](projects/closure/src/com/google/javascript/rhino/Node.java#L845) without additional checks and potentially breaking the class invariants. This it this behavior that is shown in the test with the mocking of the `getProp` method calls. 
 
 
 ## ST45
