@@ -86,41 +86,6 @@ public int[] get(ReadablePartial partial, long instant) {
   # ST15
  Same as __ST3__
 
-
-# ST19
-
-[Stack trace](stacktraces.md#st19-f7):
-
-```
-java.lang.NullPointerException
-org.apache.commons.math.ode.EulerStepInterpolator.computeInterpolatedState(EulerStepInterpolator.java:85)
-org.apache.commons.math.ode.AbstractStepInterpolator.setInterpolatedTime(AbstractStepInterpolator.java:260)
-org.apache.commons.math.ode.SwitchState.evaluateStep(SwitchState.java:155)
-org.apache.commons.math.ode.SwitchingFunctionsHandler.evaluateStep(SwitchingFunctionsHandler.java:109)
-```
-
-Generated test ([test10](../../results/cling/math-org.apache.commons.math.ode.SwitchingFunctionsHandler-org.apache.commons.math.ode.SwitchState-8)):
-
-
-# /!\ The test case in [../../results/cling/math-org.apache.commons.math.ode.SwitchingFunctionsHandler-org.apache.commons.math.ode.SwitchState-8](../../results/cling/math-org.apache.commons.math.ode.SwitchingFunctionsHandler-org.apache.commons.math.ode.SwitchState-8) does not correspond to the test hereafter /!\
-
-```java
-      EulerStepInterpolator eulerStepInterpolator0 = new EulerStepInterpolator();
-      // Undeclared exception!
-      try { 
-        switchingFunctionsHandler0.evaluateStep(eulerStepInterpolator0);
-        fail("Expecting exception: NullPointerException");
-      
-      } catch(NullPointerException e) {
-         //
-         // no message in exception (getMessage() returned null)
-         //
-         verifyException("org.apache.commons.math.ode.DormandPrince54StepInterpolator", e);
-      }
-```
-
-The documentation of the default constructor of the [`EulerStepInterpolator` class](projects/math/src/java/org/apache/commons/math/ode/EulerStepInterpolator.java#L51) specifies that the interpolator should not be used before calling the `reinitialize` method in order to initialize the internal arrays. The generated test fails to do so. 
-
 # ST20
 
 [Stack trace](stacktraces.md#st20-nf8):

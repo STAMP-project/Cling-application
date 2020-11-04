@@ -381,17 +381,6 @@ org.apache.commons.math.ode.SwitchState.evaluateStep(SwitchState.java:155)
 org.apache.commons.math.ode.SwitchingFunctionsHandler.evaluateStep(SwitchingFunctionsHandler.java:109)
 ```
 
-## math-100-org.apache.commons.math.ode.SwitchingFunctionsHandler-org.apache.commons.math.ode.SwitchState-8
-### ST19-F7
-test10
-```
-java.lang.NullPointerException
-org.apache.commons.math.ode.EulerStepInterpolator.computeInterpolatedState(EulerStepInterpolator.java:85)
-org.apache.commons.math.ode.AbstractStepInterpolator.setInterpolatedTime(AbstractStepInterpolator.java:260)
-org.apache.commons.math.ode.SwitchState.evaluateStep(SwitchState.java:155)
-org.apache.commons.math.ode.SwitchingFunctionsHandler.evaluateStep(SwitchingFunctionsHandler.java:109)
-```
-
 # Mockito
 
 ## mockito-31-org.mockito.asm.MethodWriter-org.mockito.asm.ClassWriter-1
