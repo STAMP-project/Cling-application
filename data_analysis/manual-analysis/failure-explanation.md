@@ -971,6 +971,39 @@ public void test06()  throws Throwable  {
 
 Same issue as [ST38](#ST38).
 
+## ST49
+[Stack trace](stacktraces.md#st49-f25):
+
+```
+java.lang.NullPointerException
+com.google.javascript.rhino.head.ScriptableObject.getBase(ScriptableObject.java:2560)
+com.google.javascript.rhino.head.ScriptableObject.putProperty(ScriptableObject.java:2373)
+com.google.javascript.rhino.head.ScriptRuntime.setObjectElem(ScriptRuntime.java:1617)
+```
+
+Generated test ([test03](../../results/cling/closure-com.google.javascript.rhino.head.ScriptRuntime-com.google.javascript.rhino.head.ScriptableObject-7/com/google/javascript/rhino/head/ScriptRuntime_ESTest.java#L78)):
+
+```java
+  @Test(timeout = 4000)
+  public void test03()  throws Throwable  {
+      Boolean boolean0 = Boolean.TRUE;
+      Context context0 = mock(Context.class, new ViolatedAssumptionAnswer());
+      // Undeclared exception!
+      try { 
+        ScriptRuntime.setObjectElem((Scriptable) null, (Object) null, (Object) boolean0, context0);
+        fail("Expecting exception: NullPointerException");
+      
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("com.google.javascript.rhino.head.ScriptableObject", e);
+      }
+  }
+```
+
+This test passes `null` for the first input parameter of the method `setObjectElem`. 
+The [documentation](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java) of this method does not indicate any restriction for this argument. This method also passes this null object to class `ScriptableObject` by calling method `putProperty`. Again, there is no limitations in the [documentations](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java). Eventually, method `getBase` in `ScriptableObject` uses this object without checking if it is `null`, and thereby it throws `NullPointerException`.
 
 ## ST 50
 
