@@ -25,7 +25,7 @@ The called method expects this type of exception according to the comments and d
 
 # ST8
 
-[Stack trace](stacktraces.md#st8-nf1):
+[Stack trace](stacktraces.md#st8-nf8):
 
 ```
 java.lang.NullPointerException
@@ -86,9 +86,9 @@ public int[] get(ReadablePartial partial, long instant) {
   # ST15
  Same as __ST3__
 
-# ST20
+# ST19
 
-[Stack trace](stacktraces.md#st20-nf8):
+[Stack trace](stacktraces.md#st19-nf14):
 
 ```
 java.lang.NullPointerException
@@ -134,9 +134,9 @@ public void test14()  throws Throwable  {
 
 The documentation of the default constructor of the [`ThreeEighthesStepInterpolator` class](projects/math/src/java/org/apache/commons/math/ode/ThreeEighthesStepInterpolator.java#L58) specifies that the interpolator should not be used before calling the `reinitialize` method in order to initialize the internal arrays. The generated test fails to do so. 
 
-# ST21
+# ST20
 
-[Stack trace](stacktraces.md#st21-nf9):
+[Stack trace](stacktraces.md#st20-nf15):
 
 ```
 java.lang.NullPointerException
@@ -182,9 +182,9 @@ public void test12()  throws Throwable  {
 
 The documentation of the default constructor of the [`MidpointStepInterpolator` class](projects/math/src/java/org/apache/commons/math/ode/MidpointStepInterpolator.java#L53) specifies that the interpolator should not be used before calling the `reinitialize` method in order to initialize the internal arrays. The generated test fails to do so. 
 
-# ST22
+# ST21
 
-[Stack trace](stacktraces.md#st22-nf10):
+[Stack trace](stacktraces.md#st21-nf16):
 
 ```
 java.lang.NullPointerException
@@ -231,34 +231,34 @@ public void test17()  throws Throwable  {
 
 The documentation of the default constructor of the [`DormandPrince54StepInterpolator` class](projects/math/src/java/org/apache/commons/math/ode/DormandPrince54StepInterpolator.java#L42) specifies that the interpolator should not be used before calling the `reinitialize` method in order to initialize the internal arrays. The generated test fails to do so. 
 
-  # ST26
+  # ST25
 The captured exception is not about the integration of caller and callee
 
 
-  # ST27
+  # ST26
 One of the objects are mocked to return a null value. It is impossible for the mocked object to return null.
 
 
-  # ST28
-  Same as __ST27__
+  # ST27
+  Same as __ST26__
 
-  # ST31
+  # ST30
 
 The called method in caller class is Deprecated.
 
 
 
 
-# ST40
+# ST39
 
 For activating `PrototypeMap`, we ned to call `activatePrototypeMap(id)`. The passed `id` should be a value lower than 24. The generated test directly called this method with higher number and it throws the exception. However, when we check all of the invokation of this method in the project, we can see that this method is always called with a static int.
 
 
-# ST43
+# ST42
  
 The called method of caller class does not accept null value according to the comments and documentations.
 
 
-# ST48
+# ST47
 
 The Delegator class is instantiated by a constructor, which is indicated to be used only for portotype object.

@@ -3,7 +3,7 @@
 
 ## ST10
 
-[Stack trace](stacktraces.md#st10-f2):
+[Stack trace](stacktraces.md#st10-f1):
 
 ```
 java.lang.IllegalArgumentException: Invalid min days in first week: 175
@@ -41,7 +41,7 @@ The generated test passes 175 as the value of minimum number of days per week. N
 
 ## ST11
 
-[Stack trace](stacktraces.md#st11-f3):
+[Stack trace](stacktraces.md#st11-f2):
 
 ```
 org.joda.time.IllegalFieldValueException: Value 14 for dayOfMonth is not supported
@@ -78,7 +78,7 @@ Caller method [calls a method `set` in `ZonedChronology$ZonedDateTime`](projects
 
 ## ST16
 
-[Stack trace](stacktraces.md#st16-f4):
+[Stack trace](stacktraces.md#st16-f3):
 
 ```
 org.mockito.cglib.core.CodeGenerationException: java.beans.IntrospectionException-->java.lang.Object not superclass of java.lang.Object
@@ -127,7 +127,7 @@ The fault is the passed objects to method `setDelegates` in caller class. If the
 
 ## ST17
 
-[Stack trace](stacktraces.md#st17-f5):
+[Stack trace](stacktraces.md#st17-f4):
 
 ```
 java.lang.NullPointerException
@@ -161,7 +161,7 @@ public void test12()  throws Throwable  {
 
 ## ST18
 
-[Stack trace](stacktraces.md#st18-f6):
+[Stack trace](stacktraces.md#st18-f5):
 
 ```
 java.lang.NullPointerException
@@ -208,9 +208,9 @@ If we do not call visit or call it with null input parameter `name` and pass it 
 
 # Math
 
-## ST23
+## ST22
 
-[Stack trace](stacktraces.md#st23-f11):
+[Stack trace](stacktraces.md#st22-f6):
 
 ```
 java.lang.ArrayIndexOutOfBoundsException: 2
@@ -246,9 +246,9 @@ public void test5()  throws Throwable  {
 The [documentation of the `readExternal` method](projects/math/src/java/org/apache/commons/math/ode/GraggBulirschStoerStepInterpolator.java#L364) specifies that the method reads `the state of the instance`. When looking at the [documentation of the `Externalizable` interface](https://docs.oracle.com/javase/8/docs/api/) defining the `readExternal` and `writeExternal` methods, the documentation specifies that the `readExternal method must read the values in the same sequence and with the same types as were written by writeExternal` and that the `Overriding methods should use this tag [@serialData] to describe the data layout of this Externalizable object`. Without any description of the format, CLING is unable to determine the right sequence of values to mock in the `objectInput0` object. However, none of the classes in the hierarchy of the `GraggBulirschStoerStepInterpolator` class describe the file format, as prescribed by the documentation of the `Externalizable` interface. Therefore, we count this as positive case, as Cling emphasizes the lack of documentation required to decide if the exception should be thrown or not. 
 
 
-## ST24
+## ST23
 
-[Stack trace](stacktraces.md#st24-f12):
+[Stack trace](stacktraces.md#st23-f7):
 
 ```
 java.lang.NullPointerException
@@ -288,9 +288,9 @@ Next, the test calls another method that uses that initialized object of Callee 
 
 In summary, there are no checks or documentation about the internal consistency of the different objects, which allowed Cling to trigger a `NullPointerException`.
 
-## ST25
+## ST24
 
-[Stack trace](stacktraces.md#st25-f13):
+[Stack trace](stacktraces.md#st24-f8):
 
 ```
 java.lang.NullPointerException
@@ -328,9 +328,9 @@ In this case, Caller is the sub-class and Callee is the super-class. The called 
 
 # Closure
 
-## ST29
+## ST28
 
-[Stack trace](stacktraces.md#st29-f14):
+[Stack trace](stacktraces.md#st28-f9):
 
 ```
 java.lang.NullPointerException
@@ -369,9 +369,9 @@ public void test04()  throws Throwable  {
 In this case, `UnionType` (caller class) is the sub-class and `JSType` (callee class) is the superclass. The generated test instantiate a `UnionType` object with the following constructor ` UnionType(JSTypeRegistry registry, Collection<JSType> alternates)`. Also, it passes `NULL` for the first parameter. According to the documentation of this class, there is no limitation for the input. This constructor sets the value of a local variable (`registry`) to the passed value (here, it is `NULL`). Then, the generated test calls method `getTypesUnderInequality` of the instantiated object. This method invokes method `isEmptyType` in the superclass, indirectly. `isEmptyType` method tries to use the attribute `registry`. Since this attribute is set to `NULL` during the invocation of the constructor of `UnionType`, it throws a `NullPointerException`. No indication in the documentation specifies that the `registry` parameter of a [`JSType` constructor](projects/closure/src/com/google/javascript/rhino/jstype/JSType.java#L105) should not be null. No checks are done on the value of the parameter. 
 
 
-## ST30
+## ST29
 
-[Stack trace](stacktraces.md#st30-f15):
+[Stack trace](stacktraces.md#st29-f10):
 
 ```
 java.lang.NullPointerException
@@ -410,9 +410,9 @@ public void test22()  throws Throwable  {
 In this case, `UnionType` (callee class) is the sub-class and `JSType` (caller class) is the superclass. In this test, calls equal on a `UnionType` object. The [`equals` method](projects/closure/src/com/google/javascript/rhino/jstype/JSType.java#L477) is defined in the class `JSType`. The input parameter of equals is a `ParameterizedType` object. The [constructor of `ParameterizedType`](projects/closure/src/com/google/javascript/rhino/jstype/ParameterizedType.java#L55) accepts multiple input parameters. The second one is `JSType referencedType`. The generated test passes `NULL` for this value. The constructor of  `ParameterizedType` set a local attribute with the same name by this input parameter. When the generated test passes this object to check if it is equal to the `UnionType` by calling method equals, it does not check if the local attribute of `ParameterizedType` is null or not, and it passes it to method `isUnionType` of the other target class (`JSType`). This method calls the [method `toMaybeUnionType`](projects/closure/src/com/google/javascript/rhino/jstype/ProxyObjectType.java#L202), which uses `referencedType` without checking if it is null or not. Hence, it throws `NullPointerException`.
 
 
-## ST32
+## ST31
 
-[Stack trace](stacktraces.md#st32-f16):
+[Stack trace](stacktraces.md#st31-f11):
 
 ```
 java.lang.NullPointerException
@@ -445,9 +445,9 @@ public void test255()  throws Throwable  {
 
 The generated test instantiates caller class and calls the [method `markName(String name, StaticSourceFile file,int lineno, int charno)`](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L205) with a null value as `name`. The `markName` method instantiates a new object from the callee class `TrimmedStringPosition` and passes the input parameter `name` to [one of its method (`setItem`)](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L135). There is no limitation in the code or indication in the documentation, preventing passing a null value as `name`. The documentation of the [`setItem` method](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L135) only mentions (and checks in the body of the method) that the string has no leading nor trailing space.
 
-## ST33
+## ST32
 
-[Stack trace](stacktraces.md#st33-f17):
+[Stack trace](stacktraces.md#st32-f12):
 
 ```
 java.lang.NullPointerException
@@ -483,9 +483,9 @@ public void test170()  throws Throwable  {
 
 The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value. This object is passed to a method in the caller class. The called method invokes a method in the callee class and passes the `JSTypeExpression` object to it. The method in the callee class checks this object with a [customized `equal` method](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L106). The equal method tries to make use of the `root` attribute without checking if it is null or not. The documentation provides no indication about the validity to have a null `root` attribute, and no checks are done in the code.
 
-## ST34
+## ST33
 
-[Stack trace](stacktraces.md#st34-f18):
+[Stack trace](stacktraces.md#st33-f13):
 
 ```
 java.lang.NullPointerException
@@ -521,9 +521,9 @@ public void test159()  throws Throwable  {
 
 The generated test passes null to the [`recordTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L298). This null value is used as parameter to call the [`declareTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L908) and triggers a `NullPointerException` in nested calls. No checks are done to prevent null values, and the documentation does not indicate if null values are permitted. 
 
-## ST35
+## ST34
 
-[Stack trace](stacktraces.md#st35-f19):
+[Stack trace](stacktraces.md#st34-f14):
 
 ```
 java.lang.NullPointerException
@@ -560,9 +560,9 @@ public void test071()  throws Throwable  {
 The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value.  The object of `JSTypeExpression` is passed to the caller by a method called `recordParameter` which passes this value to the callee class. Then, the test calls [method `recordThrowDescription`](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L325), which calls [method `documentThrows`](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L782) in callee. This method throws  `NullPointerException` because the `root` in the passed `JSTypeExpression` is null. The documentation provides no indication about the validity to have a null `root` attribute, and no checks are done in the code.
 
 
-## ST36
+## ST35
 
-[Stack trace](stacktraces.md#st36-f20):
+[Stack trace](stacktraces.md#st35-f15):
 
 ```
 com.google.javascript.rhino.head.EcmaError: TypeError: Cannot find default value for object.
@@ -599,9 +599,9 @@ public void test01()  throws Throwable  {
 
 The test calls the [static method `FunctionObject.convertArg`](projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject.java#L216) with random parameter values. The static methods tries to convert the third parameter (`topLevel0`) to a `Double` value (indicated by the value `4` as last parameter of the call) but fails to do so. The `convertArg` method does not make any check before [performing the conversion](projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject.java#L233) and no documentation is provided for that method. The documentation of the callee (`ScriptRuntime.toNumber`) does not indicate that an exception is thrown in case of error during the conversion.
 
-## ST37
+## ST36
 
-[Stack trace](stacktraces.md#st37-f21):
+[Stack trace](stacktraces.md#st36-f16):
 
 ```
 java.lang.NullPointerException
@@ -647,9 +647,9 @@ Generated test ([test15](../../results/cling/closure-com.google.javascript.rhino
 Here, the caller is a [class called `NativeArray`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java).  The generated test passes a `IdFunctionObject` object to the caller class. Then, the caller class passes this object through intermediate calls to the callee class `ScriptRuntime`. This class is later used in the callee class. However, if we do not call  method `initFunction` in `IdFunctionObject`, the usage of `IdFunctionObject` by callee class would lead to NullPointerException. The existence of `parentScope` in the passed `IdFunctionObject` to the caller and callee is not checked by these two classes. Eventually, the callee class invoked a method, which needs the `parentScope`, and since it is not available, it throws the NullPointerException. Also, the [documentation of `IdFunctionObject`](projects/closure/lib/rhino/src/org/mozilla/javascript/IdFunctionObject.java#L77) does not mention that you need to call the init function.
 
 
-## ST38
+## ST37
 
-[Stack trace](stacktraces.md#st38-f22):
+[Stack trace](stacktraces.md#st37-f17):
 
 ```
 java.lang.NullPointerException
@@ -703,9 +703,9 @@ These two constructors do not set any value for `javaObject`.
 The generated test initiate an object from `NativeJavaClass` and pass it as one of the input parameters of the caller class (`NativeArray`). This object is passed through multiple classes (indicated in stack trace). Eventually, [`ScriptRuntime.toString(ScriptRuntime.java:803)`](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java#L783) calls [method `NativeJavaClass.getDefaultValue` of class `NativeJavaClass`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeJavaClass.java#L153). This method calls `toString`, which uses the `javaObject` variable without checking if it is null or noy, and it leads to a `NullPointerException`.
 
 
-## ST39
+## ST38
 
-[Stack trace](stacktraces.md#st39-f23):
+[Stack trace](stacktraces.md#st38-f18):
 
 ```
 com.google.javascript.rhino.head.EcmaError: TypeError: Cannot find default value for object.
@@ -749,9 +749,9 @@ public void test14()  throws Throwable  {
 
 [Caller (`NativeArray`)](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java) and [Callee (`IdScriptableObject`)](projects/closure/lib/rhino/src/org/mozilla/javascript/IdScriptableObject.java) are in the same hierarchy tree. The generated test uses null value for context to call [method `getOwnPropertyDescriptor`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java#L584) in super class. The [method has no documentation](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptableObject.java#L3092) and the value of the context is not checked.
 
-## ST41
+## ST40
 
-[Stack trace](stacktraces.md#st41-f24):
+[Stack trace](stacktraces.md#st40-f19):
 
 ```
 java.lang.NullPointerException
@@ -782,9 +782,9 @@ public void test03()  throws Throwable  {
 A method in [Caller class is called `NativeArray.initPrototypeId`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java#L213). This method uses Callee class by calling a method called `initPrototypeMethod`. This method should be invoked after activating `PrototypeMap` in this method. It uses a local variable call `prototypeValues`. Since `PrototypeMap` is not activated, the `prototypeValues` is null. So, [calling `initPrototypeMethod`](projects/closure/lib/rhino/src/org/mozilla/javascript/IdScriptableObject.java#L646) without making sure of activation of `PrototypeMap` by caller class leads to NullPointerException. No checks of the internal state of the objects are done and the documentation does not described the proper initialization sequence.
 
 
-## ST42
+## ST41
 
-[Stack trace](stacktraces.md#st42-f25):
+[Stack trace](stacktraces.md#st41-f20):
 
 ```
 java.lang.NullPointerException
@@ -822,9 +822,9 @@ A method in `IRFactory` (`transform`) needs an object from another class, called
 As we can see, the generated test instantiates the `Name` object with the aforementioned constructor (the `identifire` inside the `Name` object remained null). Then, it passes this object to a method `IRFactory.transform`. This class does not check the local variable inside the passed `Name` object and it eventually uses `identifire` in the this object as an input parameter for calling [method `Decompiler.addName`](projects/closure/lib/rhino/src/org/mozilla/javascript/Decompiler.java#L153). This method again does not check the passed input parameter value and passes it to [another method called `appendString`](projects/closure/lib/rhino/src/org/mozilla/javascript/Decompiler.java#L224), which calls a method of this Null String. 
 
 
-## ST44
+## ST43
 
-[Stack trace](stacktraces.md#st44-f26):
+[Stack trace](stacktraces.md#st43-f21):
 
 ```
 java.lang.ClassCastException: java.lang.String cannot be cast to com.google.javascript.rhino.jstype.StaticSourceFile
@@ -863,9 +863,9 @@ The [`NodeUtil.setDebugInformation` static method](projects/closure/src/com/goog
 
 The `Node` class encapsulates the different setters and getters for the different properties using dedicated setters and getters. But at the same time, it allows one to set and get arbitrary properties (or replace existing ones) using the [`putProp` method](projects/closure/src/com/google/javascript/rhino/Node.java#L845) without additional checks and potentially breaking the class invariants. This it this behavior that is shown in the test with the mocking of the `getProp` method calls. 
 
-## ST45
+## ST44
 
-[Stack trace](stacktraces.md#st45-f27):
+[Stack trace](stacktraces.md#st44-f22):
 
 ```
 java.lang.NullPointerException
@@ -899,9 +899,9 @@ The [method in the caller class (method `newCallNode`)](projects/closure/src/com
 Note: the caller class contains more than 150 public/protected method calls. Each of them has multiple input parameters and multiple branches to call. Unlike EvoSuite, Cling only focuses on the methods which interact with the callee class.
 
 
-## ST46
+## ST45
 
-[Stack trace](stacktraces.md#st46-f28):
+[Stack trace](stacktraces.md#st45-f23):
 
 ```
 java.lang.NullPointerException
@@ -935,9 +935,9 @@ Generated test ([test05](../../results/cling/closure-com.google.javascript.rhino
 Same issue as [ST38](#ST38).
 
 
-## ST47
+## ST46
 
-[Stack trace](stacktraces.md#st47-f29):
+[Stack trace](stacktraces.md#st46-f24):
 
 ```
 java.lang.NullPointerException
@@ -971,8 +971,8 @@ public void test06()  throws Throwable  {
 
 Same issue as [ST38](#ST38).
 
-## ST49
-[Stack trace](stacktraces.md#st49-f25):
+## ST48
+[Stack trace](stacktraces.md#st48-f25):
 
 ```
 java.lang.NullPointerException
@@ -1005,10 +1005,10 @@ Generated test ([test03](../../results/cling/closure-com.google.javascript.rhino
 This test passes `null` for the first input parameter of the method `setObjectElem`. 
 The [documentation](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java#L1606) of this method does not indicate any restriction for this argument. This method also passes this null object to class `ScriptableObject` by calling method `putProperty`. Again, there is no limitations in the [documentations](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptableObject.java#L2371). Eventually, method `getBase` in `ScriptableObject` uses this object without checking if it is `null`, and thereby it throws `NullPointerException`.
 
-## ST 50
+## ST 49
 
 
-[Stack trace](stacktraces.md#st50-f31):
+[Stack trace](stacktraces.md#st49-f26):
 
 ```
 java.lang.NullPointerException
@@ -1042,9 +1042,9 @@ public void test00()  throws Throwable  {
 Same issue as [ST38](#ST38).
 
 
-## ST51
+## ST50
 
-[Stack trace](stacktraces.md#st51-f32):
+[Stack trace](stacktraces.md#st50-f27):
 
 ```
 java.lang.NullPointerException
