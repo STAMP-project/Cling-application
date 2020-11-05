@@ -7,7 +7,7 @@ The called method expects this type of exception according to the comments and d
 The called method expects this type of exception according to the comments and documentations.
 
 
-# ST 3
+# ST3
 
 here, the mocked value returns null for getChronology. However this value cannot be null according to documents
 
