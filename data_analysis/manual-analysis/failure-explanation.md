@@ -282,11 +282,11 @@ public void test03()  throws Throwable  {
 }
 ```
 
-The generated test calls the `addSwitchingFunction()` method from Caller class. This method is not called by any other class in the project. So, this method should be called from outside. One of the input parameters of this method is an object from `SwitchingFunction` class. The documentation does not indicated that this parameter cannot be null. The generated test passes null as input parameter to the `addSwitchingFunction` method and it does not trigger any exception. The called method uses this object to initilize an object from callee class without any check (for instance, null checking).
+The generated test calls the `addSwitchingFunction()` method from Caller class. This method is not called by any other class in the project. So, this method should be called from outside. One of the input parameters of this method is an object from `SwitchingFunction` class. The documentation does not indicate that this parameter cannot be null. The generated test passes null as an input parameter to the `addSwitchingFunction` method, and it does not trigger any exception. The called method uses this object to initialize an object from the callee class without any check (for instance, null checking).
 
-Next, the test calls another method which uses that initialized object of Callee (`GraggBulirschStoerIntegrator.integrate()`). comments and documentation of this method does not indicate that this method may throw a `NullPointerException`. However, by calling this method we trigger a NullPointerException because of the null value that we used in initializing of Callee.
+Next, the test calls another method that uses that initialized object of Callee (`GraggBulirschStoerIntegrator.integrate()`). Comments and documentation of this method do not indicate that this method may throw a `NullPointerException`. However, by calling this method, we trigger a NullPointerException because of the null value we used to initialize Callee.
 
-I summary there are no checks or documentation about the internal consistency of the different objects, which allowed Cling to trigger a `NullPointerException`.
+In summary, there are no checks or documentation about the internal consistency of the different objects, which allowed Cling to trigger a `NullPointerException`.
 
 ## ST25
 
@@ -366,7 +366,7 @@ public void test04()  throws Throwable  {
 }
 ```
 
-In this case, `UnionType` (caller class) is the sub-class and `JSType` (callee class) is the super class. The genrated test instantiate a `UnionType` object with the following constructor ` UnionType(JSTypeRegistry registry, Collection<JSType> alternates)`. Also, it passes `NULL` for the first parameter. According to the documentation of this class there is no limitation for the input. This constructor sets the value of a local variable (`registry`) to the passed value (here, it is `NULL`). Then, the generated test calls method `getTypesUnderInequality` of the instantiated object. This method invokes method `isEmptyType` in the super class, indirectly. `isEmptyType` method tries to use the attribute `registry`. Since this attribute is set to `NULL` during the invocation of constructor of `UnionType`, it throws a `NullPointerException`. No indication in the documentation specifies that the `registry` parameter of a [`JSType` constructor](projects/closure/src/com/google/javascript/rhino/jstype/JSType.java#L105) should not be null. No checks are done on the value of the parameter. 
+In this case, `UnionType` (caller class) is the sub-class and `JSType` (callee class) is the superclass. The generated test instantiate a `UnionType` object with the following constructor ` UnionType(JSTypeRegistry registry, Collection<JSType> alternates)`. Also, it passes `NULL` for the first parameter. According to the documentation of this class, there is no limitation for the input. This constructor sets the value of a local variable (`registry`) to the passed value (here, it is `NULL`). Then, the generated test calls method `getTypesUnderInequality` of the instantiated object. This method invokes method `isEmptyType` in the superclass, indirectly. `isEmptyType` method tries to use the attribute `registry`. Since this attribute is set to `NULL` during the invocation of the constructor of `UnionType`, it throws a `NullPointerException`. No indication in the documentation specifies that the `registry` parameter of a [`JSType` constructor](projects/closure/src/com/google/javascript/rhino/jstype/JSType.java#L105) should not be null. No checks are done on the value of the parameter. 
 
 
 ## ST30
@@ -407,7 +407,7 @@ public void test22()  throws Throwable  {
 }
 ```
 
-In this case, `UnionType` (callee class) is the sub-class and `JSType` (caller class) is the super class. In this test calls equals on a `UnionType` object. The [`equals` method](projects/closure/src/com/google/javascript/rhino/jstype/JSType.java#L477) is defined in the class `JSType`. The input parameter of of equals is a `ParameterizedType` object. The [constructor of `ParameterizedType`](projects/closure/src/com/google/javascript/rhino/jstype/ParameterizedType.java#L55) accepts multiple input parameters. The second one is `JSType referencedType`. The generated test passes `NULL` for this value. the constructor of  `ParameterizedType` set a local attribute with the same name by this input parameter. When the generated test passes this object to check if it is equal to the `UnionType` by calling method equals, it does not check if the local attribute of `ParameterizedType` is null or not, and it passes it to method `isUnionType` of the other target class (`JSType`). This method calls the [method `toMaybeUnionType`](projects/closure/src/com/google/javascript/rhino/jstype/ProxyObjectType.java#L202) which uses `referencedType` without checking if it is null or not. Hence, it throws `NullPointerException`.
+In this case, `UnionType` (callee class) is the sub-class and `JSType` (caller class) is the superclass. In this test, calls equal on a `UnionType` object. The [`equals` method](projects/closure/src/com/google/javascript/rhino/jstype/JSType.java#L477) is defined in the class `JSType`. The input parameter of equals is a `ParameterizedType` object. The [constructor of `ParameterizedType`](projects/closure/src/com/google/javascript/rhino/jstype/ParameterizedType.java#L55) accepts multiple input parameters. The second one is `JSType referencedType`. The generated test passes `NULL` for this value. The constructor of  `ParameterizedType` set a local attribute with the same name by this input parameter. When the generated test passes this object to check if it is equal to the `UnionType` by calling method equals, it does not check if the local attribute of `ParameterizedType` is null or not, and it passes it to method `isUnionType` of the other target class (`JSType`). This method calls the [method `toMaybeUnionType`](projects/closure/src/com/google/javascript/rhino/jstype/ProxyObjectType.java#L202), which uses `referencedType` without checking if it is null or not. Hence, it throws `NullPointerException`.
 
 
 ## ST32
@@ -443,7 +443,7 @@ public void test255()  throws Throwable  {
 }
 ```
 
-The generated test instantiate caller class and calls the [method `markName(String name, StaticSourceFile file,int lineno, int charno)`](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L205) with a null value as `name`. The `markName` method instantiates a new object from the callee class `TrimmedStringPosition` and passes input parameter `name` to [one of its method (`setItem`)](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L135). There is no limitation in the code or indication in the documentation preventing from passing a null value as `name`. The documentation of the [`setItem` method](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L135) only mentions (and checks in the body of the method) that the string has no leading nor trailing space.
+The generated test instantiates caller class and calls the [method `markName(String name, StaticSourceFile file,int lineno, int charno)`](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L205) with a null value as `name`. The `markName` method instantiates a new object from the callee class `TrimmedStringPosition` and passes the input parameter `name` to [one of its method (`setItem`)](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L135). There is no limitation in the code or indication in the documentation, preventing passing a null value as `name`. The documentation of the [`setItem` method](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L135) only mentions (and checks in the body of the method) that the string has no leading nor trailing space.
 
 ## ST33
 
@@ -481,7 +481,7 @@ public void test170()  throws Throwable  {
 }
 ```
 
-The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value. This object is passed to a method in the caller class. The called method invokes a method in the callee class and passes the `JSTypeExpression` object to it. The method in the callee class check this object with a [customized `equal` method](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L106). The equal method tries to make use of the `root` attribute without checking if it is null or not. The documentation provides no indication about the validity to have a null `root` attribute and no checks are done in the code.
+The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value. This object is passed to a method in the caller class. The called method invokes a method in the callee class and passes the `JSTypeExpression` object to it. The method in the callee class checks this object with a [customized `equal` method](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L106). The equal method tries to make use of the `root` attribute without checking if it is null or not. The documentation provides no indication about the validity to have a null `root` attribute, and no checks are done in the code.
 
 ## ST34
 
@@ -557,7 +557,7 @@ public void test071()  throws Throwable  {
 }
 ```
 
-The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value.  The object of `JSTypeExpression` is passed to the caller by a method called `recordParameter` which passes this value to the callee class. Then, the test calls [method `recordThrowDescription`](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L325), which calls [method `documentThrows`](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L782) in callee. This method throws  `NullPointerException` because the `root` in the passed `JSTypeExpression` is null. The documentation provides no indication about the validity to have a null `root` attribute and no checks are done in the code.
+The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value.  The object of `JSTypeExpression` is passed to the caller by a method called `recordParameter` which passes this value to the callee class. Then, the test calls [method `recordThrowDescription`](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L325), which calls [method `documentThrows`](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L782) in callee. This method throws  `NullPointerException` because the `root` in the passed `JSTypeExpression` is null. The documentation provides no indication about the validity to have a null `root` attribute, and no checks are done in the code.
 
 
 ## ST36
@@ -698,7 +698,7 @@ and
 public NativeJavaClass() { }
 ```
 
-These two constructors does not set any value for `javaObject`.
+These two constructors do not set any value for `javaObject`.
 
 The generated test initiate an object from `NativeJavaClass` and pass it as one of the input parameters of the caller class (`NativeArray`). This object is passed through multiple classes (indicated in stack trace). Eventually, [`ScriptRuntime.toString(ScriptRuntime.java:803)`](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java#L783) calls [method `NativeJavaClass.getDefaultValue` of class `NativeJavaClass`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeJavaClass.java#L153). This method calls `toString`, which uses the `javaObject` variable without checking if it is null or noy, and it leads to a `NullPointerException`.
 
@@ -861,8 +861,7 @@ public void test083()  throws Throwable  {
 
 The [`NodeUtil.setDebugInformation` static method](projects/closure/src/com/google/javascript/jscomp/NodeUtil.java#L2343) calls the [`copyInformationFromForTree` method](projects/closure/src/com/google/javascript/rhino/Node.java#L1553) on the first node object provided as parameter in the test. A [`TODO` note](projects/closure/src/com/google/javascript/rhino/Node.java#L1552) indicates that the `copyInformationFromForTree` method should be deleted as the _semantics of this method are ill-defined_. 
 
-The `Node` class encapsulates the different setters and getters for the different properties using dedicated setters and getters. But in the same time, allows one to set and get arbitrary properties (or replace existing ones) using the [`putProp` method](projects/closure/src/com/google/javascript/rhino/Node.java#L845) without additional checks and potentially breaking the class invariants. This it this behavior that is shown in the test with the mocking of the `getProp` method calls. 
-
+The `Node` class encapsulates the different setters and getters for the different properties using dedicated setters and getters. But at the same time, it allows one to set and get arbitrary properties (or replace existing ones) using the [`putProp` method](projects/closure/src/com/google/javascript/rhino/Node.java#L845) without additional checks and potentially breaking the class invariants. This it this behavior that is shown in the test with the mocking of the `getProp` method calls. 
 
 ## ST45
 
@@ -895,9 +894,9 @@ public void test65()  throws Throwable  {
 }
 ```
 
-The [method in the caller class (method `newCallNode`)](projects/closure/src/com/google/javascript/jscomp/NodeUtil.java#L2878) is not used internally in the project, which tends to indicate that it should be called by external classes. However, there is no specific documentations or comments about input parameters. If one passes a null value as a parameter to this method, the method passes this null value to [one of the methods of the callee (`addChildToBack`)](projects/closure/src/com/google/javascript/rhino/Node.java#L608). The callee method throws `NullPointerException` with that null value.
+The [method in the caller class (method `newCallNode`)](projects/closure/src/com/google/javascript/jscomp/NodeUtil.java#L2878) is not used internally in the project, which tends to indicate that it should be called by external classes. However, there is no specific documentation or comments about input parameters. If one passes a null value as a parameter to this method, the method passes this null value to [one of the methods of the callee (`addChildToBack`)](projects/closure/src/com/google/javascript/rhino/Node.java#L608). The callee method throws `NullPointerException` with that null value.
 
-Note: the caller class contains more than 150 public/protected method calls. Each of them has multiple input parameters and multiple branches to call. Unlike EvoSuite, Cling only focus on the methods which interact with the callee class.
+Note: the caller class contains more than 150 public/protected method calls. Each of them has multiple input parameters and multiple branches to call. Unlike EvoSuite, Cling only focuses on the methods which interact with the callee class.
 
 
 ## ST46
@@ -1045,7 +1044,7 @@ public void test18()  throws Throwable  {
 }
 ```
 
-[Caller (`NativeArray`)](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java) and [Callee (`IdScriptableObject`)](projects/closure/lib/rhino/src/org/mozilla/javascript/IdScriptableObject.java) are in the same hierarchy tree. The test generated by Cling uses a null value for context to call [method `getOwnPropertyDescriptor`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java#L576) in super class. The documentation of the method does not describe restrictions on the inputs and no checks are performed. 
+[Caller (`NativeArray`)](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java) and [Callee (`IdScriptableObject`)](projects/closure/lib/rhino/src/org/mozilla/javascript/IdScriptableObject.java) are in the same hierarchy tree. The test generated by Cling uses a null value for context to call [method `getOwnPropertyDescriptor`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java#L576) in the superclass. The documentation of the method does not describe restrictions on the inputs, and no checks are performed. 
 
 
 
