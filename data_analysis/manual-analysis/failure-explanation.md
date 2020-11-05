@@ -1003,7 +1003,7 @@ Generated test ([test03](../../results/cling/closure-com.google.javascript.rhino
 ```
 
 This test passes `null` for the first input parameter of the method `setObjectElem`. 
-The [documentation](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java) of this method does not indicate any restriction for this argument. This method also passes this null object to class `ScriptableObject` by calling method `putProperty`. Again, there is no limitations in the [documentations](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java). Eventually, method `getBase` in `ScriptableObject` uses this object without checking if it is `null`, and thereby it throws `NullPointerException`.
+The [documentation](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java#L1606) of this method does not indicate any restriction for this argument. This method also passes this null object to class `ScriptableObject` by calling method `putProperty`. Again, there is no limitations in the [documentations](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java#L2371). Eventually, method `getBase` in `ScriptableObject` uses this object without checking if it is `null`, and thereby it throws `NullPointerException`.
 
 ## ST 50
 
