@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Check input CSV file
 INPUT="subject_generator/subjects.csv"
 [ ! -f $INPUT ] && { echo "$INPUT file not found"; }
