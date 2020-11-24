@@ -24,7 +24,7 @@ This document contains the following instructions:
 # Docker image
 Docker image of this replication package is available in [DockerHub](https://hub.docker.com/repository/docker/pderakhshanfar/cling-application).
 
-Also, you can build and image by running `build-docker` bash file:
+Also, you can build and image by running `build-image` bash file:
 
 ```
 . scripts/docker/build-image.sh
