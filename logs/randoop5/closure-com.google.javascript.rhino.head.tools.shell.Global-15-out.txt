@@ -1,0 +1,102 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=132
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=2, test inputs generated=0, failing inputs=0      (2020-11-25T10:34:31.704Z     123MB used)
+
+
+
+
+Progress update: steps=893, test inputs generated=685, failing inputs=5      (2020-11-25T10:35:31.816Z     262MB used)
+Progress update: steps=1000, test inputs generated=747, failing inputs=5      (2020-11-25T10:35:35.373Z     112MB used)
+
+
+
+
+
+
+
+
+
+Progress update: steps=2000, test inputs generated=1373, failing inputs=5      (2020-11-25T10:36:24.902Z     50MB used)
+
+
+Progress update: steps=2180, test inputs generated=1475, failing inputs=6      (2020-11-25T10:36:31.816Z     88MB used)
+
+
+Progress update: steps=3000, test inputs generated=1981, failing inputs=7      (2020-11-25T10:37:24.758Z     465MB used)
+
+
+Progress update: steps=3191, test inputs generated=2086, failing inputs=7      (2020-11-25T10:37:31.816Z     143MB used)
+
+
+
+
+
+Progress update: steps=4000, test inputs generated=2570, failing inputs=7      (2020-11-25T10:38:08.474Z     185MB used)
+
+
+
+
+Progress update: steps=4550, test inputs generated=2890, failing inputs=7      (2020-11-25T10:38:32.006Z     69MB used)
+
+Progress update: steps=5000, test inputs generated=3147, failing inputs=8      (2020-11-25T10:38:56.042Z     192MB used)
+
+Progress update: steps=5574, test inputs generated=3463, failing inputs=8      (2020-11-25T10:39:31.741Z     196MB used)
+Normal method executions: 4005911
+Exceptional method executions: 983
+
+Average method execution time (normal termination):      0.0286
+Average method execution time (exceptional termination): 0.641
+Approximate memory usage 196MB
+Explorer = ForwardGenerator(steps: 5574, null steps: 2111, num_sequences_generated: 3463;
+    allSequences: 3463, regresson seqs: 3313, error seqs: 8=8=8, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 142;
+    runtimePrimitivesSeen:47)
+
+Error-revealing test output:
+Error-revealing test count: 8
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop5/closure-com.google.javascript.rhino.head.tools.shell.Global-15/ErrorTest0.java
+Created file /experiment/results/randoop5/closure-com.google.javascript.rhino.head.tools.shell.Global-15/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 1886 regression sequences.
+
+Regression test output:
+Regression test count: 1886
+Writing regression JUnit tests...
+                                                                                                                                                                                                       Created file /experiment/results/randoop5/closure-com.google.javascript.rhino.head.tools.shell.Global-15/RegressionTest0.java
+Created file /experiment/results/randoop5/closure-com.google.javascript.rhino.head.tools.shell.Global-15/RegressionTest1.java
+Created file /experiment/results/randoop5/closure-com.google.javascript.rhino.head.tools.shell.Global-15/RegressionTest2.java
+Created file /experiment/results/randoop5/closure-com.google.javascript.rhino.head.tools.shell.Global-15/RegressionTest3.java
+Created file /experiment/results/randoop5/closure-com.google.javascript.rhino.head.tools.shell.Global-15/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  java.util.Collections.addAll(java.util.Collection<java.lang.String>,java.lang.String[])
+  Possibly flaky:  com.google.javascript.rhino.head.tools.shell.Global.toint32(com.google.javascript.rhino.head.Context,com.google.javascript.rhino.head.Scriptable,java.lang.Object[],com.google.javascript.rhino.head.Function)
+  Possibly flaky:  com.google.javascript.rhino.head.tools.shell.Global.setOut(java.io.PrintStream)
+  Possibly flaky:  com.google.javascript.rhino.head.tools.shell.Global.setIn(java.io.InputStream)
+  Possibly flaky:  com.google.javascript.rhino.head.tools.shell.Global.setErr(java.io.PrintStream)
+  Possibly flaky:  com.google.javascript.rhino.head.tools.shell.Global.seal(com.google.javascript.rhino.head.Context,com.google.javascript.rhino.head.Scriptable,java.lang.Object[],com.google.javascript.rhino.head.Function)
+  Possibly flaky:  com.google.javascript.rhino.head.tools.shell.Global.runDoctest(com.google.javascript.rhino.head.Context,com.google.javascript.rhino.head.Scriptable,java.lang.String,java.lang.String,int)
+  Possibly flaky:  com.google.javascript.rhino.head.tools.shell.Global.quit(com.google.javascript.rhino.head.Context,com.google.javascript.rhino.head.Scriptable,java.lang.Object[],com.google.javascript.rhino.head.Function)
+  Possibly flaky:  com.google.javascript.rhino.head.tools.shell.Global.load(com.google.javascript.rhino.head.Context,com.google.javascript.rhino.head.Scriptable,java.lang.Object[],com.google.javascript.rhino.head.Function)
+  Possibly flaky:  com.google.javascript.rhino.head.tools.shell.Global.isInitialized()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 141).
+Please report at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

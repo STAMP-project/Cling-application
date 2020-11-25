@@ -1,0 +1,66 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=195
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=10, test inputs generated=0, failing inputs=0      (2020-11-25T02:33:55.951Z     112MB used)
+Progress update: steps=776, test inputs generated=696, failing inputs=16      (2020-11-25T02:34:56.070Z     710MB used)
+Progress update: steps=1000, test inputs generated=917, failing inputs=18      (2020-11-25T02:35:15.331Z     857MB used)
+Progress update: steps=1361, test inputs generated=1266, failing inputs=21      (2020-11-25T02:35:56.073Z     685MB used)
+Progress update: steps=2000, test inputs generated=1890, failing inputs=25      (2020-11-25T02:36:47.093Z     52MB used)
+Progress update: steps=2169, test inputs generated=2054, failing inputs=26      (2020-11-25T02:36:56.073Z     294MB used)
+Progress update: steps=2792, test inputs generated=2668, failing inputs=27      (2020-11-25T02:37:56.074Z     90MB used)
+Progress update: steps=3000, test inputs generated=2870, failing inputs=28      (2020-11-25T02:38:17.227Z     683MB used)
+Progress update: steps=3627, test inputs generated=3483, failing inputs=28      (2020-11-25T02:38:55.974Z     1101MB used)
+Normal method executions: 3729102
+Exceptional method executions: 560
+
+Average method execution time (normal termination):      0.000634
+Average method execution time (exceptional termination): 0.370
+Approximate memory usage 1101MB
+Explorer = ForwardGenerator(steps: 3627, null steps: 144, num_sequences_generated: 3483;
+    allSequences: 3483, regresson seqs: 3426, error seqs: 28=28=28, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 29;
+    runtimePrimitivesSeen:198)
+
+Error-revealing test output:
+Error-revealing test count: 28
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop5/time-org.joda.time.DateTime-10/ErrorTest0.java
+Created file /experiment/results/randoop5/time-org.joda.time.DateTime-10/ErrorTest.java
+Wrote error-revealing JUnit tests.
+                                                                                                                                                                                                       
+About to look for failing assertions in 1877 regression sequences.
+
+Regression test output:
+Regression test count: 1877
+Writing regression JUnit tests...
+Created file /experiment/results/randoop5/time-org.joda.time.DateTime-10/RegressionTest0.java
+Created file /experiment/results/randoop5/time-org.joda.time.DateTime-10/RegressionTest1.java
+Created file /experiment/results/randoop5/time-org.joda.time.DateTime-10/RegressionTest2.java
+Created file /experiment/results/randoop5/time-org.joda.time.DateTime-10/RegressionTest3.java
+Created file /experiment/results/randoop5/time-org.joda.time.DateTime-10/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.remainder()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.isLeap()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getRangeDurationField()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getMinimumValueOverall()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getMinimumValue()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getMaximumValueOverall()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getMaximumTextLength(java.util.Locale)
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getFieldType()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getDurationField()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getDifferenceAsLong(org.joda.time.ReadableInstant)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0

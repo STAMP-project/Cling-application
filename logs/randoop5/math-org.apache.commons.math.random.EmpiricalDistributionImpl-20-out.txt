@@ -1,0 +1,68 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=13
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2020-11-24T23:30:02.557Z     102MB used)
+Progress update: steps=719, test inputs generated=584, failing inputs=15      (2020-11-24T23:31:02.592Z     230MB used)
+Progress update: steps=1000, test inputs generated=795, failing inputs=16      (2020-11-24T23:31:35.095Z     644MB used)
+Progress update: steps=1678, test inputs generated=1321, failing inputs=24      (2020-11-24T23:32:02.593Z     831MB used)
+Progress update: steps=2000, test inputs generated=1578, failing inputs=26      (2020-11-24T23:32:14.648Z     1275MB used)
+Progress update: steps=2758, test inputs generated=2182, failing inputs=46      (2020-11-24T23:33:02.593Z     1053MB used)
+Progress update: steps=3000, test inputs generated=2367, failing inputs=47      (2020-11-24T23:33:29.462Z     203MB used)
+Progress update: steps=3518, test inputs generated=2766, failing inputs=50      (2020-11-24T23:34:02.594Z     236MB used)
+Progress update: steps=4000, test inputs generated=3151, failing inputs=51      (2020-11-24T23:34:32.405Z     463MB used)
+Progress update: steps=4543, test inputs generated=3564, failing inputs=53      (2020-11-24T23:35:02.597Z     374MB used)
+Progress update: steps=4543, test inputs generated=3564, failing inputs=53      (2020-11-24T23:35:02.618Z     374MB used)
+Normal method executions: 2028517
+Exceptional method executions: 841
+
+Average method execution time (normal termination):      0.00168
+Average method execution time (exceptional termination): 0.0875
+Approximate memory usage 374MB
+Explorer = ForwardGenerator(steps: 4543, null steps: 979, num_sequences_generated: 3564;
+    allSequences: 3564, regresson seqs: 3510, error seqs: 53=53=53, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    runtimePrimitivesSeen:713)
+
+Error-revealing test output:
+Error-revealing test count: 53
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop5/math-org.apache.commons.math.random.EmpiricalDistributionImpl-20/ErrorTest0.java
+Created file /experiment/results/randoop5/math-org.apache.commons.math.random.EmpiricalDistributionImpl-20/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 1988 regression sequences.
+
+Regression test output:
+Regression test count: 1988
+Writing regression JUnit tests...
+Created file /experiment/results/randoop5/math-org.apache.commons.math.random.EmpiricalDistributionImpl-20/RegressionTest0.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop5/math-org.apache.commons.math.random.EmpiricalDistributionImpl-20/RegressionTest1.java
+Created file /experiment/results/randoop5/math-org.apache.commons.math.random.EmpiricalDistributionImpl-20/RegressionTest2.java
+Created file /experiment/results/randoop5/math-org.apache.commons.math.random.EmpiricalDistributionImpl-20/RegressionTest3.java
+Created file /experiment/results/randoop5/math-org.apache.commons.math.random.EmpiricalDistributionImpl-20/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.apache.commons.math.random.EmpiricalDistributionImpl.load(java.net.URL)
+  Possibly flaky:  org.apache.commons.math.random.EmpiricalDistributionImpl.load(double[])
+  Possibly flaky:  org.apache.commons.math.random.EmpiricalDistributionImpl.load(java.io.File)
+  Possibly flaky:  org.apache.commons.math.random.EmpiricalDistributionImpl.isLoaded()
+  Possibly flaky:  org.apache.commons.math.random.EmpiricalDistributionImpl.getUpperBounds()
+  Possibly flaky:  org.apache.commons.math.random.EmpiricalDistributionImpl.getSampleStats()
+  Possibly flaky:  org.apache.commons.math.random.EmpiricalDistributionImpl.getNextValue()
+  Possibly flaky:  org.apache.commons.math.random.EmpiricalDistributionImpl.getBinStats()
+  Possibly flaky:  org.apache.commons.math.random.EmpiricalDistributionImpl.getBinCount()
+  Possibly flaky:  java.util.Arrays.toString(double[])
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0

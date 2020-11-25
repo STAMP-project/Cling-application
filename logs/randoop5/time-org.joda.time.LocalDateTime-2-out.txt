@@ -1,0 +1,61 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=167
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=4, test inputs generated=0, failing inputs=0      (2020-11-25T02:52:56.570Z     112MB used)
+Progress update: steps=749, test inputs generated=707, failing inputs=0      (2020-11-25T02:53:56.656Z     348MB used)
+Progress update: steps=1000, test inputs generated=948, failing inputs=0      (2020-11-25T02:54:21.331Z     504MB used)
+Progress update: steps=1405, test inputs generated=1334, failing inputs=0      (2020-11-25T02:54:56.657Z     241MB used)
+Progress update: steps=2000, test inputs generated=1910, failing inputs=0      (2020-11-25T02:55:53.949Z     218MB used)
+Progress update: steps=2057, test inputs generated=1963, failing inputs=0      (2020-11-25T02:55:56.657Z     630MB used)
+Progress update: steps=2819, test inputs generated=2687, failing inputs=0      (2020-11-25T02:56:56.658Z     686MB used)
+Progress update: steps=3000, test inputs generated=2860, failing inputs=0      (2020-11-25T02:57:26.466Z     1121MB used)
+Progress update: steps=3458, test inputs generated=3303, failing inputs=0      (2020-11-25T02:57:56.579Z     425MB used)
+Normal method executions: 4136891
+Exceptional method executions: 623
+
+Average method execution time (normal termination):      0.000837
+Average method execution time (exceptional termination): 0.147
+Approximate memory usage 425MB
+Explorer = ForwardGenerator(steps: 3458, null steps: 155, num_sequences_generated: 3303;
+    allSequences: 3303, regresson seqs: 3257, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 46;
+    runtimePrimitivesSeen:1169)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 1774 regression sequences.
+
+Regression test output:
+Regression test count: 1774
+Writing regression JUnit tests...
+                                                                                                                                                                                                       Created file /experiment/results/randoop5/time-org.joda.time.LocalDateTime-2/RegressionTest0.java
+Created file /experiment/results/randoop5/time-org.joda.time.LocalDateTime-2/RegressionTest1.java
+Created file /experiment/results/randoop5/time-org.joda.time.LocalDateTime-2/RegressionTest2.java
+Created file /experiment/results/randoop5/time-org.joda.time.LocalDateTime-2/RegressionTest3.java
+Created file /experiment/results/randoop5/time-org.joda.time.LocalDateTime-2/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.toString()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.toInterval()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.remainder()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.isLeap()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getRangeDurationField()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getName()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getMinimumValueOverall()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getMinimumValue()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getMaximumValueOverall()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getMaximumValue()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0

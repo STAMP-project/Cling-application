@@ -1,0 +1,62 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=122
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2020-11-25T01:51:27.113Z     112MB used)
+Progress update: steps=900, test inputs generated=853, failing inputs=0      (2020-11-25T01:52:27.141Z     984MB used)
+Progress update: steps=1000, test inputs generated=944, failing inputs=0      (2020-11-25T01:52:33.804Z     791MB used)
+Progress update: steps=1482, test inputs generated=1403, failing inputs=0      (2020-11-25T01:53:27.142Z     1187MB used)
+Progress update: steps=2000, test inputs generated=1884, failing inputs=0      (2020-11-25T01:53:59.178Z     312MB used)
+Progress update: steps=2407, test inputs generated=2271, failing inputs=0      (2020-11-25T01:54:27.142Z     867MB used)
+Progress update: steps=3000, test inputs generated=2830, failing inputs=0      (2020-11-25T01:55:23.583Z     550MB used)
+Progress update: steps=3022, test inputs generated=2851, failing inputs=0      (2020-11-25T01:55:27.143Z     840MB used)
+Progress update: steps=3639, test inputs generated=3434, failing inputs=0      (2020-11-25T01:56:27.143Z     1233MB used)
+Progress update: steps=3639, test inputs generated=3434, failing inputs=0      (2020-11-25T01:56:27.178Z     1233MB used)
+Normal method executions: 6893612
+Exceptional method executions: 463
+
+Average method execution time (normal termination):      0.000652
+Average method execution time (exceptional termination): 0.230
+Approximate memory usage 1233MB
+Explorer = ForwardGenerator(steps: 3639, null steps: 205, num_sequences_generated: 3434;
+    allSequences: 3434, regresson seqs: 3433, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    runtimePrimitivesSeen:781)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 1833 regression sequences.
+
+Regression test output:
+Regression test count: 1833
+Writing regression JUnit tests...
+Created file /experiment/results/randoop5/time-org.joda.time.LocalTime-1/RegressionTest0.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop5/time-org.joda.time.LocalTime-1/RegressionTest1.java
+Created file /experiment/results/randoop5/time-org.joda.time.LocalTime-1/RegressionTest2.java
+Created file /experiment/results/randoop5/time-org.joda.time.LocalTime-1/RegressionTest3.java
+Created file /experiment/results/randoop5/time-org.joda.time.LocalTime-1/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getAsShortText(java.util.Locale)
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.get()
+  Possibly flaky:  org.joda.time.LocalTime.now()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.toString()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.toInterval()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.remainder()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.isLeap()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getRangeDurationField()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getName()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getMinimumValueOverall()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0

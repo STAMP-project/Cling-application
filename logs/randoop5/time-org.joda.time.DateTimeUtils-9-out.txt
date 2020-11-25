@@ -1,0 +1,75 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=19
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=1, failing inputs=0      (2020-11-25T02:26:16.009Z     102MB used)
+Progress update: steps=1000, test inputs generated=309, failing inputs=0      (2020-11-25T02:26:41.648Z     86MB used)
+Progress update: steps=2000, test inputs generated=553, failing inputs=0      (2020-11-25T02:26:51.833Z     519MB used)
+Progress update: steps=3000, test inputs generated=788, failing inputs=0      (2020-11-25T02:27:01.146Z     142MB used)
+Progress update: steps=4000, test inputs generated=1025, failing inputs=0      (2020-11-25T02:27:10.974Z     211MB used)
+Progress update: steps=4629, test inputs generated=1184, failing inputs=0      (2020-11-25T02:27:16.142Z     854MB used)
+Progress update: steps=5000, test inputs generated=1272, failing inputs=0      (2020-11-25T02:27:18.533Z     308MB used)
+Progress update: steps=6000, test inputs generated=1522, failing inputs=0      (2020-11-25T02:27:34.077Z     200MB used)
+Progress update: steps=7000, test inputs generated=1747, failing inputs=0      (2020-11-25T02:27:50.834Z     1092MB used)
+Progress update: steps=8000, test inputs generated=1982, failing inputs=0      (2020-11-25T02:28:07.014Z     948MB used)
+Progress update: steps=8472, test inputs generated=2100, failing inputs=0      (2020-11-25T02:28:16.142Z     140MB used)
+Progress update: steps=9000, test inputs generated=2217, failing inputs=0      (2020-11-25T02:28:32.155Z     631MB used)
+Progress update: steps=10000, test inputs generated=2442, failing inputs=0      (2020-11-25T02:28:54.273Z     257MB used)
+Progress update: steps=11000, test inputs generated=2660, failing inputs=0      (2020-11-25T02:29:08.002Z     1136MB used)
+Progress update: steps=11627, test inputs generated=2800, failing inputs=0      (2020-11-25T02:29:16.143Z     425MB used)
+Progress update: steps=12000, test inputs generated=2888, failing inputs=0      (2020-11-25T02:29:21.963Z     788MB used)
+Progress update: steps=13000, test inputs generated=3112, failing inputs=0      (2020-11-25T02:29:37.517Z     415MB used)
+Progress update: steps=14000, test inputs generated=3323, failing inputs=0      (2020-11-25T02:29:52.091Z     1318MB used)
+Progress update: steps=15000, test inputs generated=3558, failing inputs=0      (2020-11-25T02:30:07.462Z     986MB used)
+Progress update: steps=15719, test inputs generated=3710, failing inputs=0      (2020-11-25T02:30:16.143Z     345MB used)
+Progress update: steps=16000, test inputs generated=3776, failing inputs=0      (2020-11-25T02:30:20.277Z     628MB used)
+Progress update: steps=17000, test inputs generated=4008, failing inputs=0      (2020-11-25T02:30:38.673Z     316MB used)
+Progress update: steps=18000, test inputs generated=4228, failing inputs=0      (2020-11-25T02:31:04.986Z     1244MB used)
+Progress update: steps=18377, test inputs generated=4334, failing inputs=0      (2020-11-25T02:31:15.985Z     393MB used)
+Normal method executions: 142294
+Exceptional method executions: 3
+
+Average method execution time (normal termination):      0.00698
+Average method execution time (exceptional termination): 4.75
+Approximate memory usage 393MB
+Explorer = ForwardGenerator(steps: 18377, null steps: 14043, num_sequences_generated: 4334;
+    allSequences: 4334, regresson seqs: 4333, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    runtimePrimitivesSeen:40)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 2111 regression sequences.
+
+Regression test output:
+Regression test count: 2111
+Writing regression JUnit tests...
+                                                                                                                                                                                                       Created file /experiment/results/randoop5/time-org.joda.time.DateTimeUtils-9/RegressionTest0.java
+Created file /experiment/results/randoop5/time-org.joda.time.DateTimeUtils-9/RegressionTest1.java
+Created file /experiment/results/randoop5/time-org.joda.time.DateTimeUtils-9/RegressionTest2.java
+Created file /experiment/results/randoop5/time-org.joda.time.DateTimeUtils-9/RegressionTest3.java
+Created file /experiment/results/randoop5/time-org.joda.time.DateTimeUtils-9/RegressionTest4.java
+Created file /experiment/results/randoop5/time-org.joda.time.DateTimeUtils-9/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.DateTimeUtils.getInstantMillis(org.joda.time.ReadableInstant)
+  Possibly flaky:  org.joda.time.DateTimeUtils.currentTimeMillis()
+  Possibly flaky:  java.lang.String.valueOf(long)
+  Possibly flaky:  java.lang.Long.valueOf(long)
+  Possibly flaky:  java.lang.Long.toString(long)
+  Possibly flaky:  java.lang.Long.toOctalString(long)
+  Possibly flaky:  java.lang.Long.toHexString(long)
+  Possibly flaky:  java.lang.Long.toBinaryString(long)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
