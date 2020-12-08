@@ -77,7 +77,7 @@ do
             fi 
 
             echo "Run Randoop CBC coverage. testClass: "$mainRegresstionTest":"$mainErrorTest", CallerClass: $caller_class, CalleeClass: $callee_class, executionId: $execution_id"
-            java -Djavax.accessibility.assistive_technologies=" " -jar tools/cbc.jar -project_cp "$classPaths" -test_suite "$mainRegresstionTest:$mainErrorTest" -caller "$caller_class" -callee "$callee_class" > "logs/cbc/$tool-$project-$caller_class-$callee_class-$execution_id-out.txt" 2> "logs/cbc/$tool-regression-$project-$caller_class-$callee_class-$execution_id-err.txt" 
+            java -Djavax.accessibility.assistive_technologies=" " -jar tools/cbc.jar -project_cp "$classPaths" -test_suite "$mainRegresstionTest:$mainErrorTest" -caller "$caller_class" -callee "$callee_class" > "logs/cbc/$tool-$project-$caller_class-$callee_class-$execution_id-out.txt" 2> "logs/cbc/$tool-regression-$project-$caller_class-$callee_class-$execution_id-err.txt" &
 
         fi
 
