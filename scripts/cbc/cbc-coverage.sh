@@ -1,5 +1,5 @@
 # Cling CBC Coverage
-python scripts/python/cbc/cling-cbc.py
+# python scripts/python/cbc/cling-cbc.py
 
 # EvoSuite CB Coverage
 # Check input CSV file
