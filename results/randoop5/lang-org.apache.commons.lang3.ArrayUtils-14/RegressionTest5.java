@@ -1,0 +1,11866 @@
+import org.junit.FixMethodOrder;
+import org.junit.Test;
+import org.junit.runners.MethodSorters;
+
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+public class RegressionTest5 {
+
+    public static boolean debug = false;
+
+    @Test
+    public void test2501() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2501");
+        java.lang.Short[] shortArray2 = new java.lang.Short[] { (short) -1, (short) -1 };
+        java.lang.Short[] shortArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray2);
+        short[] shortArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3, (short) 1);
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        short[] shortArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray6, (short) (byte) -1);
+        java.lang.Short[] shortArray12 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray12);
+        short[] shortArray15 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray13, (short) 0);
+        short[] shortArray18 = org.apache.commons.lang3.ArrayUtils.add(shortArray13, 2, (short) 100);
+        int int20 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray18, (short) 0);
+        boolean boolean21 = org.apache.commons.lang3.ArrayUtils.isSameLength(shortArray8, shortArray18);
+        int int23 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(shortArray18, (short) 0);
+        org.junit.Assert.assertNotNull(shortArray2);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray5), "[-1, -1]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, -1]");
+        org.junit.Assert.assertNotNull(shortArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray8), "[-1]");
+        org.junit.Assert.assertNotNull(shortArray12);
+        org.junit.Assert.assertNotNull(shortArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray13), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray15), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray18), "[-1, 100, 100, 1]");
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+    }
+
+    @Test
+    public void test2502() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2502");
+        byte[] byteArray1 = new byte[] { (byte) 0 };
+        int int3 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray1, (byte) 1);
+        boolean boolean5 = org.apache.commons.lang3.ArrayUtils.contains(byteArray1, (byte) 1);
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.removeElement(byteArray1, (byte) 0);
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray1), "[0]");
+        org.junit.Assert.assertTrue("'" + int3 + "' != '" + (-1) + "'", int3 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[]");
+    }
+
+    @Test
+    public void test2503() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2503");
+        long[] longArray1 = new long[] { ' ' };
+        boolean boolean2 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray1);
+        long[] longArray3 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_ARRAY;
+        long[] longArray4 = org.apache.commons.lang3.ArrayUtils.addAll(longArray1, longArray3);
+        long[] longArray7 = new long[] { 100L, 'a' };
+        long[] longArray10 = org.apache.commons.lang3.ArrayUtils.subarray(longArray7, (int) (short) 10, 100);
+        boolean boolean11 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray10);
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray10, (long) 0);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray3, longArray10);
+        long[] longArray18 = new long[] { 10L, 100L, '#' };
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray18);
+        int int21 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray18, (long) (-1));
+        java.lang.Long[] longArray22 = org.apache.commons.lang3.ArrayUtils.toObject(longArray18);
+        long[] longArray23 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray22);
+        long[] longArray24 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_ARRAY;
+        long[] longArray27 = org.apache.commons.lang3.ArrayUtils.subarray(longArray24, 100, (int) (byte) 1);
+        boolean boolean28 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray24);
+        int int31 = org.apache.commons.lang3.ArrayUtils.indexOf(longArray24, (long) ' ', 0);
+        org.apache.commons.lang3.ArrayUtils.reverse(longArray24);
+        long[] longArray33 = org.apache.commons.lang3.ArrayUtils.addAll(longArray23, longArray24);
+        boolean boolean34 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray10, longArray23);
+        org.junit.Assert.assertNotNull(longArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray1), "[32]");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray3), "[]");
+        org.junit.Assert.assertNotNull(longArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray4), "[32]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray7), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[]");
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(longArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray18), "[10, 100, 35]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertNotNull(longArray22);
+        org.junit.Assert.assertNotNull(longArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray23), "[10, 100, 35]");
+        org.junit.Assert.assertNotNull(longArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray24), "[]");
+        org.junit.Assert.assertNotNull(longArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray27), "[]");
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        org.junit.Assert.assertTrue("'" + int31 + "' != '" + (-1) + "'", int31 == (-1));
+        org.junit.Assert.assertNotNull(longArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray33), "[10, 100, 35]");
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + false + "'", boolean34 == false);
+    }
+
+    @Test
+    public void test2504() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2504");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        org.apache.commons.lang3.ArrayUtils.reverse(floatArray8);
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray8);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[1.0, -1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+
+    @Test
+    public void test2505() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2505");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4);
+        byte[] byteArray8 = org.apache.commons.lang3.ArrayUtils.clone(byteArray7);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray8), "[1, -1, -1, 1]");
+    }
+
+    @Test
+    public void test2506() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2506");
+        double[] doubleArray0 = new double[] {};
+        int int3 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray0, (double) (byte) 100, (double) (byte) 1);
+        double[] doubleArray4 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray0);
+        java.lang.Double[] doubleArray9 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray10 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray9);
+        double[] doubleArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray9, 0.0d);
+        double[] doubleArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray9);
+        int int16 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray13, (double) 10.0f, 10.0d);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.isSameLength(doubleArray4, doubleArray13);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray13, (double) 1.0f);
+        int int21 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray13, 0.0d);
+        double[] doubleArray23 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray13, 100.0d);
+        double[] doubleArray25 = org.apache.commons.lang3.ArrayUtils.add(doubleArray23, (double) 100.0f);
+        org.junit.Assert.assertNotNull(doubleArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray0), "[]");
+        org.junit.Assert.assertTrue("'" + int3 + "' != '" + (-1) + "'", int3 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray4), "[]");
+        org.junit.Assert.assertNotNull(doubleArray9);
+        org.junit.Assert.assertNotNull(doubleArray10);
+        org.junit.Assert.assertNotNull(doubleArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray12), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray13), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 3 + "'", int21 == 3);
+        org.junit.Assert.assertNotNull(doubleArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray23), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray25), "[10.0, -1.0, 10.0, 0.0, 100.0]");
+    }
+
+    @Test
+    public void test2507() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2507");
+        long[] longArray1 = new long[] { ' ' };
+        boolean boolean2 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray1);
+        long[] longArray3 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_ARRAY;
+        long[] longArray4 = org.apache.commons.lang3.ArrayUtils.addAll(longArray1, longArray3);
+        long[] longArray7 = new long[] { 100L, 'a' };
+        long[] longArray10 = org.apache.commons.lang3.ArrayUtils.subarray(longArray7, (int) (short) 10, 100);
+        boolean boolean11 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray10);
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray10, (long) 0);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray3, longArray10);
+        java.lang.Long[] longArray15 = org.apache.commons.lang3.ArrayUtils.toObject(longArray10);
+        long[] longArray18 = org.apache.commons.lang3.ArrayUtils.subarray(longArray10, (int) (byte) -1, 1);
+        long[] longArray21 = org.apache.commons.lang3.ArrayUtils.add(longArray18, 0, (long) 10);
+        int int23 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray21, (long) 9);
+        org.junit.Assert.assertNotNull(longArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray1), "[32]");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray3), "[]");
+        org.junit.Assert.assertNotNull(longArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray4), "[32]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray7), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[]");
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(longArray15);
+        org.junit.Assert.assertNotNull(longArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray18), "[]");
+        org.junit.Assert.assertNotNull(longArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray21), "[10]");
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+    }
+
+    @Test
+    public void test2508() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2508");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.clone(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.addAll(intArray4, intArray5);
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray6);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray6);
+        int int11 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray6, (-1), 3);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+    }
+
+    @Test
+    public void test2509() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2509");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray27, (int) '4', (int) (byte) 1);
+        double[] doubleArray31 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray30);
+        double[] doubleArray35 = new double[] { (short) 100, 1, (-1.0d) };
+        int int38 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray35, (double) 0.0f, (int) (short) 0);
+        int int41 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray35, 0.0d, 10);
+        int int43 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray35, (double) (byte) 10);
+        int int46 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray35, (double) '4', (int) (short) 10);
+        double[] doubleArray50 = new double[] { (short) 100, 1, (-1.0d) };
+        int int53 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray50, (double) 0.0f, (int) (short) 0);
+        int int56 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray50, 0.0d, 10);
+        int int58 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray50, (double) (byte) 10);
+        double[] doubleArray59 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray35, doubleArray50);
+        double[] doubleArray62 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray59, (int) '4', (int) (byte) 1);
+        double[] doubleArray65 = org.apache.commons.lang3.ArrayUtils.add(doubleArray59, 0, (double) ' ');
+        int int68 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray65, (-1.0d), 0);
+        int int71 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray65, (double) 0, (int) (short) 100);
+        double[] doubleArray72 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray65);
+        double[] doubleArray73 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray30, doubleArray72);
+        int int77 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray30, (double) (byte) 10, (int) (byte) -1, (double) '4');
+        boolean boolean78 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray30);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[]");
+        org.junit.Assert.assertNotNull(doubleArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray31), "[]");
+        org.junit.Assert.assertNotNull(doubleArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray35), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int38 + "' != '" + (-1) + "'", int38 == (-1));
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + (-1) + "'", int41 == (-1));
+        org.junit.Assert.assertTrue("'" + int43 + "' != '" + (-1) + "'", int43 == (-1));
+        org.junit.Assert.assertTrue("'" + int46 + "' != '" + (-1) + "'", int46 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray50), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int53 + "' != '" + (-1) + "'", int53 == (-1));
+        org.junit.Assert.assertTrue("'" + int56 + "' != '" + (-1) + "'", int56 == (-1));
+        org.junit.Assert.assertTrue("'" + int58 + "' != '" + (-1) + "'", int58 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray59);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray59), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray62);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray62), "[]");
+        org.junit.Assert.assertNotNull(doubleArray65);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray65), "[32.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int68 + "' != '" + 3 + "'", int68 == 3);
+        org.junit.Assert.assertTrue("'" + int71 + "' != '" + (-1) + "'", int71 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray72);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray72), "[32.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray73);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray73), "[32.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int77 + "' != '" + (-1) + "'", int77 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean78 + "' != '" + true + "'", boolean78 == true);
+    }
+
+    @Test
+    public void test2510() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2510");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray9);
+        boolean[] booleanArray16 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray18 = org.apache.commons.lang3.ArrayUtils.add(booleanArray16, true);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray9, booleanArray18);
+        org.apache.commons.lang3.ArrayUtils.reverse(booleanArray9);
+        boolean boolean21 = org.apache.commons.lang3.ArrayUtils.isEmpty(booleanArray9);
+        boolean[] booleanArray22 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray9);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertNotNull(booleanArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray22), "[false, false, true, true, false]");
+    }
+
+    @Test
+    public void test2511() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2511");
+        byte[] byteArray5 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray5, (byte) 0);
+        boolean boolean9 = org.apache.commons.lang3.ArrayUtils.contains(byteArray5, (byte) 100);
+        byte[] byteArray12 = org.apache.commons.lang3.ArrayUtils.subarray(byteArray5, 100, 0);
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray5, (byte) 0, 0);
+        org.apache.commons.lang3.ArrayUtils.reverse(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray5), "[0, 100, 100, 1, 0]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 4 + "'", int7 == 4);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertNotNull(byteArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray12), "[]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 0 + "'", int15 == 0);
+    }
+
+    @Test
+    public void test2512() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2512");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) '#');
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray7);
+        int[] intArray11 = org.apache.commons.lang3.ArrayUtils.add(intArray7, (int) (byte) 0, 1);
+        int[] intArray14 = new int[] { 0, 0 };
+        int[] intArray15 = org.apache.commons.lang3.ArrayUtils.addAll(intArray11, intArray14);
+        int[] intArray16 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray11);
+        // The following exception was thrown during execution in test generation
+        try {
+            int[] intArray18 = org.apache.commons.lang3.ArrayUtils.remove(intArray16, (int) ' ');
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 32, Length: 3");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[0, 35]");
+        org.junit.Assert.assertNotNull(intArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray11), "[1, 0, 35]");
+        org.junit.Assert.assertNotNull(intArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray14), "[0, 0]");
+        org.junit.Assert.assertNotNull(intArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray15), "[1, 0, 35, 0, 0]");
+        org.junit.Assert.assertNotNull(intArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray16), "[1, 0, 35]");
+    }
+
+    @Test
+    public void test2513() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2513");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        int int15 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray7, (float) 10);
+        float[] floatArray18 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) (short) 1);
+        float[] floatArray19 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.add(floatArray7, (float) 4);
+        float[] floatArray24 = new float[] { (-1L), (byte) 1 };
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray24, (float) (byte) 10);
+        float[] floatArray29 = org.apache.commons.lang3.ArrayUtils.add(floatArray24, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray30 = org.apache.commons.lang3.ArrayUtils.clone(floatArray29);
+        float[] floatArray33 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray29, (int) '#', (int) 'a');
+        float[] floatArray35 = org.apache.commons.lang3.ArrayUtils.remove(floatArray29, (int) (byte) 0);
+        int int37 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray29, (float) 10);
+        float[] floatArray38 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray29);
+        int int40 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray38, (float) 5);
+        boolean boolean41 = org.apache.commons.lang3.ArrayUtils.isSameLength(floatArray7, floatArray38);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(floatArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray18), "[]");
+        org.junit.Assert.assertNotNull(floatArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray19), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[-1.0, -1.0, 1.0, 4.0]");
+        org.junit.Assert.assertNotNull(floatArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray24), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(floatArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray29), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray30), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray33), "[]");
+        org.junit.Assert.assertNotNull(floatArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray35), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int37 + "' != '" + (-1) + "'", int37 == (-1));
+        org.junit.Assert.assertNotNull(floatArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray38), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + (-1) + "'", int40 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean41 + "' != '" + true + "'", boolean41 == true);
+    }
+
+    @Test
+    public void test2514() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2514");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray27, (int) '4', (int) (byte) 1);
+        double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.add(doubleArray27, 0, (double) ' ');
+        double[] doubleArray34 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray27);
+        java.lang.Double[] doubleArray39 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray40 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray39);
+        java.lang.Long[] longArray41 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_OBJECT_ARRAY;
+        int int43 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) doubleArray39, (java.lang.Object) longArray41, (int) (short) 100);
+        java.lang.Double[] doubleArray44 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray39);
+        double[] doubleArray45 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray39);
+        double[] doubleArray47 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray39, (double) 100.0f);
+        double[] doubleArray48 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray34, doubleArray47);
+        int int51 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray47, (double) (-1), (int) (short) 10);
+        org.apache.commons.lang3.ArrayUtils.reverse(doubleArray47);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[]");
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[32.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray34), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray39);
+        org.junit.Assert.assertNotNull(doubleArray40);
+        org.junit.Assert.assertNotNull(longArray41);
+        org.junit.Assert.assertTrue("'" + int43 + "' != '" + (-1) + "'", int43 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray44);
+        org.junit.Assert.assertNotNull(doubleArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray45), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray47);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray47), "[0.0, 10.0, -1.0, 10.0]");
+        org.junit.Assert.assertNotNull(doubleArray48);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray48), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int51 + "' != '" + (-1) + "'", int51 == (-1));
+    }
+
+    @Test
+    public void test2515() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2515");
+        java.lang.Character[] charArray2 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray2);
+        char[] charArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray3, ' ');
+        java.lang.Character[] charArray6 = org.apache.commons.lang3.ArrayUtils.toObject(charArray5);
+        char[] charArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray5, '#');
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray8, ' ', (int) (byte) 0);
+        java.lang.Character[] charArray12 = org.apache.commons.lang3.ArrayUtils.toObject(charArray8);
+        java.lang.Character[] charArray13 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray12);
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray3);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray5), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray8), "#");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray8), "#");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray8), "[#]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNotNull(charArray12);
+        org.junit.Assert.assertNotNull(charArray13);
+    }
+
+    @Test
+    public void test2516() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2516");
+        java.lang.String[] strArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_STRING_ARRAY;
+        java.lang.Double[] doubleArray5 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray5);
+        double[] doubleArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray5, 0.0d);
+        double[] doubleArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray5);
+        int int10 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) strArray0, (java.lang.Object) doubleArray5);
+        int int11 = org.apache.commons.lang3.ArrayUtils.getLength((java.lang.Object) strArray0);
+        int int13 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) strArray0, (java.lang.Object) 2);
+        org.junit.Assert.assertNotNull(strArray0);
+        org.junit.Assert.assertNotNull(doubleArray5);
+        org.junit.Assert.assertNotNull(doubleArray6);
+        org.junit.Assert.assertNotNull(doubleArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray8), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray9), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 0 + "'", int11 == 0);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+    }
+
+    @Test
+    public void test2517() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2517");
+        java.lang.Object[] objArray0 = null;
+        java.lang.Short[] shortArray1 = new java.lang.Short[] {};
+        java.lang.Short[] shortArray2 = new java.lang.Short[] {};
+        java.lang.Short[][] shortArray3 = new java.lang.Short[][] { shortArray1, shortArray2 };
+        int[] intArray6 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray7 = org.apache.commons.lang3.ArrayUtils.toObject(intArray6);
+        boolean boolean9 = org.apache.commons.lang3.ArrayUtils.contains(intArray6, (int) (short) 1);
+        int int12 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray6, (int) (byte) -1, 1);
+        java.lang.Short[][] shortArray13 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray3, (java.lang.Object) 1);
+        java.io.Serializable[][] serializableArray14 = org.apache.commons.lang3.ArrayUtils.toArray((java.io.Serializable[][]) shortArray3);
+        int int17 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) shortArray3, (java.lang.Object) (byte) 100, 5);
+        int int19 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(objArray0, (java.lang.Object) 5, 100);
+        org.junit.Assert.assertNotNull(shortArray1);
+        org.junit.Assert.assertNotNull(shortArray2);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNotNull(shortArray13);
+        org.junit.Assert.assertNotNull(serializableArray14);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+    }
+
+    @Test
+    public void test2518() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2518");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.clone(intArray5);
+        boolean boolean8 = org.apache.commons.lang3.ArrayUtils.contains(intArray6, (int) (short) 1);
+        int int10 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray6, 0);
+        int int12 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray6, (int) (byte) -1);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 1 + "'", int10 == 1);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+    }
+
+    @Test
+    public void test2519() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2519");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        int int9 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray7, (float) 'a');
+        float[] floatArray12 = new float[] { (-1L), (byte) 1 };
+        int int14 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray12, (float) (byte) 10);
+        float[] floatArray17 = org.apache.commons.lang3.ArrayUtils.add(floatArray12, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray18 = org.apache.commons.lang3.ArrayUtils.clone(floatArray17);
+        float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray17, (int) '#', (int) 'a');
+        float[] floatArray22 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray17);
+        boolean boolean23 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray17);
+        boolean boolean24 = org.apache.commons.lang3.ArrayUtils.isSameLength(floatArray7, floatArray17);
+        int int27 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray17, (float) (-1), (int) '#');
+        int int29 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray17, (float) (short) 100);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertNotNull(floatArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray12), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(floatArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray17), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray18), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[]");
+        org.junit.Assert.assertNotNull(floatArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray22), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + 1 + "'", int27 == 1);
+        org.junit.Assert.assertTrue("'" + int29 + "' != '" + (-1) + "'", int29 == (-1));
+    }
+
+    @Test
+    public void test2520() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2520");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray9);
+        boolean[] booleanArray16 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray18 = org.apache.commons.lang3.ArrayUtils.add(booleanArray16, true);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray9, booleanArray18);
+        org.apache.commons.lang3.ArrayUtils.reverse(booleanArray9);
+        int int22 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray9, true);
+        boolean[] booleanArray23 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray9);
+        boolean[] booleanArray26 = org.apache.commons.lang3.ArrayUtils.add(booleanArray23, 0, true);
+        boolean[] booleanArray27 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray23);
+        java.lang.Boolean[] booleanArray28 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray23);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + 2 + "'", int22 == 2);
+        org.junit.Assert.assertNotNull(booleanArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray23), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray26), "[true, false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray27), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray28);
+    }
+
+    @Test
+    public void test2521() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2521");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        float[] floatArray16 = new float[] { (-1L), (byte) 1 };
+        int int18 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray16, (float) (byte) 10);
+        float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.add(floatArray16, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray22 = org.apache.commons.lang3.ArrayUtils.clone(floatArray21);
+        float[] floatArray25 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray21, (int) '#', (int) 'a');
+        float[] floatArray26 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray21);
+        float[] floatArray28 = org.apache.commons.lang3.ArrayUtils.remove(floatArray21, 0);
+        float[] floatArray29 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray13, floatArray21);
+        java.lang.Float[] floatArray30 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray21);
+        float[] floatArray31 = org.apache.commons.lang3.ArrayUtils.toPrimitive(floatArray30);
+        float[] floatArray32 = org.apache.commons.lang3.ArrayUtils.toPrimitive(floatArray30);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray22), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray25), "[]");
+        org.junit.Assert.assertNotNull(floatArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray26), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray28), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray29), "[-1.0, 1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray30);
+        org.junit.Assert.assertNotNull(floatArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray31), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray32), "[-1.0, -1.0, 1.0]");
+    }
+
+    @Test
+    public void test2522() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2522");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray12 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray7);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray7, (float) (-1));
+        float[] floatArray16 = org.apache.commons.lang3.ArrayUtils.add(floatArray7, (float) ' ');
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray12), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 1 + "'", int14 == 1);
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[-1.0, -1.0, 1.0, 32.0]");
+    }
+
+    @Test
+    public void test2523() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2523");
+        java.lang.CharSequence[] charSequenceArray2 = new java.lang.CharSequence[] { "", "hi!" };
+        java.lang.CharSequence[] charSequenceArray4 = org.apache.commons.lang3.ArrayUtils.add(charSequenceArray2, (java.lang.CharSequence) "");
+        long[] longArray6 = new long[] { 1L };
+        long[][] longArray7 = new long[][] { longArray6 };
+        java.lang.Character[] charArray10 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray11 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray10);
+        long[][] longArray12 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray7, (java.lang.Object) charArray10);
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray10, '#');
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) charSequenceArray4, (java.lang.Object) charArray14);
+        java.lang.Byte[] byteArray20 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray22 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray20, (byte) -1);
+        java.lang.Byte[] byteArray23 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray20);
+        java.lang.Character[] charArray29 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray30 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray29);
+        java.lang.Character[] charArray31 = org.apache.commons.lang3.ArrayUtils.toObject(charArray30);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray23, (java.lang.Object) charArray30);
+        char[] charArray33 = org.apache.commons.lang3.ArrayUtils.clone(charArray30);
+        char[] charArray34 = org.apache.commons.lang3.ArrayUtils.addAll(charArray14, charArray33);
+        char[] charArray36 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray14, ' ');
+        char[] charArray37 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray14);
+        char[] charArray40 = org.apache.commons.lang3.ArrayUtils.subarray(charArray37, (-1), (int) (short) 100);
+        char[] charArray42 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray37, '#');
+        char[] charArray43 = org.apache.commons.lang3.ArrayUtils.clone(charArray37);
+        int int45 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray37, ' ');
+        org.junit.Assert.assertNotNull(charSequenceArray2);
+        org.junit.Assert.assertNotNull(charSequenceArray4);
+        org.junit.Assert.assertNotNull(longArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray6), "[1]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertNotNull(charArray10);
+        org.junit.Assert.assertNotNull(charArray11);
+        org.junit.Assert.assertNotNull(longArray12);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[#, #]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(byteArray20);
+        org.junit.Assert.assertNotNull(byteArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray22), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertNotNull(charArray29);
+        org.junit.Assert.assertNotNull(charArray30);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray30), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray30), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray30), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray31);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(charArray33);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray33), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray33), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray33), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray34);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray34), "##4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray34), "##4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray34), "[#, #, 4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray36);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray36), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray36), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray36), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray37);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray37), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray37), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray37), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray40);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray40), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray40), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray40), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray42);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray42), "#");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray42), "#");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray42), "[#]");
+        org.junit.Assert.assertNotNull(charArray43);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray43), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray43), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray43), "[#, #]");
+        org.junit.Assert.assertTrue("'" + int45 + "' != '" + (-1) + "'", int45 == (-1));
+    }
+
+    @Test
+    public void test2524() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2524");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        int int29 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray18);
+        double[] doubleArray32 = org.apache.commons.lang3.ArrayUtils.remove(doubleArray18, (int) (short) 0);
+        boolean boolean33 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray32);
+        double[] doubleArray36 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray32, 4, (int) (byte) 1);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int29 + "' != '" + (-1) + "'", int29 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray32), "[1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + false + "'", boolean33 == false);
+        org.junit.Assert.assertNotNull(doubleArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray36), "[]");
+    }
+
+    @Test
+    public void test2525() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2525");
+        java.lang.Boolean[] booleanArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_BOOLEAN_OBJECT_ARRAY;
+        java.lang.Boolean[] booleanArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray0);
+        boolean[] booleanArray3 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray0, false);
+        java.lang.Boolean[] booleanArray4 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray0);
+        java.util.Map<java.lang.Object, java.lang.Object> objMap5 = org.apache.commons.lang3.ArrayUtils.toMap((java.lang.Object[]) booleanArray4);
+        java.lang.Boolean[] booleanArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray4);
+        boolean[] booleanArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray4);
+        java.lang.Boolean[] booleanArray8 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray7);
+        java.lang.Boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray8);
+        org.junit.Assert.assertNotNull(booleanArray0);
+        org.junit.Assert.assertNotNull(booleanArray1);
+        org.junit.Assert.assertNotNull(booleanArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray3), "[]");
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertNotNull(objMap5);
+        org.junit.Assert.assertNotNull(booleanArray6);
+        org.junit.Assert.assertNotNull(booleanArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray7), "[]");
+        org.junit.Assert.assertNotNull(booleanArray8);
+        org.junit.Assert.assertNotNull(booleanArray9);
+    }
+
+    @Test
+    public void test2526() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2526");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray4, (int) (short) -1, (int) '#');
+        boolean boolean11 = org.apache.commons.lang3.ArrayUtils.isEmpty(booleanArray4);
+        boolean[] booleanArray16 = new boolean[] { false, true, true, false };
+        int int19 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray16, true, 10);
+        boolean[] booleanArray21 = org.apache.commons.lang3.ArrayUtils.add(booleanArray16, false);
+        boolean[] booleanArray22 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray21);
+        boolean[] booleanArray24 = org.apache.commons.lang3.ArrayUtils.remove(booleanArray21, 1);
+        org.apache.commons.lang3.ArrayUtils.reverse(booleanArray24);
+        boolean[] booleanArray28 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray24, (int) 'a', 8);
+        boolean[] booleanArray29 = org.apache.commons.lang3.ArrayUtils.addAll(booleanArray4, booleanArray24);
+        org.apache.commons.lang3.ArrayUtils.reverse(booleanArray24);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray21), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray22), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray24), "[false, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray28), "[]");
+        org.junit.Assert.assertNotNull(booleanArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray29), "[false, true, true, false, false, false, true, false]");
+    }
+
+    @Test
+    public void test2527() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2527");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        boolean boolean28 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(doubleArray27);
+        double[] doubleArray32 = new double[] { (short) 100, 1, (-1.0d) };
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, (double) 0.0f, (int) (short) 0);
+        int int38 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, 0.0d, 10);
+        int int40 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, (double) (byte) 10);
+        int int43 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray32, (double) '4', (int) (short) 10);
+        double[] doubleArray47 = new double[] { (short) 100, 1, (-1.0d) };
+        int int50 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray47, (double) 0.0f, (int) (short) 0);
+        int int53 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray47, 0.0d, 10);
+        int int55 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray47, (double) (byte) 10);
+        double[] doubleArray56 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray32, doubleArray47);
+        double[] doubleArray59 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray56, (int) '4', (int) (byte) 1);
+        double[] doubleArray62 = org.apache.commons.lang3.ArrayUtils.add(doubleArray56, 0, (double) ' ');
+        double[] doubleArray63 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray56);
+        double[] doubleArray66 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray56, (int) (byte) 0, (int) ' ');
+        double[] doubleArray67 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray27, doubleArray66);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray32), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertTrue("'" + int38 + "' != '" + (-1) + "'", int38 == (-1));
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + (-1) + "'", int40 == (-1));
+        org.junit.Assert.assertTrue("'" + int43 + "' != '" + (-1) + "'", int43 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray47);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray47), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int50 + "' != '" + (-1) + "'", int50 == (-1));
+        org.junit.Assert.assertTrue("'" + int53 + "' != '" + (-1) + "'", int53 == (-1));
+        org.junit.Assert.assertTrue("'" + int55 + "' != '" + (-1) + "'", int55 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray56);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray56), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray59);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray59), "[]");
+        org.junit.Assert.assertNotNull(doubleArray62);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray62), "[32.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray63);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray63), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray66);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray66), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray67);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray67), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+    }
+
+    @Test
+    public void test2528() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2528");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        java.lang.Byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        java.lang.Character[] charArray13 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray13);
+        java.lang.Character[] charArray15 = org.apache.commons.lang3.ArrayUtils.toObject(charArray14);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray7, (java.lang.Object) charArray14);
+        char[] charArray19 = org.apache.commons.lang3.ArrayUtils.subarray(charArray14, (int) (short) 10, 100);
+        char[] charArray21 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray19, '#');
+        char[] charArray22 = org.apache.commons.lang3.ArrayUtils.clone(charArray19);
+        int int25 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray22, '#', 3);
+        char[] charArray26 = org.apache.commons.lang3.ArrayUtils.clone(charArray22);
+        java.lang.Character[] charArray27 = org.apache.commons.lang3.ArrayUtils.toObject(charArray22);
+        char[] charArray28 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray27);
+        char[] charArray29 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray27);
+        char[] charArray30 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray27);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNotNull(charArray19);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray19), "[]");
+        org.junit.Assert.assertNotNull(charArray21);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray21), "[]");
+        org.junit.Assert.assertNotNull(charArray22);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray22), "[]");
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+        org.junit.Assert.assertNotNull(charArray26);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray26), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray26), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray26), "[]");
+        org.junit.Assert.assertNotNull(charArray27);
+        org.junit.Assert.assertNotNull(charArray28);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray28), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray28), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray28), "[]");
+        org.junit.Assert.assertNotNull(charArray29);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray29), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray29), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray29), "[]");
+        org.junit.Assert.assertNotNull(charArray30);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray30), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray30), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray30), "[]");
+    }
+
+    @Test
+    public void test2529() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2529");
+        byte[] byteArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        java.lang.Byte[] byteArray5 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray5, (byte) -1);
+        boolean boolean8 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray7);
+        byte[] byteArray10 = org.apache.commons.lang3.ArrayUtils.add(byteArray7, (byte) 100);
+        byte[] byteArray11 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray0, byteArray10);
+        byte[] byteArray13 = org.apache.commons.lang3.ArrayUtils.removeElement(byteArray11, (byte) 1);
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray13, (byte) 100);
+        org.junit.Assert.assertNotNull(byteArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray0), "[]");
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNotNull(byteArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray10), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray11), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray13), "[-1, -1, 1, 100]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
+    }
+
+    @Test
+    public void test2530() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2530");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        java.lang.Integer[] intArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray3);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, 4);
+        int[] intArray9 = org.apache.commons.lang3.ArrayUtils.clone(intArray8);
+        int[] intArray11 = org.apache.commons.lang3.ArrayUtils.remove(intArray8, (int) (byte) 0);
+        java.lang.String str13 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) intArray8, "0.0");
+        java.lang.Integer[] intArray14 = org.apache.commons.lang3.ArrayUtils.toObject(intArray8);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray11), "[0]");
+        org.junit.Assert.assertEquals("'" + str13 + "' != '" + "{35,0}" + "'", str13, "{35,0}");
+        org.junit.Assert.assertNotNull(intArray14);
+    }
+
+    @Test
+    public void test2531() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2531");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        java.lang.Byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        byte[] byteArray13 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray13, (byte) 0);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.contains(byteArray13, (byte) 0);
+        int int19 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) byteArray7, (java.lang.Object) (byte) 0, (int) (byte) 0);
+        java.lang.Byte[] byteArray20 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray7);
+        double[] doubleArray21 = org.apache.commons.lang3.ArrayUtils.EMPTY_DOUBLE_ARRAY;
+        java.lang.Double[] doubleArray22 = org.apache.commons.lang3.ArrayUtils.toObject(doubleArray21);
+        java.lang.String str23 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) doubleArray22);
+        java.lang.Object[] objArray24 = org.apache.commons.lang3.ArrayUtils.addAll((java.lang.Object[]) byteArray7, (java.lang.Object[]) doubleArray22);
+        java.util.Map<java.lang.Object, java.lang.Object> objMap25 = org.apache.commons.lang3.ArrayUtils.toMap((java.lang.Object[]) doubleArray22);
+        double[] doubleArray26 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray22);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertNotNull(byteArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray13), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 4 + "'", int15 == 4);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertNotNull(byteArray20);
+        org.junit.Assert.assertNotNull(doubleArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray21), "[]");
+        org.junit.Assert.assertNotNull(doubleArray22);
+        org.junit.Assert.assertEquals("'" + str23 + "' != '" + "{}" + "'", str23, "{}");
+        org.junit.Assert.assertNotNull(objArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray24), "[1, -1, -1, 1]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray24), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(objMap25);
+        org.junit.Assert.assertNotNull(doubleArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray26), "[]");
+    }
+
+    @Test
+    public void test2532() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2532");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        java.lang.Byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        java.lang.Character[] charArray13 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray13);
+        java.lang.Character[] charArray15 = org.apache.commons.lang3.ArrayUtils.toObject(charArray14);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray7, (java.lang.Object) charArray14);
+        char[] charArray19 = org.apache.commons.lang3.ArrayUtils.subarray(charArray14, (int) (short) 10, 100);
+        char[] charArray21 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray19, '#');
+        char[] charArray22 = org.apache.commons.lang3.ArrayUtils.clone(charArray19);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray22);
+        java.lang.String str24 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) charArray22);
+        // The following exception was thrown during execution in test generation
+        try {
+            char[] charArray27 = org.apache.commons.lang3.ArrayUtils.add(charArray22, (int) (short) -1, '4');
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: -1, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNotNull(charArray19);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray19), "[]");
+        org.junit.Assert.assertNotNull(charArray21);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray21), "[]");
+        org.junit.Assert.assertNotNull(charArray22);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray22), "[]");
+        org.junit.Assert.assertEquals("'" + str24 + "' != '" + "{}" + "'", str24, "{}");
+    }
+
+    @Test
+    public void test2533() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2533");
+        short[] shortArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        boolean boolean1 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(shortArray0);
+        java.lang.Short[] shortArray2 = org.apache.commons.lang3.ArrayUtils.toObject(shortArray0);
+        boolean boolean3 = org.apache.commons.lang3.ArrayUtils.isEmpty(shortArray0);
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray0, (short) (byte) 10, (int) (byte) 10);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray0, (short) (byte) 0, (int) (short) 0);
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(shortArray0);
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray0), "[]");
+        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
+        org.junit.Assert.assertNotNull(shortArray2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+
+    @Test
+    public void test2534() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2534");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        java.lang.Integer[] intArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray3);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, 8);
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, 100);
+        int[] intArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) (short) 1);
+        boolean boolean13 = org.apache.commons.lang3.ArrayUtils.isEmpty((java.lang.Object[]) intArray3);
+        double[] doubleArray17 = new double[] { (short) 100, 1, (-1.0d) };
+        int int20 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray17, (double) 0.0f, (int) (short) 0);
+        int int23 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray17, 0.0d, 10);
+        int int25 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray17, (double) (byte) 10);
+        int int28 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray17, (double) '4', (int) (short) 10);
+        double[] doubleArray32 = new double[] { (short) 100, 1, (-1.0d) };
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, (double) 0.0f, (int) (short) 0);
+        int int38 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, 0.0d, 10);
+        int int40 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, (double) (byte) 10);
+        double[] doubleArray41 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray17, doubleArray32);
+        boolean boolean42 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray32);
+        int int45 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, 10.0d, (-1));
+        int int48 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray32, 0.0d, (double) (short) 100);
+        int int49 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) intArray3, (java.lang.Object) doubleArray32);
+        org.apache.commons.lang3.ArrayUtils.reverse(doubleArray32);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray12), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNotNull(doubleArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray17), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + (-1) + "'", int28 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray32), "[-1.0, 1.0, 100.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertTrue("'" + int38 + "' != '" + (-1) + "'", int38 == (-1));
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + (-1) + "'", int40 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray41), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + false + "'", boolean42 == false);
+        org.junit.Assert.assertTrue("'" + int45 + "' != '" + (-1) + "'", int45 == (-1));
+        org.junit.Assert.assertTrue("'" + int48 + "' != '" + 2 + "'", int48 == 2);
+        org.junit.Assert.assertTrue("'" + int49 + "' != '" + (-1) + "'", int49 == (-1));
+    }
+
+    @Test
+    public void test2535() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2535");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) -1, (byte) 1, (byte) 10, (byte) 100 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) 100);
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4);
+        byte[] byteArray13 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray13, (byte) 0);
+        byte[] byteArray17 = org.apache.commons.lang3.ArrayUtils.add(byteArray13, (byte) 10);
+        byte[] byteArray18 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        java.lang.Byte[] byteArray23 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray25 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray23, (byte) -1);
+        boolean boolean26 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray25);
+        byte[] byteArray28 = org.apache.commons.lang3.ArrayUtils.add(byteArray25, (byte) 100);
+        byte[] byteArray29 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray18, byteArray28);
+        byte[] byteArray30 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray13, byteArray28);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.contains(byteArray13, (byte) 10);
+        byte[] byteArray35 = org.apache.commons.lang3.ArrayUtils.subarray(byteArray13, 0, (int) (byte) 1);
+        byte[] byteArray38 = org.apache.commons.lang3.ArrayUtils.subarray(byteArray35, 3, 8);
+        int int39 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) byteArray4, (java.lang.Object) 8);
+        java.lang.Byte[] byteArray40 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        byte[] byteArray41 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray40);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[-1, 1, 10, 100]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[-1, 1, 10, 100]");
+        org.junit.Assert.assertNotNull(byteArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray13), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 4 + "'", int15 == 4);
+        org.junit.Assert.assertNotNull(byteArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray17), "[0, 1, 100, 100, 0, 10]");
+        org.junit.Assert.assertNotNull(byteArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray18), "[]");
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertNotNull(byteArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray25), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertNotNull(byteArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray28), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray29), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray30), "[0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(byteArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray35), "[0]");
+        org.junit.Assert.assertNotNull(byteArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray38), "[]");
+        org.junit.Assert.assertTrue("'" + int39 + "' != '" + (-1) + "'", int39 == (-1));
+        org.junit.Assert.assertNotNull(byteArray40);
+        org.junit.Assert.assertNotNull(byteArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray41), "[-1, 1, 10, 100]");
+    }
+
+    @Test
+    public void test2536() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2536");
+        java.lang.Double[] doubleArray4 = new java.lang.Double[] { 0.0d, 1.0d, 100.0d, 100.0d };
+        double[] doubleArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray4);
+        int int8 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray5, (double) 100L, (int) (short) -1);
+        org.junit.Assert.assertNotNull(doubleArray4);
+        org.junit.Assert.assertNotNull(doubleArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray5), "[0.0, 1.0, 100.0, 100.0]");
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 2 + "'", int8 == 2);
+    }
+
+    @Test
+    public void test2537() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2537");
+        double[] doubleArray0 = null;
+        double[] doubleArray2 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray0, (double) 10.0f);
+        org.junit.Assert.assertNull(doubleArray2);
+    }
+
+    @Test
+    public void test2538() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2538");
+        java.lang.CharSequence[] charSequenceArray2 = new java.lang.CharSequence[] { "", "hi!" };
+        java.lang.CharSequence[] charSequenceArray4 = org.apache.commons.lang3.ArrayUtils.add(charSequenceArray2, (java.lang.CharSequence) "");
+        java.lang.CharSequence[] charSequenceArray7 = org.apache.commons.lang3.ArrayUtils.subarray(charSequenceArray2, (int) (byte) 10, (int) (short) 0);
+        java.lang.CharSequence[] charSequenceArray10 = org.apache.commons.lang3.ArrayUtils.subarray(charSequenceArray7, 10, (int) (short) 0);
+        long[] longArray12 = new long[] { 1L };
+        long[][] longArray13 = new long[][] { longArray12 };
+        java.lang.Character[] charArray16 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray17 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray16);
+        long[][] longArray18 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray13, (java.lang.Object) charArray16);
+        java.lang.Character[] charArray19 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray16);
+        boolean boolean20 = org.apache.commons.lang3.ArrayUtils.isSameType((java.lang.Object) 10, (java.lang.Object) charArray19);
+        org.junit.Assert.assertNotNull(charSequenceArray2);
+        org.junit.Assert.assertNotNull(charSequenceArray4);
+        org.junit.Assert.assertNotNull(charSequenceArray7);
+        org.junit.Assert.assertNotNull(charSequenceArray10);
+        org.junit.Assert.assertNotNull(longArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray12), "[1]");
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertNotNull(charArray17);
+        org.junit.Assert.assertNotNull(longArray18);
+        org.junit.Assert.assertNotNull(charArray19);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+    }
+
+    @Test
+    public void test2539() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2539");
+        java.lang.Double[] doubleArray4 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray4);
+        double[] doubleArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray5, (double) 1);
+        double[] doubleArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray5);
+        double[] doubleArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray5, (double) 10L);
+        // The following exception was thrown during execution in test generation
+        try {
+            double[] doubleArray12 = org.apache.commons.lang3.ArrayUtils.remove(doubleArray10, (int) 'a');
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 97, Length: 4");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(doubleArray4);
+        org.junit.Assert.assertNotNull(doubleArray5);
+        org.junit.Assert.assertNotNull(doubleArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray7), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray8), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray10), "[10.0, -1.0, 10.0, 0.0]");
+    }
+
+    @Test
+    public void test2540() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2540");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        float[] floatArray16 = new float[] { (-1L), (byte) 1 };
+        int int18 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray16, (float) (byte) 10);
+        float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.add(floatArray16, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray22 = org.apache.commons.lang3.ArrayUtils.clone(floatArray21);
+        float[] floatArray25 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray21, (int) '#', (int) 'a');
+        float[] floatArray26 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray21);
+        float[] floatArray28 = org.apache.commons.lang3.ArrayUtils.remove(floatArray21, 0);
+        float[] floatArray29 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray13, floatArray21);
+        boolean boolean30 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray29);
+        float[] floatArray33 = new float[] { (-1L), (byte) 1 };
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray33, (float) (byte) 10);
+        int int38 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray33, (float) (byte) -1, (int) '#');
+        float[] floatArray39 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray33);
+        int int42 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray39, 0.0f, (int) (byte) -1);
+        float[] floatArray43 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray29, floatArray39);
+        int int45 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray43, (float) (byte) 10);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray22), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray25), "[]");
+        org.junit.Assert.assertNotNull(floatArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray26), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray28), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray29), "[-1.0, 1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
+        org.junit.Assert.assertNotNull(floatArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray33), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertTrue("'" + int38 + "' != '" + 0 + "'", int38 == 0);
+        org.junit.Assert.assertNotNull(floatArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray39), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int42 + "' != '" + (-1) + "'", int42 == (-1));
+        org.junit.Assert.assertNotNull(floatArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray43), "[-1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int45 + "' != '" + (-1) + "'", int45 == (-1));
+    }
+
+    @Test
+    public void test2541() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2541");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3);
+        java.lang.Integer[] intArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray3);
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, 0);
+        java.lang.Byte[] byteArray12 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray12, (byte) -1);
+        java.lang.Byte[] byteArray15 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray12);
+        long[] longArray18 = new long[] { 100L, 'a' };
+        long[] longArray21 = org.apache.commons.lang3.ArrayUtils.subarray(longArray18, (int) (short) 10, 100);
+        boolean boolean22 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray21);
+        long[] longArray24 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray21, (long) 0);
+        java.lang.Long[] longArray25 = org.apache.commons.lang3.ArrayUtils.toObject(longArray24);
+        java.io.Serializable[] serializableArray26 = org.apache.commons.lang3.ArrayUtils.removeElement((java.io.Serializable[]) byteArray12, (java.lang.Object) longArray25);
+        java.lang.Double[] doubleArray31 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray32 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray31);
+        double[] doubleArray34 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray32, (double) 1);
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) longArray25, (java.lang.Object) doubleArray34);
+        java.lang.Object[] objArray36 = org.apache.commons.lang3.ArrayUtils.addAll((java.lang.Object[]) intArray3, (java.lang.Object[]) longArray25);
+        int[] intArray37 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3);
+        int[] intArray39 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) (byte) 10);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[35, 0]");
+        org.junit.Assert.assertNotNull(byteArray12);
+        org.junit.Assert.assertNotNull(byteArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray14), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray15);
+        org.junit.Assert.assertNotNull(longArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray18), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray21), "[]");
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
+        org.junit.Assert.assertNotNull(longArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray24), "[]");
+        org.junit.Assert.assertNotNull(longArray25);
+        org.junit.Assert.assertNotNull(serializableArray26);
+        org.junit.Assert.assertNotNull(doubleArray31);
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertNotNull(doubleArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray34), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertNotNull(objArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray36), "[35, 0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray36), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray37), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray39), "[35, 0]");
+    }
+
+    @Test
+    public void test2542() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2542");
+        java.lang.String[] strArray2 = new java.lang.String[] { "hi!", "hi!" };
+        java.lang.String[] strArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(strArray2);
+        java.lang.String[] strArray4 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(strArray3);
+        double[] doubleArray8 = new double[] { (short) 100, 1, (-1.0d) };
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray8, (double) 0.0f, (int) (short) 0);
+        double[] doubleArray13 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray8, (double) (byte) 10);
+        int int16 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray8, (double) (-1), (int) (short) 100);
+        double[] doubleArray18 = org.apache.commons.lang3.ArrayUtils.add(doubleArray8, (double) (short) 0);
+        int int20 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) strArray3, (java.lang.Object) doubleArray8, 8);
+        org.junit.Assert.assertNotNull(strArray2);
+        org.junit.Assert.assertNotNull(strArray3);
+        org.junit.Assert.assertNotNull(strArray4);
+        org.junit.Assert.assertNotNull(doubleArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray8), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray13), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+    }
+
+    @Test
+    public void test2543() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2543");
+        java.lang.Integer[][][] intArray0 = new java.lang.Integer[][][] {};
+        java.lang.Integer[][][] intArray1 = new java.lang.Integer[][][] {};
+        java.lang.Integer[][][] intArray2 = new java.lang.Integer[][][] {};
+        java.lang.Integer[][][] intArray3 = new java.lang.Integer[][][] {};
+        java.lang.Integer[][][] intArray4 = new java.lang.Integer[][][] {};
+        java.lang.Integer[][][][] intArray5 = new java.lang.Integer[][][][] { intArray0, intArray1, intArray2, intArray3, intArray4 };
+        java.lang.Integer[][][][] intArray8 = org.apache.commons.lang3.ArrayUtils.subarray(intArray5, 100, 8);
+        boolean boolean9 = org.apache.commons.lang3.ArrayUtils.isNotEmpty((java.io.Serializable[][][]) intArray5);
+        org.junit.Assert.assertNotNull(intArray0);
+        org.junit.Assert.assertNotNull(intArray1);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+    }
+
+    @Test
+    public void test2544() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2544");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        java.lang.Integer[] intArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray3);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, 8);
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, 100);
+        int[] intArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) (short) 1);
+        boolean boolean13 = org.apache.commons.lang3.ArrayUtils.isEmpty((java.lang.Object[]) intArray3);
+        double[] doubleArray17 = new double[] { (short) 100, 1, (-1.0d) };
+        int int20 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray17, (double) 0.0f, (int) (short) 0);
+        int int23 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray17, 0.0d, 10);
+        int int25 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray17, (double) (byte) 10);
+        int int28 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray17, (double) '4', (int) (short) 10);
+        double[] doubleArray32 = new double[] { (short) 100, 1, (-1.0d) };
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, (double) 0.0f, (int) (short) 0);
+        int int38 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, 0.0d, 10);
+        int int40 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, (double) (byte) 10);
+        double[] doubleArray41 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray17, doubleArray32);
+        boolean boolean42 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray32);
+        int int45 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, 10.0d, (-1));
+        int int48 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray32, 0.0d, (double) (short) 100);
+        int int49 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) intArray3, (java.lang.Object) doubleArray32);
+        java.lang.String str50 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) doubleArray32);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray12), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNotNull(doubleArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray17), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + (-1) + "'", int28 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray32), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertTrue("'" + int38 + "' != '" + (-1) + "'", int38 == (-1));
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + (-1) + "'", int40 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray41), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + false + "'", boolean42 == false);
+        org.junit.Assert.assertTrue("'" + int45 + "' != '" + (-1) + "'", int45 == (-1));
+        org.junit.Assert.assertTrue("'" + int48 + "' != '" + 2 + "'", int48 == 2);
+        org.junit.Assert.assertTrue("'" + int49 + "' != '" + (-1) + "'", int49 == (-1));
+        org.junit.Assert.assertEquals("'" + str50 + "' != '" + "{100.0,1.0,-1.0}" + "'", str50, "{100.0,1.0,-1.0}");
+    }
+
+    @Test
+    public void test2545() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2545");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        float[] floatArray16 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) (short) 0, (int) (byte) 0);
+        int int19 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray7, (float) 10, 0);
+        float[] floatArray20 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        java.lang.Float[] floatArray22 = new java.lang.Float[] { 100.0f };
+        float[] floatArray24 = org.apache.commons.lang3.ArrayUtils.toPrimitive(floatArray22, (float) (short) -1);
+        float[] floatArray25 = org.apache.commons.lang3.ArrayUtils.clone(floatArray24);
+        boolean boolean26 = org.apache.commons.lang3.ArrayUtils.isSameLength(floatArray20, floatArray25);
+        boolean boolean27 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(floatArray25);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[]");
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertNotNull(floatArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray20), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray22);
+        org.junit.Assert.assertNotNull(floatArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray24), "[100.0]");
+        org.junit.Assert.assertNotNull(floatArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray25), "[100.0]");
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + true + "'", boolean27 == true);
+    }
+
+    @Test
+    public void test2546() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2546");
+        long[] longArray3 = new long[] { 10L, 100L, '#' };
+        boolean boolean4 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray3);
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray3, (long) (short) 0, (-1));
+        long[] longArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray3);
+        java.lang.Long[] longArray9 = org.apache.commons.lang3.ArrayUtils.toObject(longArray3);
+        java.lang.Long[] longArray10 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray9);
+        long[] longArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray10, (long) 4);
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray3), "[10, 100, 35]");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(longArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray8), "[10, 100, 35]");
+        org.junit.Assert.assertNotNull(longArray9);
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertNotNull(longArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray12), "[10, 100, 35]");
+    }
+
+    @Test
+    public void test2547() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2547");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        float[] floatArray16 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) (short) 0, (int) (byte) 0);
+        int int19 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray7, (float) 10, 0);
+        float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.removeElement(floatArray7, (float) 'a');
+        float[] floatArray23 = org.apache.commons.lang3.ArrayUtils.remove(floatArray21, (int) (short) 1);
+        boolean boolean24 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray21);
+        java.lang.Float[] floatArray25 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray21);
+        int int27 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray21, (float) (byte) 0);
+        java.lang.Float[] floatArray28 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray21);
+        float[] floatArray31 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray21, 0, 0);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[]");
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray23), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        org.junit.Assert.assertNotNull(floatArray25);
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
+        org.junit.Assert.assertNotNull(floatArray28);
+        org.junit.Assert.assertNotNull(floatArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray31), "[]");
+    }
+
+    @Test
+    public void test2548() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2548");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.contains(floatArray2, (float) (-1L));
+        int int9 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray2, (float) (short) 100, (int) (byte) 1);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+    }
+
+    @Test
+    public void test2549() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2549");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        java.lang.Double[] doubleArray32 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray32);
+        double[] doubleArray35 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray32, 0.0d);
+        double[] doubleArray36 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray32);
+        double[] doubleArray37 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray27, doubleArray36);
+        double[] doubleArray38 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray37);
+        int int40 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray38, (double) 1.0f);
+        double[] doubleArray43 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray38, (int) (short) 100, 10);
+        double[] doubleArray46 = org.apache.commons.lang3.ArrayUtils.add(doubleArray38, 3, (double) 1);
+        double[] doubleArray49 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray46, (int) (byte) 10, 100);
+        int int53 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray46, (double) '4', 10, (double) 9);
+        double[] doubleArray55 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray46, (double) (short) 1);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertNotNull(doubleArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray35), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray36), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray37), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray38), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + 4 + "'", int40 == 4);
+        org.junit.Assert.assertNotNull(doubleArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray43), "[]");
+        org.junit.Assert.assertNotNull(doubleArray46);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray46), "[100.0, 1.0, -1.0, 1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray49), "[0.0]");
+        org.junit.Assert.assertTrue("'" + int53 + "' != '" + (-1) + "'", int53 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray55);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray55), "[100.0, -1.0, 1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+    }
+
+    @Test
+    public void test2550() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2550");
+        java.lang.Character[] charArray0 = new java.lang.Character[] {};
+        java.lang.Character[] charArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray0);
+        java.lang.Byte[] byteArray6 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray6, (byte) -1);
+        boolean boolean9 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray8);
+        byte[] byteArray11 = org.apache.commons.lang3.ArrayUtils.add(byteArray8, (byte) 100);
+        java.lang.Byte[] byteArray16 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray18 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray16, (byte) -1);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray18);
+        byte[] byteArray21 = org.apache.commons.lang3.ArrayUtils.add(byteArray18, (byte) 100);
+        byte[] byteArray22 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray8, byteArray18);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray22, (byte) 0);
+        byte[] byteArray25 = org.apache.commons.lang3.ArrayUtils.clone(byteArray22);
+        byte[] byteArray27 = org.apache.commons.lang3.ArrayUtils.add(byteArray22, (byte) 10);
+        int int28 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) charArray0, (java.lang.Object) byteArray22);
+        org.junit.Assert.assertNotNull(charArray0);
+        org.junit.Assert.assertNotNull(charArray1);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertNotNull(byteArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray8), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNotNull(byteArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray11), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray16);
+        org.junit.Assert.assertNotNull(byteArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray18), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNotNull(byteArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray21), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray22), "[1, -1, -1, 1, 1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertNotNull(byteArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray25), "[1, -1, -1, 1, 1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray27), "[1, -1, -1, 1, 1, -1, -1, 1, 10]");
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + (-1) + "'", int28 == (-1));
+    }
+
+    @Test
+    public void test2551() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2551");
+        double[] doubleArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_DOUBLE_ARRAY;
+        java.lang.Double[] doubleArray1 = org.apache.commons.lang3.ArrayUtils.toObject(doubleArray0);
+        double[] doubleArray4 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray0, 4, 10);
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray4, (double) 1L, (int) (byte) 100);
+        java.lang.Double[] doubleArray8 = org.apache.commons.lang3.ArrayUtils.toObject(doubleArray4);
+        org.junit.Assert.assertNotNull(doubleArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray0), "[]");
+        org.junit.Assert.assertNotNull(doubleArray1);
+        org.junit.Assert.assertNotNull(doubleArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray4), "[]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray8);
+    }
+
+    @Test
+    public void test2552() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2552");
+        long[] longArray1 = new long[] { ' ' };
+        boolean boolean2 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray1);
+        long[] longArray3 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_ARRAY;
+        long[] longArray4 = org.apache.commons.lang3.ArrayUtils.addAll(longArray1, longArray3);
+        long[] longArray7 = org.apache.commons.lang3.ArrayUtils.subarray(longArray1, (int) (short) 1, (int) (byte) 100);
+        int[] intArray10 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray11 = org.apache.commons.lang3.ArrayUtils.toObject(intArray10);
+        int[] intArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray11, (int) 'a');
+        int[] intArray15 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray11, (int) '#');
+        int[] intArray16 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray11);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.isSameType((java.lang.Object) longArray1, (java.lang.Object) intArray16);
+        int[] intArray20 = org.apache.commons.lang3.ArrayUtils.subarray(intArray16, 0, (int) (short) 0);
+        int[] intArray21 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        boolean boolean23 = org.apache.commons.lang3.ArrayUtils.contains(intArray21, (int) (short) 10);
+        boolean boolean24 = org.apache.commons.lang3.ArrayUtils.isSameLength(intArray16, intArray21);
+        org.junit.Assert.assertNotNull(longArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray1), "[32]");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray3), "[]");
+        org.junit.Assert.assertNotNull(longArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray4), "[32]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray7), "[]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray11);
+        org.junit.Assert.assertNotNull(intArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray13), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray15), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray16), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertNotNull(intArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray20), "[]");
+        org.junit.Assert.assertNotNull(intArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray21), "[]");
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+    }
+
+    @Test
+    public void test2553() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2553");
+        java.lang.Float[] floatArray1 = new java.lang.Float[] { (-1.0f) };
+        java.lang.Float[] floatArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray1);
+        java.lang.Float[] floatArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray2);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.util.Map<java.lang.Object, java.lang.Object> objMap4 = org.apache.commons.lang3.ArrayUtils.toMap((java.lang.Object[]) floatArray3);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Array element 0, '-1.0', is neither of type Map.Entry nor an Array");
+        } catch (java.lang.IllegalArgumentException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(floatArray1);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertNotNull(floatArray3);
+    }
+
+    @Test
+    public void test2554() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2554");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) '#');
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.subarray(intArray7, (int) 'a', (int) '#');
+        boolean boolean11 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(intArray7);
+        boolean boolean13 = org.apache.commons.lang3.ArrayUtils.contains(intArray7, (-1));
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[]");
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+    }
+
+    @Test
+    public void test2555() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2555");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3);
+        java.lang.Integer[] intArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray3);
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, 0);
+        java.lang.Byte[] byteArray12 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray12, (byte) -1);
+        java.lang.Byte[] byteArray15 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray12);
+        long[] longArray18 = new long[] { 100L, 'a' };
+        long[] longArray21 = org.apache.commons.lang3.ArrayUtils.subarray(longArray18, (int) (short) 10, 100);
+        boolean boolean22 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray21);
+        long[] longArray24 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray21, (long) 0);
+        java.lang.Long[] longArray25 = org.apache.commons.lang3.ArrayUtils.toObject(longArray24);
+        java.io.Serializable[] serializableArray26 = org.apache.commons.lang3.ArrayUtils.removeElement((java.io.Serializable[]) byteArray12, (java.lang.Object) longArray25);
+        java.lang.Double[] doubleArray31 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray32 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray31);
+        double[] doubleArray34 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray32, (double) 1);
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) longArray25, (java.lang.Object) doubleArray34);
+        java.lang.Object[] objArray36 = org.apache.commons.lang3.ArrayUtils.addAll((java.lang.Object[]) intArray3, (java.lang.Object[]) longArray25);
+        int[] intArray37 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3);
+        int[] intArray39 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, 8);
+        int[] intArray42 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray43 = org.apache.commons.lang3.ArrayUtils.toObject(intArray42);
+        int[] intArray45 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray43, (int) 'a');
+        int[] intArray46 = org.apache.commons.lang3.ArrayUtils.clone(intArray45);
+        int int48 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray46, (int) '4');
+        java.lang.Integer[] intArray49 = org.apache.commons.lang3.ArrayUtils.toObject(intArray46);
+        int[] intArray50 = org.apache.commons.lang3.ArrayUtils.addAll(intArray39, intArray46);
+        int[] intArray53 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray54 = org.apache.commons.lang3.ArrayUtils.toObject(intArray53);
+        int[] intArray55 = org.apache.commons.lang3.ArrayUtils.clone(intArray53);
+        int[] intArray56 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        int[] intArray57 = org.apache.commons.lang3.ArrayUtils.addAll(intArray55, intArray56);
+        int[] intArray58 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray57);
+        boolean boolean59 = org.apache.commons.lang3.ArrayUtils.isSameLength(intArray50, intArray57);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[35, 0]");
+        org.junit.Assert.assertNotNull(byteArray12);
+        org.junit.Assert.assertNotNull(byteArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray14), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray15);
+        org.junit.Assert.assertNotNull(longArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray18), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray21), "[]");
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
+        org.junit.Assert.assertNotNull(longArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray24), "[]");
+        org.junit.Assert.assertNotNull(longArray25);
+        org.junit.Assert.assertNotNull(serializableArray26);
+        org.junit.Assert.assertNotNull(doubleArray31);
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertNotNull(doubleArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray34), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertNotNull(objArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray36), "[35, 0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray36), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray37), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray39), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray42);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray42), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray43);
+        org.junit.Assert.assertNotNull(intArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray45), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray46);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray46), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + int48 + "' != '" + (-1) + "'", int48 == (-1));
+        org.junit.Assert.assertNotNull(intArray49);
+        org.junit.Assert.assertNotNull(intArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray50), "[35, 0, 35, 0]");
+        org.junit.Assert.assertNotNull(intArray53);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray53), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray54);
+        org.junit.Assert.assertNotNull(intArray55);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray55), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray56);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray56), "[]");
+        org.junit.Assert.assertNotNull(intArray57);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray57), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray58);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray58), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + boolean59 + "' != '" + false + "'", boolean59 == false);
+    }
+
+    @Test
+    public void test2556() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2556");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        org.apache.commons.lang3.ArrayUtils.reverse(booleanArray4);
+        int int13 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, false, 0);
+        boolean[] booleanArray15 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        boolean[] booleanArray20 = new boolean[] { false, true, true, false };
+        int int23 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray20, true, 10);
+        boolean[] booleanArray25 = org.apache.commons.lang3.ArrayUtils.add(booleanArray20, false);
+        org.apache.commons.lang3.ArrayUtils.reverse(booleanArray20);
+        boolean[] booleanArray27 = org.apache.commons.lang3.ArrayUtils.addAll(booleanArray15, booleanArray20);
+        boolean[] booleanArray28 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray15);
+        java.lang.Boolean[] booleanArray29 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray15);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, true, true, false, false]");
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 0 + "'", int13 == 0);
+        org.junit.Assert.assertNotNull(booleanArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray15), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray20), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray25), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray27), "[false, true, true, false, false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray28), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray29);
+    }
+
+    @Test
+    public void test2557() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2557");
+        java.lang.Long[] longArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_OBJECT_ARRAY;
+        long[] longArray1 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray0);
+        long[] longArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray1);
+        long[] longArray3 = org.apache.commons.lang3.ArrayUtils.clone(longArray2);
+        org.junit.Assert.assertNotNull(longArray0);
+        org.junit.Assert.assertNotNull(longArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray1), "[]");
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[]");
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray3), "[]");
+    }
+
+    @Test
+    public void test2558() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2558");
+        boolean[] booleanArray5 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray7 = org.apache.commons.lang3.ArrayUtils.add(booleanArray5, true);
+        boolean[] booleanArray12 = new boolean[] { false, true, true, false };
+        int int15 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray12, true, 10);
+        boolean[] booleanArray17 = org.apache.commons.lang3.ArrayUtils.add(booleanArray12, false);
+        boolean[] booleanArray18 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray17);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray5, booleanArray18);
+        boolean[] booleanArray25 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray27 = org.apache.commons.lang3.ArrayUtils.add(booleanArray25, true);
+        int int29 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray27, true);
+        boolean[] booleanArray30 = org.apache.commons.lang3.ArrayUtils.addAll(booleanArray5, booleanArray27);
+        boolean[] booleanArray31 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray27);
+        org.junit.Assert.assertNotNull(booleanArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray5), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray7), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray12), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray17), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, true, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
+        org.junit.Assert.assertNotNull(booleanArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray25), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray27), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + int29 + "' != '" + 5 + "'", int29 == 5);
+        org.junit.Assert.assertNotNull(booleanArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray30), "[false, false, true, true, false, false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray31), "[false, false, true, true, false, true]");
+    }
+
+    @Test
+    public void test2559() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2559");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        java.lang.Integer[] intArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray3);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, 8);
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, 100);
+        int int13 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray10, (int) (byte) 10, (-1));
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+    }
+
+    @Test
+    public void test2560() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2560");
+        short[] shortArray2 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray5 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray8 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray11 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray14 = new short[] { (short) 10, (byte) 0 };
+        short[][] shortArray15 = new short[][] { shortArray2, shortArray5, shortArray8, shortArray11, shortArray14 };
+        double[] doubleArray20 = new double[] { (byte) 1, (byte) 10, 4, (-1.0f) };
+        int int23 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray20, (double) 1L, (double) (byte) -1);
+        boolean boolean26 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray20, (double) 100.0f, (double) (byte) 10);
+        short[][] shortArray27 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray15, (java.lang.Object) boolean26);
+        short[] shortArray30 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray33 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray36 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray39 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray42 = new short[] { (short) 10, (byte) 0 };
+        short[][] shortArray43 = new short[][] { shortArray30, shortArray33, shortArray36, shortArray39, shortArray42 };
+        double[] doubleArray48 = new double[] { (byte) 1, (byte) 10, 4, (-1.0f) };
+        int int51 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray48, (double) 1L, (double) (byte) -1);
+        boolean boolean54 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray48, (double) 100.0f, (double) (byte) 10);
+        short[][] shortArray55 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray43, (java.lang.Object) boolean54);
+        short[][] shortArray56 = org.apache.commons.lang3.ArrayUtils.addAll(shortArray15, shortArray55);
+        org.junit.Assert.assertNotNull(shortArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray2), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray5), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray8), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray11), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray14), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray15);
+        org.junit.Assert.assertNotNull(doubleArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray20), "[1.0, 10.0, 4.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertNotNull(shortArray27);
+        org.junit.Assert.assertNotNull(shortArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray30), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray33), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray36), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray39), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray42);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray42), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray43);
+        org.junit.Assert.assertNotNull(doubleArray48);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray48), "[1.0, 10.0, 4.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int51 + "' != '" + (-1) + "'", int51 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean54 + "' != '" + false + "'", boolean54 == false);
+        org.junit.Assert.assertNotNull(shortArray55);
+        org.junit.Assert.assertNotNull(shortArray56);
+    }
+
+    @Test
+    public void test2561() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2561");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray9);
+        boolean[] booleanArray16 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray18 = org.apache.commons.lang3.ArrayUtils.add(booleanArray16, true);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray9, booleanArray18);
+        org.apache.commons.lang3.ArrayUtils.reverse(booleanArray9);
+        boolean boolean21 = org.apache.commons.lang3.ArrayUtils.isEmpty(booleanArray9);
+        boolean boolean22 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(booleanArray9);
+        java.lang.Boolean[] booleanArray23 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray9);
+        boolean[] booleanArray24 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray23);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
+        org.junit.Assert.assertNotNull(booleanArray23);
+        org.junit.Assert.assertNotNull(booleanArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray24), "[false, false, true, true, false]");
+    }
+
+    @Test
+    public void test2562() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2562");
+        long[] longArray2 = new long[] { 100L, 'a' };
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.subarray(longArray2, (int) (short) 10, 100);
+        org.apache.commons.lang3.ArrayUtils.reverse(longArray5);
+        long[] longArray7 = org.apache.commons.lang3.ArrayUtils.clone(longArray5);
+        long[] longArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray7);
+        long[] longArray10 = org.apache.commons.lang3.ArrayUtils.add(longArray8, (long) (short) 1);
+        int int12 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray8, (long) 9);
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray7), "[]");
+        org.junit.Assert.assertNotNull(longArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray8), "[]");
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[1]");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+    }
+
+    @Test
+    public void test2563() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2563");
+        java.lang.Short[] shortArray3 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3, (short) (byte) 1);
+        java.lang.Byte[] byteArray11 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray11, (byte) -1);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray13);
+        byte[] byteArray16 = org.apache.commons.lang3.ArrayUtils.add(byteArray13, (byte) 100);
+        java.lang.Byte[] byteArray21 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray23 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray21, (byte) -1);
+        boolean boolean24 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray23);
+        byte[] byteArray26 = org.apache.commons.lang3.ArrayUtils.add(byteArray23, (byte) 100);
+        byte[] byteArray27 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray13, byteArray23);
+        int int28 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) shortArray3, (java.lang.Object) byteArray27);
+        int int30 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray27, (byte) 10);
+        java.lang.String str32 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) byteArray27, "{}");
+        boolean boolean34 = org.apache.commons.lang3.ArrayUtils.contains(byteArray27, (byte) 10);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray4), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(byteArray11);
+        org.junit.Assert.assertNotNull(byteArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray13), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNotNull(byteArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray16), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray21);
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray23), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        org.junit.Assert.assertNotNull(byteArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray26), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray27), "[1, -1, -1, 1, 1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + (-1) + "'", int28 == (-1));
+        org.junit.Assert.assertTrue("'" + int30 + "' != '" + (-1) + "'", int30 == (-1));
+        org.junit.Assert.assertEquals("'" + str32 + "' != '" + "{1,-1,-1,1,1,-1,-1,1}" + "'", str32, "{1,-1,-1,1,1,-1,-1,1}");
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + false + "'", boolean34 == false);
+    }
+
+    @Test
+    public void test2564() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2564");
+        long[] longArray2 = new long[] { 100L, 'a' };
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.subarray(longArray2, (int) (short) 10, 100);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray5);
+        long[] longArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray5, (long) 0);
+        long[] longArray11 = org.apache.commons.lang3.ArrayUtils.subarray(longArray8, (-1), 0);
+        org.apache.commons.lang3.ArrayUtils.reverse(longArray8);
+        java.lang.String str14 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) longArray8, "{10.0,-1.0,10.0,0.0}");
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(longArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray8), "[]");
+        org.junit.Assert.assertNotNull(longArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray11), "[]");
+        org.junit.Assert.assertEquals("'" + str14 + "' != '" + "{}" + "'", str14, "{}");
+    }
+
+    @Test
+    public void test2565() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2565");
+        java.lang.Double[] doubleArray4 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray4);
+        double[] doubleArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray4, 0.0d);
+        int int10 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray7, (double) (byte) 10, (int) ' ');
+        boolean boolean13 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray7, (double) (-1.0f), (double) (byte) 1);
+        org.junit.Assert.assertNotNull(doubleArray4);
+        org.junit.Assert.assertNotNull(doubleArray5);
+        org.junit.Assert.assertNotNull(doubleArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray7), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
+    }
+
+    @Test
+    public void test2566() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2566");
+        java.lang.Character[] charArray5 = new java.lang.Character[] { '#', '4', '#', 'a', '4' };
+        java.lang.Character[] charArray11 = new java.lang.Character[] { '#', '4', '#', 'a', '4' };
+        java.lang.Character[] charArray17 = new java.lang.Character[] { '#', '4', '#', 'a', '4' };
+        java.lang.Character[] charArray23 = new java.lang.Character[] { '#', '4', '#', 'a', '4' };
+        java.lang.Character[] charArray29 = new java.lang.Character[] { '#', '4', '#', 'a', '4' };
+        java.lang.Character[] charArray35 = new java.lang.Character[] { '#', '4', '#', 'a', '4' };
+        java.lang.Character[][] charArray36 = new java.lang.Character[][] { charArray5, charArray11, charArray17, charArray23, charArray29, charArray35 };
+        java.lang.Character[][] charArray38 = org.apache.commons.lang3.ArrayUtils.remove(charArray36, 0);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertNotNull(charArray11);
+        org.junit.Assert.assertNotNull(charArray17);
+        org.junit.Assert.assertNotNull(charArray23);
+        org.junit.Assert.assertNotNull(charArray29);
+        org.junit.Assert.assertNotNull(charArray35);
+        org.junit.Assert.assertNotNull(charArray36);
+        org.junit.Assert.assertNotNull(charArray38);
+    }
+
+    @Test
+    public void test2567() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2567");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3);
+        boolean boolean5 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(intArray4);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+    }
+
+    @Test
+    public void test2568() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2568");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        java.lang.Byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        java.lang.Character[] charArray13 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray13);
+        java.lang.Character[] charArray15 = org.apache.commons.lang3.ArrayUtils.toObject(charArray14);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray7, (java.lang.Object) charArray14);
+        char[] charArray19 = org.apache.commons.lang3.ArrayUtils.subarray(charArray14, (int) (short) 10, 100);
+        char[] charArray21 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray19, '#');
+        char[] charArray22 = org.apache.commons.lang3.ArrayUtils.clone(charArray19);
+        java.lang.Byte[] byteArray27 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray29 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray27, (byte) -1);
+        java.lang.Byte[] byteArray30 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray27);
+        java.lang.Character[] charArray36 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray37 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray36);
+        java.lang.Character[] charArray38 = org.apache.commons.lang3.ArrayUtils.toObject(charArray37);
+        boolean boolean39 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray30, (java.lang.Object) charArray37);
+        char[] charArray42 = org.apache.commons.lang3.ArrayUtils.subarray(charArray37, (int) (short) 10, 100);
+        char[] charArray44 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray42, '#');
+        char[] charArray45 = org.apache.commons.lang3.ArrayUtils.clone(charArray42);
+        boolean boolean46 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray19, charArray42);
+        int int48 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray19, '4');
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNotNull(charArray19);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray19), "[]");
+        org.junit.Assert.assertNotNull(charArray21);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray21), "[]");
+        org.junit.Assert.assertNotNull(charArray22);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray22), "[]");
+        org.junit.Assert.assertNotNull(byteArray27);
+        org.junit.Assert.assertNotNull(byteArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray29), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray30);
+        org.junit.Assert.assertNotNull(charArray36);
+        org.junit.Assert.assertNotNull(charArray37);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray37), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray37), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray37), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray38);
+        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + false + "'", boolean39 == false);
+        org.junit.Assert.assertNotNull(charArray42);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray42), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray42), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray42), "[]");
+        org.junit.Assert.assertNotNull(charArray44);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray44), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray44), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray44), "[]");
+        org.junit.Assert.assertNotNull(charArray45);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray45), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray45), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray45), "[]");
+        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + true + "'", boolean46 == true);
+        org.junit.Assert.assertTrue("'" + int48 + "' != '" + (-1) + "'", int48 == (-1));
+    }
+
+    @Test
+    public void test2569() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2569");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        java.lang.Integer[] intArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray3);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, 8);
+        int[] intArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[35, 0]");
+    }
+
+    @Test
+    public void test2570() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2570");
+        short[] shortArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        short[] shortArray1 = org.apache.commons.lang3.ArrayUtils.clone(shortArray0);
+        short[] shortArray3 = org.apache.commons.lang3.ArrayUtils.add(shortArray0, (short) 100);
+        int int5 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(shortArray0, (short) 10);
+        short[] shortArray7 = org.apache.commons.lang3.ArrayUtils.add(shortArray0, (short) (byte) -1);
+        short[] shortArray9 = org.apache.commons.lang3.ArrayUtils.add(shortArray7, (short) (byte) -1);
+        short[] shortArray10 = org.apache.commons.lang3.ArrayUtils.clone(shortArray7);
+        int int13 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray10, (short) 10, (int) '4');
+        boolean boolean15 = org.apache.commons.lang3.ArrayUtils.contains(shortArray10, (short) -1);
+        int int18 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(shortArray10, (short) (byte) -1, 9);
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray0), "[]");
+        org.junit.Assert.assertNotNull(shortArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray1), "[]");
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray3), "[100]");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
+        org.junit.Assert.assertNotNull(shortArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray7), "[-1]");
+        org.junit.Assert.assertNotNull(shortArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray9), "[-1, -1]");
+        org.junit.Assert.assertNotNull(shortArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray10), "[-1]");
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + true + "'", boolean15 == true);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + 0 + "'", int18 == 0);
+    }
+
+    @Test
+    public void test2571() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2571");
+        java.lang.CharSequence[] charSequenceArray2 = new java.lang.CharSequence[] { "", "hi!" };
+        java.lang.CharSequence[] charSequenceArray4 = org.apache.commons.lang3.ArrayUtils.add(charSequenceArray2, (java.lang.CharSequence) "");
+        long[] longArray6 = new long[] { 1L };
+        long[][] longArray7 = new long[][] { longArray6 };
+        java.lang.Character[] charArray10 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray11 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray10);
+        long[][] longArray12 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray7, (java.lang.Object) charArray10);
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray10, '#');
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) charSequenceArray4, (java.lang.Object) charArray14);
+        java.lang.Byte[] byteArray20 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray22 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray20, (byte) -1);
+        java.lang.Byte[] byteArray23 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray20);
+        java.lang.Character[] charArray29 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray30 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray29);
+        java.lang.Character[] charArray31 = org.apache.commons.lang3.ArrayUtils.toObject(charArray30);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray23, (java.lang.Object) charArray30);
+        char[] charArray33 = org.apache.commons.lang3.ArrayUtils.clone(charArray30);
+        char[] charArray34 = org.apache.commons.lang3.ArrayUtils.addAll(charArray14, charArray33);
+        boolean boolean35 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(charArray34);
+        java.lang.Character[] charArray36 = org.apache.commons.lang3.ArrayUtils.toObject(charArray34);
+        char[] charArray37 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray36);
+        org.junit.Assert.assertNotNull(charSequenceArray2);
+        org.junit.Assert.assertNotNull(charSequenceArray4);
+        org.junit.Assert.assertNotNull(longArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray6), "[1]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertNotNull(charArray10);
+        org.junit.Assert.assertNotNull(charArray11);
+        org.junit.Assert.assertNotNull(longArray12);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[#, #]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(byteArray20);
+        org.junit.Assert.assertNotNull(byteArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray22), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertNotNull(charArray29);
+        org.junit.Assert.assertNotNull(charArray30);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray30), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray30), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray30), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray31);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(charArray33);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray33), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray33), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray33), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray34);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray34), "##4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray34), "##4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray34), "[#, #, 4, a,  , a, 4]");
+        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + true + "'", boolean35 == true);
+        org.junit.Assert.assertNotNull(charArray36);
+        org.junit.Assert.assertNotNull(charArray37);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray37), "##4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray37), "##4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray37), "[#, #, 4, a,  , a, 4]");
+    }
+
+    @Test
+    public void test2572() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2572");
+        java.lang.Byte[] byteArray2 = new java.lang.Byte[] { (byte) 10, (byte) 100 };
+        byte[] byteArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray2, (byte) -1);
+        org.junit.Assert.assertNotNull(byteArray2);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray4), "[10, 100]");
+    }
+
+    @Test
+    public void test2573() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2573");
+        int[] intArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        java.lang.String str1 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) intArray0);
+        int[] intArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray0);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.subarray(intArray0, (int) (byte) 1, (int) (short) -1);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.isEmpty(intArray0);
+        java.lang.Integer[] intArray7 = org.apache.commons.lang3.ArrayUtils.toObject(intArray0);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray7);
+        org.junit.Assert.assertNotNull(intArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray0), "[]");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "{}" + "'", str1, "{}");
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[]");
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[]");
+    }
+
+    @Test
+    public void test2574() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2574");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.clone(intArray2);
+        boolean boolean5 = org.apache.commons.lang3.ArrayUtils.isEmpty(intArray4);
+        int int8 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray4, (int) (short) 0, (int) (short) 0);
+        int[] intArray9 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray4);
+        java.lang.Integer[] intArray10 = org.apache.commons.lang3.ArrayUtils.toObject(intArray9);
+        int[] intArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray10, (-1));
+        int[] intArray14 = org.apache.commons.lang3.ArrayUtils.add(intArray12, 0);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNotNull(intArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertNotNull(intArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray12), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray14), "[35, 0, 0]");
+    }
+
+    @Test
+    public void test2575() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2575");
+        short[] shortArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        boolean boolean1 = org.apache.commons.lang3.ArrayUtils.isEmpty(shortArray0);
+        java.lang.Short[] shortArray5 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray5);
+        short[] shortArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray6, (short) 0);
+        short[] shortArray9 = org.apache.commons.lang3.ArrayUtils.addAll(shortArray0, shortArray8);
+        short[] shortArray10 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        short[] shortArray11 = org.apache.commons.lang3.ArrayUtils.clone(shortArray10);
+        org.apache.commons.lang3.ArrayUtils.reverse(shortArray10);
+        int int15 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray10, (short) (byte) 10, (int) ' ');
+        short[] shortArray16 = org.apache.commons.lang3.ArrayUtils.addAll(shortArray0, shortArray10);
+        java.lang.Short[] shortArray17 = org.apache.commons.lang3.ArrayUtils.toObject(shortArray10);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isEmpty(shortArray10);
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray0), "[]");
+        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + true + "'", boolean1 == true);
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray8), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray9), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray10), "[]");
+        org.junit.Assert.assertNotNull(shortArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray11), "[]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(shortArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray16), "[]");
+        org.junit.Assert.assertNotNull(shortArray17);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + true + "'", boolean18 == true);
+    }
+
+    @Test
+    public void test2576() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2576");
+        java.lang.String[] strArray2 = new java.lang.String[] { "hi!", "hi!" };
+        java.lang.String[] strArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(strArray2);
+        java.lang.String[] strArray4 = org.apache.commons.lang3.ArrayUtils.toArray(strArray2);
+        java.lang.Object[] objArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty((java.lang.Object[]) strArray2);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.isEmpty(objArray5);
+        java.lang.CharSequence[] charSequenceArray9 = new java.lang.CharSequence[] { "", "hi!" };
+        java.lang.CharSequence[] charSequenceArray11 = org.apache.commons.lang3.ArrayUtils.add(charSequenceArray9, (java.lang.CharSequence) "");
+        long[] longArray13 = new long[] { 1L };
+        long[][] longArray14 = new long[][] { longArray13 };
+        java.lang.Character[] charArray17 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray18 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray17);
+        long[][] longArray19 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray14, (java.lang.Object) charArray17);
+        char[] charArray21 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray17, '#');
+        int int22 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) charSequenceArray11, (java.lang.Object) charArray21);
+        java.lang.Byte[] byteArray27 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray29 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray27, (byte) -1);
+        java.lang.Byte[] byteArray30 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray27);
+        java.lang.Character[] charArray36 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray37 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray36);
+        java.lang.Character[] charArray38 = org.apache.commons.lang3.ArrayUtils.toObject(charArray37);
+        boolean boolean39 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray30, (java.lang.Object) charArray37);
+        char[] charArray40 = org.apache.commons.lang3.ArrayUtils.clone(charArray37);
+        char[] charArray41 = org.apache.commons.lang3.ArrayUtils.addAll(charArray21, charArray40);
+        boolean boolean42 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(charArray41);
+        java.lang.Character[] charArray43 = org.apache.commons.lang3.ArrayUtils.toObject(charArray41);
+        boolean boolean44 = org.apache.commons.lang3.ArrayUtils.isEquals((java.lang.Object) objArray5, (java.lang.Object) charArray43);
+        char[] charArray46 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray43, 'a');
+        char[] charArray47 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray43);
+        java.lang.Character[] charArray48 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray43);
+        char[] charArray49 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray48);
+        org.junit.Assert.assertNotNull(strArray2);
+        org.junit.Assert.assertNotNull(strArray3);
+        org.junit.Assert.assertNotNull(strArray4);
+        org.junit.Assert.assertNotNull(objArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray5), "[hi!, hi!]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray5), "[hi!, hi!]");
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertNotNull(charSequenceArray9);
+        org.junit.Assert.assertNotNull(charSequenceArray11);
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[1]");
+        org.junit.Assert.assertNotNull(longArray14);
+        org.junit.Assert.assertNotNull(charArray17);
+        org.junit.Assert.assertNotNull(charArray18);
+        org.junit.Assert.assertNotNull(longArray19);
+        org.junit.Assert.assertNotNull(charArray21);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray21), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray21), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray21), "[#, #]");
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+        org.junit.Assert.assertNotNull(byteArray27);
+        org.junit.Assert.assertNotNull(byteArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray29), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray30);
+        org.junit.Assert.assertNotNull(charArray36);
+        org.junit.Assert.assertNotNull(charArray37);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray37), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray37), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray37), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray38);
+        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + false + "'", boolean39 == false);
+        org.junit.Assert.assertNotNull(charArray40);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray40), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray40), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray40), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray41);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray41), "##4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray41), "##4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray41), "[#, #, 4, a,  , a, 4]");
+        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + true + "'", boolean42 == true);
+        org.junit.Assert.assertNotNull(charArray43);
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
+        org.junit.Assert.assertNotNull(charArray46);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray46), "##4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray46), "##4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray46), "[#, #, 4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray47);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray47), "##4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray47), "##4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray47), "[#, #, 4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray48);
+        org.junit.Assert.assertNotNull(charArray49);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray49), "##4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray49), "##4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray49), "[#, #, 4, a,  , a, 4]");
+    }
+
+    @Test
+    public void test2577() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2577");
+        java.lang.Short[] shortArray2 = new java.lang.Short[] { (short) -1, (short) -1 };
+        java.lang.Short[] shortArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray2);
+        short[] shortArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3, (short) 1);
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        short[] shortArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        short[] shortArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3, (short) -1);
+        int int12 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(shortArray9, (short) 0, (int) (byte) 1);
+        org.junit.Assert.assertNotNull(shortArray2);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray5), "[-1, -1]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, -1]");
+        org.junit.Assert.assertNotNull(shortArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray7), "[-1, -1]");
+        org.junit.Assert.assertNotNull(shortArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray9), "[-1, -1]");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+    }
+
+    @Test
+    public void test2578() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2578");
+        short[] shortArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        boolean boolean1 = org.apache.commons.lang3.ArrayUtils.isEmpty(shortArray0);
+        java.lang.Short[] shortArray5 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray5);
+        short[] shortArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray6, (short) 0);
+        short[] shortArray9 = org.apache.commons.lang3.ArrayUtils.addAll(shortArray0, shortArray8);
+        short[] shortArray10 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        short[] shortArray11 = org.apache.commons.lang3.ArrayUtils.clone(shortArray10);
+        org.apache.commons.lang3.ArrayUtils.reverse(shortArray10);
+        int int15 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray10, (short) (byte) 10, (int) ' ');
+        short[] shortArray16 = org.apache.commons.lang3.ArrayUtils.addAll(shortArray0, shortArray10);
+        short[] shortArray17 = org.apache.commons.lang3.ArrayUtils.clone(shortArray0);
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray0), "[]");
+        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + true + "'", boolean1 == true);
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray8), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray9), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray10), "[]");
+        org.junit.Assert.assertNotNull(shortArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray11), "[]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(shortArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray16), "[]");
+        org.junit.Assert.assertNotNull(shortArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray17), "[]");
+    }
+
+    @Test
+    public void test2579() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2579");
+        java.lang.Short[] shortArray0 = new java.lang.Short[] {};
+        java.lang.Short[] shortArray1 = new java.lang.Short[] {};
+        java.lang.Short[][] shortArray2 = new java.lang.Short[][] { shortArray0, shortArray1 };
+        int[] intArray5 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray6 = org.apache.commons.lang3.ArrayUtils.toObject(intArray5);
+        boolean boolean8 = org.apache.commons.lang3.ArrayUtils.contains(intArray5, (int) (short) 1);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray5, (int) (byte) -1, 1);
+        java.lang.Short[][] shortArray12 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray2, (java.lang.Object) 1);
+        java.io.Serializable[][] serializableArray13 = org.apache.commons.lang3.ArrayUtils.toArray((java.io.Serializable[][]) shortArray2);
+        byte[] byteArray19 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int21 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray19, (byte) 0);
+        byte[] byteArray23 = org.apache.commons.lang3.ArrayUtils.add(byteArray19, (byte) 10);
+        byte[] byteArray24 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        java.lang.Byte[] byteArray29 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray31 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray29, (byte) -1);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray31);
+        byte[] byteArray34 = org.apache.commons.lang3.ArrayUtils.add(byteArray31, (byte) 100);
+        byte[] byteArray35 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray24, byteArray34);
+        byte[] byteArray36 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray19, byteArray34);
+        byte[] byteArray37 = org.apache.commons.lang3.ArrayUtils.clone(byteArray36);
+        byte[] byteArray40 = org.apache.commons.lang3.ArrayUtils.add(byteArray37, (int) (short) 1, (byte) 0);
+        int int41 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) shortArray2, (java.lang.Object) (byte) 0);
+        float[] floatArray44 = new float[] { (-1L), (byte) 1 };
+        int int46 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray44, (float) (byte) 10);
+        float[] floatArray49 = org.apache.commons.lang3.ArrayUtils.add(floatArray44, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray50 = org.apache.commons.lang3.ArrayUtils.clone(floatArray49);
+        int int53 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray50, (float) (byte) 100, (-1));
+        java.lang.Float[] floatArray54 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray50);
+        boolean boolean55 = org.apache.commons.lang3.ArrayUtils.isEmpty((java.lang.Object[]) floatArray54);
+        boolean boolean56 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) shortArray2, (java.lang.Object[]) floatArray54);
+        float[] floatArray58 = org.apache.commons.lang3.ArrayUtils.toPrimitive(floatArray54, (float) 3);
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertNotNull(shortArray1);
+        org.junit.Assert.assertNotNull(shortArray2);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNotNull(shortArray12);
+        org.junit.Assert.assertNotNull(serializableArray13);
+        org.junit.Assert.assertNotNull(byteArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray19), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 4 + "'", int21 == 4);
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray23), "[0, 1, 100, 100, 0, 10]");
+        org.junit.Assert.assertNotNull(byteArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray24), "[]");
+        org.junit.Assert.assertNotNull(byteArray29);
+        org.junit.Assert.assertNotNull(byteArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray31), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(byteArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray34), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray35), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray36), "[0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray37), "[0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray40);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray40), "[0, 0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + (-1) + "'", int41 == (-1));
+        org.junit.Assert.assertNotNull(floatArray44);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray44), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int46 + "' != '" + (-1) + "'", int46 == (-1));
+        org.junit.Assert.assertNotNull(floatArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray49), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray50), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int53 + "' != '" + (-1) + "'", int53 == (-1));
+        org.junit.Assert.assertNotNull(floatArray54);
+        org.junit.Assert.assertTrue("'" + boolean55 + "' != '" + false + "'", boolean55 == false);
+        org.junit.Assert.assertTrue("'" + boolean56 + "' != '" + false + "'", boolean56 == false);
+        org.junit.Assert.assertNotNull(floatArray58);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray58), "[-1.0, -1.0, 1.0]");
+    }
+
+    @Test
+    public void test2580() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2580");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        boolean boolean28 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(doubleArray27);
+        boolean boolean29 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray27);
+        int int32 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray27, (double) (short) 10, (int) (byte) -1);
+        double[] doubleArray34 = org.apache.commons.lang3.ArrayUtils.add(doubleArray27, (double) (byte) 1);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
+        org.junit.Assert.assertTrue("'" + int32 + "' != '" + (-1) + "'", int32 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray34), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 1.0]");
+    }
+
+    @Test
+    public void test2581() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2581");
+        org.apache.commons.lang3.ArrayUtils arrayUtils0 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils arrayUtils1 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils arrayUtils2 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils[] arrayUtilsArray3 = new org.apache.commons.lang3.ArrayUtils[] { arrayUtils0, arrayUtils1, arrayUtils2 };
+        org.apache.commons.lang3.ArrayUtils arrayUtils4 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils arrayUtils5 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils arrayUtils6 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils[] arrayUtilsArray7 = new org.apache.commons.lang3.ArrayUtils[] { arrayUtils4, arrayUtils5, arrayUtils6 };
+        org.apache.commons.lang3.ArrayUtils arrayUtils8 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils arrayUtils9 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils arrayUtils10 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils[] arrayUtilsArray11 = new org.apache.commons.lang3.ArrayUtils[] { arrayUtils8, arrayUtils9, arrayUtils10 };
+        org.apache.commons.lang3.ArrayUtils arrayUtils12 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils arrayUtils13 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils arrayUtils14 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils[] arrayUtilsArray15 = new org.apache.commons.lang3.ArrayUtils[] { arrayUtils12, arrayUtils13, arrayUtils14 };
+        org.apache.commons.lang3.ArrayUtils arrayUtils16 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils arrayUtils17 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils arrayUtils18 = new org.apache.commons.lang3.ArrayUtils();
+        org.apache.commons.lang3.ArrayUtils[] arrayUtilsArray19 = new org.apache.commons.lang3.ArrayUtils[] { arrayUtils16, arrayUtils17, arrayUtils18 };
+        org.apache.commons.lang3.ArrayUtils[][] arrayUtilsArray20 = new org.apache.commons.lang3.ArrayUtils[][] { arrayUtilsArray3, arrayUtilsArray7, arrayUtilsArray11, arrayUtilsArray15, arrayUtilsArray19 };
+        org.apache.commons.lang3.ArrayUtils[][] arrayUtilsArray23 = org.apache.commons.lang3.ArrayUtils.subarray(arrayUtilsArray20, (int) ' ', 1);
+        java.lang.Double[] doubleArray24 = org.apache.commons.lang3.ArrayUtils.EMPTY_DOUBLE_OBJECT_ARRAY;
+        java.lang.Double[] doubleArray25 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray24);
+        java.lang.Double[] doubleArray26 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray24);
+        boolean boolean27 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) arrayUtilsArray20, (java.lang.Object) doubleArray26);
+        java.lang.Byte[] byteArray32 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray34 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray32, (byte) -1);
+        java.lang.Byte[] byteArray35 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray32);
+        long[] longArray38 = new long[] { 100L, 'a' };
+        long[] longArray41 = org.apache.commons.lang3.ArrayUtils.subarray(longArray38, (int) (short) 10, 100);
+        boolean boolean42 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray41);
+        long[] longArray44 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray41, (long) 0);
+        java.lang.Long[] longArray45 = org.apache.commons.lang3.ArrayUtils.toObject(longArray44);
+        java.io.Serializable[] serializableArray46 = org.apache.commons.lang3.ArrayUtils.removeElement((java.io.Serializable[]) byteArray32, (java.lang.Object) longArray45);
+        java.lang.Double[] doubleArray51 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray52 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray51);
+        double[] doubleArray54 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray52, (double) 1);
+        int int55 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) longArray45, (java.lang.Object) doubleArray54);
+        double[] doubleArray57 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray54, (double) (-1.0f));
+        int int58 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) arrayUtilsArray20, (java.lang.Object) doubleArray54);
+        org.junit.Assert.assertNotNull(arrayUtilsArray3);
+        org.junit.Assert.assertNotNull(arrayUtilsArray7);
+        org.junit.Assert.assertNotNull(arrayUtilsArray11);
+        org.junit.Assert.assertNotNull(arrayUtilsArray15);
+        org.junit.Assert.assertNotNull(arrayUtilsArray19);
+        org.junit.Assert.assertNotNull(arrayUtilsArray20);
+        org.junit.Assert.assertNotNull(arrayUtilsArray23);
+        org.junit.Assert.assertNotNull(doubleArray24);
+        org.junit.Assert.assertNotNull(doubleArray25);
+        org.junit.Assert.assertNotNull(doubleArray26);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
+        org.junit.Assert.assertNotNull(byteArray32);
+        org.junit.Assert.assertNotNull(byteArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray34), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray35);
+        org.junit.Assert.assertNotNull(longArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray38), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray41), "[]");
+        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + true + "'", boolean42 == true);
+        org.junit.Assert.assertNotNull(longArray44);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray44), "[]");
+        org.junit.Assert.assertNotNull(longArray45);
+        org.junit.Assert.assertNotNull(serializableArray46);
+        org.junit.Assert.assertNotNull(doubleArray51);
+        org.junit.Assert.assertNotNull(doubleArray52);
+        org.junit.Assert.assertNotNull(doubleArray54);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray54), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int55 + "' != '" + (-1) + "'", int55 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray57);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray57), "[10.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int58 + "' != '" + (-1) + "'", int58 == (-1));
+    }
+
+    @Test
+    public void test2582() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2582");
+        java.lang.Short[] shortArray3 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray4, (short) 0);
+        java.lang.Short[] shortArray10 = new java.lang.Short[] { (short) 10, (short) 10, (short) 0 };
+        short[] shortArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray10, (short) 1);
+        int int14 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray12, (short) -1);
+        short[] shortArray15 = org.apache.commons.lang3.ArrayUtils.addAll(shortArray6, shortArray12);
+        short[] shortArray16 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        short[] shortArray17 = org.apache.commons.lang3.ArrayUtils.clone(shortArray16);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isSameLength(shortArray15, shortArray17);
+        short[] shortArray19 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        java.lang.Short[] shortArray23 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray24 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray23);
+        short[] shortArray26 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray24, (short) 0);
+        short[] shortArray27 = org.apache.commons.lang3.ArrayUtils.clone(shortArray26);
+        org.apache.commons.lang3.ArrayUtils.reverse(shortArray27);
+        int int31 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray27, (short) (byte) -1, (int) '#');
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.isSameLength(shortArray19, shortArray27);
+        org.apache.commons.lang3.ArrayUtils.reverse(shortArray19);
+        boolean boolean34 = org.apache.commons.lang3.ArrayUtils.isSameLength(shortArray15, shortArray19);
+        java.lang.Short[] shortArray35 = org.apache.commons.lang3.ArrayUtils.toObject(shortArray19);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray4), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray10);
+        org.junit.Assert.assertNotNull(shortArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray12), "[10, 10, 0]");
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(shortArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray15), "[-1, 100, 1, 10, 10, 0]");
+        org.junit.Assert.assertNotNull(shortArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray16), "[]");
+        org.junit.Assert.assertNotNull(shortArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray17), "[]");
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(shortArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray19), "[]");
+        org.junit.Assert.assertNotNull(shortArray23);
+        org.junit.Assert.assertNotNull(shortArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray24), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray26), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray27), "[1, 100, -1]");
+        org.junit.Assert.assertTrue("'" + int31 + "' != '" + (-1) + "'", int31 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + false + "'", boolean34 == false);
+        org.junit.Assert.assertNotNull(shortArray35);
+    }
+
+    @Test
+    public void test2583() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2583");
+        java.lang.Short[] shortArray0 = new java.lang.Short[] {};
+        java.lang.Short[] shortArray1 = new java.lang.Short[] {};
+        java.lang.Short[][] shortArray2 = new java.lang.Short[][] { shortArray0, shortArray1 };
+        int[] intArray5 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray6 = org.apache.commons.lang3.ArrayUtils.toObject(intArray5);
+        boolean boolean8 = org.apache.commons.lang3.ArrayUtils.contains(intArray5, (int) (short) 1);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray5, (int) (byte) -1, 1);
+        java.lang.Short[][] shortArray12 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray2, (java.lang.Object) 1);
+        java.io.Serializable[][] serializableArray13 = org.apache.commons.lang3.ArrayUtils.toArray((java.io.Serializable[][]) shortArray2);
+        byte[] byteArray19 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int21 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray19, (byte) 0);
+        byte[] byteArray23 = org.apache.commons.lang3.ArrayUtils.add(byteArray19, (byte) 10);
+        byte[] byteArray24 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        java.lang.Byte[] byteArray29 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray31 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray29, (byte) -1);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray31);
+        byte[] byteArray34 = org.apache.commons.lang3.ArrayUtils.add(byteArray31, (byte) 100);
+        byte[] byteArray35 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray24, byteArray34);
+        byte[] byteArray36 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray19, byteArray34);
+        byte[] byteArray37 = org.apache.commons.lang3.ArrayUtils.clone(byteArray36);
+        byte[] byteArray40 = org.apache.commons.lang3.ArrayUtils.add(byteArray37, (int) (short) 1, (byte) 0);
+        int int41 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) shortArray2, (java.lang.Object) (byte) 0);
+        float[] floatArray44 = new float[] { (-1L), (byte) 1 };
+        int int46 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray44, (float) (byte) 10);
+        float[] floatArray49 = org.apache.commons.lang3.ArrayUtils.add(floatArray44, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray50 = org.apache.commons.lang3.ArrayUtils.clone(floatArray49);
+        int int53 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray50, (float) (byte) 100, (-1));
+        java.lang.Float[] floatArray54 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray50);
+        boolean boolean55 = org.apache.commons.lang3.ArrayUtils.isEmpty((java.lang.Object[]) floatArray54);
+        boolean boolean56 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) shortArray2, (java.lang.Object[]) floatArray54);
+        java.lang.Float[] floatArray57 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray54);
+        float[] floatArray59 = org.apache.commons.lang3.ArrayUtils.toPrimitive(floatArray54, (float) (-1L));
+        java.lang.Float[] floatArray60 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray54);
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertNotNull(shortArray1);
+        org.junit.Assert.assertNotNull(shortArray2);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNotNull(shortArray12);
+        org.junit.Assert.assertNotNull(serializableArray13);
+        org.junit.Assert.assertNotNull(byteArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray19), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 4 + "'", int21 == 4);
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray23), "[0, 1, 100, 100, 0, 10]");
+        org.junit.Assert.assertNotNull(byteArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray24), "[]");
+        org.junit.Assert.assertNotNull(byteArray29);
+        org.junit.Assert.assertNotNull(byteArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray31), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(byteArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray34), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray35), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray36), "[0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray37), "[0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray40);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray40), "[0, 0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + (-1) + "'", int41 == (-1));
+        org.junit.Assert.assertNotNull(floatArray44);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray44), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int46 + "' != '" + (-1) + "'", int46 == (-1));
+        org.junit.Assert.assertNotNull(floatArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray49), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray50), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int53 + "' != '" + (-1) + "'", int53 == (-1));
+        org.junit.Assert.assertNotNull(floatArray54);
+        org.junit.Assert.assertTrue("'" + boolean55 + "' != '" + false + "'", boolean55 == false);
+        org.junit.Assert.assertTrue("'" + boolean56 + "' != '" + false + "'", boolean56 == false);
+        org.junit.Assert.assertNotNull(floatArray57);
+        org.junit.Assert.assertNotNull(floatArray59);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray59), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray60);
+    }
+
+    @Test
+    public void test2584() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2584");
+        int[] intArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        int int2 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray0, (int) (byte) 10);
+        int int5 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray0, (int) (byte) 10, 10);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.isEmpty(intArray0);
+        boolean boolean8 = org.apache.commons.lang3.ArrayUtils.contains(intArray0, 0);
+        int[] intArray9 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray0);
+        java.lang.Integer[] intArray10 = org.apache.commons.lang3.ArrayUtils.toObject(intArray0);
+        java.lang.Object obj11 = null;
+        boolean boolean12 = org.apache.commons.lang3.ArrayUtils.isEquals((java.lang.Object) intArray0, obj11);
+        org.junit.Assert.assertNotNull(intArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray0), "[]");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNotNull(intArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+    }
+
+    @Test
+    public void test2585() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2585");
+        java.lang.CharSequence[] charSequenceArray2 = new java.lang.CharSequence[] { "", "hi!" };
+        java.lang.CharSequence[] charSequenceArray4 = org.apache.commons.lang3.ArrayUtils.add(charSequenceArray2, (java.lang.CharSequence) "");
+        long[] longArray6 = new long[] { 1L };
+        long[][] longArray7 = new long[][] { longArray6 };
+        java.lang.Character[] charArray10 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray11 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray10);
+        long[][] longArray12 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray7, (java.lang.Object) charArray10);
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray10, '#');
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) charSequenceArray4, (java.lang.Object) charArray14);
+        java.lang.Byte[] byteArray20 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray22 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray20, (byte) -1);
+        java.lang.Byte[] byteArray23 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray20);
+        java.lang.Character[] charArray29 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray30 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray29);
+        java.lang.Character[] charArray31 = org.apache.commons.lang3.ArrayUtils.toObject(charArray30);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray23, (java.lang.Object) charArray30);
+        char[] charArray33 = org.apache.commons.lang3.ArrayUtils.clone(charArray30);
+        char[] charArray34 = org.apache.commons.lang3.ArrayUtils.addAll(charArray14, charArray33);
+        char[] charArray36 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray14, ' ');
+        char[] charArray37 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray14);
+        char[] charArray40 = org.apache.commons.lang3.ArrayUtils.subarray(charArray37, (-1), (int) (short) 100);
+        char[] charArray42 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray37, '#');
+        char[] charArray43 = org.apache.commons.lang3.ArrayUtils.clone(charArray37);
+        char[] charArray44 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray37);
+        org.junit.Assert.assertNotNull(charSequenceArray2);
+        org.junit.Assert.assertNotNull(charSequenceArray4);
+        org.junit.Assert.assertNotNull(longArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray6), "[1]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertNotNull(charArray10);
+        org.junit.Assert.assertNotNull(charArray11);
+        org.junit.Assert.assertNotNull(longArray12);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[#, #]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(byteArray20);
+        org.junit.Assert.assertNotNull(byteArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray22), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertNotNull(charArray29);
+        org.junit.Assert.assertNotNull(charArray30);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray30), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray30), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray30), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray31);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(charArray33);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray33), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray33), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray33), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray34);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray34), "##4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray34), "##4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray34), "[#, #, 4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray36);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray36), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray36), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray36), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray37);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray37), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray37), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray37), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray40);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray40), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray40), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray40), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray42);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray42), "#");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray42), "#");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray42), "[#]");
+        org.junit.Assert.assertNotNull(charArray43);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray43), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray43), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray43), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray44);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray44), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray44), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray44), "[#, #]");
+    }
+
+    @Test
+    public void test2586() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2586");
+        long[] longArray1 = new long[] { 1L };
+        long[][] longArray2 = new long[][] { longArray1 };
+        java.lang.Character[] charArray5 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray5);
+        long[][] longArray7 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray2, (java.lang.Object) charArray5);
+        char[] charArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray5, '#');
+        int int12 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray9, 'a', (int) (byte) 0);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray9, 'a');
+        java.lang.Byte[] byteArray19 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray21 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray19, (byte) -1);
+        java.lang.Byte[] byteArray22 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray19);
+        java.lang.Character[] charArray28 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray29 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray28);
+        java.lang.Character[] charArray30 = org.apache.commons.lang3.ArrayUtils.toObject(charArray29);
+        boolean boolean31 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray22, (java.lang.Object) charArray29);
+        char[] charArray34 = org.apache.commons.lang3.ArrayUtils.subarray(charArray29, (int) (short) 10, 100);
+        char[] charArray36 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray34, '#');
+        char[] charArray37 = org.apache.commons.lang3.ArrayUtils.clone(charArray34);
+        char[] charArray38 = org.apache.commons.lang3.ArrayUtils.addAll(charArray9, charArray34);
+        char[] charArray41 = org.apache.commons.lang3.ArrayUtils.subarray(charArray38, (int) (short) 0, (int) (short) 0);
+        org.junit.Assert.assertNotNull(longArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray1), "[1]");
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertNotNull(charArray9);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray9), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray9), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray9), "[#, #]");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(byteArray19);
+        org.junit.Assert.assertNotNull(byteArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray21), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray22);
+        org.junit.Assert.assertNotNull(charArray28);
+        org.junit.Assert.assertNotNull(charArray29);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray29), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray29), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray29), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray30);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
+        org.junit.Assert.assertNotNull(charArray34);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray34), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray34), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray34), "[]");
+        org.junit.Assert.assertNotNull(charArray36);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray36), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray36), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray36), "[]");
+        org.junit.Assert.assertNotNull(charArray37);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray37), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray37), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray37), "[]");
+        org.junit.Assert.assertNotNull(charArray38);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray38), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray38), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray38), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray41);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray41), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray41), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray41), "[]");
+    }
+
+    @Test
+    public void test2587() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2587");
+        int[] intArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        java.lang.String str1 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) intArray0);
+        int[] intArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray0);
+        int int4 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray0, (int) (short) 0);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.clone(intArray0);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.subarray(intArray5, 100, 8);
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.removeElement(intArray8, 2);
+        org.junit.Assert.assertNotNull(intArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray0), "[]");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "{}" + "'", str1, "{}");
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[]");
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[]");
+    }
+
+    @Test
+    public void test2588() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2588");
+        short[] shortArray2 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray5 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray8 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray11 = new short[] { (short) 10, (byte) 0 };
+        short[] shortArray14 = new short[] { (short) 10, (byte) 0 };
+        short[][] shortArray15 = new short[][] { shortArray2, shortArray5, shortArray8, shortArray11, shortArray14 };
+        double[] doubleArray20 = new double[] { (byte) 1, (byte) 10, 4, (-1.0f) };
+        int int23 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray20, (double) 1L, (double) (byte) -1);
+        boolean boolean26 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray20, (double) 100.0f, (double) (byte) 10);
+        short[][] shortArray27 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray15, (java.lang.Object) boolean26);
+        short[] shortArray28 = null;
+        java.lang.Short[] shortArray32 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray33 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray32);
+        short[] shortArray35 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray33, (short) 0);
+        short[] shortArray36 = org.apache.commons.lang3.ArrayUtils.clone(shortArray35);
+        short[] shortArray37 = org.apache.commons.lang3.ArrayUtils.addAll(shortArray28, shortArray35);
+        short[] shortArray38 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray28);
+        short[][] shortArray39 = org.apache.commons.lang3.ArrayUtils.add(shortArray15, shortArray38);
+        short[] shortArray40 = org.apache.commons.lang3.ArrayUtils.clone(shortArray38);
+        short[] shortArray42 = org.apache.commons.lang3.ArrayUtils.add(shortArray40, (short) -1);
+        org.junit.Assert.assertNotNull(shortArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray2), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray5), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray8), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray11), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray14), "[10, 0]");
+        org.junit.Assert.assertNotNull(shortArray15);
+        org.junit.Assert.assertNotNull(doubleArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray20), "[1.0, 10.0, 4.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertNotNull(shortArray27);
+        org.junit.Assert.assertNotNull(shortArray32);
+        org.junit.Assert.assertNotNull(shortArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray33), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray35), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray36), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray37), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray38), "[]");
+        org.junit.Assert.assertNotNull(shortArray39);
+        org.junit.Assert.assertNotNull(shortArray40);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray40), "[]");
+        org.junit.Assert.assertNotNull(shortArray42);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray42), "[-1]");
+    }
+
+    @Test
+    public void test2589() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2589");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray10 = org.apache.commons.lang3.ArrayUtils.add(floatArray8, (float) (byte) 100);
+        java.lang.Float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray10);
+        int int13 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray10, (float) '#');
+        float[] floatArray15 = org.apache.commons.lang3.ArrayUtils.removeElement(floatArray10, (-1.0f));
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray10), "[-1.0, -1.0, 1.0, 100.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertNotNull(floatArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray15), "[-1.0, 1.0, 100.0]");
+    }
+
+    @Test
+    public void test2590() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2590");
+        long[] longArray2 = new long[] { 100L, 'a' };
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.subarray(longArray2, (int) (short) 10, 100);
+        boolean boolean7 = org.apache.commons.lang3.ArrayUtils.contains(longArray2, (long) (short) -1);
+        boolean boolean8 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray2);
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+    }
+
+    @Test
+    public void test2591() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2591");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray6 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (float) (short) 1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.add(floatArray6, 0.0f);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray8, (float) (short) -1, 10);
+        boolean boolean12 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(floatArray8);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray6), "[-1.0, 1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, 1.0, 1.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
+    }
+
+    @Test
+    public void test2592() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2592");
+        long[] longArray2 = new long[] { 100L, 'a' };
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.subarray(longArray2, (int) (short) 10, 100);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray5);
+        long[] longArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray5, (long) 0);
+        org.apache.commons.lang3.ArrayUtils.reverse(longArray5);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(longArray5, (long) 6);
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(longArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray8), "[]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+    }
+
+    @Test
+    public void test2593() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2593");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        int int15 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray7, (float) 10);
+        float[] floatArray16 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray7);
+        int int18 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray16, (float) 5);
+        float[] floatArray21 = new float[] { (-1L), (byte) 1 };
+        int int23 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray21, (float) (byte) 10);
+        boolean boolean25 = org.apache.commons.lang3.ArrayUtils.contains(floatArray21, (float) (-1L));
+        float[] floatArray27 = org.apache.commons.lang3.ArrayUtils.removeElement(floatArray21, (float) 5);
+        boolean boolean28 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray27);
+        float[] floatArray29 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray16, floatArray27);
+        java.lang.Float[] floatArray30 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray29);
+        float[] floatArray33 = new float[] { (-1L), (byte) 1 };
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray33, (float) (byte) 10);
+        float[] floatArray38 = org.apache.commons.lang3.ArrayUtils.add(floatArray33, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray39 = org.apache.commons.lang3.ArrayUtils.clone(floatArray38);
+        float[] floatArray40 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray38);
+        boolean boolean41 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(floatArray40);
+        float[] floatArray42 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray40);
+        boolean boolean43 = org.apache.commons.lang3.ArrayUtils.isSameLength(floatArray29, floatArray42);
+        float[] floatArray46 = new float[] { (-1L), (byte) 1 };
+        int int48 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray46, (float) (byte) 10);
+        boolean boolean49 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray46);
+        boolean boolean50 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(floatArray46);
+        int int52 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray46, (float) 10);
+        float[] floatArray53 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray29, floatArray46);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
+        org.junit.Assert.assertNotNull(floatArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray27), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+        org.junit.Assert.assertNotNull(floatArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray29), "[-1.0, -1.0, 1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray30);
+        org.junit.Assert.assertNotNull(floatArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray33), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertNotNull(floatArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray38), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray39), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray40);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray40), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean41 + "' != '" + true + "'", boolean41 == true);
+        org.junit.Assert.assertNotNull(floatArray42);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray42), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + false + "'", boolean43 == false);
+        org.junit.Assert.assertNotNull(floatArray46);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray46), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int48 + "' != '" + (-1) + "'", int48 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + false + "'", boolean49 == false);
+        org.junit.Assert.assertTrue("'" + boolean50 + "' != '" + true + "'", boolean50 == true);
+        org.junit.Assert.assertTrue("'" + int52 + "' != '" + (-1) + "'", int52 == (-1));
+        org.junit.Assert.assertNotNull(floatArray53);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray53), "[-1.0, -1.0, 1.0, -1.0, 1.0, -1.0, 1.0]");
+    }
+
+    @Test
+    public void test2594() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2594");
+        java.lang.Long[] longArray0 = new java.lang.Long[] {};
+        long[] longArray1 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray0);
+        long[] longArray4 = org.apache.commons.lang3.ArrayUtils.subarray(longArray1, (int) (short) 100, (int) (byte) 0);
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(longArray1, (long) (byte) 100, (int) (short) 0);
+        boolean boolean8 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray1);
+        long[] longArray11 = org.apache.commons.lang3.ArrayUtils.subarray(longArray1, (int) (byte) 10, (int) (byte) 10);
+        boolean boolean12 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray11);
+        long[] longArray14 = new long[] { ' ' };
+        boolean boolean15 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray14);
+        long[] longArray16 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_ARRAY;
+        long[] longArray17 = org.apache.commons.lang3.ArrayUtils.addAll(longArray14, longArray16);
+        long[] longArray20 = new long[] { 100L, 'a' };
+        long[] longArray23 = org.apache.commons.lang3.ArrayUtils.subarray(longArray20, (int) (short) 10, 100);
+        boolean boolean24 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray23);
+        long[] longArray26 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray23, (long) 0);
+        boolean boolean27 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray16, longArray23);
+        java.lang.Long[] longArray28 = org.apache.commons.lang3.ArrayUtils.toObject(longArray23);
+        long[] longArray31 = org.apache.commons.lang3.ArrayUtils.subarray(longArray23, (int) (byte) -1, 1);
+        long[] longArray34 = org.apache.commons.lang3.ArrayUtils.add(longArray31, 0, (long) 10);
+        int int36 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray31, (long) (short) 0);
+        long[] longArray39 = new long[] { 100L, 'a' };
+        long[] longArray42 = org.apache.commons.lang3.ArrayUtils.subarray(longArray39, (int) (short) 10, 100);
+        boolean boolean43 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray42);
+        long[] longArray45 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray42, (long) 0);
+        java.lang.Long[] longArray46 = org.apache.commons.lang3.ArrayUtils.toObject(longArray45);
+        long[] longArray48 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray46, 0L);
+        long[] longArray49 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray46);
+        long[] longArray51 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray46, (long) (byte) 10);
+        boolean boolean52 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray31, longArray51);
+        long[] longArray53 = org.apache.commons.lang3.ArrayUtils.clone(longArray51);
+        boolean boolean54 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray11, longArray51);
+        // The following exception was thrown during execution in test generation
+        try {
+            long[] longArray57 = org.apache.commons.lang3.ArrayUtils.add(longArray11, (int) (byte) 100, (long) 8);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 100, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(longArray0);
+        org.junit.Assert.assertNotNull(longArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray1), "[]");
+        org.junit.Assert.assertNotNull(longArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray4), "[]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+        org.junit.Assert.assertNotNull(longArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray11), "[]");
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNotNull(longArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray14), "[32]");
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + true + "'", boolean15 == true);
+        org.junit.Assert.assertNotNull(longArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray16), "[]");
+        org.junit.Assert.assertNotNull(longArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray17), "[32]");
+        org.junit.Assert.assertNotNull(longArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray20), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray23), "[]");
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
+        org.junit.Assert.assertNotNull(longArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray26), "[]");
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + true + "'", boolean27 == true);
+        org.junit.Assert.assertNotNull(longArray28);
+        org.junit.Assert.assertNotNull(longArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray31), "[]");
+        org.junit.Assert.assertNotNull(longArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray34), "[10]");
+        org.junit.Assert.assertTrue("'" + int36 + "' != '" + (-1) + "'", int36 == (-1));
+        org.junit.Assert.assertNotNull(longArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray39), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray42);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray42), "[]");
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + true + "'", boolean43 == true);
+        org.junit.Assert.assertNotNull(longArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray45), "[]");
+        org.junit.Assert.assertNotNull(longArray46);
+        org.junit.Assert.assertNotNull(longArray48);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray48), "[]");
+        org.junit.Assert.assertNotNull(longArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray49), "[]");
+        org.junit.Assert.assertNotNull(longArray51);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray51), "[]");
+        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + true + "'", boolean52 == true);
+        org.junit.Assert.assertNotNull(longArray53);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray53), "[]");
+        org.junit.Assert.assertTrue("'" + boolean54 + "' != '" + true + "'", boolean54 == true);
+    }
+
+    @Test
+    public void test2595() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2595");
+        java.lang.Character[] charArray5 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray5);
+        java.lang.Character[] charArray7 = org.apache.commons.lang3.ArrayUtils.toObject(charArray6);
+        char[] charArray8 = org.apache.commons.lang3.ArrayUtils.clone(charArray6);
+        int int10 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray8, '4');
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray6), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray7);
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray8), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray8), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray8), "[4, a,  , a, 4]");
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 0 + "'", int10 == 0);
+    }
+
+    @Test
+    public void test2596() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2596");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray2, (float) (byte) -1, (int) '#');
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray2);
+        java.lang.Float[] floatArray9 = org.apache.commons.lang3.ArrayUtils.EMPTY_FLOAT_OBJECT_ARRAY;
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.toPrimitive(floatArray9, (float) 0);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray11, (-1.0f), 100);
+        float[] floatArray15 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray8, floatArray11);
+        float[] floatArray16 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray15);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.contains(floatArray15, (float) (byte) 1);
+        java.lang.Float[] floatArray19 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray15);
+        java.lang.Float[] floatArray20 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray15);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 0 + "'", int7 == 0);
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray9);
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(floatArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray15), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + true + "'", boolean18 == true);
+        org.junit.Assert.assertNotNull(floatArray19);
+        org.junit.Assert.assertNotNull(floatArray20);
+    }
+
+    @Test
+    public void test2597() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2597");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray4, (int) (short) -1, (int) '#');
+        int int12 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray10, false);
+        boolean[] booleanArray14 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray10, false);
+        boolean[] booleanArray16 = org.apache.commons.lang3.ArrayUtils.add(booleanArray14, true);
+        int int19 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray16, false, 100);
+        int int22 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray16, true, (int) '#');
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertNotNull(booleanArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray14), "[true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 2 + "'", int19 == 2);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+    }
+
+    @Test
+    public void test2598() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2598");
+        double[] doubleArray0 = null;
+        boolean boolean3 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray0, (double) 4, (double) 9);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+    }
+
+    @Test
+    public void test2599() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2599");
+        long[] longArray1 = new long[] { 1L };
+        long[][] longArray2 = new long[][] { longArray1 };
+        java.lang.Character[] charArray5 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray5);
+        long[][] longArray7 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray2, (java.lang.Object) charArray5);
+        char[] charArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray5, '#');
+        char[] charArray11 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray5, '4');
+        boolean boolean12 = org.apache.commons.lang3.ArrayUtils.isEmpty(charArray11);
+        char[] charArray13 = org.apache.commons.lang3.ArrayUtils.EMPTY_CHAR_ARRAY;
+        boolean boolean15 = org.apache.commons.lang3.ArrayUtils.contains(charArray13, 'a');
+        char[] charArray16 = org.apache.commons.lang3.ArrayUtils.clone(charArray13);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray11, charArray13);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(charArray13);
+        org.junit.Assert.assertNotNull(longArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray1), "[1]");
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertNotNull(charArray9);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray9), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray9), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray9), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray11);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray11), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray11), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray11), "[#, #]");
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray13), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray13), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray13), "[]");
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray16), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray16), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray16), "[]");
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+    }
+
+    @Test
+    public void test2600() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2600");
+        java.lang.Short[] shortArray3 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3, (short) (byte) 1);
+        java.lang.Byte[] byteArray11 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray11, (byte) -1);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray13);
+        byte[] byteArray16 = org.apache.commons.lang3.ArrayUtils.add(byteArray13, (byte) 100);
+        java.lang.Byte[] byteArray21 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray23 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray21, (byte) -1);
+        boolean boolean24 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray23);
+        byte[] byteArray26 = org.apache.commons.lang3.ArrayUtils.add(byteArray23, (byte) 100);
+        byte[] byteArray27 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray13, byteArray23);
+        int int28 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) shortArray3, (java.lang.Object) byteArray27);
+        int int30 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray27, (byte) 10);
+        java.lang.String str32 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) byteArray27, "{}");
+        byte[] byteArray34 = org.apache.commons.lang3.ArrayUtils.add(byteArray27, (byte) 0);
+        int int37 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray34, (byte) 100, (int) 'a');
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray4), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(byteArray11);
+        org.junit.Assert.assertNotNull(byteArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray13), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNotNull(byteArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray16), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray21);
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray23), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        org.junit.Assert.assertNotNull(byteArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray26), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray27), "[1, -1, -1, 1, 1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + (-1) + "'", int28 == (-1));
+        org.junit.Assert.assertTrue("'" + int30 + "' != '" + (-1) + "'", int30 == (-1));
+        org.junit.Assert.assertEquals("'" + str32 + "' != '" + "{1,-1,-1,1,1,-1,-1,1}" + "'", str32, "{1,-1,-1,1,1,-1,-1,1}");
+        org.junit.Assert.assertNotNull(byteArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray34), "[1, -1, -1, 1, 1, -1, -1, 1, 0]");
+        org.junit.Assert.assertTrue("'" + int37 + "' != '" + (-1) + "'", int37 == (-1));
+    }
+
+    @Test
+    public void test2601() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2601");
+        java.lang.Character[] charArray2 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray2);
+        char[] charArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray3, 'a');
+        org.apache.commons.lang3.ArrayUtils.reverse((java.lang.Object[]) charArray3);
+        char[] charArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray3);
+        char[] charArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray3);
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray3);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray5), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray7);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray7), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray7), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray7), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray8), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray8), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray8), "[#, #]");
+    }
+
+    @Test
+    public void test2602() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2602");
+        java.lang.Double[] doubleArray4 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray4);
+        double[] doubleArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray5, (double) 1);
+        double[] doubleArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray7);
+        double[] doubleArray10 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray7, (double) '4');
+        int int13 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray7, (double) 1L, (int) 'a');
+        double[] doubleArray17 = new double[] { (short) 100, 1, (-1.0d) };
+        int int20 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray17, (double) 0.0f, (int) (short) 0);
+        int int23 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray17, 0.0d, 10);
+        int int25 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray17, (double) (byte) 10);
+        int int28 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray17, (double) '4', (int) (short) 10);
+        double[] doubleArray32 = new double[] { (short) 100, 1, (-1.0d) };
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, (double) 0.0f, (int) (short) 0);
+        int int38 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, 0.0d, 10);
+        int int40 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, (double) (byte) 10);
+        double[] doubleArray41 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray17, doubleArray32);
+        boolean boolean42 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray32);
+        int int45 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray32, 10.0d, (-1));
+        double[] doubleArray47 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray32, (double) 8);
+        boolean boolean48 = org.apache.commons.lang3.ArrayUtils.isSameLength(doubleArray7, doubleArray47);
+        org.junit.Assert.assertNotNull(doubleArray4);
+        org.junit.Assert.assertNotNull(doubleArray5);
+        org.junit.Assert.assertNotNull(doubleArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray7), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray8), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray10), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray17), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + (-1) + "'", int28 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray32), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertTrue("'" + int38 + "' != '" + (-1) + "'", int38 == (-1));
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + (-1) + "'", int40 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray41), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + false + "'", boolean42 == false);
+        org.junit.Assert.assertTrue("'" + int45 + "' != '" + (-1) + "'", int45 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray47);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray47), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean48 + "' != '" + false + "'", boolean48 == false);
+    }
+
+    @Test
+    public void test2603() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2603");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray6 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray7 = org.apache.commons.lang3.ArrayUtils.toObject(intArray6);
+        int[] intArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray7, (int) 'a');
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.clone(intArray9);
+        int[] intArray11 = org.apache.commons.lang3.ArrayUtils.addAll(intArray2, intArray9);
+        int[] intArray12 = org.apache.commons.lang3.ArrayUtils.clone(intArray2);
+        int[] intArray15 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray16 = org.apache.commons.lang3.ArrayUtils.toObject(intArray15);
+        int[] intArray17 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray16);
+        java.lang.Integer[] intArray18 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray16);
+        java.lang.Integer[] intArray19 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray16);
+        int[] intArray20 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray16);
+        boolean boolean21 = org.apache.commons.lang3.ArrayUtils.isSameLength(intArray2, intArray20);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertNotNull(intArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray11), "[35, 0, 35, 0]");
+        org.junit.Assert.assertNotNull(intArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray12), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray15), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray16);
+        org.junit.Assert.assertNotNull(intArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray17), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray18);
+        org.junit.Assert.assertNotNull(intArray19);
+        org.junit.Assert.assertNotNull(intArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray20), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + true + "'", boolean21 == true);
+    }
+
+    @Test
+    public void test2604() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2604");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        int int29 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray18);
+        double[] doubleArray32 = org.apache.commons.lang3.ArrayUtils.remove(doubleArray18, (int) (short) 0);
+        int int35 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray32, (double) '#', (int) (short) 10);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int29 + "' != '" + (-1) + "'", int29 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray32), "[1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+    }
+
+    @Test
+    public void test2605() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2605");
+        byte[][] byteArray0 = new byte[][] {};
+        byte[][] byteArray1 = new byte[][] {};
+        byte[][] byteArray2 = new byte[][] {};
+        byte[][][] byteArray3 = new byte[][][] { byteArray0, byteArray1, byteArray2 };
+        byte[] byteArray5 = new byte[] { (byte) 10 };
+        byte[] byteArray7 = new byte[] { (byte) 10 };
+        byte[][] byteArray8 = new byte[][] { byteArray5, byteArray7 };
+        byte[] byteArray14 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int16 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray14, (byte) 0);
+        byte[] byteArray18 = org.apache.commons.lang3.ArrayUtils.add(byteArray14, (byte) 10);
+        int int20 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray14, (byte) 100);
+        byte[] byteArray21 = org.apache.commons.lang3.ArrayUtils.clone(byteArray14);
+        byte[][] byteArray22 = org.apache.commons.lang3.ArrayUtils.add(byteArray8, byteArray21);
+        byte[][][] byteArray23 = org.apache.commons.lang3.ArrayUtils.add(byteArray3, byteArray8);
+        java.lang.Byte[] byteArray28 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray30 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray28, (byte) -1);
+        java.lang.Byte[] byteArray31 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray28);
+        java.lang.Character[] charArray37 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray38 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray37);
+        java.lang.Character[] charArray39 = org.apache.commons.lang3.ArrayUtils.toObject(charArray38);
+        boolean boolean40 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray31, (java.lang.Object) charArray38);
+        char[] charArray43 = org.apache.commons.lang3.ArrayUtils.subarray(charArray38, (int) (short) 10, 100);
+        char[] charArray45 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray43, '#');
+        char[] charArray46 = org.apache.commons.lang3.ArrayUtils.clone(charArray43);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray46);
+        java.lang.String str48 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) charArray46);
+        int int50 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray46, 'a');
+        byte[][][] byteArray51 = org.apache.commons.lang3.ArrayUtils.removeElement(byteArray3, (java.lang.Object) charArray46);
+        org.junit.Assert.assertNotNull(byteArray0);
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertNotNull(byteArray2);
+        org.junit.Assert.assertNotNull(byteArray3);
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray5), "[10]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[10]");
+        org.junit.Assert.assertNotNull(byteArray8);
+        org.junit.Assert.assertNotNull(byteArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray14), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 4 + "'", int16 == 4);
+        org.junit.Assert.assertNotNull(byteArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray18), "[0, 1, 100, 100, 0, 10]");
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 3 + "'", int20 == 3);
+        org.junit.Assert.assertNotNull(byteArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray21), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertNotNull(byteArray22);
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertNotNull(byteArray28);
+        org.junit.Assert.assertNotNull(byteArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray30), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray31);
+        org.junit.Assert.assertNotNull(charArray37);
+        org.junit.Assert.assertNotNull(charArray38);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray38), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray38), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray38), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray39);
+        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
+        org.junit.Assert.assertNotNull(charArray43);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray43), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray43), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray43), "[]");
+        org.junit.Assert.assertNotNull(charArray45);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray45), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray45), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray45), "[]");
+        org.junit.Assert.assertNotNull(charArray46);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray46), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray46), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray46), "[]");
+        org.junit.Assert.assertEquals("'" + str48 + "' != '" + "{}" + "'", str48, "{}");
+        org.junit.Assert.assertTrue("'" + int50 + "' != '" + (-1) + "'", int50 == (-1));
+        org.junit.Assert.assertNotNull(byteArray51);
+    }
+
+    @Test
+    public void test2606() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2606");
+        char[] charArray0 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            char[] charArray3 = org.apache.commons.lang3.ArrayUtils.add(charArray0, (int) (short) 10, '#');
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 10, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+    }
+
+    @Test
+    public void test2607() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2607");
+        java.lang.Byte[] byteArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_OBJECT_ARRAY;
+        java.lang.Byte[] byteArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray0);
+        java.lang.Byte[] byteArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        org.junit.Assert.assertNotNull(byteArray0);
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertNotNull(byteArray2);
+    }
+
+    @Test
+    public void test2608() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2608");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray27, (int) '4', (int) (byte) 1);
+        double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.add(doubleArray27, 0, (double) ' ');
+        double[] doubleArray34 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray27);
+        double[] doubleArray37 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray27, (int) (byte) 0, (int) ' ');
+        int int40 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray37, (double) '#', (int) (short) 100);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[]");
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[32.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray34), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray37), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + (-1) + "'", int40 == (-1));
+    }
+
+    @Test
+    public void test2609() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2609");
+        java.lang.Long[] longArray0 = null;
+        long[] longArray2 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray0, 1L);
+        org.junit.Assert.assertNull(longArray2);
+    }
+
+    @Test
+    public void test2610() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2610");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) -1, (byte) 1, (byte) 10, (byte) 100 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) 100);
+        byte[] byteArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(byteArray6, (byte) 100);
+        byte[] byteArray10 = org.apache.commons.lang3.ArrayUtils.add(byteArray6, (byte) 100);
+        boolean boolean11 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(byteArray6);
+        boolean boolean12 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray6);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[-1, 1, 10, 100]");
+        org.junit.Assert.assertNotNull(byteArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray8), "[-1, 1, 10]");
+        org.junit.Assert.assertNotNull(byteArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray10), "[-1, 1, 10, 100, 100]");
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+    }
+
+    @Test
+    public void test2611() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2611");
+        int[] intArray0 = null;
+        int int2 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray0, (int) (byte) 100);
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+    }
+
+    @Test
+    public void test2612() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2612");
+        boolean[] booleanArray5 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray7 = org.apache.commons.lang3.ArrayUtils.add(booleanArray5, true);
+        boolean[] booleanArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray5);
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.contains(booleanArray5, false);
+        boolean boolean11 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(booleanArray5);
+        java.lang.Boolean[] booleanArray12 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray5);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray5, true);
+        boolean[] booleanArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray5, false);
+        boolean[] booleanArray18 = org.apache.commons.lang3.ArrayUtils.remove(booleanArray5, (int) (short) 0);
+        boolean[] booleanArray19 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray18);
+        org.junit.Assert.assertNotNull(booleanArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray5), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray7), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray8), "[false, false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertNotNull(booleanArray12);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray19), "[false, true, true, false]");
+    }
+
+    @Test
+    public void test2613() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2613");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        double[] doubleArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray3, (double) (byte) 10);
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray3, (double) (short) 1);
+        double[] doubleArray12 = org.apache.commons.lang3.ArrayUtils.add(doubleArray3, 10.0d);
+        int int16 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray12, (double) 3, 100, (double) (byte) 0);
+        double[] doubleArray20 = new double[] { (short) 100, 1, (-1.0d) };
+        int int23 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray20, (double) 0.0f, (int) (short) 0);
+        double[] doubleArray25 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray20, (double) (byte) 10);
+        double[] doubleArray26 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray20);
+        double[] doubleArray29 = org.apache.commons.lang3.ArrayUtils.add(doubleArray26, 0, (double) (byte) 100);
+        double[] doubleArray32 = org.apache.commons.lang3.ArrayUtils.add(doubleArray26, 3, (-1.0d));
+        double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray12, doubleArray32);
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray12, (double) 100.0f);
+        double[] doubleArray38 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray12, (-1), (int) (byte) 0);
+        int int41 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray38, (double) 10, (double) (byte) -1);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray8), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertNotNull(doubleArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray12), "[100.0, 1.0, -1.0, 10.0]");
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray20), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray25), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray26), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray29), "[100.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray32), "[100.0, 1.0, -1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[100.0, 1.0, -1.0, 10.0, 100.0, 1.0, -1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + 0 + "'", int35 == 0);
+        org.junit.Assert.assertNotNull(doubleArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray38), "[]");
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + (-1) + "'", int41 == (-1));
+    }
+
+    @Test
+    public void test2614() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2614");
+        java.lang.Integer[] intArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_INTEGER_OBJECT_ARRAY;
+        java.lang.Integer[] intArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray0);
+        long[] longArray4 = new long[] { 100L, 'a' };
+        long[] longArray7 = org.apache.commons.lang3.ArrayUtils.subarray(longArray4, (int) (short) 10, 100);
+        boolean boolean8 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray7);
+        long[] longArray10 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray7, (long) 0);
+        java.lang.Long[] longArray11 = org.apache.commons.lang3.ArrayUtils.toObject(longArray10);
+        long[] longArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray11);
+        org.apache.commons.lang3.ArrayUtils.reverse(longArray12);
+        java.lang.Long[] longArray14 = org.apache.commons.lang3.ArrayUtils.toObject(longArray12);
+        long[] longArray17 = new long[] { (byte) 10, (byte) 100 };
+        java.lang.Long[] longArray18 = org.apache.commons.lang3.ArrayUtils.toObject(longArray17);
+        long[] longArray20 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray17, 10L);
+        long[] longArray23 = new long[] { 100L, 'a' };
+        long[] longArray26 = org.apache.commons.lang3.ArrayUtils.subarray(longArray23, (int) (short) 10, 100);
+        int int28 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray26, (long) ' ');
+        boolean boolean29 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray20, longArray26);
+        boolean boolean30 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray12, longArray20);
+        boolean boolean31 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray20);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) intArray0, (java.lang.Object) longArray20);
+        org.junit.Assert.assertNotNull(intArray0);
+        org.junit.Assert.assertNotNull(intArray1);
+        org.junit.Assert.assertNotNull(longArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray4), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray7), "[]");
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[]");
+        org.junit.Assert.assertNotNull(longArray11);
+        org.junit.Assert.assertNotNull(longArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray12), "[]");
+        org.junit.Assert.assertNotNull(longArray14);
+        org.junit.Assert.assertNotNull(longArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray17), "[10, 100]");
+        org.junit.Assert.assertNotNull(longArray18);
+        org.junit.Assert.assertNotNull(longArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray20), "[100]");
+        org.junit.Assert.assertNotNull(longArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray23), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray26), "[]");
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + (-1) + "'", int28 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+    }
+
+    @Test
+    public void test2615() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2615");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray27, (int) '4', (int) (byte) 1);
+        double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.add(doubleArray27, 0, (double) ' ');
+        int int36 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray33, (-1.0d), 0);
+        // The following exception was thrown during execution in test generation
+        try {
+            double[] doubleArray38 = org.apache.commons.lang3.ArrayUtils.remove(doubleArray33, (int) 'a');
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 97, Length: 7");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[]");
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[32.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int36 + "' != '" + 3 + "'", int36 == 3);
+    }
+
+    @Test
+    public void test2616() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2616");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        java.lang.Double[] doubleArray32 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray32);
+        double[] doubleArray35 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray32, 0.0d);
+        double[] doubleArray36 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray32);
+        double[] doubleArray37 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray27, doubleArray36);
+        double[] doubleArray38 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray37);
+        int int40 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray38, (double) 1.0f);
+        double[] doubleArray43 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray38, (int) (short) 100, 10);
+        double[] doubleArray46 = org.apache.commons.lang3.ArrayUtils.add(doubleArray38, 3, (double) 1);
+        double[] doubleArray49 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray46, (int) (byte) 10, 100);
+        double[] doubleArray50 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray46);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertNotNull(doubleArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray35), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray36), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray37), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray38), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + 4 + "'", int40 == 4);
+        org.junit.Assert.assertNotNull(doubleArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray43), "[]");
+        org.junit.Assert.assertNotNull(doubleArray46);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray46), "[100.0, 1.0, -1.0, 1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray49), "[0.0]");
+        org.junit.Assert.assertNotNull(doubleArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray50), "[100.0, 1.0, -1.0, 1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+    }
+
+    @Test
+    public void test2617() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2617");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray4, (int) (short) -1, (int) '#');
+        int int12 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray10, false);
+        boolean[] booleanArray14 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray10, false);
+        boolean[] booleanArray16 = org.apache.commons.lang3.ArrayUtils.remove(booleanArray14, (int) (short) 0);
+        boolean[] booleanArray17 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray14);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.contains(booleanArray14, false);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertNotNull(booleanArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray14), "[true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[true, false]");
+        org.junit.Assert.assertNotNull(booleanArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray17), "[true, true, false]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
+    }
+
+    @Test
+    public void test2618() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2618");
+        java.lang.Character[] charArray5 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray5);
+        java.lang.Character[] charArray7 = org.apache.commons.lang3.ArrayUtils.toObject(charArray6);
+        char[] charArray8 = org.apache.commons.lang3.ArrayUtils.clone(charArray6);
+        int int10 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray6, '4');
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray6), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray7);
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray8), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray8), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray8), "[4, a,  , a, 4]");
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 0 + "'", int10 == 0);
+    }
+
+    @Test
+    public void test2619() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2619");
+        boolean[][][][][] booleanArray0 = new boolean[][][][][] {};
+        java.lang.CharSequence[] charSequenceArray3 = new java.lang.CharSequence[] { "", "hi!" };
+        java.lang.CharSequence[] charSequenceArray5 = org.apache.commons.lang3.ArrayUtils.add(charSequenceArray3, (java.lang.CharSequence) "");
+        java.lang.Byte[] byteArray10 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray10, (byte) -1);
+        java.lang.Byte[] byteArray13 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray10);
+        byte[] byteArray19 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int21 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray19, (byte) 0);
+        boolean boolean23 = org.apache.commons.lang3.ArrayUtils.contains(byteArray19, (byte) 0);
+        int int25 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) byteArray13, (java.lang.Object) (byte) 0, (int) (byte) 0);
+        java.lang.Byte[] byteArray26 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray13);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.EMPTY_DOUBLE_ARRAY;
+        java.lang.Double[] doubleArray28 = org.apache.commons.lang3.ArrayUtils.toObject(doubleArray27);
+        java.lang.String str29 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) doubleArray28);
+        java.lang.Object[] objArray30 = org.apache.commons.lang3.ArrayUtils.addAll((java.lang.Object[]) byteArray13, (java.lang.Object[]) doubleArray28);
+        boolean boolean31 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) charSequenceArray5, (java.lang.Object) byteArray13);
+        boolean[][][][][] booleanArray32 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray0, (java.lang.Object) charSequenceArray5);
+        byte[] byteArray38 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int40 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray38, (byte) 0);
+        byte[] byteArray42 = org.apache.commons.lang3.ArrayUtils.add(byteArray38, (byte) 10);
+        byte[] byteArray45 = org.apache.commons.lang3.ArrayUtils.subarray(byteArray38, 10, 1);
+        boolean boolean46 = org.apache.commons.lang3.ArrayUtils.isSameType((java.lang.Object) booleanArray32, (java.lang.Object) byteArray45);
+        boolean boolean47 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray45);
+        org.junit.Assert.assertNotNull(booleanArray0);
+        org.junit.Assert.assertNotNull(charSequenceArray3);
+        org.junit.Assert.assertNotNull(charSequenceArray5);
+        org.junit.Assert.assertNotNull(byteArray10);
+        org.junit.Assert.assertNotNull(byteArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray12), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray13);
+        org.junit.Assert.assertNotNull(byteArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray19), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 4 + "'", int21 == 4);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + true + "'", boolean23 == true);
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+        org.junit.Assert.assertNotNull(byteArray26);
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[]");
+        org.junit.Assert.assertNotNull(doubleArray28);
+        org.junit.Assert.assertEquals("'" + str29 + "' != '" + "{}" + "'", str29, "{}");
+        org.junit.Assert.assertNotNull(objArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray30), "[1, -1, -1, 1]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray30), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
+        org.junit.Assert.assertNotNull(booleanArray32);
+        org.junit.Assert.assertNotNull(byteArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray38), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + 4 + "'", int40 == 4);
+        org.junit.Assert.assertNotNull(byteArray42);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray42), "[0, 1, 100, 100, 0, 10]");
+        org.junit.Assert.assertNotNull(byteArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray45), "[]");
+        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + false + "'", boolean46 == false);
+        org.junit.Assert.assertTrue("'" + boolean47 + "' != '" + true + "'", boolean47 == true);
+    }
+
+    @Test
+    public void test2620() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2620");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray9);
+        boolean[] booleanArray16 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray18 = org.apache.commons.lang3.ArrayUtils.add(booleanArray16, true);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray9, booleanArray18);
+        java.lang.Boolean[] booleanArray20 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray9);
+        java.lang.Boolean[] booleanArray21 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray20);
+        boolean[] booleanArray23 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray20, false);
+        boolean[] booleanArray24 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray23);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNotNull(booleanArray20);
+        org.junit.Assert.assertNotNull(booleanArray21);
+        org.junit.Assert.assertNotNull(booleanArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray23), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray24), "[false, true, true, false, false]");
+    }
+
+    @Test
+    public void test2621() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2621");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        java.lang.Byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        java.lang.Character[] charArray13 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray13);
+        java.lang.Character[] charArray15 = org.apache.commons.lang3.ArrayUtils.toObject(charArray14);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray7, (java.lang.Object) charArray14);
+        char[] charArray19 = org.apache.commons.lang3.ArrayUtils.subarray(charArray14, (int) (short) 10, 100);
+        char[] charArray21 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray19, '#');
+        char[] charArray22 = org.apache.commons.lang3.ArrayUtils.clone(charArray19);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray22);
+        char[] charArray25 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray22, '4');
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray22);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNotNull(charArray19);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray19), "[]");
+        org.junit.Assert.assertNotNull(charArray21);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray21), "[]");
+        org.junit.Assert.assertNotNull(charArray22);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray22), "[]");
+        org.junit.Assert.assertNotNull(charArray25);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray25), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray25), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray25), "[]");
+    }
+
+    @Test
+    public void test2622() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2622");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        float[] floatArray16 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) (short) 0, (int) (byte) 0);
+        float[] floatArray19 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray16, (int) (byte) 1, 5);
+        float[] floatArray20 = org.apache.commons.lang3.ArrayUtils.clone(floatArray19);
+        java.lang.Float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray19);
+        float[] floatArray23 = org.apache.commons.lang3.ArrayUtils.toPrimitive(floatArray21, (float) 8);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray23, (float) 1L, (int) (short) -1);
+        float[] floatArray27 = org.apache.commons.lang3.ArrayUtils.clone(floatArray23);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[]");
+        org.junit.Assert.assertNotNull(floatArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray19), "[]");
+        org.junit.Assert.assertNotNull(floatArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray20), "[]");
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertNotNull(floatArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray23), "[]");
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(floatArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray27), "[]");
+    }
+
+    @Test
+    public void test2623() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2623");
+        java.lang.Boolean[][][][] booleanArray0 = new java.lang.Boolean[][][][] {};
+        java.lang.Boolean[][][][] booleanArray3 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray0, (int) (byte) 0, 8);
+        boolean boolean4 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(booleanArray0);
+        java.lang.Object[][][][] objArray7 = org.apache.commons.lang3.ArrayUtils.subarray((java.lang.Object[][][][]) booleanArray0, (int) (byte) 1, (int) '#');
+        org.junit.Assert.assertNotNull(booleanArray0);
+        org.junit.Assert.assertNotNull(booleanArray3);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNotNull(objArray7);
+    }
+
+    @Test
+    public void test2624() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2624");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray9);
+        boolean[] booleanArray16 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray18 = org.apache.commons.lang3.ArrayUtils.add(booleanArray16, true);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray9, booleanArray18);
+        boolean[] booleanArray24 = new boolean[] { false, true, true, false };
+        int int27 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray24, true, 10);
+        boolean[] booleanArray29 = org.apache.commons.lang3.ArrayUtils.add(booleanArray24, false);
+        boolean[] booleanArray30 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray29);
+        boolean[] booleanArray32 = org.apache.commons.lang3.ArrayUtils.remove(booleanArray29, 1);
+        boolean boolean33 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray18, booleanArray32);
+        boolean[] booleanArray39 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray41 = org.apache.commons.lang3.ArrayUtils.add(booleanArray39, true);
+        boolean[] booleanArray43 = org.apache.commons.lang3.ArrayUtils.add(booleanArray39, false);
+        boolean boolean44 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray18, booleanArray39);
+        boolean[] booleanArray47 = org.apache.commons.lang3.ArrayUtils.add(booleanArray18, 1, true);
+        boolean[] booleanArray48 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray18);
+        boolean[] booleanArray51 = org.apache.commons.lang3.ArrayUtils.add(booleanArray48, (int) (byte) 1, false);
+        int int54 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray51, false, 6);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNotNull(booleanArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray24), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray29), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray30), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray32), "[false, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + false + "'", boolean33 == false);
+        org.junit.Assert.assertNotNull(booleanArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray39), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray41), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray43), "[false, false, true, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
+        org.junit.Assert.assertNotNull(booleanArray47);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray47), "[false, true, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray48);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray48), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray51);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray51), "[false, false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + int54 + "' != '" + 5 + "'", int54 == 5);
+    }
+
+    @Test
+    public void test2625() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2625");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray27, (int) '4', (int) (byte) 1);
+        double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.add(doubleArray27, 0, (double) ' ');
+        org.apache.commons.lang3.ArrayUtils.reverse(doubleArray27);
+        boolean boolean37 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray27, (double) (byte) 0, (double) 100L);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[-1.0, 1.0, 100.0, -1.0, 1.0, 100.0]");
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[]");
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[32.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + true + "'", boolean37 == true);
+    }
+
+    @Test
+    public void test2626() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2626");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray27, (int) '4', (int) (byte) 1);
+        double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.add(doubleArray27, 0, (double) ' ');
+        int int37 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray27, (double) 10.0f, 4, (double) (-1));
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[]");
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[32.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int37 + "' != '" + (-1) + "'", int37 == (-1));
+    }
+
+    @Test
+    public void test2627() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2627");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        java.lang.Byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        long[] longArray10 = new long[] { 100L, 'a' };
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.subarray(longArray10, (int) (short) 10, 100);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray13);
+        long[] longArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray13, (long) 0);
+        java.lang.Long[] longArray17 = org.apache.commons.lang3.ArrayUtils.toObject(longArray16);
+        java.io.Serializable[] serializableArray18 = org.apache.commons.lang3.ArrayUtils.removeElement((java.io.Serializable[]) byteArray4, (java.lang.Object) longArray17);
+        java.lang.Double[] doubleArray23 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray24 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray23);
+        double[] doubleArray26 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray24, (double) 1);
+        int int27 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) longArray17, (java.lang.Object) doubleArray26);
+        long[] longArray28 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray17);
+        // The following exception was thrown during execution in test generation
+        try {
+            long[] longArray30 = org.apache.commons.lang3.ArrayUtils.remove(longArray28, 4);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 4, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(longArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray16), "[]");
+        org.junit.Assert.assertNotNull(longArray17);
+        org.junit.Assert.assertNotNull(serializableArray18);
+        org.junit.Assert.assertNotNull(doubleArray23);
+        org.junit.Assert.assertNotNull(doubleArray24);
+        org.junit.Assert.assertNotNull(doubleArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray26), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
+        org.junit.Assert.assertNotNull(longArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray28), "[]");
+    }
+
+    @Test
+    public void test2628() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2628");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.clone(intArray5);
+        java.lang.Integer[] intArray7 = org.apache.commons.lang3.ArrayUtils.toObject(intArray6);
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.add(intArray6, 2, (int) (short) 100);
+        int int13 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray6, 100, (int) '4');
+        int[] intArray16 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray17 = org.apache.commons.lang3.ArrayUtils.toObject(intArray16);
+        int[] intArray20 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray21 = org.apache.commons.lang3.ArrayUtils.toObject(intArray20);
+        int[] intArray23 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray21, (int) 'a');
+        int[] intArray24 = org.apache.commons.lang3.ArrayUtils.clone(intArray23);
+        int[] intArray25 = org.apache.commons.lang3.ArrayUtils.addAll(intArray16, intArray23);
+        int[] intArray26 = org.apache.commons.lang3.ArrayUtils.addAll(intArray6, intArray23);
+        boolean boolean28 = org.apache.commons.lang3.ArrayUtils.contains(intArray26, (int) (short) 1);
+        int int31 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray26, (int) (short) 10, (int) (short) 0);
+        int[] intArray33 = org.apache.commons.lang3.ArrayUtils.removeElement(intArray26, 100);
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray26);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[35, 0, 100]");
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertNotNull(intArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray16), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray17);
+        org.junit.Assert.assertNotNull(intArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray20), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray21);
+        org.junit.Assert.assertNotNull(intArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray23), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray24), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray25), "[35, 0, 35, 0]");
+        org.junit.Assert.assertNotNull(intArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray26), "[0, 35, 0, 35]");
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+        org.junit.Assert.assertTrue("'" + int31 + "' != '" + (-1) + "'", int31 == (-1));
+        org.junit.Assert.assertNotNull(intArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray33), "[35, 0, 35, 0]");
+    }
+
+    @Test
+    public void test2629() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2629");
+        double[] doubleArray3 = new double[] { 10.0f, (short) 10, 'a' };
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (-1.0d), (int) (byte) -1, (double) (-1.0f));
+        double[] doubleArray9 = org.apache.commons.lang3.ArrayUtils.add(doubleArray3, (double) 100L);
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray9);
+        double[] doubleArray12 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray9, (double) 100.0f);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[10.0, 10.0, 97.0]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray9), "[10.0, 10.0, 97.0, 100.0]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNotNull(doubleArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray12), "[10.0, 10.0, 97.0]");
+    }
+
+    @Test
+    public void test2630() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2630");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray6 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (float) (short) 1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.add(floatArray6, 0.0f);
+        float[] floatArray11 = new float[] { (-1L), (byte) 1 };
+        int int13 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray11, (float) (byte) 10);
+        float[] floatArray16 = org.apache.commons.lang3.ArrayUtils.add(floatArray11, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray17 = org.apache.commons.lang3.ArrayUtils.clone(floatArray16);
+        float[] floatArray20 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray16, (int) '#', (int) 'a');
+        float[] floatArray22 = org.apache.commons.lang3.ArrayUtils.remove(floatArray16, (int) (byte) 0);
+        float[] floatArray25 = new float[] { (-1L), (byte) 1 };
+        int int27 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray25, (float) (byte) 10);
+        float[] floatArray30 = org.apache.commons.lang3.ArrayUtils.add(floatArray25, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray31 = org.apache.commons.lang3.ArrayUtils.clone(floatArray30);
+        float[] floatArray34 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray30, (int) '#', (int) 'a');
+        float[] floatArray35 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray30);
+        float[] floatArray37 = org.apache.commons.lang3.ArrayUtils.remove(floatArray30, 0);
+        float[] floatArray38 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray22, floatArray30);
+        boolean boolean39 = org.apache.commons.lang3.ArrayUtils.isSameLength(floatArray8, floatArray30);
+        float[] floatArray41 = org.apache.commons.lang3.ArrayUtils.add(floatArray30, (float) (byte) 1);
+        float[] floatArray44 = new float[] { (-1L), (byte) 1 };
+        int int46 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray44, (float) (byte) 10);
+        float[] floatArray49 = org.apache.commons.lang3.ArrayUtils.add(floatArray44, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray50 = org.apache.commons.lang3.ArrayUtils.clone(floatArray49);
+        float[] floatArray53 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray49, (int) '#', (int) 'a');
+        float[] floatArray54 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray49);
+        float[] floatArray55 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray30, floatArray54);
+        java.lang.Float[] floatArray56 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray30);
+        float[] floatArray58 = org.apache.commons.lang3.ArrayUtils.removeElement(floatArray30, (float) 10L);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray6), "[-1.0, 1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, 1.0, 1.0, 0.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray17), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray20), "[]");
+        org.junit.Assert.assertNotNull(floatArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray22), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray25), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
+        org.junit.Assert.assertNotNull(floatArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray30), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray31), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray34), "[]");
+        org.junit.Assert.assertNotNull(floatArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray35), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray37), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray38), "[-1.0, 1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + false + "'", boolean39 == false);
+        org.junit.Assert.assertNotNull(floatArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray41), "[-1.0, -1.0, 1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray44);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray44), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int46 + "' != '" + (-1) + "'", int46 == (-1));
+        org.junit.Assert.assertNotNull(floatArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray49), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray50), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray53);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray53), "[]");
+        org.junit.Assert.assertNotNull(floatArray54);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray54), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray55);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray55), "[-1.0, -1.0, 1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray56);
+        org.junit.Assert.assertNotNull(floatArray58);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray58), "[-1.0, -1.0, 1.0]");
+    }
+
+    @Test
+    public void test2631() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2631");
+        java.lang.Class[][][] classArray1 = new java.lang.Class[0][][];
+        @SuppressWarnings("unchecked")
+        java.lang.Class<?>[][][] wildcardClassArray2 = (java.lang.Class<?>[][][]) classArray1;
+        short[] shortArray3 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        short[] shortArray4 = org.apache.commons.lang3.ArrayUtils.clone(shortArray3);
+        org.apache.commons.lang3.ArrayUtils.reverse(shortArray3);
+        short[] shortArray7 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray3, (short) 100);
+        java.lang.Short[] shortArray11 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray11);
+        short[] shortArray14 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray12, (short) 0);
+        java.lang.Short[] shortArray18 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray19 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray18);
+        short[] shortArray20 = org.apache.commons.lang3.ArrayUtils.addAll(shortArray12, shortArray19);
+        boolean boolean22 = org.apache.commons.lang3.ArrayUtils.contains(shortArray19, (short) 10);
+        short[] shortArray23 = org.apache.commons.lang3.ArrayUtils.clone(shortArray19);
+        short[] shortArray25 = org.apache.commons.lang3.ArrayUtils.add(shortArray23, (short) (byte) 1);
+        boolean boolean26 = org.apache.commons.lang3.ArrayUtils.isSameLength(shortArray7, shortArray25);
+        java.lang.Class<?>[][][] wildcardClassArray27 = org.apache.commons.lang3.ArrayUtils.removeElement(wildcardClassArray2, (java.lang.Object) shortArray7);
+        java.io.Serializable[][][] serializableArray30 = org.apache.commons.lang3.ArrayUtils.subarray((java.io.Serializable[][][]) wildcardClassArray2, 100, (int) (byte) 1);
+        java.lang.Class[][][] classArray32 = new java.lang.Class[0][][];
+        @SuppressWarnings("unchecked")
+        java.lang.Class<?>[][][] wildcardClassArray33 = (java.lang.Class<?>[][][]) classArray32;
+        short[] shortArray34 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        short[] shortArray35 = org.apache.commons.lang3.ArrayUtils.clone(shortArray34);
+        org.apache.commons.lang3.ArrayUtils.reverse(shortArray34);
+        short[] shortArray38 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray34, (short) 100);
+        java.lang.Short[] shortArray42 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray43 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray42);
+        short[] shortArray45 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray43, (short) 0);
+        java.lang.Short[] shortArray49 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray50 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray49);
+        short[] shortArray51 = org.apache.commons.lang3.ArrayUtils.addAll(shortArray43, shortArray50);
+        boolean boolean53 = org.apache.commons.lang3.ArrayUtils.contains(shortArray50, (short) 10);
+        short[] shortArray54 = org.apache.commons.lang3.ArrayUtils.clone(shortArray50);
+        short[] shortArray56 = org.apache.commons.lang3.ArrayUtils.add(shortArray54, (short) (byte) 1);
+        boolean boolean57 = org.apache.commons.lang3.ArrayUtils.isSameLength(shortArray38, shortArray56);
+        java.lang.Class<?>[][][] wildcardClassArray58 = org.apache.commons.lang3.ArrayUtils.removeElement(wildcardClassArray33, (java.lang.Object) shortArray38);
+        java.lang.Class<?>[][][] wildcardClassArray59 = org.apache.commons.lang3.ArrayUtils.addAll(wildcardClassArray2, wildcardClassArray58);
+        org.junit.Assert.assertNotNull(classArray1);
+        org.junit.Assert.assertNotNull(wildcardClassArray2);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray3), "[]");
+        org.junit.Assert.assertNotNull(shortArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray4), "[]");
+        org.junit.Assert.assertNotNull(shortArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray7), "[]");
+        org.junit.Assert.assertNotNull(shortArray11);
+        org.junit.Assert.assertNotNull(shortArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray12), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray14), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray18);
+        org.junit.Assert.assertNotNull(shortArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray19), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray20), "[-1, 100, 1, -1, 100, 1]");
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertNotNull(shortArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray23), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray25), "[-1, 100, 1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertNotNull(wildcardClassArray27);
+        org.junit.Assert.assertNotNull(serializableArray30);
+        org.junit.Assert.assertNotNull(classArray32);
+        org.junit.Assert.assertNotNull(wildcardClassArray33);
+        org.junit.Assert.assertNotNull(shortArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray34), "[]");
+        org.junit.Assert.assertNotNull(shortArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray35), "[]");
+        org.junit.Assert.assertNotNull(shortArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray38), "[]");
+        org.junit.Assert.assertNotNull(shortArray42);
+        org.junit.Assert.assertNotNull(shortArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray43), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray45), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray49);
+        org.junit.Assert.assertNotNull(shortArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray50), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray51);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray51), "[-1, 100, 1, -1, 100, 1]");
+        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + false + "'", boolean53 == false);
+        org.junit.Assert.assertNotNull(shortArray54);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray54), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray56);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray56), "[-1, 100, 1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean57 + "' != '" + false + "'", boolean57 == false);
+        org.junit.Assert.assertNotNull(wildcardClassArray58);
+        org.junit.Assert.assertNotNull(wildcardClassArray59);
+    }
+
+    @Test
+    public void test2632() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2632");
+        long[] longArray2 = new long[] { 100L, 'a' };
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.subarray(longArray2, (int) (short) 10, 100);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray5);
+        long[] longArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray5, (long) 0);
+        long[] longArray11 = org.apache.commons.lang3.ArrayUtils.subarray(longArray8, (-1), 0);
+        org.apache.commons.lang3.ArrayUtils.reverse(longArray8);
+        long[] longArray15 = org.apache.commons.lang3.ArrayUtils.subarray(longArray8, (int) (byte) 0, 100);
+        java.lang.Long[] longArray16 = org.apache.commons.lang3.ArrayUtils.toObject(longArray15);
+        long[] longArray18 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray16, (long) (-1));
+        long[] longArray20 = org.apache.commons.lang3.ArrayUtils.add(longArray18, 0L);
+        boolean boolean21 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray20);
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(longArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray8), "[]");
+        org.junit.Assert.assertNotNull(longArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray11), "[]");
+        org.junit.Assert.assertNotNull(longArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray15), "[]");
+        org.junit.Assert.assertNotNull(longArray16);
+        org.junit.Assert.assertNotNull(longArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray18), "[]");
+        org.junit.Assert.assertNotNull(longArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray20), "[0]");
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+    }
+
+    @Test
+    public void test2633() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2633");
+        java.lang.Double[] doubleArray4 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray4);
+        double[] doubleArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray4, 0.0d);
+        double[] doubleArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray4);
+        double[] doubleArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray4, (double) 10L);
+        double[] doubleArray12 = org.apache.commons.lang3.ArrayUtils.add(doubleArray10, (double) 1);
+        boolean boolean13 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray10);
+        double[] doubleArray15 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray10, (double) (byte) 10);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray15);
+        org.junit.Assert.assertNotNull(doubleArray4);
+        org.junit.Assert.assertNotNull(doubleArray5);
+        org.junit.Assert.assertNotNull(doubleArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray7), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray8), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray10), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray12), "[10.0, -1.0, 10.0, 0.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNotNull(doubleArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray15), "[-1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+    }
+
+    @Test
+    public void test2634() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2634");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray9);
+        boolean[] booleanArray16 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray18 = org.apache.commons.lang3.ArrayUtils.add(booleanArray16, true);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray9, booleanArray18);
+        boolean[] booleanArray24 = new boolean[] { false, true, true, false };
+        int int27 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray24, true, 10);
+        boolean[] booleanArray29 = org.apache.commons.lang3.ArrayUtils.add(booleanArray24, false);
+        boolean[] booleanArray30 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray29);
+        boolean[] booleanArray32 = org.apache.commons.lang3.ArrayUtils.remove(booleanArray29, 1);
+        boolean boolean33 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray18, booleanArray32);
+        int int35 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray18, true);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNotNull(booleanArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray24), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray29), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray30), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray32), "[false, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + false + "'", boolean33 == false);
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + 5 + "'", int35 == 5);
+    }
+
+    @Test
+    public void test2635() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2635");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        float[] floatArray15 = org.apache.commons.lang3.ArrayUtils.add(floatArray7, 10.0f);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray15), "[-1.0, -1.0, 1.0, 10.0]");
+    }
+
+    @Test
+    public void test2636() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2636");
+        short[] shortArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        short[] shortArray1 = org.apache.commons.lang3.ArrayUtils.clone(shortArray0);
+        int int4 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(shortArray1, (short) 0, (int) (short) 100);
+        int int6 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(shortArray1, (short) 10);
+        java.lang.Short[] shortArray7 = org.apache.commons.lang3.ArrayUtils.toObject(shortArray1);
+        java.lang.Short[] shortArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray7);
+        java.lang.Object[] objArray9 = null;
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) shortArray7, objArray9);
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray0), "[]");
+        org.junit.Assert.assertNotNull(shortArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray1), "[]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNotNull(shortArray7);
+        org.junit.Assert.assertNotNull(shortArray8);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+    }
+
+    @Test
+    public void test2637() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2637");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray9);
+        boolean[] booleanArray12 = org.apache.commons.lang3.ArrayUtils.remove(booleanArray10, 0);
+        boolean[] booleanArray13 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray12);
+        boolean[] booleanArray18 = new boolean[] { false, true, true, false };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray18, true, 10);
+        boolean[] booleanArray24 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray18, (int) (short) -1, (int) '#');
+        int int26 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray24, false);
+        boolean[] booleanArray28 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray24, false);
+        boolean[] booleanArray31 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray28, 7, (int) '#');
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray12, booleanArray28);
+        boolean[] booleanArray33 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray28);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray12), "[true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray13), "[true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray24), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + 3 + "'", int26 == 3);
+        org.junit.Assert.assertNotNull(booleanArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray28), "[true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray31), "[]");
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(booleanArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray33), "[true, true, false]");
+    }
+
+    @Test
+    public void test2638() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2638");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.clone(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.addAll(intArray4, intArray5);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.add(intArray4, 100);
+        int[] intArray11 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray12 = org.apache.commons.lang3.ArrayUtils.toObject(intArray11);
+        int[] intArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray12, (int) 'a');
+        int[] intArray16 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray12, (int) '#');
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray16);
+        int[] intArray20 = org.apache.commons.lang3.ArrayUtils.add(intArray16, (int) (byte) 0, 1);
+        int[] intArray23 = new int[] { 0, 0 };
+        int[] intArray24 = org.apache.commons.lang3.ArrayUtils.addAll(intArray20, intArray23);
+        int[] intArray25 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray20);
+        int[] intArray26 = org.apache.commons.lang3.ArrayUtils.addAll(intArray8, intArray25);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[35, 0, 100]");
+        org.junit.Assert.assertNotNull(intArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray11), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray12);
+        org.junit.Assert.assertNotNull(intArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray14), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray16), "[0, 35]");
+        org.junit.Assert.assertNotNull(intArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray20), "[1, 0, 35]");
+        org.junit.Assert.assertNotNull(intArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray23), "[0, 0]");
+        org.junit.Assert.assertNotNull(intArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray24), "[1, 0, 35, 0, 0]");
+        org.junit.Assert.assertNotNull(intArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray25), "[1, 0, 35]");
+        org.junit.Assert.assertNotNull(intArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray26), "[35, 0, 100, 1, 0, 35]");
+    }
+
+    @Test
+    public void test2639() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2639");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray9 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.removeElement(floatArray7, 10.0f);
+        int int14 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray7, (float) 100L, 4);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray9), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+    }
+
+    @Test
+    public void test2640() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2640");
+        char[] charArray0 = null;
+        java.lang.Character[] charArray1 = new java.lang.Character[] {};
+        java.lang.Character[] charArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray1);
+        java.lang.Character[] charArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray2);
+        char[] charArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray2, ' ');
+        char[] charArray8 = org.apache.commons.lang3.ArrayUtils.subarray(charArray5, (int) (short) 0, (int) (short) 1);
+        char[] charArray9 = org.apache.commons.lang3.ArrayUtils.addAll(charArray0, charArray5);
+        char[] charArray11 = org.apache.commons.lang3.ArrayUtils.add(charArray5, 'a');
+        int int13 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray11, 'a');
+        char[] charArray16 = org.apache.commons.lang3.ArrayUtils.subarray(charArray11, 8, 100);
+        org.junit.Assert.assertNotNull(charArray1);
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray3);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray5), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray5), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray5), "[]");
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray8), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray8), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray8), "[]");
+        org.junit.Assert.assertNotNull(charArray9);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray9), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray9), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray9), "[]");
+        org.junit.Assert.assertNotNull(charArray11);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray11), "a");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray11), "a");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray11), "[a]");
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 0 + "'", int13 == 0);
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray16), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray16), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray16), "[]");
+    }
+
+    @Test
+    public void test2641() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2641");
+        double[] doubleArray0 = new double[] {};
+        int int3 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray0, (double) (byte) 100, (double) (byte) 1);
+        double[] doubleArray4 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray0);
+        java.lang.Double[] doubleArray9 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray10 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray9);
+        double[] doubleArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray9, 0.0d);
+        double[] doubleArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray9);
+        int int16 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray13, (double) 10.0f, 10.0d);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.isSameLength(doubleArray4, doubleArray13);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray13, (double) 1.0f);
+        int int21 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray13, 0.0d);
+        double[] doubleArray22 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray13);
+        boolean boolean23 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(doubleArray13);
+        org.junit.Assert.assertNotNull(doubleArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray0), "[]");
+        org.junit.Assert.assertTrue("'" + int3 + "' != '" + (-1) + "'", int3 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray4), "[]");
+        org.junit.Assert.assertNotNull(doubleArray9);
+        org.junit.Assert.assertNotNull(doubleArray10);
+        org.junit.Assert.assertNotNull(doubleArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray12), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray13), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 3 + "'", int21 == 3);
+        org.junit.Assert.assertNotNull(doubleArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray22), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + true + "'", boolean23 == true);
+    }
+
+    @Test
+    public void test2642() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2642");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray4, (int) (short) -1, (int) '#');
+        int int12 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray10, false);
+        boolean[] booleanArray14 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray10, false);
+        boolean[] booleanArray16 = org.apache.commons.lang3.ArrayUtils.remove(booleanArray14, (int) (short) 0);
+        boolean[] booleanArray17 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray14);
+        int int20 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray14, true, (int) (byte) 10);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertNotNull(booleanArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray14), "[true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[true, false]");
+        org.junit.Assert.assertNotNull(booleanArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray17), "[true, true, false]");
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 1 + "'", int20 == 1);
+    }
+
+    @Test
+    public void test2643() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2643");
+        java.lang.Character[] charArray0 = null;
+        char[] charArray2 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray0, ' ');
+        org.junit.Assert.assertNull(charArray2);
+    }
+
+    @Test
+    public void test2644() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2644");
+        java.lang.Short[] shortArray2 = new java.lang.Short[] { (short) -1, (short) -1 };
+        java.lang.Short[] shortArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray2);
+        short[] shortArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3, (short) 1);
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        short[] shortArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray6, (short) (byte) -1);
+        short[] shortArray10 = org.apache.commons.lang3.ArrayUtils.remove(shortArray8, (int) (short) 0);
+        short[] shortArray12 = org.apache.commons.lang3.ArrayUtils.add(shortArray10, (short) (byte) 10);
+        java.lang.Short[] shortArray16 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray17 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray16);
+        short[] shortArray19 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray17, (short) 0);
+        short[] shortArray22 = org.apache.commons.lang3.ArrayUtils.add(shortArray17, 2, (short) 100);
+        short[] shortArray25 = org.apache.commons.lang3.ArrayUtils.add(shortArray22, 2, (short) (byte) -1);
+        int int28 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(shortArray25, (short) (byte) -1, (int) (byte) 100);
+        short[] shortArray29 = org.apache.commons.lang3.ArrayUtils.clone(shortArray25);
+        boolean boolean30 = org.apache.commons.lang3.ArrayUtils.isEmpty(shortArray29);
+        boolean boolean31 = org.apache.commons.lang3.ArrayUtils.isSameLength(shortArray10, shortArray29);
+        org.junit.Assert.assertNotNull(shortArray2);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray5), "[-1, -1]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, -1]");
+        org.junit.Assert.assertNotNull(shortArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray8), "[-1]");
+        org.junit.Assert.assertNotNull(shortArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray10), "[]");
+        org.junit.Assert.assertNotNull(shortArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray12), "[10]");
+        org.junit.Assert.assertNotNull(shortArray16);
+        org.junit.Assert.assertNotNull(shortArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray17), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray19), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray22), "[-1, 100, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray25), "[-1, 100, -1, 100, 1]");
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + 2 + "'", int28 == 2);
+        org.junit.Assert.assertNotNull(shortArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray29), "[-1, 100, -1, 100, 1]");
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
+    }
+
+    @Test
+    public void test2645() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2645");
+        java.lang.Integer[][][][][][] intArray0 = new java.lang.Integer[][][][][][] {};
+        java.lang.Integer[][][][][][][] intArray1 = new java.lang.Integer[][][][][][][] { intArray0 };
+        java.lang.Integer[][][][][][][][] intArray2 = new java.lang.Integer[][][][][][][][] { intArray1 };
+        java.lang.Integer[][][][][][][] intArray3 = new java.lang.Integer[][][][][][][] {};
+        java.lang.Integer[][][][][][][] intArray4 = new java.lang.Integer[][][][][][][] {};
+        java.lang.Integer[][][][][][][] intArray5 = new java.lang.Integer[][][][][][][] {};
+        java.lang.Integer[][][][][][][][] intArray6 = new java.lang.Integer[][][][][][][][] { intArray3, intArray4, intArray5 };
+        java.lang.Integer[][][][][][][][] intArray7 = org.apache.commons.lang3.ArrayUtils.addAll(intArray2, intArray6);
+        org.junit.Assert.assertNotNull(intArray0);
+        org.junit.Assert.assertNotNull(intArray1);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertNotNull(intArray7);
+    }
+
+    @Test
+    public void test2646() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2646");
+        java.lang.Character[] charArray0 = new java.lang.Character[] {};
+        java.lang.Character[] charArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray0);
+        java.lang.Character[] charArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray1);
+        char[] charArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray1, ' ');
+        char[] charArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray1);
+        char[] charArray6 = org.apache.commons.lang3.ArrayUtils.clone(charArray5);
+        java.lang.Character[] charArray12 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray12);
+        java.lang.Character[] charArray14 = org.apache.commons.lang3.ArrayUtils.toObject(charArray13);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray13);
+        char[] charArray18 = org.apache.commons.lang3.ArrayUtils.subarray(charArray13, (int) (byte) -1, (int) (byte) 1);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray18);
+        char[] charArray20 = org.apache.commons.lang3.ArrayUtils.addAll(charArray5, charArray18);
+        java.lang.Byte[] byteArray25 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray27 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray25, (byte) -1);
+        java.lang.Byte[] byteArray28 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray25);
+        java.lang.Character[] charArray34 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray35 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray34);
+        java.lang.Character[] charArray36 = org.apache.commons.lang3.ArrayUtils.toObject(charArray35);
+        boolean boolean37 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray28, (java.lang.Object) charArray35);
+        char[] charArray40 = org.apache.commons.lang3.ArrayUtils.subarray(charArray35, (int) (short) 10, 100);
+        char[] charArray42 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray40, '#');
+        char[] charArray43 = org.apache.commons.lang3.ArrayUtils.clone(charArray40);
+        java.lang.Byte[] byteArray48 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray50 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray48, (byte) -1);
+        java.lang.Byte[] byteArray51 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray48);
+        java.lang.Character[] charArray57 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray58 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray57);
+        java.lang.Character[] charArray59 = org.apache.commons.lang3.ArrayUtils.toObject(charArray58);
+        boolean boolean60 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray51, (java.lang.Object) charArray58);
+        char[] charArray63 = org.apache.commons.lang3.ArrayUtils.subarray(charArray58, (int) (short) 10, 100);
+        char[] charArray65 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray63, '#');
+        char[] charArray66 = org.apache.commons.lang3.ArrayUtils.clone(charArray63);
+        boolean boolean67 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray40, charArray63);
+        boolean boolean68 = org.apache.commons.lang3.ArrayUtils.isEmpty(charArray63);
+        char[] charArray71 = org.apache.commons.lang3.ArrayUtils.subarray(charArray63, 1, (int) ' ');
+        char[] charArray72 = org.apache.commons.lang3.ArrayUtils.clone(charArray71);
+        char[] charArray73 = org.apache.commons.lang3.ArrayUtils.addAll(charArray5, charArray72);
+        int int75 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray72, '#');
+        org.junit.Assert.assertNotNull(charArray0);
+        org.junit.Assert.assertNotNull(charArray1);
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray4);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray4), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray4), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray4), "[]");
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray5), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray5), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray5), "[]");
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray6), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray6), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray6), "[]");
+        org.junit.Assert.assertNotNull(charArray12);
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray13), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray13), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray13), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertNotNull(charArray18);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray18), "4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray18), "4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray18), "[4]");
+        org.junit.Assert.assertNotNull(charArray20);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray20), "4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray20), "4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray20), "[4]");
+        org.junit.Assert.assertNotNull(byteArray25);
+        org.junit.Assert.assertNotNull(byteArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray27), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray28);
+        org.junit.Assert.assertNotNull(charArray34);
+        org.junit.Assert.assertNotNull(charArray35);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray35), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray35), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray35), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray36);
+        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + false + "'", boolean37 == false);
+        org.junit.Assert.assertNotNull(charArray40);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray40), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray40), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray40), "[]");
+        org.junit.Assert.assertNotNull(charArray42);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray42), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray42), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray42), "[]");
+        org.junit.Assert.assertNotNull(charArray43);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray43), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray43), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray43), "[]");
+        org.junit.Assert.assertNotNull(byteArray48);
+        org.junit.Assert.assertNotNull(byteArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray50), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray51);
+        org.junit.Assert.assertNotNull(charArray57);
+        org.junit.Assert.assertNotNull(charArray58);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray58), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray58), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray58), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray59);
+        org.junit.Assert.assertTrue("'" + boolean60 + "' != '" + false + "'", boolean60 == false);
+        org.junit.Assert.assertNotNull(charArray63);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray63), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray63), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray63), "[]");
+        org.junit.Assert.assertNotNull(charArray65);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray65), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray65), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray65), "[]");
+        org.junit.Assert.assertNotNull(charArray66);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray66), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray66), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray66), "[]");
+        org.junit.Assert.assertTrue("'" + boolean67 + "' != '" + true + "'", boolean67 == true);
+        org.junit.Assert.assertTrue("'" + boolean68 + "' != '" + true + "'", boolean68 == true);
+        org.junit.Assert.assertNotNull(charArray71);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray71), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray71), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray71), "[]");
+        org.junit.Assert.assertNotNull(charArray72);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray72), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray72), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray72), "[]");
+        org.junit.Assert.assertNotNull(charArray73);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray73), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray73), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray73), "[]");
+        org.junit.Assert.assertTrue("'" + int75 + "' != '" + (-1) + "'", int75 == (-1));
+    }
+
+    @Test
+    public void test2647() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2647");
+        byte[] byteArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        byte[] byteArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray0);
+        int int3 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray0, (byte) 100);
+        int int6 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray0, (byte) 1, 0);
+        byte[] byteArray8 = org.apache.commons.lang3.ArrayUtils.add(byteArray0, (byte) -1);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray8, (byte) 0, (int) '#');
+        org.junit.Assert.assertNotNull(byteArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray0), "[]");
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray1), "[]");
+        org.junit.Assert.assertTrue("'" + int3 + "' != '" + (-1) + "'", int3 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNotNull(byteArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray8), "[-1]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+    }
+
+    @Test
+    public void test2648() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2648");
+        java.lang.Byte[] byteArray1 = new java.lang.Byte[] { (byte) -1 };
+        java.lang.Byte[] byteArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        byte[] byteArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray1, (byte) 1);
+        java.lang.Byte[] byteArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray1, (byte) 1);
+        long[] longArray10 = new long[] { 100L, 'a' };
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.subarray(longArray10, (int) (short) 10, 100);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray13);
+        long[] longArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray13, (long) 0);
+        java.lang.Long[] longArray17 = org.apache.commons.lang3.ArrayUtils.toObject(longArray16);
+        long[] longArray18 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray17);
+        long[] longArray21 = org.apache.commons.lang3.ArrayUtils.add(longArray18, (int) (short) 0, (long) 1);
+        java.lang.Long[] longArray22 = org.apache.commons.lang3.ArrayUtils.toObject(longArray21);
+        int int25 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray21, (long) '#', (int) (byte) 0);
+        boolean boolean26 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray1, (java.lang.Object) int25);
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertNotNull(byteArray2);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray4), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[-1]");
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(longArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray16), "[]");
+        org.junit.Assert.assertNotNull(longArray17);
+        org.junit.Assert.assertNotNull(longArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray18), "[]");
+        org.junit.Assert.assertNotNull(longArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray21), "[1]");
+        org.junit.Assert.assertNotNull(longArray22);
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+    }
+
+    @Test
+    public void test2649() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2649");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        boolean boolean5 = org.apache.commons.lang3.ArrayUtils.contains(intArray2, (int) (short) 1);
+        int int8 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray2, (int) (byte) -1, 1);
+        int[] intArray11 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray12 = org.apache.commons.lang3.ArrayUtils.toObject(intArray11);
+        int[] intArray15 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray16 = org.apache.commons.lang3.ArrayUtils.toObject(intArray15);
+        int[] intArray18 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray16, (int) 'a');
+        int[] intArray19 = org.apache.commons.lang3.ArrayUtils.clone(intArray18);
+        int[] intArray20 = org.apache.commons.lang3.ArrayUtils.addAll(intArray11, intArray18);
+        int[] intArray21 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        java.lang.String str22 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) intArray21);
+        int[] intArray23 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray21);
+        java.lang.Double[] doubleArray28 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray29 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray28);
+        double[] doubleArray31 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray28, 0.0d);
+        double[] doubleArray32 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray28);
+        double[] doubleArray34 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray28, (double) 10L);
+        boolean boolean35 = org.apache.commons.lang3.ArrayUtils.isEquals((java.lang.Object) intArray21, (java.lang.Object) doubleArray34);
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray21);
+        boolean boolean37 = org.apache.commons.lang3.ArrayUtils.isSameLength(intArray18, intArray21);
+        int[] intArray38 = org.apache.commons.lang3.ArrayUtils.addAll(intArray2, intArray18);
+        java.lang.Integer[] intArray39 = org.apache.commons.lang3.ArrayUtils.EMPTY_INTEGER_OBJECT_ARRAY;
+        int[] intArray41 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray39, 5);
+        int[] intArray44 = org.apache.commons.lang3.ArrayUtils.subarray(intArray41, 3, (int) 'a');
+        int[] intArray45 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray44);
+        int[] intArray46 = org.apache.commons.lang3.ArrayUtils.addAll(intArray18, intArray44);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNotNull(intArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray11), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray12);
+        org.junit.Assert.assertNotNull(intArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray15), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray16);
+        org.junit.Assert.assertNotNull(intArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray18), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray19), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray20), "[35, 0, 35, 0]");
+        org.junit.Assert.assertNotNull(intArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray21), "[]");
+        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "{}" + "'", str22, "{}");
+        org.junit.Assert.assertNotNull(intArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray23), "[]");
+        org.junit.Assert.assertNotNull(doubleArray28);
+        org.junit.Assert.assertNotNull(doubleArray29);
+        org.junit.Assert.assertNotNull(doubleArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray31), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray32), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray34), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + false + "'", boolean35 == false);
+        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + false + "'", boolean37 == false);
+        org.junit.Assert.assertNotNull(intArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray38), "[35, 0, 35, 0]");
+        org.junit.Assert.assertNotNull(intArray39);
+        org.junit.Assert.assertNotNull(intArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray41), "[]");
+        org.junit.Assert.assertNotNull(intArray44);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray44), "[]");
+        org.junit.Assert.assertNotNull(intArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray45), "[]");
+        org.junit.Assert.assertNotNull(intArray46);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray46), "[35, 0]");
+    }
+
+    @Test
+    public void test2650() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2650");
+        java.lang.Double[] doubleArray1 = new java.lang.Double[] { 100.0d };
+        java.lang.Double[] doubleArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray1);
+        java.io.Serializable[] serializableArray5 = org.apache.commons.lang3.ArrayUtils.subarray((java.io.Serializable[]) doubleArray1, (int) '#', 1);
+        java.lang.Double[] doubleArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray1);
+        float[] floatArray9 = new float[] { (-1L), (byte) 1 };
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray9, (float) (byte) 10);
+        float[] floatArray14 = org.apache.commons.lang3.ArrayUtils.add(floatArray9, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray15 = org.apache.commons.lang3.ArrayUtils.clone(floatArray14);
+        float[] floatArray18 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray14, (int) '#', (int) 'a');
+        float[] floatArray20 = org.apache.commons.lang3.ArrayUtils.remove(floatArray14, (int) (byte) 0);
+        float[] floatArray23 = new float[] { (-1L), (byte) 1 };
+        int int25 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray23, (float) (byte) 10);
+        float[] floatArray28 = org.apache.commons.lang3.ArrayUtils.add(floatArray23, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray29 = org.apache.commons.lang3.ArrayUtils.clone(floatArray28);
+        float[] floatArray32 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray28, (int) '#', (int) 'a');
+        float[] floatArray33 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray28);
+        float[] floatArray35 = org.apache.commons.lang3.ArrayUtils.remove(floatArray28, 0);
+        float[] floatArray36 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray20, floatArray28);
+        boolean boolean37 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray36);
+        float[] floatArray40 = new float[] { (-1L), (byte) 1 };
+        int int42 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray40, (float) (byte) 10);
+        int int45 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray40, (float) (byte) -1, (int) '#');
+        float[] floatArray46 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray40);
+        int int49 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray46, 0.0f, (int) (byte) -1);
+        float[] floatArray50 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray36, floatArray46);
+        java.lang.Float[] floatArray51 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray50);
+        java.lang.Float[] floatArray52 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray51);
+        boolean boolean53 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) doubleArray6, (java.lang.Object[]) floatArray51);
+        double[] doubleArray55 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray6, (double) 100);
+        org.junit.Assert.assertNotNull(doubleArray1);
+        org.junit.Assert.assertNotNull(doubleArray2);
+        org.junit.Assert.assertNotNull(serializableArray5);
+        org.junit.Assert.assertNotNull(doubleArray6);
+        org.junit.Assert.assertNotNull(floatArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray9), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNotNull(floatArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray14), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray15), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray18), "[]");
+        org.junit.Assert.assertNotNull(floatArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray20), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray23), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+        org.junit.Assert.assertNotNull(floatArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray28), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray29), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray32), "[]");
+        org.junit.Assert.assertNotNull(floatArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray33), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray35), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray36), "[-1.0, 1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + false + "'", boolean37 == false);
+        org.junit.Assert.assertNotNull(floatArray40);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray40), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int42 + "' != '" + (-1) + "'", int42 == (-1));
+        org.junit.Assert.assertTrue("'" + int45 + "' != '" + 0 + "'", int45 == 0);
+        org.junit.Assert.assertNotNull(floatArray46);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray46), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int49 + "' != '" + (-1) + "'", int49 == (-1));
+        org.junit.Assert.assertNotNull(floatArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray50), "[-1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray51);
+        org.junit.Assert.assertNotNull(floatArray52);
+        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + false + "'", boolean53 == false);
+        org.junit.Assert.assertNotNull(doubleArray55);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray55), "[100.0]");
+    }
+
+    @Test
+    public void test2651() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2651");
+        java.lang.Float[][][] floatArray0 = new java.lang.Float[][][] {};
+        boolean boolean1 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(floatArray0);
+        java.lang.Float[][][] floatArray2 = org.apache.commons.lang3.ArrayUtils.toArray(floatArray0);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.Float[][][] floatArray4 = org.apache.commons.lang3.ArrayUtils.remove(floatArray2, (int) (byte) -1);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: -1, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(floatArray0);
+        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
+        org.junit.Assert.assertNotNull(floatArray2);
+    }
+
+    @Test
+    public void test2652() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2652");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        java.lang.Double[] doubleArray32 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray32);
+        double[] doubleArray35 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray32, 0.0d);
+        double[] doubleArray36 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray32);
+        double[] doubleArray37 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray27, doubleArray36);
+        int int41 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray36, 0.0d, (int) (short) 0, 0.0d);
+        org.apache.commons.lang3.ArrayUtils.reverse(doubleArray36);
+        double[] doubleArray43 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray36);
+        boolean boolean46 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray43, (double) (short) 100, (double) 0L);
+        boolean boolean49 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray43, (double) 10L, (double) 1L);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertNotNull(doubleArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray35), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray36), "[0.0, 10.0, -1.0, 10.0]");
+        org.junit.Assert.assertNotNull(doubleArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray37), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + (-1) + "'", int41 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray43), "[0.0, 10.0, -1.0, 10.0]");
+        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + false + "'", boolean46 == false);
+        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + true + "'", boolean49 == true);
+    }
+
+    @Test
+    public void test2653() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2653");
+        java.lang.String[] strArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_STRING_ARRAY;
+        java.lang.String[] strArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(strArray0);
+        java.lang.String[] strArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(strArray1);
+        boolean boolean3 = org.apache.commons.lang3.ArrayUtils.isEmpty((java.lang.Object[]) strArray2);
+        org.junit.Assert.assertNotNull(strArray0);
+        org.junit.Assert.assertNotNull(strArray1);
+        org.junit.Assert.assertNotNull(strArray2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+    }
+
+    @Test
+    public void test2654() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2654");
+        long[] longArray2 = new long[] { (byte) 10, (byte) 100 };
+        java.lang.Long[] longArray3 = org.apache.commons.lang3.ArrayUtils.toObject(longArray2);
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray3, (long) 4);
+        java.lang.Long[] longArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray3);
+        char[] charArray12 = new char[] { '4', ' ', ' ', '#', '4' };
+        char[] charArray13 = org.apache.commons.lang3.ArrayUtils.clone(charArray12);
+        char[] charArray16 = org.apache.commons.lang3.ArrayUtils.subarray(charArray13, (int) (short) -1, (int) (byte) 100);
+        char[] charArray17 = org.apache.commons.lang3.ArrayUtils.clone(charArray13);
+        int int19 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray17, ' ');
+        int int20 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) longArray6, (java.lang.Object) charArray17);
+        char[] charArray23 = org.apache.commons.lang3.ArrayUtils.subarray(charArray17, (int) 'a', 0);
+        boolean boolean24 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(charArray23);
+        char[] charArray27 = org.apache.commons.lang3.ArrayUtils.add(charArray23, (int) (short) 0, ' ');
+        char[] charArray29 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray23, '#');
+        int int32 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray23, '4', (int) (short) -1);
+        int int34 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray23, '#');
+        int int37 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray23, 'a', (int) ' ');
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[10, 100]");
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[10, 100]");
+        org.junit.Assert.assertNotNull(longArray6);
+        org.junit.Assert.assertNotNull(charArray12);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray12), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray12), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray12), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray13), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray13), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray13), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray16), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray16), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray16), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray17);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray17), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray17), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray17), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 2 + "'", int19 == 2);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertNotNull(charArray23);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray23), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray23), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray23), "[]");
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        org.junit.Assert.assertNotNull(charArray27);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray27), " ");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray27), " ");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray27), "[ ]");
+        org.junit.Assert.assertNotNull(charArray29);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray29), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray29), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray29), "[]");
+        org.junit.Assert.assertTrue("'" + int32 + "' != '" + (-1) + "'", int32 == (-1));
+        org.junit.Assert.assertTrue("'" + int34 + "' != '" + (-1) + "'", int34 == (-1));
+        org.junit.Assert.assertTrue("'" + int37 + "' != '" + (-1) + "'", int37 == (-1));
+    }
+
+    @Test
+    public void test2655() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2655");
+        java.lang.Character[] charArray0 = new java.lang.Character[] {};
+        java.lang.Character[] charArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray0);
+        java.lang.Character[] charArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray1);
+        char[] charArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray1, ' ');
+        char[] charArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray1);
+        char[] charArray6 = org.apache.commons.lang3.ArrayUtils.clone(charArray5);
+        java.lang.Character[] charArray12 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray12);
+        java.lang.Character[] charArray14 = org.apache.commons.lang3.ArrayUtils.toObject(charArray13);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray13);
+        char[] charArray18 = org.apache.commons.lang3.ArrayUtils.subarray(charArray13, (int) (byte) -1, (int) (byte) 1);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray18);
+        char[] charArray20 = org.apache.commons.lang3.ArrayUtils.addAll(charArray5, charArray18);
+        char[] charArray21 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray5);
+        boolean boolean22 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(charArray5);
+        java.lang.Byte[] byteArray27 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray29 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray27, (byte) -1);
+        java.lang.Byte[] byteArray30 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray27);
+        java.lang.Character[] charArray36 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray37 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray36);
+        java.lang.Character[] charArray38 = org.apache.commons.lang3.ArrayUtils.toObject(charArray37);
+        boolean boolean39 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray30, (java.lang.Object) charArray37);
+        char[] charArray42 = org.apache.commons.lang3.ArrayUtils.subarray(charArray37, (int) (short) 10, 100);
+        char[] charArray44 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray42, '#');
+        char[] charArray45 = org.apache.commons.lang3.ArrayUtils.clone(charArray42);
+        java.lang.Byte[] byteArray50 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray52 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray50, (byte) -1);
+        java.lang.Byte[] byteArray53 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray50);
+        java.lang.Character[] charArray59 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray60 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray59);
+        java.lang.Character[] charArray61 = org.apache.commons.lang3.ArrayUtils.toObject(charArray60);
+        boolean boolean62 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray53, (java.lang.Object) charArray60);
+        char[] charArray65 = org.apache.commons.lang3.ArrayUtils.subarray(charArray60, (int) (short) 10, 100);
+        char[] charArray67 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray65, '#');
+        char[] charArray68 = org.apache.commons.lang3.ArrayUtils.clone(charArray65);
+        boolean boolean69 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray42, charArray65);
+        boolean boolean70 = org.apache.commons.lang3.ArrayUtils.isEmpty(charArray65);
+        char[] charArray73 = org.apache.commons.lang3.ArrayUtils.subarray(charArray65, 1, (int) ' ');
+        char[] charArray74 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray65);
+        boolean boolean75 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray5, charArray65);
+        char[] charArray78 = org.apache.commons.lang3.ArrayUtils.subarray(charArray5, (int) '4', (int) (short) 10);
+        org.junit.Assert.assertNotNull(charArray0);
+        org.junit.Assert.assertNotNull(charArray1);
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray4);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray4), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray4), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray4), "[]");
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray5), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray5), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray5), "[]");
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray6), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray6), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray6), "[]");
+        org.junit.Assert.assertNotNull(charArray12);
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray13), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray13), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray13), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertNotNull(charArray18);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray18), "4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray18), "4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray18), "[4]");
+        org.junit.Assert.assertNotNull(charArray20);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray20), "4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray20), "4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray20), "[4]");
+        org.junit.Assert.assertNotNull(charArray21);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray21), "[]");
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertNotNull(byteArray27);
+        org.junit.Assert.assertNotNull(byteArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray29), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray30);
+        org.junit.Assert.assertNotNull(charArray36);
+        org.junit.Assert.assertNotNull(charArray37);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray37), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray37), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray37), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray38);
+        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + false + "'", boolean39 == false);
+        org.junit.Assert.assertNotNull(charArray42);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray42), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray42), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray42), "[]");
+        org.junit.Assert.assertNotNull(charArray44);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray44), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray44), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray44), "[]");
+        org.junit.Assert.assertNotNull(charArray45);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray45), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray45), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray45), "[]");
+        org.junit.Assert.assertNotNull(byteArray50);
+        org.junit.Assert.assertNotNull(byteArray52);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray52), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray53);
+        org.junit.Assert.assertNotNull(charArray59);
+        org.junit.Assert.assertNotNull(charArray60);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray60), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray60), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray60), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray61);
+        org.junit.Assert.assertTrue("'" + boolean62 + "' != '" + false + "'", boolean62 == false);
+        org.junit.Assert.assertNotNull(charArray65);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray65), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray65), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray65), "[]");
+        org.junit.Assert.assertNotNull(charArray67);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray67), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray67), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray67), "[]");
+        org.junit.Assert.assertNotNull(charArray68);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray68), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray68), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray68), "[]");
+        org.junit.Assert.assertTrue("'" + boolean69 + "' != '" + true + "'", boolean69 == true);
+        org.junit.Assert.assertTrue("'" + boolean70 + "' != '" + true + "'", boolean70 == true);
+        org.junit.Assert.assertNotNull(charArray73);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray73), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray73), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray73), "[]");
+        org.junit.Assert.assertNotNull(charArray74);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray74), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray74), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray74), "[]");
+        org.junit.Assert.assertTrue("'" + boolean75 + "' != '" + true + "'", boolean75 == true);
+        org.junit.Assert.assertNotNull(charArray78);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray78), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray78), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray78), "[]");
+    }
+
+    @Test
+    public void test2656() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2656");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.clone(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.addAll(intArray4, intArray5);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.add(intArray4, 100);
+        int int10 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray8, (int) '#');
+        int[] intArray12 = org.apache.commons.lang3.ArrayUtils.add(intArray8, 5);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[35, 0, 100]");
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 0 + "'", int10 == 0);
+        org.junit.Assert.assertNotNull(intArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray12), "[35, 0, 100, 5]");
+    }
+
+    @Test
+    public void test2657() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2657");
+        java.lang.Boolean[] booleanArray0 = new java.lang.Boolean[] {};
+        boolean[] booleanArray2 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray0, false);
+        org.junit.Assert.assertNotNull(booleanArray0);
+        org.junit.Assert.assertNotNull(booleanArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[]");
+    }
+
+    @Test
+    public void test2658() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2658");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray4, (int) (byte) -1, 1);
+        java.lang.Boolean[] booleanArray11 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray4);
+        boolean[] booleanArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray11);
+        int int14 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray12, true);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.contains(booleanArray12, false);
+        boolean[] booleanArray19 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray12, (int) (byte) 100, 2);
+        boolean[] booleanArray25 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray27 = org.apache.commons.lang3.ArrayUtils.add(booleanArray25, true);
+        boolean[] booleanArray28 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray25);
+        boolean[] booleanArray29 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray25);
+        boolean[] booleanArray31 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray29, true);
+        boolean[] booleanArray32 = org.apache.commons.lang3.ArrayUtils.addAll(booleanArray12, booleanArray31);
+        boolean[] booleanArray34 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray12, false);
+        java.lang.String str36 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) false, "-1");
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false]");
+        org.junit.Assert.assertNotNull(booleanArray11);
+        org.junit.Assert.assertNotNull(booleanArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray12), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 1 + "'", int14 == 1);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + true + "'", boolean16 == true);
+        org.junit.Assert.assertNotNull(booleanArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray19), "[]");
+        org.junit.Assert.assertNotNull(booleanArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray25), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray27), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray28), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray29), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray31), "[false, false, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray32), "[false, true, true, false, false, false, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray34), "[true, true, false]");
+        org.junit.Assert.assertEquals("'" + str36 + "' != '" + "false" + "'", str36, "false");
+    }
+
+    @Test
+    public void test2659() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2659");
+        java.lang.Character[] charArray2 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray2);
+        char[] charArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray3, ' ');
+        java.lang.Character[] charArray6 = org.apache.commons.lang3.ArrayUtils.toObject(charArray5);
+        char[] charArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray5, '#');
+        boolean boolean9 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(charArray8);
+        int int12 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray8, ' ', (int) (short) -1);
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray3);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray5), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray8), "#");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray8), "#");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray8), "[#]");
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+    }
+
+    @Test
+    public void test2660() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2660");
+        java.lang.Character[] charArray5 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray5);
+        java.lang.Character[] charArray7 = org.apache.commons.lang3.ArrayUtils.toObject(charArray6);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray6);
+        char[] charArray11 = org.apache.commons.lang3.ArrayUtils.subarray(charArray6, (int) (byte) -1, (int) (byte) 1);
+        java.lang.Character[] charArray17 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray18 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray17);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray11, charArray18);
+        char[] charArray21 = org.apache.commons.lang3.ArrayUtils.add(charArray11, 'a');
+        boolean boolean23 = org.apache.commons.lang3.ArrayUtils.contains(charArray11, 'a');
+        char[] charArray26 = org.apache.commons.lang3.ArrayUtils.add(charArray11, 0, '4');
+        char[] charArray27 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray26);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray6), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray7);
+        org.junit.Assert.assertNotNull(charArray11);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray11), "4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray11), "4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray11), "[4]");
+        org.junit.Assert.assertNotNull(charArray17);
+        org.junit.Assert.assertNotNull(charArray18);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray18), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray18), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray18), "[4, a,  , a, 4]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNotNull(charArray21);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray21), "4a");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray21), "4a");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray21), "[4, a]");
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertNotNull(charArray26);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray26), "44");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray26), "44");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray26), "[4, 4]");
+        org.junit.Assert.assertNotNull(charArray27);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray27), "44");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray27), "44");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray27), "[4, 4]");
+    }
+
+    @Test
+    public void test2661() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2661");
+        java.lang.Short[] shortArray3 = new java.lang.Short[] { (short) 10, (short) 10, (short) 0 };
+        short[] shortArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3, (short) 1);
+        java.lang.Short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray3);
+        boolean[] booleanArray7 = new boolean[] {};
+        boolean[] booleanArray8 = new boolean[] {};
+        boolean[] booleanArray9 = new boolean[] {};
+        boolean[][] booleanArray10 = new boolean[][] { booleanArray7, booleanArray8, booleanArray9 };
+        boolean[][] booleanArray11 = org.apache.commons.lang3.ArrayUtils.toArray(booleanArray10);
+        boolean[] booleanArray17 = new boolean[] { false, true, true, false };
+        int int20 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray17, true, 10);
+        boolean[] booleanArray22 = org.apache.commons.lang3.ArrayUtils.add(booleanArray17, false);
+        boolean[] booleanArray23 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray22);
+        boolean[] booleanArray29 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray31 = org.apache.commons.lang3.ArrayUtils.add(booleanArray29, true);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray22, booleanArray31);
+        boolean[] booleanArray37 = new boolean[] { false, true, true, false };
+        int int40 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray37, true, 10);
+        boolean[] booleanArray42 = org.apache.commons.lang3.ArrayUtils.add(booleanArray37, false);
+        boolean[] booleanArray43 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray42);
+        boolean[] booleanArray45 = org.apache.commons.lang3.ArrayUtils.remove(booleanArray42, 1);
+        boolean boolean46 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray31, booleanArray45);
+        boolean[] booleanArray52 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray54 = org.apache.commons.lang3.ArrayUtils.add(booleanArray52, true);
+        boolean[] booleanArray56 = org.apache.commons.lang3.ArrayUtils.add(booleanArray52, false);
+        boolean boolean57 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray31, booleanArray52);
+        boolean[][] booleanArray58 = org.apache.commons.lang3.ArrayUtils.add(booleanArray11, 3, booleanArray31);
+        int int60 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) shortArray6, (java.lang.Object) 3, 8);
+        short[] shortArray61 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray6);
+        short[] shortArray62 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray6);
+        // The following exception was thrown during execution in test generation
+        try {
+            short[] shortArray65 = org.apache.commons.lang3.ArrayUtils.add(shortArray62, 10, (short) (byte) 1);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 10, Length: 3");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray5), "[10, 10, 0]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertNotNull(booleanArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray7), "[]");
+        org.junit.Assert.assertNotNull(booleanArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray8), "[]");
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[]");
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertNotNull(booleanArray11);
+        org.junit.Assert.assertNotNull(booleanArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray17), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray22), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray23), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray29), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray31), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(booleanArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray37), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + (-1) + "'", int40 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray42);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray42), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray43), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray45), "[false, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + false + "'", boolean46 == false);
+        org.junit.Assert.assertNotNull(booleanArray52);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray52), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray54);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray54), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray56);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray56), "[false, false, true, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean57 + "' != '" + false + "'", boolean57 == false);
+        org.junit.Assert.assertNotNull(booleanArray58);
+        org.junit.Assert.assertTrue("'" + int60 + "' != '" + (-1) + "'", int60 == (-1));
+        org.junit.Assert.assertNotNull(shortArray61);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray61), "[10, 10, 0]");
+        org.junit.Assert.assertNotNull(shortArray62);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray62), "[10, 10, 0]");
+    }
+
+    @Test
+    public void test2662() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2662");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) '#');
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray7);
+        int int10 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray7, 100);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[0, 35]");
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+    }
+
+    @Test
+    public void test2663() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2663");
+        short[] shortArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        boolean boolean1 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(shortArray0);
+        java.lang.Short[] shortArray2 = org.apache.commons.lang3.ArrayUtils.toObject(shortArray0);
+        boolean boolean3 = org.apache.commons.lang3.ArrayUtils.isEmpty(shortArray0);
+        // The following exception was thrown during execution in test generation
+        try {
+            short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.add(shortArray0, (int) (short) 100, (short) (byte) 0);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 100, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray0), "[]");
+        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
+        org.junit.Assert.assertNotNull(shortArray2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+    }
+
+    @Test
+    public void test2664() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2664");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        org.apache.commons.lang3.ArrayUtils.reverse(booleanArray4);
+        int int12 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray4, false);
+        boolean[] booleanArray15 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, 3, true);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, true, true, false, false]");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertNotNull(booleanArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray15), "[false, true, true, true, false]");
+    }
+
+    @Test
+    public void test2665() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2665");
+        java.lang.Boolean[] booleanArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_BOOLEAN_OBJECT_ARRAY;
+        java.lang.Boolean[] booleanArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray0);
+        boolean[] booleanArray2 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray1);
+        boolean[] booleanArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray1, false);
+        boolean[] booleanArray6 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, true);
+        boolean[] booleanArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray6);
+        org.junit.Assert.assertNotNull(booleanArray0);
+        org.junit.Assert.assertNotNull(booleanArray1);
+        org.junit.Assert.assertNotNull(booleanArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray2), "[]");
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[]");
+        org.junit.Assert.assertNotNull(booleanArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray6), "[true]");
+        org.junit.Assert.assertNotNull(booleanArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray7), "[true]");
+    }
+
+    @Test
+    public void test2666() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2666");
+        java.lang.Short[] shortArray0 = new java.lang.Short[] {};
+        java.lang.Short[] shortArray1 = new java.lang.Short[] {};
+        java.lang.Short[][] shortArray2 = new java.lang.Short[][] { shortArray0, shortArray1 };
+        int[] intArray5 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray6 = org.apache.commons.lang3.ArrayUtils.toObject(intArray5);
+        boolean boolean8 = org.apache.commons.lang3.ArrayUtils.contains(intArray5, (int) (short) 1);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray5, (int) (byte) -1, 1);
+        java.lang.Short[][] shortArray12 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray2, (java.lang.Object) 1);
+        java.io.Serializable[][] serializableArray13 = org.apache.commons.lang3.ArrayUtils.toArray((java.io.Serializable[][]) shortArray2);
+        byte[] byteArray19 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int21 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray19, (byte) 0);
+        byte[] byteArray23 = org.apache.commons.lang3.ArrayUtils.add(byteArray19, (byte) 10);
+        byte[] byteArray24 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        java.lang.Byte[] byteArray29 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray31 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray29, (byte) -1);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray31);
+        byte[] byteArray34 = org.apache.commons.lang3.ArrayUtils.add(byteArray31, (byte) 100);
+        byte[] byteArray35 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray24, byteArray34);
+        byte[] byteArray36 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray19, byteArray34);
+        byte[] byteArray37 = org.apache.commons.lang3.ArrayUtils.clone(byteArray36);
+        byte[] byteArray40 = org.apache.commons.lang3.ArrayUtils.add(byteArray37, (int) (short) 1, (byte) 0);
+        int int41 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) shortArray2, (java.lang.Object) (byte) 0);
+        float[] floatArray44 = new float[] { (-1L), (byte) 1 };
+        int int46 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray44, (float) (byte) 10);
+        float[] floatArray49 = org.apache.commons.lang3.ArrayUtils.add(floatArray44, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray50 = org.apache.commons.lang3.ArrayUtils.clone(floatArray49);
+        int int53 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray50, (float) (byte) 100, (-1));
+        java.lang.Float[] floatArray54 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray50);
+        boolean boolean55 = org.apache.commons.lang3.ArrayUtils.isEmpty((java.lang.Object[]) floatArray54);
+        boolean boolean56 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) shortArray2, (java.lang.Object[]) floatArray54);
+        java.lang.Float[] floatArray57 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray54);
+        float[] floatArray59 = org.apache.commons.lang3.ArrayUtils.toPrimitive(floatArray54, (float) (-1L));
+        boolean boolean60 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(floatArray59);
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertNotNull(shortArray1);
+        org.junit.Assert.assertNotNull(shortArray2);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNotNull(shortArray12);
+        org.junit.Assert.assertNotNull(serializableArray13);
+        org.junit.Assert.assertNotNull(byteArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray19), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 4 + "'", int21 == 4);
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray23), "[0, 1, 100, 100, 0, 10]");
+        org.junit.Assert.assertNotNull(byteArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray24), "[]");
+        org.junit.Assert.assertNotNull(byteArray29);
+        org.junit.Assert.assertNotNull(byteArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray31), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(byteArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray34), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray35), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray36), "[0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray37), "[0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray40);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray40), "[0, 0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + (-1) + "'", int41 == (-1));
+        org.junit.Assert.assertNotNull(floatArray44);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray44), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int46 + "' != '" + (-1) + "'", int46 == (-1));
+        org.junit.Assert.assertNotNull(floatArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray49), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray50), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int53 + "' != '" + (-1) + "'", int53 == (-1));
+        org.junit.Assert.assertNotNull(floatArray54);
+        org.junit.Assert.assertTrue("'" + boolean55 + "' != '" + false + "'", boolean55 == false);
+        org.junit.Assert.assertTrue("'" + boolean56 + "' != '" + false + "'", boolean56 == false);
+        org.junit.Assert.assertNotNull(floatArray57);
+        org.junit.Assert.assertNotNull(floatArray59);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray59), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean60 + "' != '" + true + "'", boolean60 == true);
+    }
+
+    @Test
+    public void test2667() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2667");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        byte[] byteArray9 = org.apache.commons.lang3.ArrayUtils.add(byteArray6, (int) (short) 0, (byte) 0);
+        java.lang.Byte[] byteArray10 = org.apache.commons.lang3.ArrayUtils.toObject(byteArray9);
+        byte[] byteArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray10, (byte) 1);
+        byte[] byteArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray10, (byte) 100);
+        byte[] byteArray16 = org.apache.commons.lang3.ArrayUtils.add(byteArray14, (byte) 100);
+        byte[] byteArray17 = org.apache.commons.lang3.ArrayUtils.clone(byteArray16);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray9), "[0, 1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray10);
+        org.junit.Assert.assertNotNull(byteArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray12), "[0, 1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray14), "[0, 1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray16), "[0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray17), "[0, 1, -1, -1, 1, 100]");
+    }
+
+    @Test
+    public void test2668() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2668");
+        byte[] byteArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        byte[] byteArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray0);
+        byte[] byteArray2 = org.apache.commons.lang3.ArrayUtils.clone(byteArray1);
+        int int5 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray2, (byte) 100, (int) (byte) 1);
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray2);
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray2);
+        org.junit.Assert.assertNotNull(byteArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray0), "[]");
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray1), "[]");
+        org.junit.Assert.assertNotNull(byteArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray2), "[]");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[]");
+    }
+
+    @Test
+    public void test2669() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2669");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        float[] floatArray16 = new float[] { (-1L), (byte) 1 };
+        int int18 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray16, (float) (byte) 10);
+        float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.add(floatArray16, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray22 = org.apache.commons.lang3.ArrayUtils.clone(floatArray21);
+        float[] floatArray25 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray21, (int) '#', (int) 'a');
+        float[] floatArray26 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray21);
+        float[] floatArray28 = org.apache.commons.lang3.ArrayUtils.remove(floatArray21, 0);
+        float[] floatArray29 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray13, floatArray21);
+        boolean boolean30 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray29);
+        boolean boolean31 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(floatArray29);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray29);
+        float[] floatArray34 = org.apache.commons.lang3.ArrayUtils.remove(floatArray29, (int) (short) 0);
+        float[] floatArray37 = new float[] { (-1L), (byte) 1 };
+        int int39 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray37, (float) (byte) 10);
+        float[] floatArray42 = org.apache.commons.lang3.ArrayUtils.add(floatArray37, (int) (byte) 1, (float) (byte) -1);
+        int int44 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray42, (float) 'a');
+        float[] floatArray45 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray29, floatArray42);
+        boolean boolean46 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray42);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray22), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray25), "[]");
+        org.junit.Assert.assertNotNull(floatArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray26), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray28), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray29), "[-1.0, 1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(floatArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray34), "[1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray37), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int39 + "' != '" + (-1) + "'", int39 == (-1));
+        org.junit.Assert.assertNotNull(floatArray42);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray42), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int44 + "' != '" + (-1) + "'", int44 == (-1));
+        org.junit.Assert.assertNotNull(floatArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray45), "[-1.0, 1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + false + "'", boolean46 == false);
+    }
+
+    @Test
+    public void test2670() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2670");
+        java.lang.Integer[] intArray6 = new java.lang.Integer[] { 5, 0, 2, 10, 4, 2 };
+        java.lang.Integer[] intArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray6);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray7);
+        int int10 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray8, (int) (short) 10);
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray8);
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[2, 4, 10, 2, 0, 5]");
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
+    }
+
+    @Test
+    public void test2671() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2671");
+        java.lang.Double[] doubleArray4 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray4);
+        java.lang.Long[] longArray6 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_OBJECT_ARRAY;
+        int int8 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) doubleArray4, (java.lang.Object) longArray6, (int) (short) 100);
+        long[] longArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray6);
+        int[] intArray12 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray13 = org.apache.commons.lang3.ArrayUtils.toObject(intArray12);
+        int[] intArray16 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray17 = org.apache.commons.lang3.ArrayUtils.toObject(intArray16);
+        int[] intArray19 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray17, (int) 'a');
+        int[] intArray20 = org.apache.commons.lang3.ArrayUtils.clone(intArray19);
+        int[] intArray21 = org.apache.commons.lang3.ArrayUtils.addAll(intArray12, intArray19);
+        int[] intArray22 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        java.lang.String str23 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) intArray22);
+        int[] intArray24 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray22);
+        java.lang.Double[] doubleArray29 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray29);
+        double[] doubleArray32 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray29, 0.0d);
+        double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray29);
+        double[] doubleArray35 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray29, (double) 10L);
+        boolean boolean36 = org.apache.commons.lang3.ArrayUtils.isEquals((java.lang.Object) intArray22, (java.lang.Object) doubleArray35);
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray22);
+        boolean boolean38 = org.apache.commons.lang3.ArrayUtils.isSameLength(intArray19, intArray22);
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray22);
+        boolean boolean40 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) longArray6, (java.lang.Object) intArray22);
+        long[] longArray42 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray6, (long) (short) 1);
+        long[] longArray43 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray6);
+        java.lang.Long[] longArray44 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray6);
+        long[] longArray45 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray44);
+        long[] longArray47 = org.apache.commons.lang3.ArrayUtils.add(longArray45, (long) (-1));
+        // The following exception was thrown during execution in test generation
+        try {
+            long[] longArray50 = org.apache.commons.lang3.ArrayUtils.add(longArray47, (int) (byte) -1, (long) (-1));
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: -1, Length: 1");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(doubleArray4);
+        org.junit.Assert.assertNotNull(doubleArray5);
+        org.junit.Assert.assertNotNull(longArray6);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNotNull(longArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray9), "[]");
+        org.junit.Assert.assertNotNull(intArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray12), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray13);
+        org.junit.Assert.assertNotNull(intArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray16), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray17);
+        org.junit.Assert.assertNotNull(intArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray19), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray20), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray21), "[35, 0, 35, 0]");
+        org.junit.Assert.assertNotNull(intArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray22), "[]");
+        org.junit.Assert.assertEquals("'" + str23 + "' != '" + "{}" + "'", str23, "{}");
+        org.junit.Assert.assertNotNull(intArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray24), "[]");
+        org.junit.Assert.assertNotNull(doubleArray29);
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray32), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray35), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + boolean36 + "' != '" + false + "'", boolean36 == false);
+        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + false + "'", boolean38 == false);
+        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
+        org.junit.Assert.assertNotNull(longArray42);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray42), "[]");
+        org.junit.Assert.assertNotNull(longArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray43), "[]");
+        org.junit.Assert.assertNotNull(longArray44);
+        org.junit.Assert.assertNotNull(longArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray45), "[]");
+        org.junit.Assert.assertNotNull(longArray47);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray47), "[-1]");
+    }
+
+    @Test
+    public void test2672() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2672");
+        java.lang.Short[] shortArray3 = new java.lang.Short[] { (short) 10, (short) 10, (short) 0 };
+        short[] shortArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3, (short) 1);
+        java.lang.Short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray3);
+        boolean boolean7 = org.apache.commons.lang3.ArrayUtils.isEmpty((java.lang.Object[]) shortArray6);
+        java.lang.Short[] shortArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray6);
+        short[] shortArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray8);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray5), "[10, 10, 0]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertNotNull(shortArray8);
+        org.junit.Assert.assertNotNull(shortArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray9), "[10, 10, 0]");
+    }
+
+    @Test
+    public void test2673() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2673");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        org.apache.commons.lang3.ArrayUtils.reverse(booleanArray9);
+        java.lang.Boolean[] booleanArray11 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray9);
+        boolean[] booleanArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray11, true);
+        java.lang.Boolean[] booleanArray14 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray11);
+        boolean[] booleanArray16 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray14, false);
+        java.lang.Boolean[] booleanArray17 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray14);
+        boolean[] booleanArray19 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray17, true);
+        boolean[] booleanArray20 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray17);
+        java.lang.Boolean[] booleanArray21 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray17);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray11);
+        org.junit.Assert.assertNotNull(booleanArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray13), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray14);
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray17);
+        org.junit.Assert.assertNotNull(booleanArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray19), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray20), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray21);
+    }
+
+    @Test
+    public void test2674() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2674");
+        int[] intArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        java.lang.String str1 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) intArray0);
+        int[] intArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray0);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.subarray(intArray0, (int) (byte) 1, (int) (short) -1);
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray0);
+        org.junit.Assert.assertNotNull(intArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray0), "[]");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "{}" + "'", str1, "{}");
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[]");
+    }
+
+    @Test
+    public void test2675() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2675");
+        java.lang.Short[] shortArray3 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray4, (short) 0);
+        short[] shortArray9 = org.apache.commons.lang3.ArrayUtils.add(shortArray4, 2, (short) 100);
+        short[] shortArray12 = org.apache.commons.lang3.ArrayUtils.add(shortArray9, 2, (short) (byte) -1);
+        short[] shortArray14 = org.apache.commons.lang3.ArrayUtils.add(shortArray12, (short) (byte) 10);
+        short[] shortArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray14, (short) (byte) -1);
+        short[] shortArray18 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray14, (short) 100);
+        short[] shortArray20 = org.apache.commons.lang3.ArrayUtils.add(shortArray14, (short) (byte) 100);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray4), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray9), "[-1, 100, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray12), "[-1, 100, -1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray14), "[-1, 100, -1, 100, 1, 10]");
+        org.junit.Assert.assertNotNull(shortArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray16), "[100, -1, 100, 1, 10]");
+        org.junit.Assert.assertNotNull(shortArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray18), "[-1, -1, 100, 1, 10]");
+        org.junit.Assert.assertNotNull(shortArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray20), "[-1, 100, -1, 100, 1, 10, 100]");
+    }
+
+    @Test
+    public void test2676() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2676");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        float[] floatArray16 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) (short) 0, (int) (byte) 0);
+        float[] floatArray19 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray16, (int) (byte) 1, 5);
+        float[] floatArray20 = org.apache.commons.lang3.ArrayUtils.clone(floatArray19);
+        float[] floatArray23 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray20, (int) '4', (int) (short) -1);
+        float[] floatArray25 = org.apache.commons.lang3.ArrayUtils.add(floatArray23, (float) 100);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[]");
+        org.junit.Assert.assertNotNull(floatArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray19), "[]");
+        org.junit.Assert.assertNotNull(floatArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray20), "[]");
+        org.junit.Assert.assertNotNull(floatArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray23), "[]");
+        org.junit.Assert.assertNotNull(floatArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray25), "[100.0]");
+    }
+
+    @Test
+    public void test2677() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2677");
+        java.lang.Character[] charArray2 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray2);
+        char[] charArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray3, ' ');
+        java.lang.Character[] charArray6 = org.apache.commons.lang3.ArrayUtils.toObject(charArray5);
+        char[] charArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray5, '#');
+        boolean boolean9 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(charArray8);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray8, 'a');
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray3);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray5), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray8), "#");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray8), "#");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray8), "[#]");
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+    }
+
+    @Test
+    public void test2678() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2678");
+        boolean[] booleanArray5 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray7 = org.apache.commons.lang3.ArrayUtils.add(booleanArray5, true);
+        boolean[] booleanArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray5);
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.contains(booleanArray5, false);
+        boolean boolean11 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(booleanArray5);
+        java.lang.Boolean[] booleanArray12 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray5);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray5, true);
+        boolean[] booleanArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray5, false);
+        org.apache.commons.lang3.ArrayUtils.reverse(booleanArray5);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isEmpty(booleanArray5);
+        org.junit.Assert.assertNotNull(booleanArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray5), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray7), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray8), "[false, true, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertNotNull(booleanArray12);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+    }
+
+    @Test
+    public void test2679() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2679");
+        long[] longArray2 = new long[] { (byte) 10, (byte) 100 };
+        java.lang.Long[] longArray3 = org.apache.commons.lang3.ArrayUtils.toObject(longArray2);
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray3, (long) 4);
+        java.lang.Long[] longArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray3);
+        char[] charArray12 = new char[] { '4', ' ', ' ', '#', '4' };
+        char[] charArray13 = org.apache.commons.lang3.ArrayUtils.clone(charArray12);
+        char[] charArray16 = org.apache.commons.lang3.ArrayUtils.subarray(charArray13, (int) (short) -1, (int) (byte) 100);
+        char[] charArray17 = org.apache.commons.lang3.ArrayUtils.clone(charArray13);
+        int int19 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray17, ' ');
+        int int20 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) longArray6, (java.lang.Object) charArray17);
+        char[] charArray23 = org.apache.commons.lang3.ArrayUtils.subarray(charArray17, (int) 'a', 0);
+        char[] charArray25 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray17, ' ');
+        char[] charArray28 = org.apache.commons.lang3.ArrayUtils.subarray(charArray25, 100, 1);
+        int int31 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray28, ' ', 3);
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[10, 100]");
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[10, 100]");
+        org.junit.Assert.assertNotNull(longArray6);
+        org.junit.Assert.assertNotNull(charArray12);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray12), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray12), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray12), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray13), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray13), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray13), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray16), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray16), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray16), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray17);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray17), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray17), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray17), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 2 + "'", int19 == 2);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertNotNull(charArray23);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray23), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray23), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray23), "[]");
+        org.junit.Assert.assertNotNull(charArray25);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray25), "4 #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray25), "4 #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray25), "[4,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray28);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray28), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray28), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray28), "[]");
+        org.junit.Assert.assertTrue("'" + int31 + "' != '" + (-1) + "'", int31 == (-1));
+    }
+
+    @Test
+    public void test2680() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2680");
+        java.lang.Short[] shortArray3 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray4, (short) 0);
+        short[] shortArray9 = org.apache.commons.lang3.ArrayUtils.add(shortArray4, 2, (short) 100);
+        short[] shortArray12 = org.apache.commons.lang3.ArrayUtils.add(shortArray9, 2, (short) (byte) -1);
+        short[] shortArray14 = org.apache.commons.lang3.ArrayUtils.add(shortArray12, (short) (byte) 10);
+        short[] shortArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray14, (short) (byte) -1);
+        short[] shortArray17 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray14);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray4), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray9), "[-1, 100, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray12), "[-1, 100, -1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray14), "[-1, 100, -1, 100, 1, 10]");
+        org.junit.Assert.assertNotNull(shortArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray16), "[100, -1, 100, 1, 10]");
+        org.junit.Assert.assertNotNull(shortArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray17), "[-1, 100, -1, 100, 1, 10]");
+    }
+
+    @Test
+    public void test2681() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2681");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray9);
+        boolean[] booleanArray16 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray18 = org.apache.commons.lang3.ArrayUtils.add(booleanArray16, true);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray9, booleanArray18);
+        boolean[] booleanArray24 = new boolean[] { false, true, true, false };
+        int int27 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray24, true, 10);
+        boolean[] booleanArray29 = org.apache.commons.lang3.ArrayUtils.add(booleanArray24, false);
+        boolean[] booleanArray30 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray29);
+        boolean[] booleanArray32 = org.apache.commons.lang3.ArrayUtils.remove(booleanArray29, 1);
+        boolean boolean33 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray18, booleanArray32);
+        boolean[] booleanArray39 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray41 = org.apache.commons.lang3.ArrayUtils.add(booleanArray39, true);
+        boolean[] booleanArray43 = org.apache.commons.lang3.ArrayUtils.add(booleanArray39, false);
+        boolean boolean44 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray18, booleanArray39);
+        int int46 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray39, true);
+        int int49 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(booleanArray39, false, 0);
+        boolean boolean50 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(booleanArray39);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNotNull(booleanArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray24), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray29), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray30), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray32), "[false, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + false + "'", boolean33 == false);
+        org.junit.Assert.assertNotNull(booleanArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray39), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray41), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray43), "[false, false, true, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
+        org.junit.Assert.assertTrue("'" + int46 + "' != '" + 2 + "'", int46 == 2);
+        org.junit.Assert.assertTrue("'" + int49 + "' != '" + 0 + "'", int49 == 0);
+        org.junit.Assert.assertTrue("'" + boolean50 + "' != '" + true + "'", boolean50 == true);
+    }
+
+    @Test
+    public void test2682() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2682");
+        short[] shortArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        short[] shortArray1 = org.apache.commons.lang3.ArrayUtils.clone(shortArray0);
+        short[] shortArray3 = org.apache.commons.lang3.ArrayUtils.add(shortArray0, (short) 100);
+        int int5 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(shortArray0, (short) 10);
+        short[] shortArray7 = org.apache.commons.lang3.ArrayUtils.add(shortArray0, (short) (byte) -1);
+        short[] shortArray10 = org.apache.commons.lang3.ArrayUtils.subarray(shortArray0, 2, (int) (short) -1);
+        java.lang.Short[] shortArray11 = org.apache.commons.lang3.ArrayUtils.toObject(shortArray0);
+        int int14 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray0, (short) -1, (int) (byte) -1);
+        boolean boolean15 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(shortArray0);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.contains(shortArray0, (short) 0);
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray0), "[]");
+        org.junit.Assert.assertNotNull(shortArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray1), "[]");
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray3), "[100]");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
+        org.junit.Assert.assertNotNull(shortArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray7), "[-1]");
+        org.junit.Assert.assertNotNull(shortArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray10), "[]");
+        org.junit.Assert.assertNotNull(shortArray11);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+    }
+
+    @Test
+    public void test2683() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2683");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        java.lang.Byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        long[] longArray10 = new long[] { 100L, 'a' };
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.subarray(longArray10, (int) (short) 10, 100);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray13);
+        long[] longArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray13, (long) 0);
+        java.lang.Long[] longArray17 = org.apache.commons.lang3.ArrayUtils.toObject(longArray16);
+        java.io.Serializable[] serializableArray18 = org.apache.commons.lang3.ArrayUtils.removeElement((java.io.Serializable[]) byteArray4, (java.lang.Object) longArray17);
+        java.lang.Double[] doubleArray23 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray24 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray23);
+        double[] doubleArray26 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray24, (double) 1);
+        int int27 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) longArray17, (java.lang.Object) doubleArray26);
+        long[] longArray28 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray17);
+        java.lang.Long[] longArray29 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray17);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(longArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray16), "[]");
+        org.junit.Assert.assertNotNull(longArray17);
+        org.junit.Assert.assertNotNull(serializableArray18);
+        org.junit.Assert.assertNotNull(doubleArray23);
+        org.junit.Assert.assertNotNull(doubleArray24);
+        org.junit.Assert.assertNotNull(doubleArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray26), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
+        org.junit.Assert.assertNotNull(longArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray28), "[]");
+        org.junit.Assert.assertNotNull(longArray29);
+    }
+
+    @Test
+    public void test2684() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2684");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int int5 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray2, (-1));
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.add(intArray2, (int) '#');
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[35, 0, 35]");
+    }
+
+    @Test
+    public void test2685() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2685");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.clone(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.clone(intArray4);
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.clone(intArray4);
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray4);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[35, 0]");
+    }
+
+    @Test
+    public void test2686() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2686");
+        int[] intArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        java.lang.String str1 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) intArray0);
+        int[] intArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray0);
+        int int4 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray0, (int) (short) 0);
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.add(intArray0, 0, 0);
+        boolean boolean8 = org.apache.commons.lang3.ArrayUtils.isEmpty(intArray0);
+        // The following exception was thrown during execution in test generation
+        try {
+            int[] intArray11 = org.apache.commons.lang3.ArrayUtils.add(intArray0, 9, 3);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 9, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(intArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray0), "[]");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "{}" + "'", str1, "{}");
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[0]");
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+    }
+
+    @Test
+    public void test2687() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2687");
+        int[] intArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        java.lang.String str1 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) intArray0);
+        int[] intArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray0);
+        java.lang.Double[] doubleArray7 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray7);
+        double[] doubleArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray7, 0.0d);
+        double[] doubleArray11 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray7);
+        double[] doubleArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray7, (double) 10L);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isEquals((java.lang.Object) intArray0, (java.lang.Object) doubleArray13);
+        double[] doubleArray15 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray13);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray13);
+        int int20 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray13, 0.0d, (int) (short) 1, (double) 3);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray13, (-1.0d), (int) (byte) 1, (double) 10L);
+        java.lang.Double[] doubleArray25 = org.apache.commons.lang3.ArrayUtils.toObject(doubleArray13);
+        org.junit.Assert.assertNotNull(intArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray0), "[]");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "{}" + "'", str1, "{}");
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[]");
+        org.junit.Assert.assertNotNull(doubleArray7);
+        org.junit.Assert.assertNotNull(doubleArray8);
+        org.junit.Assert.assertNotNull(doubleArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray10), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray11), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray13), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNotNull(doubleArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray15), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 1 + "'", int20 == 1);
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + 1 + "'", int24 == 1);
+        org.junit.Assert.assertNotNull(doubleArray25);
+    }
+
+    @Test
+    public void test2688() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2688");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        int int15 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray7, (float) 10);
+        float[] floatArray18 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) (short) 1);
+        float[] floatArray19 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        boolean boolean20 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(floatArray19);
+        float[] floatArray23 = new float[] { (-1L), (byte) 1 };
+        int int25 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray23, (float) (byte) 10);
+        int int28 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray23, (float) (byte) -1, (int) '#');
+        int int30 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray23, 10.0f);
+        float[] floatArray31 = org.apache.commons.lang3.ArrayUtils.clone(floatArray23);
+        float[] floatArray32 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray19, floatArray31);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(floatArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray18), "[]");
+        org.junit.Assert.assertNotNull(floatArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray19), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
+        org.junit.Assert.assertNotNull(floatArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray23), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + 0 + "'", int28 == 0);
+        org.junit.Assert.assertTrue("'" + int30 + "' != '" + (-1) + "'", int30 == (-1));
+        org.junit.Assert.assertNotNull(floatArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray31), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray32), "[-1.0, -1.0, 1.0, -1.0, 1.0]");
+    }
+
+    @Test
+    public void test2689() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2689");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray3, (double) ' ');
+        int int20 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray16, (double) '4', 3, 0.0d);
+        double[] doubleArray24 = new double[] { (short) 100, 1, (-1.0d) };
+        int int27 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray24, (double) 0.0f, (int) (short) 0);
+        int int30 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray24, 0.0d, 10);
+        int int32 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray24, (double) (byte) 10);
+        int int35 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray24, (double) '4', (int) (short) 10);
+        double[] doubleArray37 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray24, (double) ' ');
+        double[] doubleArray38 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray16, doubleArray37);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray16), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray24), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
+        org.junit.Assert.assertTrue("'" + int30 + "' != '" + (-1) + "'", int30 == (-1));
+        org.junit.Assert.assertTrue("'" + int32 + "' != '" + (-1) + "'", int32 == (-1));
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray37), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray38), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+    }
+
+    @Test
+    public void test2690() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2690");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        double[] doubleArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray3, (double) (byte) 10);
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray3, (double) (short) 1);
+        double[] doubleArray12 = org.apache.commons.lang3.ArrayUtils.add(doubleArray3, 10.0d);
+        boolean boolean13 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray12);
+        double[] doubleArray14 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray12);
+        org.apache.commons.lang3.ArrayUtils.reverse(doubleArray14);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray14, (double) (-1L), (double) (-1));
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray8), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertNotNull(doubleArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray12), "[100.0, 1.0, -1.0, 10.0]");
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNotNull(doubleArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray14), "[10.0, -1.0, 1.0, 100.0]");
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+    }
+
+    @Test
+    public void test2691() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2691");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray6 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray7 = org.apache.commons.lang3.ArrayUtils.toObject(intArray6);
+        int[] intArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray7, (int) 'a');
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.clone(intArray9);
+        int[] intArray11 = org.apache.commons.lang3.ArrayUtils.addAll(intArray2, intArray9);
+        int[] intArray12 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        java.lang.String str13 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) intArray12);
+        int[] intArray14 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray12);
+        java.lang.Double[] doubleArray19 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray20 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray19);
+        double[] doubleArray22 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray19, 0.0d);
+        double[] doubleArray23 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray19);
+        double[] doubleArray25 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray19, (double) 10L);
+        boolean boolean26 = org.apache.commons.lang3.ArrayUtils.isEquals((java.lang.Object) intArray12, (java.lang.Object) doubleArray25);
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray12);
+        boolean boolean28 = org.apache.commons.lang3.ArrayUtils.isSameLength(intArray9, intArray12);
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray12);
+        int int32 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray12, 10, (int) (short) 10);
+        int[] intArray34 = org.apache.commons.lang3.ArrayUtils.removeElement(intArray12, (int) (short) 100);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertNotNull(intArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray11), "[35, 0, 35, 0]");
+        org.junit.Assert.assertNotNull(intArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray12), "[]");
+        org.junit.Assert.assertEquals("'" + str13 + "' != '" + "{}" + "'", str13, "{}");
+        org.junit.Assert.assertNotNull(intArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray14), "[]");
+        org.junit.Assert.assertNotNull(doubleArray19);
+        org.junit.Assert.assertNotNull(doubleArray20);
+        org.junit.Assert.assertNotNull(doubleArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray22), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray23), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray25), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+        org.junit.Assert.assertTrue("'" + int32 + "' != '" + (-1) + "'", int32 == (-1));
+        org.junit.Assert.assertNotNull(intArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray34), "[]");
+    }
+
+    @Test
+    public void test2692() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2692");
+        long[] longArray2 = new long[] { 100L, 'a' };
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.subarray(longArray2, (int) (short) 10, 100);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray5);
+        long[] longArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray5, (long) 0);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(longArray8, (long) 4, (int) '4');
+        long[] longArray15 = new long[] { 10L, 100L, '#' };
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray15);
+        java.lang.Long[] longArray17 = org.apache.commons.lang3.ArrayUtils.toObject(longArray15);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray8, longArray15);
+        java.lang.Long[] longArray19 = org.apache.commons.lang3.ArrayUtils.toObject(longArray15);
+        long[] longArray20 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray19);
+        java.lang.Long[] longArray21 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray19);
+        java.lang.Long[] longArray22 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray21);
+        java.lang.Long[] longArray23 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray22);
+        long[] longArray25 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray23, (long) '#');
+        boolean boolean26 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray25);
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(longArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray8), "[]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNotNull(longArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray15), "[10, 100, 35]");
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + true + "'", boolean16 == true);
+        org.junit.Assert.assertNotNull(longArray17);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(longArray19);
+        org.junit.Assert.assertNotNull(longArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray20), "[10, 100, 35]");
+        org.junit.Assert.assertNotNull(longArray21);
+        org.junit.Assert.assertNotNull(longArray22);
+        org.junit.Assert.assertNotNull(longArray23);
+        org.junit.Assert.assertNotNull(longArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray25), "[10, 100, 35]");
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+    }
+
+    @Test
+    public void test2693() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2693");
+        short[] shortArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        java.lang.Short[] shortArray4 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray4);
+        short[] shortArray7 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray5, (short) 0);
+        short[] shortArray8 = org.apache.commons.lang3.ArrayUtils.clone(shortArray7);
+        org.apache.commons.lang3.ArrayUtils.reverse(shortArray8);
+        int int12 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray8, (short) (byte) -1, (int) '#');
+        boolean boolean13 = org.apache.commons.lang3.ArrayUtils.isSameLength(shortArray0, shortArray8);
+        org.apache.commons.lang3.ArrayUtils.reverse(shortArray0);
+        short[] shortArray16 = org.apache.commons.lang3.ArrayUtils.add(shortArray0, (short) -1);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.contains(shortArray0, (short) (byte) -1);
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray0), "[]");
+        org.junit.Assert.assertNotNull(shortArray4);
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray5), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray7), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray8), "[1, 100, -1]");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNotNull(shortArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray16), "[-1]");
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+    }
+
+    @Test
+    public void test2694() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2694");
+        java.lang.Character[] charArray0 = new java.lang.Character[] {};
+        java.lang.Character[] charArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray0);
+        long[] longArray4 = new long[] { (byte) 10, (byte) 100 };
+        java.lang.Long[] longArray5 = org.apache.commons.lang3.ArrayUtils.toObject(longArray4);
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) charArray1, (java.lang.Object) longArray5, 1);
+        long[] longArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray5);
+        long[] longArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray5, 0L);
+        java.lang.Long[] longArray11 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray5);
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray5, (long) (byte) -1);
+        // The following exception was thrown during execution in test generation
+        try {
+            long[] longArray16 = org.apache.commons.lang3.ArrayUtils.add(longArray13, (int) 'a', (long) 3);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 97, Length: 2");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(charArray0);
+        org.junit.Assert.assertNotNull(charArray1);
+        org.junit.Assert.assertNotNull(longArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray4), "[10, 100]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(longArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray8), "[10, 100]");
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[10, 100]");
+        org.junit.Assert.assertNotNull(longArray11);
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[10, 100]");
+    }
+
+    @Test
+    public void test2695() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2695");
+        long[] longArray2 = new long[] { 100L, 'a' };
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.subarray(longArray2, (int) (short) 10, 100);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray5);
+        long[] longArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray5, (long) 0);
+        java.lang.Long[] longArray9 = org.apache.commons.lang3.ArrayUtils.toObject(longArray8);
+        long[] longArray11 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray9, 0L);
+        long[] longArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray9);
+        long[] longArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray9, (long) 5);
+        long[] longArray15 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray14);
+        // The following exception was thrown during execution in test generation
+        try {
+            long[] longArray18 = org.apache.commons.lang3.ArrayUtils.add(longArray14, 10, (long) (short) -1);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 10, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(longArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray8), "[]");
+        org.junit.Assert.assertNotNull(longArray9);
+        org.junit.Assert.assertNotNull(longArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray11), "[]");
+        org.junit.Assert.assertNotNull(longArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray12), "[]");
+        org.junit.Assert.assertNotNull(longArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray14), "[]");
+        org.junit.Assert.assertNotNull(longArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray15), "[]");
+    }
+
+    @Test
+    public void test2696() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2696");
+        java.lang.Float[] floatArray1 = new java.lang.Float[] { 1.0f };
+        java.lang.Float[] floatArray3 = new java.lang.Float[] { 1.0f };
+        java.lang.Float[] floatArray5 = new java.lang.Float[] { 1.0f };
+        java.lang.Float[] floatArray7 = new java.lang.Float[] { 1.0f };
+        java.lang.Float[] floatArray9 = new java.lang.Float[] { 1.0f };
+        java.lang.Float[][] floatArray10 = new java.lang.Float[][] { floatArray1, floatArray3, floatArray5, floatArray7, floatArray9 };
+        java.lang.Float[][][] floatArray11 = new java.lang.Float[][][] { floatArray10 };
+        java.lang.Float[][][][] floatArray12 = new java.lang.Float[][][][] { floatArray11 };
+        java.lang.Float[][][][] floatArray15 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray12, 0, 100);
+        org.junit.Assert.assertNotNull(floatArray1);
+        org.junit.Assert.assertNotNull(floatArray3);
+        org.junit.Assert.assertNotNull(floatArray5);
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertNotNull(floatArray9);
+        org.junit.Assert.assertNotNull(floatArray10);
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertNotNull(floatArray12);
+        org.junit.Assert.assertNotNull(floatArray15);
+    }
+
+    @Test
+    public void test2697() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2697");
+        java.lang.Byte[] byteArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_OBJECT_ARRAY;
+        java.lang.Byte[] byteArray5 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray5, (byte) -1);
+        java.lang.Byte[] byteArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray5);
+        java.lang.Character[] charArray14 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray15 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray14);
+        java.lang.Character[] charArray16 = org.apache.commons.lang3.ArrayUtils.toObject(charArray15);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray8, (java.lang.Object) charArray15);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) byteArray0, (java.lang.Object[]) byteArray8);
+        java.lang.Byte[] byteArray19 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray0);
+        byte[] byteArray21 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray19, (byte) -1);
+        int int23 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray21, (byte) 0);
+        org.junit.Assert.assertNotNull(byteArray0);
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray8);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray15), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray15), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray15), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(byteArray19);
+        org.junit.Assert.assertNotNull(byteArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray21), "[]");
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+    }
+
+    @Test
+    public void test2698() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2698");
+        java.lang.Byte[] byteArray1 = new java.lang.Byte[] { (byte) -1 };
+        java.lang.Byte[] byteArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        byte[] byteArray3 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray2);
+        byte[] byteArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray2, (byte) 10);
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertNotNull(byteArray2);
+        org.junit.Assert.assertNotNull(byteArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray3), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray5), "[-1]");
+    }
+
+    @Test
+    public void test2699() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2699");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        java.lang.Byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        long[] longArray10 = new long[] { 100L, 'a' };
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.subarray(longArray10, (int) (short) 10, 100);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray13);
+        long[] longArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray13, (long) 0);
+        java.lang.Long[] longArray17 = org.apache.commons.lang3.ArrayUtils.toObject(longArray16);
+        java.io.Serializable[] serializableArray18 = org.apache.commons.lang3.ArrayUtils.removeElement((java.io.Serializable[]) byteArray4, (java.lang.Object) longArray17);
+        long[] longArray20 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray17, (long) (-1));
+        java.lang.Long[] longArray21 = org.apache.commons.lang3.ArrayUtils.toObject(longArray20);
+        boolean boolean22 = org.apache.commons.lang3.ArrayUtils.isEmpty((java.lang.Object[]) longArray21);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(longArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray16), "[]");
+        org.junit.Assert.assertNotNull(longArray17);
+        org.junit.Assert.assertNotNull(serializableArray18);
+        org.junit.Assert.assertNotNull(longArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray20), "[]");
+        org.junit.Assert.assertNotNull(longArray21);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
+    }
+
+    @Test
+    public void test2700() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2700");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray27, (int) '4', (int) (byte) 1);
+        boolean boolean33 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray30, (double) '4', 0.0d);
+        boolean boolean34 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray30);
+        boolean boolean35 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray30);
+        int int38 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray30, 100.0d, 0.0d);
+        java.lang.Double[] doubleArray39 = org.apache.commons.lang3.ArrayUtils.toObject(doubleArray30);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[]");
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + false + "'", boolean33 == false);
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + true + "'", boolean34 == true);
+        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + true + "'", boolean35 == true);
+        org.junit.Assert.assertTrue("'" + int38 + "' != '" + (-1) + "'", int38 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray39);
+    }
+
+    @Test
+    public void test2701() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2701");
+        java.lang.Short[] shortArray3 = new java.lang.Short[] { (short) 10, (short) 10, (short) 0 };
+        short[] shortArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3, (short) 1);
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        java.lang.Short[] shortArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray5), "[10, 10, 0]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[10, 10, 0]");
+        org.junit.Assert.assertNotNull(shortArray7);
+    }
+
+    @Test
+    public void test2702() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2702");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray4, (int) (short) -1, (int) '#');
+        boolean[] booleanArray12 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray10, false);
+        boolean boolean13 = org.apache.commons.lang3.ArrayUtils.isEmpty(booleanArray10);
+        boolean[] booleanArray16 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray10, 2, (int) (short) -1);
+        java.lang.Boolean[] booleanArray17 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray10);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray12), "[true, true, false]");
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[]");
+        org.junit.Assert.assertNotNull(booleanArray17);
+    }
+
+    @Test
+    public void test2703() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2703");
+        short[] shortArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        short[] shortArray1 = org.apache.commons.lang3.ArrayUtils.clone(shortArray0);
+        short[] shortArray3 = org.apache.commons.lang3.ArrayUtils.add(shortArray0, (short) 100);
+        int int5 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(shortArray0, (short) 10);
+        // The following exception was thrown during execution in test generation
+        try {
+            short[] shortArray8 = org.apache.commons.lang3.ArrayUtils.add(shortArray0, (int) (byte) -1, (short) (byte) 10);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: -1, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray0), "[]");
+        org.junit.Assert.assertNotNull(shortArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray1), "[]");
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray3), "[100]");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
+    }
+
+    @Test
+    public void test2704() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2704");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        boolean boolean28 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(doubleArray27);
+        boolean boolean29 = org.apache.commons.lang3.ArrayUtils.isEmpty(doubleArray27);
+        boolean boolean30 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(doubleArray27);
+        java.lang.Double[] doubleArray35 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray36 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray35);
+        double[] doubleArray38 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray35, 0.0d);
+        double[] doubleArray39 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray35);
+        double[] doubleArray41 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray35, (double) 10L);
+        double[] doubleArray43 = org.apache.commons.lang3.ArrayUtils.add(doubleArray41, (double) 1);
+        double[] doubleArray45 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray43, (double) 5);
+        double[] doubleArray47 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray43, (double) (byte) 100);
+        int int50 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray43, (double) 0, (double) 1.0f);
+        double[] doubleArray53 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray43, (int) 'a', 100);
+        double[] doubleArray54 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray27, doubleArray43);
+        int int57 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray43, 0.0d, (double) 10L);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + true + "'", boolean30 == true);
+        org.junit.Assert.assertNotNull(doubleArray35);
+        org.junit.Assert.assertNotNull(doubleArray36);
+        org.junit.Assert.assertNotNull(doubleArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray38), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray39), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray41), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray43), "[10.0, -1.0, 10.0, 0.0, 1.0]");
+        org.junit.Assert.assertNotNull(doubleArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray45), "[10.0, -1.0, 10.0, 0.0, 1.0]");
+        org.junit.Assert.assertNotNull(doubleArray47);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray47), "[10.0, -1.0, 10.0, 0.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int50 + "' != '" + 1 + "'", int50 == 1);
+        org.junit.Assert.assertNotNull(doubleArray53);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray53), "[]");
+        org.junit.Assert.assertNotNull(doubleArray54);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray54), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int57 + "' != '" + 4 + "'", int57 == 4);
+    }
+
+    @Test
+    public void test2705() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2705");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        float[] floatArray16 = org.apache.commons.lang3.ArrayUtils.add(floatArray7, (int) (short) 1, (float) 10);
+        float[] floatArray19 = new float[] { (-1L), (byte) 1 };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray19, (float) (byte) 10);
+        float[] floatArray24 = org.apache.commons.lang3.ArrayUtils.add(floatArray19, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray25 = org.apache.commons.lang3.ArrayUtils.clone(floatArray24);
+        float[] floatArray28 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray24, (int) '#', (int) 'a');
+        float[] floatArray30 = org.apache.commons.lang3.ArrayUtils.remove(floatArray24, (int) (byte) 0);
+        int int32 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray24, (float) 10);
+        float[] floatArray33 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray24);
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray33, (float) 1L);
+        float[] floatArray38 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray33, 4, (int) (short) 100);
+        float[] floatArray41 = new float[] { (-1L), (byte) 1 };
+        int int43 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray41, (float) (byte) 10);
+        float[] floatArray45 = org.apache.commons.lang3.ArrayUtils.add(floatArray41, (float) (short) 1);
+        float[] floatArray47 = org.apache.commons.lang3.ArrayUtils.add(floatArray45, 0.0f);
+        boolean boolean49 = org.apache.commons.lang3.ArrayUtils.contains(floatArray47, (float) (short) 0);
+        float[] floatArray52 = new float[] { (-1L), (byte) 1 };
+        int int54 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray52, (float) (byte) 10);
+        float[] floatArray57 = org.apache.commons.lang3.ArrayUtils.add(floatArray52, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray58 = org.apache.commons.lang3.ArrayUtils.clone(floatArray57);
+        float[] floatArray61 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray57, (int) '#', (int) 'a');
+        float[] floatArray63 = org.apache.commons.lang3.ArrayUtils.remove(floatArray57, (int) (byte) 0);
+        int int65 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray57, (float) 10);
+        float[] floatArray66 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray57);
+        float[] floatArray69 = new float[] { (-1L), (byte) 1 };
+        int int71 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray69, (float) (byte) 10);
+        float[] floatArray74 = org.apache.commons.lang3.ArrayUtils.add(floatArray69, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray75 = org.apache.commons.lang3.ArrayUtils.clone(floatArray74);
+        float[] floatArray78 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray74, (int) '#', (int) 'a');
+        float[] floatArray80 = org.apache.commons.lang3.ArrayUtils.remove(floatArray74, (int) (byte) 0);
+        int int82 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray74, (float) 10);
+        boolean boolean83 = org.apache.commons.lang3.ArrayUtils.isSameLength(floatArray66, floatArray74);
+        float[] floatArray84 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray47, floatArray74);
+        float[] floatArray85 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray33, floatArray84);
+        boolean boolean86 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray85);
+        float[] floatArray87 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray7, floatArray85);
+        boolean boolean89 = org.apache.commons.lang3.ArrayUtils.contains(floatArray7, (float) (byte) 1);
+        int int91 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray7, (float) 10L);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[-1.0, 10.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray19), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertNotNull(floatArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray24), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray25), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray28), "[]");
+        org.junit.Assert.assertNotNull(floatArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray30), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int32 + "' != '" + (-1) + "'", int32 == (-1));
+        org.junit.Assert.assertNotNull(floatArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray33), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + 2 + "'", int35 == 2);
+        org.junit.Assert.assertNotNull(floatArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray38), "[]");
+        org.junit.Assert.assertNotNull(floatArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray41), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int43 + "' != '" + (-1) + "'", int43 == (-1));
+        org.junit.Assert.assertNotNull(floatArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray45), "[-1.0, 1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray47);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray47), "[-1.0, 1.0, 1.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + true + "'", boolean49 == true);
+        org.junit.Assert.assertNotNull(floatArray52);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray52), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int54 + "' != '" + (-1) + "'", int54 == (-1));
+        org.junit.Assert.assertNotNull(floatArray57);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray57), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray58);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray58), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray61);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray61), "[]");
+        org.junit.Assert.assertNotNull(floatArray63);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray63), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int65 + "' != '" + (-1) + "'", int65 == (-1));
+        org.junit.Assert.assertNotNull(floatArray66);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray66), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray69);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray69), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int71 + "' != '" + (-1) + "'", int71 == (-1));
+        org.junit.Assert.assertNotNull(floatArray74);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray74), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray75);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray75), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray78);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray78), "[]");
+        org.junit.Assert.assertNotNull(floatArray80);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray80), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int82 + "' != '" + (-1) + "'", int82 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean83 + "' != '" + true + "'", boolean83 == true);
+        org.junit.Assert.assertNotNull(floatArray84);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray84), "[-1.0, 1.0, 1.0, 0.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray85);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray85), "[-1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 0.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean86 + "' != '" + false + "'", boolean86 == false);
+        org.junit.Assert.assertNotNull(floatArray87);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray87), "[-1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 0.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean89 + "' != '" + true + "'", boolean89 == true);
+        org.junit.Assert.assertTrue("'" + int91 + "' != '" + (-1) + "'", int91 == (-1));
+    }
+
+    @Test
+    public void test2706() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2706");
+        byte[] byteArray0 = null;
+        boolean boolean2 = org.apache.commons.lang3.ArrayUtils.contains(byteArray0, (byte) 100);
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+    }
+
+    @Test
+    public void test2707() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2707");
+        java.lang.Class<?>[] wildcardClassArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_CLASS_ARRAY;
+        boolean boolean1 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(wildcardClassArray0);
+        boolean[] booleanArray6 = new boolean[] { false, true, true, false };
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray6, true, 10);
+        boolean[] booleanArray12 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray6, (int) (short) -1, (int) '#');
+        boolean[] booleanArray14 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray12, false);
+        boolean boolean15 = org.apache.commons.lang3.ArrayUtils.isEmpty(booleanArray12);
+        boolean[] booleanArray17 = org.apache.commons.lang3.ArrayUtils.add(booleanArray12, true);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(booleanArray12);
+        boolean[] booleanArray21 = org.apache.commons.lang3.ArrayUtils.add(booleanArray12, (int) (short) 1, true);
+        boolean boolean22 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) wildcardClassArray0, (java.lang.Object) booleanArray21);
+        org.junit.Assert.assertNotNull(wildcardClassArray0);
+        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
+        org.junit.Assert.assertNotNull(booleanArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray6), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray12), "[false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray14), "[true, true, false]");
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertNotNull(booleanArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray17), "[false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + true + "'", boolean18 == true);
+        org.junit.Assert.assertNotNull(booleanArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray21), "[false, true, true, true, false]");
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+    }
+
+    @Test
+    public void test2708() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2708");
+        java.lang.Character[] charArray5 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray5);
+        java.lang.Character[] charArray7 = org.apache.commons.lang3.ArrayUtils.toObject(charArray6);
+        char[] charArray8 = org.apache.commons.lang3.ArrayUtils.clone(charArray6);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray6);
+        java.lang.Byte[] byteArray14 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray16 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray14, (byte) -1);
+        java.lang.Byte[] byteArray17 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray14);
+        java.lang.Character[] charArray23 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray24 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray23);
+        java.lang.Character[] charArray25 = org.apache.commons.lang3.ArrayUtils.toObject(charArray24);
+        boolean boolean26 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray17, (java.lang.Object) charArray24);
+        char[] charArray29 = org.apache.commons.lang3.ArrayUtils.subarray(charArray24, (int) (short) 10, 100);
+        char[] charArray31 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray29, '#');
+        char[] charArray32 = org.apache.commons.lang3.ArrayUtils.clone(charArray29);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray29);
+        char[] charArray34 = org.apache.commons.lang3.ArrayUtils.clone(charArray29);
+        char[] charArray35 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray34);
+        boolean boolean36 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray6, charArray35);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray6), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray7);
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray8), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray8), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray8), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(byteArray14);
+        org.junit.Assert.assertNotNull(byteArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray16), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray17);
+        org.junit.Assert.assertNotNull(charArray23);
+        org.junit.Assert.assertNotNull(charArray24);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray24), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray24), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray24), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray25);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertNotNull(charArray29);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray29), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray29), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray29), "[]");
+        org.junit.Assert.assertNotNull(charArray31);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray31), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray31), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray31), "[]");
+        org.junit.Assert.assertNotNull(charArray32);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray32), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray32), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray32), "[]");
+        org.junit.Assert.assertNotNull(charArray34);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray34), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray34), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray34), "[]");
+        org.junit.Assert.assertNotNull(charArray35);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray35), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray35), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray35), "[]");
+        org.junit.Assert.assertTrue("'" + boolean36 + "' != '" + false + "'", boolean36 == false);
+    }
+
+    @Test
+    public void test2709() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2709");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        boolean boolean28 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(doubleArray27);
+        int int30 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray27, (double) 10L);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray27, (double) (short) 1);
+        double[] doubleArray34 = org.apache.commons.lang3.ArrayUtils.remove(doubleArray27, (int) (byte) 1);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        org.junit.Assert.assertTrue("'" + int30 + "' != '" + (-1) + "'", int30 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + true + "'", boolean32 == true);
+        org.junit.Assert.assertNotNull(doubleArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray34), "[100.0, -1.0, 100.0, 1.0, -1.0]");
+    }
+
+    @Test
+    public void test2710() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2710");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray27, (int) '4', (int) (byte) 1);
+        double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.add(doubleArray27, 0, (double) ' ');
+        double[] doubleArray34 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray27);
+        java.lang.Double[] doubleArray39 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray40 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray39);
+        java.lang.Long[] longArray41 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_OBJECT_ARRAY;
+        int int43 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) doubleArray39, (java.lang.Object) longArray41, (int) (short) 100);
+        java.lang.Double[] doubleArray44 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray39);
+        double[] doubleArray45 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray39);
+        double[] doubleArray47 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray39, (double) 100.0f);
+        double[] doubleArray48 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray34, doubleArray47);
+        int int52 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray48, (double) 100L, (int) (short) 100, (double) '#');
+        int int56 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray48, 0.0d, (int) (byte) 0, (double) 10.0f);
+        boolean boolean58 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray48, (double) 0L);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[]");
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[32.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray34), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray39);
+        org.junit.Assert.assertNotNull(doubleArray40);
+        org.junit.Assert.assertNotNull(longArray41);
+        org.junit.Assert.assertTrue("'" + int43 + "' != '" + (-1) + "'", int43 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray44);
+        org.junit.Assert.assertNotNull(doubleArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray45), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray47);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray47), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray48);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray48), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int52 + "' != '" + (-1) + "'", int52 == (-1));
+        org.junit.Assert.assertTrue("'" + int56 + "' != '" + 1 + "'", int56 == 1);
+        org.junit.Assert.assertTrue("'" + boolean58 + "' != '" + true + "'", boolean58 == true);
+    }
+
+    @Test
+    public void test2711() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2711");
+        long[] longArray1 = new long[] { 1L };
+        long[][] longArray2 = new long[][] { longArray1 };
+        java.lang.Character[] charArray5 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray5);
+        long[][] longArray7 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray2, (java.lang.Object) charArray5);
+        char[] charArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray5, '#');
+        int int12 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray9, 'a', (int) (byte) 0);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray9, 'a');
+        char[] charArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray9, 'a');
+        java.lang.Character[] charArray17 = org.apache.commons.lang3.ArrayUtils.toObject(charArray16);
+        org.junit.Assert.assertNotNull(longArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray1), "[1]");
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertNotNull(charArray9);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray9), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray9), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray9), "[#, #]");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray16), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray16), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray16), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray17);
+    }
+
+    @Test
+    public void test2712() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2712");
+        java.lang.Character[] charArray2 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray2);
+        char[] charArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray3);
+        char[] charArray7 = org.apache.commons.lang3.ArrayUtils.subarray(charArray4, (int) ' ', (int) '#');
+        java.lang.Character[] charArray8 = org.apache.commons.lang3.ArrayUtils.toObject(charArray4);
+        char[] charArray9 = org.apache.commons.lang3.ArrayUtils.EMPTY_CHAR_ARRAY;
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(charArray9);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray9);
+        java.lang.Character[] charArray12 = org.apache.commons.lang3.ArrayUtils.toObject(charArray9);
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray9, 'a');
+        char[] charArray15 = org.apache.commons.lang3.ArrayUtils.addAll(charArray4, charArray14);
+        char[] charArray16 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray14);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.contains(charArray16, 'a');
+        char[] charArray19 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray16);
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray3);
+        org.junit.Assert.assertNotNull(charArray4);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray4), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray4), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray4), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray7);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray7), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray7), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray7), "[]");
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertNotNull(charArray9);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray9), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray9), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray9), "[]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNotNull(charArray12);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[]");
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray15), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray15), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray15), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray16), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray16), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray16), "[]");
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(charArray19);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray19), "[]");
+    }
+
+    @Test
+    public void test2713() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2713");
+        char[] charArray5 = new char[] { '4', ' ', ' ', '#', '4' };
+        char[] charArray6 = org.apache.commons.lang3.ArrayUtils.clone(charArray5);
+        char[] charArray7 = null;
+        char[] charArray8 = org.apache.commons.lang3.ArrayUtils.addAll(charArray5, charArray7);
+        java.lang.Character[] charArray9 = org.apache.commons.lang3.ArrayUtils.toObject(charArray5);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray5);
+        java.lang.Byte[] byteArray15 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray17 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray15, (byte) -1);
+        java.lang.Byte[] byteArray18 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray15);
+        java.lang.Character[] charArray24 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray25 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray24);
+        java.lang.Character[] charArray26 = org.apache.commons.lang3.ArrayUtils.toObject(charArray25);
+        boolean boolean27 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray18, (java.lang.Object) charArray25);
+        char[] charArray30 = org.apache.commons.lang3.ArrayUtils.subarray(charArray25, (int) (short) 10, 100);
+        char[] charArray32 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray30, '#');
+        char[] charArray33 = org.apache.commons.lang3.ArrayUtils.clone(charArray30);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray33);
+        char[] charArray36 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray33, '4');
+        java.lang.Character[] charArray39 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray40 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray39);
+        char[] charArray41 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray40);
+        char[] charArray44 = org.apache.commons.lang3.ArrayUtils.subarray(charArray41, (int) ' ', (int) '#');
+        boolean boolean45 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray36, charArray41);
+        char[] charArray46 = org.apache.commons.lang3.ArrayUtils.addAll(charArray5, charArray41);
+        char[] charArray49 = org.apache.commons.lang3.ArrayUtils.add(charArray5, 2, '4');
+        char[] charArray51 = org.apache.commons.lang3.ArrayUtils.remove(charArray5, 4);
+        boolean boolean52 = org.apache.commons.lang3.ArrayUtils.isEmpty(charArray5);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray5), "4#  4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray5), "4#  4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray5), "[4, #,  ,  , 4]");
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray6), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray6), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray6), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray8), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray8), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray8), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray9);
+        org.junit.Assert.assertNotNull(byteArray15);
+        org.junit.Assert.assertNotNull(byteArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray17), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray18);
+        org.junit.Assert.assertNotNull(charArray24);
+        org.junit.Assert.assertNotNull(charArray25);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray25), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray25), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray25), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray26);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
+        org.junit.Assert.assertNotNull(charArray30);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray30), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray30), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray30), "[]");
+        org.junit.Assert.assertNotNull(charArray32);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray32), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray32), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray32), "[]");
+        org.junit.Assert.assertNotNull(charArray33);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray33), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray33), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray33), "[]");
+        org.junit.Assert.assertNotNull(charArray36);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray36), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray36), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray36), "[]");
+        org.junit.Assert.assertNotNull(charArray39);
+        org.junit.Assert.assertNotNull(charArray40);
+        org.junit.Assert.assertNotNull(charArray41);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray41), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray41), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray41), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray44);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray44), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray44), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray44), "[]");
+        org.junit.Assert.assertTrue("'" + boolean45 + "' != '" + false + "'", boolean45 == false);
+        org.junit.Assert.assertNotNull(charArray46);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray46), "4#  4##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray46), "4#  4##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray46), "[4, #,  ,  , 4, #, #]");
+        org.junit.Assert.assertNotNull(charArray49);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray49), "4#4  4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray49), "4#4  4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray49), "[4, #, 4,  ,  , 4]");
+        org.junit.Assert.assertNotNull(charArray51);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray51), "4#  ");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray51), "4#  ");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray51), "[4, #,  ,  ]");
+        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + false + "'", boolean52 == false);
+    }
+
+    @Test
+    public void test2714() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2714");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        float[] floatArray16 = new float[] { (-1L), (byte) 1 };
+        int int18 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray16, (float) (byte) 10);
+        float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.add(floatArray16, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray22 = org.apache.commons.lang3.ArrayUtils.clone(floatArray21);
+        float[] floatArray25 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray21, (int) '#', (int) 'a');
+        float[] floatArray26 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray21);
+        float[] floatArray28 = org.apache.commons.lang3.ArrayUtils.remove(floatArray21, 0);
+        float[] floatArray29 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray13, floatArray21);
+        boolean boolean30 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray29);
+        float[] floatArray33 = new float[] { (-1L), (byte) 1 };
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray33, (float) (byte) 10);
+        int int38 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray33, (float) (byte) -1, (int) '#');
+        float[] floatArray39 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray33);
+        int int42 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray39, 0.0f, (int) (byte) -1);
+        float[] floatArray43 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray29, floatArray39);
+        java.lang.Float[] floatArray44 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray43);
+        float[] floatArray45 = org.apache.commons.lang3.ArrayUtils.toPrimitive(floatArray44);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray22), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray25), "[]");
+        org.junit.Assert.assertNotNull(floatArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray26), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray28), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray29), "[-1.0, 1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
+        org.junit.Assert.assertNotNull(floatArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray33), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertTrue("'" + int38 + "' != '" + 0 + "'", int38 == 0);
+        org.junit.Assert.assertNotNull(floatArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray39), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int42 + "' != '" + (-1) + "'", int42 == (-1));
+        org.junit.Assert.assertNotNull(floatArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray43), "[-1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray44);
+        org.junit.Assert.assertNotNull(floatArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray45), "[-1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0]");
+    }
+
+    @Test
+    public void test2715() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2715");
+        java.lang.Byte[] byteArray1 = new java.lang.Byte[] { (byte) -1 };
+        java.lang.Byte[] byteArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        byte[] byteArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray1, (byte) 1);
+        java.lang.Byte[] byteArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray5);
+        int int8 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray6, (byte) -1);
+        // The following exception was thrown during execution in test generation
+        try {
+            byte[] byteArray11 = org.apache.commons.lang3.ArrayUtils.add(byteArray6, 100, (byte) 10);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 100, Length: 1");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertNotNull(byteArray2);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray4), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[-1]");
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 0 + "'", int8 == 0);
+    }
+
+    @Test
+    public void test2716() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2716");
+        java.lang.Character[] charArray5 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray5);
+        java.lang.Character[] charArray7 = org.apache.commons.lang3.ArrayUtils.toObject(charArray6);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray6);
+        char[] charArray11 = org.apache.commons.lang3.ArrayUtils.subarray(charArray6, (int) (byte) -1, (int) (byte) 1);
+        java.lang.Character[] charArray17 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray18 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray17);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray11, charArray18);
+        char[] charArray21 = org.apache.commons.lang3.ArrayUtils.add(charArray11, 'a');
+        char[] charArray22 = null;
+        boolean boolean23 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray11, charArray22);
+        boolean[] booleanArray29 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray31 = org.apache.commons.lang3.ArrayUtils.add(booleanArray29, true);
+        boolean[] booleanArray33 = org.apache.commons.lang3.ArrayUtils.add(booleanArray29, false);
+        boolean boolean34 = org.apache.commons.lang3.ArrayUtils.isEquals((java.lang.Object) charArray11, (java.lang.Object) booleanArray33);
+        char[] charArray36 = org.apache.commons.lang3.ArrayUtils.remove(charArray11, 0);
+        boolean boolean37 = org.apache.commons.lang3.ArrayUtils.isEmpty(charArray36);
+        java.lang.Character[] charArray38 = new java.lang.Character[] {};
+        java.lang.Character[] charArray39 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray38);
+        java.lang.Character[] charArray40 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray39);
+        char[] charArray42 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray39, ' ');
+        boolean boolean43 = org.apache.commons.lang3.ArrayUtils.isEmpty(charArray42);
+        int int46 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray42, 'a', 100);
+        char[] charArray47 = org.apache.commons.lang3.ArrayUtils.addAll(charArray36, charArray42);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray6), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray7);
+        org.junit.Assert.assertNotNull(charArray11);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray11), "4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray11), "4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray11), "[4]");
+        org.junit.Assert.assertNotNull(charArray17);
+        org.junit.Assert.assertNotNull(charArray18);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray18), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray18), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray18), "[4, a,  , a, 4]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNotNull(charArray21);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray21), "4a");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray21), "4a");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray21), "[4, a]");
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertNotNull(booleanArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray29), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray31), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray33), "[false, false, true, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + false + "'", boolean34 == false);
+        org.junit.Assert.assertNotNull(charArray36);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray36), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray36), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray36), "[]");
+        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + true + "'", boolean37 == true);
+        org.junit.Assert.assertNotNull(charArray38);
+        org.junit.Assert.assertNotNull(charArray39);
+        org.junit.Assert.assertNotNull(charArray40);
+        org.junit.Assert.assertNotNull(charArray42);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray42), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray42), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray42), "[]");
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + true + "'", boolean43 == true);
+        org.junit.Assert.assertTrue("'" + int46 + "' != '" + (-1) + "'", int46 == (-1));
+        org.junit.Assert.assertNotNull(charArray47);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray47), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray47), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray47), "[]");
+    }
+
+    @Test
+    public void test2717() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2717");
+        byte[] byteArray5 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray5, (byte) 0);
+        byte[] byteArray9 = org.apache.commons.lang3.ArrayUtils.add(byteArray5, (byte) 10);
+        byte[] byteArray10 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        java.lang.Byte[] byteArray15 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray17 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray15, (byte) -1);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray17);
+        byte[] byteArray20 = org.apache.commons.lang3.ArrayUtils.add(byteArray17, (byte) 100);
+        byte[] byteArray21 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray10, byteArray20);
+        byte[] byteArray22 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray5, byteArray20);
+        boolean boolean23 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray5);
+        byte[] byteArray24 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        byte[] byteArray25 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray24);
+        boolean boolean26 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray24);
+        int int28 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray24, (byte) 0);
+        java.lang.Byte[] byteArray29 = org.apache.commons.lang3.ArrayUtils.toObject(byteArray24);
+        byte[] byteArray30 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray5, byteArray24);
+        int int33 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray5, (byte) 10, (int) (short) 1);
+        byte[] byteArray34 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray5), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 4 + "'", int7 == 4);
+        org.junit.Assert.assertNotNull(byteArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray9), "[0, 1, 100, 100, 0, 10]");
+        org.junit.Assert.assertNotNull(byteArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray10), "[]");
+        org.junit.Assert.assertNotNull(byteArray15);
+        org.junit.Assert.assertNotNull(byteArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray17), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(byteArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray20), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray21), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray22), "[0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertNotNull(byteArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray24), "[]");
+        org.junit.Assert.assertNotNull(byteArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray25), "[]");
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + true + "'", boolean26 == true);
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + (-1) + "'", int28 == (-1));
+        org.junit.Assert.assertNotNull(byteArray29);
+        org.junit.Assert.assertNotNull(byteArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray30), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int33 + "' != '" + (-1) + "'", int33 == (-1));
+        org.junit.Assert.assertNotNull(byteArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray34), "[0, 1, 100, 100, 0]");
+    }
+
+    @Test
+    public void test2718() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2718");
+        java.lang.Character[] charArray2 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray2);
+        char[] charArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray3);
+        char[] charArray7 = org.apache.commons.lang3.ArrayUtils.subarray(charArray4, (int) ' ', (int) '#');
+        java.lang.Character[] charArray8 = org.apache.commons.lang3.ArrayUtils.toObject(charArray4);
+        char[] charArray9 = org.apache.commons.lang3.ArrayUtils.EMPTY_CHAR_ARRAY;
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(charArray9);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray9);
+        java.lang.Character[] charArray12 = org.apache.commons.lang3.ArrayUtils.toObject(charArray9);
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray9, 'a');
+        char[] charArray15 = org.apache.commons.lang3.ArrayUtils.addAll(charArray4, charArray14);
+        char[] charArray16 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray14);
+        char[] charArray18 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray14, ' ');
+        // The following exception was thrown during execution in test generation
+        try {
+            char[] charArray20 = org.apache.commons.lang3.ArrayUtils.remove(charArray18, (int) (short) 10);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 10, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray3);
+        org.junit.Assert.assertNotNull(charArray4);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray4), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray4), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray4), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray7);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray7), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray7), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray7), "[]");
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertNotNull(charArray9);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray9), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray9), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray9), "[]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNotNull(charArray12);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[]");
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray15), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray15), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray15), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray16), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray16), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray16), "[]");
+        org.junit.Assert.assertNotNull(charArray18);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray18), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray18), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray18), "[]");
+    }
+
+    @Test
+    public void test2719() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2719");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        java.lang.Double[] doubleArray32 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray32);
+        double[] doubleArray35 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray32, 0.0d);
+        double[] doubleArray36 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray32);
+        double[] doubleArray37 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray27, doubleArray36);
+        double[] doubleArray38 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray37);
+        org.apache.commons.lang3.ArrayUtils.reverse(doubleArray38);
+        double[] doubleArray43 = new double[] { 10.0f, (short) 10, 'a' };
+        int int47 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray43, (-1.0d), (int) (byte) -1, (double) (-1.0f));
+        double[] doubleArray49 = org.apache.commons.lang3.ArrayUtils.add(doubleArray43, (double) 100L);
+        boolean boolean50 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(doubleArray43);
+        double[] doubleArray51 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray43);
+        double[] doubleArray52 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray38, doubleArray51);
+        boolean boolean55 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray52, (double) 10, (double) 6);
+        int int58 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray52, (double) 100.0f, (double) 0L);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertNotNull(doubleArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray35), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray36), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray37), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray38), "[0.0, 10.0, -1.0, 10.0, -1.0, 1.0, 100.0, -1.0, 1.0, 100.0]");
+        org.junit.Assert.assertNotNull(doubleArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray43), "[10.0, 10.0, 97.0]");
+        org.junit.Assert.assertTrue("'" + int47 + "' != '" + (-1) + "'", int47 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray49), "[10.0, 10.0, 97.0, 100.0]");
+        org.junit.Assert.assertTrue("'" + boolean50 + "' != '" + true + "'", boolean50 == true);
+        org.junit.Assert.assertNotNull(doubleArray51);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray51), "[10.0, 10.0, 97.0]");
+        org.junit.Assert.assertNotNull(doubleArray52);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray52), "[0.0, 10.0, -1.0, 10.0, -1.0, 1.0, 100.0, -1.0, 1.0, 100.0, 10.0, 10.0, 97.0]");
+        org.junit.Assert.assertTrue("'" + boolean55 + "' != '" + true + "'", boolean55 == true);
+        org.junit.Assert.assertTrue("'" + int58 + "' != '" + 6 + "'", int58 == 6);
+    }
+
+    @Test
+    public void test2720() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2720");
+        short[] shortArray5 = new short[] { (byte) 0, (byte) 100, (short) 1, (short) 100, (short) -1 };
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.EMPTY_SHORT_ARRAY;
+        short[] shortArray7 = org.apache.commons.lang3.ArrayUtils.clone(shortArray6);
+        short[] shortArray9 = org.apache.commons.lang3.ArrayUtils.add(shortArray6, (short) 100);
+        int int11 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(shortArray6, (short) 10);
+        short[] shortArray13 = org.apache.commons.lang3.ArrayUtils.add(shortArray6, (short) (byte) -1);
+        short[] shortArray15 = org.apache.commons.lang3.ArrayUtils.add(shortArray13, (short) (byte) -1);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.isSameLength(shortArray5, shortArray15);
+        int int19 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray5, (short) (byte) -1, 4);
+        org.junit.Assert.assertNotNull(shortArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray5), "[0, 100, 1, 100, -1]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[]");
+        org.junit.Assert.assertNotNull(shortArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray7), "[]");
+        org.junit.Assert.assertNotNull(shortArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray9), "[100]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNotNull(shortArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray13), "[-1]");
+        org.junit.Assert.assertNotNull(shortArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray15), "[-1, -1]");
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 4 + "'", int19 == 4);
+    }
+
+    @Test
+    public void test2721() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2721");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        int int11 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray8, (float) (byte) 100, (-1));
+        java.lang.Float[] floatArray12 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray8);
+        float[] floatArray15 = new float[] { (-1L), (byte) 1 };
+        int int17 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray15, (float) (byte) 10);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray15);
+        float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray15, (int) (byte) 1, 1);
+        boolean boolean22 = org.apache.commons.lang3.ArrayUtils.isSameLength(floatArray8, floatArray15);
+        java.lang.Float[] floatArray23 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray15);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNotNull(floatArray12);
+        org.junit.Assert.assertNotNull(floatArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray15), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[]");
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertNotNull(floatArray23);
+    }
+
+    @Test
+    public void test2722() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2722");
+        java.lang.Byte[] byteArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_OBJECT_ARRAY;
+        java.lang.Byte[] byteArray5 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray5, (byte) -1);
+        java.lang.Byte[] byteArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray5);
+        java.lang.Character[] charArray14 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray15 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray14);
+        java.lang.Character[] charArray16 = org.apache.commons.lang3.ArrayUtils.toObject(charArray15);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray8, (java.lang.Object) charArray15);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) byteArray0, (java.lang.Object[]) byteArray8);
+        int[] intArray21 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray22 = org.apache.commons.lang3.ArrayUtils.toObject(intArray21);
+        int[] intArray23 = org.apache.commons.lang3.ArrayUtils.clone(intArray21);
+        int[] intArray24 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        int[] intArray25 = org.apache.commons.lang3.ArrayUtils.addAll(intArray23, intArray24);
+        int[] intArray26 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray25);
+        java.io.Serializable[] serializableArray27 = org.apache.commons.lang3.ArrayUtils.removeElement((java.io.Serializable[]) byteArray8, (java.lang.Object) intArray26);
+        boolean[] booleanArray32 = new boolean[] { false, true, true, false };
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray32, true, 10);
+        boolean[] booleanArray37 = org.apache.commons.lang3.ArrayUtils.add(booleanArray32, false);
+        boolean[] booleanArray38 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray37);
+        boolean[] booleanArray44 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray46 = org.apache.commons.lang3.ArrayUtils.add(booleanArray44, true);
+        boolean boolean47 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray37, booleanArray46);
+        java.lang.Boolean[] booleanArray48 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray46);
+        boolean[] booleanArray50 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray48, true);
+        boolean[] booleanArray51 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray48);
+        boolean boolean52 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) byteArray8, (java.lang.Object[]) booleanArray48);
+        boolean[] booleanArray53 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray48);
+        boolean[] booleanArray54 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray48);
+        java.lang.Object[] objArray55 = org.apache.commons.lang3.ArrayUtils.nullToEmpty((java.lang.Object[]) booleanArray48);
+        org.junit.Assert.assertNotNull(byteArray0);
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray8);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray15), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray15), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray15), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(intArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray21), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray22);
+        org.junit.Assert.assertNotNull(intArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray23), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray24), "[]");
+        org.junit.Assert.assertNotNull(intArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray25), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray26), "[35, 0]");
+        org.junit.Assert.assertNotNull(serializableArray27);
+        org.junit.Assert.assertNotNull(booleanArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray32), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray37), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray38), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray44);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray44), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray46);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray46), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean47 + "' != '" + false + "'", boolean47 == false);
+        org.junit.Assert.assertNotNull(booleanArray48);
+        org.junit.Assert.assertNotNull(booleanArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray50), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray51);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray51), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + false + "'", boolean52 == false);
+        org.junit.Assert.assertNotNull(booleanArray53);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray53), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray54);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray54), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(objArray55);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray55), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray55), "[false, false, true, true, false, true]");
+    }
+
+    @Test
+    public void test2723() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2723");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int15 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 4, 6, (double) 1);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+    }
+
+    @Test
+    public void test2724() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2724");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        java.lang.Byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        java.lang.Character[] charArray13 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray13);
+        java.lang.Character[] charArray15 = org.apache.commons.lang3.ArrayUtils.toObject(charArray14);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray7, (java.lang.Object) charArray14);
+        char[] charArray19 = org.apache.commons.lang3.ArrayUtils.subarray(charArray14, (int) (short) 10, 100);
+        char[] charArray21 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray19, '#');
+        char[] charArray22 = org.apache.commons.lang3.ArrayUtils.clone(charArray19);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray22);
+        java.lang.Character[] charArray24 = org.apache.commons.lang3.ArrayUtils.toObject(charArray22);
+        char[] charArray26 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray24, '#');
+        java.lang.Character[] charArray27 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray24);
+        java.lang.Double[] doubleArray29 = new java.lang.Double[] { 100.0d };
+        java.lang.Double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray29);
+        java.io.Serializable[] serializableArray33 = org.apache.commons.lang3.ArrayUtils.subarray((java.io.Serializable[]) doubleArray29, (int) '#', 1);
+        double[] doubleArray35 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray29, (double) 1L);
+        int int37 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) charArray24, (java.lang.Object) doubleArray29, (int) (short) 0);
+        char[] charArray38 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray24);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNotNull(charArray19);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray19), "[]");
+        org.junit.Assert.assertNotNull(charArray21);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray21), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray21), "[]");
+        org.junit.Assert.assertNotNull(charArray22);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray22), "[]");
+        org.junit.Assert.assertNotNull(charArray24);
+        org.junit.Assert.assertNotNull(charArray26);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray26), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray26), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray26), "[]");
+        org.junit.Assert.assertNotNull(charArray27);
+        org.junit.Assert.assertNotNull(doubleArray29);
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertNotNull(serializableArray33);
+        org.junit.Assert.assertNotNull(doubleArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray35), "[100.0]");
+        org.junit.Assert.assertTrue("'" + int37 + "' != '" + (-1) + "'", int37 == (-1));
+        org.junit.Assert.assertNotNull(charArray38);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray38), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray38), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray38), "[]");
+    }
+
+    @Test
+    public void test2725() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2725");
+        java.lang.Integer[] intArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_INTEGER_OBJECT_ARRAY;
+        int[] intArray2 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray0, 5);
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        org.junit.Assert.assertNotNull(intArray0);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[]");
+        org.junit.Assert.assertNotNull(intArray3);
+    }
+
+    @Test
+    public void test2726() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2726");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        int int15 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray7, (float) 10);
+        float[] floatArray16 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray7);
+        int int18 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray16, (float) 1L);
+        float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray16, 4, (int) (short) 100);
+        float[] floatArray24 = new float[] { (-1L), (byte) 1 };
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray24, (float) (byte) 10);
+        float[] floatArray28 = org.apache.commons.lang3.ArrayUtils.add(floatArray24, (float) (short) 1);
+        float[] floatArray30 = org.apache.commons.lang3.ArrayUtils.add(floatArray28, 0.0f);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.contains(floatArray30, (float) (short) 0);
+        float[] floatArray35 = new float[] { (-1L), (byte) 1 };
+        int int37 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray35, (float) (byte) 10);
+        float[] floatArray40 = org.apache.commons.lang3.ArrayUtils.add(floatArray35, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray41 = org.apache.commons.lang3.ArrayUtils.clone(floatArray40);
+        float[] floatArray44 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray40, (int) '#', (int) 'a');
+        float[] floatArray46 = org.apache.commons.lang3.ArrayUtils.remove(floatArray40, (int) (byte) 0);
+        int int48 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray40, (float) 10);
+        float[] floatArray49 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray40);
+        float[] floatArray52 = new float[] { (-1L), (byte) 1 };
+        int int54 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray52, (float) (byte) 10);
+        float[] floatArray57 = org.apache.commons.lang3.ArrayUtils.add(floatArray52, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray58 = org.apache.commons.lang3.ArrayUtils.clone(floatArray57);
+        float[] floatArray61 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray57, (int) '#', (int) 'a');
+        float[] floatArray63 = org.apache.commons.lang3.ArrayUtils.remove(floatArray57, (int) (byte) 0);
+        int int65 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray57, (float) 10);
+        boolean boolean66 = org.apache.commons.lang3.ArrayUtils.isSameLength(floatArray49, floatArray57);
+        float[] floatArray67 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray30, floatArray57);
+        float[] floatArray68 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray16, floatArray67);
+        float[] floatArray70 = org.apache.commons.lang3.ArrayUtils.add(floatArray67, 10.0f);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + 2 + "'", int18 == 2);
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[]");
+        org.junit.Assert.assertNotNull(floatArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray24), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(floatArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray28), "[-1.0, 1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray30), "[-1.0, 1.0, 1.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + true + "'", boolean32 == true);
+        org.junit.Assert.assertNotNull(floatArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray35), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int37 + "' != '" + (-1) + "'", int37 == (-1));
+        org.junit.Assert.assertNotNull(floatArray40);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray40), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray41), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray44);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray44), "[]");
+        org.junit.Assert.assertNotNull(floatArray46);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray46), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int48 + "' != '" + (-1) + "'", int48 == (-1));
+        org.junit.Assert.assertNotNull(floatArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray49), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray52);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray52), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int54 + "' != '" + (-1) + "'", int54 == (-1));
+        org.junit.Assert.assertNotNull(floatArray57);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray57), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray58);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray58), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray61);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray61), "[]");
+        org.junit.Assert.assertNotNull(floatArray63);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray63), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int65 + "' != '" + (-1) + "'", int65 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean66 + "' != '" + true + "'", boolean66 == true);
+        org.junit.Assert.assertNotNull(floatArray67);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray67), "[-1.0, 1.0, 1.0, 0.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray68);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray68), "[-1.0, -1.0, 1.0, -1.0, 1.0, 1.0, 0.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray70);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray70), "[-1.0, 1.0, 1.0, 0.0, -1.0, -1.0, 1.0, 10.0]");
+    }
+
+    @Test
+    public void test2727() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2727");
+        java.lang.Short[] shortArray3 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray4, (short) 0);
+        java.lang.Short[] shortArray10 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray11 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray10);
+        short[] shortArray12 = org.apache.commons.lang3.ArrayUtils.addAll(shortArray4, shortArray11);
+        java.lang.Short[] shortArray13 = org.apache.commons.lang3.ArrayUtils.toObject(shortArray4);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(shortArray4);
+        int int16 = org.apache.commons.lang3.ArrayUtils.indexOf(shortArray4, (short) -1);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray4), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray10);
+        org.junit.Assert.assertNotNull(shortArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray11), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray12), "[-1, 100, 1, -1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray13);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 0 + "'", int16 == 0);
+    }
+
+    @Test
+    public void test2728() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2728");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        float[] floatArray16 = new float[] { (-1L), (byte) 1 };
+        int int18 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray16, (float) (byte) 10);
+        float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.add(floatArray16, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray22 = org.apache.commons.lang3.ArrayUtils.clone(floatArray21);
+        float[] floatArray25 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray21, (int) '#', (int) 'a');
+        float[] floatArray26 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray21);
+        float[] floatArray28 = org.apache.commons.lang3.ArrayUtils.remove(floatArray21, 0);
+        float[] floatArray29 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray13, floatArray21);
+        boolean boolean30 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray29);
+        boolean boolean31 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(floatArray29);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray29);
+        float[] floatArray34 = org.apache.commons.lang3.ArrayUtils.remove(floatArray29, (int) (short) 0);
+        float[] floatArray36 = org.apache.commons.lang3.ArrayUtils.removeElement(floatArray29, (-1.0f));
+        java.lang.Character[] charArray39 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray40 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray39);
+        char[] charArray42 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray40, ' ');
+        java.lang.Character[] charArray43 = org.apache.commons.lang3.ArrayUtils.toObject(charArray42);
+        char[] charArray45 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray42, '#');
+        int int48 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray45, '#', 3);
+        int int50 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray45, 'a');
+        float[] floatArray53 = new float[] { (-1L), (byte) 1 };
+        int int55 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray53, (float) (byte) 10);
+        float[] floatArray58 = org.apache.commons.lang3.ArrayUtils.add(floatArray53, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray59 = org.apache.commons.lang3.ArrayUtils.clone(floatArray58);
+        float[] floatArray62 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray58, (int) '#', (int) 'a');
+        float[] floatArray64 = org.apache.commons.lang3.ArrayUtils.remove(floatArray58, (int) (byte) 0);
+        float[] floatArray67 = new float[] { (-1L), (byte) 1 };
+        int int69 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray67, (float) (byte) 10);
+        float[] floatArray72 = org.apache.commons.lang3.ArrayUtils.add(floatArray67, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray73 = org.apache.commons.lang3.ArrayUtils.clone(floatArray72);
+        float[] floatArray76 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray72, (int) '#', (int) 'a');
+        float[] floatArray77 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray72);
+        float[] floatArray79 = org.apache.commons.lang3.ArrayUtils.remove(floatArray72, 0);
+        float[] floatArray80 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray64, floatArray72);
+        boolean boolean82 = org.apache.commons.lang3.ArrayUtils.contains(floatArray64, (float) '#');
+        float[] floatArray84 = org.apache.commons.lang3.ArrayUtils.add(floatArray64, (float) 8);
+        float[] floatArray87 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray64, (int) 'a', 7);
+        boolean boolean88 = org.apache.commons.lang3.ArrayUtils.isEquals((java.lang.Object) charArray45, (java.lang.Object) floatArray87);
+        boolean boolean89 = org.apache.commons.lang3.ArrayUtils.isEmpty(floatArray87);
+        boolean boolean90 = org.apache.commons.lang3.ArrayUtils.isSameLength(floatArray29, floatArray87);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray16), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray22), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray25), "[]");
+        org.junit.Assert.assertNotNull(floatArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray26), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray28), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray29), "[-1.0, 1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(floatArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray34), "[1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray36), "[1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(charArray39);
+        org.junit.Assert.assertNotNull(charArray40);
+        org.junit.Assert.assertNotNull(charArray42);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray42), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray42), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray42), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray43);
+        org.junit.Assert.assertNotNull(charArray45);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray45), "#");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray45), "#");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray45), "[#]");
+        org.junit.Assert.assertTrue("'" + int48 + "' != '" + (-1) + "'", int48 == (-1));
+        org.junit.Assert.assertTrue("'" + int50 + "' != '" + (-1) + "'", int50 == (-1));
+        org.junit.Assert.assertNotNull(floatArray53);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray53), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int55 + "' != '" + (-1) + "'", int55 == (-1));
+        org.junit.Assert.assertNotNull(floatArray58);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray58), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray59);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray59), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray62);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray62), "[]");
+        org.junit.Assert.assertNotNull(floatArray64);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray64), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray67);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray67), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int69 + "' != '" + (-1) + "'", int69 == (-1));
+        org.junit.Assert.assertNotNull(floatArray72);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray72), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray73);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray73), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray76);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray76), "[]");
+        org.junit.Assert.assertNotNull(floatArray77);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray77), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray79);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray79), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray80);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray80), "[-1.0, 1.0, -1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + boolean82 + "' != '" + false + "'", boolean82 == false);
+        org.junit.Assert.assertNotNull(floatArray84);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray84), "[-1.0, 1.0, 8.0]");
+        org.junit.Assert.assertNotNull(floatArray87);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray87), "[]");
+        org.junit.Assert.assertTrue("'" + boolean88 + "' != '" + false + "'", boolean88 == false);
+        org.junit.Assert.assertTrue("'" + boolean89 + "' != '" + true + "'", boolean89 == true);
+        org.junit.Assert.assertTrue("'" + boolean90 + "' != '" + false + "'", boolean90 == false);
+    }
+
+    @Test
+    public void test2729() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2729");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        double[] doubleArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray3, (double) (byte) 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (-1), (int) (short) 100);
+        double[] doubleArray13 = org.apache.commons.lang3.ArrayUtils.remove(doubleArray3, 0);
+        java.lang.Double[] doubleArray18 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray19 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray18);
+        double[] doubleArray21 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray18, 0.0d);
+        double[] doubleArray22 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray18);
+        double[] doubleArray24 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray18, (double) 10L);
+        double[] doubleArray26 = org.apache.commons.lang3.ArrayUtils.add(doubleArray24, (double) 1);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray13, doubleArray26);
+        double[] doubleArray29 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray13, (double) 1);
+        int int32 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray13, 1.0d, (int) ' ');
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray8), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray13), "[1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertNotNull(doubleArray19);
+        org.junit.Assert.assertNotNull(doubleArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray21), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray22), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray24), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray26), "[10.0, -1.0, 10.0, 0.0, 1.0]");
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[1.0, -1.0, 10.0, -1.0, 10.0, 0.0, 1.0]");
+        org.junit.Assert.assertNotNull(doubleArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray29), "[-1.0]");
+        org.junit.Assert.assertTrue("'" + int32 + "' != '" + 0 + "'", int32 == 0);
+    }
+
+    @Test
+    public void test2730() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2730");
+        float[] floatArray0 = null;
+        float[] floatArray2 = org.apache.commons.lang3.ArrayUtils.add(floatArray0, 10.0f);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[10.0]");
+    }
+
+    @Test
+    public void test2731() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2731");
+        java.lang.Character[] charArray2 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray2);
+        char[] charArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray3, ' ');
+        java.lang.Character[] charArray6 = org.apache.commons.lang3.ArrayUtils.toObject(charArray5);
+        char[] charArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray5, '#');
+        java.lang.Character[] charArray14 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray15 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray14);
+        java.lang.Character[] charArray16 = org.apache.commons.lang3.ArrayUtils.toObject(charArray15);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray15);
+        char[] charArray20 = org.apache.commons.lang3.ArrayUtils.subarray(charArray15, (int) (byte) -1, (int) (byte) 1);
+        java.lang.Character[] charArray26 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray27 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray26);
+        boolean boolean28 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray20, charArray27);
+        char[] charArray30 = org.apache.commons.lang3.ArrayUtils.add(charArray20, 'a');
+        char[] charArray31 = null;
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray20, charArray31);
+        boolean[] booleanArray38 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray40 = org.apache.commons.lang3.ArrayUtils.add(booleanArray38, true);
+        boolean[] booleanArray42 = org.apache.commons.lang3.ArrayUtils.add(booleanArray38, false);
+        boolean boolean43 = org.apache.commons.lang3.ArrayUtils.isEquals((java.lang.Object) charArray20, (java.lang.Object) booleanArray42);
+        char[] charArray45 = org.apache.commons.lang3.ArrayUtils.remove(charArray20, 0);
+        boolean boolean46 = org.apache.commons.lang3.ArrayUtils.isEmpty(charArray45);
+        char[] charArray47 = org.apache.commons.lang3.ArrayUtils.clone(charArray45);
+        char[] charArray48 = org.apache.commons.lang3.ArrayUtils.addAll(charArray8, charArray47);
+        boolean boolean50 = org.apache.commons.lang3.ArrayUtils.contains(charArray47, '4');
+        int int52 = org.apache.commons.lang3.ArrayUtils.indexOf(charArray47, '4');
+        // The following exception was thrown during execution in test generation
+        try {
+            char[] charArray55 = org.apache.commons.lang3.ArrayUtils.add(charArray47, (int) (short) 100, ' ');
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 100, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray3);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray5), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray8), "#");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray8), "#");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray8), "[#]");
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray15), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray15), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray15), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertNotNull(charArray20);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray20), "4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray20), "4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray20), "[4]");
+        org.junit.Assert.assertNotNull(charArray26);
+        org.junit.Assert.assertNotNull(charArray27);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray27), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray27), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray27), "[4, a,  , a, 4]");
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+        org.junit.Assert.assertNotNull(charArray30);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray30), "4a");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray30), "4a");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray30), "[4, a]");
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(booleanArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray38), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray40);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray40), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray42);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray42), "[false, false, true, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + false + "'", boolean43 == false);
+        org.junit.Assert.assertNotNull(charArray45);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray45), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray45), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray45), "[]");
+        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + true + "'", boolean46 == true);
+        org.junit.Assert.assertNotNull(charArray47);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray47), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray47), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray47), "[]");
+        org.junit.Assert.assertNotNull(charArray48);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray48), "#");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray48), "#");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray48), "[#]");
+        org.junit.Assert.assertTrue("'" + boolean50 + "' != '" + false + "'", boolean50 == false);
+        org.junit.Assert.assertTrue("'" + int52 + "' != '" + (-1) + "'", int52 == (-1));
+    }
+
+    @Test
+    public void test2732() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2732");
+        java.lang.Byte[] byteArray1 = new java.lang.Byte[] { (byte) -1 };
+        java.lang.Byte[] byteArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        byte[] byteArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray1, (byte) 1);
+        java.lang.Byte[] byteArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray5);
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray5);
+        java.lang.Byte[] byteArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray5);
+        byte[] byteArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray8);
+        // The following exception was thrown during execution in test generation
+        try {
+            byte[] byteArray12 = org.apache.commons.lang3.ArrayUtils.add(byteArray9, (int) 'a', (byte) 100);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 97, Length: 1");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertNotNull(byteArray2);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray4), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray8);
+        org.junit.Assert.assertNotNull(byteArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray9), "[-1]");
+    }
+
+    @Test
+    public void test2733() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2733");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray9 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray7);
+        float[] floatArray12 = new float[] { (-1L), (byte) 1 };
+        int int14 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray12, (float) (byte) 10);
+        float[] floatArray17 = org.apache.commons.lang3.ArrayUtils.add(floatArray12, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray18 = org.apache.commons.lang3.ArrayUtils.clone(floatArray17);
+        float[] floatArray21 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray17, (int) '#', (int) 'a');
+        float[] floatArray23 = org.apache.commons.lang3.ArrayUtils.remove(floatArray17, (int) (byte) 0);
+        float[] floatArray26 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray17, (int) (short) 0, (int) (byte) 0);
+        int int29 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray17, (float) 10, 0);
+        float[] floatArray31 = org.apache.commons.lang3.ArrayUtils.removeElement(floatArray17, (float) 'a');
+        float[] floatArray33 = org.apache.commons.lang3.ArrayUtils.remove(floatArray31, (int) (short) 1);
+        float[] floatArray34 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray9, floatArray33);
+        float[] floatArray35 = org.apache.commons.lang3.ArrayUtils.clone(floatArray33);
+        float[] floatArray38 = new float[] { (-1L), (byte) 1 };
+        int int40 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray38, (float) (byte) 10);
+        float[] floatArray43 = org.apache.commons.lang3.ArrayUtils.add(floatArray38, (int) (byte) 1, (float) (byte) -1);
+        int int46 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray38, (float) 4, (int) (byte) 0);
+        float[] floatArray49 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray38, (int) '4', (int) (byte) 100);
+        int int52 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray49, (float) (-1), 10);
+        float[] floatArray54 = org.apache.commons.lang3.ArrayUtils.removeElement(floatArray49, (-1.0f));
+        float[] floatArray55 = org.apache.commons.lang3.ArrayUtils.addAll(floatArray35, floatArray49);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray9), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray12), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(floatArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray17), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray18), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray21), "[]");
+        org.junit.Assert.assertNotNull(floatArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray23), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray26), "[]");
+        org.junit.Assert.assertTrue("'" + int29 + "' != '" + (-1) + "'", int29 == (-1));
+        org.junit.Assert.assertNotNull(floatArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray31), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray33), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray34), "[-1.0, -1.0, 1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray35), "[-1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray38), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + (-1) + "'", int40 == (-1));
+        org.junit.Assert.assertNotNull(floatArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray43), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int46 + "' != '" + (-1) + "'", int46 == (-1));
+        org.junit.Assert.assertNotNull(floatArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray49), "[]");
+        org.junit.Assert.assertTrue("'" + int52 + "' != '" + (-1) + "'", int52 == (-1));
+        org.junit.Assert.assertNotNull(floatArray54);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray54), "[]");
+        org.junit.Assert.assertNotNull(floatArray55);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray55), "[-1.0, 1.0]");
+    }
+
+    @Test
+    public void test2734() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2734");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.clone(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.addAll(intArray4, intArray5);
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray6);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray6);
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.add(intArray6, (int) (byte) 0);
+        int[] intArray12 = org.apache.commons.lang3.ArrayUtils.removeElement(intArray10, 10);
+        int[] intArray15 = org.apache.commons.lang3.ArrayUtils.subarray(intArray12, (int) (short) 1, (int) (short) 1);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[35, 0, 0]");
+        org.junit.Assert.assertNotNull(intArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray12), "[35, 0, 0]");
+        org.junit.Assert.assertNotNull(intArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray15), "[]");
+    }
+
+    @Test
+    public void test2735() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2735");
+        java.lang.Long[] longArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_OBJECT_ARRAY;
+        long[] longArray1 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray0);
+        long[] longArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray1);
+        long[] longArray4 = org.apache.commons.lang3.ArrayUtils.add(longArray1, (long) (byte) 1);
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(longArray4, (long) 'a');
+        long[] longArray9 = new long[] { 100L, 'a' };
+        long[] longArray12 = org.apache.commons.lang3.ArrayUtils.subarray(longArray9, (int) (short) 10, 100);
+        boolean boolean13 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray12);
+        long[] longArray15 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray12, (long) 0);
+        java.lang.Long[] longArray16 = org.apache.commons.lang3.ArrayUtils.toObject(longArray15);
+        long[] longArray17 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray16);
+        long[] longArray18 = org.apache.commons.lang3.ArrayUtils.clone(longArray17);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray4, longArray18);
+        boolean boolean21 = org.apache.commons.lang3.ArrayUtils.contains(longArray18, (long) 9);
+        org.junit.Assert.assertNotNull(longArray0);
+        org.junit.Assert.assertNotNull(longArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray1), "[]");
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[]");
+        org.junit.Assert.assertNotNull(longArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray4), "[1]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNotNull(longArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray9), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray12), "[]");
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
+        org.junit.Assert.assertNotNull(longArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray15), "[]");
+        org.junit.Assert.assertNotNull(longArray16);
+        org.junit.Assert.assertNotNull(longArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray17), "[]");
+        org.junit.Assert.assertNotNull(longArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray18), "[]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+    }
+
+    @Test
+    public void test2736() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2736");
+        java.lang.Byte[] byteArray1 = new java.lang.Byte[] { (byte) -1 };
+        java.lang.Byte[] byteArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        byte[] byteArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray1, (byte) 1);
+        java.lang.Byte[] byteArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray5);
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray5);
+        byte[] byteArray13 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray13, (byte) 0);
+        byte[] byteArray17 = org.apache.commons.lang3.ArrayUtils.add(byteArray13, (byte) 10);
+        byte[] byteArray18 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        java.lang.Byte[] byteArray23 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray25 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray23, (byte) -1);
+        boolean boolean26 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray25);
+        byte[] byteArray28 = org.apache.commons.lang3.ArrayUtils.add(byteArray25, (byte) 100);
+        byte[] byteArray29 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray18, byteArray28);
+        byte[] byteArray30 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray13, byteArray28);
+        byte[] byteArray31 = org.apache.commons.lang3.ArrayUtils.clone(byteArray30);
+        byte[] byteArray32 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray7, byteArray30);
+        boolean boolean33 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray30);
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray30, (byte) 0);
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertNotNull(byteArray2);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray4), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray13), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 4 + "'", int15 == 4);
+        org.junit.Assert.assertNotNull(byteArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray17), "[0, 1, 100, 100, 0, 10]");
+        org.junit.Assert.assertNotNull(byteArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray18), "[]");
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertNotNull(byteArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray25), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertNotNull(byteArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray28), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray29), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray30), "[0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray31), "[0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray32), "[-1, 0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + false + "'", boolean33 == false);
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + 0 + "'", int35 == 0);
+    }
+
+    @Test
+    public void test2737() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2737");
+        int[] intArray6 = new int[] { (short) -1, (byte) 1, (short) 10, 4, 5, (short) 0 };
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray6);
+        java.lang.Integer[] intArray8 = org.apache.commons.lang3.ArrayUtils.toObject(intArray7);
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray8, 0);
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[-1, 1, 10, 4, 5, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[-1, 1, 10, 4, 5, 0]");
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[-1, 1, 10, 4, 5, 0]");
+    }
+
+    @Test
+    public void test2738() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2738");
+        long[] longArray3 = new long[] { 10L, 100L, '#' };
+        boolean boolean4 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray3);
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray3, (long) (short) 0, (-1));
+        int int10 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray3, (long) (short) 0, (int) '#');
+        boolean boolean11 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray3);
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.add(longArray3, (long) (short) 0);
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray13, (long) (short) 1);
+        long[] longArray18 = org.apache.commons.lang3.ArrayUtils.subarray(longArray13, (int) (short) 100, 8);
+        org.apache.commons.lang3.ArrayUtils.reverse(longArray13);
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray3), "[10, 100, 35]");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[0, 35, 100, 10]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(longArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray18), "[]");
+    }
+
+    @Test
+    public void test2739() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2739");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        int int15 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray7, (float) 10);
+        float[] floatArray18 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) (short) 1);
+        java.lang.String str19 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) floatArray18);
+        int int22 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray18, (float) 10, 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray18, (float) (byte) -1);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(floatArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray18), "[]");
+        org.junit.Assert.assertEquals("'" + str19 + "' != '" + "{}" + "'", str19, "{}");
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+    }
+
+    @Test
+    public void test2740() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2740");
+        double[] doubleArray0 = new double[] {};
+        int int3 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray0, (double) (byte) 100, (double) (byte) 1);
+        double[] doubleArray4 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray0);
+        java.lang.Double[] doubleArray9 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray10 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray9);
+        double[] doubleArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray9, 0.0d);
+        double[] doubleArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray9);
+        int int16 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray13, (double) 10.0f, 10.0d);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.isSameLength(doubleArray4, doubleArray13);
+        // The following exception was thrown during execution in test generation
+        try {
+            double[] doubleArray19 = org.apache.commons.lang3.ArrayUtils.remove(doubleArray4, 0);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 0, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(doubleArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray0), "[]");
+        org.junit.Assert.assertTrue("'" + int3 + "' != '" + (-1) + "'", int3 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray4), "[]");
+        org.junit.Assert.assertNotNull(doubleArray9);
+        org.junit.Assert.assertNotNull(doubleArray10);
+        org.junit.Assert.assertNotNull(doubleArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray12), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray13), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+    }
+
+    @Test
+    public void test2741() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2741");
+        char[] charArray5 = new char[] { '4', ' ', ' ', '#', '4' };
+        char[] charArray6 = org.apache.commons.lang3.ArrayUtils.clone(charArray5);
+        char[] charArray9 = org.apache.commons.lang3.ArrayUtils.subarray(charArray6, (int) (short) -1, (int) (byte) 100);
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(charArray6);
+        char[] charArray11 = org.apache.commons.lang3.ArrayUtils.clone(charArray6);
+        char[] charArray13 = org.apache.commons.lang3.ArrayUtils.add(charArray6, '4');
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.clone(charArray6);
+        int int17 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray6, '#', 100);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray5), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray5), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray5), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray6), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray6), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray6), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray9);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray9), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray9), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray9), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertNotNull(charArray11);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray11), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray11), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray11), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray13), "4  #44");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray13), "4  #44");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray13), "[4,  ,  , #, 4, 4]");
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+    }
+
+    @Test
+    public void test2742() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2742");
+        long[] longArray2 = new long[] { 100L, 'a' };
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.subarray(longArray2, (int) (short) 10, 100);
+        org.apache.commons.lang3.ArrayUtils.reverse(longArray5);
+        long[] longArray7 = org.apache.commons.lang3.ArrayUtils.clone(longArray5);
+        org.apache.commons.lang3.ArrayUtils.reverse(longArray7);
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray7), "[]");
+    }
+
+    @Test
+    public void test2743() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2743");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.clone(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.addAll(intArray4, intArray5);
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.add(intArray4, 100);
+        int[] intArray11 = org.apache.commons.lang3.ArrayUtils.subarray(intArray4, (int) (short) 0, (int) (short) 10);
+        int[] intArray12 = null;
+        int[] intArray13 = org.apache.commons.lang3.ArrayUtils.addAll(intArray11, intArray12);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[35, 0, 100]");
+        org.junit.Assert.assertNotNull(intArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray11), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray13), "[35, 0]");
+    }
+
+    @Test
+    public void test2744() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2744");
+        byte[] byteArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        byte[] byteArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray0);
+        boolean boolean2 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray0);
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray0, (byte) 0);
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray0, (byte) 10, 1);
+        int int10 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray0, (byte) 0, (int) (byte) 10);
+        org.junit.Assert.assertNotNull(byteArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray0), "[]");
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray1), "[]");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+    }
+
+    @Test
+    public void test2745() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2745");
+        java.lang.CharSequence[] charSequenceArray2 = new java.lang.CharSequence[] { "", "hi!" };
+        java.lang.CharSequence[] charSequenceArray4 = org.apache.commons.lang3.ArrayUtils.add(charSequenceArray2, (java.lang.CharSequence) "");
+        long[] longArray6 = new long[] { 1L };
+        long[][] longArray7 = new long[][] { longArray6 };
+        java.lang.Character[] charArray10 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray11 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray10);
+        long[][] longArray12 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray7, (java.lang.Object) charArray10);
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray10, '#');
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf((java.lang.Object[]) charSequenceArray4, (java.lang.Object) charArray14);
+        java.lang.Byte[] byteArray20 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray22 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray20, (byte) -1);
+        java.lang.Byte[] byteArray23 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray20);
+        java.lang.Character[] charArray29 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray30 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray29);
+        java.lang.Character[] charArray31 = org.apache.commons.lang3.ArrayUtils.toObject(charArray30);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray23, (java.lang.Object) charArray30);
+        char[] charArray33 = org.apache.commons.lang3.ArrayUtils.clone(charArray30);
+        char[] charArray34 = org.apache.commons.lang3.ArrayUtils.addAll(charArray14, charArray33);
+        char[] charArray37 = org.apache.commons.lang3.ArrayUtils.add(charArray34, 5, 'a');
+        char[] charArray43 = new char[] { '4', ' ', ' ', '#', '4' };
+        char[] charArray44 = org.apache.commons.lang3.ArrayUtils.clone(charArray43);
+        char[] charArray45 = null;
+        char[] charArray46 = org.apache.commons.lang3.ArrayUtils.addAll(charArray43, charArray45);
+        java.lang.Character[] charArray47 = org.apache.commons.lang3.ArrayUtils.toObject(charArray43);
+        char[] charArray48 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray47);
+        char[] charArray51 = org.apache.commons.lang3.ArrayUtils.subarray(charArray48, (int) (short) 100, (int) (byte) 100);
+        char[] charArray52 = org.apache.commons.lang3.ArrayUtils.addAll(charArray34, charArray48);
+        char[] charArray54 = org.apache.commons.lang3.ArrayUtils.add(charArray48, '#');
+        char[] charArray56 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray48, ' ');
+        org.junit.Assert.assertNotNull(charSequenceArray2);
+        org.junit.Assert.assertNotNull(charSequenceArray4);
+        org.junit.Assert.assertNotNull(longArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray6), "[1]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertNotNull(charArray10);
+        org.junit.Assert.assertNotNull(charArray11);
+        org.junit.Assert.assertNotNull(longArray12);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[#, #]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(byteArray20);
+        org.junit.Assert.assertNotNull(byteArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray22), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray23);
+        org.junit.Assert.assertNotNull(charArray29);
+        org.junit.Assert.assertNotNull(charArray30);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray30), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray30), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray30), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray31);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(charArray33);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray33), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray33), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray33), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray34);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray34), "##4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray34), "##4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray34), "[#, #, 4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray37);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray37), "##4a aa4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray37), "##4a aa4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray37), "[#, #, 4, a,  , a, a, 4]");
+        org.junit.Assert.assertNotNull(charArray43);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray43), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray43), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray43), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray44);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray44), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray44), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray44), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray46);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray46), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray46), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray46), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray47);
+        org.junit.Assert.assertNotNull(charArray48);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray48), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray48), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray48), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray51);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray51), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray51), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray51), "[]");
+        org.junit.Assert.assertNotNull(charArray52);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray52), "##4a a44  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray52), "##4a a44  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray52), "[#, #, 4, a,  , a, 4, 4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray54);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray54), "4  #4#");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray54), "4  #4#");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray54), "[4,  ,  , #, 4, #]");
+        org.junit.Assert.assertNotNull(charArray56);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray56), "4 #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray56), "4 #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray56), "[4,  , #, 4]");
+    }
+
+    @Test
+    public void test2746() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2746");
+        java.lang.reflect.GenericDeclaration[][] genericDeclarationArray0 = null;
+        java.lang.reflect.GenericDeclaration[][] genericDeclarationArray1 = org.apache.commons.lang3.ArrayUtils.clone(genericDeclarationArray0);
+        org.junit.Assert.assertNull(genericDeclarationArray1);
+    }
+
+    @Test
+    public void test2747() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2747");
+        byte[] byteArray5 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray5, (byte) 0);
+        boolean boolean9 = org.apache.commons.lang3.ArrayUtils.contains(byteArray5, (byte) 100);
+        byte[] byteArray11 = org.apache.commons.lang3.ArrayUtils.add(byteArray5, (byte) -1);
+        byte[] byteArray17 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int19 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray17, (byte) 0);
+        byte[] byteArray21 = org.apache.commons.lang3.ArrayUtils.add(byteArray17, (byte) 10);
+        byte[] byteArray22 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_ARRAY;
+        java.lang.Byte[] byteArray27 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray29 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray27, (byte) -1);
+        boolean boolean30 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray29);
+        byte[] byteArray32 = org.apache.commons.lang3.ArrayUtils.add(byteArray29, (byte) 100);
+        byte[] byteArray33 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray22, byteArray32);
+        byte[] byteArray34 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray17, byteArray32);
+        byte[] byteArray35 = org.apache.commons.lang3.ArrayUtils.clone(byteArray34);
+        byte[] byteArray38 = org.apache.commons.lang3.ArrayUtils.add(byteArray35, (int) (short) 1, (byte) 0);
+        int int40 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray35, (byte) 100);
+        org.apache.commons.lang3.ArrayUtils.reverse(byteArray35);
+        byte[] byteArray42 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray11, byteArray35);
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray5), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 4 + "'", int7 == 4);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertNotNull(byteArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray11), "[0, 1, 100, 100, 0, -1]");
+        org.junit.Assert.assertNotNull(byteArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray17), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 4 + "'", int19 == 4);
+        org.junit.Assert.assertNotNull(byteArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray21), "[0, 1, 100, 100, 0, 10]");
+        org.junit.Assert.assertNotNull(byteArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray22), "[]");
+        org.junit.Assert.assertNotNull(byteArray27);
+        org.junit.Assert.assertNotNull(byteArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray29), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
+        org.junit.Assert.assertNotNull(byteArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray32), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray33), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray34), "[0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray35), "[100, 1, -1, -1, 1, 0, 100, 100, 1, 0]");
+        org.junit.Assert.assertNotNull(byteArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray38), "[0, 0, 1, 100, 100, 0, 1, -1, -1, 1, 100]");
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + 2 + "'", int40 == 2);
+        org.junit.Assert.assertNotNull(byteArray42);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray42), "[0, 1, 100, 100, 0, -1, 100, 1, -1, -1, 1, 0, 100, 100, 1, 0]");
+    }
+
+    @Test
+    public void test2748() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2748");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray4, (int) (byte) -1, 1);
+        java.lang.Boolean[] booleanArray11 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray4);
+        boolean[] booleanArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray11);
+        int int14 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray12, true);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.contains(booleanArray12, false);
+        boolean[] booleanArray19 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray12, (int) (byte) 100, 2);
+        boolean[] booleanArray25 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray27 = org.apache.commons.lang3.ArrayUtils.add(booleanArray25, true);
+        boolean[] booleanArray28 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray25);
+        boolean[] booleanArray29 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray25);
+        boolean[] booleanArray31 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray29, true);
+        boolean[] booleanArray32 = org.apache.commons.lang3.ArrayUtils.addAll(booleanArray12, booleanArray31);
+        boolean[] booleanArray35 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray32, 4, 8);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false]");
+        org.junit.Assert.assertNotNull(booleanArray11);
+        org.junit.Assert.assertNotNull(booleanArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray12), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 1 + "'", int14 == 1);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + true + "'", boolean16 == true);
+        org.junit.Assert.assertNotNull(booleanArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray19), "[]");
+        org.junit.Assert.assertNotNull(booleanArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray25), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray27), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray28), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray29), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray31), "[false, false, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray32), "[false, true, true, false, false, false, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray35);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray35), "[false, false, true, false]");
+    }
+
+    @Test
+    public void test2749() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2749");
+        byte[] byteArray5 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray5, (byte) 0);
+        boolean boolean9 = org.apache.commons.lang3.ArrayUtils.contains(byteArray5, (byte) 0);
+        org.apache.commons.lang3.ArrayUtils.reverse(byteArray5);
+        int int13 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray5, (byte) -1, 4);
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray5), "[0, 100, 100, 1, 0]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 4 + "'", int7 == 4);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+    }
+
+    @Test
+    public void test2750() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2750");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray9);
+        boolean[] booleanArray16 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray18 = org.apache.commons.lang3.ArrayUtils.add(booleanArray16, true);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray9, booleanArray18);
+        boolean[] booleanArray21 = org.apache.commons.lang3.ArrayUtils.add(booleanArray18, true);
+        boolean[] booleanArray23 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray18, false);
+        boolean[] booleanArray24 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(booleanArray18);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNotNull(booleanArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray21), "[false, false, true, true, false, true, true]");
+        org.junit.Assert.assertNotNull(booleanArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray23), "[false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray24), "[false, false, true, true, false, true]");
+    }
+
+    @Test
+    public void test2751() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2751");
+        double[] doubleArray3 = new double[] { 10.0f, (short) 10, 'a' };
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (-1.0d), (int) (byte) -1, (double) (-1.0f));
+        double[] doubleArray9 = org.apache.commons.lang3.ArrayUtils.add(doubleArray3, (double) 100L);
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(doubleArray3);
+        int int14 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (-1.0f), 100, (double) (-1));
+        double[] doubleArray15 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray3);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[10.0, 10.0, 97.0]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray9), "[10.0, 10.0, 97.0, 100.0]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray15), "[10.0, 10.0, 97.0]");
+    }
+
+    @Test
+    public void test2752() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2752");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray9 = org.apache.commons.lang3.ArrayUtils.add(booleanArray4, false);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray9);
+        boolean[] booleanArray16 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray18 = org.apache.commons.lang3.ArrayUtils.add(booleanArray16, true);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray9, booleanArray18);
+        boolean boolean21 = org.apache.commons.lang3.ArrayUtils.contains(booleanArray18, false);
+        java.lang.Class<?> wildcardClass22 = booleanArray18.getClass();
+        java.lang.reflect.Type[] typeArray23 = new java.lang.reflect.Type[] { wildcardClass22 };
+        java.lang.reflect.Type[] typeArray26 = org.apache.commons.lang3.ArrayUtils.subarray(typeArray23, 3, (int) (byte) 100);
+        java.lang.reflect.Type[] typeArray27 = org.apache.commons.lang3.ArrayUtils.toArray(typeArray26);
+        java.lang.Short[] shortArray30 = new java.lang.Short[] { (short) -1, (short) -1 };
+        java.lang.Short[] shortArray31 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray30);
+        int[] intArray32 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        int int34 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray32, (int) (byte) 10);
+        int int37 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray32, (int) (byte) 10, 10);
+        boolean boolean38 = org.apache.commons.lang3.ArrayUtils.isEmpty(intArray32);
+        int int41 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(intArray32, (int) (byte) 1, (int) (short) -1);
+        boolean boolean42 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) shortArray31, (java.lang.Object) int41);
+        java.lang.Byte[] byteArray44 = new java.lang.Byte[] { (byte) -1 };
+        java.lang.Byte[] byteArray45 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray44);
+        byte[] byteArray47 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray44, (byte) 1);
+        java.lang.Byte[] byteArray48 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray44);
+        byte[] byteArray49 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray48);
+        byte[] byteArray50 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray48);
+        java.lang.Byte[] byteArray51 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray48);
+        int int53 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) shortArray31, (java.lang.Object) byteArray51, (int) (short) 0);
+        int int55 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) typeArray26, (java.lang.Object) byteArray51, (int) (byte) -1);
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray9), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray18), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + true + "'", boolean21 == true);
+        org.junit.Assert.assertNotNull(wildcardClass22);
+        org.junit.Assert.assertNotNull(typeArray23);
+        org.junit.Assert.assertNotNull(typeArray26);
+        org.junit.Assert.assertNotNull(typeArray27);
+        org.junit.Assert.assertNotNull(shortArray30);
+        org.junit.Assert.assertNotNull(shortArray31);
+        org.junit.Assert.assertNotNull(intArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray32), "[]");
+        org.junit.Assert.assertTrue("'" + int34 + "' != '" + (-1) + "'", int34 == (-1));
+        org.junit.Assert.assertTrue("'" + int37 + "' != '" + (-1) + "'", int37 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + true + "'", boolean38 == true);
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + (-1) + "'", int41 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + false + "'", boolean42 == false);
+        org.junit.Assert.assertNotNull(byteArray44);
+        org.junit.Assert.assertNotNull(byteArray45);
+        org.junit.Assert.assertNotNull(byteArray47);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray47), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray48);
+        org.junit.Assert.assertNotNull(byteArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray49), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray50), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray51);
+        org.junit.Assert.assertTrue("'" + int53 + "' != '" + (-1) + "'", int53 == (-1));
+        org.junit.Assert.assertTrue("'" + int55 + "' != '" + (-1) + "'", int55 == (-1));
+    }
+
+    @Test
+    public void test2753() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2753");
+        java.lang.Character[] charArray5 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray5);
+        java.lang.Character[] charArray7 = org.apache.commons.lang3.ArrayUtils.toObject(charArray6);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray6);
+        char[] charArray9 = org.apache.commons.lang3.ArrayUtils.clone(charArray6);
+        int int12 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(charArray6, '4', (int) (short) 0);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray6), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray6), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray7);
+        org.junit.Assert.assertNotNull(charArray9);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray9), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray9), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray9), "[4, a,  , a, 4]");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 0 + "'", int12 == 0);
+    }
+
+    @Test
+    public void test2754() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2754");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray15 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray3);
+        double[] doubleArray17 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray3, (double) 2);
+        double[] doubleArray21 = new double[] { (short) 100, 1, (-1.0d) };
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray21, (double) 0.0f, (int) (short) 0);
+        double[] doubleArray26 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray21, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray26);
+        double[] doubleArray28 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray17, doubleArray27);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray15), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray17);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray17), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray21), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray26), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray28), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+    }
+
+    @Test
+    public void test2755() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2755");
+        boolean[] booleanArray4 = new boolean[] { false, true, true, false };
+        int int7 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray4, true, 10);
+        boolean[] booleanArray10 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray4, (int) (short) -1, (int) '#');
+        boolean[] booleanArray12 = org.apache.commons.lang3.ArrayUtils.removeElement(booleanArray10, false);
+        boolean boolean13 = org.apache.commons.lang3.ArrayUtils.isEmpty(booleanArray10);
+        boolean[] booleanArray16 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray10, 2, (int) (short) -1);
+        // The following exception was thrown during execution in test generation
+        try {
+            boolean[] booleanArray19 = org.apache.commons.lang3.ArrayUtils.add(booleanArray10, (int) (short) 10, false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 10, Length: 4");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(booleanArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray4), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray10), "[false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray12), "[true, true, false]");
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNotNull(booleanArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray16), "[]");
+    }
+
+    @Test
+    public void test2756() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2756");
+        double[] doubleArray0 = new double[] {};
+        int int3 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray0, (double) (byte) 100, (double) (byte) 1);
+        double[] doubleArray4 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray0);
+        java.lang.Double[] doubleArray9 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray10 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray9);
+        double[] doubleArray12 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray9, 0.0d);
+        double[] doubleArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray9);
+        int int16 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray13, (double) 10.0f, 10.0d);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.isSameLength(doubleArray4, doubleArray13);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray13, (double) 1.0f);
+        int int21 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray13, 0.0d);
+        double[] doubleArray23 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray13, 100.0d);
+        double[] doubleArray25 = org.apache.commons.lang3.ArrayUtils.remove(doubleArray23, 3);
+        int int27 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray25, 100.0d);
+        org.junit.Assert.assertNotNull(doubleArray0);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray0), "[]");
+        org.junit.Assert.assertTrue("'" + int3 + "' != '" + (-1) + "'", int3 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray4), "[]");
+        org.junit.Assert.assertNotNull(doubleArray9);
+        org.junit.Assert.assertNotNull(doubleArray10);
+        org.junit.Assert.assertNotNull(doubleArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray12), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray13), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 3 + "'", int21 == 3);
+        org.junit.Assert.assertNotNull(doubleArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray23), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertNotNull(doubleArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray25), "[10.0, -1.0, 10.0]");
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
+    }
+
+    @Test
+    public void test2757() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2757");
+        java.lang.Short[] shortArray3 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray3);
+        short[] shortArray6 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray4, (short) 0);
+        java.lang.Short[] shortArray10 = new java.lang.Short[] { (short) -1, (short) 100, (short) 1 };
+        short[] shortArray11 = org.apache.commons.lang3.ArrayUtils.toPrimitive(shortArray10);
+        short[] shortArray12 = org.apache.commons.lang3.ArrayUtils.addAll(shortArray4, shortArray11);
+        short[] shortArray14 = org.apache.commons.lang3.ArrayUtils.removeElement(shortArray4, (short) (byte) 1);
+        org.junit.Assert.assertNotNull(shortArray3);
+        org.junit.Assert.assertNotNull(shortArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray4), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray6), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray10);
+        org.junit.Assert.assertNotNull(shortArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray11), "[-1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray12), "[-1, 100, 1, -1, 100, 1]");
+        org.junit.Assert.assertNotNull(shortArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(shortArray14), "[-1, 100]");
+    }
+
+    @Test
+    public void test2758() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2758");
+        long[] longArray3 = new long[] { 10L, 100L, '#' };
+        boolean boolean4 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray3);
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray3, (long) (short) 0, (-1));
+        int int10 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray3, (long) (short) 0, (int) '#');
+        boolean boolean11 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray3);
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.add(longArray3, (long) (short) 0);
+        org.apache.commons.lang3.ArrayUtils.reverse(longArray3);
+        int int17 = org.apache.commons.lang3.ArrayUtils.indexOf(longArray3, (long) (byte) 100, (int) (short) -1);
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray3), "[35, 100, 10]");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[10, 100, 35, 0]");
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 1 + "'", int17 == 1);
+    }
+
+    @Test
+    public void test2759() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2759");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3);
+        java.lang.Integer[] intArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray3);
+        java.lang.Integer[] intArray6 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray3);
+        java.lang.Character[] charArray12 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray13 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray12);
+        java.lang.Character[] charArray14 = org.apache.commons.lang3.ArrayUtils.toObject(charArray13);
+        boolean[] booleanArray19 = new boolean[] { false, true, true, false };
+        int int22 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray19, true, 10);
+        boolean[] booleanArray24 = org.apache.commons.lang3.ArrayUtils.add(booleanArray19, false);
+        boolean boolean25 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(booleanArray19);
+        java.lang.Object[] objArray26 = new java.lang.Object[] { charArray14, booleanArray19 };
+        double[] doubleArray30 = new double[] { (short) 100, 1, (-1.0d) };
+        int int33 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray30, (double) 0.0f, (int) (short) 0);
+        int int36 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray30, 0.0d, 10);
+        int int38 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray30, (double) (byte) 10);
+        int int41 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray30, (double) '4', (int) (short) 10);
+        java.lang.Class<?> wildcardClass42 = doubleArray30.getClass();
+        int int44 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) charArray14, (java.lang.Object) wildcardClass42, 0);
+        boolean boolean45 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) intArray6, (java.lang.Object[]) charArray14);
+        int[] intArray47 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray6, (int) (short) 100);
+        int[] intArray50 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray51 = org.apache.commons.lang3.ArrayUtils.toObject(intArray50);
+        int[] intArray52 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray51);
+        java.lang.Integer[] intArray53 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray51);
+        java.lang.Integer[] intArray54 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray51);
+        int[] intArray55 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray51);
+        int[] intArray57 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray51, 2);
+        boolean boolean58 = org.apache.commons.lang3.ArrayUtils.isSameLength(intArray47, intArray57);
+        boolean boolean59 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(intArray47);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertNotNull(charArray12);
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray13), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray13), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray13), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertNotNull(booleanArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray19), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray24), "[false, true, true, false, false]");
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
+        org.junit.Assert.assertNotNull(objArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray26), "[[4, a,  , a, 4], [false, true, true, false]]");
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int33 + "' != '" + (-1) + "'", int33 == (-1));
+        org.junit.Assert.assertTrue("'" + int36 + "' != '" + (-1) + "'", int36 == (-1));
+        org.junit.Assert.assertTrue("'" + int38 + "' != '" + (-1) + "'", int38 == (-1));
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + (-1) + "'", int41 == (-1));
+        org.junit.Assert.assertNotNull(wildcardClass42);
+        org.junit.Assert.assertTrue("'" + int44 + "' != '" + (-1) + "'", int44 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean45 + "' != '" + false + "'", boolean45 == false);
+        org.junit.Assert.assertNotNull(intArray47);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray47), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray50), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray51);
+        org.junit.Assert.assertNotNull(intArray52);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray52), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray53);
+        org.junit.Assert.assertNotNull(intArray54);
+        org.junit.Assert.assertNotNull(intArray55);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray55), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray57);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray57), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + boolean58 + "' != '" + true + "'", boolean58 == true);
+        org.junit.Assert.assertTrue("'" + boolean59 + "' != '" + true + "'", boolean59 == true);
+    }
+
+    @Test
+    public void test2760() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2760");
+        long[] longArray2 = new long[] { 100L, 'a' };
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.subarray(longArray2, (int) (short) 10, 100);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray5);
+        long[] longArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray5, (long) 0);
+        java.lang.Long[] longArray9 = org.apache.commons.lang3.ArrayUtils.toObject(longArray8);
+        long[] longArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray9);
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.add(longArray10, (int) (short) 0, (long) 1);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray10);
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(longArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray8), "[]");
+        org.junit.Assert.assertNotNull(longArray9);
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[]");
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[1]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+    }
+
+    @Test
+    public void test2761() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2761");
+        long[] longArray3 = new long[] { 10L, 100L, '#' };
+        boolean boolean4 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray3);
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray3, (long) (short) 0, (-1));
+        long[] longArray10 = org.apache.commons.lang3.ArrayUtils.subarray(longArray3, (int) (short) 0, 100);
+        long[] longArray12 = new long[] { ' ' };
+        boolean boolean13 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray12);
+        long[] longArray14 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_ARRAY;
+        long[] longArray15 = org.apache.commons.lang3.ArrayUtils.addAll(longArray12, longArray14);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray15);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray10, longArray15);
+        long[] longArray19 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray15, 1L);
+        long[] longArray22 = org.apache.commons.lang3.ArrayUtils.subarray(longArray19, (int) (byte) 10, 3);
+        boolean boolean23 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray19);
+        int int26 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray19, (long) (byte) 100, (int) (short) 0);
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray3), "[10, 100, 35]");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[10, 100, 35]");
+        org.junit.Assert.assertNotNull(longArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray12), "[32]");
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
+        org.junit.Assert.assertNotNull(longArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray14), "[]");
+        org.junit.Assert.assertNotNull(longArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray15), "[32]");
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertNotNull(longArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray19), "[32]");
+        org.junit.Assert.assertNotNull(longArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray22), "[]");
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+    }
+
+    @Test
+    public void test2762() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2762");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        int[] intArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) '#');
+        int[] intArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3);
+        int[] intArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3);
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3);
+        int[] intArray11 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray10);
+        int[] intArray14 = org.apache.commons.lang3.ArrayUtils.subarray(intArray11, (int) (byte) 10, 0);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray8), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray11), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray14), "[]");
+    }
+
+    @Test
+    public void test2763() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2763");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray3, (double) ' ');
+        int int19 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 0, (double) 1);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray16), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 1 + "'", int19 == 1);
+    }
+
+    @Test
+    public void test2764() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2764");
+        byte[] byteArray5 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray5, (byte) 0);
+        byte[] byteArray9 = org.apache.commons.lang3.ArrayUtils.add(byteArray5, (byte) 10);
+        byte[] byteArray12 = org.apache.commons.lang3.ArrayUtils.subarray(byteArray5, 10, 1);
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray5, (byte) 0, 2);
+        int int18 = org.apache.commons.lang3.ArrayUtils.indexOf(byteArray5, (byte) 0, 0);
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray5);
+        org.apache.commons.lang3.ArrayUtils.reverse(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray5), "[0, 100, 100, 1, 0]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 4 + "'", int7 == 4);
+        org.junit.Assert.assertNotNull(byteArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray9), "[0, 1, 100, 100, 0, 10]");
+        org.junit.Assert.assertNotNull(byteArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray12), "[]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 0 + "'", int15 == 0);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + 0 + "'", int18 == 0);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+    }
+
+    @Test
+    public void test2765() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2765");
+        long[] longArray1 = new long[] { ' ' };
+        boolean boolean2 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray1);
+        long[] longArray3 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_ARRAY;
+        long[] longArray4 = org.apache.commons.lang3.ArrayUtils.addAll(longArray1, longArray3);
+        long[] longArray7 = org.apache.commons.lang3.ArrayUtils.subarray(longArray1, (int) (short) 1, (int) (byte) 100);
+        long[] longArray10 = new long[] { 100L, 'a' };
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.subarray(longArray10, (int) (short) 10, 100);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray13);
+        long[] longArray15 = org.apache.commons.lang3.ArrayUtils.addAll(longArray1, longArray13);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray1);
+        org.junit.Assert.assertNotNull(longArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray1), "[32]");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray3), "[]");
+        org.junit.Assert.assertNotNull(longArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray4), "[32]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray7), "[]");
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(longArray15);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray15), "[32]");
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + true + "'", boolean16 == true);
+    }
+
+    @Test
+    public void test2766() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2766");
+        java.lang.Long[] longArray0 = new java.lang.Long[] {};
+        long[] longArray1 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray0);
+        long[] longArray4 = org.apache.commons.lang3.ArrayUtils.subarray(longArray1, (int) (short) 100, (int) (byte) 0);
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray1);
+        // The following exception was thrown during execution in test generation
+        try {
+            long[] longArray7 = org.apache.commons.lang3.ArrayUtils.remove(longArray1, (int) (short) 100);
+            org.junit.Assert.fail("Expected exception of type java.lang.IndexOutOfBoundsException; message: Index: 100, Length: 0");
+        } catch (java.lang.IndexOutOfBoundsException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(longArray0);
+        org.junit.Assert.assertNotNull(longArray1);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray1), "[]");
+        org.junit.Assert.assertNotNull(longArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray4), "[]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+    }
+
+    @Test
+    public void test2767() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2767");
+        long[] longArray2 = new long[] { 100L, 'a' };
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.subarray(longArray2, (int) (short) 10, 100);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray5);
+        long[] longArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray5, (long) 0);
+        java.lang.Long[] longArray9 = org.apache.commons.lang3.ArrayUtils.toObject(longArray8);
+        long[] longArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray9);
+        long[] longArray11 = org.apache.commons.lang3.ArrayUtils.clone(longArray10);
+        int int13 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(longArray10, 10L);
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(longArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray8), "[]");
+        org.junit.Assert.assertNotNull(longArray9);
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[]");
+        org.junit.Assert.assertNotNull(longArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray11), "[]");
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+    }
+
+    @Test
+    public void test2768() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2768");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        java.lang.Byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        java.lang.Character[] charArray13 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray14 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray13);
+        java.lang.Character[] charArray15 = org.apache.commons.lang3.ArrayUtils.toObject(charArray14);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray7, (java.lang.Object) charArray14);
+        char[] charArray19 = org.apache.commons.lang3.ArrayUtils.subarray(charArray14, (int) (short) 10, 100);
+        char[] charArray22 = org.apache.commons.lang3.ArrayUtils.subarray(charArray19, (int) (byte) 10, 0);
+        char[] charArray28 = new char[] { '4', ' ', ' ', '#', '4' };
+        char[] charArray29 = org.apache.commons.lang3.ArrayUtils.clone(charArray28);
+        char[] charArray30 = null;
+        char[] charArray31 = org.apache.commons.lang3.ArrayUtils.addAll(charArray28, charArray30);
+        java.lang.Character[] charArray32 = org.apache.commons.lang3.ArrayUtils.toObject(charArray28);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray28);
+        java.lang.Byte[] byteArray38 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray40 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray38, (byte) -1);
+        java.lang.Byte[] byteArray41 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray38);
+        java.lang.Character[] charArray47 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray48 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray47);
+        java.lang.Character[] charArray49 = org.apache.commons.lang3.ArrayUtils.toObject(charArray48);
+        boolean boolean50 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray41, (java.lang.Object) charArray48);
+        char[] charArray53 = org.apache.commons.lang3.ArrayUtils.subarray(charArray48, (int) (short) 10, 100);
+        char[] charArray55 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray53, '#');
+        char[] charArray56 = org.apache.commons.lang3.ArrayUtils.clone(charArray53);
+        org.apache.commons.lang3.ArrayUtils.reverse(charArray56);
+        char[] charArray59 = org.apache.commons.lang3.ArrayUtils.removeElement(charArray56, '4');
+        java.lang.Character[] charArray62 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray63 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray62);
+        char[] charArray64 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray63);
+        char[] charArray67 = org.apache.commons.lang3.ArrayUtils.subarray(charArray64, (int) ' ', (int) '#');
+        boolean boolean68 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray59, charArray64);
+        char[] charArray69 = org.apache.commons.lang3.ArrayUtils.addAll(charArray28, charArray64);
+        boolean boolean70 = org.apache.commons.lang3.ArrayUtils.isSameLength(charArray19, charArray69);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertNotNull(charArray13);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray14), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray14), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNotNull(charArray19);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray19), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray19), "[]");
+        org.junit.Assert.assertNotNull(charArray22);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray22), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray22), "[]");
+        org.junit.Assert.assertNotNull(charArray28);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray28), "4#  4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray28), "4#  4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray28), "[4, #,  ,  , 4]");
+        org.junit.Assert.assertNotNull(charArray29);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray29), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray29), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray29), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray31);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray31), "4  #4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray31), "4  #4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray31), "[4,  ,  , #, 4]");
+        org.junit.Assert.assertNotNull(charArray32);
+        org.junit.Assert.assertNotNull(byteArray38);
+        org.junit.Assert.assertNotNull(byteArray40);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray40), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray41);
+        org.junit.Assert.assertNotNull(charArray47);
+        org.junit.Assert.assertNotNull(charArray48);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray48), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray48), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray48), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray49);
+        org.junit.Assert.assertTrue("'" + boolean50 + "' != '" + false + "'", boolean50 == false);
+        org.junit.Assert.assertNotNull(charArray53);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray53), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray53), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray53), "[]");
+        org.junit.Assert.assertNotNull(charArray55);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray55), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray55), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray55), "[]");
+        org.junit.Assert.assertNotNull(charArray56);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray56), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray56), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray56), "[]");
+        org.junit.Assert.assertNotNull(charArray59);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray59), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray59), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray59), "[]");
+        org.junit.Assert.assertNotNull(charArray62);
+        org.junit.Assert.assertNotNull(charArray63);
+        org.junit.Assert.assertNotNull(charArray64);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray64), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray64), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray64), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray67);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray67), "");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray67), "");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray67), "[]");
+        org.junit.Assert.assertTrue("'" + boolean68 + "' != '" + false + "'", boolean68 == false);
+        org.junit.Assert.assertNotNull(charArray69);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray69), "4#  4##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray69), "4#  4##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray69), "[4, #,  ,  , 4, #, #]");
+        org.junit.Assert.assertTrue("'" + boolean70 + "' != '" + false + "'", boolean70 == false);
+    }
+
+    @Test
+    public void test2769() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2769");
+        java.lang.Character[] charArray2 = new java.lang.Character[] { '#', '#' };
+        java.lang.Character[] charArray3 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(charArray2);
+        char[] charArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray3, 'a');
+        java.lang.Character[] charArray6 = org.apache.commons.lang3.ArrayUtils.toObject(charArray5);
+        char[] charArray8 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray6, 'a');
+        char[] charArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray6);
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray3);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray5), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray5), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertNotNull(charArray8);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray8), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray8), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray8), "[#, #]");
+        org.junit.Assert.assertNotNull(charArray9);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray9), "##");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray9), "##");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray9), "[#, #]");
+    }
+
+    @Test
+    public void test2770() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2770");
+        java.lang.Short[] shortArray0 = new java.lang.Short[] {};
+        java.lang.Short[] shortArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(shortArray0);
+        int[] intArray4 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray5 = org.apache.commons.lang3.ArrayUtils.toObject(intArray4);
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray5);
+        java.lang.Integer[] intArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray5);
+        int[] intArray9 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray5, 0);
+        int[] intArray10 = org.apache.commons.lang3.ArrayUtils.clone(intArray9);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) shortArray1, (java.lang.Object) intArray10);
+        java.lang.Integer[] intArray12 = org.apache.commons.lang3.ArrayUtils.toObject(intArray10);
+        org.junit.Assert.assertNotNull(shortArray0);
+        org.junit.Assert.assertNotNull(shortArray1);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray7);
+        org.junit.Assert.assertNotNull(intArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNotNull(intArray12);
+    }
+
+    @Test
+    public void test2771() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2771");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        boolean boolean7 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray6);
+        byte[] byteArray9 = org.apache.commons.lang3.ArrayUtils.add(byteArray6, (byte) 100);
+        java.lang.Byte[] byteArray14 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray16 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray14, (byte) -1);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.isEmpty(byteArray16);
+        byte[] byteArray19 = org.apache.commons.lang3.ArrayUtils.add(byteArray16, (byte) 100);
+        byte[] byteArray20 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray6, byteArray16);
+        byte[] byteArray21 = org.apache.commons.lang3.ArrayUtils.clone(byteArray20);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertNotNull(byteArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray9), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray14);
+        org.junit.Assert.assertNotNull(byteArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray16), "[1, -1, -1, 1]");
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertNotNull(byteArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray19), "[1, -1, -1, 1, 100]");
+        org.junit.Assert.assertNotNull(byteArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray20), "[1, -1, -1, 1, 1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray21), "[1, -1, -1, 1, 1, -1, -1, 1]");
+    }
+
+    @Test
+    public void test2772() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2772");
+        java.lang.Byte[] byteArray1 = new java.lang.Byte[] { (byte) -1 };
+        java.lang.Byte[] byteArray2 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        byte[] byteArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray1, (byte) 1);
+        java.lang.Byte[] byteArray5 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray1);
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray5, (byte) 0);
+        byte[] byteArray8 = org.apache.commons.lang3.ArrayUtils.clone(byteArray7);
+        byte[] byteArray14 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int16 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray14, (byte) 0);
+        byte[] byteArray18 = org.apache.commons.lang3.ArrayUtils.add(byteArray14, (byte) 10);
+        byte[] byteArray19 = org.apache.commons.lang3.ArrayUtils.addAll(byteArray7, byteArray14);
+        org.junit.Assert.assertNotNull(byteArray1);
+        org.junit.Assert.assertNotNull(byteArray2);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray4), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray8), "[-1]");
+        org.junit.Assert.assertNotNull(byteArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray14), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 4 + "'", int16 == 4);
+        org.junit.Assert.assertNotNull(byteArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray18), "[0, 1, 100, 100, 0, 10]");
+        org.junit.Assert.assertNotNull(byteArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray19), "[-1, 0, 1, 100, 100, 0]");
+    }
+
+    @Test
+    public void test2773() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2773");
+        java.lang.Byte[] byteArray4 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray4, (byte) -1);
+        java.lang.Byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray4);
+        long[] longArray10 = new long[] { 100L, 'a' };
+        long[] longArray13 = org.apache.commons.lang3.ArrayUtils.subarray(longArray10, (int) (short) 10, 100);
+        boolean boolean14 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray13);
+        long[] longArray16 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray13, (long) 0);
+        java.lang.Long[] longArray17 = org.apache.commons.lang3.ArrayUtils.toObject(longArray16);
+        java.io.Serializable[] serializableArray18 = org.apache.commons.lang3.ArrayUtils.removeElement((java.io.Serializable[]) byteArray4, (java.lang.Object) longArray17);
+        long[] longArray20 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray17, (long) (-1));
+        java.lang.Long[] longArray21 = org.apache.commons.lang3.ArrayUtils.toObject(longArray20);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(longArray20, (long) 2, (int) (byte) 10);
+        org.junit.Assert.assertNotNull(byteArray4);
+        org.junit.Assert.assertNotNull(byteArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray6), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertNotNull(longArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray10), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray13), "[]");
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(longArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray16), "[]");
+        org.junit.Assert.assertNotNull(longArray17);
+        org.junit.Assert.assertNotNull(serializableArray18);
+        org.junit.Assert.assertNotNull(longArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray20), "[]");
+        org.junit.Assert.assertNotNull(longArray21);
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+    }
+
+    @Test
+    public void test2774() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2774");
+        java.lang.Byte[] byteArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_OBJECT_ARRAY;
+        java.lang.Byte[] byteArray5 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray5, (byte) -1);
+        java.lang.Byte[] byteArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray5);
+        java.lang.Character[] charArray14 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray15 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray14);
+        java.lang.Character[] charArray16 = org.apache.commons.lang3.ArrayUtils.toObject(charArray15);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray8, (java.lang.Object) charArray15);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) byteArray0, (java.lang.Object[]) byteArray8);
+        int[] intArray21 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray22 = org.apache.commons.lang3.ArrayUtils.toObject(intArray21);
+        int[] intArray23 = org.apache.commons.lang3.ArrayUtils.clone(intArray21);
+        int[] intArray24 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        int[] intArray25 = org.apache.commons.lang3.ArrayUtils.addAll(intArray23, intArray24);
+        int[] intArray26 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray25);
+        java.io.Serializable[] serializableArray27 = org.apache.commons.lang3.ArrayUtils.removeElement((java.io.Serializable[]) byteArray8, (java.lang.Object) intArray26);
+        boolean[] booleanArray32 = new boolean[] { false, true, true, false };
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray32, true, 10);
+        boolean[] booleanArray37 = org.apache.commons.lang3.ArrayUtils.add(booleanArray32, false);
+        boolean[] booleanArray38 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray37);
+        boolean[] booleanArray44 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray46 = org.apache.commons.lang3.ArrayUtils.add(booleanArray44, true);
+        boolean boolean47 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray37, booleanArray46);
+        java.lang.Boolean[] booleanArray48 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray46);
+        boolean[] booleanArray50 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray48, true);
+        boolean[] booleanArray51 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray48);
+        boolean boolean52 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) byteArray8, (java.lang.Object[]) booleanArray48);
+        boolean[] booleanArray53 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray48);
+        boolean[] booleanArray55 = org.apache.commons.lang3.ArrayUtils.add(booleanArray53, true);
+        boolean[] booleanArray58 = org.apache.commons.lang3.ArrayUtils.subarray(booleanArray53, (int) (short) -1, (int) (byte) 10);
+        org.junit.Assert.assertNotNull(byteArray0);
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray8);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray15), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray15), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray15), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(intArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray21), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray22);
+        org.junit.Assert.assertNotNull(intArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray23), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray24), "[]");
+        org.junit.Assert.assertNotNull(intArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray25), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray26), "[35, 0]");
+        org.junit.Assert.assertNotNull(serializableArray27);
+        org.junit.Assert.assertNotNull(booleanArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray32), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray37), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray38), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray44);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray44), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray46);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray46), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean47 + "' != '" + false + "'", boolean47 == false);
+        org.junit.Assert.assertNotNull(booleanArray48);
+        org.junit.Assert.assertNotNull(booleanArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray50), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray51);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray51), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + false + "'", boolean52 == false);
+        org.junit.Assert.assertNotNull(booleanArray53);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray53), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray55);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray55), "[false, false, true, true, false, true, true]");
+        org.junit.Assert.assertNotNull(booleanArray58);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray58), "[false, false, true, true, false, true]");
+    }
+
+    @Test
+    public void test2775() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2775");
+        java.lang.Integer[] intArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_INTEGER_OBJECT_ARRAY;
+        java.lang.Integer[] intArray1 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray0);
+        int[] intArray3 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray0, 0);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray0, (int) (short) 1);
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray0);
+        org.junit.Assert.assertNotNull(intArray0);
+        org.junit.Assert.assertNotNull(intArray1);
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray3), "[]");
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[]");
+    }
+
+    @Test
+    public void test2776() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2776");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray4 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3);
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.removeElement(intArray4, (int) (short) 0);
+        int int8 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray4, 7);
+        java.lang.Integer[] intArray9 = org.apache.commons.lang3.ArrayUtils.EMPTY_INTEGER_OBJECT_ARRAY;
+        int[] intArray11 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray9, 5);
+        org.apache.commons.lang3.ArrayUtils.reverse(intArray11);
+        int[] intArray13 = org.apache.commons.lang3.ArrayUtils.addAll(intArray4, intArray11);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray4);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray4), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35]");
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNotNull(intArray9);
+        org.junit.Assert.assertNotNull(intArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray11), "[]");
+        org.junit.Assert.assertNotNull(intArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray13), "[35, 0]");
+    }
+
+    @Test
+    public void test2777() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2777");
+        byte[] byteArray5 = new byte[] { (byte) 0, (byte) 1, (byte) 100, (byte) 100, (byte) 0 };
+        int int7 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray5, (byte) 0);
+        boolean boolean9 = org.apache.commons.lang3.ArrayUtils.contains(byteArray5, (byte) 100);
+        byte[] byteArray12 = org.apache.commons.lang3.ArrayUtils.subarray(byteArray5, 100, 0);
+        int int15 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray5, (byte) 0, 0);
+        byte[] byteArray18 = org.apache.commons.lang3.ArrayUtils.subarray(byteArray5, (int) (short) 0, 4);
+        byte[] byteArray20 = org.apache.commons.lang3.ArrayUtils.add(byteArray18, (byte) 1);
+        int int22 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(byteArray20, (byte) 10);
+        byte[] byteArray24 = org.apache.commons.lang3.ArrayUtils.removeElement(byteArray20, (byte) 100);
+        byte[] byteArray25 = org.apache.commons.lang3.ArrayUtils.clone(byteArray24);
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray5), "[0, 1, 100, 100, 0]");
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 4 + "'", int7 == 4);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertNotNull(byteArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray12), "[]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 0 + "'", int15 == 0);
+        org.junit.Assert.assertNotNull(byteArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray18), "[0, 1, 100, 100]");
+        org.junit.Assert.assertNotNull(byteArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray20), "[0, 1, 100, 100, 1]");
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+        org.junit.Assert.assertNotNull(byteArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray24), "[0, 1, 100, 1]");
+        org.junit.Assert.assertNotNull(byteArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray25), "[0, 1, 100, 1]");
+    }
+
+    @Test
+    public void test2778() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2778");
+        java.lang.Character[][][] charArray0 = new java.lang.Character[][][] {};
+        java.lang.Character[][][] charArray1 = new java.lang.Character[][][] {};
+        java.lang.Character[][][] charArray2 = new java.lang.Character[][][] {};
+        java.lang.Character[][][] charArray3 = new java.lang.Character[][][] {};
+        java.lang.Character[][][] charArray4 = new java.lang.Character[][][] {};
+        java.lang.Character[][][][] charArray5 = new java.lang.Character[][][][] { charArray0, charArray1, charArray2, charArray3, charArray4 };
+        java.lang.Character[][][][][] charArray6 = new java.lang.Character[][][][][] { charArray5 };
+        java.lang.Character[][][][][] charArray7 = org.apache.commons.lang3.ArrayUtils.clone(charArray6);
+        org.junit.Assert.assertNotNull(charArray0);
+        org.junit.Assert.assertNotNull(charArray1);
+        org.junit.Assert.assertNotNull(charArray2);
+        org.junit.Assert.assertNotNull(charArray3);
+        org.junit.Assert.assertNotNull(charArray4);
+        org.junit.Assert.assertNotNull(charArray5);
+        org.junit.Assert.assertNotNull(charArray6);
+        org.junit.Assert.assertNotNull(charArray7);
+    }
+
+    @Test
+    public void test2779() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2779");
+        int[] intArray2 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray3 = org.apache.commons.lang3.ArrayUtils.toObject(intArray2);
+        int[] intArray5 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray3, (int) 'a');
+        int[] intArray6 = org.apache.commons.lang3.ArrayUtils.clone(intArray5);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray6, (int) (short) 1, 0);
+        int[] intArray12 = new int[] { (byte) 10, 1 };
+        int int15 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray12, (int) (short) 100, 100);
+        boolean boolean16 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(intArray12);
+        int[] intArray18 = org.apache.commons.lang3.ArrayUtils.removeElement(intArray12, (int) 'a');
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isSameLength(intArray6, intArray18);
+        int[] intArray22 = org.apache.commons.lang3.ArrayUtils.subarray(intArray6, 3, (int) (short) -1);
+        int[] intArray24 = org.apache.commons.lang3.ArrayUtils.removeElement(intArray22, (int) (byte) -1);
+        int int27 = org.apache.commons.lang3.ArrayUtils.indexOf(intArray24, 7, (int) (short) -1);
+        int[] intArray28 = org.apache.commons.lang3.ArrayUtils.clone(intArray24);
+        org.junit.Assert.assertNotNull(intArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray2), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray3);
+        org.junit.Assert.assertNotNull(intArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray5), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray6), "[35, 0]");
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertNotNull(intArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray12), "[10, 1]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + true + "'", boolean16 == true);
+        org.junit.Assert.assertNotNull(intArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray18), "[10, 1]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
+        org.junit.Assert.assertNotNull(intArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray22), "[]");
+        org.junit.Assert.assertNotNull(intArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray24), "[]");
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
+        org.junit.Assert.assertNotNull(intArray28);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray28), "[]");
+    }
+
+    @Test
+    public void test2780() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2780");
+        long[] longArray2 = new long[] { 100L, 'a' };
+        long[] longArray5 = org.apache.commons.lang3.ArrayUtils.subarray(longArray2, (int) (short) 10, 100);
+        boolean boolean6 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray5);
+        long[] longArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray5, (long) 0);
+        java.lang.Long[] longArray9 = org.apache.commons.lang3.ArrayUtils.toObject(longArray8);
+        long[] longArray11 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray9, 0L);
+        java.lang.Long[] longArray12 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray9);
+        java.lang.String[] strArray15 = new java.lang.String[] { "hi!", "hi!" };
+        java.lang.String[] strArray16 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(strArray15);
+        long[] longArray18 = new long[] { ' ' };
+        boolean boolean19 = org.apache.commons.lang3.ArrayUtils.isNotEmpty(longArray18);
+        long[] longArray20 = org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_ARRAY;
+        long[] longArray21 = org.apache.commons.lang3.ArrayUtils.addAll(longArray18, longArray20);
+        long[] longArray24 = new long[] { 100L, 'a' };
+        long[] longArray27 = org.apache.commons.lang3.ArrayUtils.subarray(longArray24, (int) (short) 10, 100);
+        boolean boolean28 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray27);
+        long[] longArray30 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray27, (long) 0);
+        boolean boolean31 = org.apache.commons.lang3.ArrayUtils.isSameLength(longArray20, longArray27);
+        boolean boolean32 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) strArray16, (java.lang.Object) longArray20);
+        java.lang.String[] strArray33 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(strArray16);
+        java.lang.Object[] objArray34 = org.apache.commons.lang3.ArrayUtils.nullToEmpty((java.lang.Object[]) strArray16);
+        boolean boolean35 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) longArray12, objArray34);
+        org.junit.Assert.assertNotNull(longArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray2), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray5);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray5), "[]");
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(longArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray8), "[]");
+        org.junit.Assert.assertNotNull(longArray9);
+        org.junit.Assert.assertNotNull(longArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray11), "[]");
+        org.junit.Assert.assertNotNull(longArray12);
+        org.junit.Assert.assertNotNull(strArray15);
+        org.junit.Assert.assertNotNull(strArray16);
+        org.junit.Assert.assertNotNull(longArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray18), "[32]");
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
+        org.junit.Assert.assertNotNull(longArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray20), "[]");
+        org.junit.Assert.assertNotNull(longArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray21), "[32]");
+        org.junit.Assert.assertNotNull(longArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray24), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray27), "[]");
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        org.junit.Assert.assertNotNull(longArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray30), "[]");
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(strArray33);
+        org.junit.Assert.assertNotNull(objArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray34), "[hi!, hi!]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray34), "[hi!, hi!]");
+        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + false + "'", boolean35 == false);
+    }
+
+    @Test
+    public void test2781() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2781");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.clone(floatArray7);
+        float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) 'a');
+        float[] floatArray13 = org.apache.commons.lang3.ArrayUtils.remove(floatArray7, (int) (byte) 0);
+        int int15 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray7, (float) 10);
+        float[] floatArray18 = org.apache.commons.lang3.ArrayUtils.subarray(floatArray7, (int) '#', (int) (short) 1);
+        java.lang.String str19 = org.apache.commons.lang3.ArrayUtils.toString((java.lang.Object) floatArray18);
+        int int22 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(floatArray18, (float) 10, 0);
+        org.apache.commons.lang3.ArrayUtils.reverse(floatArray18);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray8), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray11), "[]");
+        org.junit.Assert.assertNotNull(floatArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray13), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertNotNull(floatArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray18), "[]");
+        org.junit.Assert.assertEquals("'" + str19 + "' != '" + "{}" + "'", str19, "{}");
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+    }
+
+    @Test
+    public void test2782() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2782");
+        long[] longArray0 = null;
+        long[] longArray3 = new long[] { (byte) 10, (byte) 100 };
+        java.lang.Long[] longArray4 = org.apache.commons.lang3.ArrayUtils.toObject(longArray3);
+        long[] longArray6 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray3, 10L);
+        long[] longArray7 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray6);
+        int int10 = org.apache.commons.lang3.ArrayUtils.indexOf(longArray7, (long) (byte) -1, (-1));
+        long[] longArray11 = org.apache.commons.lang3.ArrayUtils.addAll(longArray0, longArray7);
+        int[] intArray14 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray15 = org.apache.commons.lang3.ArrayUtils.toObject(intArray14);
+        int[] intArray16 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray15);
+        java.lang.Integer[] intArray17 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray15);
+        int[] intArray19 = org.apache.commons.lang3.ArrayUtils.toPrimitive(intArray15, 0);
+        java.lang.Byte[] byteArray24 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray26 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray24, (byte) -1);
+        java.lang.Byte[] byteArray27 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray24);
+        long[] longArray30 = new long[] { 100L, 'a' };
+        long[] longArray33 = org.apache.commons.lang3.ArrayUtils.subarray(longArray30, (int) (short) 10, 100);
+        boolean boolean34 = org.apache.commons.lang3.ArrayUtils.isEmpty(longArray33);
+        long[] longArray36 = org.apache.commons.lang3.ArrayUtils.removeElement(longArray33, (long) 0);
+        java.lang.Long[] longArray37 = org.apache.commons.lang3.ArrayUtils.toObject(longArray36);
+        java.io.Serializable[] serializableArray38 = org.apache.commons.lang3.ArrayUtils.removeElement((java.io.Serializable[]) byteArray24, (java.lang.Object) longArray37);
+        java.lang.Double[] doubleArray43 = new java.lang.Double[] { 10.0d, (-1.0d), 10.0d, 0.0d };
+        java.lang.Double[] doubleArray44 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(doubleArray43);
+        double[] doubleArray46 = org.apache.commons.lang3.ArrayUtils.toPrimitive(doubleArray44, (double) 1);
+        int int47 = org.apache.commons.lang3.ArrayUtils.indexOf((java.lang.Object[]) longArray37, (java.lang.Object) doubleArray46);
+        java.lang.Object[] objArray48 = org.apache.commons.lang3.ArrayUtils.addAll((java.lang.Object[]) intArray15, (java.lang.Object[]) longArray37);
+        java.lang.Long[] longArray49 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(longArray37);
+        long[] longArray51 = org.apache.commons.lang3.ArrayUtils.toPrimitive(longArray37, (long) (short) 100);
+        long[] longArray52 = org.apache.commons.lang3.ArrayUtils.addAll(longArray7, longArray51);
+        org.junit.Assert.assertNotNull(longArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray3), "[10, 100]");
+        org.junit.Assert.assertNotNull(longArray4);
+        org.junit.Assert.assertNotNull(longArray6);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray6), "[100]");
+        org.junit.Assert.assertNotNull(longArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray7), "[100]");
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNotNull(longArray11);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray11), "[100]");
+        org.junit.Assert.assertNotNull(intArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray14), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray15);
+        org.junit.Assert.assertNotNull(intArray16);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray16), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray17);
+        org.junit.Assert.assertNotNull(intArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray19), "[35, 0]");
+        org.junit.Assert.assertNotNull(byteArray24);
+        org.junit.Assert.assertNotNull(byteArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray26), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray27);
+        org.junit.Assert.assertNotNull(longArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray30), "[100, 97]");
+        org.junit.Assert.assertNotNull(longArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray33), "[]");
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + true + "'", boolean34 == true);
+        org.junit.Assert.assertNotNull(longArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray36), "[]");
+        org.junit.Assert.assertNotNull(longArray37);
+        org.junit.Assert.assertNotNull(serializableArray38);
+        org.junit.Assert.assertNotNull(doubleArray43);
+        org.junit.Assert.assertNotNull(doubleArray44);
+        org.junit.Assert.assertNotNull(doubleArray46);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray46), "[10.0, -1.0, 10.0, 0.0]");
+        org.junit.Assert.assertTrue("'" + int47 + "' != '" + (-1) + "'", int47 == (-1));
+        org.junit.Assert.assertNotNull(objArray48);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray48), "[35, 0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray48), "[35, 0]");
+        org.junit.Assert.assertNotNull(longArray49);
+        org.junit.Assert.assertNotNull(longArray51);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray51), "[]");
+        org.junit.Assert.assertNotNull(longArray52);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(longArray52), "[100]");
+    }
+
+    @Test
+    public void test2783() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2783");
+        float[] floatArray2 = new float[] { (-1L), (byte) 1 };
+        int int4 = org.apache.commons.lang3.ArrayUtils.indexOf(floatArray2, (float) (byte) 10);
+        float[] floatArray7 = org.apache.commons.lang3.ArrayUtils.add(floatArray2, (int) (byte) 1, (float) (byte) -1);
+        java.lang.Float[] floatArray8 = org.apache.commons.lang3.ArrayUtils.toObject(floatArray7);
+        java.lang.Float[] floatArray9 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray8);
+        float[] floatArray10 = org.apache.commons.lang3.ArrayUtils.toPrimitive(floatArray8);
+        java.lang.Float[] floatArray11 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray8);
+        java.lang.Float[] floatArray12 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(floatArray8);
+        org.junit.Assert.assertNotNull(floatArray2);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray2), "[-1.0, 1.0]");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNotNull(floatArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray7), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray8);
+        org.junit.Assert.assertNotNull(floatArray9);
+        org.junit.Assert.assertNotNull(floatArray10);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(floatArray10), "[-1.0, -1.0, 1.0]");
+        org.junit.Assert.assertNotNull(floatArray11);
+        org.junit.Assert.assertNotNull(floatArray12);
+    }
+
+    @Test
+    public void test2784() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2784");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        double[] doubleArray8 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray3, (double) (byte) 10);
+        boolean boolean10 = org.apache.commons.lang3.ArrayUtils.contains(doubleArray3, (double) (short) 1);
+        double[] doubleArray12 = org.apache.commons.lang3.ArrayUtils.add(doubleArray3, 10.0d);
+        int int16 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray12, (double) 3, 100, (double) (byte) 0);
+        double[] doubleArray20 = new double[] { (short) 100, 1, (-1.0d) };
+        int int23 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray20, (double) 0.0f, (int) (short) 0);
+        double[] doubleArray25 = org.apache.commons.lang3.ArrayUtils.removeElement(doubleArray20, (double) (byte) 10);
+        double[] doubleArray26 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray20);
+        double[] doubleArray29 = org.apache.commons.lang3.ArrayUtils.add(doubleArray26, 0, (double) (byte) 100);
+        double[] doubleArray32 = org.apache.commons.lang3.ArrayUtils.add(doubleArray26, 3, (-1.0d));
+        double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray12, doubleArray32);
+        java.lang.Double[] doubleArray34 = org.apache.commons.lang3.ArrayUtils.toObject(doubleArray33);
+        double[] doubleArray37 = org.apache.commons.lang3.ArrayUtils.add(doubleArray33, 0, (double) 7);
+        double[] doubleArray38 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray33);
+        int int41 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray38, (double) (short) 10, (int) ' ');
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray8);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray8), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertNotNull(doubleArray12);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray12), "[100.0, 1.0, -1.0, 10.0]");
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray20), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray25), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray26), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray29);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray29), "[100.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray32), "[100.0, 1.0, -1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[100.0, 1.0, -1.0, 10.0, 100.0, 1.0, -1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray34);
+        org.junit.Assert.assertNotNull(doubleArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray37), "[7.0, 100.0, 1.0, -1.0, 10.0, 100.0, 1.0, -1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray38), "[100.0, 1.0, -1.0, 10.0, 100.0, 1.0, -1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + 3 + "'", int41 == 3);
+    }
+
+    @Test
+    public void test2785() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2785");
+        java.lang.Byte[] byteArray0 = org.apache.commons.lang3.ArrayUtils.EMPTY_BYTE_OBJECT_ARRAY;
+        java.lang.Byte[] byteArray5 = new java.lang.Byte[] { (byte) 1, (byte) -1, (byte) -1, (byte) 1 };
+        byte[] byteArray7 = org.apache.commons.lang3.ArrayUtils.toPrimitive(byteArray5, (byte) -1);
+        java.lang.Byte[] byteArray8 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(byteArray5);
+        java.lang.Character[] charArray14 = new java.lang.Character[] { '4', 'a', ' ', 'a', '4' };
+        char[] charArray15 = org.apache.commons.lang3.ArrayUtils.toPrimitive(charArray14);
+        java.lang.Character[] charArray16 = org.apache.commons.lang3.ArrayUtils.toObject(charArray15);
+        boolean boolean17 = org.apache.commons.lang3.ArrayUtils.contains((java.lang.Object[]) byteArray8, (java.lang.Object) charArray15);
+        boolean boolean18 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) byteArray0, (java.lang.Object[]) byteArray8);
+        int[] intArray21 = new int[] { '#', (short) 0 };
+        java.lang.Integer[] intArray22 = org.apache.commons.lang3.ArrayUtils.toObject(intArray21);
+        int[] intArray23 = org.apache.commons.lang3.ArrayUtils.clone(intArray21);
+        int[] intArray24 = org.apache.commons.lang3.ArrayUtils.EMPTY_INT_ARRAY;
+        int[] intArray25 = org.apache.commons.lang3.ArrayUtils.addAll(intArray23, intArray24);
+        int[] intArray26 = org.apache.commons.lang3.ArrayUtils.nullToEmpty(intArray25);
+        java.io.Serializable[] serializableArray27 = org.apache.commons.lang3.ArrayUtils.removeElement((java.io.Serializable[]) byteArray8, (java.lang.Object) intArray26);
+        boolean[] booleanArray32 = new boolean[] { false, true, true, false };
+        int int35 = org.apache.commons.lang3.ArrayUtils.indexOf(booleanArray32, true, 10);
+        boolean[] booleanArray37 = org.apache.commons.lang3.ArrayUtils.add(booleanArray32, false);
+        boolean[] booleanArray38 = org.apache.commons.lang3.ArrayUtils.clone(booleanArray37);
+        boolean[] booleanArray44 = new boolean[] { false, false, true, true, false };
+        boolean[] booleanArray46 = org.apache.commons.lang3.ArrayUtils.add(booleanArray44, true);
+        boolean boolean47 = org.apache.commons.lang3.ArrayUtils.isSameLength(booleanArray37, booleanArray46);
+        java.lang.Boolean[] booleanArray48 = org.apache.commons.lang3.ArrayUtils.toObject(booleanArray46);
+        boolean[] booleanArray50 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray48, true);
+        boolean[] booleanArray51 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray48);
+        boolean boolean52 = org.apache.commons.lang3.ArrayUtils.isSameLength((java.lang.Object[]) byteArray8, (java.lang.Object[]) booleanArray48);
+        boolean[] booleanArray53 = org.apache.commons.lang3.ArrayUtils.toPrimitive(booleanArray48);
+        boolean boolean54 = org.apache.commons.lang3.ArrayUtils.isEmpty(booleanArray53);
+        java.lang.Class<?> wildcardClass55 = booleanArray53.getClass();
+        org.junit.Assert.assertNotNull(byteArray0);
+        org.junit.Assert.assertNotNull(byteArray5);
+        org.junit.Assert.assertNotNull(byteArray7);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(byteArray7), "[1, -1, -1, 1]");
+        org.junit.Assert.assertNotNull(byteArray8);
+        org.junit.Assert.assertNotNull(charArray14);
+        org.junit.Assert.assertNotNull(charArray15);
+        org.junit.Assert.assertEquals(java.lang.String.copyValueOf(charArray15), "4a a4");
+        org.junit.Assert.assertEquals(java.lang.String.valueOf(charArray15), "4a a4");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(charArray15), "[4, a,  , a, 4]");
+        org.junit.Assert.assertNotNull(charArray16);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(intArray21);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray21), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray22);
+        org.junit.Assert.assertNotNull(intArray23);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray23), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray24), "[]");
+        org.junit.Assert.assertNotNull(intArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray25), "[35, 0]");
+        org.junit.Assert.assertNotNull(intArray26);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray26), "[35, 0]");
+        org.junit.Assert.assertNotNull(serializableArray27);
+        org.junit.Assert.assertNotNull(booleanArray32);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray32), "[false, true, true, false]");
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-1) + "'", int35 == (-1));
+        org.junit.Assert.assertNotNull(booleanArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray37), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray38), "[false, true, true, false, false]");
+        org.junit.Assert.assertNotNull(booleanArray44);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray44), "[false, false, true, true, false]");
+        org.junit.Assert.assertNotNull(booleanArray46);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray46), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean47 + "' != '" + false + "'", boolean47 == false);
+        org.junit.Assert.assertNotNull(booleanArray48);
+        org.junit.Assert.assertNotNull(booleanArray50);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray50), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertNotNull(booleanArray51);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray51), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + false + "'", boolean52 == false);
+        org.junit.Assert.assertNotNull(booleanArray53);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(booleanArray53), "[false, false, true, true, false, true]");
+        org.junit.Assert.assertTrue("'" + boolean54 + "' != '" + false + "'", boolean54 == false);
+        org.junit.Assert.assertNotNull(wildcardClass55);
+    }
+
+    @Test
+    public void test2786() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest5.test2786");
+        double[] doubleArray3 = new double[] { (short) 100, 1, (-1.0d) };
+        int int6 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) 0.0f, (int) (short) 0);
+        int int9 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, 0.0d, 10);
+        int int11 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray3, (double) (byte) 10);
+        int int14 = org.apache.commons.lang3.ArrayUtils.lastIndexOf(doubleArray3, (double) '4', (int) (short) 10);
+        double[] doubleArray18 = new double[] { (short) 100, 1, (-1.0d) };
+        int int21 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) 0.0f, (int) (short) 0);
+        int int24 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, 0.0d, 10);
+        int int26 = org.apache.commons.lang3.ArrayUtils.indexOf(doubleArray18, (double) (byte) 10);
+        double[] doubleArray27 = org.apache.commons.lang3.ArrayUtils.addAll(doubleArray3, doubleArray18);
+        double[] doubleArray30 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray27, (int) '4', (int) (byte) 1);
+        double[] doubleArray33 = org.apache.commons.lang3.ArrayUtils.add(doubleArray27, 0, (double) ' ');
+        double[] doubleArray34 = org.apache.commons.lang3.ArrayUtils.clone(doubleArray27);
+        double[] doubleArray37 = org.apache.commons.lang3.ArrayUtils.subarray(doubleArray27, (int) (byte) 0, (int) ' ');
+        double[] doubleArray39 = org.apache.commons.lang3.ArrayUtils.add(doubleArray27, (double) 9);
+        org.junit.Assert.assertNotNull(doubleArray3);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray3), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray18), "[100.0, 1.0, -1.0]");
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNotNull(doubleArray27);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray30), "[]");
+        org.junit.Assert.assertNotNull(doubleArray33);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[32.0, 100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray34);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray34), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray37);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray37), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0]");
+        org.junit.Assert.assertNotNull(doubleArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray39), "[100.0, 1.0, -1.0, 100.0, 1.0, -1.0, 9.0]");
+    }
+}
+
