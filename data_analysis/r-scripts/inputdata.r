@@ -10,6 +10,13 @@ APPROACH_NAME="Cling"
 # Produces an easy to process dataframe from rq1 results csv file.
 getResultsOfRQ1 <- function(){
   df <- read.csv("data/rq1/cbc-coverage.csv", stringsAsFactors = FALSE)
+  df$testsuite[df$tool %in% "evosuite-callee5"] <- "EvoE"
+  df$testsuite[df$tool %in% "evosuite-caller5"] <- "EvoR"
+  df$testsuite[df$tool %in% "randoop-callee5"] <- "RanE"
+  df$testsuite[df$tool %in% "randoop-caller5"] <- "RanR"
+  df$testsuite[df$tool %in% "cling"] <- "C"
+  df$testsuite_f <- factor(df$testsuite,levels = c("EvoE","EvoR", "RanE","RanR","C"))
+  df$project_f = factor(df$project, levels=c('closure','mockito','time','lang','math','all'))
   return(df)
 }
 
@@ -24,7 +31,37 @@ getResultsOfRQ2 <- function(){
   return(df)
 }
 
+# Get randoop-related killed muntants
+getRanR <- function(){
+  df <- read.csv("data/rq2/randoopRKilled.csv", stringsAsFactors = FALSE)
+  return(df)
+}
 
+getRanE <- function(){
+  df <- read.csv("data/rq2/randoopEKilled.csv", stringsAsFactors = FALSE)
+  return(df)
+}
+
+getC_RanE <- function(){
+  df <- read.csv("data/rq2/cling-randoopE.csv", stringsAsFactors = FALSE)
+  return(df)
+}
+
+
+getC_RanR <- function(){
+  df <- read.csv("data/rq2/cling-randoopR.csv", stringsAsFactors = FALSE)
+  return(df)
+}
+
+getC_RanE_RanR <- function(){
+  df <- read.csv("data/rq2/cling-randoop-final.csv", stringsAsFactors = FALSE)
+  return(df)
+}
+
+getOnlyC <- function(){
+  df <- read.csv("data/rq2/cling-only-final.csv", stringsAsFactors = FALSE)
+  return(df)
+}
 
 getCER <- function(){
   df <- read.csv("data/rq2/cling-evoe-evor-final.csv", stringsAsFactors = FALSE)
@@ -70,5 +107,18 @@ getC <- function(){
 
 getTotalMutants <- function(){
   df <- read.csv("../../main/new/total_mutants.csv", stringsAsFactors = FALSE)
+  return(df)
+}
+
+
+# Line coverage inputs
+
+getLineCoverageDF <- function(){
+  df <- read.csv("data/line-coverage/line-coverage.csv", stringsAsFactors = FALSE)
+  return(df)
+}
+
+getLineStatusesDF <- function(){
+  df <- read.csv("data/line-coverage/all-lines.csv", stringsAsFactors = FALSE)
   return(df)
 }
