@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Check input CSV file
 INPUT="subject_generator/subjects.csv"
 [ ! -f $INPUT ] && { echo "$INPUT file not found"; }
@@ -57,6 +59,16 @@ for t in ${job_list[@]}; do
   elif [[ "$tool" == "cling" ]]; then
     echo "Task #$counter executes $tool for the $execution_id(th) time on project $project. caller class: $caller_class, callee class: $callee_class"
     . scripts/run/run_cling.sh $execution_id $project $caller_class $callee_class
+  elif [[ "$tool" == randoop* ]]; then
+    budgetInMinute=${tool//[!0-9]/}
+    budget=$((budgetInMinute * 60))
+    target_class=$callee_class
+    if [[ "$tool" == randoop-caller* ]]; then
+      target_class=$caller_class
+    fi
+    echo "Task #$counter executes Randoop with search_budget $budget seconds for the $execution_id(th) time on project $project. target class: $target_class"
+    . scripts/run/run_randoop.sh $execution_id $project $target_class $budget
+
   else
     echo "WARNING: coud not find tool $tool"
   fi
@@ -82,6 +94,10 @@ do
         resultDir="results/evosuite5/$project-$caller_class-$execution_id"
       elif [[ "$tool" == "botsing" ]]; then
         resultDir="results/$tool/$project-$caller_class-$callee_class-$execution_id"
+      elif [[ "$tool" == randoop-callee* ]]; then
+        resultDir="results/randoop5/$project-$callee_class-$execution_id"
+      elif [[ "$tool" == randoop-caller* ]]; then
+        resultDir="results/randoop5/$project-$caller_class-$execution_id"
       fi
 
       if [ ! -d "$resultDir" ]; then

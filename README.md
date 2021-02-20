@@ -2,29 +2,31 @@
 This repository contains the replication package for the application of Cling (automated class integration testing tool) and EvoSuite (automated unit testing tool) on 140 pairs of classes from five different open-source projects.
 
 This document contains the following instructions:
+- [Cling Application](#cling-application)
 - [Docker image](#docker-image)
 - [Run case filtering](#run-case-filtering)
 - [Run test generation tools](#run-test-generation-tools)
-  * [Prepare input CSV file](#prepare-input-csv-file)
-  * [Run test generation script](#run-test-generation-script)
-  * [Output](#output)
-- [RQ1: CBC Coverage](#rq1--cbc-coverage)
-  * [Collect CBC Coverage](#collect-cbc-coverage)
-  * [Data Analysis](#data-analysis)
-- [RQ2: Mutation Score](#rq2--mutation-score)
-  * [Run PIT](#run-pit)
-  * [Collect Mutation Scores](#collect-mutation-scores)
-  * [Collect the mutants Killed  By Cling](#collect-the-mutants-killed--by-cling)
-  * [Data Analysis](#data-analysis-1)
-- [RQ3: Captured Faults](#rq3--captured-faults)
-  * [Collect Captured Stack Traces](#collect-captured-stack-traces)
-  * [Collect Interesting Stack Traces](#collect-interesting-stack-traces)
-  * [Manual Analysis](#manual-analysis)
+  - [Prepare input CSV file](#prepare-input-csv-file)
+  - [Run test generation script](#run-test-generation-script)
+  - [Output](#output)
+- [RQ1: CBC Coverage](#rq1-cbc-coverage)
+  - [Collect CBC Coverage](#collect-cbc-coverage)
+  - [Data Analysis](#data-analysis)
+- [RQ2: Mutation Score and line coverage](#rq2-mutation-score-and-line-coverage)
+  - [Run PIT](#run-pit)
+  - [Collect Line coverages](#collect-line-coverages)
+  - [Collect Mutation Scores](#collect-mutation-scores)
+  - [Collect the mutants Killed  By Cling](#collect-the-mutants-killed--by-cling)
+  - [Data Analysis](#data-analysis-1)
+- [RQ3: Captured Faults](#rq3-captured-faults)
+  - [Collect Captured Stack Traces](#collect-captured-stack-traces)
+  - [Collect Interesting Stack Traces](#collect-interesting-stack-traces)
+  - [Manual Analysis](#manual-analysis)
 
 # Docker image
 Docker image of this replication package is available in [DockerHub](https://hub.docker.com/repository/docker/pderakhshanfar/cling-application).
 
-Also, you can build and image by running `build-docker` bash file:
+Also, you can build and image by running `build-image` bash file:
 
 ```
 . scripts/docker/build-image.sh
@@ -61,7 +63,9 @@ Each row in this CSV file contains a `caller_class` and `calee_class` (one of th
 The rows in this CSV file is categorized by their value for tool column:
 * `cling` executes class integration testing for `caller_class` and `callee_class` for 5 minutes.
 * `evosuite-caller5` executes EvoSuite (unit testing) on `caller_class` for 5 minutes.
-* `evosuite-callee5`  executes EvoSuite (unit testing) on `callee_class` for 5 minutes.
+* `evosuite-callee5` executes EvoSuite (unit testing) on `callee_class` for 5 minutes.
+* `randoop-caller5` executes Randoop (unit testing) on `caller_class` for 5 minutes.
+* `randoop-callee5` executes Randoop (unit testing) on `callee_class` for 5 minutes.
 
 
 To generate this CSV file, you need to execute `generate.py` python file:
@@ -78,7 +82,7 @@ To change the number of execution times, you need to change this python file (li
 
 ## Run test generation script
 
-Run `test-geeration.sh` bash file with one input parameter, which is **number of parallel processes**:
+Run `test-generation.sh` bash file with one input parameter, which is **number of parallel processes**:
 
 ```
 . scripts/main/test-generation.sh <number of parallel processes>
@@ -126,7 +130,7 @@ Rscript data_analysis/r-scripts/cbc-coverage.r
 The output is two boxplots indicating the CBC coverage of EvoSuite and Cling. These boxplots are saved as `data_analysis/figures/cbc-total.pdf` and `data_analysis/figures/cbc-per-project.pdf`.
 
 
-# RQ2: Mutation Score
+# RQ2: Mutation Score and line coverage
 ## Run PIT
 To calculate the mutation score of the generated test cases by Cling and EvoSuite, we need to execute PIT. to run PIT on all of the test cases, generated in this study, run the following bash file:
 
@@ -139,6 +143,17 @@ To calculate the mutation score of the generated test cases by Cling and EvoSuit
 docker exec -it cling-application-container bash scripts/main/rq2-mutation-score.sh <number of parallel processes>
 ```
 The output of the PIT tool will be saved in the `data/rq2/pit/` directory. Also, the execution logs of PIT runs will be stored in the `logs/pit/` directory.
+
+## Collect Line coverages
+To collect all of the line coverages achieved by each generated test case, run the following python script:
+
+```
+python scripts/python/line-coverage/collect-line-coverages.py
+```
+**docker**
+```
+docker exec -it cling-application-container python scripts/python/line-coverage/collect-line-coverages.py
+```
 
 ## Collect Mutation Scores
 To collect all of the mutation scores reported in PIT outputs, run the following python script:
@@ -167,19 +182,15 @@ To collect all of this information, run the following bash script:
 ```
 docker exec -it cling-application-container bash scripts/main/rq2-killed-mutants.sh 
 ```
-This script creates the following CSV files in `data/rq2`:
-
-* **cling-evoe-evor-final:** List of mutants killed only by Cling
-* **cling-evoe:** List of mutants killed by Cling but now by TE
-* **cling-evor:** List of mutants killed by Cling but now by TR
-* **killedM-C-E-R:** Number of mutants killed only by Cling on each case
-* **killedM-C-E:** Number of mutants killed by Cling but now by TE on each case
-* **killedM-C-R:** Number of mutants killed by Cling but now by TR on each case
-* **final-mutants-table:** A large CSV file containing the mutation score improvements achieved by Cling
+This script creates multiple CSV files in `data/rq2`. Each CSV file indicates the mutants which are killed by cling but not with the other tools and congifurations.
 
 
 ## Data Analysis
 After generating all of these CSV files, you can run the following R scripts to create tables and figures reported in the paper.
+For line coverage:
+```
+Rscript data_analysis/r-scripts/line-coverage.r 
+```
 
 For mutation scores:
 ```

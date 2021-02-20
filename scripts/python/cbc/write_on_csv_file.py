@@ -57,13 +57,16 @@ csv_result = {
                    'covered_cb': -1
                    }
 
-with open(log_dir, "r") as ins:
-    for stdout_line in ins:
-        if  "Total number of coupled branches goals:" in stdout_line:
-            splitted_line_1 = stdout_line.split(": ")
-            csv_result["total_cb"] = int(splitted_line_1[1])
-        elif  "Number of covered coupled branches by test suite:" in stdout_line:
-            splitted_line_1 = stdout_line.split(": ")
-            csv_result["covered_cb"] = int(splitted_line_1[1])
+try:
+    with open(log_dir, "r") as ins:
+        for stdout_line in ins:
+            if  "Total number of coupled branches goals:" in stdout_line:
+                splitted_line_1 = stdout_line.split(": ")
+                csv_result["total_cb"] = int(splitted_line_1[1])
+            elif  "Number of covered coupled branches by test suite:" in stdout_line:
+                splitted_line_1 = stdout_line.split(": ")
+                csv_result["covered_cb"] = int(splitted_line_1[1])
+except IOError:
+    print("File not accessible")
 
 write_on_csv_file(csv_result,out_dir)

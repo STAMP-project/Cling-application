@@ -1,7 +1,7 @@
 ARG experiment
 
 
-FROM	  	  fedora:latest
+FROM	  	  fedora:30
 
 RUN         dnf upgrade --assumeyes
 RUN         dnf install findutils --assumeyes
@@ -16,12 +16,10 @@ RUN         dnf install procps --assumeyes
 
 WORKDIR /experiment
 #
-COPY logs /experiment/logs
+# COPY logs /experiment/logs
 # COPY results /experiment/results
 COPY defects4j /experiment/defects4j
 # COPY data /experiment/data
 COPY projects /experiment/projects
-COPY scripts /experiment/scripts
-COPY tools /experiment/tools
+# COPY tools /experiment/tools
 COPY libs /experiment/libs
-COPY consoleLog /experiment/consoleLog
