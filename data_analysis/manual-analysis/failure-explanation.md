@@ -284,6 +284,14 @@ Next, the test calls another method that uses that initialized object of Callee 
 
 In summary, there are no checks or documentation about the internal consistency of the different objects, which allowed Cling to trigger a `NullPointerException`.
 
+
+__!__ The `addSwitchingFunction` is renmed to `addStepHandler()`. Also, documentations were updated accordingly. One of the changes in the documentation of this method is the following sentence: "The handler will be called by the integrator for each accepted step."
+
+This sentence indicates that the input parameter will be called afterward and it cannot be null.
+
+The first commit that this document is updated is: https://svn.apache.org/viewvc?view=revision&revision=476930
+By looking at the current documentation of apache commons math, you can see this sentence:  https://commons.apache.org/proper/commons-math/javadocs/api-3.4/org/apache/commons/math3/ode/ODEIntegrator.html#addStepHandler(org.apache.commons.math3.ode.sampling.StepHandler)
+
 ## ST24
 
 [Stack trace](stacktraces.md#st24-f8):
