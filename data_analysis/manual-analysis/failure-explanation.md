@@ -54,21 +54,14 @@ Generated test ([test6](../../results/cling/time-org.joda.time.chrono.GJChronolo
 
 ```java
 @Test(timeout = 4000)
-public void test6()  throws Throwable  {
+public void testSet_ifve()  throws Throwable  {
     DateTime dateTime0 = new DateTime();
     GJChronology gJChronology0 = GJChronology.getInstance((DateTimeZone) null, (ReadableInstant) dateTime0);
     LocalDateTime localDateTime0 = dateTime0.toLocalDateTime();
-    // Undeclared exception!
-    try { 
-      gJChronology0.set(localDateTime0, (-748L));
-      fail("Expecting exception: IllegalFieldValueException");
-    
-    } catch(IllegalFieldValueException e) {
-        //
-        // Value 13 for dayOfMonth is not supported
-        //
-        verifyException("org.joda.time.chrono.GJChronology$CutoverField", e);
-    }
+
+
+    gJChronology0.set(localDateTime0, (-748L));
+
 }
 ```
 
@@ -244,6 +237,9 @@ public void test5()  throws Throwable  {
 ```
 
 The [documentation of the `readExternal` method](projects/math/src/java/org/apache/commons/math/ode/GraggBulirschStoerStepInterpolator.java#L364) specifies that the method reads `the state of the instance`. When looking at the [documentation of the `Externalizable` interface](https://docs.oracle.com/javase/8/docs/api/) defining the `readExternal` and `writeExternal` methods, the documentation specifies that the `readExternal method must read the values in the same sequence and with the same types as were written by writeExternal` and that the `Overriding methods should use this tag [@serialData] to describe the data layout of this Externalizable object`. Without any description of the format, CLING is unable to determine the right sequence of values to mock in the `objectInput0` object. However, none of the classes in the hierarchy of the `GraggBulirschStoerStepInterpolator` class describe the file format, as prescribed by the documentation of the `Externalizable` interface. Therefore, we count this as positive case, as Cling emphasizes the lack of documentation required to decide if the exception should be thrown or not. 
+
+ __!__ Approved by developers. The fixing commit: https://svn.apache.org/viewvc?view=revision&revision=670469.
+ This commit is found by searching in the git history of the project. In this commit, the documentations are updated, and developers are using `@inheritDoc`.
 
 
 ## ST23
