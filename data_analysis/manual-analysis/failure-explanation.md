@@ -38,7 +38,33 @@ public void test2()  throws Throwable  {
 
 The generated test passes 175 as the value of minimum number of days per week. Naturally, the maximum number of days in a week is 7! but there is no check in the code of the caller and callee. And caller is called from outside. Also, it is not mentioned in the [documentation](projects/time/src/main/java/org/joda/time/chrono/GJChronology.java#L234) that the value must be lower than 7. The caller class gets the wrong value and passes it to callee without checking it. 
 
+__! New update:__ This is not a fault because there is a test in the project that confirm this thrown exception is expected:
 
+```java
+   public void testFactory_Zone_RI_int() {
+        GJChronology chrono = GJChronology.getInstance(TOKYO, new Instant(0L), 2);
+        assertEquals(TOKYO, chrono.getZone());
+        assertEquals(new Instant(0L), chrono.getGregorianCutover());
+        assertEquals(2, chrono.getMinimumDaysInFirstWeek());
+        assertSame(GJChronology.class, GJChronology.getInstance(TOKYO, new Instant(0L), 2).getClass());
+        
+        DateTime cutover = new DateTime(1582, 10, 15, 0, 0, 0, 0, DateTimeZone.UTC);
+        chrono = GJChronology.getInstance(TOKYO, null, 2);
+        assertEquals(TOKYO, chrono.getZone());
+        assertEquals(cutover.toInstant(), chrono.getGregorianCutover());
+        assertEquals(2, chrono.getMinimumDaysInFirstWeek());
+        
+        try {
+            GJChronology.getInstance(TOKYO, new Instant(0L), 0);
+            fail();
+        } catch (IllegalArgumentException ex) {}
+        try {
+            GJChronology.getInstance(TOKYO, new Instant(0L), 8);
+            fail();
+        } catch (IllegalArgumentException ex) {}
+    }
+
+```
 ## ST11
 
 [Stack trace](stacktraces.md#st11-f2):
@@ -66,6 +92,8 @@ public void testSet_ifve()  throws Throwable  {
 ```
 
 Caller method [calls a method `set` in `ZonedChronology$ZonedDateTime`](projects/time/src/main/java/org/joda/time/chrono/BaseChronology.java#L240). This method changes one of the inputs and passes them to the set method in callee. Callee throws and exception because the returned value from one of the passed objects is not equal to the other passed value. There is no pre-checking before calling the callee.
+
+__! New update:__ This is not a fault because the this exception indicates that this is not a realistic scenario. And the generated test is not possible to happen in real life.
 
 # Mockito
 
@@ -329,7 +357,7 @@ public void test01()  throws Throwable  {
 
 In this case, Caller is the sub-class and Callee is the super-class. The called method in Caller is `integrate()` which is not called by any other class in the project. If we pass Null as one of the inputs of this method (last input which is ` double[] y`) it uses this method in one of the inherited methods from super-class (`sanityChecks()`). There is no null checking in any of these methods. Also, there is not specific information about the forbidden values for the inputs in the comments and documentations.
 
-
+__!__ No change on the code and documentation.
 # Closure
 
 ## ST28
