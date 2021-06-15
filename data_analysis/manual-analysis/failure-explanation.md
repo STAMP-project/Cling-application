@@ -146,6 +146,8 @@ public void test2()  throws Throwable  {
 
 The fault is the passed objects to method `setDelegates` in caller class. If the values are not in the same hierarchy tree, and we [call `create()` method in caller class](projects/mockito/cglib-and-asm/src/org/mockito/cglib/proxy/Mixin.java#L132) afterward, the caller class passes these objects to the callee class indirectly. the callee class expect that these passed objects are in the same hierarchy tree. Hence, it throws exception if they do not fulfill this precondition.
 
+__! New update:__ This fault is in the integration between Mockit and cglib, which [has been discontinued in favor of ByeBuddy](ByteBuddy). This integration is just moved to a seperate [repository](https://github.com/mockito/mockito-cglib). According to the [README](https://github.com/mockito/mockito-cglib/blob/master/README.md) file in this reporsitory, developers do not want to ship Mockito with cglib any more. Hence, they did not put any effort to update and improve this integration, and it is not useful to report this fault to developers.
+
 ## ST17
 
 [Stack trace](stacktraces.md#st17-f4):
@@ -179,6 +181,7 @@ public void test12()  throws Throwable  {
 
 `SimpleVerifier` is a subclass of `BasicVerifier`. Cling calls the `unaryOperation` method with a null `Value`. The [documentation of the caller class](projects/mockito/cglib-and-asm/src/org/mockito/asm/tree/analysis/BasicVerifier.java#L96) does not have limitation for input. The caller class passes the null value to the callee class without checking. The callee class uses null value without checking it. There is no input limitation in the callee method, as well.
 
+__! New update:__ Same as previous stacktrace, these classes are archived to the [same repository](https://github.com/mockito/mockito-cglib). The developers did not put any effort to update and improve this integration, and it is not useful to report this fault to developers.
 
 ## ST18
 
@@ -226,7 +229,7 @@ More specifically, the [`ClassWriter` (callee)](projects/mockito/cglib-and-asm/s
         final String superName,final String[] interfaces)`.
 If we do not call visit or call it with null input parameter `name` and pass it to the caller class. Then, if we call `visitMaxs` in the caller class. It throws null pointer exception because caller does not check the value of name in the callee class. Also, when we set the name in the callee class there is no check. Moreover, there is no annotation about these facts in the documentation of involved classes.
 
-
+__! New update:__ Same as previous stacktrace, these classes are archived to the [same repository](https://github.com/mockito/mockito-cglib). The developers did not put any effort to update and improve this integration, and it is not useful to report this fault to developers.
 # Math
 
 ## ST22
