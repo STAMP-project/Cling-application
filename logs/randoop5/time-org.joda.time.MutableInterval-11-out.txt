@@ -1,0 +1,60 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=55
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=3, test inputs generated=1, failing inputs=0      (2020-11-25T01:25:17.382Z     112MB used)
+Progress update: steps=606, test inputs generated=544, failing inputs=0      (2020-11-25T01:26:17.422Z     1038MB used)
+Progress update: steps=1000, test inputs generated=870, failing inputs=0      (2020-11-25T01:26:51.279Z     998MB used)
+Progress update: steps=1197, test inputs generated=1033, failing inputs=0      (2020-11-25T01:27:17.443Z     348MB used)
+Progress update: steps=1900, test inputs generated=1567, failing inputs=0      (2020-11-25T01:28:17.444Z     168MB used)
+Progress update: steps=2000, test inputs generated=1642, failing inputs=0      (2020-11-25T01:28:22.670Z     915MB used)
+Progress update: steps=2678, test inputs generated=2156, failing inputs=0      (2020-11-25T01:29:17.444Z     400MB used)
+Progress update: steps=3000, test inputs generated=2419, failing inputs=0      (2020-11-25T01:29:52.764Z     1109MB used)
+Progress update: steps=3533, test inputs generated=2837, failing inputs=0      (2020-11-25T01:30:17.372Z     1139MB used)
+Normal method executions: 7916908
+Exceptional method executions: 242
+
+Average method execution time (normal termination):      0.000471
+Average method execution time (exceptional termination): 0.152
+Approximate memory usage 1139MB
+Explorer = ForwardGenerator(steps: 3533, null steps: 696, num_sequences_generated: 2837;
+    allSequences: 2837, regresson seqs: 2836, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    runtimePrimitivesSeen:325)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 1429 regression sequences.
+
+Regression test output:
+Regression test count: 1429
+Writing regression JUnit tests...
+                                                                                                                                                                                                       Created file /experiment/results/randoop5/time-org.joda.time.MutableInterval-11/RegressionTest0.java
+Created file /experiment/results/randoop5/time-org.joda.time.MutableInterval-11/RegressionTest1.java
+Created file /experiment/results/randoop5/time-org.joda.time.MutableInterval-11/RegressionTest2.java
+Created file /experiment/results/randoop5/time-org.joda.time.MutableInterval-11/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.base.BaseInterval.getStartMillis()
+  Possibly flaky:  org.joda.time.base.BaseInterval.getEndMillis()
+  Possibly flaky:  org.joda.time.base.BaseInterval.getChronology()
+  Possibly flaky:  org.joda.time.base.AbstractInterval.toString()
+  Possibly flaky:  org.joda.time.base.AbstractInterval.toPeriod()
+  Possibly flaky:  org.joda.time.base.AbstractInterval.toPeriod(org.joda.time.PeriodType)
+  Possibly flaky:  org.joda.time.base.AbstractInterval.toMutableInterval()
+  Possibly flaky:  org.joda.time.base.AbstractInterval.toInterval()
+  Possibly flaky:  org.joda.time.base.AbstractInterval.toDurationMillis()
+  Possibly flaky:  org.joda.time.base.AbstractInterval.toDuration()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0

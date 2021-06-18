@@ -1,0 +1,76 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=135
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=4, test inputs generated=0, failing inputs=0      (2020-11-25T00:44:17.470Z     112MB used)
+Progress update: steps=677, test inputs generated=646, failing inputs=0      (2020-11-25T00:45:17.495Z     960MB used)
+Progress update: steps=1000, test inputs generated=952, failing inputs=0      (2020-11-25T00:45:57.710Z     1124MB used)
+Progress update: steps=1320, test inputs generated=1255, failing inputs=0      (2020-11-25T00:46:17.496Z     1128MB used)
+Progress update: steps=2000, test inputs generated=1885, failing inputs=0      (2020-11-25T00:47:03.507Z     754MB used)
+Progress update: steps=2199, test inputs generated=2068, failing inputs=0      (2020-11-25T00:47:17.496Z     837MB used)
+Progress update: steps=2875, test inputs generated=2684, failing inputs=0      (2020-11-25T00:48:17.497Z     502MB used)
+Progress update: steps=3000, test inputs generated=2796, failing inputs=0      (2020-11-25T00:48:23.870Z     117MB used)
+Progress update: steps=3767, test inputs generated=3488, failing inputs=0      (2020-11-25T00:49:17.497Z     679MB used)
+Progress update: steps=3767, test inputs generated=3488, failing inputs=0      (2020-11-25T00:49:17.510Z     679MB used)
+Normal method executions: 2476613
+Exceptional method executions: 563
+
+Average method execution time (normal termination):      0.000541
+Average method execution time (exceptional termination): 0.0828
+Approximate memory usage 679MB
+Explorer = ForwardGenerator(steps: 3767, null steps: 279, num_sequences_generated: 3488;
+    allSequences: 3488, regresson seqs: 3487, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    runtimePrimitivesSeen:162)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 1883 regression sequences.
+
+Regression test output:
+Regression test count: 1883
+Writing regression JUnit tests...
+Created file /experiment/results/randoop5/lang-org.apache.commons.lang3.text.StrBuilder-14/RegressionTest0.java
+Created file /experiment/results/randoop5/lang-org.apache.commons.lang3.text.StrBuilder-14/RegressionTest1.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop5/lang-org.apache.commons.lang3.text.StrBuilder-14/RegressionTest2.java
+Created file /experiment/results/randoop5/lang-org.apache.commons.lang3.text.StrBuilder-14/RegressionTest3.java
+Created file /experiment/results/randoop5/lang-org.apache.commons.lang3.text.StrBuilder-14/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.toCharArray()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.replaceFirst(org.apache.commons.lang3.text.StrMatcher,java.lang.String)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.minimizeCapacity()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.equalsIgnoreCase(org.apache.commons.lang3.text.StrBuilder)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.deleteCharAt(int)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.asWriter()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.asTokenizer()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.asReader()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.appendln(boolean)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.appendNewLine()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+y flaky:  org.apache.commons.lang3.text.StrBuilder.toCharArray()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.rightString(int)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.replaceFirst(org.apache.commons.lang3.text.StrMatcher,java.lang.String)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.minimizeCapacity()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.lastIndexOf(char)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.lastIndexOf(org.apache.commons.lang3.text.StrMatcher,int)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.lastIndexOf(org.apache.commons.lang3.text.StrMatcher)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.insert(int,char[])
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.insert(int,char[],int,int)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0

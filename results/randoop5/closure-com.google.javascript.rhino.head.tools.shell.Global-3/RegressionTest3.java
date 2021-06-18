@@ -1,0 +1,2308 @@
+import org.junit.FixMethodOrder;
+import org.junit.Test;
+import org.junit.runners.MethodSorters;
+
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+public class RegressionTest3 {
+
+    public static boolean debug = false;
+
+    @Test
+    public void test1501() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1501");
+        com.google.javascript.rhino.head.Context context0 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global1 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global3 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global5 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global7 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global5.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global7, (int) (short) 10);
+        java.lang.Object obj10 = global3.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global5);
+        java.lang.Object obj11 = global1.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global5);
+        int int12 = global5.size();
+        global5.setAttributes((-1), (int) (byte) 0);
+        com.google.javascript.rhino.head.Scriptable scriptable16 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global5);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins17 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction18 = global5.getBuiltinCtor(builtins17);
+        com.google.javascript.rhino.head.tools.shell.Global global19 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global21 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global23 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global23.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global25, (int) (short) 10);
+        java.lang.Object obj28 = global21.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global23);
+        java.lang.Object obj29 = global19.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global23);
+        com.google.javascript.rhino.head.Scriptable scriptable30 = com.google.javascript.rhino.head.ScriptableObject.getFunctionPrototype((com.google.javascript.rhino.head.Scriptable) global23);
+        com.google.javascript.rhino.head.tools.shell.Global global31 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global33 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global31.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global33, (int) (short) 10);
+        global33.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.Scriptable scriptable40 = com.google.javascript.rhino.head.ScriptableObject.getClassPrototype((com.google.javascript.rhino.head.Scriptable) global33, "hi!");
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins41 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction42 = global33.getBuiltinCtor(builtins41);
+        com.google.javascript.rhino.head.tools.shell.Global global44 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global46 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global48 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global46.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global48, (int) (short) 10);
+        java.lang.Object obj51 = global44.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global46);
+        boolean boolean52 = global33.has("", (com.google.javascript.rhino.head.Scriptable) global46);
+        java.io.InputStream inputStream53 = global33.getIn();
+        global23.setIn(inputStream53);
+        java.lang.Object[] objArray55 = com.google.javascript.rhino.head.ScriptableObject.getPropertyIds((com.google.javascript.rhino.head.Scriptable) global23);
+        com.google.javascript.rhino.head.tools.shell.Global global56 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global58 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global56.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global58, (int) (short) 10);
+        global58.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.tools.shell.Global global65 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global67 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global65.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global67, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global70 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global72 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global74 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global72.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global74, (int) (short) 10);
+        java.lang.Object obj77 = global70.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global72);
+        boolean boolean79 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global72, "");
+        global67.setParentScope((com.google.javascript.rhino.head.Scriptable) global72);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject82 = global58.exportAsJSClass((int) (short) 100, (com.google.javascript.rhino.head.Scriptable) global67, false);
+        com.google.javascript.rhino.head.Scriptable scriptable83 = idFunctionObject82.getPrototype();
+        boolean boolean84 = idFunctionObject82.isSealed();
+        java.lang.Object obj85 = com.google.javascript.rhino.head.tools.shell.Global.toint32(context0, (com.google.javascript.rhino.head.Scriptable) baseFunction18, objArray55, (com.google.javascript.rhino.head.Function) idFunctionObject82);
+        java.lang.String str86 = idFunctionObject82.getTypeOf();
+        java.lang.Object obj90 = idFunctionObject82.getGetterOrSetter("object", (int) (byte) 0, true);
+        com.google.javascript.rhino.head.Scriptable scriptable91 = com.google.javascript.rhino.head.ScriptableObject.getFunctionPrototype((com.google.javascript.rhino.head.Scriptable) idFunctionObject82);
+        org.junit.Assert.assertNotNull(obj10);
+        org.junit.Assert.assertNotNull(obj11);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 1 + "'", int12 == 1);
+        org.junit.Assert.assertNotNull(scriptable16);
+        org.junit.Assert.assertNull(baseFunction18);
+        org.junit.Assert.assertNotNull(obj28);
+        org.junit.Assert.assertNotNull(obj29);
+        org.junit.Assert.assertNull(scriptable30);
+        org.junit.Assert.assertNull(scriptable40);
+        org.junit.Assert.assertNull(baseFunction42);
+        org.junit.Assert.assertNotNull(obj51);
+        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + true + "'", boolean52 == true);
+        org.junit.Assert.assertNotNull(inputStream53);
+        org.junit.Assert.assertNotNull(objArray55);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray55), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray55), "[]");
+        org.junit.Assert.assertNotNull(obj77);
+        org.junit.Assert.assertTrue("'" + boolean79 + "' != '" + true + "'", boolean79 == true);
+        org.junit.Assert.assertNotNull(idFunctionObject82);
+        org.junit.Assert.assertNull(scriptable83);
+        org.junit.Assert.assertTrue("'" + boolean84 + "' != '" + false + "'", boolean84 == false);
+        org.junit.Assert.assertEquals("'" + obj85 + "' != '" + 0 + "'", obj85, 0);
+        org.junit.Assert.assertEquals("'" + str86 + "' != '" + "function" + "'", str86, "function");
+        org.junit.Assert.assertNull(obj90);
+        org.junit.Assert.assertNull(scriptable91);
+    }
+
+    @Test
+    public void test1502() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1502");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global6 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global4.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global6, (int) (short) 10);
+        java.lang.Object obj9 = global2.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4);
+        java.lang.Object obj10 = global0.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global4);
+        int int11 = global4.size();
+        boolean boolean12 = global4.avoidObjectDetection();
+        com.google.javascript.rhino.head.tools.shell.Global global14 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable15 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global14);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject17 = global4.exportAsJSClass(100, scriptable15, false);
+        com.google.javascript.rhino.head.tools.shell.Global global19 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global21 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global23 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global23.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global25, (int) (short) 10);
+        java.lang.Object obj28 = global21.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global23);
+        java.lang.Object obj29 = global19.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global23);
+        int int30 = global23.size();
+        boolean boolean32 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global23, "");
+        com.google.javascript.rhino.head.Context context33 = null;
+        java.lang.String[] strArray36 = new java.lang.String[] { "", "hi!" };
+        java.util.ArrayList<java.lang.String> strList37 = new java.util.ArrayList<java.lang.String>();
+        boolean boolean38 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList37, strArray36);
+        com.google.javascript.rhino.head.commonjs.module.Require require40 = global23.installRequire(context33, (java.util.List<java.lang.String>) strList37, true);
+        boolean boolean41 = global23.hasPrototypeMap();
+        com.google.javascript.rhino.head.tools.shell.Global global43 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global45 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global47 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global45.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global47, (int) (short) 10);
+        java.lang.Object obj50 = global43.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global45);
+        boolean boolean51 = global43.isExtensible();
+        com.google.javascript.rhino.head.tools.shell.Global global53 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global55 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global57 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global59 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global57.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global59, (int) (short) 10);
+        java.lang.Object obj62 = global55.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global57);
+        java.lang.Object obj63 = global53.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global57);
+        com.google.javascript.rhino.head.ScriptableObject.defineProperty((com.google.javascript.rhino.head.Scriptable) global43, "", obj63, (int) (byte) 10);
+        boolean boolean66 = global43.isInitialized();
+        boolean boolean68 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global43, "JavaImporter");
+        java.lang.Object obj69 = global23.get(8, (com.google.javascript.rhino.head.Scriptable) global43);
+        com.google.javascript.rhino.head.ScriptableObject.redefineProperty((com.google.javascript.rhino.head.Scriptable) global23, "object", false);
+        com.google.javascript.rhino.head.ScriptableObject.defineProperty((com.google.javascript.rhino.head.Scriptable) global4, "object", (java.lang.Object) "object", (int) (short) 10);
+        org.junit.Assert.assertNotNull(obj9);
+        org.junit.Assert.assertNotNull(obj10);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 1 + "'", int11 == 1);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNotNull(scriptable15);
+        org.junit.Assert.assertNotNull(idFunctionObject17);
+        org.junit.Assert.assertNotNull(obj28);
+        org.junit.Assert.assertNotNull(obj29);
+        org.junit.Assert.assertTrue("'" + int30 + "' != '" + 1 + "'", int30 == 1);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(strArray36);
+        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + true + "'", boolean38 == true);
+        org.junit.Assert.assertNotNull(require40);
+        org.junit.Assert.assertTrue("'" + boolean41 + "' != '" + false + "'", boolean41 == false);
+        org.junit.Assert.assertNotNull(obj50);
+        org.junit.Assert.assertTrue("'" + boolean51 + "' != '" + true + "'", boolean51 == true);
+        org.junit.Assert.assertNotNull(obj62);
+        org.junit.Assert.assertNotNull(obj63);
+        org.junit.Assert.assertTrue("'" + boolean66 + "' != '" + false + "'", boolean66 == false);
+        org.junit.Assert.assertTrue("'" + boolean68 + "' != '" + true + "'", boolean68 == true);
+        org.junit.Assert.assertNotNull(obj69);
+    }
+
+    @Test
+    public void test1503() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1503");
+        com.google.javascript.rhino.head.Context context0 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global1 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global3 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global5 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global3.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global5, (int) (short) 10);
+        java.lang.Object obj8 = global1.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global3);
+        global1.delete("hi!");
+        com.google.javascript.rhino.head.tools.shell.Global global12 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global14 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global12.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global14, (int) (short) 10);
+        global14.setAttributes("", (int) (short) 0);
+        java.io.InputStream inputStream20 = null;
+        global14.setIn(inputStream20);
+        java.lang.Object obj22 = global1.get(0, (com.google.javascript.rhino.head.Scriptable) global14);
+        com.google.javascript.rhino.head.Scriptable scriptable23 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global14);
+        com.google.javascript.rhino.head.ImporterTopLevel.init(context0, (com.google.javascript.rhino.head.Scriptable) global14, false);
+        global14.sealObject();
+        org.junit.Assert.assertNotNull(obj8);
+        org.junit.Assert.assertNotNull(obj22);
+        org.junit.Assert.assertNotNull(scriptable23);
+    }
+
+    @Test
+    public void test1504() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1504");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global0.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2, (int) (short) 10);
+        global2.setAttributes("", (int) (short) 0);
+        java.io.InputStream inputStream8 = null;
+        global2.setIn(inputStream8);
+        boolean boolean10 = global2.isExtensible();
+        com.google.javascript.rhino.head.tools.shell.Global global11 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global13 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global15 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global17 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global15.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global17, (int) (short) 10);
+        java.lang.Object obj20 = global13.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global15);
+        java.lang.Object obj21 = global11.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global15);
+        int int22 = global15.size();
+        java.io.PrintStream printStream23 = global15.getErr();
+        global2.setOut(printStream23);
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable26 = com.google.javascript.rhino.head.ScriptableObject.getArrayPrototype((com.google.javascript.rhino.head.Scriptable) global25);
+        global25.delete(4);
+        boolean boolean29 = global25.hasPrototypeMap();
+        com.google.javascript.rhino.head.Context context30 = null;
+        java.lang.String[] strArray31 = global25.getPrompts(context30);
+        global2.setParentScope((com.google.javascript.rhino.head.Scriptable) global25);
+        java.io.PrintStream printStream33 = global2.getErr();
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertNotNull(obj20);
+        org.junit.Assert.assertNotNull(obj21);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + 1 + "'", int22 == 1);
+        org.junit.Assert.assertNotNull(printStream23);
+        org.junit.Assert.assertNull(scriptable26);
+        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
+        org.junit.Assert.assertNotNull(strArray31);
+        org.junit.Assert.assertNotNull(printStream33);
+    }
+
+    @Test
+    public void test1505() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1505");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        boolean boolean2 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global0, "");
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global6 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global8 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global10 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global8.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global10, (int) (short) 10);
+        java.lang.Object obj13 = global6.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global8);
+        java.lang.Object obj14 = global4.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global8);
+        int int15 = global8.size();
+        boolean boolean17 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global8, "");
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject19 = global0.exportAsJSClass((int) 'a', (com.google.javascript.rhino.head.Scriptable) global8, false);
+        com.google.javascript.rhino.head.tools.shell.Global global20 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global22 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global20.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global22, (int) (short) 10);
+        global22.setAttributes("", (int) (short) 0);
+        java.io.InputStream inputStream28 = null;
+        global22.setIn(inputStream28);
+        com.google.javascript.rhino.head.Scriptable scriptable30 = global22.getParentScope();
+        com.google.javascript.rhino.head.tools.shell.Global global31 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global33 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global35 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global37 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global35.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global37, (int) (short) 10);
+        java.lang.Object obj40 = global33.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global35);
+        java.lang.Object obj41 = global31.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global35);
+        global22.setParentScope((com.google.javascript.rhino.head.Scriptable) global31);
+        global0.setParentScope((com.google.javascript.rhino.head.Scriptable) global31);
+        com.google.javascript.rhino.head.tools.shell.Global global45 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable46 = com.google.javascript.rhino.head.ScriptableObject.getArrayPrototype((com.google.javascript.rhino.head.Scriptable) global45);
+        com.google.javascript.rhino.head.tools.shell.Global global48 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global50 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global48.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global50, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global53 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global55 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global57 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global55.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global57, (int) (short) 10);
+        java.lang.Object obj60 = global53.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global55);
+        boolean boolean62 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global55, "");
+        global50.setParentScope((com.google.javascript.rhino.head.Scriptable) global55);
+        boolean boolean64 = global45.has("", (com.google.javascript.rhino.head.Scriptable) global50);
+        com.google.javascript.rhino.head.Context context65 = null;
+        java.lang.String[] strArray66 = global45.getPrompts(context65);
+        com.google.javascript.rhino.head.tools.shell.Global global68 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable69 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global68);
+        java.lang.Object[] objArray70 = global68.getAllIds();
+        boolean boolean71 = global45.has("hi!", (com.google.javascript.rhino.head.Scriptable) global68);
+        // The following exception was thrown during execution in test generation
+        try {
+            com.google.javascript.rhino.head.ScriptableObject.defineProperty((com.google.javascript.rhino.head.Scriptable) global31, "function", (java.lang.Object) global45, (int) (short) 100);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: 100");
+        } catch (java.lang.IllegalArgumentException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
+        org.junit.Assert.assertNotNull(obj13);
+        org.junit.Assert.assertNotNull(obj14);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 1 + "'", int15 == 1);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertNotNull(idFunctionObject19);
+        org.junit.Assert.assertNull(scriptable30);
+        org.junit.Assert.assertNotNull(obj40);
+        org.junit.Assert.assertNotNull(obj41);
+        org.junit.Assert.assertNull(scriptable46);
+        org.junit.Assert.assertNotNull(obj60);
+        org.junit.Assert.assertTrue("'" + boolean62 + "' != '" + true + "'", boolean62 == true);
+        org.junit.Assert.assertTrue("'" + boolean64 + "' != '" + false + "'", boolean64 == false);
+        org.junit.Assert.assertNotNull(strArray66);
+        org.junit.Assert.assertNotNull(scriptable69);
+        org.junit.Assert.assertNotNull(objArray70);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray70), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray70), "[]");
+        org.junit.Assert.assertTrue("'" + boolean71 + "' != '" + false + "'", boolean71 == false);
+    }
+
+    @Test
+    public void test1506() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1506");
+        com.google.javascript.rhino.head.Scriptable scriptable0 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global2.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4, (int) (short) 10);
+        global4.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.tools.shell.Global global11 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global13 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global15 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global13.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global15, (int) (short) 10);
+        java.lang.Object obj18 = global11.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global13);
+        boolean boolean20 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global13, "");
+        boolean boolean21 = global13.isExtensible();
+        com.google.javascript.rhino.head.tools.shell.Global global22 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable23 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global22);
+        java.lang.Object[] objArray24 = global22.getAllIds();
+        java.lang.Object obj25 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global13, (java.lang.Object) global22);
+        com.google.javascript.rhino.head.Context context26 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global28 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global30 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global32 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global30.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global32, (int) (short) 10);
+        java.lang.Object obj35 = global28.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global30);
+        com.google.javascript.rhino.head.Scriptable scriptable36 = global30.getPrototype();
+        global22.defineOwnProperty(context26, (java.lang.Object) 'a', (com.google.javascript.rhino.head.ScriptableObject) global30);
+        java.lang.Object obj39 = global22.get((java.lang.Object) 100L);
+        boolean boolean40 = global4.has("object", (com.google.javascript.rhino.head.Scriptable) global22);
+        java.lang.Object[] objArray41 = com.google.javascript.rhino.head.ScriptableObject.getPropertyIds((com.google.javascript.rhino.head.Scriptable) global4);
+        com.google.javascript.rhino.head.tools.shell.Global global43 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global45 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global47 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global45.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global47, (int) (short) 10);
+        java.lang.Object obj50 = global43.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global45);
+        com.google.javascript.rhino.head.Scriptable scriptable51 = global45.getPrototype();
+        com.google.javascript.rhino.head.tools.shell.Global global53 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global55 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global57 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global55.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global57, (int) (short) 10);
+        java.lang.Object obj60 = global53.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global55);
+        boolean boolean62 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global55, "");
+        boolean boolean63 = global55.isExtensible();
+        com.google.javascript.rhino.head.tools.shell.Global global64 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable65 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global64);
+        java.lang.Object[] objArray66 = global64.getAllIds();
+        java.lang.Object obj67 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global55, (java.lang.Object) global64);
+        global45.setAttributes((int) (byte) 1, (com.google.javascript.rhino.head.Scriptable) global64, 1);
+        boolean boolean70 = global4.has("object", (com.google.javascript.rhino.head.Scriptable) global45);
+        java.lang.Object[] objArray71 = global4.getIds();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.Object obj72 = com.google.javascript.rhino.head.ScriptableObject.callMethod(scriptable0, "object", objArray71);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(obj18);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + true + "'", boolean21 == true);
+        org.junit.Assert.assertNotNull(scriptable23);
+        org.junit.Assert.assertNotNull(objArray24);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray24), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray24), "[]");
+        org.junit.Assert.assertNull(obj25);
+        org.junit.Assert.assertNotNull(obj35);
+        org.junit.Assert.assertNull(scriptable36);
+        org.junit.Assert.assertNull(obj39);
+        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
+        org.junit.Assert.assertNotNull(objArray41);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray41), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray41), "[]");
+        org.junit.Assert.assertNotNull(obj50);
+        org.junit.Assert.assertNull(scriptable51);
+        org.junit.Assert.assertNotNull(obj60);
+        org.junit.Assert.assertTrue("'" + boolean62 + "' != '" + true + "'", boolean62 == true);
+        org.junit.Assert.assertTrue("'" + boolean63 + "' != '" + true + "'", boolean63 == true);
+        org.junit.Assert.assertNotNull(scriptable65);
+        org.junit.Assert.assertNotNull(objArray66);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray66), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray66), "[]");
+        org.junit.Assert.assertNull(obj67);
+        org.junit.Assert.assertTrue("'" + boolean70 + "' != '" + false + "'", boolean70 == false);
+        org.junit.Assert.assertNotNull(objArray71);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray71), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray71), "[]");
+    }
+
+    @Test
+    public void test1507() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1507");
+        com.google.javascript.rhino.head.Context context0 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global1 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global3 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global5 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global3.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global5, (int) (short) 10);
+        java.lang.Object obj8 = global1.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global3);
+        boolean boolean10 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global3, "");
+        com.google.javascript.rhino.head.Scriptable scriptable11 = global3.getPrototype();
+        com.google.javascript.rhino.head.tools.shell.Global global12 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable13 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global12);
+        java.lang.Object[] objArray14 = global12.getAllIds();
+        com.google.javascript.rhino.head.tools.shell.Global global15 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global17 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global19 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global21 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global19.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global21, (int) (short) 10);
+        java.lang.Object obj24 = global17.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global19);
+        java.lang.Object obj25 = global15.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global19);
+        int int26 = global19.size();
+        boolean boolean28 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global19, "");
+        com.google.javascript.rhino.head.Context context29 = null;
+        java.lang.String[] strArray32 = new java.lang.String[] { "", "hi!" };
+        java.util.ArrayList<java.lang.String> strList33 = new java.util.ArrayList<java.lang.String>();
+        boolean boolean34 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList33, strArray32);
+        com.google.javascript.rhino.head.commonjs.module.Require require36 = global19.installRequire(context29, (java.util.List<java.lang.String>) strList33, true);
+        com.google.javascript.rhino.head.tools.shell.Global.load(context0, scriptable11, objArray14, (com.google.javascript.rhino.head.Function) require36);
+        com.google.javascript.rhino.head.Context context38 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global39 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global41 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global39.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global41, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global45 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global47 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global49 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global47.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global49, (int) (short) 10);
+        java.lang.Object obj52 = global45.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global47);
+        global39.setAttributes("", (com.google.javascript.rhino.head.Scriptable) global47, (int) (short) 1);
+        require36.defineOwnProperties(context38, (com.google.javascript.rhino.head.ScriptableObject) global47);
+        global47.setAttributes(10, (int) (short) 0);
+        boolean boolean59 = global47.isEmpty();
+        global47.sealObject();
+        org.junit.Assert.assertNotNull(obj8);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertNull(scriptable11);
+        org.junit.Assert.assertNotNull(scriptable13);
+        org.junit.Assert.assertNotNull(objArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray14), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray14), "[]");
+        org.junit.Assert.assertNotNull(obj24);
+        org.junit.Assert.assertNotNull(obj25);
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + 1 + "'", int26 == 1);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+        org.junit.Assert.assertNotNull(strArray32);
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + true + "'", boolean34 == true);
+        org.junit.Assert.assertNotNull(require36);
+        org.junit.Assert.assertNotNull(obj52);
+        org.junit.Assert.assertTrue("'" + boolean59 + "' != '" + false + "'", boolean59 == false);
+    }
+
+    @Test
+    public void test1508() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1508");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global6 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global4.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global6, (int) (short) 10);
+        java.lang.Object obj9 = global2.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4);
+        java.lang.Object obj10 = global0.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global4);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins11 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction12 = global0.getBuiltinCtor(builtins11);
+        java.lang.Object obj14 = global0.getAssociatedValue((java.lang.Object) (short) 0);
+        com.google.javascript.rhino.head.ScriptableObject.defineConstProperty((com.google.javascript.rhino.head.Scriptable) global0, "");
+        com.google.javascript.rhino.head.tools.shell.Global global18 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global20 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global22 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global20.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global22, (int) (short) 10);
+        java.lang.Object obj25 = global18.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global20);
+        boolean boolean26 = global18.isInitialized();
+        java.lang.Object obj27 = global0.get((int) (byte) 100, (com.google.javascript.rhino.head.Scriptable) global18);
+        com.google.javascript.rhino.head.Context context28 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            global18.init(context28);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(obj9);
+        org.junit.Assert.assertNotNull(obj10);
+        org.junit.Assert.assertNull(baseFunction12);
+        org.junit.Assert.assertNull(obj14);
+        org.junit.Assert.assertNotNull(obj25);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertNotNull(obj27);
+    }
+
+    @Test
+    public void test1509() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1509");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global0.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global5 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global7 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global9 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global7.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global9, (int) (short) 10);
+        java.lang.Object obj12 = global5.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global7);
+        boolean boolean14 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global7, "");
+        global2.setParentScope((com.google.javascript.rhino.head.Scriptable) global7);
+        java.lang.Object obj17 = com.google.javascript.rhino.head.ScriptableObject.getProperty((com.google.javascript.rhino.head.Scriptable) global7, "");
+        com.google.javascript.rhino.head.tools.shell.Global global19 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global21 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global23 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global21.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global23, (int) (short) 10);
+        java.lang.Object obj26 = global19.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global21);
+        boolean boolean28 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global21, "");
+        com.google.javascript.rhino.head.Context context29 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable30 = null;
+        java.lang.Object[] objArray36 = new java.lang.Object[] { "hi!", 1L, (-1L), '4', 10.0f };
+        com.google.javascript.rhino.head.Function function37 = null;
+        com.google.javascript.rhino.head.tools.shell.Global.gc(context29, scriptable30, objArray36, function37);
+        java.lang.Object obj39 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global21, (java.lang.Object) scriptable30);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject41 = global7.exportAsJSClass((int) (byte) 10, (com.google.javascript.rhino.head.Scriptable) global21, false);
+        com.google.javascript.rhino.head.Scriptable scriptable42 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) idFunctionObject41);
+        java.lang.Object obj43 = null;
+        java.lang.Object obj44 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) idFunctionObject41, obj43);
+        boolean boolean45 = idFunctionObject41.avoidObjectDetection();
+        org.junit.Assert.assertNotNull(obj12);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(obj17);
+        org.junit.Assert.assertNotNull(obj26);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        org.junit.Assert.assertNotNull(objArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray36), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray36), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertNull(obj39);
+        org.junit.Assert.assertNotNull(idFunctionObject41);
+        org.junit.Assert.assertNotNull(scriptable42);
+        org.junit.Assert.assertNull(obj44);
+        org.junit.Assert.assertTrue("'" + boolean45 + "' != '" + false + "'", boolean45 == false);
+    }
+
+    @Test
+    public void test1510() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1510");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        boolean boolean2 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global0, "");
+        java.io.InputStream inputStream3 = global0.getIn();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global6 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global4.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global6, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global9 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global11 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global13 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global11.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global13, (int) (short) 10);
+        java.lang.Object obj16 = global9.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global11);
+        boolean boolean18 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global11, "");
+        global6.setParentScope((com.google.javascript.rhino.head.Scriptable) global11);
+        java.lang.Object obj21 = com.google.javascript.rhino.head.ScriptableObject.getProperty((com.google.javascript.rhino.head.Scriptable) global11, "");
+        com.google.javascript.rhino.head.tools.shell.Global global23 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global27 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global25.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global27, (int) (short) 10);
+        java.lang.Object obj30 = global23.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global25);
+        boolean boolean32 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global25, "");
+        com.google.javascript.rhino.head.Context context33 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable34 = null;
+        java.lang.Object[] objArray40 = new java.lang.Object[] { "hi!", 1L, (-1L), '4', 10.0f };
+        com.google.javascript.rhino.head.Function function41 = null;
+        com.google.javascript.rhino.head.tools.shell.Global.gc(context33, scriptable34, objArray40, function41);
+        java.lang.Object obj43 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global25, (java.lang.Object) scriptable34);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject45 = global11.exportAsJSClass((int) (byte) 10, (com.google.javascript.rhino.head.Scriptable) global25, false);
+        boolean boolean47 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global11, (int) (short) 100);
+        com.google.javascript.rhino.head.tools.shell.Global global49 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global51 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global53 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global55 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global53.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global55, (int) (short) 10);
+        java.lang.Object obj58 = global51.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global53);
+        java.lang.Object obj59 = global49.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global53);
+        int int60 = global53.size();
+        boolean boolean61 = global53.avoidObjectDetection();
+        com.google.javascript.rhino.head.tools.shell.Global global63 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable64 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global63);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject66 = global53.exportAsJSClass(100, scriptable64, false);
+        boolean boolean67 = global11.has((int) (short) 10, (com.google.javascript.rhino.head.Scriptable) idFunctionObject66);
+        boolean boolean68 = idFunctionObject66.isSealed();
+        java.lang.Object obj70 = com.google.javascript.rhino.head.ScriptableObject.getProperty((com.google.javascript.rhino.head.Scriptable) idFunctionObject66, "");
+        // The following exception was thrown during execution in test generation
+        try {
+            global0.initPrototypeMethod((java.lang.Object) "", (int) (byte) 100, "", (int) (byte) 0);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
+        org.junit.Assert.assertNotNull(inputStream3);
+        org.junit.Assert.assertNotNull(obj16);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + true + "'", boolean18 == true);
+        org.junit.Assert.assertNotNull(obj21);
+        org.junit.Assert.assertNotNull(obj30);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + true + "'", boolean32 == true);
+        org.junit.Assert.assertNotNull(objArray40);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray40), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray40), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertNull(obj43);
+        org.junit.Assert.assertNotNull(idFunctionObject45);
+        org.junit.Assert.assertTrue("'" + boolean47 + "' != '" + true + "'", boolean47 == true);
+        org.junit.Assert.assertNotNull(obj58);
+        org.junit.Assert.assertNotNull(obj59);
+        org.junit.Assert.assertTrue("'" + int60 + "' != '" + 1 + "'", int60 == 1);
+        org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + false + "'", boolean61 == false);
+        org.junit.Assert.assertNotNull(scriptable64);
+        org.junit.Assert.assertNotNull(idFunctionObject66);
+        org.junit.Assert.assertTrue("'" + boolean67 + "' != '" + false + "'", boolean67 == false);
+        org.junit.Assert.assertTrue("'" + boolean68 + "' != '" + false + "'", boolean68 == false);
+        org.junit.Assert.assertNotNull(obj70);
+    }
+
+    @Test
+    public void test1511() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1511");
+        com.google.javascript.rhino.head.Context context0 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            com.google.javascript.rhino.head.ImporterTopLevel.init(context0, scriptable1, true);
+            org.junit.Assert.fail("Expected exception of type com.google.javascript.rhino.head.EvaluatorException; message: Cannot modify a property of a sealed object: JavaImporter.");
+        } catch (com.google.javascript.rhino.head.EvaluatorException e) {
+        // Expected exception.
+        }
+    }
+
+    @Test
+    public void test1512() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1512");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global2.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4, (int) (short) 10);
+        java.lang.Object obj7 = global0.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2);
+        boolean boolean8 = global0.isExtensible();
+        com.google.javascript.rhino.head.tools.shell.Global global10 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global12 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global14 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global16 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global14.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global16, (int) (short) 10);
+        java.lang.Object obj19 = global12.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global14);
+        java.lang.Object obj20 = global10.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global14);
+        com.google.javascript.rhino.head.ScriptableObject.defineProperty((com.google.javascript.rhino.head.Scriptable) global0, "", obj20, (int) (byte) 10);
+        boolean boolean23 = global0.isInitialized();
+        com.google.javascript.rhino.head.Context context24 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global27 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global29 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global27.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global29, (int) (short) 10);
+        java.lang.Object obj32 = global25.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global27);
+        boolean boolean34 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global27, "");
+        com.google.javascript.rhino.head.Scriptable scriptable35 = global27.getPrototype();
+        java.io.PrintStream printStream36 = null;
+        global27.setOut(printStream36);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins38 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction39 = global27.getBuiltinCtor(builtins38);
+        int int43 = global0.runDoctest(context24, (com.google.javascript.rhino.head.Scriptable) global27, "JavaImporter", "", (-1));
+        com.google.javascript.rhino.head.tools.shell.Global global44 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global46 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global48 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global46.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global48, (int) (short) 10);
+        java.lang.Object obj51 = global44.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global46);
+        boolean boolean53 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global46, "");
+        boolean boolean54 = global46.isExtensible();
+        com.google.javascript.rhino.head.tools.shell.Global global55 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable56 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global55);
+        java.lang.Object[] objArray57 = global55.getAllIds();
+        java.lang.Object obj58 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global46, (java.lang.Object) global55);
+        com.google.javascript.rhino.head.Context context59 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global61 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global63 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global65 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global63.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global65, (int) (short) 10);
+        java.lang.Object obj68 = global61.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global63);
+        com.google.javascript.rhino.head.Scriptable scriptable69 = global63.getPrototype();
+        global55.defineOwnProperty(context59, (java.lang.Object) 'a', (com.google.javascript.rhino.head.ScriptableObject) global63);
+        java.io.PrintStream printStream71 = global55.getOut();
+        global27.setErr(printStream71);
+        com.google.javascript.rhino.head.tools.shell.Global global74 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global76 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global78 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global80 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global78.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global80, (int) (short) 10);
+        java.lang.Object obj83 = global76.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global78);
+        java.lang.Object obj84 = global74.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global78);
+        int int85 = global78.size();
+        boolean boolean87 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global78, "");
+        global78.cacheBuiltins();
+        global78.delete("hi!");
+        com.google.javascript.rhino.head.ScriptableObject.defineConstProperty((com.google.javascript.rhino.head.Scriptable) global78, "");
+        com.google.javascript.rhino.head.ScriptableObject.putConstProperty((com.google.javascript.rhino.head.Scriptable) global27, "JavaImporter", (java.lang.Object) "");
+        java.lang.Object[] objArray94 = com.google.javascript.rhino.head.ScriptableObject.getPropertyIds((com.google.javascript.rhino.head.Scriptable) global27);
+        boolean boolean96 = global27.isConst("JavaImporter");
+        java.lang.Object[] objArray97 = global27.getIds();
+        org.junit.Assert.assertNotNull(obj7);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+        org.junit.Assert.assertNotNull(obj19);
+        org.junit.Assert.assertNotNull(obj20);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertNotNull(obj32);
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + true + "'", boolean34 == true);
+        org.junit.Assert.assertNull(scriptable35);
+        org.junit.Assert.assertNull(baseFunction39);
+        org.junit.Assert.assertTrue("'" + int43 + "' != '" + 0 + "'", int43 == 0);
+        org.junit.Assert.assertNotNull(obj51);
+        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + true + "'", boolean53 == true);
+        org.junit.Assert.assertTrue("'" + boolean54 + "' != '" + true + "'", boolean54 == true);
+        org.junit.Assert.assertNotNull(scriptable56);
+        org.junit.Assert.assertNotNull(objArray57);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray57), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray57), "[]");
+        org.junit.Assert.assertNull(obj58);
+        org.junit.Assert.assertNotNull(obj68);
+        org.junit.Assert.assertNull(scriptable69);
+        org.junit.Assert.assertNotNull(printStream71);
+        org.junit.Assert.assertNotNull(obj83);
+        org.junit.Assert.assertNotNull(obj84);
+        org.junit.Assert.assertTrue("'" + int85 + "' != '" + 1 + "'", int85 == 1);
+        org.junit.Assert.assertTrue("'" + boolean87 + "' != '" + false + "'", boolean87 == false);
+        org.junit.Assert.assertNotNull(objArray94);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray94), "[JavaImporter]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray94), "[JavaImporter]");
+        org.junit.Assert.assertTrue("'" + boolean96 + "' != '" + true + "'", boolean96 == true);
+        org.junit.Assert.assertNotNull(objArray97);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray97), "[JavaImporter]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray97), "[JavaImporter]");
+    }
+
+    @Test
+    public void test1513() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1513");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global0.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2, (int) (short) 10);
+        global2.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.tools.shell.Global global9 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global11 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global13 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global11.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global13, (int) (short) 10);
+        java.lang.Object obj16 = global9.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global11);
+        boolean boolean18 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global11, "");
+        boolean boolean19 = global11.isExtensible();
+        com.google.javascript.rhino.head.tools.shell.Global global20 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable21 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global20);
+        java.lang.Object[] objArray22 = global20.getAllIds();
+        java.lang.Object obj23 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global11, (java.lang.Object) global20);
+        com.google.javascript.rhino.head.Context context24 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global26 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global28 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global30 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global28.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global30, (int) (short) 10);
+        java.lang.Object obj33 = global26.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global28);
+        com.google.javascript.rhino.head.Scriptable scriptable34 = global28.getPrototype();
+        global20.defineOwnProperty(context24, (java.lang.Object) 'a', (com.google.javascript.rhino.head.ScriptableObject) global28);
+        java.lang.Object obj37 = global20.get((java.lang.Object) 100L);
+        boolean boolean38 = global2.has("object", (com.google.javascript.rhino.head.Scriptable) global20);
+        java.lang.Object obj40 = com.google.javascript.rhino.head.ScriptableObject.getProperty((com.google.javascript.rhino.head.Scriptable) global20, (int) (byte) -1);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins41 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction42 = global20.getBuiltinCtor(builtins41);
+        org.junit.Assert.assertNotNull(obj16);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + true + "'", boolean18 == true);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
+        org.junit.Assert.assertNotNull(scriptable21);
+        org.junit.Assert.assertNotNull(objArray22);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray22), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray22), "[]");
+        org.junit.Assert.assertNull(obj23);
+        org.junit.Assert.assertNotNull(obj33);
+        org.junit.Assert.assertNull(scriptable34);
+        org.junit.Assert.assertNull(obj37);
+        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + false + "'", boolean38 == false);
+        org.junit.Assert.assertNotNull(obj40);
+        org.junit.Assert.assertNull(baseFunction42);
+    }
+
+    @Test
+    public void test1514() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1514");
+        com.google.javascript.rhino.head.Context context0 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global1 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global3 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global5 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global3.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global5, (int) (short) 10);
+        java.lang.Object obj8 = global1.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global3);
+        boolean boolean10 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global3, "");
+        com.google.javascript.rhino.head.Scriptable scriptable11 = global3.getPrototype();
+        com.google.javascript.rhino.head.tools.shell.Global global12 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable13 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global12);
+        java.lang.Object[] objArray14 = global12.getAllIds();
+        com.google.javascript.rhino.head.tools.shell.Global global15 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global17 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global19 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global21 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global19.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global21, (int) (short) 10);
+        java.lang.Object obj24 = global17.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global19);
+        java.lang.Object obj25 = global15.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global19);
+        int int26 = global19.size();
+        boolean boolean28 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global19, "");
+        com.google.javascript.rhino.head.Context context29 = null;
+        java.lang.String[] strArray32 = new java.lang.String[] { "", "hi!" };
+        java.util.ArrayList<java.lang.String> strList33 = new java.util.ArrayList<java.lang.String>();
+        boolean boolean34 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList33, strArray32);
+        com.google.javascript.rhino.head.commonjs.module.Require require36 = global19.installRequire(context29, (java.util.List<java.lang.String>) strList33, true);
+        com.google.javascript.rhino.head.tools.shell.Global.load(context0, scriptable11, objArray14, (com.google.javascript.rhino.head.Function) require36);
+        com.google.javascript.rhino.head.tools.shell.Global global39 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global41 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global39.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global41, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global44 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global46 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global48 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global46.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global48, (int) (short) 10);
+        java.lang.Object obj51 = global44.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global46);
+        boolean boolean53 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global46, "");
+        global41.setParentScope((com.google.javascript.rhino.head.Scriptable) global46);
+        com.google.javascript.rhino.head.Context context55 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global56 = new com.google.javascript.rhino.head.tools.shell.Global();
+        int int60 = global41.runDoctest(context55, (com.google.javascript.rhino.head.Scriptable) global56, "", "hi!", (int) (short) 10);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject62 = require36.exportAsJSClass((int) '4', (com.google.javascript.rhino.head.Scriptable) global41, false);
+        java.io.PrintStream printStream63 = global41.getErr();
+        boolean boolean64 = global41.isSealed();
+        org.junit.Assert.assertNotNull(obj8);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertNull(scriptable11);
+        org.junit.Assert.assertNotNull(scriptable13);
+        org.junit.Assert.assertNotNull(objArray14);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray14), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray14), "[]");
+        org.junit.Assert.assertNotNull(obj24);
+        org.junit.Assert.assertNotNull(obj25);
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + 1 + "'", int26 == 1);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+        org.junit.Assert.assertNotNull(strArray32);
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + true + "'", boolean34 == true);
+        org.junit.Assert.assertNotNull(require36);
+        org.junit.Assert.assertNotNull(obj51);
+        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + true + "'", boolean53 == true);
+        org.junit.Assert.assertTrue("'" + int60 + "' != '" + 0 + "'", int60 == 0);
+        org.junit.Assert.assertNotNull(idFunctionObject62);
+        org.junit.Assert.assertNotNull(printStream63);
+        org.junit.Assert.assertTrue("'" + boolean64 + "' != '" + false + "'", boolean64 == false);
+    }
+
+    @Test
+    public void test1515() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1515");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global2.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4, (int) (short) 10);
+        java.lang.Object obj7 = global0.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2);
+        global0.delete("hi!");
+        com.google.javascript.rhino.head.tools.shell.Global global11 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global13 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global11.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global13, (int) (short) 10);
+        global13.setAttributes("", (int) (short) 0);
+        java.io.InputStream inputStream19 = null;
+        global13.setIn(inputStream19);
+        java.lang.Object obj21 = global0.get(0, (com.google.javascript.rhino.head.Scriptable) global13);
+        com.google.javascript.rhino.head.tools.shell.Global global23 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global23.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global25, (int) (short) 10);
+        global25.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.Scriptable scriptable32 = com.google.javascript.rhino.head.ScriptableObject.getClassPrototype((com.google.javascript.rhino.head.Scriptable) global25, "hi!");
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins33 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction34 = global25.getBuiltinCtor(builtins33);
+        com.google.javascript.rhino.head.tools.shell.Global global36 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global38 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global40 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global38.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global40, (int) (short) 10);
+        java.lang.Object obj43 = global36.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global38);
+        boolean boolean44 = global25.has("", (com.google.javascript.rhino.head.Scriptable) global38);
+        boolean boolean45 = global25.hasPrototypeMap();
+        java.io.PrintStream printStream46 = global25.getErr();
+        boolean boolean47 = global13.has("hi!", (com.google.javascript.rhino.head.Scriptable) global25);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins48 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction49 = global25.getBuiltinCtor(builtins48);
+        org.junit.Assert.assertNotNull(obj7);
+        org.junit.Assert.assertNotNull(obj21);
+        org.junit.Assert.assertNull(scriptable32);
+        org.junit.Assert.assertNull(baseFunction34);
+        org.junit.Assert.assertNotNull(obj43);
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + true + "'", boolean44 == true);
+        org.junit.Assert.assertTrue("'" + boolean45 + "' != '" + false + "'", boolean45 == false);
+        org.junit.Assert.assertNotNull(printStream46);
+        org.junit.Assert.assertTrue("'" + boolean47 + "' != '" + false + "'", boolean47 == false);
+        org.junit.Assert.assertNull(baseFunction49);
+    }
+
+    @Test
+    public void test1516() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1516");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global0.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2, (int) (short) 10);
+        global2.setAttributes("", (int) (short) 0);
+        java.io.InputStream inputStream8 = null;
+        global2.setIn(inputStream8);
+        com.google.javascript.rhino.head.Scriptable scriptable10 = global2.getParentScope();
+        com.google.javascript.rhino.head.ScriptableObject.putProperty((com.google.javascript.rhino.head.Scriptable) global2, "hi!", (java.lang.Object) 1.0d);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins14 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction15 = global2.getBuiltinCtor(builtins14);
+        boolean boolean17 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global2, "hi!");
+        com.google.javascript.rhino.head.tools.shell.Global global19 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global21 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global23 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global23.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global25, (int) (short) 10);
+        java.lang.Object obj28 = global21.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global23);
+        java.lang.Object obj29 = global19.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global23);
+        int int30 = global23.size();
+        boolean boolean32 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global23, "");
+        global23.cacheBuiltins();
+        com.google.javascript.rhino.head.Scriptable scriptable34 = com.google.javascript.rhino.head.ScriptableObject.getArrayPrototype((com.google.javascript.rhino.head.Scriptable) global23);
+        java.lang.reflect.Method method37 = null;
+        java.lang.reflect.Method method38 = null;
+        global23.defineProperty("", (java.lang.Object) "hi!", method37, method38, (int) (byte) 1);
+        com.google.javascript.rhino.head.tools.shell.Global global42 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable43 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global42);
+        com.google.javascript.rhino.head.tools.shell.Global global45 = new com.google.javascript.rhino.head.tools.shell.Global();
+        boolean boolean47 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global45, "");
+        com.google.javascript.rhino.head.tools.shell.Global global49 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global51 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global53 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global55 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global53.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global55, (int) (short) 10);
+        java.lang.Object obj58 = global51.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global53);
+        java.lang.Object obj59 = global49.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global53);
+        int int60 = global53.size();
+        boolean boolean62 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global53, "");
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject64 = global45.exportAsJSClass((int) 'a', (com.google.javascript.rhino.head.Scriptable) global53, false);
+        global42.setAttributes(10, (com.google.javascript.rhino.head.Scriptable) global45, (int) (short) 0);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject68 = global23.exportAsJSClass((int) (byte) 10, (com.google.javascript.rhino.head.Scriptable) global42, false);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject70 = global2.exportAsJSClass((int) (byte) 10, (com.google.javascript.rhino.head.Scriptable) idFunctionObject68, true);
+        com.google.javascript.rhino.head.Scriptable scriptable71 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) idFunctionObject68);
+        boolean boolean72 = idFunctionObject68.isExtensible();
+        org.junit.Assert.assertNull(scriptable10);
+        org.junit.Assert.assertNull(baseFunction15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
+        org.junit.Assert.assertNotNull(obj28);
+        org.junit.Assert.assertNotNull(obj29);
+        org.junit.Assert.assertTrue("'" + int30 + "' != '" + 1 + "'", int30 == 1);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNull(scriptable34);
+        org.junit.Assert.assertNotNull(scriptable43);
+        org.junit.Assert.assertTrue("'" + boolean47 + "' != '" + true + "'", boolean47 == true);
+        org.junit.Assert.assertNotNull(obj58);
+        org.junit.Assert.assertNotNull(obj59);
+        org.junit.Assert.assertTrue("'" + int60 + "' != '" + 1 + "'", int60 == 1);
+        org.junit.Assert.assertTrue("'" + boolean62 + "' != '" + false + "'", boolean62 == false);
+        org.junit.Assert.assertNotNull(idFunctionObject64);
+        org.junit.Assert.assertNotNull(idFunctionObject68);
+        org.junit.Assert.assertNotNull(idFunctionObject70);
+        org.junit.Assert.assertNotNull(scriptable71);
+        org.junit.Assert.assertTrue("'" + boolean72 + "' != '" + true + "'", boolean72 == true);
+    }
+
+    @Test
+    public void test1517() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1517");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global0.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2, (int) (short) 10);
+        global2.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.Context context8 = null;
+        java.lang.String[] strArray9 = global2.getPrompts(context8);
+        com.google.javascript.rhino.head.tools.shell.Global global11 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global13 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global11.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global13, (int) (short) 10);
+        global13.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.tools.shell.Global global20 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global22 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global20.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global22, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global27 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global29 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global27.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global29, (int) (short) 10);
+        java.lang.Object obj32 = global25.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global27);
+        boolean boolean34 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global27, "");
+        global22.setParentScope((com.google.javascript.rhino.head.Scriptable) global27);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject37 = global13.exportAsJSClass((int) (short) 100, (com.google.javascript.rhino.head.Scriptable) global22, false);
+        com.google.javascript.rhino.head.tools.shell.Global global39 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global41 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global43 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global41.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global43, (int) (short) 10);
+        java.lang.Object obj46 = global39.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global41);
+        com.google.javascript.rhino.head.Scriptable scriptable47 = global41.getPrototype();
+        com.google.javascript.rhino.head.tools.shell.Global global49 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global51 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global53 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global51.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global53, (int) (short) 10);
+        java.lang.Object obj56 = global49.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global51);
+        boolean boolean58 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global51, "");
+        boolean boolean59 = global51.isExtensible();
+        com.google.javascript.rhino.head.tools.shell.Global global60 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable61 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global60);
+        java.lang.Object[] objArray62 = global60.getAllIds();
+        java.lang.Object obj63 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global51, (java.lang.Object) global60);
+        global41.setAttributes((int) (byte) 1, (com.google.javascript.rhino.head.Scriptable) global60, 1);
+        global13.defineConst("object", (com.google.javascript.rhino.head.Scriptable) global41);
+        com.google.javascript.rhino.head.Scriptable scriptable67 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global41);
+        global2.setAttributes(10, scriptable67, 13);
+        global2.delete("");
+        global2.delete("object");
+        org.junit.Assert.assertNotNull(strArray9);
+        org.junit.Assert.assertNotNull(obj32);
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + true + "'", boolean34 == true);
+        org.junit.Assert.assertNotNull(idFunctionObject37);
+        org.junit.Assert.assertNotNull(obj46);
+        org.junit.Assert.assertNull(scriptable47);
+        org.junit.Assert.assertNotNull(obj56);
+        org.junit.Assert.assertTrue("'" + boolean58 + "' != '" + true + "'", boolean58 == true);
+        org.junit.Assert.assertTrue("'" + boolean59 + "' != '" + true + "'", boolean59 == true);
+        org.junit.Assert.assertNotNull(scriptable61);
+        org.junit.Assert.assertNotNull(objArray62);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray62), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray62), "[]");
+        org.junit.Assert.assertNull(obj63);
+        org.junit.Assert.assertNotNull(scriptable67);
+    }
+
+    @Test
+    public void test1518() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1518");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global0.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2, (int) (short) 10);
+        global2.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.Scriptable scriptable9 = com.google.javascript.rhino.head.ScriptableObject.getClassPrototype((com.google.javascript.rhino.head.Scriptable) global2, "hi!");
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins10 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction11 = global2.getBuiltinCtor(builtins10);
+        com.google.javascript.rhino.head.tools.shell.Global global13 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global15 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global17 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global15.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global17, (int) (short) 10);
+        java.lang.Object obj20 = global13.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global15);
+        boolean boolean21 = global2.has("", (com.google.javascript.rhino.head.Scriptable) global15);
+        java.io.PrintStream printStream22 = global2.getErr();
+        boolean boolean24 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global2, (int) (byte) -1);
+        global2.delete((int) (byte) -1);
+        java.io.PrintStream printStream27 = global2.getErr();
+        global2.sealObject();
+        org.junit.Assert.assertNull(scriptable9);
+        org.junit.Assert.assertNull(baseFunction11);
+        org.junit.Assert.assertNotNull(obj20);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + true + "'", boolean21 == true);
+        org.junit.Assert.assertNotNull(printStream22);
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
+        org.junit.Assert.assertNotNull(printStream27);
+    }
+
+    @Test
+    public void test1519() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1519");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global2.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4, (int) (short) 10);
+        java.lang.Object obj7 = global0.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2);
+        boolean boolean8 = global0.isExtensible();
+        boolean boolean10 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global0, (int) (short) 100);
+        com.google.javascript.rhino.head.Context context11 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global12 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global14 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global16 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global14.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global16, (int) (short) 10);
+        java.lang.Object obj19 = global12.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global14);
+        global12.delete("hi!");
+        global0.defineOwnProperties(context11, (com.google.javascript.rhino.head.ScriptableObject) global12);
+        com.google.javascript.rhino.head.tools.shell.Global global23 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global27 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global25.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global27, (int) (short) 10);
+        java.lang.Object obj30 = global23.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global25);
+        com.google.javascript.rhino.head.Scriptable scriptable31 = com.google.javascript.rhino.head.ScriptableObject.getArrayPrototype((com.google.javascript.rhino.head.Scriptable) global23);
+        com.google.javascript.rhino.head.Scriptable scriptable32 = com.google.javascript.rhino.head.ScriptableObject.getObjectPrototype((com.google.javascript.rhino.head.Scriptable) global23);
+        com.google.javascript.rhino.head.tools.shell.Global global34 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global36 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global38 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global40 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global38.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global40, (int) (short) 10);
+        java.lang.Object obj43 = global36.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global38);
+        java.lang.Object obj44 = global34.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global38);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins45 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction46 = global34.getBuiltinCtor(builtins45);
+        java.lang.Object obj48 = global34.getAssociatedValue((java.lang.Object) (short) 0);
+        com.google.javascript.rhino.head.ScriptableObject.defineConstProperty((com.google.javascript.rhino.head.Scriptable) global34, "");
+        boolean boolean51 = global34.isSealed();
+        java.lang.Object obj52 = global23.get((int) (byte) 10, (com.google.javascript.rhino.head.Scriptable) global34);
+        boolean boolean53 = global12.hasInstance((com.google.javascript.rhino.head.Scriptable) global34);
+        global34.delete((int) ' ');
+        org.junit.Assert.assertNotNull(obj7);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNotNull(obj19);
+        org.junit.Assert.assertNotNull(obj30);
+        org.junit.Assert.assertNull(scriptable31);
+        org.junit.Assert.assertNull(scriptable32);
+        org.junit.Assert.assertNotNull(obj43);
+        org.junit.Assert.assertNotNull(obj44);
+        org.junit.Assert.assertNull(baseFunction46);
+        org.junit.Assert.assertNull(obj48);
+        org.junit.Assert.assertTrue("'" + boolean51 + "' != '" + false + "'", boolean51 == false);
+        org.junit.Assert.assertNotNull(obj52);
+        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + false + "'", boolean53 == false);
+    }
+
+    @Test
+    public void test1520() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1520");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global2.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4, (int) (short) 10);
+        java.lang.Object obj7 = global0.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2);
+        com.google.javascript.rhino.head.Scriptable scriptable8 = com.google.javascript.rhino.head.ScriptableObject.getArrayPrototype((com.google.javascript.rhino.head.Scriptable) global0);
+        com.google.javascript.rhino.head.tools.shell.Global global10 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global12 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global10.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global12, (int) (short) 10);
+        global12.setAttributes("", (int) (short) 0);
+        boolean boolean18 = global0.has((int) (byte) 0, (com.google.javascript.rhino.head.Scriptable) global12);
+        java.lang.Object[] objArray19 = com.google.javascript.rhino.head.ScriptableObject.getPropertyIds((com.google.javascript.rhino.head.Scriptable) global12);
+        org.junit.Assert.assertNotNull(obj7);
+        org.junit.Assert.assertNull(scriptable8);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(objArray19);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray19), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray19), "[]");
+    }
+
+    @Test
+    public void test1521() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1521");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global6 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global4.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global6, (int) (short) 10);
+        java.lang.Object obj9 = global2.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4);
+        java.lang.Object obj10 = global0.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global4);
+        int int11 = global4.size();
+        boolean boolean13 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global4, "");
+        com.google.javascript.rhino.head.Context context14 = null;
+        java.lang.String[] strArray17 = new java.lang.String[] { "", "hi!" };
+        java.util.ArrayList<java.lang.String> strList18 = new java.util.ArrayList<java.lang.String>();
+        boolean boolean19 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList18, strArray17);
+        com.google.javascript.rhino.head.commonjs.module.Require require21 = global4.installRequire(context14, (java.util.List<java.lang.String>) strList18, true);
+        boolean boolean22 = global4.hasPrototypeMap();
+        com.google.javascript.rhino.head.tools.shell.Global global24 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global26 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global28 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global26.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global28, (int) (short) 10);
+        java.lang.Object obj31 = global24.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global26);
+        boolean boolean32 = global24.isExtensible();
+        com.google.javascript.rhino.head.tools.shell.Global global34 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global36 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global38 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global40 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global38.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global40, (int) (short) 10);
+        java.lang.Object obj43 = global36.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global38);
+        java.lang.Object obj44 = global34.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global38);
+        com.google.javascript.rhino.head.ScriptableObject.defineProperty((com.google.javascript.rhino.head.Scriptable) global24, "", obj44, (int) (byte) 10);
+        boolean boolean47 = global24.isInitialized();
+        boolean boolean49 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global24, "JavaImporter");
+        java.lang.Object obj50 = global4.get(8, (com.google.javascript.rhino.head.Scriptable) global24);
+        com.google.javascript.rhino.head.Scriptable scriptable51 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global24);
+        java.io.PrintStream printStream52 = global24.getOut();
+        org.junit.Assert.assertNotNull(obj9);
+        org.junit.Assert.assertNotNull(obj10);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 1 + "'", int11 == 1);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNotNull(strArray17);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
+        org.junit.Assert.assertNotNull(require21);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertNotNull(obj31);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + true + "'", boolean32 == true);
+        org.junit.Assert.assertNotNull(obj43);
+        org.junit.Assert.assertNotNull(obj44);
+        org.junit.Assert.assertTrue("'" + boolean47 + "' != '" + false + "'", boolean47 == false);
+        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + true + "'", boolean49 == true);
+        org.junit.Assert.assertNotNull(obj50);
+        org.junit.Assert.assertNotNull(scriptable51);
+        org.junit.Assert.assertNotNull(printStream52);
+    }
+
+    @Test
+    public void test1522() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1522");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global0.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2, (int) (short) 10);
+        global2.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.tools.shell.Global global9 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global11 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global9.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global11, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global14 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global16 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global18 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global16.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global18, (int) (short) 10);
+        java.lang.Object obj21 = global14.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global16);
+        boolean boolean23 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global16, "");
+        global11.setParentScope((com.google.javascript.rhino.head.Scriptable) global16);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject26 = global2.exportAsJSClass((int) (short) 100, (com.google.javascript.rhino.head.Scriptable) global11, false);
+        com.google.javascript.rhino.head.Context context27 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global28 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global30 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global28.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global30, (int) (short) 10);
+        global30.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.Context context36 = null;
+        java.lang.String[] strArray37 = global30.getPrompts(context36);
+        java.io.PrintStream printStream38 = null;
+        global30.setErr(printStream38);
+        com.google.javascript.rhino.head.tools.shell.Global global41 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global43 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global41.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global43, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global46 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global48 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global50 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global48.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global50, (int) (short) 10);
+        java.lang.Object obj53 = global46.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global48);
+        boolean boolean55 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global48, "");
+        global43.setParentScope((com.google.javascript.rhino.head.Scriptable) global48);
+        java.lang.Object obj58 = com.google.javascript.rhino.head.ScriptableObject.getProperty((com.google.javascript.rhino.head.Scriptable) global48, "");
+        com.google.javascript.rhino.head.tools.shell.Global global60 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global62 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global64 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global62.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global64, (int) (short) 10);
+        java.lang.Object obj67 = global60.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global62);
+        boolean boolean69 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global62, "");
+        com.google.javascript.rhino.head.Context context70 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable71 = null;
+        java.lang.Object[] objArray77 = new java.lang.Object[] { "hi!", 1L, (-1L), '4', 10.0f };
+        com.google.javascript.rhino.head.Function function78 = null;
+        com.google.javascript.rhino.head.tools.shell.Global.gc(context70, scriptable71, objArray77, function78);
+        java.lang.Object obj80 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global62, (java.lang.Object) scriptable71);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject82 = global48.exportAsJSClass((int) (byte) 10, (com.google.javascript.rhino.head.Scriptable) global62, false);
+        java.lang.Object obj83 = global30.get("JavaImporter", (com.google.javascript.rhino.head.Scriptable) global62);
+        idFunctionObject26.defineOwnProperties(context27, (com.google.javascript.rhino.head.ScriptableObject) global62);
+        idFunctionObject26.delete((int) (short) 1);
+        boolean boolean88 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) idFunctionObject26, "object");
+        org.junit.Assert.assertNotNull(obj21);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + true + "'", boolean23 == true);
+        org.junit.Assert.assertNotNull(idFunctionObject26);
+        org.junit.Assert.assertNotNull(strArray37);
+        org.junit.Assert.assertNotNull(obj53);
+        org.junit.Assert.assertTrue("'" + boolean55 + "' != '" + true + "'", boolean55 == true);
+        org.junit.Assert.assertNotNull(obj58);
+        org.junit.Assert.assertNotNull(obj67);
+        org.junit.Assert.assertTrue("'" + boolean69 + "' != '" + true + "'", boolean69 == true);
+        org.junit.Assert.assertNotNull(objArray77);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray77), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray77), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertNull(obj80);
+        org.junit.Assert.assertNotNull(idFunctionObject82);
+        org.junit.Assert.assertNotNull(obj83);
+        org.junit.Assert.assertTrue("'" + boolean88 + "' != '" + true + "'", boolean88 == true);
+    }
+
+    @Test
+    public void test1523() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1523");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global2.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4, (int) (short) 10);
+        java.lang.Object obj7 = global0.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2);
+        global0.delete("hi!");
+        com.google.javascript.rhino.head.tools.shell.Global global11 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global13 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global11.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global13, (int) (short) 10);
+        global13.setAttributes("", (int) (short) 0);
+        java.io.InputStream inputStream19 = null;
+        global13.setIn(inputStream19);
+        java.lang.Object obj21 = global0.get(0, (com.google.javascript.rhino.head.Scriptable) global13);
+        boolean boolean23 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global13, (int) (byte) -1);
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global27 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global25.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global27, (int) (short) 10);
+        global27.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.Scriptable scriptable34 = com.google.javascript.rhino.head.ScriptableObject.getClassPrototype((com.google.javascript.rhino.head.Scriptable) global27, "hi!");
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins35 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction36 = global27.getBuiltinCtor(builtins35);
+        com.google.javascript.rhino.head.tools.shell.Global global38 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global40 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global42 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global40.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global42, (int) (short) 10);
+        java.lang.Object obj45 = global38.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global40);
+        boolean boolean46 = global27.has("", (com.google.javascript.rhino.head.Scriptable) global40);
+        java.io.PrintStream printStream47 = global27.getErr();
+        boolean boolean49 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global27, (int) (byte) -1);
+        global27.delete((int) (byte) -1);
+        java.io.PrintStream printStream52 = global27.getErr();
+        com.google.javascript.rhino.head.ScriptableObject.putProperty((com.google.javascript.rhino.head.Scriptable) global13, "", (java.lang.Object) printStream52);
+        boolean boolean54 = global13.isExtensible();
+        java.lang.String str55 = global13.getClassName();
+        org.junit.Assert.assertNotNull(obj7);
+        org.junit.Assert.assertNotNull(obj21);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertNull(scriptable34);
+        org.junit.Assert.assertNull(baseFunction36);
+        org.junit.Assert.assertNotNull(obj45);
+        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + true + "'", boolean46 == true);
+        org.junit.Assert.assertNotNull(printStream47);
+        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + true + "'", boolean49 == true);
+        org.junit.Assert.assertNotNull(printStream52);
+        org.junit.Assert.assertTrue("'" + boolean54 + "' != '" + true + "'", boolean54 == true);
+        org.junit.Assert.assertEquals("'" + str55 + "' != '" + "JavaImporter" + "'", str55, "JavaImporter");
+    }
+
+    @Test
+    public void test1524() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1524");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global0.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2, (int) (short) 10);
+        global2.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.Scriptable scriptable9 = com.google.javascript.rhino.head.ScriptableObject.getClassPrototype((com.google.javascript.rhino.head.Scriptable) global2, "hi!");
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins10 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction11 = global2.getBuiltinCtor(builtins10);
+        com.google.javascript.rhino.head.tools.shell.Global global13 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global15 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global17 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global15.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global17, (int) (short) 10);
+        java.lang.Object obj20 = global13.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global15);
+        boolean boolean21 = global2.has("", (com.google.javascript.rhino.head.Scriptable) global15);
+        java.lang.String str22 = global2.getTypeOf();
+        com.google.javascript.rhino.head.Context context24 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global27 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global29 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global27.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global29, (int) (short) 10);
+        java.lang.Object obj32 = global25.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global27);
+        boolean boolean34 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global27, "");
+        com.google.javascript.rhino.head.Scriptable scriptable35 = global27.getPrototype();
+        com.google.javascript.rhino.head.tools.shell.Global global36 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable37 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global36);
+        java.lang.Object[] objArray38 = global36.getAllIds();
+        com.google.javascript.rhino.head.tools.shell.Global global39 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global41 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global43 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global45 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global43.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global45, (int) (short) 10);
+        java.lang.Object obj48 = global41.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global43);
+        java.lang.Object obj49 = global39.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global43);
+        int int50 = global43.size();
+        boolean boolean52 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global43, "");
+        com.google.javascript.rhino.head.Context context53 = null;
+        java.lang.String[] strArray56 = new java.lang.String[] { "", "hi!" };
+        java.util.ArrayList<java.lang.String> strList57 = new java.util.ArrayList<java.lang.String>();
+        boolean boolean58 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList57, strArray56);
+        com.google.javascript.rhino.head.commonjs.module.Require require60 = global43.installRequire(context53, (java.util.List<java.lang.String>) strList57, true);
+        com.google.javascript.rhino.head.tools.shell.Global.load(context24, scriptable35, objArray38, (com.google.javascript.rhino.head.Function) require60);
+        boolean boolean62 = require60.hasPrototypeMap();
+        com.google.javascript.rhino.head.tools.shell.Global global64 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global66 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global64.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global66, (int) (short) 10);
+        global66.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.tools.shell.Global global73 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global75 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global73.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global75, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global78 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global80 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global82 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global80.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global82, (int) (short) 10);
+        java.lang.Object obj85 = global78.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global80);
+        boolean boolean87 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global80, "");
+        global75.setParentScope((com.google.javascript.rhino.head.Scriptable) global80);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject90 = global66.exportAsJSClass((int) (short) 100, (com.google.javascript.rhino.head.Scriptable) global75, false);
+        java.lang.Object[] objArray91 = com.google.javascript.rhino.head.ScriptableObject.getPropertyIds((com.google.javascript.rhino.head.Scriptable) global75);
+        com.google.javascript.rhino.head.ScriptableObject.defineProperty((com.google.javascript.rhino.head.Scriptable) require60, "", (java.lang.Object) objArray91, (int) (byte) 0);
+        boolean boolean95 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) require60, "");
+        com.google.javascript.rhino.head.Scriptable scriptable96 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) require60);
+        boolean boolean97 = global2.has("hi!", scriptable96);
+        org.junit.Assert.assertNull(scriptable9);
+        org.junit.Assert.assertNull(baseFunction11);
+        org.junit.Assert.assertNotNull(obj20);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + true + "'", boolean21 == true);
+        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "object" + "'", str22, "object");
+        org.junit.Assert.assertNotNull(obj32);
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + true + "'", boolean34 == true);
+        org.junit.Assert.assertNull(scriptable35);
+        org.junit.Assert.assertNotNull(scriptable37);
+        org.junit.Assert.assertNotNull(objArray38);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray38), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray38), "[]");
+        org.junit.Assert.assertNotNull(obj48);
+        org.junit.Assert.assertNotNull(obj49);
+        org.junit.Assert.assertTrue("'" + int50 + "' != '" + 1 + "'", int50 == 1);
+        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + false + "'", boolean52 == false);
+        org.junit.Assert.assertNotNull(strArray56);
+        org.junit.Assert.assertTrue("'" + boolean58 + "' != '" + true + "'", boolean58 == true);
+        org.junit.Assert.assertNotNull(require60);
+        org.junit.Assert.assertTrue("'" + boolean62 + "' != '" + false + "'", boolean62 == false);
+        org.junit.Assert.assertNotNull(obj85);
+        org.junit.Assert.assertTrue("'" + boolean87 + "' != '" + true + "'", boolean87 == true);
+        org.junit.Assert.assertNotNull(idFunctionObject90);
+        org.junit.Assert.assertNotNull(objArray91);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray91), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray91), "[]");
+        org.junit.Assert.assertTrue("'" + boolean95 + "' != '" + true + "'", boolean95 == true);
+        org.junit.Assert.assertNotNull(scriptable96);
+        org.junit.Assert.assertTrue("'" + boolean97 + "' != '" + false + "'", boolean97 == false);
+    }
+
+    @Test
+    public void test1525() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1525");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global2.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4, (int) (short) 10);
+        java.lang.Object obj7 = global0.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2);
+        boolean boolean9 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global2, "");
+        boolean boolean10 = global2.isExtensible();
+        com.google.javascript.rhino.head.tools.shell.Global global11 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable12 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global11);
+        java.lang.Object[] objArray13 = global11.getAllIds();
+        java.lang.Object obj14 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global2, (java.lang.Object) global11);
+        com.google.javascript.rhino.head.Context context15 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global17 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global19 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global21 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global19.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global21, (int) (short) 10);
+        java.lang.Object obj24 = global17.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global19);
+        com.google.javascript.rhino.head.Scriptable scriptable25 = global19.getPrototype();
+        global11.defineOwnProperty(context15, (java.lang.Object) 'a', (com.google.javascript.rhino.head.ScriptableObject) global19);
+        com.google.javascript.rhino.head.tools.shell.Global global27 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global29 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global31 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global33 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global31.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global33, (int) (short) 10);
+        java.lang.Object obj36 = global29.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global31);
+        java.lang.Object obj37 = global27.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global31);
+        int int38 = global31.size();
+        boolean boolean40 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global31, "");
+        java.lang.Object obj41 = global11.get((java.lang.Object) global31);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins42 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable43 = global11.getBuiltinPrototype(builtins42);
+        com.google.javascript.rhino.head.Scriptable scriptable44 = com.google.javascript.rhino.head.ScriptableObject.getArrayPrototype((com.google.javascript.rhino.head.Scriptable) global11);
+        org.junit.Assert.assertNotNull(obj7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertNotNull(scriptable12);
+        org.junit.Assert.assertNotNull(objArray13);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray13), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray13), "[]");
+        org.junit.Assert.assertNull(obj14);
+        org.junit.Assert.assertNotNull(obj24);
+        org.junit.Assert.assertNull(scriptable25);
+        org.junit.Assert.assertNotNull(obj36);
+        org.junit.Assert.assertNotNull(obj37);
+        org.junit.Assert.assertTrue("'" + int38 + "' != '" + 1 + "'", int38 == 1);
+        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
+        org.junit.Assert.assertNull(obj41);
+        org.junit.Assert.assertNull(scriptable43);
+        org.junit.Assert.assertNull(scriptable44);
+    }
+
+    @Test
+    public void test1526() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1526");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global6 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global4.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global6, (int) (short) 10);
+        java.lang.Object obj9 = global2.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4);
+        java.lang.Object obj10 = global0.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global4);
+        int int11 = global4.size();
+        boolean boolean13 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global4, "");
+        global4.cacheBuiltins();
+        com.google.javascript.rhino.head.Scriptable scriptable15 = com.google.javascript.rhino.head.ScriptableObject.getArrayPrototype((com.google.javascript.rhino.head.Scriptable) global4);
+        java.lang.reflect.Method method18 = null;
+        java.lang.reflect.Method method19 = null;
+        global4.defineProperty("", (java.lang.Object) "hi!", method18, method19, (int) (byte) 1);
+        com.google.javascript.rhino.head.tools.shell.Global global23 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable24 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global23);
+        com.google.javascript.rhino.head.tools.shell.Global global26 = new com.google.javascript.rhino.head.tools.shell.Global();
+        boolean boolean28 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global26, "");
+        com.google.javascript.rhino.head.tools.shell.Global global30 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global32 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global34 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global36 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global34.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global36, (int) (short) 10);
+        java.lang.Object obj39 = global32.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global34);
+        java.lang.Object obj40 = global30.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global34);
+        int int41 = global34.size();
+        boolean boolean43 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global34, "");
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject45 = global26.exportAsJSClass((int) 'a', (com.google.javascript.rhino.head.Scriptable) global34, false);
+        global23.setAttributes(10, (com.google.javascript.rhino.head.Scriptable) global26, (int) (short) 0);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject49 = global4.exportAsJSClass((int) (byte) 10, (com.google.javascript.rhino.head.Scriptable) global23, false);
+        com.google.javascript.rhino.head.tools.shell.Global global51 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global53 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global55 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global53.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global55, (int) (short) 10);
+        java.lang.Object obj58 = global51.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global53);
+        com.google.javascript.rhino.head.Scriptable scriptable59 = com.google.javascript.rhino.head.ScriptableObject.getArrayPrototype((com.google.javascript.rhino.head.Scriptable) global51);
+        com.google.javascript.rhino.head.tools.shell.Global global61 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global63 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global61.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global63, (int) (short) 10);
+        global63.setAttributes("", (int) (short) 0);
+        boolean boolean69 = global51.has((int) (byte) 0, (com.google.javascript.rhino.head.Scriptable) global63);
+        global4.put((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global63, (java.lang.Object) (short) 100);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins72 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable73 = global63.getBuiltinPrototype(builtins72);
+        org.junit.Assert.assertNotNull(obj9);
+        org.junit.Assert.assertNotNull(obj10);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 1 + "'", int11 == 1);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNull(scriptable15);
+        org.junit.Assert.assertNotNull(scriptable24);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        org.junit.Assert.assertNotNull(obj39);
+        org.junit.Assert.assertNotNull(obj40);
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + 1 + "'", int41 == 1);
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + false + "'", boolean43 == false);
+        org.junit.Assert.assertNotNull(idFunctionObject45);
+        org.junit.Assert.assertNotNull(idFunctionObject49);
+        org.junit.Assert.assertNotNull(obj58);
+        org.junit.Assert.assertNull(scriptable59);
+        org.junit.Assert.assertTrue("'" + boolean69 + "' != '" + false + "'", boolean69 == false);
+        org.junit.Assert.assertNull(scriptable73);
+    }
+
+    @Test
+    public void test1527() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1527");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable1 = com.google.javascript.rhino.head.ScriptableObject.getArrayPrototype((com.google.javascript.rhino.head.Scriptable) global0);
+        com.google.javascript.rhino.head.tools.shell.Global global3 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global5 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global3.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global5, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global8 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global10 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global12 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global10.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global12, (int) (short) 10);
+        java.lang.Object obj15 = global8.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global10);
+        boolean boolean17 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global10, "");
+        global5.setParentScope((com.google.javascript.rhino.head.Scriptable) global10);
+        boolean boolean19 = global0.has("", (com.google.javascript.rhino.head.Scriptable) global5);
+        java.lang.Object obj20 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global21 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global23 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global21.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global23, (int) (short) 10);
+        global23.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.Scriptable scriptable30 = com.google.javascript.rhino.head.ScriptableObject.getClassPrototype((com.google.javascript.rhino.head.Scriptable) global23, "hi!");
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins31 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction32 = global23.getBuiltinCtor(builtins31);
+        com.google.javascript.rhino.head.tools.shell.Global global34 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global36 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global38 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global36.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global38, (int) (short) 10);
+        java.lang.Object obj41 = global34.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global36);
+        boolean boolean42 = global23.has("", (com.google.javascript.rhino.head.Scriptable) global36);
+        boolean boolean43 = global23.hasPrototypeMap();
+        java.io.PrintStream printStream44 = global23.getErr();
+        com.google.javascript.rhino.head.Context context46 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global47 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global49 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global51 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global49.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global51, (int) (short) 10);
+        java.lang.Object obj54 = global47.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global49);
+        global47.delete("hi!");
+        com.google.javascript.rhino.head.Context context57 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable58 = null;
+        java.lang.Object[] objArray64 = new java.lang.Object[] { "hi!", 1L, (-1L), '4', 10.0f };
+        com.google.javascript.rhino.head.Function function65 = null;
+        com.google.javascript.rhino.head.tools.shell.Global.gc(context57, scriptable58, objArray64, function65);
+        com.google.javascript.rhino.head.tools.shell.Global global67 = new com.google.javascript.rhino.head.tools.shell.Global();
+        boolean boolean69 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global67, "");
+        com.google.javascript.rhino.head.tools.shell.Global global71 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global73 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global75 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global77 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global75.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global77, (int) (short) 10);
+        java.lang.Object obj80 = global73.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global75);
+        java.lang.Object obj81 = global71.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global75);
+        int int82 = global75.size();
+        boolean boolean84 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global75, "");
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject86 = global67.exportAsJSClass((int) 'a', (com.google.javascript.rhino.head.Scriptable) global75, false);
+        java.lang.Object obj87 = com.google.javascript.rhino.head.tools.shell.Global.toint32(context46, (com.google.javascript.rhino.head.Scriptable) global47, objArray64, (com.google.javascript.rhino.head.Function) idFunctionObject86);
+        idFunctionObject86.delete((int) (short) 0);
+        boolean boolean90 = global23.has("JavaImporter", (com.google.javascript.rhino.head.Scriptable) idFunctionObject86);
+        java.lang.Object obj91 = global5.associateValue(obj20, (java.lang.Object) boolean90);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins92 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction93 = global5.getBuiltinCtor(builtins92);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins94 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction95 = global5.getBuiltinCtor(builtins94);
+        com.google.javascript.rhino.head.Context context96 = null;
+        java.lang.String[] strArray97 = global5.getPrompts(context96);
+        org.junit.Assert.assertNull(scriptable1);
+        org.junit.Assert.assertNotNull(obj15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNull(scriptable30);
+        org.junit.Assert.assertNull(baseFunction32);
+        org.junit.Assert.assertNotNull(obj41);
+        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + true + "'", boolean42 == true);
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + false + "'", boolean43 == false);
+        org.junit.Assert.assertNotNull(printStream44);
+        org.junit.Assert.assertNotNull(obj54);
+        org.junit.Assert.assertNotNull(objArray64);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray64), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray64), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertTrue("'" + boolean69 + "' != '" + true + "'", boolean69 == true);
+        org.junit.Assert.assertNotNull(obj80);
+        org.junit.Assert.assertNotNull(obj81);
+        org.junit.Assert.assertTrue("'" + int82 + "' != '" + 1 + "'", int82 == 1);
+        org.junit.Assert.assertTrue("'" + boolean84 + "' != '" + false + "'", boolean84 == false);
+        org.junit.Assert.assertNotNull(idFunctionObject86);
+        org.junit.Assert.assertEquals("'" + obj87 + "' != '" + 0 + "'", obj87, 0);
+        org.junit.Assert.assertTrue("'" + boolean90 + "' != '" + false + "'", boolean90 == false);
+        org.junit.Assert.assertEquals("'" + obj91 + "' != '" + false + "'", obj91, false);
+        org.junit.Assert.assertNull(baseFunction93);
+        org.junit.Assert.assertNull(baseFunction95);
+        org.junit.Assert.assertNotNull(strArray97);
+    }
+
+    @Test
+    public void test1528() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1528");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global6 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global4.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global6, (int) (short) 10);
+        java.lang.Object obj9 = global2.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4);
+        java.lang.Object obj10 = global0.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global4);
+        int int11 = global4.size();
+        global4.setAttributes((-1), (int) (byte) 0);
+        com.google.javascript.rhino.head.Scriptable scriptable15 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global4);
+        com.google.javascript.rhino.head.tools.shell.Global global17 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global19 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global21 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global19.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global21, (int) (short) 10);
+        java.lang.Object obj24 = global17.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global19);
+        boolean boolean25 = global17.isExtensible();
+        com.google.javascript.rhino.head.tools.shell.Global global27 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global29 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global31 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global33 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global31.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global33, (int) (short) 10);
+        java.lang.Object obj36 = global29.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global31);
+        java.lang.Object obj37 = global27.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global31);
+        com.google.javascript.rhino.head.ScriptableObject.defineProperty((com.google.javascript.rhino.head.Scriptable) global17, "", obj37, (int) (byte) 10);
+        boolean boolean40 = global17.isInitialized();
+        com.google.javascript.rhino.head.Context context41 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global42 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global44 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global46 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global44.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global46, (int) (short) 10);
+        java.lang.Object obj49 = global42.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global44);
+        boolean boolean51 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global44, "");
+        com.google.javascript.rhino.head.Scriptable scriptable52 = global44.getPrototype();
+        java.io.PrintStream printStream53 = null;
+        global44.setOut(printStream53);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins55 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction56 = global44.getBuiltinCtor(builtins55);
+        int int60 = global17.runDoctest(context41, (com.google.javascript.rhino.head.Scriptable) global44, "JavaImporter", "", (-1));
+        global44.delete("hi!");
+        java.lang.Object obj64 = com.google.javascript.rhino.head.ScriptableObject.getProperty((com.google.javascript.rhino.head.Scriptable) global44, 0);
+        com.google.javascript.rhino.head.ScriptableObject.putProperty(scriptable15, (int) (byte) 10, (java.lang.Object) 0);
+        org.junit.Assert.assertNotNull(obj9);
+        org.junit.Assert.assertNotNull(obj10);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 1 + "'", int11 == 1);
+        org.junit.Assert.assertNotNull(scriptable15);
+        org.junit.Assert.assertNotNull(obj24);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
+        org.junit.Assert.assertNotNull(obj36);
+        org.junit.Assert.assertNotNull(obj37);
+        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
+        org.junit.Assert.assertNotNull(obj49);
+        org.junit.Assert.assertTrue("'" + boolean51 + "' != '" + true + "'", boolean51 == true);
+        org.junit.Assert.assertNull(scriptable52);
+        org.junit.Assert.assertNull(baseFunction56);
+        org.junit.Assert.assertTrue("'" + int60 + "' != '" + 0 + "'", int60 == 0);
+        org.junit.Assert.assertNotNull(obj64);
+    }
+
+    @Test
+    public void test1529() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1529");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable1 = global0.getParentScope();
+        com.google.javascript.rhino.head.tools.shell.Global global3 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global5 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global3.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global5, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global8 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global10 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global12 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global10.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global12, (int) (short) 10);
+        java.lang.Object obj15 = global8.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global10);
+        boolean boolean17 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global10, "");
+        global5.setParentScope((com.google.javascript.rhino.head.Scriptable) global10);
+        java.lang.Object obj20 = com.google.javascript.rhino.head.ScriptableObject.getProperty((com.google.javascript.rhino.head.Scriptable) global10, "");
+        com.google.javascript.rhino.head.tools.shell.Global global22 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global24 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global26 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global24.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global26, (int) (short) 10);
+        java.lang.Object obj29 = global22.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global24);
+        boolean boolean31 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global24, "");
+        com.google.javascript.rhino.head.Context context32 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable33 = null;
+        java.lang.Object[] objArray39 = new java.lang.Object[] { "hi!", 1L, (-1L), '4', 10.0f };
+        com.google.javascript.rhino.head.Function function40 = null;
+        com.google.javascript.rhino.head.tools.shell.Global.gc(context32, scriptable33, objArray39, function40);
+        java.lang.Object obj42 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global24, (java.lang.Object) scriptable33);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject44 = global10.exportAsJSClass((int) (byte) 10, (com.google.javascript.rhino.head.Scriptable) global24, false);
+        boolean boolean46 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global10, (int) (short) 100);
+        com.google.javascript.rhino.head.tools.shell.Global global48 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global50 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global52 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global54 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global52.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global54, (int) (short) 10);
+        java.lang.Object obj57 = global50.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global52);
+        java.lang.Object obj58 = global48.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global52);
+        int int59 = global52.size();
+        boolean boolean60 = global52.avoidObjectDetection();
+        com.google.javascript.rhino.head.tools.shell.Global global62 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable63 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global62);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject65 = global52.exportAsJSClass(100, scriptable63, false);
+        boolean boolean66 = global10.has((int) (short) 10, (com.google.javascript.rhino.head.Scriptable) idFunctionObject65);
+        boolean boolean67 = idFunctionObject65.isSealed();
+        java.lang.Object obj68 = global0.get("function", (com.google.javascript.rhino.head.Scriptable) idFunctionObject65);
+        org.junit.Assert.assertNull(scriptable1);
+        org.junit.Assert.assertNotNull(obj15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
+        org.junit.Assert.assertNotNull(obj20);
+        org.junit.Assert.assertNotNull(obj29);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
+        org.junit.Assert.assertNotNull(objArray39);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray39), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray39), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertNull(obj42);
+        org.junit.Assert.assertNotNull(idFunctionObject44);
+        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + true + "'", boolean46 == true);
+        org.junit.Assert.assertNotNull(obj57);
+        org.junit.Assert.assertNotNull(obj58);
+        org.junit.Assert.assertTrue("'" + int59 + "' != '" + 1 + "'", int59 == 1);
+        org.junit.Assert.assertTrue("'" + boolean60 + "' != '" + false + "'", boolean60 == false);
+        org.junit.Assert.assertNotNull(scriptable63);
+        org.junit.Assert.assertNotNull(idFunctionObject65);
+        org.junit.Assert.assertTrue("'" + boolean66 + "' != '" + false + "'", boolean66 == false);
+        org.junit.Assert.assertTrue("'" + boolean67 + "' != '" + false + "'", boolean67 == false);
+        org.junit.Assert.assertNotNull(obj68);
+    }
+
+    @Test
+    public void test1530() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1530");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global0.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2, (int) (short) 10);
+        global2.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.Context context8 = null;
+        java.lang.String[] strArray9 = global2.getPrompts(context8);
+        java.io.PrintStream printStream10 = null;
+        global2.setErr(printStream10);
+        com.google.javascript.rhino.head.tools.shell.Global global13 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global15 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global13.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global15, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global18 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global20 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global22 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global20.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global22, (int) (short) 10);
+        java.lang.Object obj25 = global18.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global20);
+        boolean boolean27 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global20, "");
+        global15.setParentScope((com.google.javascript.rhino.head.Scriptable) global20);
+        java.lang.Object obj30 = com.google.javascript.rhino.head.ScriptableObject.getProperty((com.google.javascript.rhino.head.Scriptable) global20, "");
+        com.google.javascript.rhino.head.tools.shell.Global global32 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global34 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global36 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global34.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global36, (int) (short) 10);
+        java.lang.Object obj39 = global32.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global34);
+        boolean boolean41 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global34, "");
+        com.google.javascript.rhino.head.Context context42 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable43 = null;
+        java.lang.Object[] objArray49 = new java.lang.Object[] { "hi!", 1L, (-1L), '4', 10.0f };
+        com.google.javascript.rhino.head.Function function50 = null;
+        com.google.javascript.rhino.head.tools.shell.Global.gc(context42, scriptable43, objArray49, function50);
+        java.lang.Object obj52 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global34, (java.lang.Object) scriptable43);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject54 = global20.exportAsJSClass((int) (byte) 10, (com.google.javascript.rhino.head.Scriptable) global34, false);
+        java.lang.Object obj55 = global2.get("JavaImporter", (com.google.javascript.rhino.head.Scriptable) global34);
+        com.google.javascript.rhino.head.tools.shell.Global global56 = new com.google.javascript.rhino.head.tools.shell.Global();
+        boolean boolean57 = global56.isEmpty();
+        com.google.javascript.rhino.head.tools.shell.Global global58 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global60 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global62 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global60.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global62, (int) (short) 10);
+        java.lang.Object obj65 = global58.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global60);
+        com.google.javascript.rhino.head.Scriptable scriptable66 = global58.getParentScope();
+        java.lang.Object obj68 = global58.getAssociatedValue((java.lang.Object) 0.0f);
+        java.lang.Object[] objArray69 = global58.getAllIds();
+        java.io.InputStream inputStream70 = global58.getIn();
+        java.lang.Object obj71 = global2.associateValue((java.lang.Object) global56, (java.lang.Object) inputStream70);
+        java.io.InputStream inputStream72 = global56.getIn();
+        java.lang.String str73 = global56.getClassName();
+        boolean boolean75 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global56, "JavaImporter");
+        org.junit.Assert.assertNotNull(strArray9);
+        org.junit.Assert.assertNotNull(obj25);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + true + "'", boolean27 == true);
+        org.junit.Assert.assertNotNull(obj30);
+        org.junit.Assert.assertNotNull(obj39);
+        org.junit.Assert.assertTrue("'" + boolean41 + "' != '" + true + "'", boolean41 == true);
+        org.junit.Assert.assertNotNull(objArray49);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray49), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray49), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertNull(obj52);
+        org.junit.Assert.assertNotNull(idFunctionObject54);
+        org.junit.Assert.assertNotNull(obj55);
+        org.junit.Assert.assertTrue("'" + boolean57 + "' != '" + true + "'", boolean57 == true);
+        org.junit.Assert.assertNotNull(obj65);
+        org.junit.Assert.assertNull(scriptable66);
+        org.junit.Assert.assertNull(obj68);
+        org.junit.Assert.assertNotNull(objArray69);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray69), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray69), "[]");
+        org.junit.Assert.assertNotNull(inputStream70);
+        org.junit.Assert.assertNotNull(obj71);
+        org.junit.Assert.assertNotNull(inputStream72);
+        org.junit.Assert.assertEquals("'" + str73 + "' != '" + "JavaImporter" + "'", str73, "JavaImporter");
+        org.junit.Assert.assertTrue("'" + boolean75 + "' != '" + false + "'", boolean75 == false);
+    }
+
+    @Test
+    public void test1531() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1531");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global2.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4, (int) (short) 10);
+        java.lang.Object obj7 = global0.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2);
+        com.google.javascript.rhino.head.Scriptable scriptable8 = global0.getParentScope();
+        com.google.javascript.rhino.head.tools.shell.Global global9 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global11 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global13 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global11.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global13, (int) (short) 10);
+        java.lang.Object obj16 = global9.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global11);
+        java.lang.Object obj17 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global0, obj16);
+        com.google.javascript.rhino.head.tools.shell.Global global18 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global20 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global22 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global20.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global22, (int) (short) 10);
+        java.lang.Object obj25 = global18.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global20);
+        boolean boolean27 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global20, "");
+        com.google.javascript.rhino.head.Scriptable scriptable28 = global20.getPrototype();
+        java.io.PrintStream printStream29 = null;
+        global20.setOut(printStream29);
+        java.lang.Object[] objArray31 = com.google.javascript.rhino.head.ScriptableObject.getPropertyIds((com.google.javascript.rhino.head.Scriptable) global20);
+        com.google.javascript.rhino.head.tools.shell.Global global32 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global34 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global36 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global38 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global36.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global38, (int) (short) 10);
+        java.lang.Object obj41 = global34.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global36);
+        java.lang.Object obj42 = global32.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global36);
+        java.lang.Object[] objArray43 = global36.getIds();
+        java.lang.Object obj44 = global0.associateValue((java.lang.Object) global20, (java.lang.Object) objArray43);
+        com.google.javascript.rhino.head.Scriptable scriptable45 = global0.getPrototype();
+        com.google.javascript.rhino.head.ContextFactory contextFactory46 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            global0.init(contextFactory46);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(obj7);
+        org.junit.Assert.assertNull(scriptable8);
+        org.junit.Assert.assertNotNull(obj16);
+        org.junit.Assert.assertNull(obj17);
+        org.junit.Assert.assertNotNull(obj25);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + true + "'", boolean27 == true);
+        org.junit.Assert.assertNull(scriptable28);
+        org.junit.Assert.assertNotNull(objArray31);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray31), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray31), "[]");
+        org.junit.Assert.assertNotNull(obj41);
+        org.junit.Assert.assertNotNull(obj42);
+        org.junit.Assert.assertNotNull(objArray43);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray43), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray43), "[]");
+        org.junit.Assert.assertNotNull(obj44);
+        org.junit.Assert.assertNull(scriptable45);
+    }
+
+    @Test
+    public void test1532() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1532");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        boolean boolean2 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global0, "");
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global6 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global8 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global10 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global8.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global10, (int) (short) 10);
+        java.lang.Object obj13 = global6.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global8);
+        java.lang.Object obj14 = global4.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global8);
+        int int15 = global8.size();
+        boolean boolean17 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global8, "");
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject19 = global0.exportAsJSClass((int) 'a', (com.google.javascript.rhino.head.Scriptable) global8, false);
+        java.lang.Object obj21 = global8.getAssociatedValue((java.lang.Object) (short) 1);
+        com.google.javascript.rhino.head.tools.shell.Global global23 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global25 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global23.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global25, (int) (short) 10);
+        global25.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.Context context31 = null;
+        java.lang.String[] strArray32 = global25.getPrompts(context31);
+        java.lang.String str33 = global25.getTypeOf();
+        boolean boolean34 = global8.has("JavaImporter", (com.google.javascript.rhino.head.Scriptable) global25);
+        // The following exception was thrown during execution in test generation
+        try {
+            int int36 = global8.getAttributes("");
+            org.junit.Assert.fail("Expected exception of type com.google.javascript.rhino.head.EvaluatorException; message: Property  not found.");
+        } catch (com.google.javascript.rhino.head.EvaluatorException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
+        org.junit.Assert.assertNotNull(obj13);
+        org.junit.Assert.assertNotNull(obj14);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 1 + "'", int15 == 1);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertNotNull(idFunctionObject19);
+        org.junit.Assert.assertNull(obj21);
+        org.junit.Assert.assertNotNull(strArray32);
+        org.junit.Assert.assertEquals("'" + str33 + "' != '" + "object" + "'", str33, "object");
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + true + "'", boolean34 == true);
+    }
+
+    @Test
+    public void test1533() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1533");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable1 = com.google.javascript.rhino.head.ScriptableObject.getArrayPrototype((com.google.javascript.rhino.head.Scriptable) global0);
+        global0.setAttributes("JavaImporter", 4);
+        com.google.javascript.rhino.head.ScriptableObject.defineConstProperty((com.google.javascript.rhino.head.Scriptable) global0, "hi!");
+        org.junit.Assert.assertNull(scriptable1);
+    }
+
+    @Test
+    public void test1534() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1534");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global2.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4, (int) (short) 10);
+        java.lang.Object obj7 = global0.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2);
+        boolean boolean9 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global2, "");
+        com.google.javascript.rhino.head.Scriptable scriptable10 = global2.getPrototype();
+        global2.activatePrototypeMap((int) '4');
+        com.google.javascript.rhino.head.Scriptable scriptable13 = com.google.javascript.rhino.head.ScriptableObject.getObjectPrototype((com.google.javascript.rhino.head.Scriptable) global2);
+        com.google.javascript.rhino.head.tools.shell.Global global14 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global16 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global18 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global16.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global18, (int) (short) 10);
+        java.lang.Object obj21 = global14.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global16);
+        com.google.javascript.rhino.head.Scriptable scriptable22 = global14.getParentScope();
+        java.lang.Object obj24 = global14.getAssociatedValue((java.lang.Object) 0.0f);
+        java.lang.Object[] objArray25 = global14.getAllIds();
+        java.io.InputStream inputStream26 = global14.getIn();
+        global2.setIn(inputStream26);
+        com.google.javascript.rhino.head.tools.shell.Global global28 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable29 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global28);
+        java.lang.Object[] objArray30 = global28.getAllIds();
+        com.google.javascript.rhino.head.tools.shell.Global global31 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global33 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global31.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global33, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global36 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global38 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global40 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global38.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global40, (int) (short) 10);
+        java.lang.Object obj43 = global36.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global38);
+        boolean boolean45 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global38, "");
+        global33.setParentScope((com.google.javascript.rhino.head.Scriptable) global38);
+        java.lang.Object obj47 = global2.associateValue((java.lang.Object) global28, (java.lang.Object) global38);
+        boolean boolean48 = global2.isSealed();
+        global2.delete("object");
+        org.junit.Assert.assertNotNull(obj7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertNull(scriptable10);
+        org.junit.Assert.assertNull(scriptable13);
+        org.junit.Assert.assertNotNull(obj21);
+        org.junit.Assert.assertNull(scriptable22);
+        org.junit.Assert.assertNull(obj24);
+        org.junit.Assert.assertNotNull(objArray25);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray25), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray25), "[]");
+        org.junit.Assert.assertNotNull(inputStream26);
+        org.junit.Assert.assertNotNull(scriptable29);
+        org.junit.Assert.assertNotNull(objArray30);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray30), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray30), "[]");
+        org.junit.Assert.assertNotNull(obj43);
+        org.junit.Assert.assertTrue("'" + boolean45 + "' != '" + true + "'", boolean45 == true);
+        org.junit.Assert.assertNotNull(obj47);
+        org.junit.Assert.assertTrue("'" + boolean48 + "' != '" + false + "'", boolean48 == false);
+    }
+
+    @Test
+    public void test1535() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1535");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global0.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global2, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global5 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global7 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global9 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global7.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global9, (int) (short) 10);
+        java.lang.Object obj12 = global5.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global7);
+        boolean boolean14 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global7, "");
+        global2.setParentScope((com.google.javascript.rhino.head.Scriptable) global7);
+        java.lang.Object obj17 = com.google.javascript.rhino.head.ScriptableObject.getProperty((com.google.javascript.rhino.head.Scriptable) global7, "");
+        com.google.javascript.rhino.head.tools.shell.Global global19 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global21 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global23 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global21.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global23, (int) (short) 10);
+        java.lang.Object obj26 = global19.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global21);
+        boolean boolean28 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global21, "");
+        com.google.javascript.rhino.head.Context context29 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable30 = null;
+        java.lang.Object[] objArray36 = new java.lang.Object[] { "hi!", 1L, (-1L), '4', 10.0f };
+        com.google.javascript.rhino.head.Function function37 = null;
+        com.google.javascript.rhino.head.tools.shell.Global.gc(context29, scriptable30, objArray36, function37);
+        java.lang.Object obj39 = com.google.javascript.rhino.head.ScriptableObject.getTopScopeValue((com.google.javascript.rhino.head.Scriptable) global21, (java.lang.Object) scriptable30);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject41 = global7.exportAsJSClass((int) (byte) 10, (com.google.javascript.rhino.head.Scriptable) global21, false);
+        boolean boolean43 = global21.isConst("hi!");
+        com.google.javascript.rhino.head.tools.shell.Global global44 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable45 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global44);
+        global21.setParentScope((com.google.javascript.rhino.head.Scriptable) global44);
+        int int48 = global21.getAttributes((int) (byte) 1);
+        com.google.javascript.rhino.head.tools.shell.Global global50 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global52 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global54 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global56 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global54.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global56, (int) (short) 10);
+        java.lang.Object obj59 = global52.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global54);
+        java.lang.Object obj60 = global50.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global54);
+        java.lang.Object[] objArray61 = global54.getIds();
+        com.google.javascript.rhino.head.ScriptableObject.defineConstProperty((com.google.javascript.rhino.head.Scriptable) global54, "hi!");
+        java.lang.Object obj64 = global21.get("hi!", (com.google.javascript.rhino.head.Scriptable) global54);
+        org.junit.Assert.assertNotNull(obj12);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(obj17);
+        org.junit.Assert.assertNotNull(obj26);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        org.junit.Assert.assertNotNull(objArray36);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray36), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray36), "[hi!, 1, -1, 4, 10.0]");
+        org.junit.Assert.assertNull(obj39);
+        org.junit.Assert.assertNotNull(idFunctionObject41);
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + false + "'", boolean43 == false);
+        org.junit.Assert.assertNotNull(scriptable45);
+        org.junit.Assert.assertTrue("'" + int48 + "' != '" + 10 + "'", int48 == 10);
+        org.junit.Assert.assertNotNull(obj59);
+        org.junit.Assert.assertNotNull(obj60);
+        org.junit.Assert.assertNotNull(objArray61);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray61), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray61), "[]");
+        org.junit.Assert.assertNotNull(obj64);
+    }
+
+    @Test
+    public void test1536() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1536");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global6 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global4.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global6, (int) (short) 10);
+        java.lang.Object obj9 = global2.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4);
+        java.lang.Object obj10 = global0.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global4);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins11 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction12 = global0.getBuiltinCtor(builtins11);
+        java.lang.Object obj14 = global0.getAssociatedValue((java.lang.Object) (short) 0);
+        com.google.javascript.rhino.head.ScriptableObject.defineConstProperty((com.google.javascript.rhino.head.Scriptable) global0, "");
+        global0.setAttributes("", (int) (byte) 1);
+        java.lang.Object[] objArray20 = global0.getIds();
+        com.google.javascript.rhino.head.Context context21 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global22 = new com.google.javascript.rhino.head.tools.shell.Global();
+        boolean boolean24 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global22, "");
+        com.google.javascript.rhino.head.tools.shell.Global global26 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global28 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global30 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global32 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global30.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global32, (int) (short) 10);
+        java.lang.Object obj35 = global28.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global30);
+        java.lang.Object obj36 = global26.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global30);
+        int int37 = global30.size();
+        boolean boolean39 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global30, "");
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject41 = global22.exportAsJSClass((int) 'a', (com.google.javascript.rhino.head.Scriptable) global30, false);
+        com.google.javascript.rhino.head.tools.shell.Global global43 = new com.google.javascript.rhino.head.tools.shell.Global();
+        boolean boolean44 = global43.isEmpty();
+        com.google.javascript.rhino.head.tools.shell.Global global46 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global48 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global46.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global48, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global51 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global53 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global55 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global53.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global55, (int) (short) 10);
+        java.lang.Object obj58 = global51.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global53);
+        boolean boolean60 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global53, "");
+        global48.setParentScope((com.google.javascript.rhino.head.Scriptable) global53);
+        com.google.javascript.rhino.head.Context context62 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global63 = new com.google.javascript.rhino.head.tools.shell.Global();
+        int int67 = global48.runDoctest(context62, (com.google.javascript.rhino.head.Scriptable) global63, "", "hi!", (int) (short) 10);
+        java.lang.Object obj68 = global43.get((int) (byte) 100, (com.google.javascript.rhino.head.Scriptable) global48);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins69 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable70 = global43.getBuiltinPrototype(builtins69);
+        int int71 = global30.getAttributes("JavaImporter", (com.google.javascript.rhino.head.Scriptable) global43);
+        com.google.javascript.rhino.head.Context context72 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global73 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global75 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global77 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global79 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global77.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global79, (int) (short) 10);
+        java.lang.Object obj82 = global75.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global77);
+        java.lang.Object obj83 = global73.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global77);
+        int int84 = global77.size();
+        boolean boolean86 = com.google.javascript.rhino.head.ScriptableObject.hasProperty((com.google.javascript.rhino.head.Scriptable) global77, "");
+        com.google.javascript.rhino.head.Context context87 = null;
+        java.lang.String[] strArray90 = new java.lang.String[] { "", "hi!" };
+        java.util.ArrayList<java.lang.String> strList91 = new java.util.ArrayList<java.lang.String>();
+        boolean boolean92 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList91, strArray90);
+        com.google.javascript.rhino.head.commonjs.module.Require require94 = global77.installRequire(context87, (java.util.List<java.lang.String>) strList91, true);
+        com.google.javascript.rhino.head.commonjs.module.Require require96 = global30.installRequire(context72, (java.util.List<java.lang.String>) strList91, true);
+        // The following exception was thrown during execution in test generation
+        try {
+            com.google.javascript.rhino.head.commonjs.module.Require require98 = global0.installRequire(context21, (java.util.List<java.lang.String>) strList91, false);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(obj9);
+        org.junit.Assert.assertNotNull(obj10);
+        org.junit.Assert.assertNull(baseFunction12);
+        org.junit.Assert.assertNull(obj14);
+        org.junit.Assert.assertNotNull(objArray20);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray20), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray20), "[]");
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
+        org.junit.Assert.assertNotNull(obj35);
+        org.junit.Assert.assertNotNull(obj36);
+        org.junit.Assert.assertTrue("'" + int37 + "' != '" + 1 + "'", int37 == 1);
+        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + false + "'", boolean39 == false);
+        org.junit.Assert.assertNotNull(idFunctionObject41);
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + true + "'", boolean44 == true);
+        org.junit.Assert.assertNotNull(obj58);
+        org.junit.Assert.assertTrue("'" + boolean60 + "' != '" + true + "'", boolean60 == true);
+        org.junit.Assert.assertTrue("'" + int67 + "' != '" + 0 + "'", int67 == 0);
+        org.junit.Assert.assertNotNull(obj68);
+        org.junit.Assert.assertNull(scriptable70);
+        org.junit.Assert.assertTrue("'" + int71 + "' != '" + 2 + "'", int71 == 2);
+        org.junit.Assert.assertNotNull(obj82);
+        org.junit.Assert.assertNotNull(obj83);
+        org.junit.Assert.assertTrue("'" + int84 + "' != '" + 1 + "'", int84 == 1);
+        org.junit.Assert.assertTrue("'" + boolean86 + "' != '" + false + "'", boolean86 == false);
+        org.junit.Assert.assertNotNull(strArray90);
+        org.junit.Assert.assertTrue("'" + boolean92 + "' != '" + true + "'", boolean92 == true);
+        org.junit.Assert.assertNotNull(require94);
+        org.junit.Assert.assertNotNull(require96);
+    }
+
+    @Test
+    public void test1537() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1537");
+        com.google.javascript.rhino.head.tools.shell.Global global0 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global2 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global4 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global6 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global4.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global6, (int) (short) 10);
+        java.lang.Object obj9 = global2.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global4);
+        java.lang.Object obj10 = global0.get((int) '#', (com.google.javascript.rhino.head.Scriptable) global4);
+        com.google.javascript.rhino.head.TopLevel.Builtins builtins11 = null;
+        com.google.javascript.rhino.head.BaseFunction baseFunction12 = global0.getBuiltinCtor(builtins11);
+        java.lang.Object obj14 = global0.getAssociatedValue((java.lang.Object) (short) 0);
+        global0.delete(0);
+        global0.cacheBuiltins();
+        global0.cacheBuiltins();
+        org.junit.Assert.assertNotNull(obj9);
+        org.junit.Assert.assertNotNull(obj10);
+        org.junit.Assert.assertNull(baseFunction12);
+        org.junit.Assert.assertNull(obj14);
+    }
+
+    @Test
+    public void test1538() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1538");
+        com.google.javascript.rhino.head.Context context0 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable1 = null;
+        com.google.javascript.rhino.head.Context context3 = null;
+        com.google.javascript.rhino.head.Scriptable scriptable4 = null;
+        com.google.javascript.rhino.head.tools.shell.Global global5 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global7 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.Scriptable scriptable8 = com.google.javascript.rhino.head.ScriptableObject.getTopLevelScope((com.google.javascript.rhino.head.Scriptable) global7);
+        java.lang.Object[] objArray9 = global7.getAllIds();
+        com.google.javascript.rhino.head.tools.shell.Global global10 = new com.google.javascript.rhino.head.tools.shell.Global();
+        boolean boolean12 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global10, "");
+        global5.put("", (com.google.javascript.rhino.head.Scriptable) global7, (java.lang.Object) boolean12);
+        java.lang.Object obj14 = null;
+        java.lang.Object obj15 = global7.get(obj14);
+        com.google.javascript.rhino.head.Scriptable scriptable16 = global7.getParentScope();
+        boolean boolean17 = global7.isSealed();
+        java.lang.Object[] objArray18 = global7.getAllIds();
+        com.google.javascript.rhino.head.tools.shell.Global global19 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global21 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global19.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global21, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global24 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global26 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global28 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global26.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global28, (int) (short) 10);
+        java.lang.Object obj31 = global24.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global26);
+        boolean boolean33 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global26, "");
+        global21.setParentScope((com.google.javascript.rhino.head.Scriptable) global26);
+        java.lang.Object obj36 = com.google.javascript.rhino.head.ScriptableObject.getProperty((com.google.javascript.rhino.head.Scriptable) global26, "");
+        com.google.javascript.rhino.head.Scriptable scriptable37 = global26.getParentScope();
+        com.google.javascript.rhino.head.tools.shell.Global global40 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global42 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global40.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global42, (int) (short) 10);
+        global42.setAttributes("", (int) (short) 0);
+        com.google.javascript.rhino.head.tools.shell.Global global49 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global51 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global49.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global51, (int) (short) 10);
+        com.google.javascript.rhino.head.tools.shell.Global global54 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global56 = new com.google.javascript.rhino.head.tools.shell.Global();
+        com.google.javascript.rhino.head.tools.shell.Global global58 = new com.google.javascript.rhino.head.tools.shell.Global();
+        global56.setAttributes((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global58, (int) (short) 10);
+        java.lang.Object obj61 = global54.get((int) (short) 1, (com.google.javascript.rhino.head.Scriptable) global56);
+        boolean boolean63 = com.google.javascript.rhino.head.ScriptableObject.deleteProperty((com.google.javascript.rhino.head.Scriptable) global56, "");
+        global51.setParentScope((com.google.javascript.rhino.head.Scriptable) global56);
+        com.google.javascript.rhino.head.IdFunctionObject idFunctionObject66 = global42.exportAsJSClass((int) (short) 100, (com.google.javascript.rhino.head.Scriptable) global51, false);
+        com.google.javascript.rhino.head.ScriptableObject.defineConstProperty((com.google.javascript.rhino.head.Scriptable) idFunctionObject66, "");
+        global26.setGetterOrSetter("object", 0, (com.google.javascript.rhino.head.Callable) idFunctionObject66, true);
+        com.google.javascript.rhino.head.tools.shell.Global.quit(context3, scriptable4, objArray18, (com.google.javascript.rhino.head.Function) idFunctionObject66);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.Object obj72 = com.google.javascript.rhino.head.ScriptableObject.callMethod(context0, scriptable1, "hi!", objArray18);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+        // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(scriptable8);
+        org.junit.Assert.assertNotNull(objArray9);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray9), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray9), "[]");
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
+        org.junit.Assert.assertNull(obj15);
+        org.junit.Assert.assertNull(scriptable16);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertNotNull(objArray18);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray18), "[]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray18), "[]");
+        org.junit.Assert.assertNotNull(obj31);
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + true + "'", boolean33 == true);
+        org.junit.Assert.assertNotNull(obj36);
+        org.junit.Assert.assertNull(scriptable37);
+        org.junit.Assert.assertNotNull(obj61);
+        org.junit.Assert.assertTrue("'" + boolean63 + "' != '" + true + "'", boolean63 == true);
+        org.junit.Assert.assertNotNull(idFunctionObject66);
+    }
+}
+

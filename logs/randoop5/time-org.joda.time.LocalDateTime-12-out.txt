@@ -1,0 +1,61 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=167
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=4, test inputs generated=0, failing inputs=0      (2020-11-25T02:53:58.959Z     112MB used)
+Progress update: steps=614, test inputs generated=571, failing inputs=0      (2020-11-25T02:54:59.017Z     628MB used)
+Progress update: steps=1000, test inputs generated=945, failing inputs=0      (2020-11-25T02:55:41.799Z     377MB used)
+Progress update: steps=1293, test inputs generated=1226, failing inputs=0      (2020-11-25T02:55:59.021Z     411MB used)
+Progress update: steps=2000, test inputs generated=1909, failing inputs=0      (2020-11-25T02:56:51.033Z     714MB used)
+Progress update: steps=2093, test inputs generated=2001, failing inputs=0      (2020-11-25T02:56:59.021Z     439MB used)
+Progress update: steps=2728, test inputs generated=2610, failing inputs=0      (2020-11-25T02:57:59.022Z     163MB used)
+Progress update: steps=3000, test inputs generated=2876, failing inputs=0      (2020-11-25T02:58:16.982Z     370MB used)
+Progress update: steps=3567, test inputs generated=3433, failing inputs=0      (2020-11-25T02:58:59.001Z     915MB used)
+Normal method executions: 3760192
+Exceptional method executions: 592
+
+Average method execution time (normal termination):      0.000647
+Average method execution time (exceptional termination): 0.145
+Approximate memory usage 915MB
+Explorer = ForwardGenerator(steps: 3567, null steps: 134, num_sequences_generated: 3433;
+    allSequences: 3433, regresson seqs: 3385, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 48;
+    runtimePrimitivesSeen:1190)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 1833 regression sequences.
+                                                                                                                                                                                                       
+Regression test output:
+Regression test count: 1833
+Writing regression JUnit tests...
+Created file /experiment/results/randoop5/time-org.joda.time.LocalDateTime-12/RegressionTest0.java
+Created file /experiment/results/randoop5/time-org.joda.time.LocalDateTime-12/RegressionTest1.java
+Created file /experiment/results/randoop5/time-org.joda.time.LocalDateTime-12/RegressionTest2.java
+Created file /experiment/results/randoop5/time-org.joda.time.LocalDateTime-12/RegressionTest3.java
+Created file /experiment/results/randoop5/time-org.joda.time.LocalDateTime-12/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.base.AbstractPartial.getValues()
+  Possibly flaky:  org.joda.time.LocalDateTime.get(org.joda.time.DateTimeFieldType)
+  Possibly flaky:  java.util.Arrays.toString(int[])
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.toString()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.toInterval()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.remainder()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.isLeap()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getRangeDurationField()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getName()
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getMinimumValueOverall()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0

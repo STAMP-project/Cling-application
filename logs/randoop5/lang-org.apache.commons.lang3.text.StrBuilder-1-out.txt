@@ -1,0 +1,62 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=135
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2020-11-25T00:42:45.030Z     112MB used)
+Progress update: steps=942, test inputs generated=897, failing inputs=0      (2020-11-25T00:43:45.102Z     778MB used)
+Progress update: steps=1000, test inputs generated=952, failing inputs=0      (2020-11-25T00:43:51.059Z     395MB used)
+Progress update: steps=1785, test inputs generated=1687, failing inputs=0      (2020-11-25T00:44:45.103Z     387MB used)
+Progress update: steps=2000, test inputs generated=1885, failing inputs=0      (2020-11-25T00:45:01.435Z     852MB used)
+Progress update: steps=2440, test inputs generated=2286, failing inputs=0      (2020-11-25T00:45:45.103Z     658MB used)
+Progress update: steps=3000, test inputs generated=2796, failing inputs=0      (2020-11-25T00:46:21.409Z     929MB used)
+Progress update: steps=3358, test inputs generated=3114, failing inputs=0      (2020-11-25T00:46:45.104Z     1017MB used)
+Progress update: steps=3976, test inputs generated=3679, failing inputs=0      (2020-11-25T00:47:45.104Z     408MB used)
+Progress update: steps=3976, test inputs generated=3679, failing inputs=0      (2020-11-25T00:47:45.106Z     408MB used)
+Normal method executions: 2627890
+Exceptional method executions: 595
+
+Average method execution time (normal termination):      0.000748
+Average method execution time (exceptional termination): 0.193
+Approximate memory usage 408MB
+Explorer = ForwardGenerator(steps: 3976, null steps: 297, num_sequences_generated: 3679;
+    allSequences: 3679, regresson seqs: 3678, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    runtimePrimitivesSeen:166)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 1980 regression sequences.
+
+Regression test output:
+Regression test count: 1980
+Writing regression JUnit tests...
+Created file /experiment/results/randoop5/lang-org.apache.commons.lang3.text.StrBuilder-1/RegressionTest0.java
+Created file /experiment/results/randoop5/lang-org.apache.commons.lang3.text.StrBuilder-1/RegressionTest1.java
+Created file /experiment/results/randoop5/lang-org.apache.commons.lang3.text.StrBuilder-1/RegressionTest2.java
+Created file /experiment/results/randoop5/lang-org.apache.commons.lang3.text.StrBuilder-1/RegressionTest3.java
+Created file /experiment/results/randoop5/lang-org.apache.commons.lang3.text.StrBuilder-1/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.toCharArray()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.replaceFirst(org.apache.commons.lang3.text.StrMatcher,java.lang.String)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.minimizeCapacity()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.equalsIgnoreCase(org.apache.commons.lang3.text.StrBuilder)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.deleteCharAt(int)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.asWriter()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.asTokenizer()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.asReader()
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.appendln(boolean)
+  Possibly flaky:  org.apache.commons.lang3.text.StrBuilder.appendNewLine()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0

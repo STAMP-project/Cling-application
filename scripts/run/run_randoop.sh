@@ -14,7 +14,7 @@ preparedCPs=$( python scripts/python/reassemble-cps.py $CPEntriesContent "$proje
 RANDOOP_JAR="tools/randoop-all-4.2.4.jar"
 TestsDir="results/randoop$timeInMinute/$project-$target_class-$execution_id"
 java -Xmx4000m -classpath ${preparedCPs}:${RANDOOP_JAR} randoop.main.Main gentests --testclass="$(echo -e "$target_class" | tr -d '[:space:]')" --junit-output-dir=${TestsDir} --time-limit=$budget > "logs/randoop$timeInMinute/$project-$target_class-$execution_id-out.txt" 2> "logs/randoop$timeInMinute/$project-$target_class-$execution_id-err.txt" &
-pid=12
-
+# pid=$!
+# echo $pid
 # 2- call observer
-. scripts/run/randoop-observer.sh $pid $execution_id $project $target_class $budget $preparedCPs&
+# . scripts/run/randoop-observer.sh $pid $execution_id $project $target_class $budget $preparedCPs &

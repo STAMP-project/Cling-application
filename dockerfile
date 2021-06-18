@@ -1,7 +1,7 @@
 ARG experiment
 
 
-FROM	  	  fedora:latest
+FROM	  	  fedora:30
 
 RUN         dnf upgrade --assumeyes
 RUN         dnf install findutils --assumeyes

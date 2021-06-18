@@ -1,0 +1,63 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=39
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2020-11-25T01:05:34.180Z     102MB used)
+Progress update: steps=820, test inputs generated=715, failing inputs=0      (2020-11-25T01:06:34.209Z     437MB used)
+Progress update: steps=1000, test inputs generated=861, failing inputs=0      (2020-11-25T01:06:53.090Z     238MB used)
+Progress update: steps=1815, test inputs generated=1551, failing inputs=0      (2020-11-25T01:07:34.209Z     453MB used)
+Progress update: steps=2000, test inputs generated=1710, failing inputs=0      (2020-11-25T01:07:46.479Z     171MB used)
+Progress update: steps=2573, test inputs generated=2190, failing inputs=0      (2020-11-25T01:08:34.210Z     348MB used)
+Progress update: steps=3000, test inputs generated=2544, failing inputs=0      (2020-11-25T01:09:03.014Z     924MB used)
+Progress update: steps=3611, test inputs generated=3046, failing inputs=0      (2020-11-25T01:09:34.210Z     154MB used)
+Progress update: steps=4000, test inputs generated=3356, failing inputs=0      (2020-11-25T01:09:53.864Z     620MB used)
+Progress update: steps=4563, test inputs generated=3826, failing inputs=0      (2020-11-25T01:10:34.211Z     70MB used)
+Progress update: steps=4563, test inputs generated=3826, failing inputs=0      (2020-11-25T01:10:34.313Z     70MB used)
+Normal method executions: 82577
+Exceptional method executions: 91
+
+Average method execution time (normal termination):      0.00785
+Average method execution time (exceptional termination): 0.0806
+Approximate memory usage 70MB
+Explorer = ForwardGenerator(steps: 4563, null steps: 737, num_sequences_generated: 3826;
+    allSequences: 3826, regresson seqs: 3825, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    runtimePrimitivesSeen:374)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 1963 regression sequences.
+
+Regression test output:
+Regression test count: 1963
+Writing regression JUnit tests...
+Created file /experiment/results/randoop5/time-org.joda.time.tz.FixedDateTimeZone-12/RegressionTest0.java
+Created file /experiment/results/randoop5/time-org.joda.time.tz.FixedDateTimeZone-12/RegressionTest1.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop5/time-org.joda.time.tz.FixedDateTimeZone-12/RegressionTest2.java
+Created file /experiment/results/randoop5/time-org.joda.time.tz.FixedDateTimeZone-12/RegressionTest3.java
+Created file /experiment/results/randoop5/time-org.joda.time.tz.FixedDateTimeZone-12/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.tz.FixedDateTimeZone.toTimeZone()
+  Possibly flaky:  org.joda.time.tz.FixedDateTimeZone.previousTransition(long)
+  Possibly flaky:  org.joda.time.tz.FixedDateTimeZone.nextTransition(long)
+  Possibly flaky:  org.joda.time.tz.FixedDateTimeZone.isFixed()
+  Possibly flaky:  org.joda.time.tz.FixedDateTimeZone.getStandardOffset(long)
+  Possibly flaky:  org.joda.time.tz.FixedDateTimeZone.getOffsetFromLocal(long)
+  Possibly flaky:  org.joda.time.tz.FixedDateTimeZone.getOffset(long)
+  Possibly flaky:  org.joda.time.tz.FixedDateTimeZone.getNameKey(long)
+  Possibly flaky:  org.joda.time.tz.FixedDateTimeZone.equals(java.lang.Object)
+  Possibly flaky:  org.joda.time.DateTimeZone.toString()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0

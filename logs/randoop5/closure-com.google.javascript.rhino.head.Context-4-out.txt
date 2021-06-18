@@ -1,0 +1,129 @@
+Randoop for Java version "4.2.4, branch master, commit be6dbd3, 2020-07-14".
+
+Will try to generate tests for 1 classes.
+PUBLIC MEMBERS=133
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2020-11-25T03:58:17.174Z     112MB used)
+Progress update: steps=1000, test inputs generated=777, failing inputs=0      (2020-11-25T03:59:04.220Z     625MB used)
+Progress update: steps=1178, test inputs generated=934, failing inputs=0      (2020-11-25T03:59:17.198Z     500MB used)Long execution time 29 sec for
+com.google.javascript.rhino.head.Context context0 = com.google.javascript.rhino.head.Context.enter();
+int int1 = context0.getLanguageVersion();
+int int2 = context0.getLanguageVersion();
+int int3 = context0.getOptimizationLevel();
+java.lang.Object obj4 = context0.getDebuggerContextData();
+com.google.javascript.rhino.head.Context context5 = com.google.javascript.rhino.head.Context.enter();
+int int6 = context5.getLanguageVersion();
+com.google.javascript.rhino.head.ContextFactory contextFactory7 = context5.getFactory();
+int int8 = context5.getInstructionObserverThreshold();
+context5.generateObserverCount = true;
+com.google.javascript.rhino.head.Context context11 = com.google.javascript.rhino.head.Context.enter();
+int int12 = context11.getLanguageVersion();
+int int13 = context11.getInstructionObserverThreshold();
+com.google.javascript.rhino.head.ScriptableObject scriptableObject14 = context11.initStandardObjects();
+com.google.javascript.rhino.head.Context context15 = com.google.javascript.rhino.head.Context.enter();
+int int16 = context15.getLanguageVersion();
+int int17 = context15.getInstructionObserverThreshold();
+com.google.javascript.rhino.head.ScriptableObject scriptableObject18 = context15.initStandardObjects();
+java.lang.Object[] objArray19 = new java.lang.Object[] {  };
+com.google.javascript.rhino.head.Scriptable scriptable20 = context11.newArray((com.google.javascript.rhino.head.Scriptable)scriptableObject18, objArray19);
+com.google.javascript.rhino.head.Scriptable scriptable22 = context5.newArray(scriptable20, 5);
+int int23 = context5.getOptimizationLevel();
+com.google.javascript.rhino.head.Context context24 = com.google.javascript.rhino.head.Context.enter(context5);
+boolean boolean26 = context5.hasFeature(3);
+com.google.javascript.rhino.head.ErrorReporter errorReporter27 = context5.getErrorReporter();
+com.google.javascript.rhino.head.Context context28 = com.google.javascript.rhino.head.Context.enter();
+int int29 = context28.getLanguageVersion();
+java.lang.ClassLoader classLoader30 = context28.getApplicationClassLoader();
+com.google.javascript.rhino.head.ContextFactory contextFactory31 = context28.getFactory();
+boolean boolean32 = context28.generateObserverCount;
+com.google.javascript.rhino.head.Context context33 = com.google.javascript.rhino.head.Context.enter();
+int int34 = context33.getLanguageVersion();
+com.google.javascript.rhino.head.ContextFactory contextFactory35 = context33.getFactory();
+int int36 = context33.getLanguageVersion();
+com.google.javascript.rhino.head.Context context38 = com.google.javascript.rhino.head.Context.enter();
+int int39 = context38.getLanguageVersion();
+com.google.javascript.rhino.head.ContextFactory contextFactory40 = context38.getFactory();
+int int41 = context38.getInstructionObserverThreshold();
+com.google.javascript.rhino.head.Context context42 = com.google.javascript.rhino.head.Context.enter();
+int int43 = context42.getLanguageVersion();
+int int44 = context42.getInstructionObserverThreshold();
+com.google.javascript.rhino.head.ScriptableObject scriptableObject45 = context42.initStandardObjects();
+com.google.javascript.rhino.head.Scriptable scriptable46 = context38.initStandardObjects(scriptableObject45);
+com.google.javascript.rhino.head.Scriptable scriptable47 = com.google.javascript.rhino.head.Context.toObject((java.lang.Object)0.0d, (com.google.javascript.rhino.head.Scriptable)scriptableObject45);
+com.google.javascript.rhino.head.Scriptable scriptable48 = com.google.javascript.rhino.head.Context.toObject((java.lang.Object)int36, (com.google.javascript.rhino.head.Scriptable)scriptableObject45);
+com.google.javascript.rhino.head.ScriptableObject scriptableObject50 = context28.initStandardObjects(scriptableObject45, false);
+com.google.javascript.rhino.head.Scriptable scriptable51 = context5.newObject((com.google.javascript.rhino.head.Scriptable)scriptableObject45);
+com.google.javascript.rhino.head.Scriptable scriptable53 = context0.newArray(scriptable51, 2147483647);
+
+
+Progress update: steps=1542, test inputs generated=1234, failing inputs=0      (2020-11-25T04:00:17.198Z     1233MB used)createAndClassifySequences threw an exception
+randoop.main.RandoopBug: code=Call to public com.google.javascript.rhino.head.Scriptable com.google.javascript.rhino.head.Context.newArray(com.google.javascript.rhino.head.Scriptable,int) receiver: com.google.javascript.rhino.head.Context@31935e8e args: [[object Object], -1] failed to run
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:168)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:175)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:289)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:236)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:213)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:316)
+	at randoop.main.GenTests.handle(GenTests.java:495)
+	at randoop.main.Main.nonStaticMain(Main.java:70)
+	at randoop.main.Main.main(Main.java:30)
+Caused by: randoop.util.ReflectionCode$ReflectionCodeException: error invoking public com.google.javascript.rhino.head.Scriptable com.google.javascript.rhino.head.Context.newArray(com.google.javascript.rhino.head.Scriptable,int) on 3 arguments:
+  com.google.javascript.rhino.head.Context@31935e8e
+  [object Object]
+  -1
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:82)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:163)
+	... 12 more
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0
+	at com.google.javascript.rhino.head.NativeArray.listIterator(NativeArray.java:1806)
+	at com.google.javascript.rhino.head.NativeArray.iterator(NativeArray.java:1791)
+	at randoop.util.Log.listToString(Log.java:159)
+	at randoop.util.Log.listToStringAndClass(Log.java:139)
+	at randoop.util.Log.toStringAndClass(Log.java:115)
+	at randoop.util.Log.toStringAndClass(Log.java:96)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:55)
+	... 14 more
+
+
+Randoop failed in an unexpected way.
+Please report at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .
+randoop.main.RandoopBug: code=Call to public com.google.javascript.rhino.head.Scriptable com.google.javascript.rhino.head.Context.newArray(com.google.javascript.rhino.head.Scriptable,int) receiver: com.google.javascript.rhino.head.Context@31935e8e args: [[object Object], -1] failed to run
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:168)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:175)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:289)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:236)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:213)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:316)
+	at randoop.main.GenTests.handle(GenTests.java:495)
+	at randoop.main.Main.nonStaticMain(Main.java:70)
+	at randoop.main.Main.main(Main.java:30)
+Caused by: randoop.util.ReflectionCode$ReflectionCodeException: error invoking public com.google.javascript.rhino.head.Scriptable com.google.javascript.rhino.head.Context.newArray(com.google.javascript.rhino.head.Scriptable,int) on 3 arguments:
+  com.google.javascript.rhino.head.Context@31935e8e
+  [object Object]
+  -1
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:82)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:163)
+	... 12 more
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0
+	at com.google.javascript.rhino.head.NativeArray.listIterator(NativeArray.java:1806)
+	at com.google.javascript.rhino.head.NativeArray.iterator(NativeArray.java:1791)
+	at randoop.util.Log.listToString(Log.java:159)
+	at randoop.util.Log.listToStringAndClass(Log.java:139)
+	at randoop.util.Log.toStringAndClass(Log.java:115)
+	at randoop.util.Log.toStringAndClass(Log.java:96)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:55)
+	... 14 more

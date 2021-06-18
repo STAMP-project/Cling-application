@@ -1,5 +1,5 @@
 # Cling CBC Coverage
-python scripts/python/cbc/cling-cbc.py
+# python scripts/python/cbc/cling-cbc.py
 
 # EvoSuite CB Coverage
 # Check input CSV file
@@ -22,13 +22,16 @@ do
         continue
     fi
 
-
     if [[ "$tool" == "cling" ]]; then
         continue
         # echo "Applying CBC calculator on $resultDir"
     elif [[ "$tool" == "evosuite-caller5" ]]; then
         resultDir="results/evosuite5/$project-$caller_class-$execution_id"
         # echo "Applying CBC calculator on $resultDir"
+
+    elif [[ "$tool" == "randoop-caller5" ]]; then
+        resultDir="results/randoop5/$project-$caller_class-$execution_id"
+        # echo $resultDir
     else
         # CBC coverage is only for Cling and evosuite on caller class
         continue
@@ -40,26 +43,45 @@ do
         CPEntriesContent=$( cat $CPEntriesDir)
         preparedCPs=$( python scripts/python/reassemble-cps.py $CPEntriesContent "$project")
         classPaths="$preparedCPs:$(cat libs/test_execution/classpath.txt)$resultDir"
+        if [[ "$tool" == "evosuite-caller5" ]]; then
+            # Prepare testSuite name
+            for mainTest in `find $resultDir -name "*_ESTest.java" -type f`; do
+                filename=$(basename -- "$mainTest")
+                filename="${filename%.*}"
+                # echo "Filename: "$filename
+                callerClassName=$caller_class"_ESTest"
+                callerClassName="${callerClassName##*.}"
+                # echo "Caller class name: "$callerClassName
+                if [ "$filename" = "$callerClassName" ]; then
+                    testClass=$caller_class"_ESTest"
+                else
+                    testClass=$callee_class"_ESTest"
+                fi
+            done
+            echo "Test case is $testClass"
 
-        # Prepare testSuite name
-        for mainTest in `find $resultDir -name "*_ESTest.java" -type f`; do
-            filename=$(basename -- "$mainTest")
-            filename="${filename%.*}"
-            # echo "Filename: "$filename
-            callerClassName=$caller_class"_ESTest"
-            callerClassName="${callerClassName##*.}"
-            # echo "Caller class name: "$callerClassName
-            if [ "$filename" = "$callerClassName" ]; then
-                testClass=$caller_class"_ESTest"
+            echo "Run EvoSuite CBC coverage. testClass: $testClass, CallerClass: $caller_class, CalleeClass: $callee_class, executionId: $execution_id"
+            java -Djavax.accessibility.assistive_technologies=" " -jar tools/cbc.jar -project_cp "$classPaths" -test_suite "$testClass" -caller "$caller_class" -callee "$callee_class" > "logs/cbc/$tool-$project-$caller_class-$callee_class-$execution_id-out.txt" 2> "logs/cbc/$tool-$project-$caller_class-$callee_class-$execution_id-err.txt" &
+        else
+            # Randoop
+            if [[ -f "$resultDir/RegressionTest.java" ]]; then
+                mainRegresstionTest="RegressionTest"
             else
-                testClass=$callee_class"_ESTest"
+                mainRegresstionTest=""
             fi
-        done
 
-        echo "Test case is $testClass"
+            if [[ -f "$resultDir/ErrorTest.java" ]]; then
+                mainErrorTest="ErrorTest"
+            else
+                mainErrorTest=""
+            fi 
 
-        echo "Run EvoSuite CBC coverage. testClass: $testClass, CallerClass: $caller_class, CalleeClass: $callee_class, executionId: $execution_id"
-        java -Djavax.accessibility.assistive_technologies=" " -jar tools/cbc.jar -project_cp "$classPaths" -test_suite "$testClass" -caller "$caller_class" -callee "$callee_class" > "logs/cbc/$tool-$project-$caller_class-$callee_class-$execution_id-out.txt" 2> "logs/cbc/$tool-$project-$caller_class-$callee_class-$execution_id-err.txt" &
+            echo "Run Randoop CBC coverage. testClass: "$mainRegresstionTest":"$mainErrorTest", CallerClass: $caller_class, CalleeClass: $callee_class, executionId: $execution_id"
+            java -Djavax.accessibility.assistive_technologies=" " -jar tools/cbc.jar -project_cp "$classPaths" -test_suite "$mainRegresstionTest:$mainErrorTest" -caller "$caller_class" -callee "$callee_class" > "logs/cbc/$tool-$project-$caller_class-$callee_class-$execution_id-out.txt" 2> "logs/cbc/$tool-regression-$project-$caller_class-$callee_class-$execution_id-err.txt" &
+
+        fi
+
+        
         pid=$!
         . scripts/cbc/observer.sh $pid $execution_id $project $caller_class $callee_class $tool &
     else
