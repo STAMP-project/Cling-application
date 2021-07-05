@@ -751,6 +751,7 @@ These two constructors do not set any value for `javaObject`.
 
 The generated test initiate an object from `NativeJavaClass` and pass it as one of the input parameters of the caller class (`NativeArray`). This object is passed through multiple classes (indicated in stack trace). Eventually, [`ScriptRuntime.toString(ScriptRuntime.java:803)`](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java#L783) calls [method `NativeJavaClass.getDefaultValue` of class `NativeJavaClass`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeJavaClass.java#L153). This method calls `toString`, which uses the `javaObject` variable without checking if it is null or noy, and it leads to a `NullPointerException`.
 
+__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
 
 ## ST38
 
@@ -798,6 +799,8 @@ public void test14()  throws Throwable  {
 
 [Caller (`NativeArray`)](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java) and [Callee (`IdScriptableObject`)](projects/closure/lib/rhino/src/org/mozilla/javascript/IdScriptableObject.java) are in the same hierarchy tree. The generated test uses null value for context to call [method `getOwnPropertyDescriptor`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java#L584) in super class. The [method has no documentation](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptableObject.java#L3092) and the value of the context is not checked.
 
+__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
+
 ## ST40
 
 [Stack trace](stacktraces.md#st40-f19):
@@ -830,6 +833,7 @@ public void test03()  throws Throwable  {
 
 A method in [Caller class is called `NativeArray.initPrototypeId`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java#L213). This method uses Callee class by calling a method called `initPrototypeMethod`. This method should be invoked after activating `PrototypeMap` in this method. It uses a local variable call `prototypeValues`. Since `PrototypeMap` is not activated, the `prototypeValues` is null. So, [calling `initPrototypeMethod`](projects/closure/lib/rhino/src/org/mozilla/javascript/IdScriptableObject.java#L646) without making sure of activation of `PrototypeMap` by caller class leads to NullPointerException. No checks of the internal state of the objects are done and the documentation does not described the proper initialization sequence.
 
+__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
 
 ## ST41
 
