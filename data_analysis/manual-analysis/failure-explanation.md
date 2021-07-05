@@ -645,6 +645,8 @@ public void test01()  throws Throwable  {
 
 The test calls the [static method `FunctionObject.convertArg`](projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject.java#L216) with random parameter values. The static methods tries to convert the third parameter (`topLevel0`) to a `Double` value (indicated by the value `4` as last parameter of the call) but fails to do so. The `convertArg` method does not make any check before [performing the conversion](projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject.java#L233) and no documentation is provided for that method. The documentation of the callee (`ScriptRuntime.toNumber`) does not indicate that an exception is thrown in case of error during the conversion.
 
+__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/jenkinsci/core-js/blob/master/rhino/src/org/mozilla/javascript/FunctionObject.java). The method `FunctionObject.convertArg(...)` is currently taggd as deprecated.
+
 ## ST36
 
 [Stack trace](stacktraces.md#st36-f16):
@@ -692,6 +694,7 @@ Generated test ([test15](../../results/cling/closure-com.google.javascript.rhino
 
 Here, the caller is a [class called `NativeArray`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java).  The generated test passes a `IdFunctionObject` object to the caller class. Then, the caller class passes this object through intermediate calls to the callee class `ScriptRuntime`. This class is later used in the callee class. However, if we do not call  method `initFunction` in `IdFunctionObject`, the usage of `IdFunctionObject` by callee class would lead to NullPointerException. The existence of `parentScope` in the passed `IdFunctionObject` to the caller and callee is not checked by these two classes. Eventually, the callee class invoked a method, which needs the `parentScope`, and since it is not available, it throws the NullPointerException. Also, the [documentation of `IdFunctionObject`](projects/closure/lib/rhino/src/org/mozilla/javascript/IdFunctionObject.java#L77) does not mention that you need to call the init function.
 
+__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
 
 ## ST37
 
