@@ -524,6 +524,8 @@ public void test170()  throws Throwable  {
 
 The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value. This object is passed to a method in the caller class. The called method invokes a method in the callee class and passes the `JSTypeExpression` object to it. The method in the callee class checks this object with a [customized `equal` method](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L106). The equal method tries to make use of the `root` attribute without checking if it is null or not. The documentation provides no indication about the validity to have a null `root` attribute, and no checks are done in the code.
 
+__! New update:__ The bug is still in the latest version of the library. The documentation has not been updated nor the code has been changed.
+
 ## ST33
 
 [Stack trace](stacktraces.md#st33-f13):
@@ -561,6 +563,8 @@ public void test159()  throws Throwable  {
 ```
 
 The generated test passes null to the [`recordTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L298). This null value is used as parameter to call the [`declareTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L908) and triggers a `NullPointerException` in nested calls. No checks are done to prevent null values, and the documentation does not indicate if null values are permitted. 
+
+__! New update:__ the buggy method `recordTemplateTypeNames(List<String>)` has been removed with this [commit](https://github.com/ponsonio/closure-compiler/commit/d8b7a71c95cae08a3f9caa553264759ac533bfc5#diff-812b116c3d6ec5d78fc7c66f732defa3c1c47e16d1be2a87d815bd56be74a2a7) and replaced by a new method that does not uses lists as input. While the commit message does mention explicitly the word 'fix', the commit above remove the bugs among other main refactoring/changes applied to the code base.
 
 ## ST34
 
@@ -600,6 +604,7 @@ public void test071()  throws Throwable  {
 
 The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value.  The object of `JSTypeExpression` is passed to the caller by a method called `recordParameter` which passes this value to the callee class. Then, the test calls [method `recordThrowDescription`](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L325), which calls [method `documentThrows`](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L782) in callee. This method throws  `NullPointerException` because the `root` in the passed `JSTypeExpression` is null. The documentation provides no indication about the validity to have a null `root` attribute, and no checks are done in the code.
 
+__! New update:__ The bug is still in the latest version of the library. The documentation has not been updated nor the code has been changed.
 
 ## ST35
 
