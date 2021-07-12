@@ -446,6 +446,8 @@ public void test22()  throws Throwable  {
 
 In this case, `UnionType` (callee class) is the sub-class and `JSType` (caller class) is the superclass. In this test, calls equal on a `UnionType` object. The [`equals` method](projects/closure/src/com/google/javascript/rhino/jstype/JSType.java#L477) is defined in the class `JSType`. The input parameter of equals is a `ParameterizedType` object. The [constructor of `ParameterizedType`](projects/closure/src/com/google/javascript/rhino/jstype/ParameterizedType.java#L55) accepts multiple input parameters. The second one is `JSType referencedType`. The generated test passes `NULL` for this value. The constructor of  `ParameterizedType` set a local attribute with the same name by this input parameter. When the generated test passes this object to check if it is equal to the `UnionType` by calling method equals, it does not check if the local attribute of `ParameterizedType` is null or not, and it passes it to method `isUnionType` of the other target class (`JSType`). This method calls the [method `toMaybeUnionType`](projects/closure/src/com/google/javascript/rhino/jstype/ProxyObjectType.java#L202), which uses `referencedType` without checking if it is null or not. Hence, it throws `NullPointerException`.
 
+__! New Update:__ This bug is fixed by developers with [this commit](https://github.com/google/closure-compiler/commit/842545ae3518d18a765b846a6c436ebbffbf4b72). The equality check (method equals) heavily relies on polymorphism; in our case, there is no consistent check within the inherithance tree that all attributes of ParameterizedType are not null. The fix includes a very large refactoring (including introducing helper functions for equality and equivalence checks). These changes remvore the error triggerer by Cling. As further confirmation, the error triggered by Cling can be thornw until [commit](https://github.com/google/closure-compiler/commit/842545ae3518d18a765b846a6c436ebbffbf4b72) which is the direct parent of the commit that fixed the bug.
+
 
 ## ST31
 
@@ -481,6 +483,8 @@ public void test255()  throws Throwable  {
 ```
 
 The generated test instantiates caller class and calls the [method `markName(String name, StaticSourceFile file,int lineno, int charno)`](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L205) with a null value as `name`. The `markName` method instantiates a new object from the callee class `TrimmedStringPosition` and passes the input parameter `name` to [one of its method (`setItem`)](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L135). There is no limitation in the code or indication in the documentation, preventing passing a null value as `name`. The documentation of the [`setItem` method](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L135) only mentions (and checks in the body of the method) that the string has no leading nor trailing space.
+
+__! New update:__ The bug is still in the latest version of the library. The documentation has not been updated nor the code has been changed.
 
 ## ST32
 
@@ -520,6 +524,8 @@ public void test170()  throws Throwable  {
 
 The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value. This object is passed to a method in the caller class. The called method invokes a method in the callee class and passes the `JSTypeExpression` object to it. The method in the callee class checks this object with a [customized `equal` method](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L106). The equal method tries to make use of the `root` attribute without checking if it is null or not. The documentation provides no indication about the validity to have a null `root` attribute, and no checks are done in the code.
 
+__! New update:__ The bug is still in the latest version of the library. The documentation has not been updated nor the code has been changed.
+
 ## ST33
 
 [Stack trace](stacktraces.md#st33-f13):
@@ -557,6 +563,8 @@ public void test159()  throws Throwable  {
 ```
 
 The generated test passes null to the [`recordTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L298). This null value is used as parameter to call the [`declareTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L908) and triggers a `NullPointerException` in nested calls. No checks are done to prevent null values, and the documentation does not indicate if null values are permitted.
+
+__! New update:__ the buggy method `recordTemplateTypeNames(List<String>)` has been removed with this [commit](https://github.com/ponsonio/closure-compiler/commit/d8b7a71c95cae08a3f9caa553264759ac533bfc5#diff-812b116c3d6ec5d78fc7c66f732defa3c1c47e16d1be2a87d815bd56be74a2a7) and replaced by a new method that does not uses lists as input. While the commit message does mention explicitly the word 'fix', the commit above remove the bugs among other main refactoring/changes applied to the code base.
 
 ## ST34
 
@@ -596,6 +604,7 @@ public void test071()  throws Throwable  {
 
 The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value.  The object of `JSTypeExpression` is passed to the caller by a method called `recordParameter` which passes this value to the callee class. Then, the test calls [method `recordThrowDescription`](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L325), which calls [method `documentThrows`](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L782) in callee. This method throws  `NullPointerException` because the `root` in the passed `JSTypeExpression` is null. The documentation provides no indication about the validity to have a null `root` attribute, and no checks are done in the code.
 
+__! New update:__ The bug is still in the latest version of the library. The documentation has not been updated nor the code has been changed.
 
 ## ST35
 
@@ -635,6 +644,8 @@ public void test01()  throws Throwable  {
 ```
 
 The test calls the [static method `FunctionObject.convertArg`](projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject.java#L216) with random parameter values. The static methods tries to convert the third parameter (`topLevel0`) to a `Double` value (indicated by the value `4` as last parameter of the call) but fails to do so. The `convertArg` method does not make any check before [performing the conversion](projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject.java#L233) and no documentation is provided for that method. The documentation of the callee (`ScriptRuntime.toNumber`) does not indicate that an exception is thrown in case of error during the conversion.
+
+__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/jenkinsci/core-js/blob/master/rhino/src/org/mozilla/javascript/FunctionObject.java). The method `FunctionObject.convertArg(...)` is currently taggd as deprecated.
 
 ## ST36
 
@@ -683,6 +694,7 @@ Generated test ([test15](../../results/cling/closure-com.google.javascript.rhino
 
 Here, the caller is a [class called `NativeArray`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java).  The generated test passes a `IdFunctionObject` object to the caller class. Then, the caller class passes this object through intermediate calls to the callee class `ScriptRuntime`. This class is later used in the callee class. However, if we do not call  method `initFunction` in `IdFunctionObject`, the usage of `IdFunctionObject` by callee class would lead to NullPointerException. The existence of `parentScope` in the passed `IdFunctionObject` to the caller and callee is not checked by these two classes. Eventually, the callee class invoked a method, which needs the `parentScope`, and since it is not available, it throws the NullPointerException. Also, the [documentation of `IdFunctionObject`](projects/closure/lib/rhino/src/org/mozilla/javascript/IdFunctionObject.java#L77) does not mention that you need to call the init function.
 
+__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
 
 ## ST37
 
@@ -739,6 +751,7 @@ These two constructors do not set any value for `javaObject`.
 
 The generated test initiate an object from `NativeJavaClass` and pass it as one of the input parameters of the caller class (`NativeArray`). This object is passed through multiple classes (indicated in stack trace). Eventually, [`ScriptRuntime.toString(ScriptRuntime.java:803)`](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java#L783) calls [method `NativeJavaClass.getDefaultValue` of class `NativeJavaClass`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeJavaClass.java#L153). This method calls `toString`, which uses the `javaObject` variable without checking if it is null or noy, and it leads to a `NullPointerException`.
 
+__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
 
 ## ST38
 
@@ -785,6 +798,8 @@ public void test14()  throws Throwable  {
 ```
 
 [Caller (`NativeArray`)](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java) and [Callee (`IdScriptableObject`)](projects/closure/lib/rhino/src/org/mozilla/javascript/IdScriptableObject.java) are in the same hierarchy tree. The generated test uses null value for context to call [method `getOwnPropertyDescriptor`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java#L584) in super class. The [method has no documentation](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptableObject.java#L3092) and the value of the context is not checked.
+
+__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
 
 ## ST40
 
