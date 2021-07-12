@@ -23,10 +23,10 @@ public void test2()  throws Throwable  {
     JulianChronology.getInstance(dateTimeZone0);
     DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetMillis((-1839));
     // Undeclared exception!
-    try { 
+    try {
       GJChronology.getInstance(dateTimeZone1, 10800000L, 175);
       fail("Expecting exception: IllegalArgumentException");
-    
+
     } catch(IllegalArgumentException e) {
         //
         // Invalid min days in first week: 175
@@ -36,7 +36,7 @@ public void test2()  throws Throwable  {
 }
 ```
 
-The generated test passes 175 as the value of minimum number of days per week. Naturally, the maximum number of days in a week is 7! but there is no check in the code of the caller and callee. And caller is called from outside. Also, it is not mentioned in the [documentation](projects/time/src/main/java/org/joda/time/chrono/GJChronology.java#L234) that the value must be lower than 7. The caller class gets the wrong value and passes it to callee without checking it. 
+The generated test passes 175 as the value of minimum number of days per week. Naturally, the maximum number of days in a week is 7! but there is no check in the code of the caller and callee. And caller is called from outside. Also, it is not mentioned in the [documentation](projects/time/src/main/java/org/joda/time/chrono/GJChronology.java#L234) that the value must be lower than 7. The caller class gets the wrong value and passes it to callee without checking it.
 
 __! New update:__ This is not a fault because there is a test in the project that confirm this thrown exception is expected:
 
@@ -47,13 +47,13 @@ __! New update:__ This is not a fault because there is a test in the project tha
         assertEquals(new Instant(0L), chrono.getGregorianCutover());
         assertEquals(2, chrono.getMinimumDaysInFirstWeek());
         assertSame(GJChronology.class, GJChronology.getInstance(TOKYO, new Instant(0L), 2).getClass());
-        
+
         DateTime cutover = new DateTime(1582, 10, 15, 0, 0, 0, 0, DateTimeZone.UTC);
         chrono = GJChronology.getInstance(TOKYO, null, 2);
         assertEquals(TOKYO, chrono.getZone());
         assertEquals(cutover.toInstant(), chrono.getGregorianCutover());
         assertEquals(2, chrono.getMinimumDaysInFirstWeek());
-        
+
         try {
             GJChronology.getInstance(TOKYO, new Instant(0L), 0);
             fail();
@@ -131,10 +131,10 @@ public void test2()  throws Throwable  {
     mixin_Generator0.setDelegates(objectArray0);
     mixin_Generator0.setStyle(1);
     // Undeclared exception!
-    try { 
+    try {
       mixin_Generator0.create();
       fail("Expecting exception: CodeGenerationException");
-    
+
     } catch(CodeGenerationException e) {
         //
         // java.beans.IntrospectionException-->java.lang.Object not superclass of java.lang.Object
@@ -166,10 +166,10 @@ public void test12()  throws Throwable  {
     SimpleVerifier simpleVerifier0 = new SimpleVerifier();
     IntInsnNode intInsnNode0 = new IntInsnNode(119, (-4156));
     // Undeclared exception!
-    try { 
+    try {
       simpleVerifier0.unaryOperation(intInsnNode0, (Value) null);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -207,10 +207,10 @@ public void test18()  throws Throwable  {
     MethodWriter methodWriter0 = new MethodWriter(classWriter0, 1, "[);3sXCG~s%#m", "[);3sXCG~s%#m", "[);3sXCG~s%#m", stringArray0, true, true);
     methodWriter0.visitVarInsn(2, 1105);
     // Undeclared exception!
-    try { 
+    try {
       methodWriter0.visitMaxs((-3), 1516);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -219,7 +219,7 @@ public void test18()  throws Throwable  {
 }
 ```
 
-The [`ClassWriter` (callee)](projects/mockito/cglib-and-asm/src/org/mockito/asm/ClassWriter.java) and the [`MethodWriter` (caller)](projects/mockito/cglib-and-asm/src/org/mockito/asm/MethodWriter.java) classes are both implementing a visitor pattern and make implicit assumptions about the underlying data structure. Those assumptions are not documents. 
+The [`ClassWriter` (callee)](projects/mockito/cglib-and-asm/src/org/mockito/asm/ClassWriter.java) and the [`MethodWriter` (caller)](projects/mockito/cglib-and-asm/src/org/mockito/asm/MethodWriter.java) classes are both implementing a visitor pattern and make implicit assumptions about the underlying data structure. Those assumptions are not documents.
 
 More specifically, the [`ClassWriter` (callee)](projects/mockito/cglib-and-asm/src/org/mockito/asm/ClassWriter.java) instance is an input parameter for the constructor of the [`MethodWriter` (caller)](projects/mockito/cglib-and-asm/src/org/mockito/asm/MethodWriter.java) class. The caller needs two method calls before passing it to the callee class. The second method call is `public void visit(
         final int version,
@@ -254,10 +254,10 @@ public void test5()  throws Throwable  {
     doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(objectInput0).readDouble();
     doReturn(1, 1).when(objectInput0).readInt();
     // Undeclared exception!
-    try { 
+    try {
       graggBulirschStoerStepInterpolator0.readExternal(objectInput0);
       fail("Expecting exception: ArrayIndexOutOfBoundsException");
-    
+
     } catch(ArrayIndexOutOfBoundsException e) {
         //
         // 2
@@ -267,7 +267,7 @@ public void test5()  throws Throwable  {
 }
 ```
 
-The [documentation of the `readExternal` method](projects/math/src/java/org/apache/commons/math/ode/GraggBulirschStoerStepInterpolator.java#L364) specifies that the method reads `the state of the instance`. When looking at the [documentation of the `Externalizable` interface](https://docs.oracle.com/javase/8/docs/api/) defining the `readExternal` and `writeExternal` methods, the documentation specifies that the `readExternal method must read the values in the same sequence and with the same types as were written by writeExternal` and that the `Overriding methods should use this tag [@serialData] to describe the data layout of this Externalizable object`. Without any description of the format, CLING is unable to determine the right sequence of values to mock in the `objectInput0` object. However, none of the classes in the hierarchy of the `GraggBulirschStoerStepInterpolator` class describe the file format, as prescribed by the documentation of the `Externalizable` interface. Therefore, we count this as positive case, as Cling emphasizes the lack of documentation required to decide if the exception should be thrown or not. 
+The [documentation of the `readExternal` method](projects/math/src/java/org/apache/commons/math/ode/GraggBulirschStoerStepInterpolator.java#L364) specifies that the method reads `the state of the instance`. When looking at the [documentation of the `Externalizable` interface](https://docs.oracle.com/javase/8/docs/api/) defining the `readExternal` and `writeExternal` methods, the documentation specifies that the `readExternal method must read the values in the same sequence and with the same types as were written by writeExternal` and that the `Overriding methods should use this tag [@serialData] to describe the data layout of this Externalizable object`. Without any description of the format, CLING is unable to determine the right sequence of values to mock in the `objectInput0` object. However, none of the classes in the hierarchy of the `GraggBulirschStoerStepInterpolator` class describe the file format, as prescribed by the documentation of the `Externalizable` interface. Therefore, we count this as positive case, as Cling emphasizes the lack of documentation required to decide if the exception should be thrown or not.
 
  __!__ Approved by developers. The fixing commit: https://svn.apache.org/viewvc?view=revision&revision=670469.
  This commit is found by searching in the git history of the project. In this commit, the documentations are updated, and developers are using `@inheritDoc`.
@@ -296,10 +296,10 @@ public void test03()  throws Throwable  {
     FirstOrderConverter firstOrderConverter0 = new FirstOrderConverter(secondOrderDifferentialEquations0);
     double[] doubleArray0 = new double[0];
     // Undeclared exception!
-    try { 
+    try {
       graggBulirschStoerIntegrator0.integrate(firstOrderConverter0, 4927, doubleArray0, (-651.4), doubleArray0);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -345,10 +345,10 @@ public void test01()  throws Throwable  {
     doReturn(0).when(secondOrderDifferentialEquations0).getDimension();
     FirstOrderConverter firstOrderConverter0 = new FirstOrderConverter(secondOrderDifferentialEquations0);
     // Undeclared exception!
-    try { 
+    try {
       graggBulirschStoerIntegrator0.integrate(firstOrderConverter0, 1671.6, doubleArray0, 0.0, (double[]) null);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -388,10 +388,10 @@ public void test04()  throws Throwable  {
     ImmutableList<JSType> immutableList0 = ImmutableList.of((JSType) numberType0, (JSType) numberType0, (JSType) numberType0, (JSType) numberType0, (JSType) numberType0, (JSType) numberType0);
     UnionType unionType0 = new UnionType((JSTypeRegistry) null, immutableList0);
     // Undeclared exception!
-    try { 
+    try {
       unionType0.getTypesUnderInequality(unionType0);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -401,7 +401,7 @@ public void test04()  throws Throwable  {
 }
 ```
 
-In this case, `UnionType` (caller class) is the sub-class and `JSType` (callee class) is the superclass. The generated test instantiate a `UnionType` object with the following constructor ` UnionType(JSTypeRegistry registry, Collection<JSType> alternates)`. Also, it passes `NULL` for the first parameter. According to the documentation of this class, there is no limitation for the input. This constructor sets the value of a local variable (`registry`) to the passed value (here, it is `NULL`). Then, the generated test calls method `getTypesUnderInequality` of the instantiated object. This method invokes method `isEmptyType` in the superclass, indirectly. `isEmptyType` method tries to use the attribute `registry`. Since this attribute is set to `NULL` during the invocation of the constructor of `UnionType`, it throws a `NullPointerException`. No indication in the documentation specifies that the `registry` parameter of a [`JSType` constructor](projects/closure/src/com/google/javascript/rhino/jstype/JSType.java#L105) should not be null. No checks are done on the value of the parameter. 
+In this case, `UnionType` (caller class) is the sub-class and `JSType` (callee class) is the superclass. The generated test instantiate a `UnionType` object with the following constructor ` UnionType(JSTypeRegistry registry, Collection<JSType> alternates)`. Also, it passes `NULL` for the first parameter. According to the documentation of this class, there is no limitation for the input. This constructor sets the value of a local variable (`registry`) to the passed value (here, it is `NULL`). Then, the generated test calls method `getTypesUnderInequality` of the instantiated object. This method invokes method `isEmptyType` in the superclass, indirectly. `isEmptyType` method tries to use the attribute `registry`. Since this attribute is set to `NULL` during the invocation of the constructor of `UnionType`, it throws a `NullPointerException`. No indication in the documentation specifies that the `registry` parameter of a [`JSType` constructor](projects/closure/src/com/google/javascript/rhino/jstype/JSType.java#L105) should not be null. No checks are done on the value of the parameter.
 
 __! New Update:__ This bug is fixed by developers using [this commit](https://github.com/google/closure-compiler/commit/cfc0fab3dc2be49692a4fe9162b8095c934f6c41). The `UnionType` should be initialized only by [`UnionTypeBuilder`](projects/closure/src/com/google/javascript/rhino/jstype/UnionTypeBuilder.java). However, in the version that we ran Cling on, the constructor is protected and it can be called by other classes too. Also, there is no comment that this class should be initialized only by  `UnionTypeBuilder`. However, the fixing [commit](https://github.com/google/closure-compiler/commit/cfc0fab3dc2be49692a4fe9162b8095c934f6c41) (i) converts `UnionTypeBuilder` into `UnionType.Builder`, a nested class of `UnionType` (ii) make `UnionType`'s constructor private, and (iii) add the required information to this [constructor's documentation](https://github.com/google/closure-compiler/blob/82b6ca08fd09f927ba5fa2e43347239373e87646/src/com/google/javascript/rhino/jstype/UnionType.java#L107), which indicates that this class cannot be called by any other class except its builder. It worths to mention that this builder makes sure that the passed `registry` is not Null.
 
@@ -431,10 +431,10 @@ public void test22()  throws Throwable  {
     JSTypeRegistry jSTypeRegistry1 = new JSTypeRegistry(simpleErrorReporter0);
     ParameterizedType parameterizedType0 = new ParameterizedType(jSTypeRegistry1, (ObjectType) null, (JSType) null);
     // Undeclared exception!
-    try { 
+    try {
       unionType0.equals(parameterizedType0);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -469,10 +469,10 @@ public void test255()  throws Throwable  {
     jSDocInfoBuilder0.recordBlockDescription("API tried to add two incompatible type tags. This should have been blocked and emitted a warning.");
     SimpleSourceFile simpleSourceFile0 = new SimpleSourceFile("Gwh)Sn!\"/32", true);
     // Undeclared exception!
-    try { 
+    try {
       jSDocInfoBuilder0.markName((String) null, (StaticSourceFile) simpleSourceFile0, 1130, 1048576);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -509,10 +509,10 @@ public void test170()  throws Throwable  {
     jSDocInfoBuilder0.recordImplementedInterface(jSTypeExpression0);
     jSDocInfoBuilder0.recordNoAlias();
     // Undeclared exception!
-    try { 
+    try {
       jSDocInfoBuilder0.recordImplementedInterface(jSTypeExpression0);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -549,10 +549,10 @@ public void test159()  throws Throwable  {
     JSTypeExpression jSTypeExpression1 = new JSTypeExpression((Node) null, "In(");
     jSDocInfoBuilder0.recordParameter("U\"SL](s(eHCZM_pZj", jSTypeExpression1);
     // Undeclared exception!
-    try { 
+    try {
       jSDocInfoBuilder0.recordTemplateTypeNames((List<String>) null);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -562,7 +562,7 @@ public void test159()  throws Throwable  {
 }
 ```
 
-The generated test passes null to the [`recordTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L298). This null value is used as parameter to call the [`declareTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L908) and triggers a `NullPointerException` in nested calls. No checks are done to prevent null values, and the documentation does not indicate if null values are permitted. 
+The generated test passes null to the [`recordTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L298). This null value is used as parameter to call the [`declareTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L908) and triggers a `NullPointerException` in nested calls. No checks are done to prevent null values, and the documentation does not indicate if null values are permitted.
 
 __! New update:__ the buggy method `recordTemplateTypeNames(List<String>)` has been removed with this [commit](https://github.com/ponsonio/closure-compiler/commit/d8b7a71c95cae08a3f9caa553264759ac533bfc5#diff-812b116c3d6ec5d78fc7c66f732defa3c1c47e16d1be2a87d815bd56be74a2a7) and replaced by a new method that does not uses lists as input. While the commit message does mention explicitly the word 'fix', the commit above remove the bugs among other main refactoring/changes applied to the code base.
 
@@ -589,10 +589,10 @@ public void test071()  throws Throwable  {
     jSDocInfoBuilder0.recordEnumParameterType(jSTypeExpression0);
     jSDocInfoBuilder0.recordParameter("In(", jSTypeExpression0);
     // Undeclared exception!
-    try { 
+    try {
       jSDocInfoBuilder0.recordThrowDescription(jSTypeExpression0, ") must not be negative");
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -630,10 +630,10 @@ public void test01()  throws Throwable  {
     Context context0 = mock(Context.class, new ViolatedAssumptionAnswer());
     TopLevel topLevel0 = new TopLevel();
     // Undeclared exception!
-    try { 
+    try {
       FunctionObject.convertArg(context0, (Scriptable) topLevel0, (Object) topLevel0, 4);
       fail("Expecting exception: EcmaError");
-    
+
     } catch(EcmaError e) {
         //
         // TypeError: Cannot find default value for object.
@@ -679,10 +679,10 @@ Generated test ([test15](../../results/cling/closure-com.google.javascript.rhino
       context0.initStandardObjects();
       IdFunctionObject idFunctionObject0 = new IdFunctionObject(nativeContinuation0, "Gup", (-15), 2);
       // Undeclared exception!
-      try { 
+      try {
         nativeArray0.getOwnPropertyDescriptor((Context) null, idFunctionObject0);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
@@ -724,10 +724,10 @@ public void test12()  throws Throwable  {
     Context context0 = contextFactory0.makeContext();
     NativeJavaClass nativeJavaClass0 = new NativeJavaClass();
     // Undeclared exception!
-    try { 
+    try {
       nativeArray0.getOwnPropertyDescriptor(context0, nativeJavaClass0);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -784,10 +784,10 @@ public void test14()  throws Throwable  {
     ContextFactory contextFactory0 = new ContextFactory();
     Context context0 = contextFactory0.enterContext((Context) null);
     // Undeclared exception!
-    try { 
+    try {
       nativeArray0.getOwnPropertyDescriptor(context0, nativeArray0);
       fail("Expecting exception: EcmaError");
-    
+
     } catch(EcmaError e) {
         //
         // TypeError: Cannot find default value for object.
@@ -818,10 +818,10 @@ Generated test ([test03](../../results/cling/closure-com.google.javascript.rhino
 public void test03()  throws Throwable  {
     NativeArray nativeArray0 = new NativeArray(84L);
     // Undeclared exception!
-    try { 
+    try {
       nativeArray0.initPrototypeId(13);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -833,7 +833,17 @@ public void test03()  throws Throwable  {
 
 A method in [Caller class is called `NativeArray.initPrototypeId`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java#L213). This method uses Callee class by calling a method called `initPrototypeMethod`. This method should be invoked after activating `PrototypeMap` in this method. It uses a local variable call `prototypeValues`. Since `PrototypeMap` is not activated, the `prototypeValues` is null. So, [calling `initPrototypeMethod`](projects/closure/lib/rhino/src/org/mozilla/javascript/IdScriptableObject.java#L646) without making sure of activation of `PrototypeMap` by caller class leads to NullPointerException. No checks of the internal state of the objects are done and the documentation does not described the proper initialization sequence.
 
-__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
+### Code history analysis
+
+We used the classes from Closure-16 (fixed version): [3b97e5e4212c769daa22a96094ed19b4658c8760](https://github.com/google/closure-compiler/commit/3b97e5e4212c769daa22a96094ed19b4658c8760)
+
+The classes involved in the stack trace were removed in revision [50bcca020548f528659364a083917e5b5a774cab](https://github.com/google/closure-compiler/commit/50bcca020548f528659364a083917e5b5a774cab):
+```
+Ben Lickly 03/06/2014, 20:32 Remove "head" rhino from the JSCompiler as we are no longer using it (thanks John!)
+```
+
+The classes involved in the stack trace were not modified between the version we used and the latest version before removal.
+
 
 ## ST41
 
@@ -857,10 +867,10 @@ public void test01()  throws Throwable  {
     ReturnStatement returnStatement0 = new ReturnStatement(10, 43);
     iRFactory0.transform(returnStatement0);
     // Undeclared exception!
-    try { 
+    try {
       iRFactory0.transform(name0);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -870,9 +880,28 @@ public void test01()  throws Throwable  {
 }
 ```
 
-A method in `IRFactory` (`transform`) needs an object from another class, called `Name`, which has multiple constructor. One of the constructors of this class is `Name(int pos, int len)`, which gets to integers and set to local variable with it. However, if we instantiate the `Name` object with this specific constructor, one of the `String` local variables, called `identifire`, in this class will remain `Null`. 
+A method in `IRFactory` (`transform`) needs an object from another class, called `Name`, which has multiple constructor. One of the constructors of this class is `Name(int pos, int len)`, which gets to integers and set to local variable with it. However, if we instantiate the `Name` object with this specific constructor, one of the `String` local variables, called `identifire`, in this class will remain `Null`.
 
-As we can see, the generated test instantiates the `Name` object with the aforementioned constructor (the `identifire` inside the `Name` object remained null). Then, it passes this object to a method `IRFactory.transform`. This class does not check the local variable inside the passed `Name` object and it eventually uses `identifire` in the this object as an input parameter for calling [method `Decompiler.addName`](projects/closure/lib/rhino/src/org/mozilla/javascript/Decompiler.java#L153). This method again does not check the passed input parameter value and passes it to [another method called `appendString`](projects/closure/lib/rhino/src/org/mozilla/javascript/Decompiler.java#L224), which calls a method of this Null String. 
+As we can see, the generated test instantiates the `Name` object with the aforementioned constructor (the `identifire` inside the `Name` object remained null). Then, it passes this object to a method `IRFactory.transform`. This class does not check the local variable inside the passed `Name` object and it eventually uses `identifire` in the this object as an input parameter for calling [method `Decompiler.addName`](projects/closure/lib/rhino/src/org/mozilla/javascript/Decompiler.java#L153). This method again does not check the passed input parameter value and passes it to [another method called `appendString`](projects/closure/lib/rhino/src/org/mozilla/javascript/Decompiler.java#L224), which calls a method of this Null String.
+
+### Code history analysis
+
+We used the classes from Closure-16 (fixed version): [3b97e5e4212c769daa22a96094ed19b4658c8760](https://github.com/google/closure-compiler/commit/3b97e5e4212c769daa22a96094ed19b4658c8760)
+
+The classes from the `com.google.javascript.rhino` package were removed in revision [50bcca020548f528659364a083917e5b5a774cab](https://github.com/google/closure-compiler/commit/50bcca020548f528659364a083917e5b5a774cab):
+```
+Ben Lickly 03/06/2014, 20:32 Remove "head" rhino from the JSCompiler as we are no longer using it (thanks John!)
+```
+
+The classes involved in the stack trace were not modified between the version we used and the latest version before removal.
+
+A note in the source code of the `IRFactory.transform` method (still there before the class was definitely removed from the project) indicates that the class should be refactored to follow a visitor pattern, which would allow the different `ASTNode` subclasses to handle the validation as they see fit:
+```
+// Might want to convert this to polymorphism - move transform*
+// functions into the AstNode subclasses.  OTOH that would make
+// IR transformation part of the public AST API - desirable?
+// Another possibility:  create AstTransformer interface and adapter.
+```
 
 
 ## ST43
@@ -900,10 +929,10 @@ public void test083()  throws Throwable  {
     doReturn("", "").when(node0).getProp(anyInt());
     Node node1 = NodeUtil.newName(codingConvention0, "", node0);
     // Undeclared exception!
-    try { 
+    try {
       NodeUtil.setDebugInformation(node1, node1, "m<,g&!T^UYBGU\"(%4");
       fail("Expecting exception: ClassCastException");
-    
+
     } catch(ClassCastException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -912,9 +941,34 @@ public void test083()  throws Throwable  {
 }
 ```
 
-The [`NodeUtil.setDebugInformation` static method](projects/closure/src/com/google/javascript/jscomp/NodeUtil.java#L2343) calls the [`copyInformationFromForTree` method](projects/closure/src/com/google/javascript/rhino/Node.java#L1553) on the first node object provided as parameter in the test. A [`TODO` note](projects/closure/src/com/google/javascript/rhino/Node.java#L1552) indicates that the `copyInformationFromForTree` method should be deleted as the _semantics of this method are ill-defined_. 
+The [`NodeUtil.setDebugInformation` static method](projects/closure/src/com/google/javascript/jscomp/NodeUtil.java#L2343) calls the [`copyInformationFromForTree` method](projects/closure/src/com/google/javascript/rhino/Node.java#L1553) on the first node object provided as parameter in the test. A [`TODO` note](projects/closure/src/com/google/javascript/rhino/Node.java#L1752) indicates that the `copyInformationFromForTree` method should be deleted as the _semantics of this method are ill-defined_.
 
-The `Node` class encapsulates the different setters and getters for the different properties using dedicated setters and getters. But at the same time, it allows one to set and get arbitrary properties (or replace existing ones) using the [`putProp` method](projects/closure/src/com/google/javascript/rhino/Node.java#L845) without additional checks and potentially breaking the class invariants. This it this behavior that is shown in the test with the mocking of the `getProp` method calls. 
+The `Node` class encapsulates the different setters and getters for the different properties using dedicated setters and getters. But at the same time, it allows one to set and get arbitrary properties (or replace existing ones) using the [`putProp` method](projects/closure/src/com/google/javascript/rhino/Node.java#L845) without additional checks and potentially breaking the class invariants. This it this behavior that is shown in the test with the mocking of the `getProp` method calls.
+
+### Code history analysis
+
+We used the classes from Closure-16 (fixed version): [3b97e5e4212c769daa22a96094ed19b4658c8760](https://github.com/google/closure-compiler/commit/3b97e5e4212c769daa22a96094ed19b4658c8760)
+
+Methods `copyInformationFromForTree` and `copyInformationFrom` have been marked as deprecated in revision [f9ef2e62ca897989e52df8bd6925011c9098ac75](https://github.com/google/closure-compiler/commit/f9ef2e62ca897989e52df8bd6925011c9098ac75):
+```
+tbreisacher* 09/08/2016, 21:45 Deprecate a couple methods that have been pseudo-deprecated via TODO, for years.
+```
+
+Methods `copyInformationFromForTree` and `copyInformationFrom` have been renamed to `useSourceInfoWithoutLengthIfMissingFromForTree` and `useSourceInfoWithoutLengthIfMissingFrom` (and are still deprecated) in revision [4a7d2609fe5a220d234e7921d5ffe225fabc584c](https://github.com/google/closure-compiler/commit/4a7d2609fe5a220d234e7921d5ffe225fabc584c)
+```
+bradfordcsmith* 29/11/2016, 21:21 Rename deprecated methods copyInformationFrom[ForTree]().
+```
+
+Methods `useSourceInfoWithoutLengthIfMissingFromForTree` and `useSourceInfoWithoutLengthIfMissingFrom` have been merged in method `useSourceInfoWithoutLengthIfMissingFromForTree` (still marked as deprecated) in revision [be781f010f951aac06d353653072ba59f0c55b48](https://github.com/google/closure-compiler/commit/be781f010f951aac06d353653072ba59f0c55b48):
+```
+bradfordcsmith* 04/10/2017, 02:38 Remove deprecated useSourceInfoWithoutLengthIfMissingFrom() method.
+```
+
+Method `useSourceInfoWithoutLengthIfMissingFromForTree` was removed in revision [d463b65aa7dccbdee880c6a219b21e77254f8854](https://github.com/google/closure-compiler/commit/d463b65aa7dccbdee880c6a219b21e77254f8854):
+```
+bradfordcsmith* 15/11/2017, 17:45 Eliminate final call to deprecated method.
+```
+
 
 ## ST44
 
@@ -934,10 +988,10 @@ public void test65()  throws Throwable  {
     Node node0 = new Node(2120, (-1527), (-1527));
     Node[] nodeArray0 = new Node[5];
     // Undeclared exception!
-    try { 
+    try {
       NodeUtil.newCallNode(node0, nodeArray0);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -950,6 +1004,17 @@ public void test65()  throws Throwable  {
 The [method in the caller class (method `newCallNode`)](projects/closure/src/com/google/javascript/jscomp/NodeUtil.java#L2878) is not used internally in the project, which tends to indicate that it should be called by external classes. However, there is no specific documentation or comments about input parameters. If one passes a null value as a parameter to this method, the method passes this null value to [one of the methods of the callee (`addChildToBack`)](projects/closure/src/com/google/javascript/rhino/Node.java#L608). The callee method throws `NullPointerException` with that null value.
 
 Note: the caller class contains more than 150 public/protected method calls. Each of them has multiple input parameters and multiple branches to call. Unlike EvoSuite, Cling only focuses on the methods which interact with the callee class.
+
+### Code history analysis
+
+We used the classes from Closure-16 (fixed version): [3b97e5e4212c769daa22a96094ed19b4658c8760](https://github.com/google/closure-compiler/commit/3b97e5e4212c769daa22a96094ed19b4658c8760)
+
+The classes from the `com.google.javascript.rhino` package were removed in revision [50bcca020548f528659364a083917e5b5a774cab](https://github.com/google/closure-compiler/commit/50bcca020548f528659364a083917e5b5a774cab):
+```
+Ben Lickly 03/06/2014, 20:32 Remove "head" rhino from the JSCompiler as we are no longer using it (thanks John!)
+```
+
+Commenting out method `com.google.javascript.jscomp.NodeUtil.newCallNode` has no effect on the output of the build. The method has a default visibility but is not used nor tested in the project.
 
 
 ## ST45
@@ -972,10 +1037,10 @@ Generated test ([test05](../../results/cling/closure-com.google.javascript.rhino
       NativeJavaClass nativeJavaClass0 = new NativeJavaClass();
       Context context0 = mock(Context.class, new ViolatedAssumptionAnswer());
       // Undeclared exception!
-      try { 
+      try {
         ScriptRuntime.setObjectIndex((Object) nativeJavaClass0, 0.0, (Object) nativeJavaClass0, context0);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
@@ -986,6 +1051,17 @@ Generated test ([test05](../../results/cling/closure-com.google.javascript.rhino
 ```
 
 Same issue as [ST38](#ST38).
+
+### Code history analysis
+
+We used the classes from Closure-16 (fixed version): [3b97e5e4212c769daa22a96094ed19b4658c8760](https://github.com/google/closure-compiler/commit/3b97e5e4212c769daa22a96094ed19b4658c8760)
+
+The classes involved in the stack trace were removed in revision [50bcca020548f528659364a083917e5b5a774cab](https://github.com/google/closure-compiler/commit/50bcca020548f528659364a083917e5b5a774cab):
+```
+Ben Lickly 03/06/2014, 20:32 Remove "head" rhino from the JSCompiler as we are no longer using it (thanks John!)
+```
+
+The classes involved in the stack trace were not modified between the version we used and the latest version before removal.
 
 
 ## ST46
@@ -1009,10 +1085,10 @@ public void test06()  throws Throwable  {
     NativeJavaObject nativeJavaObject0 = new NativeJavaObject();
     Context context0 = mock(Context.class, new ViolatedAssumptionAnswer());
     // Undeclared exception!
-    try { 
+    try {
       ScriptRuntime.setObjectIndex((Object) nativeJavaObject0, (-69.51242), (Object) nativeJavaObject0, context0);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -1024,7 +1100,20 @@ public void test06()  throws Throwable  {
 
 Same issue as [ST38](#ST38).
 
+### Code history analysis
+
+We used the classes from Closure-16 (fixed version): [3b97e5e4212c769daa22a96094ed19b4658c8760](https://github.com/google/closure-compiler/commit/3b97e5e4212c769daa22a96094ed19b4658c8760)
+
+The classes involved in the stack trace were removed in revision [50bcca020548f528659364a083917e5b5a774cab](https://github.com/google/closure-compiler/commit/50bcca020548f528659364a083917e5b5a774cab):
+```
+Ben Lickly 03/06/2014, 20:32 Remove "head" rhino from the JSCompiler as we are no longer using it (thanks John!)
+```
+
+The classes involved in the stack trace were not modified between the version we used and the latest version before removal.
+
+
 ## ST48
+
 [Stack trace](stacktraces.md#st48-f25):
 
 ```
@@ -1042,10 +1131,10 @@ Generated test ([test03](../../results/cling/closure-com.google.javascript.rhino
       Boolean boolean0 = Boolean.TRUE;
       Context context0 = mock(Context.class, new ViolatedAssumptionAnswer());
       // Undeclared exception!
-      try { 
+      try {
         ScriptRuntime.setObjectElem((Scriptable) null, (Object) null, (Object) boolean0, context0);
         fail("Expecting exception: NullPointerException");
-      
+
       } catch(NullPointerException e) {
          //
          // no message in exception (getMessage() returned null)
@@ -1055,11 +1144,22 @@ Generated test ([test03](../../results/cling/closure-com.google.javascript.rhino
   }
 ```
 
-This test passes `null` for the first input parameter of the method `setObjectElem`. 
+This test passes `null` for the first input parameter of the method `setObjectElem`.
 The [documentation](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java#L1606) of this method does not indicate any restriction for this argument. This method also passes this null object to class `ScriptableObject` by calling method `putProperty`. Again, there is no limitations in the [documentations](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptableObject.java#L2371). Eventually, method `getBase` in `ScriptableObject` uses this object without checking if it is `null`, and thereby it throws `NullPointerException`.
 
-## ST 49
+### Code history analysis
 
+We used the classes from Closure-16 (fixed version): [3b97e5e4212c769daa22a96094ed19b4658c8760](https://github.com/google/closure-compiler/commit/3b97e5e4212c769daa22a96094ed19b4658c8760)
+
+The classes involved in the stack trace were removed in revision [50bcca020548f528659364a083917e5b5a774cab](https://github.com/google/closure-compiler/commit/50bcca020548f528659364a083917e5b5a774cab):
+```
+Ben Lickly 03/06/2014, 20:32 Remove "head" rhino from the JSCompiler as we are no longer using it (thanks John!)
+```
+
+The classes involved in the stack trace were not modified between the version we used and the latest version before removal.
+
+
+## ST 49
 
 [Stack trace](stacktraces.md#st49-f26):
 
@@ -1079,10 +1179,10 @@ public void test00()  throws Throwable  {
     NativeJavaClass nativeJavaClass0 = new NativeJavaClass();
     Context context0 = mock(Context.class, new ViolatedAssumptionAnswer());
     // Undeclared exception!
-    try { 
+    try {
       ScriptRuntime.getObjectIndex((Object) nativeJavaClass0, 0.0, context0);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -1093,6 +1193,17 @@ public void test00()  throws Throwable  {
 ```
 
 Same issue as [ST38](#ST38).
+
+### Code history analysis
+
+We used the classes from Closure-16 (fixed version): [3b97e5e4212c769daa22a96094ed19b4658c8760](https://github.com/google/closure-compiler/commit/3b97e5e4212c769daa22a96094ed19b4658c8760)
+
+The classes involved in the stack trace were removed in revision [50bcca020548f528659364a083917e5b5a774cab](https://github.com/google/closure-compiler/commit/50bcca020548f528659364a083917e5b5a774cab):
+```
+Ben Lickly 03/06/2014, 20:32 Remove "head" rhino from the JSCompiler as we are no longer using it (thanks John!)
+```
+
+The classes involved in the stack trace were not modified between the version we used and the latest version before removal.
 
 
 ## ST50
@@ -1117,10 +1228,10 @@ public void test18()  throws Throwable  {
     NativeArray nativeArray0 = new NativeArray(1431655764L);
     Short short0 = new Short((short)588);
     // Undeclared exception!
-    try { 
+    try {
       nativeArray0.getOwnPropertyDescriptor((Context) null, short0);
       fail("Expecting exception: NullPointerException");
-    
+
     } catch(NullPointerException e) {
         //
         // no message in exception (getMessage() returned null)
@@ -1130,9 +1241,15 @@ public void test18()  throws Throwable  {
 }
 ```
 
-[Caller (`NativeArray`)](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java) and [Callee (`IdScriptableObject`)](projects/closure/lib/rhino/src/org/mozilla/javascript/IdScriptableObject.java) are in the same hierarchy tree. The test generated by Cling uses a null value for context to call [method `getOwnPropertyDescriptor`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java#L576) in the superclass. The documentation of the method does not describe restrictions on the inputs, and no checks are performed. 
+[Caller (`NativeArray`)](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java) and [Callee (`IdScriptableObject`)](projects/closure/lib/rhino/src/org/mozilla/javascript/IdScriptableObject.java) are in the same hierarchy tree. The test generated by Cling uses a null value for context to call [method `getOwnPropertyDescriptor`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java#L576) in the superclass. The documentation of the method does not describe restrictions on the inputs, and no checks are performed.
 
+### Code history analysis
 
+We used the classes from Closure-16 (fixed version): [3b97e5e4212c769daa22a96094ed19b4658c8760](https://github.com/google/closure-compiler/commit/3b97e5e4212c769daa22a96094ed19b4658c8760)
 
+The classes involved in the stack trace were removed in revision [50bcca020548f528659364a083917e5b5a774cab](https://github.com/google/closure-compiler/commit/50bcca020548f528659364a083917e5b5a774cab):
+```
+Ben Lickly 03/06/2014, 20:32 Remove "head" rhino from the JSCompiler as we are no longer using it (thanks John!)
+```
 
-  
+The classes involved in the stack trace were not modified between the version we used and the latest version before removal.
