@@ -1,4 +1,4 @@
-library(dplyr)
+library(tidyverse)
 SIGNIFICANCE_LEVEL=0.05
 
 COLOR_PALETTE="Spectral" # Use photocopy friendly colors (http://colorbrewer2.org/)
@@ -9,13 +9,14 @@ APPROACH_NAME="Cling"
 
 # Produces an easy to process dataframe from rq1 results csv file.
 getResultsOfRQ1 <- function(){
-  df <- read.csv("data/rq1/cbc-coverage.csv", stringsAsFactors = FALSE)
+  df <- read.csv("data/rq1/cbc-coverage.csv", stringsAsFactors = FALSE) %>%
+    inner_join(read.csv("data/filtered-class-pairs.csv", stringsAsFactors = FALSE))
   df$testsuite[df$tool %in% "evosuite-callee5"] <- "EvoE"
   df$testsuite[df$tool %in% "evosuite-caller5"] <- "EvoR"
   df$testsuite[df$tool %in% "randoop-callee5"] <- "RanE"
   df$testsuite[df$tool %in% "randoop-caller5"] <- "RanR"
-  df$testsuite[df$tool %in% "cling"] <- "C"
-  df$testsuite_f <- factor(df$testsuite,levels = c("EvoE","EvoR", "RanE","RanR","C"))
+  df$testsuite[df$tool %in% "cling"] <- "Cling"
+  df$testsuite_f <- factor(df$testsuite,levels = c("EvoE","EvoR", "RanE","RanR","Cling"))
   df$project_f = factor(df$project, levels=c('closure','mockito','time','lang','math','all'))
   return(df)
 }
