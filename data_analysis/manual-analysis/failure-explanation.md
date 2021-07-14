@@ -1,4 +1,58 @@
 
+This file presents the complete manual analysis and classification of the 27 potentially fault revealing test cases identified in RQ3. For each test case, we first identify and discuss the potential fault it exposes. Then we describe the results of the code history analysis of the classes involved in the test. Based on our findings, we categories the different tests. 
+
+# Classification
+
+For each category, we give a brief description and the list of cases.
+
+## True positives
+
+Those test cases expose a real fault that has been fixed, either by updating the documentation or the source code, or that has been marked as such in the source code (for instance, in a comment, a TODO or a FIXME).
+
+  - [Math - ST22](#st22)
+  - [Math - ST23](#st23)
+  - [Closure - ST28](#st28)
+  - [Closure - ST29](#st29)
+  - [Closure - ST33](#st33)
+  - [Closure - ST41](#st41)
+  - [Closure - ST43](#st43)
+
+## False positives
+
+Those test cases do not expose a fault but a normal behaviour of the system.
+
+  - [Time - ST10](#st10)
+  - [Time - ST11](#st11) 
+
+## Pending
+
+Those test cases expose a potential fault that has not been fixed and that does not appear as a normal behaviour of the system.
+
+  - [Math - ST24](#st24)
+  - [Closure - ST31](#st31)
+  - [Closure - ST32](#st32)
+  - [Closure - ST34](#st34)
+
+## Deprecated
+
+Those test cases are not relevant anymore as the source code they exercise has been removed in a later version of the project.
+
+  - [Mockito - ST16](#st16)
+  - [Mockito - ST17](#st17)
+  - [Mockito - ST18](#st18)
+  - [Closure - ST35](#st35)
+  - [Closure - ST36](#st36)
+  - [Closure - ST37](#st37)
+  - [Closure - ST38](#st38)
+  - [Closure - ST40](#st40)
+  - [Closure - ST44](#st44)
+  - [Closure - ST45](#st45)
+  - [Closure - ST46](#st46)
+  - [Closure - ST48](#st48)
+  - [Closure - ST49](#st49)
+  - [Closure - ST50](#st50)
+
+
 # Time
 
 ## ST10
