@@ -147,6 +147,16 @@ docker exec -it cling-application-container bash scripts/main/rq2-mutation-score
 ```
 The output of the PIT tool will be saved in the `data/rq2/pit/` directory. Also, the execution logs of PIT runs will be stored in the `logs/pit/` directory.
 
+This script will also detect and ignore the flaky tests detected afted 5 times of execution. To calculate the totla number of flaky test cases, run the following Python script:
+
+```
+python scripts/python/test/parse_ignored_tests.py
+```
+**docker**
+```
+docker exec -it cling-application-container python scripts/python/test/parse_ignored_tests.py
+```
+
 ## Collect Line coverages
 To collect all of the line coverages achieved by each generated test case, run the following python script:
 
