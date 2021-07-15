@@ -11,7 +11,7 @@ df$tool[df$tool %in% "evosuite-callee5"] <- "EvoE"
 df$tool[df$tool %in% "evosuite-caller5"] <- "EvoR"
 df$tool[df$tool %in% "randoop-callee5"] <- "RanE"
 df$tool[df$tool %in% "randoop-caller5"] <- "RanR"
-df$tool[df$tool %in% "cling"] <- "C"
+df$tool[df$tool %in% "cling"] <- "Cling"
 
 df$mutation_coverage_perc <- df$mutation_coverage_perc/100
 
@@ -27,7 +27,7 @@ cat("Average mutation score per tool and per project")
 show(averagePerces)
 
 df$project_f = factor(df$project, levels=c('closure','mockito','time','lang','math'))
-p <- 	ggplot(df, aes(x=factor(tool,levels = c("EvoE","EvoR", "RanE","RanR","C")), y=mutation_coverage_perc, fill=factor(tool))) + 
+p <- 	ggplot(df, aes(x=factor(tool,levels = c("EvoE","EvoR", "RanE","RanR","Cling")), y=mutation_coverage_perc, fill=factor(tool))) + 
   scale_fill_grey(start = 0.5, end = 1.0) +
   geom_boxplot() +
   xlab("") + 
@@ -53,7 +53,7 @@ diffdf$project_f = factor(diffdf$project, levels=c('closure','mockito','time','l
 p <- 	ggplot(diffdf, aes(x=factor(tool,levels = c( "EvoE", "EvoR", "EvoE+R", "RanE", "RanR", "RanE+R")), y=perc, fill=factor(tool))) + 
   geom_boxplot() +
   xlab("") + 
-  ylab(paste0(greek$Delta,"(score(x), score(C + x))")) + 
+  ylab(paste0(greek$Delta,"(score(x), score(Cling + x))")) + 
   guides(fill=FALSE) +
   facet_grid(. ~ project_f, margins = TRUE) + theme(axis.text.x = element_text(angle = 90)) +
   stat_summary(fun.y=mean, geom="point", shape=23, size=2, fill = 'white')

@@ -1,4 +1,7 @@
 # Cling Application
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4300633.svg)](https://doi.org/10.5281/zenodo.4300633)
+
 This repository contains the replication package for the application of Cling (automated class integration testing tool) and EvoSuite (automated unit testing tool) on 140 pairs of classes from five different open-source projects.
 
 This document contains the following instructions:

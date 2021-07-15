@@ -22,12 +22,16 @@ results$coveragePercentage <- results$covered_cb/results$total_cb
 cat("Total Average CBC")
 show(results %>%
        group_by(tool) %>%
-       summarise(avg = mean(CBC)))
+       summarise(avg = mean(CBC),
+                 median = median(CBC),
+                 IQR = IQR(CBC)))
 
 cat("Total Average CBC per project")
 show(results %>%
        group_by(tool, project) %>%
-       summarise(avg = mean(CBC)))
+       summarise(avg = mean(CBC),
+                 median = median(CBC),
+                 IQR = IQR(CBC)))
 
 # Comparison per case
 
@@ -37,7 +41,7 @@ avgCBCPerCase <- results %>%
   mutate(case = paste(caller_class,"-",callee_class))
 
 pdf("data_analysis/figures/cbc-friedman-nemenyi.pdf", width=6, height=3) 
-plot_using_friedman_and_nemenyi(avgCBCPerCase)
+p <- plot_using_friedman_and_nemenyi(avgCBCPerCase)
 # ggsave(filename = 'data_analysis/figures/cbc-friedman-nemenyi.pdf', width=160, height=105, units = "mm" )
 dev.off()
 
@@ -61,7 +65,7 @@ show(ranking)
 
 CBC_comparison <- avgCBCPerCase %>%
   inner_join(avgCBCPerCase, by=c('project', 'caller_class', 'callee_class'), suffix = c('.alg1', '.alg2')) %>%
-  filter(testsuite.alg1 == "C" & testsuite.alg2 == "RanR" & avgCBC.alg1 < avgCBC.alg2)
+  filter(testsuite.alg1 == "Cling" & testsuite.alg2 == "RanR" & avgCBC.alg1 < avgCBC.alg2)
 
 avgCBCPP <- results %>%
   group_by(tool, project) %>%

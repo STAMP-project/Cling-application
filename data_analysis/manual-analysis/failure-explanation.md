@@ -1,4 +1,58 @@
 
+This file presents the complete manual analysis and classification of the 27 potentially fault revealing test cases identified in RQ3. For each test case, we first identify and discuss the potential fault it exposes. Then we describe the results of the code history analysis of the classes involved in the test. Based on our findings, we categories the different tests. 
+
+# Classification
+
+For each category, we give a brief description and the list of cases.
+
+## True positives
+
+Those test cases expose a real fault that has been fixed, either by updating the documentation or the source code, or that has been marked as such in the source code (for instance, in a comment, a TODO or a FIXME).
+
+  - [Math - ST22](#st22)
+  - [Math - ST23](#st23)
+  - [Closure - ST28](#st28)
+  - [Closure - ST29](#st29)
+  - [Closure - ST33](#st33)
+  - [Closure - ST41](#st41)
+  - [Closure - ST43](#st43)
+
+## False positives
+
+Those test cases do not expose a fault but a normal behaviour of the system.
+
+  - [Time - ST10](#st10)
+  - [Time - ST11](#st11) 
+
+## Pending
+
+Those test cases expose a potential fault that has not been fixed and that does not appear as a normal behaviour of the system.
+
+  - [Math - ST24](#st24)
+  - [Closure - ST31](#st31)
+  - [Closure - ST32](#st32)
+  - [Closure - ST34](#st34)
+
+## Deprecated
+
+Those test cases are not relevant anymore as the source code they exercise has been removed in a later version of the project.
+
+  - [Mockito - ST16](#st16)
+  - [Mockito - ST17](#st17)
+  - [Mockito - ST18](#st18)
+  - [Closure - ST35](#st35)
+  - [Closure - ST36](#st36)
+  - [Closure - ST37](#st37)
+  - [Closure - ST38](#st38)
+  - [Closure - ST40](#st40)
+  - [Closure - ST44](#st44)
+  - [Closure - ST45](#st45)
+  - [Closure - ST46](#st46)
+  - [Closure - ST48](#st48)
+  - [Closure - ST49](#st49)
+  - [Closure - ST50](#st50)
+
+
 # Time
 
 ## ST10
@@ -38,7 +92,9 @@ public void test2()  throws Throwable  {
 
 The generated test passes 175 as the value of minimum number of days per week. Naturally, the maximum number of days in a week is 7! but there is no check in the code of the caller and callee. And caller is called from outside. Also, it is not mentioned in the [documentation](projects/time/src/main/java/org/joda/time/chrono/GJChronology.java#L234) that the value must be lower than 7. The caller class gets the wrong value and passes it to callee without checking it.
 
-__! New update:__ This is not a fault because there is a test in the project that confirm this thrown exception is expected:
+### Code history analysis
+
+This is not a fault because there is a test in the project that confirm this thrown exception is expected:
 
 ```java
    public void testFactory_Zone_RI_int() {
@@ -65,6 +121,7 @@ __! New update:__ This is not a fault because there is a test in the project tha
     }
 
 ```
+
 ## ST11
 
 [Stack trace](stacktraces.md#st11-f2):
@@ -93,7 +150,9 @@ public void testSet_ifve()  throws Throwable  {
 
 Caller method [calls a method `set` in `ZonedChronology$ZonedDateTime`](projects/time/src/main/java/org/joda/time/chrono/BaseChronology.java#L240). This method changes one of the inputs and passes them to the set method in callee. Callee throws and exception because the returned value from one of the passed objects is not equal to the other passed value. There is no pre-checking before calling the callee.
 
-__! New update:__ This is not a fault because the this exception indicates that this is not a realistic scenario. And the generated test is not possible to happen in real life.
+### Code history analysis
+
+This is not a fault because the this exception indicates that this is not a realistic scenario. And the generated test is not possible to happen in real life.
 
 # Mockito
 
@@ -146,7 +205,9 @@ public void test2()  throws Throwable  {
 
 The fault is the passed objects to method `setDelegates` in caller class. If the values are not in the same hierarchy tree, and we [call `create()` method in caller class](projects/mockito/cglib-and-asm/src/org/mockito/cglib/proxy/Mixin.java#L132) afterward, the caller class passes these objects to the callee class indirectly. the callee class expect that these passed objects are in the same hierarchy tree. Hence, it throws exception if they do not fulfill this precondition.
 
-__! New update:__ This fault is in the integration between Mockit and cglib, which [has been discontinued in favor of ByeBuddy](ByteBuddy). This integration is just moved to a seperate [repository](https://github.com/mockito/mockito-cglib). According to the [README](https://github.com/mockito/mockito-cglib/blob/master/README.md) file in this reporsitory, developers do not want to ship Mockito with cglib any more. Hence, they did not put any effort to update and improve this integration, and it is not useful to report this fault to developers.
+### Code history analysis
+
+This fault is in the integration between Mockito and cglib, which [has been discontinued in favor of ByeBuddy](ByteBuddy). This integration is just moved to a seperate [repository](https://github.com/mockito/mockito-cglib). According to the [README](https://github.com/mockito/mockito-cglib/blob/master/README.md) file in this reporsitory, developers do not want to ship Mockito with cglib any more. Hence, they did not put any effort to update and improve this integration, and it is not useful to report this fault to developers.
 
 ## ST17
 
@@ -181,7 +242,9 @@ public void test12()  throws Throwable  {
 
 `SimpleVerifier` is a subclass of `BasicVerifier`. Cling calls the `unaryOperation` method with a null `Value`. The [documentation of the caller class](projects/mockito/cglib-and-asm/src/org/mockito/asm/tree/analysis/BasicVerifier.java#L96) does not have limitation for input. The caller class passes the null value to the callee class without checking. The callee class uses null value without checking it. There is no input limitation in the callee method, as well.
 
-__! New update:__ Same as previous stacktrace, these classes are archived to the [same repository](https://github.com/mockito/mockito-cglib). The developers did not put any effort to update and improve this integration, and it is not useful to report this fault to developers.
+### Code history analysis
+
+Same as previous stacktrace, these classes are archived to the [same repository](https://github.com/mockito/mockito-cglib). The developers did not put any effort to update and improve this integration, and it is not useful to report this fault to developers.
 
 ## ST18
 
@@ -229,7 +292,10 @@ More specifically, the [`ClassWriter` (callee)](projects/mockito/cglib-and-asm/s
         final String superName,final String[] interfaces)`.
 If we do not call visit or call it with null input parameter `name` and pass it to the caller class. Then, if we call `visitMaxs` in the caller class. It throws null pointer exception because caller does not check the value of name in the callee class. Also, when we set the name in the callee class there is no check. Moreover, there is no annotation about these facts in the documentation of involved classes.
 
-__! New update:__ Same as previous stacktrace, these classes are archived to the [same repository](https://github.com/mockito/mockito-cglib). The developers did not put any effort to update and improve this integration, and it is not useful to report this fault to developers.
+### Code history analysis
+
+Same as previous stacktrace, these classes are archived to the [same repository](https://github.com/mockito/mockito-cglib). The developers did not put any effort to update and improve this integration, and it is not useful to report this fault to developers.
+
 # Math
 
 ## ST22
@@ -269,9 +335,9 @@ public void test5()  throws Throwable  {
 
 The [documentation of the `readExternal` method](projects/math/src/java/org/apache/commons/math/ode/GraggBulirschStoerStepInterpolator.java#L364) specifies that the method reads `the state of the instance`. When looking at the [documentation of the `Externalizable` interface](https://docs.oracle.com/javase/8/docs/api/) defining the `readExternal` and `writeExternal` methods, the documentation specifies that the `readExternal method must read the values in the same sequence and with the same types as were written by writeExternal` and that the `Overriding methods should use this tag [@serialData] to describe the data layout of this Externalizable object`. Without any description of the format, CLING is unable to determine the right sequence of values to mock in the `objectInput0` object. However, none of the classes in the hierarchy of the `GraggBulirschStoerStepInterpolator` class describe the file format, as prescribed by the documentation of the `Externalizable` interface. Therefore, we count this as positive case, as Cling emphasizes the lack of documentation required to decide if the exception should be thrown or not.
 
- __!__ Approved by developers. The fixing commit: https://svn.apache.org/viewvc?view=revision&revision=670469.
- This commit is found by searching in the git history of the project. In this commit, the documentations are updated, and developers are using `@inheritDoc`.
+### Code history analysis
 
+Approved by developers. The fixing commit: https://svn.apache.org/viewvc?view=revision&revision=670469. This commit is found by searching in the git history of the project. In this commit, the documentations are updated, and developers are using `@inheritDoc`.
 
 ## ST23
 
@@ -316,7 +382,9 @@ Next, the test calls another method that uses that initialized object of Callee 
 In summary, there are no checks or documentation about the internal consistency of the different objects, which allowed Cling to trigger a `NullPointerException`.
 
 
-__!__ The `addSwitchingFunction` is renmed to `addStepHandler()`. Also, documentations were updated accordingly. One of the changes in the documentation of this method is the following sentence: "The handler will be called by the integrator for each accepted step."
+### Code history analysis
+
+The `addSwitchingFunction` is renmed to `addStepHandler()`. Also, documentations were updated accordingly. One of the changes in the documentation of this method is the following sentence: "The handler will be called by the integrator for each accepted step."
 
 This sentence indicates that the input parameter will be called afterward and it cannot be null.
 
@@ -360,7 +428,10 @@ public void test01()  throws Throwable  {
 
 In this case, Caller is the sub-class and Callee is the super-class. The called method in Caller is `integrate()` which is not called by any other class in the project. If we pass Null as one of the inputs of this method (last input which is ` double[] y`) it uses this method in one of the inherited methods from super-class (`sanityChecks()`). There is no null checking in any of these methods. Also, there is not specific information about the forbidden values for the inputs in the comments and documentations.
 
-__!__ No change on the code and documentation.
+### Code history analysis
+
+No change on the code and documentation.
+
 # Closure
 
 ## ST28
@@ -403,8 +474,9 @@ public void test04()  throws Throwable  {
 
 In this case, `UnionType` (caller class) is the sub-class and `JSType` (callee class) is the superclass. The generated test instantiate a `UnionType` object with the following constructor ` UnionType(JSTypeRegistry registry, Collection<JSType> alternates)`. Also, it passes `NULL` for the first parameter. According to the documentation of this class, there is no limitation for the input. This constructor sets the value of a local variable (`registry`) to the passed value (here, it is `NULL`). Then, the generated test calls method `getTypesUnderInequality` of the instantiated object. This method invokes method `isEmptyType` in the superclass, indirectly. `isEmptyType` method tries to use the attribute `registry`. Since this attribute is set to `NULL` during the invocation of the constructor of `UnionType`, it throws a `NullPointerException`. No indication in the documentation specifies that the `registry` parameter of a [`JSType` constructor](projects/closure/src/com/google/javascript/rhino/jstype/JSType.java#L105) should not be null. No checks are done on the value of the parameter.
 
-__! New Update:__ This bug is fixed by developers using [this commit](https://github.com/google/closure-compiler/commit/cfc0fab3dc2be49692a4fe9162b8095c934f6c41). The `UnionType` should be initialized only by [`UnionTypeBuilder`](projects/closure/src/com/google/javascript/rhino/jstype/UnionTypeBuilder.java). However, in the version that we ran Cling on, the constructor is protected and it can be called by other classes too. Also, there is no comment that this class should be initialized only by  `UnionTypeBuilder`. However, the fixing [commit](https://github.com/google/closure-compiler/commit/cfc0fab3dc2be49692a4fe9162b8095c934f6c41) (i) converts `UnionTypeBuilder` into `UnionType.Builder`, a nested class of `UnionType` (ii) make `UnionType`'s constructor private, and (iii) add the required information to this [constructor's documentation](https://github.com/google/closure-compiler/blob/82b6ca08fd09f927ba5fa2e43347239373e87646/src/com/google/javascript/rhino/jstype/UnionType.java#L107), which indicates that this class cannot be called by any other class except its builder. It worths to mention that this builder makes sure that the passed `registry` is not Null.
+### Code history analysis
 
+This bug is fixed by developers using [this commit](https://github.com/google/closure-compiler/commit/cfc0fab3dc2be49692a4fe9162b8095c934f6c41). The `UnionType` should be initialized only by [`UnionTypeBuilder`](projects/closure/src/com/google/javascript/rhino/jstype/UnionTypeBuilder.java). However, in the version that we ran Cling on, the constructor is protected and it can be called by other classes too. Also, there is no comment that this class should be initialized only by  `UnionTypeBuilder`. However, the fixing [commit](https://github.com/google/closure-compiler/commit/cfc0fab3dc2be49692a4fe9162b8095c934f6c41) (i) converts `UnionTypeBuilder` into `UnionType.Builder`, a nested class of `UnionType` (ii) make `UnionType`'s constructor private, and (iii) add the required information to this [constructor's documentation](https://github.com/google/closure-compiler/blob/82b6ca08fd09f927ba5fa2e43347239373e87646/src/com/google/javascript/rhino/jstype/UnionType.java#L107), which indicates that this class cannot be called by any other class except its builder. It worths to mention that this builder makes sure that the passed `registry` is not Null.
 
 ## ST29
 
@@ -446,8 +518,9 @@ public void test22()  throws Throwable  {
 
 In this case, `UnionType` (callee class) is the sub-class and `JSType` (caller class) is the superclass. In this test, calls equal on a `UnionType` object. The [`equals` method](projects/closure/src/com/google/javascript/rhino/jstype/JSType.java#L477) is defined in the class `JSType`. The input parameter of equals is a `ParameterizedType` object. The [constructor of `ParameterizedType`](projects/closure/src/com/google/javascript/rhino/jstype/ParameterizedType.java#L55) accepts multiple input parameters. The second one is `JSType referencedType`. The generated test passes `NULL` for this value. The constructor of  `ParameterizedType` set a local attribute with the same name by this input parameter. When the generated test passes this object to check if it is equal to the `UnionType` by calling method equals, it does not check if the local attribute of `ParameterizedType` is null or not, and it passes it to method `isUnionType` of the other target class (`JSType`). This method calls the [method `toMaybeUnionType`](projects/closure/src/com/google/javascript/rhino/jstype/ProxyObjectType.java#L202), which uses `referencedType` without checking if it is null or not. Hence, it throws `NullPointerException`.
 
-__! New Update:__ This bug is fixed by developers with [this commit](https://github.com/google/closure-compiler/commit/842545ae3518d18a765b846a6c436ebbffbf4b72). The equality check (method equals) heavily relies on polymorphism; in our case, there is no consistent check within the inherithance tree that all attributes of ParameterizedType are not null. The fix includes a very large refactoring (including introducing helper functions for equality and equivalence checks). These changes remvore the error triggerer by Cling. As further confirmation, the error triggered by Cling can be thornw until [commit](https://github.com/google/closure-compiler/commit/842545ae3518d18a765b846a6c436ebbffbf4b72) which is the direct parent of the commit that fixed the bug.
+### Code history analysis
 
+This bug is fixed by developers with [this commit](https://github.com/google/closure-compiler/commit/842545ae3518d18a765b846a6c436ebbffbf4b72). The equality check (method equals) heavily relies on polymorphism; in our case, there is no consistent check within the inherithance tree that all attributes of ParameterizedType are not null. The fix includes a very large refactoring (including introducing helper functions for equality and equivalence checks). These changes remvore the error triggerer by Cling. As further confirmation, the error triggered by Cling can be thornw until [commit](https://github.com/google/closure-compiler/commit/842545ae3518d18a765b846a6c436ebbffbf4b72) which is the direct parent of the commit that fixed the bug.
 
 ## ST31
 
@@ -484,7 +557,9 @@ public void test255()  throws Throwable  {
 
 The generated test instantiates caller class and calls the [method `markName(String name, StaticSourceFile file,int lineno, int charno)`](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L205) with a null value as `name`. The `markName` method instantiates a new object from the callee class `TrimmedStringPosition` and passes the input parameter `name` to [one of its method (`setItem`)](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L135). There is no limitation in the code or indication in the documentation, preventing passing a null value as `name`. The documentation of the [`setItem` method](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L135) only mentions (and checks in the body of the method) that the string has no leading nor trailing space.
 
-__! New update:__ The bug is still in the latest version of the library. The documentation has not been updated nor the code has been changed.
+### Code history analysis
+
+The bug is still in the latest version of the library. The documentation has not been updated nor the code has been changed.
 
 ## ST32
 
@@ -524,7 +599,9 @@ public void test170()  throws Throwable  {
 
 The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value. This object is passed to a method in the caller class. The called method invokes a method in the callee class and passes the `JSTypeExpression` object to it. The method in the callee class checks this object with a [customized `equal` method](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L106). The equal method tries to make use of the `root` attribute without checking if it is null or not. The documentation provides no indication about the validity to have a null `root` attribute, and no checks are done in the code.
 
-__! New update:__ The bug is still in the latest version of the library. The documentation has not been updated nor the code has been changed.
+### Code history analysis
+
+The bug is still in the latest version of the library. The documentation has not been updated nor the code has been changed.
 
 ## ST33
 
@@ -564,7 +641,9 @@ public void test159()  throws Throwable  {
 
 The generated test passes null to the [`recordTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L298). This null value is used as parameter to call the [`declareTemplateTypeNames` method](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L908) and triggers a `NullPointerException` in nested calls. No checks are done to prevent null values, and the documentation does not indicate if null values are permitted.
 
-__! New update:__ the buggy method `recordTemplateTypeNames(List<String>)` has been removed with this [commit](https://github.com/ponsonio/closure-compiler/commit/d8b7a71c95cae08a3f9caa553264759ac533bfc5#diff-812b116c3d6ec5d78fc7c66f732defa3c1c47e16d1be2a87d815bd56be74a2a7) and replaced by a new method that does not uses lists as input. While the commit message does mention explicitly the word 'fix', the commit above remove the bugs among other main refactoring/changes applied to the code base.
+### Code history analysis
+
+The buggy method `recordTemplateTypeNames(List<String>)` has been removed with this [commit](https://github.com/ponsonio/closure-compiler/commit/d8b7a71c95cae08a3f9caa553264759ac533bfc5#diff-812b116c3d6ec5d78fc7c66f732defa3c1c47e16d1be2a87d815bd56be74a2a7) and replaced by a new method that does not uses lists as input. While the commit message does mention explicitly the word 'fix', the commit above remove the bugs among other main refactoring/changes applied to the code base.
 
 ## ST34
 
@@ -604,7 +683,9 @@ public void test071()  throws Throwable  {
 
 The generated test initializes an object from [`JSTypeExpression` class](projects/closure/src/com/google/javascript/rhino/JSTypeExpression.java#L64) with a null `root` value.  The object of `JSTypeExpression` is passed to the caller by a method called `recordParameter` which passes this value to the callee class. Then, the test calls [method `recordThrowDescription`](projects/closure/src/com/google/javascript/rhino/JSDocInfoBuilder.java#L325), which calls [method `documentThrows`](projects/closure/src/com/google/javascript/rhino/JSDocInfo.java#L782) in callee. This method throws  `NullPointerException` because the `root` in the passed `JSTypeExpression` is null. The documentation provides no indication about the validity to have a null `root` attribute, and no checks are done in the code.
 
-__! New update:__ The bug is still in the latest version of the library. The documentation has not been updated nor the code has been changed.
+### Code history analysis
+
+The bug is still in the latest version of the library. The documentation has not been updated nor the code has been changed.
 
 ## ST35
 
@@ -645,7 +726,9 @@ public void test01()  throws Throwable  {
 
 The test calls the [static method `FunctionObject.convertArg`](projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject.java#L216) with random parameter values. The static methods tries to convert the third parameter (`topLevel0`) to a `Double` value (indicated by the value `4` as last parameter of the call) but fails to do so. The `convertArg` method does not make any check before [performing the conversion](projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject.java#L233) and no documentation is provided for that method. The documentation of the callee (`ScriptRuntime.toNumber`) does not indicate that an exception is thrown in case of error during the conversion.
 
-__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/jenkinsci/core-js/blob/master/rhino/src/org/mozilla/javascript/FunctionObject.java). The method `FunctionObject.convertArg(...)` is currently taggd as deprecated.
+### Code history analysis
+
+The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/jenkinsci/core-js/blob/master/rhino/src/org/mozilla/javascript/FunctionObject.java). The method `FunctionObject.convertArg(...)` is currently taggd as deprecated.
 
 ## ST36
 
@@ -694,7 +777,9 @@ Generated test ([test15](../../results/cling/closure-com.google.javascript.rhino
 
 Here, the caller is a [class called `NativeArray`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java).  The generated test passes a `IdFunctionObject` object to the caller class. Then, the caller class passes this object through intermediate calls to the callee class `ScriptRuntime`. This class is later used in the callee class. However, if we do not call  method `initFunction` in `IdFunctionObject`, the usage of `IdFunctionObject` by callee class would lead to NullPointerException. The existence of `parentScope` in the passed `IdFunctionObject` to the caller and callee is not checked by these two classes. Eventually, the callee class invoked a method, which needs the `parentScope`, and since it is not available, it throws the NullPointerException. Also, the [documentation of `IdFunctionObject`](projects/closure/lib/rhino/src/org/mozilla/javascript/IdFunctionObject.java#L77) does not mention that you need to call the init function.
 
-__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
+### Code history analysis
+
+The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
 
 ## ST37
 
@@ -751,7 +836,9 @@ These two constructors do not set any value for `javaObject`.
 
 The generated test initiate an object from `NativeJavaClass` and pass it as one of the input parameters of the caller class (`NativeArray`). This object is passed through multiple classes (indicated in stack trace). Eventually, [`ScriptRuntime.toString(ScriptRuntime.java:803)`](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptRuntime.java#L783) calls [method `NativeJavaClass.getDefaultValue` of class `NativeJavaClass`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeJavaClass.java#L153). This method calls `toString`, which uses the `javaObject` variable without checking if it is null or noy, and it leads to a `NullPointerException`.
 
-__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
+### Code history analysis
+
+The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an [external library](https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
 
 ## ST38
 
@@ -799,7 +886,9 @@ public void test14()  throws Throwable  {
 
 [Caller (`NativeArray`)](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java) and [Callee (`IdScriptableObject`)](projects/closure/lib/rhino/src/org/mozilla/javascript/IdScriptableObject.java) are in the same hierarchy tree. The generated test uses null value for context to call [method `getOwnPropertyDescriptor`](projects/closure/lib/rhino/src/org/mozilla/javascript/NativeArray.java#L584) in super class. The [method has no documentation](projects/closure/lib/rhino/src/org/mozilla/javascript/ScriptableObject.java#L3092) and the value of the context is not checked.
 
-__! New update:__ The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
+### Code history analysis
+
+The code (dependency) has been removed in later versions of **closure**. The issue is related to the class `projects/closure/lib/rhino/src/org/mozilla/javascript/FunctionObject`, which belongs to an external library (https://github.com/mozilla/rhino/blob/master/src/org/mozilla/javascript/NativeArray.java).
 
 ## ST40
 
