@@ -152,7 +152,7 @@ Caller method [calls a method `set` in `ZonedChronology$ZonedDateTime`](projects
 
 ### Code history analysis
 
-This is not a fault because the this exception indicates that this is not a realistic scenario. And the generated test is not possible to happen in real life.
+This is not a fault because the this exception indicates that this is not a realistic scenario. And the generated test is not possible to happen in real life. In general, IllegalFieldValueException indicates that the passed values are not supported by Times projects, and it happens when you pass an unrealistic input like negative value for the number of days in a month.
 
 # Mockito
 
