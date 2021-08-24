@@ -5,7 +5,7 @@ This file presents the complete manual analysis and classification of the 27 pot
 
 For each category, we give a brief description and the list of cases.
 
-## True positives
+## Confirmed
 
 Those test cases expose a real fault that has been fixed, either by updating the documentation or the source code, or that has been marked as such in the source code (for instance, in a comment, a TODO or a FIXME).
 
