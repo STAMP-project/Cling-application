@@ -48,7 +48,7 @@ do
   final_file="deps/$caller_clean_name-$callee_clean_name-randoopdeps.txt"
 
   caller_callee_list="deps/temp.txt"
-  echo "$caller_clean_name\n$callee_clean_name\n" > $caller_callee_list
+  echo "$caller_clean_name\n$callee_clean_name" > $caller_callee_list
 
   sort $caller_file $callee_file $caller_callee_list | uniq > $final_file
 done < $INPUT
