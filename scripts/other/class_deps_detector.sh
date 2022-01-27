@@ -32,7 +32,7 @@ do
 
   if [ ! -f "$caller_file" ]; then
     echo "$caller_file does not exist."
-    jdeps -apionly -v -cp "$preparedCPs" "$caller_clean_name" \
+    jdeps -apionly -v -R -cp "$preparedCPs" "$caller_clean_name" \
     | grep -v '^[A-Za-z]' | sed -E 's/^.* -> ([^ ]+) .*$/\1/' | sort | uniq  > "$caller_file"
   fi
 
@@ -40,7 +40,7 @@ do
 
   if [ ! -f "$callee_file" ]; then
     echo "$callee_file does not exist."
-    jdeps -apionly -v -cp "$preparedCPs" "$callee_clean_name" \
+    jdeps -apionly -v -R -cp "$preparedCPs" "$callee_clean_name" \
     | grep -v '^[A-Za-z]' | sed -E 's/^.* -> ([^ ]+) .*$/\1/' | sort | uniq  > "$callee_file"
   fi
 
