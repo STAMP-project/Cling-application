@@ -47,7 +47,7 @@ do
   # Here, we have deps both for caller and callee. Hence, we need to merge them to a file
   final_file="deps/$caller_clean_name-$callee_clean_name-randoopdeps.txt"
 
-  caller_callee_list="deps/temp.txt"
+  caller_callee_list="deps/caller_callee_list/$caller_clean_name-$callee_clean_name.txt"
   echo "$caller_clean_name\n$callee_clean_name" > $caller_callee_list
 
   sort $caller_file $callee_file $caller_callee_list | uniq > $final_file

@@ -7,6 +7,7 @@ docker run -dit --name cling-application-container  \
 --mount type=bind,source="$(pwd)/subject_generator",target=/experiment/subject_generator \
 --mount type=bind,source="$(pwd)/scripts",target=/experiment/scripts \
 --mount type=bind,source="$(pwd)/tools",target=/experiment/tools \
+--mount type=bind,source="$(pwd)/deps",target=/experiment/deps \
 cling-application
 
 
