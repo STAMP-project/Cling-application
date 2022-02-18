@@ -1,0 +1,136 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 19 classes.
+PUBLIC MEMBERS=257
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-11T09:22:37.964Z     204M used)
+Progress update: steps=1000, test inputs generated=705, failing inputs=4      (2022-02-11T09:22:53.294Z     485M used)
+Progress update: steps=2000, test inputs generated=1533, failing inputs=12      (2022-02-11T09:23:07.966Z     966M used)
+Progress update: steps=3000, test inputs generated=2318, failing inputs=19      (2022-02-11T09:23:22.500Z     1.15G used)
+Progress update: steps=4000, test inputs generated=3115, failing inputs=20      (2022-02-11T09:23:37.264Z     946M used)
+Progress update: steps=4056, test inputs generated=3156, failing inputs=20      (2022-02-11T09:23:37.978Z     1.22G used)
+Progress update: steps=5000, test inputs generated=3920, failing inputs=23      (2022-02-11T09:23:52.504Z     1.01G used)
+Progress update: steps=6000, test inputs generated=4729, failing inputs=25      (2022-02-11T09:24:08.331Z     1.02G used)
+Progress update: steps=7000, test inputs generated=5542, failing inputs=26      (2022-02-11T09:24:23.812Z     1.21G used)
+Progress update: steps=7927, test inputs generated=6271, failing inputs=26      (2022-02-11T09:24:37.978Z     1.65G used)
+Progress update: steps=8000, test inputs generated=6328, failing inputs=26      (2022-02-11T09:24:39.100Z     1.41G used)
+Progress update: steps=9000, test inputs generated=7143, failing inputs=29      (2022-02-11T09:24:56.303Z     1.35G used)
+Progress update: steps=10000, test inputs generated=7944, failing inputs=31      (2022-02-11T09:25:11.789Z     1.58G used)
+Progress update: steps=11000, test inputs generated=8729, failing inputs=31      (2022-02-11T09:25:27.325Z     2.06G used)
+Progress update: steps=11680, test inputs generated=9271, failing inputs=33      (2022-02-11T09:25:37.978Z     2.40G used)
+Progress update: steps=12000, test inputs generated=9522, failing inputs=33      (2022-02-11T09:25:42.910Z     2.38G used)
+Progress update: steps=13000, test inputs generated=10316, failing inputs=34      (2022-02-11T09:25:59.076Z     2.11G used)
+Progress update: steps=14000, test inputs generated=11103, failing inputs=35      (2022-02-11T09:26:15.164Z     2.72G used)
+Progress update: steps=15000, test inputs generated=11884, failing inputs=36      (2022-02-11T09:26:31.421Z     2.90G used)
+Progress update: steps=15399, test inputs generated=12203, failing inputs=37      (2022-02-11T09:26:37.979Z     3.15G used)
+Progress update: steps=16000, test inputs generated=12684, failing inputs=39      (2022-02-11T09:26:48.095Z     3.25G used)
+Progress update: steps=17000, test inputs generated=13474, failing inputs=42      (2022-02-11T09:27:04.688Z     3.39G used)
+Progress update: steps=18000, test inputs generated=14262, failing inputs=44      (2022-02-11T09:27:26.201Z     3.56G used)
+Progress update: steps=18490, test inputs generated=14649, failing inputs=45      (2022-02-11T09:27:37.979Z     3.42G used)
+Progress update: steps=19000, test inputs generated=15053, failing inputs=45      (2022-02-11T09:27:51.880Z     3.38G used)
+Progress update: steps=19663, test inputs generated=15559, failing inputs=47      (2022-02-11T09:28:37.979Z     3.49G used)
+Problem with sequence:
+java.io.File file0 = null; // [NormalExecution null]
+java.lang.String str1 = "java.io.IOException: "; // [NormalExecution java.io.IOException:  [class java.lang.String]]
+java.io.File file2 = new java.io.File(file0, "java.io.IOException: "); // [NormalExecution java.io.IOException:  [class java.io.File]]
+java.net.URL uRL3 = file2.toURL(); // [NormalExecution file:/experiment/java.io.IOException: / [class java.net.URL]]
+java.lang.String str4 = uRL3.toExternalForm(); // [NormalExecution file:/experiment/java.io.IOException: / [class java.lang.String]]
+java.lang.String str5 = "/"; // [NormalExecution / [class java.lang.String]]
+java.net.URLStreamHandler uRLStreamHandler6 = null; // [NormalExecution null]
+java.net.URL uRL7 = new java.net.URL(uRL3, "/", uRLStreamHandler6); // [NormalExecution file:/ [class java.net.URL]]
+java.lang.Object obj8 = uRL3.getContent(); // [NormalExecution sun.net.www.content.text.PlainTextInputStream@4054ee1c [class sun.net.www.content.text.PlainTextInputStream]]
+java.lang.String str9 = uRL3.getAuthority(); // [NormalExecution  [class java.lang.String]]
+java.io.File file10 = null; // [NormalExecution null]
+java.lang.String str11 = "java.io.IOException: "; // [NormalExecution java.io.IOException:  [class java.lang.String]]
+java.io.File file12 = new java.io.File(file10, "java.io.IOException: "); // [NormalExecution java.io.IOException:  [class java.io.File]]
+java.net.URL uRL13 = file12.toURL(); // [NormalExecution file:/experiment/java.io.IOException: / [class java.net.URL]]
+java.lang.String str14 = uRL13.toExternalForm(); // [NormalExecution file:/experiment/java.io.IOException: / [class java.lang.String]]
+java.lang.String str15 = uRL13.getProtocol(); // [NormalExecution file [class java.lang.String]]
+java.lang.String str16 = "hi!"; // [NormalExecution hi! [class java.lang.String]]
+java.net.URL uRL17 = new java.net.URL(uRL13, "hi!"); // [NormalExecution file:/experiment/java.io.IOException: /hi! [class java.net.URL]]
+java.io.File file18 = null; // [NormalExecution null]
+java.lang.String str19 = "java.io.IOException: "; // [NormalExecution java.io.IOException:  [class java.lang.String]]
+java.io.File file20 = new java.io.File(file18, "java.io.IOException: "); // [NormalExecution java.io.IOException:  [class java.io.File]]
+java.net.URL uRL21 = file20.toURL(); // [NormalExecution file:/experiment/java.io.IOException: / [class java.net.URL]]
+java.lang.String str22 = "/experiment/java.io.IOException: "; // [NormalExecution /experiment/java.io.IOException:  [class java.lang.String]]
+java.net.URLStreamHandler uRLStreamHandler23 = null; // [NormalExecution null]
+java.net.URL uRL24 = new java.net.URL(uRL21, "/experiment/java.io.IOException: ", uRLStreamHandler23); // [NormalExecution file:/experiment/java.io.IOException: [class java.net.URL]]
+boolean boolean25 = uRL13.sameFile(uRL21); // [NormalExecution true [class java.lang.Boolean]]
+boolean boolean26 = uRL3.sameFile(uRL13); // [NormalExecution true [class java.lang.Boolean]]
+java.lang.Object obj27 = uRL13.getContent(); // [NormalExecution sun.net.www.content.text.PlainTextInputStream@31f17fca [class sun.net.www.content.text.PlainTextInputStream]]
+int int28 = uRL13.getPort(); // [NormalExecution -1 [class java.lang.Integer]]
+int int29 = uRL13.getDefaultPort(); // [NormalExecution -1 [class java.lang.Integer]]
+java.lang.String str30 = uRL13.getQuery(); // [NormalExecution null]
+java.lang.String str31 = uRL13.getFile(); // [NormalExecution /experiment/java.io.IOException: / [class java.lang.String]]
+java.lang.String str32 = "SummaryStatistics:\nn: 3\nmin: 10.0\nmax: 100.0\nmean: 47.33333333333333\ngeometric mean: 31.748021039363998\nvariance: 2201.333333333333\nsum of squares: 11124.0\nstandard deviation: 46.91836882643442\nsum of logs: 10.373491181781864\n4542872739220029233"; // [NormalExecution SummaryStatistics:\nn: 3\nmin: 10.0\nmax: 100.0\nmean: 47.33333333333333\ngeometric mean: 31.748021039363998\nvariance: 2201.333333333333\nsum of squares: 11124.0\nstandard deviation: 46.91836882643442\nsum of logs: 10.373491181781864\n4542872739220029233 [class java.lang.String]]
+java.net.URLStreamHandler uRLStreamHandler33 = null; // [NormalExecution null]
+java.net.URL uRL34 = new java.net.URL(uRL13, "SummaryStatistics:\nn: 3\nmin: 10.0\nmax: 100.0\nmean: 47.33333333333333\ngeometric mean: 31.748021039363998\nvariance: 2201.333333333333\nsum of squares: 11124.0\nstandard deviation: 46.91836882643442\nsum of logs: 10.373491181781864\n4542872739220029233", uRLStreamHandler33); // [ExceptionalExecution, java.net.MalformedURLException, at java.net.URL.<init>(URL.java:618)]
+<<ObserverEqValue java.io.File.getParent : (java.io.File) -> java.lang.String, value = 'null' [file2]>
+<<ObserverEqValue java.io.File.toString : (java.io.File) -> java.lang.String, value = 'java.io.IOException:  [class java.lang.String]' [file2]>
+<randoop.contract.IsNotNull@1f [uRL3]>
+<<ObserverEqValue java.net.URL.toString : (java.net.URL) -> java.lang.String, value = 'file:/experiment/java.io.IOException: / [class java.lang.String]' [uRL3]>
+<randoop.PrimValue, value=file:/experiment/java.io.IOException: / [str4]>
+<<ObserverEqValue java.net.URL.toString : (java.net.URL) -> java.lang.String, value = 'file:/ [class java.lang.String]' [uRL7]>
+<randoop.contract.IsNotNull@1f [obj8]>
+<randoop.PrimValue, value= [str9]>
+<<ObserverEqValue java.io.File.getParent : (java.io.File) -> java.lang.String, value = 'null' [file12]>
+<<ObserverEqValue java.io.File.toString : (java.io.File) -> java.lang.String, value = 'java.io.IOException:  [class java.lang.String]' [file12]>
+<randoop.contract.IsNotNull@1f [uRL13]>
+<<ObserverEqValue java.net.URL.toString : (java.net.URL) -> java.lang.String, value = 'file:/experiment/java.io.IOException: / [class java.lang.String]' [uRL13]>
+<randoop.PrimValue, value=file:/experiment/java.io.IOException: / [str14]>
+<randoop.PrimValue, value=file [str15]>
+<<ObserverEqValue java.net.URL.toString : (java.net.URL) -> java.lang.String, value = 'file:/experiment/java.io.IOException: /hi! [class java.lang.String]' [uRL17]>
+<<ObserverEqValue java.io.File.getParent : (java.io.File) -> java.lang.String, value = 'null' [file20]>
+<<ObserverEqValue java.io.File.toString : (java.io.File) -> java.lang.String, value = 'java.io.IOException:  [class java.lang.String]' [file20]>
+<randoop.contract.IsNotNull@1f [uRL21]>
+<<ObserverEqValue java.net.URL.toString : (java.net.URL) -> java.lang.String, value = 'file:/experiment/java.io.IOException: / [class java.lang.String]' [uRL21]>
+<<ObserverEqValue java.net.URL.toString : (java.net.URL) -> java.lang.String, value = 'file:/experiment/java.io.IOException: [class java.lang.String]' [uRL24]>
+<randoop.PrimValue, value=true [boolean25]>
+<randoop.PrimValue, value=true [boolean26]>
+<randoop.contract.IsNotNull@1f [obj27]>
+<randoop.PrimValue, value=-1 [int28]>
+<randoop.PrimValue, value=-1 [int29]>
+<randoop.contract.IsNull@25 [str30]>
+<randoop.PrimValue, value=/experiment/java.io.IOException: / [str31]>
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+createAndClassifySequences threw an exception
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+
+Throwable thrown while handling command: java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+Randoop failed.
+Last sequence under execution: 
+java.io.File file0 = null;
+java.io.File file2 = new java.io.File(file0, "java.io.IOException: ");
+java.net.URL uRL3 = file2.toURL();
+java.lang.String str4 = uRL3.toExternalForm();
+java.net.URLStreamHandler uRLStreamHandler6 = null;
+java.net.URL uRL7 = new java.net.URL(uRL3, "/", uRLStreamHandler6);
+java.lang.Object obj8 = uRL3.getContent();
+java.lang.String str9 = uRL3.getAuthority();
+java.io.File file10 = null;
+java.io.File file12 = new java.io.File(file10, "java.io.IOException: ");
+java.net.URL uRL13 = file12.toURL();
+java.lang.String str14 = uRL13.toExternalForm();
+java.lang.String str15 = uRL13.getProtocol();
+java.net.URL uRL17 = new java.net.URL(uRL13, "hi!");
+java.io.File file18 = null;
+java.io.File file20 = new java.io.File(file18, "java.io.IOException: ");
+java.net.URL uRL21 = file20.toURL();
+java.net.URLStreamHandler uRLStreamHandler23 = null;
+java.net.URL uRL24 = new java.net.URL(uRL21, "/experiment/java.io.IOException: ", uRLStreamHandler23);
+boolean boolean25 = uRL13.sameFile(uRL21);
+boolean boolean26 = uRL3.sameFile(uRL13);
+java.lang.Object obj27 = uRL13.getContent();
+int int28 = uRL13.getPort();
+int int29 = uRL13.getDefaultPort();
+java.lang.String str30 = uRL13.getQuery();
+java.lang.String str31 = uRL13.getFile();
+java.net.URLStreamHandler uRLStreamHandler33 = null;
+java.net.URL uRL34 = new java.net.URL(uRL13, "SummaryStatistics:\nn: 3\nmin: 10.0\nmax: 100.0\nmean: 47.33333333333333\ngeometric mean: 31.748021039363998\nvariance: 2201.333333333333\nsum of squares: 11124.0\nstandard deviation: 46.91836882643442\nsum of logs: 10.373491181781864\n4542872739220029233", uRLStreamHandler33);

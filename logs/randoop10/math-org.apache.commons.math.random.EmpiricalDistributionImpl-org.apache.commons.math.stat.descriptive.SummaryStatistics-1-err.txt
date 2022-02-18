@@ -1,0 +1,26 @@
+
+
+The system is out of resources.
+Consult the following stack trace for details.
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at com.sun.tools.javac.util.UnsharedNameTable.<init>(UnsharedNameTable.java:72)
+	at com.sun.tools.javac.util.UnsharedNameTable.<init>(UnsharedNameTable.java:76)
+	at com.sun.tools.javac.util.Names.createTable(Names.java:322)
+	at com.sun.tools.javac.util.Names.<init>(Names.java:185)
+	at com.sun.tools.javac.util.Names.instance(Names.java:44)
+	at com.sun.tools.javac.main.JavaCompiler.<init>(JavaCompiler.java:345)
+	at com.sun.tools.javac.main.JavaCompiler.instance(JavaCompiler.java:88)
+	at com.sun.tools.javac.main.Main.compile(Main.java:485)
+	at com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:129)
+	at com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:138)
+	at randoop.compile.SequenceCompiler.compile(SequenceCompiler.java:164)
+	at randoop.compile.SequenceCompiler.isCompilable(SequenceCompiler.java:93)
+	at randoop.test.CompilableTestPredicate.testSource(CompilableTestPredicate.java:102)
+	at randoop.test.CompilableTestPredicate.test(CompilableTestPredicate.java:81)
+	at randoop.test.CompilableTestPredicate.test(CompilableTestPredicate.java:20)
+	at java.util.function.Predicate.lambda$and$0(Predicate.java:69)
+	at java.util.function.Predicate$$Lambda$81/1561408618.test(Unknown Source)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:347)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)

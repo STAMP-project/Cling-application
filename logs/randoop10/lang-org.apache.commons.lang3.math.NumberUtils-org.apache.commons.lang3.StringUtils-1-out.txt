@@ -1,0 +1,122 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 6 classes.
+PUBLIC MEMBERS=469
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-11T09:34:20.282Z     215M used)
+Progress update: steps=1000, test inputs generated=925, failing inputs=10      (2022-02-11T09:34:33.246Z     767M used)
+Progress update: steps=2000, test inputs generated=1863, failing inputs=17      (2022-02-11T09:34:46.431Z     1.06G used)
+Progress update: steps=3000, test inputs generated=2818, failing inputs=32      (2022-02-11T09:35:01.998Z     166M used)
+Progress update: steps=4000, test inputs generated=3750, failing inputs=38      (2022-02-11T09:35:16.315Z     549M used)
+Progress update: steps=4300, test inputs generated=4032, failing inputs=39      (2022-02-11T09:35:20.296Z     1.32G used)
+Progress update: steps=5000, test inputs generated=4689, failing inputs=48      (2022-02-11T09:35:31.190Z     661M used)
+Progress update: steps=6000, test inputs generated=5602, failing inputs=58      (2022-02-11T09:35:41.870Z     1.15G used)
+Progress update: steps=7000, test inputs generated=6525, failing inputs=70      (2022-02-11T09:35:51.143Z     782M used)
+Progress update: steps=8000, test inputs generated=7432, failing inputs=79      (2022-02-11T09:36:00.380Z     623M used)Long execution time 11 sec for
+java.lang.String str2 = org.apache.commons.lang3.StringUtils.center("de-DE", 1073741825);
+
+
+Progress update: steps=8518, test inputs generated=7898, failing inputs=85      (2022-02-11T09:36:20.297Z     3.30G used)Long execution time 10 sec for
+java.lang.String str3 = org.apache.commons.lang3.StringUtils.center("fra", 1073741825, "FR");
+
+
+Progress update: steps=9000, test inputs generated=8345, failing inputs=88      (2022-02-11T09:36:32.527Z     2.44G used)
+Progress update: steps=10000, test inputs generated=9263, failing inputs=101      (2022-02-11T09:36:42.581Z     2.42G used)Long execution time 11 sec for
+java.lang.String str3 = org.apache.commons.lang3.StringUtils.leftPad("Ko", 1073741825, 'u');
+
+
+Progress update: steps=11000, test inputs generated=10180, failing inputs=107      (2022-02-11T09:37:04.080Z     2.26G used)
+Progress update: steps=12000, test inputs generated=11097, failing inputs=114      (2022-02-11T09:37:13.908Z     3.00G used)
+Progress update: steps=13000, test inputs generated=12011, failing inputs=129      (2022-02-11T09:37:24.578Z     2.98G used)
+Progress update: steps=13312, test inputs generated=12301, failing inputs=133      (2022-02-11T09:37:28.103Z     2,36G used)
+Progress update: steps=14000, test inputs generated=12923, failing inputs=137      (2022-02-11T09:37:35.801Z     3.16G used)Long execution time 10 sec for
+java.lang.String str3 = org.apache.commons.lang3.StringUtils.rightPad("", 1073741825, 'a');
+
+
+Progress update: steps=15000, test inputs generated=13823, failing inputs=153      (2022-02-11T09:37:57.277Z     3.12G used)
+Progress update: steps=16000, test inputs generated=14736, failing inputs=165      (2022-02-11T09:38:08.354Z     2.31G used)
+Progress update: steps=17000, test inputs generated=15629, failing inputs=180      (2022-02-11T09:38:18.938Z     3.51G used)
+Progress update: steps=17849, test inputs generated=16395, failing inputs=186      (2022-02-11T09:38:28.104Z     2.84G used)
+Progress update: steps=17890, test inputs generated=16429, failing inputs=186      (2022-02-11T09:39:28.104Z     2.77G used)Long execution time 5903 sec for
+java.math.BigInteger bigInteger2 = new java.math.BigInteger("h", (int)' ');
+java.math.BigInteger bigInteger4 = bigInteger2.flipBit(1073741825);
+
+
+Progress update: steps=17890, test inputs generated=16430, failing inputs=186      (2022-02-11T11:16:51.871Z     2.31G used)
+Normal method executions: 9291542
+Exceptional method executions: 2755
+
+Average method execution time (normal termination):      0.636
+Average method execution time (exceptional termination): 16.3
+Approximate memory usage 2.31G
+Explorer = ForwardGenerator(steps: 17890, null steps: 1460, num_sequences_generated: 16430;
+    allSequences: 16430, regresson seqs: 16171, error seqs: 186=186=186, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 73;
+    runtimePrimitivesSeen:1004)
+
+Error-revealing test output:
+Error-revealing test count: 186
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/ErrorTest0.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 12222 regression sequences.
+
+Regression test output:
+Regression test count: 12222
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest0.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest1.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest2.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest3.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest4.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest5.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest6.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest7.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest8.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest9.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest10.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest11.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest12.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest13.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest14.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest15.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest16.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest17.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest18.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest19.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest20.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest21.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest22.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest23.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest24.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.math.NumberUtils-org.apache.commons.lang3.StringUtils-1/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  java.util.Locale.getDisplayName(java.util.Locale)
+  Possibly flaky:  java.util.Locale.getDisplayName()
+  Possibly flaky:  java.util.Locale.filter(java.util.List<java.util.Locale.LanguageRange>,java.util.Collection<java.util.Locale>)
+  Possibly flaky:  java.util.Locale.setDefault(java.util.Locale)
+  Possibly flaky:  java.util.Collections.addAll(java.util.Collection<java.util.Locale>,java.util.Locale[])
+  Possibly flaky:  java.util.Locale.getDisplayVariant(java.util.Locale)
+  Possibly flaky:  java.util.Locale.lookup(java.util.List<java.util.Locale.LanguageRange>,java.util.Collection<java.util.Locale>)
+  Possibly flaky:  java.util.Locale.getDefault()
+  Possibly flaky:  java.util.Locale.getUnicodeLocaleKeys()
+  Possibly flaky:  java.util.Locale.filter(java.util.List<java.util.Locale.LanguageRange>,java.util.Collection<java.util.Locale>,java.util.Locale.FilteringMode)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 23).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .
