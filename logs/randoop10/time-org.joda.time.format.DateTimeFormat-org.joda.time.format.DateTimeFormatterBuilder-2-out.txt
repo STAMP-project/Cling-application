@@ -1,0 +1,55 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 341 classes.
+PUBLIC MEMBERS=5053
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=5, test inputs generated=0, failing inputs=0      (2022-02-21T09:53:48.739Z     132M used)
+Progress update: steps=1000, test inputs generated=510, failing inputs=0      (2022-02-21T09:54:11.389Z     2.08G used)Long execution time 15 sec for
+java.nio.ByteBuffer byteBuffer1 = java.nio.ByteBuffer.allocate(881000000);
+byte[] byteArray5 = new byte[] { (byte)0, (byte)-1, (byte)1 };
+java.nio.ByteBuffer byteBuffer6 = byteBuffer1.put(byteArray5);
+java.nio.ByteBuffer byteBuffer8 = java.nio.ByteBuffer.allocate(881000000);
+byte[] byteArray12 = new byte[] { (byte)0, (byte)-1, (byte)1 };
+java.nio.ByteBuffer byteBuffer13 = byteBuffer8.put(byteArray12);
+java.nio.ByteBuffer byteBuffer16 = byteBuffer1.get(byteArray12, 12, 17);
+
+
+Progress update: steps=1813, test inputs generated=1103, failing inputs=1      (2022-02-21T09:54:48.745Z     3.94G used)Long execution time 11 sec for
+java.time.Instant instant0 = java.time.Instant.now();
+java.time.Instant instant2 = instant0.minusSeconds(100000L);
+java.time.ZoneId zoneId3 = java.time.ZoneId.systemDefault();
+java.time.ZonedDateTime zonedDateTime4 = java.time.ZonedDateTime.ofInstant(instant2, zoneId3);
+java.time.temporal.TemporalQuery<java.lang.Boolean> booleanTemporalQuery5 = java.time.format.DateTimeFormatter.parsedLeapSecond();
+java.lang.Boolean boolean6 = zonedDateTime4.query(booleanTemporalQuery5);
+java.time.ZonedDateTime zonedDateTime8 = zonedDateTime4.minusWeeks(10L);
+java.time.ZonedDateTime zonedDateTime10 = zonedDateTime4.plusHours((long)31);
+java.time.Instant instant11 = java.time.Instant.now();
+java.time.Instant instant13 = instant11.minusSeconds(100000L);
+java.time.ZoneId zoneId14 = java.time.ZoneId.systemDefault();
+java.time.ZonedDateTime zonedDateTime15 = java.time.ZonedDateTime.ofInstant(instant13, zoneId14);
+java.time.temporal.TemporalQuery<java.lang.Boolean> booleanTemporalQuery16 = java.time.format.DateTimeFormatter.parsedLeapSecond();
+java.lang.Boolean boolean17 = zonedDateTime15.query(booleanTemporalQuery16);
+java.time.ZonedDateTime zonedDateTime19 = zonedDateTime15.minusWeeks(10L);
+java.time.Instant instant20 = java.time.Instant.now();
+java.time.Instant instant22 = instant20.minusSeconds(100000L);
+java.time.ZoneId zoneId23 = java.time.ZoneId.systemDefault();
+java.time.ZonedDateTime zonedDateTime24 = java.time.ZonedDateTime.ofInstant(instant22, zoneId23);
+java.time.temporal.TemporalQuery<java.lang.Boolean> booleanTemporalQuery25 = java.time.format.DateTimeFormatter.parsedLeapSecond();
+java.lang.Boolean boolean26 = zonedDateTime24.query(booleanTemporalQuery25);
+java.time.ZonedDateTime zonedDateTime28 = zonedDateTime24.minusWeeks(10L);
+boolean boolean29 = zonedDateTime19.isEqual((java.time.chrono.ChronoZonedDateTime<java.time.LocalDate>)zonedDateTime24);
+java.time.Period period31 = java.time.Period.ofMonths((int)'#');
+java.time.Period period33 = period31.withYears(9);
+java.time.Period period35 = period33.plusMonths((long)(short)1);
+java.time.ZonedDateTime zonedDateTime36 = zonedDateTime19.minus((java.time.temporal.TemporalAmount)period33);
+java.time.ZonedDateTime zonedDateTime37 = zonedDateTime4.plus((java.time.temporal.TemporalAmount)period33);
+java.time.ZonedDateTime zonedDateTime38 = zonedDateTime4.withFixedOffsetZone();
+java.time.ZoneId zoneId39 = zonedDateTime4.getZone();
+
+
+Progress update: steps=2000, test inputs generated=1250, failing inputs=1      (2022-02-21T09:55:06.441Z     3.65G used)
+Progress update: steps=3000, test inputs generated=2033, failing inputs=7      (2022-02-21T09:55:43.175Z     3.79G used)
+Progress update: steps=3190, test inputs generated=2193, failing inputs=7      (2022-02-21T09:55:48.745Z     3.90G used)

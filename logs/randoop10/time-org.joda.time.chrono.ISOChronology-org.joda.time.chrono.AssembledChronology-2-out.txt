@@ -1,0 +1,91 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 343 classes.
+PUBLIC MEMBERS=5139
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-21T09:33:47.408Z     145M used)
+Progress update: steps=1000, test inputs generated=448, failing inputs=0      (2022-02-21T09:33:58.990Z     50.6M used)
+Progress update: steps=2000, test inputs generated=1099, failing inputs=4      (2022-02-21T09:34:07.803Z     124M used)
+Progress update: steps=3000, test inputs generated=1828, failing inputs=4      (2022-02-21T09:34:17.637Z     1.10G used)
+Progress update: steps=4000, test inputs generated=2606, failing inputs=8      (2022-02-21T09:34:30.101Z     1.24G used)
+Progress update: steps=4895, test inputs generated=3312, failing inputs=13      (2022-02-21T09:34:47.412Z     1.55G used)
+Progress update: steps=5000, test inputs generated=3387, failing inputs=15      (2022-02-21T09:34:49.839Z     1.72G used)Long generation time 1786 msec for null sequence.
+Long generation time 1661 msec (= 1661 + 0) for
+java.time.LocalDate localDate0 = java.time.LocalDate.MIN;
+java.time.LocalDate localDate2 = localDate0.plusYears((long)':');
+java.time.format.DateTimeFormatter dateTimeFormatter3 = java.time.format.DateTimeFormatter.ISO_LOCAL_DATE;
+java.time.temporal.ValueRange valueRange6 = java.time.temporal.ValueRange.of(0L, (long)(byte)100);
+java.time.temporal.ChronoField chronoField8 = java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH;
+long long9 = valueRange6.checkValidValue((long)' ', (java.time.temporal.TemporalField)chronoField8);
+java.time.temporal.ValueRange valueRange10 = chronoField8.range();
+java.time.OffsetTime offsetTime11 = java.time.OffsetTime.MAX;
+java.time.OffsetTime offsetTime12 = java.time.OffsetTime.MAX;
+java.time.Duration duration13 = java.time.Duration.between((java.time.temporal.Temporal)offsetTime11, (java.time.temporal.Temporal)offsetTime12);
+boolean boolean14 = chronoField8.isSupportedBy((java.time.temporal.TemporalAccessor)offsetTime12);
+java.time.ZoneId zoneId15 = java.time.ZoneId.from((java.time.temporal.TemporalAccessor)offsetTime12);
+java.time.format.DateTimeFormatter dateTimeFormatter16 = dateTimeFormatter3.withZone(zoneId15);
+java.time.LocalDateTime localDateTime17 = java.time.LocalDateTime.now(zoneId15);
+java.time.LocalDateTime localDateTime19 = localDateTime17.plusMinutes((long)292278994);
+boolean boolean21 = localDateTime17.equals((java.lang.Object)"PT0.035S");
+java.time.chrono.Chronology chronology22 = localDateTime17.getChronology();
+java.time.chrono.ChronoLocalDate chronoLocalDate24 = chronology22.dateEpochDay((long)5);
+int int25 = chronoLocalDate24.lengthOfMonth();
+int int26 = localDate0.compareTo(chronoLocalDate24);
+java.time.format.DateTimeFormatter dateTimeFormatter27 = java.time.format.DateTimeFormatter.ISO_LOCAL_DATE;
+java.time.temporal.ValueRange valueRange30 = java.time.temporal.ValueRange.of(0L, (long)(byte)100);
+java.time.temporal.ChronoField chronoField32 = java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH;
+long long33 = valueRange30.checkValidValue((long)' ', (java.time.temporal.TemporalField)chronoField32);
+java.time.temporal.ValueRange valueRange34 = chronoField32.range();
+java.time.OffsetTime offsetTime35 = java.time.OffsetTime.MAX;
+java.time.OffsetTime offsetTime36 = java.time.OffsetTime.MAX;
+java.time.Duration duration37 = java.time.Duration.between((java.time.temporal.Temporal)offsetTime35, (java.time.temporal.Temporal)offsetTime36);
+boolean boolean38 = chronoField32.isSupportedBy((java.time.temporal.TemporalAccessor)offsetTime36);
+java.time.ZoneId zoneId39 = java.time.ZoneId.from((java.time.temporal.TemporalAccessor)offsetTime36);
+java.time.format.DateTimeFormatter dateTimeFormatter40 = dateTimeFormatter27.withZone(zoneId39);
+java.time.LocalDateTime localDateTime41 = java.time.LocalDateTime.now(zoneId39);
+java.time.OffsetDateTime offsetDateTime42 = java.time.OffsetDateTime.now(zoneId39);
+java.time.OffsetDateTime offsetDateTime44 = offsetDateTime42.plusDays(0L);
+java.time.OffsetDateTime offsetDateTime46 = offsetDateTime44.minusNanos((long)'4');
+java.time.DayOfWeek dayOfWeek47 = offsetDateTime46.getDayOfWeek();
+java.time.OffsetTime offsetTime48 = java.time.OffsetTime.MAX;
+java.time.OffsetTime offsetTime50 = offsetTime48.withMinute((int)(byte)0);
+java.time.ZoneId zoneId51 = java.time.ZoneId.from((java.time.temporal.TemporalAccessor)offsetTime50);
+java.time.ZonedDateTime zonedDateTime52 = offsetDateTime46.atZoneSameInstant(zoneId51);
+java.time.chrono.ChronoLocalDateTime<java.time.LocalDate> localDateChronoLocalDateTime53 = zonedDateTime52.toLocalDateTime();
+java.time.LocalTime localTime56 = java.time.LocalTime.ofSecondOfDay(0L);
+java.time.temporal.TemporalUnit temporalUnit57 = null;
+boolean boolean58 = localTime56.isSupported(temporalUnit57);
+java.time.OffsetDateTime offsetDateTime60 = java.time.OffsetDateTime.MAX;
+java.time.LocalTime localTime63 = java.time.LocalTime.ofSecondOfDay(0L);
+java.time.temporal.TemporalUnit temporalUnit64 = null;
+boolean boolean65 = localTime63.isSupported(temporalUnit64);
+java.time.temporal.ChronoField chronoField66 = java.time.temporal.ChronoField.MINUTE_OF_DAY;
+boolean boolean67 = localTime63.isSupported((java.time.temporal.TemporalField)chronoField66);
+java.time.temporal.TemporalUnit temporalUnit68 = chronoField66.getBaseUnit();
+java.time.OffsetDateTime offsetDateTime69 = offsetDateTime60.plus((-525948136456825L), temporalUnit68);
+java.time.LocalTime localTime70 = localTime56.plus(1009843200000L, temporalUnit68);
+java.time.ZonedDateTime zonedDateTime71 = zonedDateTime52.plus((long)(byte)0, temporalUnit68);
+java.time.LocalDate localDate72 = zonedDateTime71.toLocalDate();
+java.time.format.DateTimeFormatter dateTimeFormatter73 = java.time.format.DateTimeFormatter.ISO_LOCAL_DATE;
+java.time.temporal.ValueRange valueRange76 = java.time.temporal.ValueRange.of(0L, (long)(byte)100);
+java.time.temporal.ChronoField chronoField78 = java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH;
+long long79 = valueRange76.checkValidValue((long)' ', (java.time.temporal.TemporalField)chronoField78);
+java.time.temporal.ValueRange valueRange80 = chronoField78.range();
+java.time.OffsetTime offsetTime81 = java.time.OffsetTime.MAX;
+java.time.OffsetTime offsetTime82 = java.time.OffsetTime.MAX;
+java.time.Duration duration83 = java.time.Duration.between((java.time.temporal.Temporal)offsetTime81, (java.time.temporal.Temporal)offsetTime82);
+boolean boolean84 = chronoField78.isSupportedBy((java.time.temporal.TemporalAccessor)offsetTime82);
+java.time.ZoneId zoneId85 = java.time.ZoneId.from((java.time.temporal.TemporalAccessor)offsetTime82);
+java.time.format.DateTimeFormatter dateTimeFormatter86 = dateTimeFormatter73.withZone(zoneId85);
+java.lang.String str87 = localDate72.format(dateTimeFormatter86);
+java.time.OffsetDateTime offsetDateTime88 = java.time.OffsetDateTime.MAX;
+java.time.temporal.ChronoField chronoField89 = java.time.temporal.ChronoField.ALIGNED_WEEK_OF_MONTH;
+int int90 = offsetDateTime88.get((java.time.temporal.TemporalField)chronoField89);
+boolean boolean91 = localDate72.isSupported((java.time.temporal.TemporalField)chronoField89);
+int int92 = chronoLocalDate24.get((java.time.temporal.TemporalField)chronoField89);
+
+
+Progress update: steps=6000, test inputs generated=4169, failing inputs=22      (2022-02-21T09:35:17.390Z     3.62G used)Long generation time 1331 msec for null sequence.

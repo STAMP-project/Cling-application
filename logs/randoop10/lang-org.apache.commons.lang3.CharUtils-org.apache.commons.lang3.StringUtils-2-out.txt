@@ -1,0 +1,109 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 268 classes.
+PUBLIC MEMBERS=3148
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-21T09:13:51.982Z     451M used)
+Progress update: steps=1000, test inputs generated=535, failing inputs=0      (2022-02-21T09:14:13.354Z     2.63G used)
+Progress update: steps=2000, test inputs generated=1218, failing inputs=0      (2022-02-21T09:14:23.847Z     2.81G used)
+Progress update: steps=3000, test inputs generated=1947, failing inputs=0      (2022-02-21T09:14:37.388Z     2.58G used)
+Progress update: steps=3428, test inputs generated=2262, failing inputs=0      (2022-02-21T09:14:51.996Z     3.16G used)
+Progress update: steps=4000, test inputs generated=2700, failing inputs=0      (2022-02-21T09:15:01.740Z     3.41G used)
+Progress update: steps=5000, test inputs generated=3434, failing inputs=0      (2022-02-21T09:15:16.897Z     3.42G used)
+Progress update: steps=5836, test inputs generated=4047, failing inputs=0      (2022-02-21T09:15:52.779Z     3.60G used)
+Progress update: steps=6000, test inputs generated=4172, failing inputs=0      (2022-02-21T09:16:05.989Z     3.68G used)
+Progress update: steps=6385, test inputs generated=4464, failing inputs=0      (2022-02-21T09:16:53.008Z     3.60G used)
+Progress update: steps=6950, test inputs generated=4915, failing inputs=0      (2022-02-21T09:17:53.863Z     3.60G used)
+Progress update: steps=7000, test inputs generated=4956, failing inputs=0      (2022-02-21T09:18:00.285Z     3.60G used)
+Progress update: steps=7437, test inputs generated=5305, failing inputs=0      (2022-02-21T09:18:54.399Z     3.60G used)
+Progress update: steps=8000, test inputs generated=5745, failing inputs=0      (2022-02-21T09:19:52.407Z     3.70G used)
+Progress update: steps=8006, test inputs generated=5750, failing inputs=0      (2022-02-21T09:19:54.819Z     3.61G used)
+Progress update: steps=8017, test inputs generated=5759, failing inputs=0      (2022-02-21T09:20:54.820Z     3.65G used)Long execution time 65 sec for
+java.nio.ByteBuffer byteBuffer1 = java.nio.ByteBuffer.allocateDirect(399000000);
+java.nio.ByteBuffer byteBuffer3 = byteBuffer1.putInt(607000000);
+char char4 = byteBuffer3.getChar();
+
+Long generation time 1086 msec for null sequence.
+Long generation time 1196 msec (= 1196 + 0) for
+java.util.Comparator<java.time.LocalDate> localDateComparator0 = java.util.Comparator.naturalOrder();
+
+
+Progress update: steps=8471, test inputs generated=6112, failing inputs=0      (2022-02-21T09:21:55.245Z     3.61G used)
+Progress update: steps=9000, test inputs generated=6536, failing inputs=0      (2022-02-21T09:22:54.629Z     3.70G used)
+Progress update: steps=9003, test inputs generated=6538, failing inputs=0      (2022-02-21T09:22:55.525Z     3.61G used)
+Progress update: steps=9484, test inputs generated=6929, failing inputs=0      (2022-02-21T09:23:52.051Z     3.70G used)
+Normal method executions: 6170043
+Exceptional method executions: 1738
+
+Average method execution time (normal termination):      0.0182
+Average method execution time (exceptional termination): 20.0
+Approximate memory usage 3.70G
+Explorer = ForwardGenerator(steps: 9484, null steps: 2555, num_sequences_generated: 6929;
+    allSequences: 6929, regresson seqs: 6668, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 261;
+    runtimePrimitivesSeen:533)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 3962 regression sequences.
+
+Regression test output:
+Regression test count: 3962
+Writing regression JUnit tests...
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.CharUtils-org.apache.commons.lang3.StringUtils-2/RegressionTest0.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.CharUtils-org.apache.commons.lang3.StringUtils-2/RegressionTest1.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.CharUtils-org.apache.commons.lang3.StringUtils-2/RegressionTest2.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.CharUtils-org.apache.commons.lang3.StringUtils-2/RegressionTest3.java
+Created file /experiment/results/randoop10/lang-org.apache.commons.lang3.CharUtils-org.apache.commons.lang3.StringUtils-2/RegressionTest4.java
+unhandled diagnostic: ???? try ?????????????java.io.IOException
+GenTests.writeTestFiles threw an exception
+randoop.main.RandoopBug: Compilation error during flaky-test filtering: fileCompiler.compile(sourceFile, /tmp/checkRegressionTest555953522669004466973)
+Use --print-non-compiling-file to print the file with the compilation error.
+Diagnostics:
+[results/randoop10/lang-org.apache.commons.lang3.CharUtils-org.apache.commons.lang3.StringUtils-2/RegressionTest5.java:15368: ??: ???? try ?????????????java.io.IOException
+        } catch (java.io.IOException e) {
+          ^, results/randoop10/lang-org.apache.commons.lang3.CharUtils-org.apache.commons.lang3.StringUtils-2/RegressionTest5.java:17300: ??: ???? try ?????????????java.nio.channels.ClosedChannelException
+        } catch (java.nio.channels.ClosedChannelException e) {
+          ^, ?: results/randoop10/lang-org.apache.commons.lang3.CharUtils-org.apache.commons.lang3.StringUtils-2/RegressionTest5.java?????????? API?, ?: ??????, ??? -Xlint:deprecation ?????]
+
+	at randoop.output.FailingAssertionCommentWriter.compilationError(FailingAssertionCommentWriter.java:263)
+	at randoop.output.FailingAssertionCommentWriter.commentCatchStatements(FailingAssertionCommentWriter.java:226)
+	at randoop.output.FailingAssertionCommentWriter.writeClassCode(FailingAssertionCommentWriter.java:136)
+	at randoop.main.GenTests.writeTestFiles(GenTests.java:878)
+	at randoop.main.GenTests.handle(GenTests.java:575)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: randoop.compile.FileCompiler$FileCompilerException: Compilation failed
+	at randoop.compile.FileCompiler.compile(FileCompiler.java:64)
+	at randoop.compile.FileCompiler.compile(FileCompiler.java:77)
+	at randoop.output.FailingAssertionCommentWriter.compileTestClass(FailingAssertionCommentWriter.java:573)
+	at randoop.output.FailingAssertionCommentWriter.writeClassCode(FailingAssertionCommentWriter.java:133)
+	... 4 more
+
+Randoop failed in an unexpected way.
+Please report at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .
+randoop.main.RandoopBug: Compilation error during flaky-test filtering: fileCompiler.compile(sourceFile, /tmp/checkRegressionTest555953522669004466973)
+Use --print-non-compiling-file to print the file with the compilation error.
+Diagnostics:
+[results/randoop10/lang-org.apache.commons.lang3.CharUtils-org.apache.commons.lang3.StringUtils-2/RegressionTest5.java:15368: ??: ???? try ?????????????java.io.IOException
+        } catch (java.io.IOException e) {
+          ^, results/randoop10/lang-org.apache.commons.lang3.CharUtils-org.apache.commons.lang3.StringUtils-2/RegressionTest5.java:17300: ??: ???? try ?????????????java.nio.channels.ClosedChannelException
+        } catch (java.nio.channels.ClosedChannelException e) {
+          ^, ?: results/randoop10/lang-org.apache.commons.lang3.CharUtils-org.apache.commons.lang3.StringUtils-2/RegressionTest5.java?????????? API?, ?: ??????, ??? -Xlint:deprecation ?????]
+
+	at randoop.output.FailingAssertionCommentWriter.compilationError(FailingAssertionCommentWriter.java:263)
+	at randoop.output.FailingAssertionCommentWriter.commentCatchStatements(FailingAssertionCommentWriter.java:226)
+	at randoop.output.FailingAssertionCommentWriter.writeClassCode(FailingAssertionCommentWriter.java:136)
+	at randoop.main.GenTests.writeTestFiles(GenTests.java:878)
+	at randoop.main.GenTests.handle(GenTests.java:575)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: randoop.compile.FileCompiler$FileCompilerException: Compilation failed
+	at randoop.compile.FileCompiler.compile(FileCompiler.java:64)
+	at randoop.compile.FileCompiler.compile(FileCompiler.java:77)
+	at randoop.output.FailingAssertionCommentWriter.compileTestClass(FailingAssertionCommentWriter.java:573)
+	at randoop.output.FailingAssertionCommentWriter.writeClassCode(FailingAssertionCommentWriter.java:133)
+	... 4 more

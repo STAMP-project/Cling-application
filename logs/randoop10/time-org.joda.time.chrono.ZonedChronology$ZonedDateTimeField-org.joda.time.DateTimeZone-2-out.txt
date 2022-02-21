@@ -1,0 +1,847 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+Cannot instantiate non-accessible class org.joda.time.chrono.ZonedChronology$ZonedDateTimeField specified via --testclass or --classlist.
+
+Will try to generate tests for 340 out of 341 classes.
+PUBLIC MEMBERS=5022
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-21T09:33:54.218Z     118M used)
+Progress update: steps=1000, test inputs generated=503, failing inputs=0      (2022-02-21T09:34:07.154Z     2.86G used)Long generation time 5371 msec (= 5371 + 0) for
+org.joda.time.LocalDate localDate0 = new org.joda.time.LocalDate();
+int int1 = localDate0.getYear();
+org.joda.time.DateTimeZone dateTimeZone4 = null;
+org.joda.time.Interval interval5 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone4);
+org.joda.time.DateTime dateTime6 = interval5.getEnd();
+org.joda.time.LocalDate localDate7 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime8 = dateTime6.withFields((org.joda.time.ReadablePartial)localDate7);
+org.joda.time.PeriodType periodType9 = null;
+org.joda.time.Period period10 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate0, (org.joda.time.ReadablePartial)localDate7, periodType9);
+org.joda.time.DateTimeZone dateTimeZone13 = null;
+org.joda.time.Interval interval14 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone13);
+org.joda.time.DateTime dateTime15 = interval14.getEnd();
+org.joda.time.DateTime dateTime17 = dateTime15.plusYears((int)(short)-1);
+org.joda.time.DateTimeZone dateTimeZone20 = null;
+org.joda.time.Interval interval21 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone20);
+org.joda.time.DateTime dateTime22 = interval21.getEnd();
+org.joda.time.DateTime dateTime24 = dateTime22.plusYears((int)(short)-1);
+boolean boolean25 = dateTime15.isEqual((org.joda.time.ReadableInstant)dateTime22);
+org.joda.time.DateTimeZone dateTimeZone28 = null;
+org.joda.time.Interval interval29 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone28);
+org.joda.time.DateTime dateTime30 = interval29.getEnd();
+org.joda.time.DateTime.Property property31 = dateTime30.era();
+boolean boolean32 = dateTime15.isBefore((org.joda.time.ReadableInstant)dateTime30);
+org.joda.time.Duration duration33 = period10.toDurationTo((org.joda.time.ReadableInstant)dateTime15);
+org.joda.time.Duration duration35 = org.joda.time.Duration.standardMinutes((long)(byte)10);
+long long36 = duration35.getMillis();
+org.joda.time.Duration duration37 = duration33.minus((org.joda.time.ReadableDuration)duration35);
+boolean boolean39 = duration33.equals((java.lang.Object)34452080);
+
+Long generation time 4530 msec (= 4530 + 0) for
+java.util.GregorianCalendar gregorianCalendar3 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+java.time.ZonedDateTime zonedDateTime4 = gregorianCalendar3.toZonedDateTime();
+java.lang.Object obj5 = gregorianCalendar3.clone();
+
+
+Progress update: steps=2000, test inputs generated=1183, failing inputs=0      (2022-02-21T09:34:40.379Z     3.31G used)Long generation time 4493 msec (= 4493 + 0) for
+org.joda.time.MutableDateTime mutableDateTime0 = org.joda.time.MutableDateTime.now();
+org.joda.time.DateTimeZone dateTimeZone3 = null;
+org.joda.time.Interval interval4 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone3);
+org.joda.time.DateTime dateTime5 = interval4.getEnd();
+org.joda.time.DateTime dateTime7 = dateTime5.plusYears((int)(short)-1);
+int int8 = dateTime7.getHourOfDay();
+mutableDateTime0.setMillis((org.joda.time.ReadableInstant)dateTime7);
+org.joda.time.YearMonthDay yearMonthDay10 = dateTime7.toYearMonthDay();
+int int11 = yearMonthDay10.size();
+
+Long generation time 1970 msec (= 1970 + 0) for
+org.joda.time.PeriodType periodType1 = null;
+java.util.Properties properties2 = null;
+java.util.Properties properties3 = new java.util.Properties(properties2);
+org.joda.time.DateTimeZone dateTimeZone7 = null;
+org.joda.time.Interval interval8 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone7);
+org.joda.time.DateTime dateTime9 = interval8.getEnd();
+org.joda.time.LocalDate localDate10 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime11 = dateTime9.withFields((org.joda.time.ReadablePartial)localDate10);
+org.joda.time.Chronology chronology12 = dateTime11.getChronology();
+java.util.Locale locale13 = null;
+org.joda.time.format.DateTimeParserBucket dateTimeParserBucket16 = new org.joda.time.format.DateTimeParserBucket((long)(byte)-1, chronology12, locale13, (java.lang.Integer)16, 16);
+org.joda.time.Chronology chronology17 = chronology12.withUTC();
+java.util.Comparator<org.joda.time.base.BaseDuration> baseDurationComparator18 = java.util.Comparator.naturalOrder();
+boolean boolean19 = properties3.remove((java.lang.Object)chronology12, (java.lang.Object)baseDurationComparator18);
+org.joda.time.MutablePeriod mutablePeriod20 = new org.joda.time.MutablePeriod((long)' ', periodType1, chronology12);
+mutablePeriod20.addHours(22);
+org.joda.time.DateTimeZone dateTimeZone28 = null;
+org.joda.time.Interval interval29 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone28);
+org.joda.time.DateTime dateTime30 = interval29.getEnd();
+org.joda.time.LocalDate localDate31 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime32 = dateTime30.withFields((org.joda.time.ReadablePartial)localDate31);
+org.joda.time.Chronology chronology33 = dateTime32.getChronology();
+java.util.Locale locale34 = null;
+org.joda.time.format.DateTimeParserBucket dateTimeParserBucket37 = new org.joda.time.format.DateTimeParserBucket((long)(byte)-1, chronology33, locale34, (java.lang.Integer)16, 16);
+org.joda.time.Chronology chronology38 = chronology33.withUTC();
+org.joda.time.DateTimeField dateTimeField39 = chronology38.era();
+mutablePeriod20.setPeriod((long)22, (long)0, chronology38);
+mutablePeriod20.addMillis((int)(byte)0);
+
+
+Progress update: steps=2260, test inputs generated=1377, failing inputs=0      (2022-02-21T09:34:55.212Z     3.63G used)Long generation time 1889 msec (= 1889 + 0) for
+org.joda.time.LocalDate localDate0 = new org.joda.time.LocalDate();
+int int1 = localDate0.getYear();
+org.joda.time.DateTimeZone dateTimeZone4 = null;
+org.joda.time.Interval interval5 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone4);
+org.joda.time.DateTime dateTime6 = interval5.getEnd();
+org.joda.time.LocalDate localDate7 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime8 = dateTime6.withFields((org.joda.time.ReadablePartial)localDate7);
+org.joda.time.PeriodType periodType9 = null;
+org.joda.time.Period period10 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate0, (org.joda.time.ReadablePartial)localDate7, periodType9);
+org.joda.time.DateTimeZone dateTimeZone13 = null;
+org.joda.time.Interval interval14 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone13);
+org.joda.time.DateTime dateTime15 = interval14.getEnd();
+org.joda.time.DateTime dateTime17 = dateTime15.plusYears((int)(short)-1);
+org.joda.time.DateTimeZone dateTimeZone20 = null;
+org.joda.time.Interval interval21 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone20);
+org.joda.time.DateTime dateTime22 = interval21.getEnd();
+org.joda.time.DateTime dateTime24 = dateTime22.plusYears((int)(short)-1);
+boolean boolean25 = dateTime15.isEqual((org.joda.time.ReadableInstant)dateTime22);
+org.joda.time.DateTimeZone dateTimeZone28 = null;
+org.joda.time.Interval interval29 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone28);
+org.joda.time.DateTime dateTime30 = interval29.getEnd();
+org.joda.time.DateTime.Property property31 = dateTime30.era();
+boolean boolean32 = dateTime15.isBefore((org.joda.time.ReadableInstant)dateTime30);
+org.joda.time.Duration duration33 = period10.toDurationTo((org.joda.time.ReadableInstant)dateTime15);
+org.joda.time.Period period34 = period10.negated();
+org.joda.time.Period period36 = period34.minusMonths(16);
+org.joda.time.Period period37 = period36.negated();
+
+Long generation time 1952 msec (= 1952 + 0) for
+java.nio.ShortBuffer shortBuffer1 = java.nio.ShortBuffer.allocate(17);
+java.nio.ShortBuffer shortBuffer3 = java.nio.ShortBuffer.allocate(17);
+java.nio.ShortBuffer shortBuffer4 = shortBuffer1.put(shortBuffer3);
+short[] shortArray8 = new short[] { (byte)1, (short)0, (byte)10 };
+java.nio.ShortBuffer shortBuffer11 = shortBuffer3.put(shortArray8, 1, 0);
+
+Long generation time 1793 msec (= 1792 + 0) for
+java.util.Comparator<org.joda.time.ReadableInstant> readableInstantComparator0 = java.util.Comparator.naturalOrder();
+
+Long generation time 1177 msec (= 1177 + 0) for
+java.time.Clock clock0 = java.time.Clock.systemDefaultZone();
+java.time.Period period4 = java.time.Period.of((int)(byte)-1, (int)(short)0, 16);
+java.time.chrono.IsoChronology isoChronology5 = period4.getChronology();
+java.time.LocalDate localDate8 = isoChronology5.dateYearDay((int)(byte)0, (int)'#');
+java.lang.String str9 = isoChronology5.toString();
+java.time.chrono.ChronoLocalDate chronoLocalDate10 = isoChronology5.dateNow();
+java.time.ZoneId zoneId12 = java.time.ZoneId.of("-1");
+java.time.LocalDate localDate13 = java.time.LocalDate.now(zoneId12);
+java.time.LocalDate localDate14 = isoChronology5.dateNow(zoneId12);
+boolean boolean15 = clock0.equals((java.lang.Object)isoChronology5);
+
+Long generation time 1102 msec (= 1102 + 0) for
+org.joda.time.DateMidnight dateMidnight1 = new org.joda.time.DateMidnight((long)2022);
+org.joda.time.DateMidnight dateMidnight3 = dateMidnight1.plusDays(3);
+org.joda.time.PeriodType periodType5 = null;
+java.util.Properties properties6 = null;
+java.util.Properties properties7 = new java.util.Properties(properties6);
+org.joda.time.DateTimeZone dateTimeZone11 = null;
+org.joda.time.Interval interval12 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone11);
+org.joda.time.DateTime dateTime13 = interval12.getEnd();
+org.joda.time.LocalDate localDate14 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime15 = dateTime13.withFields((org.joda.time.ReadablePartial)localDate14);
+org.joda.time.Chronology chronology16 = dateTime15.getChronology();
+java.util.Locale locale17 = null;
+org.joda.time.format.DateTimeParserBucket dateTimeParserBucket20 = new org.joda.time.format.DateTimeParserBucket((long)(byte)-1, chronology16, locale17, (java.lang.Integer)16, 16);
+org.joda.time.Chronology chronology21 = chronology16.withUTC();
+java.util.Comparator<org.joda.time.base.BaseDuration> baseDurationComparator22 = java.util.Comparator.naturalOrder();
+boolean boolean23 = properties7.remove((java.lang.Object)chronology16, (java.lang.Object)baseDurationComparator22);
+org.joda.time.MutablePeriod mutablePeriod24 = new org.joda.time.MutablePeriod((long)' ', periodType5, chronology16);
+mutablePeriod24.setSeconds((int)(byte)0);
+org.joda.time.DateTimeZone dateTimeZone31 = null;
+org.joda.time.Interval interval32 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone31);
+org.joda.time.DateTime dateTime33 = interval32.getEnd();
+org.joda.time.LocalDate localDate34 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime35 = dateTime33.withFields((org.joda.time.ReadablePartial)localDate34);
+org.joda.time.Chronology chronology36 = dateTime35.getChronology();
+org.joda.time.DateTimeField dateTimeField37 = chronology36.hourOfHalfday();
+java.util.Locale locale38 = null;
+org.joda.time.format.DateTimeParserBucket dateTimeParserBucket39 = new org.joda.time.format.DateTimeParserBucket((long)'#', chronology36, locale38);
+mutablePeriod24.setPeriod((long)(byte)10, chronology36);
+org.joda.time.DateMidnight dateMidnight41 = dateMidnight1.withChronology(chronology36);
+org.joda.time.MutableDateTime mutableDateTime42 = org.joda.time.MutableDateTime.now();
+int int43 = mutableDateTime42.getRoundingMode();
+org.joda.time.MutableDateTime.Property property44 = mutableDateTime42.dayOfWeek();
+org.joda.time.MutableDateTime mutableDateTime45 = property44.roundCeiling();
+boolean boolean46 = dateMidnight41.isAfter((org.joda.time.ReadableInstant)mutableDateTime45);
+mutableDateTime45.setMinuteOfHour(23);
+
+Long generation time 2119 msec (= 2119 + 0) for
+java.io.OutputStream outputStream0 = null;
+java.io.FilterOutputStream filterOutputStream1 = new java.io.FilterOutputStream(outputStream0);
+java.io.FilterOutputStream filterOutputStream2 = new java.io.FilterOutputStream((java.io.OutputStream)filterOutputStream1);
+
+Long generation time 1613 msec (= 1612 + 0) for
+java.io.File file1 = new java.io.File("2022-02-21T09:34:02.302Z/2022-02-21T09:34:02.302Z");
+long long2 = file1.lastModified();
+long long3 = file1.getUsableSpace();
+
+Long generation time 1935 msec for null sequence.
+Long generation time 1270 msec for null sequence.
+Long generation time 1368 msec for null sequence.
+
+Progress update: steps=2927, test inputs generated=1898, failing inputs=0      (2022-02-21T09:35:55.524Z     3.89G used)Long generation time 1054 msec (= 1054 + 0) for
+java.util.GregorianCalendar gregorianCalendar3 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+java.time.ZonedDateTime zonedDateTime4 = gregorianCalendar3.toZonedDateTime();
+int int5 = gregorianCalendar3.getWeeksInWeekYear();
+java.util.GregorianCalendar gregorianCalendar9 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+java.time.ZonedDateTime zonedDateTime10 = gregorianCalendar9.toZonedDateTime();
+int int11 = gregorianCalendar9.getWeeksInWeekYear();
+java.util.GregorianCalendar gregorianCalendar15 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+java.time.ZonedDateTime zonedDateTime16 = gregorianCalendar15.toZonedDateTime();
+int int17 = zonedDateTime16.getDayOfMonth();
+java.util.GregorianCalendar gregorianCalendar21 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+java.time.ZonedDateTime zonedDateTime22 = gregorianCalendar21.toZonedDateTime();
+java.util.GregorianCalendar gregorianCalendar26 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+java.time.ZonedDateTime zonedDateTime27 = gregorianCalendar26.toZonedDateTime();
+int int28 = zonedDateTime22.compareTo((java.time.chrono.ChronoZonedDateTime<java.time.LocalDate>)zonedDateTime27);
+java.time.format.FormatStyle formatStyle29 = java.time.format.FormatStyle.MEDIUM;
+java.time.format.FormatStyle formatStyle30 = java.time.format.FormatStyle.MEDIUM;
+java.time.format.DateTimeFormatter dateTimeFormatter31 = java.time.format.DateTimeFormatter.ofLocalizedDateTime(formatStyle29, formatStyle30);
+java.time.format.FormatStyle formatStyle32 = java.time.format.FormatStyle.MEDIUM;
+java.time.format.FormatStyle formatStyle33 = java.time.format.FormatStyle.MEDIUM;
+java.time.format.DateTimeFormatter dateTimeFormatter34 = java.time.format.DateTimeFormatter.ofLocalizedDateTime(formatStyle32, formatStyle33);
+java.time.format.DateTimeFormatter dateTimeFormatter35 = java.time.format.DateTimeFormatter.ofLocalizedDateTime(formatStyle29, formatStyle32);
+java.lang.String str36 = zonedDateTime27.format(dateTimeFormatter35);
+java.time.ZoneOffset zoneOffset37 = zonedDateTime27.getOffset();
+java.time.chrono.ChronoZonedDateTime<java.time.LocalDate> localDateChronoZonedDateTime38 = zonedDateTime16.withZoneSameInstant((java.time.ZoneId)zoneOffset37);
+java.lang.String str39 = zoneOffset37.toString();
+java.util.TimeZone timeZone40 = java.util.TimeZone.getTimeZone((java.time.ZoneId)zoneOffset37);
+gregorianCalendar9.setTimeZone(timeZone40);
+gregorianCalendar3.setTimeZone(timeZone40);
+
+Long generation time 1161 msec (= 1160 + 0) for
+java.util.GregorianCalendar gregorianCalendar3 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+gregorianCalendar3.setTimeInMillis((long)3);
+org.joda.time.DateTimeZone dateTimeZone6 = org.joda.time.DateTimeZone.UTC;
+java.util.TimeZone timeZone7 = dateTimeZone6.toTimeZone();
+org.joda.time.DateTimeZone dateTimeZone8 = org.joda.time.DateTimeZone.forTimeZone(timeZone7);
+gregorianCalendar3.setTimeZone(timeZone7);
+java.lang.Object obj10 = gregorianCalendar3.clone();
+
+
+Progress update: steps=3000, test inputs generated=1958, failing inputs=1      (2022-02-21T09:35:59.355Z     3.95G used)Long generation time 1024 msec (= 1024 + 0) for
+org.joda.time.LocalTime localTime0 = org.joda.time.LocalTime.now();
+int int1 = localTime0.getMillisOfDay();
+int int2 = localTime0.size();
+java.util.Date date8 = new java.util.Date((int)(byte)-1, (-1), (int)(byte)0, (int)'4', 1);
+org.joda.time.TimeOfDay timeOfDay9 = org.joda.time.TimeOfDay.fromDateFields(date8);
+int int10 = localTime0.compareTo((org.joda.time.ReadablePartial)timeOfDay9);
+org.joda.time.TimeOfDay.Property property11 = timeOfDay9.secondOfMinute();
+org.joda.time.DateTimeField dateTimeField12 = property11.getField();
+org.joda.time.TimeOfDay timeOfDay13 = property11.getTimeOfDay();
+java.lang.String str14 = property11.getAsText();
+
+Long generation time 1042 msec (= 1042 + 0) for
+org.joda.time.DateTimeZone dateTimeZone0 = org.joda.time.DateTimeZone.UTC;
+org.joda.time.DateMidnight dateMidnight1 = org.joda.time.DateMidnight.now(dateTimeZone0);
+int int2 = dateMidnight1.getHourOfDay();
+org.joda.time.DateTimeZone dateTimeZone3 = org.joda.time.DateTimeZone.UTC;
+org.joda.time.DateMidnight dateMidnight4 = org.joda.time.DateMidnight.now(dateTimeZone3);
+org.joda.time.Days days5 = org.joda.time.Days.daysBetween((org.joda.time.ReadableInstant)dateMidnight1, (org.joda.time.ReadableInstant)dateMidnight4);
+org.joda.time.YearMonthDay yearMonthDay6 = dateMidnight4.toYearMonthDay();
+org.joda.time.YearMonthDay yearMonthDay8 = yearMonthDay6.plusDays((int)'a');
+org.joda.time.YearMonthDay yearMonthDay10 = yearMonthDay6.plusMonths(34457920);
+org.joda.time.YearMonthDay yearMonthDay12 = yearMonthDay10.minusYears(70);
+org.joda.time.YearMonthDay.Property property13 = yearMonthDay12.year();
+java.util.Locale locale15 = java.util.Locale.KOREAN;
+java.util.Set<java.lang.Character> charSet16 = locale15.getExtensionKeys();
+org.joda.time.YearMonthDay yearMonthDay17 = property13.setCopy("P0D", locale15);
+
+Long generation time 1049 msec (= 1049 + 0) for
+java.util.GregorianCalendar gregorianCalendar3 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+java.time.ZonedDateTime zonedDateTime4 = gregorianCalendar3.toZonedDateTime();
+java.util.GregorianCalendar gregorianCalendar8 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+java.time.ZonedDateTime zonedDateTime9 = gregorianCalendar8.toZonedDateTime();
+int int10 = zonedDateTime4.compareTo((java.time.chrono.ChronoZonedDateTime<java.time.LocalDate>)zonedDateTime9);
+java.time.format.FormatStyle formatStyle11 = java.time.format.FormatStyle.MEDIUM;
+java.time.format.FormatStyle formatStyle12 = java.time.format.FormatStyle.MEDIUM;
+java.time.format.DateTimeFormatter dateTimeFormatter13 = java.time.format.DateTimeFormatter.ofLocalizedDateTime(formatStyle11, formatStyle12);
+java.time.format.FormatStyle formatStyle14 = java.time.format.FormatStyle.MEDIUM;
+java.time.format.FormatStyle formatStyle15 = java.time.format.FormatStyle.MEDIUM;
+java.time.format.DateTimeFormatter dateTimeFormatter16 = java.time.format.DateTimeFormatter.ofLocalizedDateTime(formatStyle14, formatStyle15);
+java.time.format.DateTimeFormatter dateTimeFormatter17 = java.time.format.DateTimeFormatter.ofLocalizedDateTime(formatStyle11, formatStyle14);
+java.lang.String str18 = zonedDateTime9.format(dateTimeFormatter17);
+java.time.ZoneOffset zoneOffset19 = zonedDateTime9.getOffset();
+java.time.ZonedDateTime zonedDateTime21 = zonedDateTime9.plusYears((long)59);
+
+Long generation time 1092 msec (= 1092 + 0) for
+org.joda.time.DateTimeZone dateTimeZone0 = org.joda.time.DateTimeZone.UTC;
+org.joda.time.DateMidnight dateMidnight1 = org.joda.time.DateMidnight.now(dateTimeZone0);
+int int2 = dateMidnight1.getHourOfDay();
+org.joda.time.DateTimeZone dateTimeZone3 = org.joda.time.DateTimeZone.UTC;
+org.joda.time.DateMidnight dateMidnight4 = org.joda.time.DateMidnight.now(dateTimeZone3);
+org.joda.time.Days days5 = org.joda.time.Days.daysBetween((org.joda.time.ReadableInstant)dateMidnight1, (org.joda.time.ReadableInstant)dateMidnight4);
+org.joda.time.YearMonthDay yearMonthDay6 = dateMidnight4.toYearMonthDay();
+org.joda.time.MutableDateTime mutableDateTime7 = org.joda.time.MutableDateTime.now();
+org.joda.time.ReadablePeriod readablePeriod8 = null;
+mutableDateTime7.add(readablePeriod8, 10);
+mutableDateTime7.setMillisOfSecond(0);
+mutableDateTime7.addSeconds(21);
+org.joda.time.DateTimeFieldType dateTimeFieldType15 = org.joda.time.DateTimeFieldType.weekOfWeekyear();
+mutableDateTime7.set(dateTimeFieldType15, 8);
+org.joda.time.DateMidnight.Property property18 = dateMidnight4.property(dateTimeFieldType15);
+
+Long generation time 1474 msec (= 1474 + 0) for
+java.time.LocalTime localTime1 = java.time.LocalTime.ofSecondOfDay((long)16);
+java.time.Duration duration3 = java.time.Duration.ofMillis((long)1);
+java.time.LocalTime localTime4 = localTime1.minus((java.time.temporal.TemporalAmount)duration3);
+java.time.LocalDate localDate5 = java.time.LocalDate.now();
+java.lang.String str6 = localDate5.toString();
+java.time.LocalDate localDate7 = java.time.LocalDate.now();
+java.lang.String str8 = localDate7.toString();
+java.time.chrono.ChronoPeriod chronoPeriod9 = java.time.chrono.ChronoPeriod.between((java.time.chrono.ChronoLocalDate)localDate5, (java.time.chrono.ChronoLocalDate)localDate7);
+int int10 = localDate5.lengthOfYear();
+java.time.LocalDateTime localDateTime11 = localTime1.atDate(localDate5);
+java.time.LocalDateTime localDateTime13 = localDateTime11.minusYears((long)86399);
+java.time.LocalDateTime localDateTime15 = localDateTime11.withDayOfMonth(30);
+
+Long generation time 2032 msec (= 2032 + 0) for
+org.joda.time.DateTimeZone dateTimeZone2 = null;
+org.joda.time.Interval interval3 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone2);
+org.joda.time.DateTime dateTime4 = interval3.getEnd();
+org.joda.time.LocalDate localDate5 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime6 = dateTime4.withFields((org.joda.time.ReadablePartial)localDate5);
+org.joda.time.Chronology chronology7 = dateTime6.getChronology();
+org.joda.time.DateMidnight dateMidnight8 = new org.joda.time.DateMidnight(chronology7);
+org.joda.time.DateMidnight.Property property9 = dateMidnight8.era();
+org.joda.time.DateMidnight dateMidnight10 = property9.withMaximumValue();
+org.joda.time.LocalDate localDate11 = new org.joda.time.LocalDate();
+int int12 = localDate11.getYear();
+org.joda.time.DateTimeZone dateTimeZone15 = null;
+org.joda.time.Interval interval16 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone15);
+org.joda.time.DateTime dateTime17 = interval16.getEnd();
+org.joda.time.LocalDate localDate18 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime19 = dateTime17.withFields((org.joda.time.ReadablePartial)localDate18);
+org.joda.time.PeriodType periodType20 = null;
+org.joda.time.Period period21 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate11, (org.joda.time.ReadablePartial)localDate18, periodType20);
+org.joda.time.DateTimeZone dateTimeZone24 = null;
+org.joda.time.Interval interval25 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone24);
+org.joda.time.DateTime dateTime26 = interval25.getEnd();
+org.joda.time.DateTime dateTime28 = dateTime26.plusYears((int)(short)-1);
+org.joda.time.DateTimeZone dateTimeZone31 = null;
+org.joda.time.Interval interval32 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone31);
+org.joda.time.DateTime dateTime33 = interval32.getEnd();
+org.joda.time.DateTime dateTime35 = dateTime33.plusYears((int)(short)-1);
+boolean boolean36 = dateTime26.isEqual((org.joda.time.ReadableInstant)dateTime33);
+org.joda.time.DateTimeZone dateTimeZone39 = null;
+org.joda.time.Interval interval40 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone39);
+org.joda.time.DateTime dateTime41 = interval40.getEnd();
+org.joda.time.DateTime.Property property42 = dateTime41.era();
+boolean boolean43 = dateTime26.isBefore((org.joda.time.ReadableInstant)dateTime41);
+org.joda.time.Duration duration44 = period21.toDurationTo((org.joda.time.ReadableInstant)dateTime26);
+org.joda.time.Duration duration46 = org.joda.time.Duration.standardMinutes((long)(byte)10);
+long long47 = duration46.getMillis();
+org.joda.time.Duration duration48 = duration44.minus((org.joda.time.ReadableDuration)duration46);
+org.joda.time.DateMidnight dateMidnight49 = dateMidnight10.plus((org.joda.time.ReadableDuration)duration48);
+org.joda.time.Duration duration50 = new org.joda.time.Duration((java.lang.Object)dateMidnight49);
+
+Long generation time 1537 msec for null sequence.
+Long generation time 1337 msec (= 1336 + 0) for
+java.util.stream.IntStream intStream0 = java.util.stream.IntStream.empty();
+
+Long generation time 2044 msec (= 2044 + 0) for
+org.joda.time.format.DateTimePrinter dateTimePrinter0 = null;
+org.joda.time.format.DateTimeParser dateTimeParser1 = null;
+org.joda.time.format.DateTimeFormatter dateTimeFormatter2 = new org.joda.time.format.DateTimeFormatter(dateTimePrinter0, dateTimeParser1);
+org.joda.time.LocalDateTime localDateTime4 = dateTimeFormatter2.parseLocalDateTime("292278993");
+
+Long generation time 1039 msec (= 1039 + 0) for
+float[] floatArray0 = new float[] {  };
+java.nio.FloatBuffer floatBuffer1 = java.nio.FloatBuffer.wrap(floatArray0);
+java.nio.Buffer buffer2 = floatBuffer1.flip();
+float[] floatArray3 = new float[] {  };
+java.nio.FloatBuffer floatBuffer4 = java.nio.FloatBuffer.wrap(floatArray3);
+java.nio.FloatBuffer floatBuffer5 = floatBuffer1.put(floatArray3);
+boolean boolean6 = floatBuffer5.isReadOnly();
+
+Long generation time 1761 msec (= 1761 + 0) for
+java.util.stream.LongStream longStream2 = java.util.stream.LongStream.rangeClosed((-1L), 34449823000000L);
+java.util.stream.LongStream longStream3 = longStream2.sequential();
+java.util.stream.LongStream longStream4 = longStream2.parallel();
+java.util.stream.Stream<java.lang.Long> longStream5 = longStream4.boxed();
+java.util.function.LongBinaryOperator longBinaryOperator6 = null;
+java.util.OptionalLong optionalLong7 = longStream4.reduce(longBinaryOperator6);
+
+Long generation time 1109 msec (= 1109 + 0) for
+int int0 = java.util.Spliterator.SORTED;
+
+Long generation time 2705 msec (= 2705 + 0) for
+org.joda.time.DateTimeZone dateTimeZone2 = null;
+org.joda.time.Interval interval3 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone2);
+org.joda.time.DateTime dateTime4 = interval3.getEnd();
+org.joda.time.DateTime.Property property5 = dateTime4.dayOfMonth();
+org.joda.time.DateTime dateTime7 = property5.addToCopy(1903);
+
+
+Progress update: steps=3901, test inputs generated=2686, failing inputs=4      (2022-02-21T09:36:55.715Z     3.90G used)Long generation time 2068 msec (= 2068 + 0) for
+java.util.Locale locale0 = java.util.Locale.US;
+
+Long generation time 7610 msec (= 7610 + 0) for
+java.net.InetAddress[] inetAddressArray1 = java.net.InetAddress.getAllByName("");
+
+
+Progress update: steps=4000, test inputs generated=2771, failing inputs=4      (2022-02-21T09:37:10.885Z     3.90G used)Long generation time 1847 msec for null sequence.
+Long generation time 1376 msec (= 1376 + 0) for
+org.joda.time.LocalTime localTime0 = org.joda.time.LocalTime.now();
+int int1 = localTime0.getMillisOfDay();
+org.joda.time.LocalTime.Property property2 = localTime0.minuteOfHour();
+org.joda.time.LocalTime localTime3 = property2.withMinimumValue();
+org.joda.time.LocalTime localTime5 = property2.addCopy(34564116);
+org.joda.time.TimeOfDay timeOfDay6 = new org.joda.time.TimeOfDay((java.lang.Object)localTime5);
+int int7 = timeOfDay6.getMinuteOfHour();
+
+Long generation time 1991 msec (= 1990 + 0) for
+org.joda.time.DateTimeZone dateTimeZone0 = org.joda.time.DateTimeZone.UTC;
+org.joda.time.DateMidnight dateMidnight1 = org.joda.time.DateMidnight.now(dateTimeZone0);
+int int2 = dateMidnight1.getHourOfDay();
+org.joda.time.DateTimeZone dateTimeZone3 = org.joda.time.DateTimeZone.UTC;
+org.joda.time.DateMidnight dateMidnight4 = org.joda.time.DateMidnight.now(dateTimeZone3);
+org.joda.time.Days days5 = org.joda.time.Days.daysBetween((org.joda.time.ReadableInstant)dateMidnight1, (org.joda.time.ReadableInstant)dateMidnight4);
+org.joda.time.YearMonthDay yearMonthDay6 = dateMidnight4.toYearMonthDay();
+org.joda.time.YearMonthDay yearMonthDay8 = yearMonthDay6.plusDays((int)'a');
+org.joda.time.YearMonthDay yearMonthDay10 = yearMonthDay6.plusMonths(34457920);
+org.joda.time.YearMonthDay yearMonthDay12 = yearMonthDay10.minusYears(70);
+org.joda.time.YearMonthDay yearMonthDay14 = yearMonthDay12.minusMonths(12);
+org.joda.time.DateTimeZone dateTimeZone17 = null;
+org.joda.time.Interval interval18 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone17);
+org.joda.time.DateTime dateTime19 = interval18.getEnd();
+org.joda.time.DateTimeZone dateTimeZone22 = null;
+org.joda.time.Interval interval23 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone22);
+org.joda.time.DateTime dateTime24 = interval23.getEnd();
+boolean boolean25 = interval18.abuts((org.joda.time.ReadableInterval)interval23);
+org.joda.time.DateTime dateTime26 = interval18.getEnd();
+org.joda.time.DateTime.Property property27 = dateTime26.dayOfYear();
+org.joda.time.DateTime dateTime28 = property27.withMinimumValue();
+org.joda.time.DateTimeZone dateTimeZone29 = org.joda.time.DateTimeZone.UTC;
+org.joda.time.DateTime dateTime30 = dateTime28.withZone(dateTimeZone29);
+org.joda.time.DateMidnight dateMidnight31 = yearMonthDay12.toDateMidnight(dateTimeZone29);
+org.joda.time.DateTime dateTime32 = yearMonthDay12.toDateTimeAtMidnight();
+
+Long generation time 6192 msec (= 6192 + 0) for
+java.nio.file.spi.FileSystemProvider[] fileSystemProviderArray0 = new java.nio.file.spi.FileSystemProvider[] {  };
+java.util.ArrayList<java.nio.file.spi.FileSystemProvider> fileSystemProviderList1 = new java.util.ArrayList<java.nio.file.spi.FileSystemProvider>();
+boolean boolean2 = java.util.Collections.addAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList1, fileSystemProviderArray0);
+java.nio.file.spi.FileSystemProvider[] fileSystemProviderArray3 = new java.nio.file.spi.FileSystemProvider[] {  };
+java.util.ArrayList<java.nio.file.spi.FileSystemProvider> fileSystemProviderList4 = new java.util.ArrayList<java.nio.file.spi.FileSystemProvider>();
+boolean boolean5 = java.util.Collections.addAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList4, fileSystemProviderArray3);
+boolean boolean6 = fileSystemProviderList1.retainAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList4);
+java.nio.file.spi.FileSystemProvider[] fileSystemProviderArray7 = new java.nio.file.spi.FileSystemProvider[] {  };
+java.util.ArrayList<java.nio.file.spi.FileSystemProvider> fileSystemProviderList8 = new java.util.ArrayList<java.nio.file.spi.FileSystemProvider>();
+boolean boolean9 = java.util.Collections.addAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList8, fileSystemProviderArray7);
+boolean boolean10 = fileSystemProviderList4.removeAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList8);
+java.lang.Object[] objArray11 = fileSystemProviderList8.toArray();
+java.nio.file.spi.FileSystemProvider[] fileSystemProviderArray12 = new java.nio.file.spi.FileSystemProvider[] {  };
+java.util.ArrayList<java.nio.file.spi.FileSystemProvider> fileSystemProviderList13 = new java.util.ArrayList<java.nio.file.spi.FileSystemProvider>();
+boolean boolean14 = java.util.Collections.addAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList13, fileSystemProviderArray12);
+java.nio.file.spi.FileSystemProvider[] fileSystemProviderArray15 = new java.nio.file.spi.FileSystemProvider[] {  };
+java.util.ArrayList<java.nio.file.spi.FileSystemProvider> fileSystemProviderList16 = new java.util.ArrayList<java.nio.file.spi.FileSystemProvider>();
+boolean boolean17 = java.util.Collections.addAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList16, fileSystemProviderArray15);
+boolean boolean18 = fileSystemProviderList13.retainAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList16);
+java.nio.file.spi.FileSystemProvider[] fileSystemProviderArray20 = new java.nio.file.spi.FileSystemProvider[] {  };
+java.util.ArrayList<java.nio.file.spi.FileSystemProvider> fileSystemProviderList21 = new java.util.ArrayList<java.nio.file.spi.FileSystemProvider>();
+boolean boolean22 = java.util.Collections.addAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList21, fileSystemProviderArray20);
+java.nio.file.spi.FileSystemProvider[] fileSystemProviderArray23 = new java.nio.file.spi.FileSystemProvider[] {  };
+java.util.ArrayList<java.nio.file.spi.FileSystemProvider> fileSystemProviderList24 = new java.util.ArrayList<java.nio.file.spi.FileSystemProvider>();
+boolean boolean25 = java.util.Collections.addAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList24, fileSystemProviderArray23);
+boolean boolean26 = fileSystemProviderList21.retainAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList24);
+boolean boolean27 = fileSystemProviderList16.addAll((int)(byte)0, (java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList24);
+boolean boolean28 = fileSystemProviderList8.retainAll((java.util.Collection<java.nio.file.spi.FileSystemProvider>)fileSystemProviderList24);
+java.util.stream.Stream<java.nio.file.spi.FileSystemProvider> fileSystemProviderStream29 = fileSystemProviderList24.parallelStream();
+
+Long generation time 1077 msec (= 1077 + 0) for
+org.joda.time.format.DateTimePrinter dateTimePrinter0 = null;
+org.joda.time.format.DateTimeParser dateTimeParser1 = null;
+org.joda.time.format.DateTimeFormatter dateTimeFormatter2 = new org.joda.time.format.DateTimeFormatter(dateTimePrinter0, dateTimeParser1);
+java.util.Locale locale3 = java.util.Locale.GERMAN;
+java.util.Set<java.lang.String> strSet4 = locale3.getUnicodeLocaleKeys();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter5 = dateTimeFormatter2.withLocale(locale3);
+org.joda.time.LocalDate localDate6 = new org.joda.time.LocalDate();
+int int7 = localDate6.getYear();
+int int8 = localDate6.getYearOfCentury();
+org.joda.time.LocalDate localDate10 = localDate6.withDayOfYear(10);
+java.lang.String str11 = localDate10.toString();
+java.lang.String str12 = dateTimeFormatter2.print((org.joda.time.ReadablePartial)localDate10);
+
+
+Progress update: steps=4578, test inputs generated=3247, failing inputs=4      (2022-02-21T09:38:06.366Z     3.90G used)Long generation time 11339 msec (= 11339 + 0) for
+org.joda.time.MutableDateTime mutableDateTime0 = org.joda.time.MutableDateTime.now();
+org.joda.time.ReadablePeriod readablePeriod1 = null;
+mutableDateTime0.add(readablePeriod1, 10);
+mutableDateTime0.setMillisOfSecond(0);
+mutableDateTime0.addSeconds(21);
+mutableDateTime0.addMinutes(23);
+org.joda.time.MutableDateTime.Property property10 = mutableDateTime0.millisOfDay();
+org.joda.time.PeriodType periodType12 = null;
+org.joda.time.DateTimeZone dateTimeZone16 = null;
+org.joda.time.Interval interval17 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone16);
+org.joda.time.DateTime dateTime18 = interval17.getEnd();
+org.joda.time.LocalDate localDate19 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime20 = dateTime18.withFields((org.joda.time.ReadablePartial)localDate19);
+org.joda.time.Chronology chronology21 = dateTime20.getChronology();
+java.util.Locale locale22 = null;
+org.joda.time.format.DateTimeParserBucket dateTimeParserBucket25 = new org.joda.time.format.DateTimeParserBucket((long)(byte)-1, chronology21, locale22, (java.lang.Integer)16, 16);
+org.joda.time.Chronology chronology26 = chronology21.withUTC();
+org.joda.time.MutablePeriod mutablePeriod27 = new org.joda.time.MutablePeriod((long)(short)-1, periodType12, chronology26);
+org.joda.time.DateTimeField dateTimeField28 = chronology26.minuteOfDay();
+org.joda.time.DateTimeZone dateTimeZone29 = chronology26.getZone();
+java.lang.String str31 = dateTimeZone29.getName((long)(byte)-1);
+mutableDateTime0.setZone(dateTimeZone29);
+org.joda.time.MutableDateTime mutableDateTime33 = org.joda.time.MutableDateTime.now(dateTimeZone29);
+mutableDateTime33.setDayOfMonth(34520199);
+
+Long generation time 1802 msec (= 1802 + 0) for
+java.time.Period period3 = java.time.Period.of((int)(byte)-1, (int)(short)0, 16);
+java.time.Period period5 = period3.minusYears((long)0);
+java.time.Period period7 = period3.withDays(3);
+java.time.Period period9 = period7.minusDays(1L);
+java.util.List<java.time.temporal.TemporalUnit> temporalUnitList10 = period7.getUnits();
+
+Long generation time 5801 msec (= 5801 + 0) for
+java.io.OutputStream outputStream0 = null;
+java.io.FilterOutputStream filterOutputStream1 = new java.io.FilterOutputStream(outputStream0);
+java.io.PrintStream printStream2 = new java.io.PrintStream((java.io.OutputStream)filterOutputStream1);
+java.util.Locale locale3 = java.util.Locale.TAIWAN;
+java.net.MalformedURLException malformedURLException6 = new java.net.MalformedURLException("2022-02-21");
+java.net.MalformedURLException malformedURLException8 = new java.net.MalformedURLException("2022-02-21");
+java.net.MalformedURLException[] malformedURLExceptionArray9 = new java.net.MalformedURLException[] { malformedURLException6, malformedURLException8 };
+java.util.stream.Stream<java.net.MalformedURLException> malformedURLExceptionStream10 = java.util.stream.Stream.of(malformedURLExceptionArray9);
+java.io.PrintStream printStream11 = printStream2.printf(locale3, "java.text.ParsePosition[index=365,errorIndex=-1]", (java.lang.Object[])malformedURLExceptionArray9);
+
+Long generation time 1228 msec (= 1228 + 0) for
+org.joda.time.PeriodType periodType1 = null;
+java.util.Properties properties2 = null;
+java.util.Properties properties3 = new java.util.Properties(properties2);
+org.joda.time.DateTimeZone dateTimeZone7 = null;
+org.joda.time.Interval interval8 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone7);
+org.joda.time.DateTime dateTime9 = interval8.getEnd();
+org.joda.time.LocalDate localDate10 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime11 = dateTime9.withFields((org.joda.time.ReadablePartial)localDate10);
+org.joda.time.Chronology chronology12 = dateTime11.getChronology();
+java.util.Locale locale13 = null;
+org.joda.time.format.DateTimeParserBucket dateTimeParserBucket16 = new org.joda.time.format.DateTimeParserBucket((long)(byte)-1, chronology12, locale13, (java.lang.Integer)16, 16);
+org.joda.time.Chronology chronology17 = chronology12.withUTC();
+java.util.Comparator<org.joda.time.base.BaseDuration> baseDurationComparator18 = java.util.Comparator.naturalOrder();
+boolean boolean19 = properties3.remove((java.lang.Object)chronology12, (java.lang.Object)baseDurationComparator18);
+org.joda.time.MutablePeriod mutablePeriod20 = new org.joda.time.MutablePeriod((long)' ', periodType1, chronology12);
+org.joda.time.Period period21 = mutablePeriod20.toPeriod();
+org.joda.time.DateTimeZone dateTimeZone24 = null;
+org.joda.time.Interval interval25 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone24);
+org.joda.time.DateTime dateTime26 = interval25.getEnd();
+org.joda.time.DateTimeZone dateTimeZone29 = null;
+org.joda.time.Interval interval30 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone29);
+org.joda.time.DateTime dateTime31 = interval30.getEnd();
+boolean boolean32 = interval25.abuts((org.joda.time.ReadableInterval)interval30);
+org.joda.time.Interval interval34 = interval30.withEndMillis(0L);
+org.joda.time.Interval interval36 = interval30.withEndMillis((long)2);
+mutablePeriod20.setPeriod((org.joda.time.ReadableInterval)interval30);
+
+Long generation time 1545 msec (= 1545 + 0) for
+java.time.OffsetTime offsetTime0 = java.time.OffsetTime.MAX;
+java.time.OffsetTime offsetTime1 = java.time.OffsetTime.MAX;
+int int2 = offsetTime0.compareTo(offsetTime1);
+java.time.Duration duration3 = java.time.Duration.ZERO;
+java.time.Duration duration5 = duration3.plusSeconds(1L);
+java.time.OffsetTime offsetTime6 = offsetTime1.minus((java.time.temporal.TemporalAmount)duration5);
+java.time.OffsetTime offsetTime7 = java.time.OffsetTime.MAX;
+java.time.OffsetTime offsetTime8 = java.time.OffsetTime.MAX;
+int int9 = offsetTime7.compareTo(offsetTime8);
+java.time.LocalTime localTime10 = java.time.LocalTime.MAX;
+java.time.LocalTime localTime12 = localTime10.withMinute((int)' ');
+java.time.Instant instant14 = java.time.Instant.ofEpochSecond((long)'4');
+java.time.Instant instant15 = java.time.Instant.MIN;
+boolean boolean16 = instant14.isBefore(instant15);
+java.util.GregorianCalendar gregorianCalendar20 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+java.time.ZonedDateTime zonedDateTime21 = gregorianCalendar20.toZonedDateTime();
+java.util.GregorianCalendar gregorianCalendar25 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+java.time.ZonedDateTime zonedDateTime26 = gregorianCalendar25.toZonedDateTime();
+int int27 = zonedDateTime21.compareTo((java.time.chrono.ChronoZonedDateTime<java.time.LocalDate>)zonedDateTime26);
+java.time.temporal.Temporal temporal28 = instant14.adjustInto((java.time.temporal.Temporal)zonedDateTime26);
+java.time.Duration duration29 = java.time.Duration.between((java.time.temporal.Temporal)localTime12, (java.time.temporal.Temporal)zonedDateTime26);
+java.time.OffsetTime offsetTime30 = offsetTime7.plus((java.time.temporal.TemporalAmount)duration29);
+java.time.DayOfWeek dayOfWeek31 = java.time.DayOfWeek.TUESDAY;
+java.time.temporal.TemporalQuery<java.lang.Boolean> booleanTemporalQuery32 = java.time.format.DateTimeFormatter.parsedLeapSecond();
+java.time.Month month33 = java.time.Month.JUNE;
+java.lang.Boolean boolean34 = booleanTemporalQuery32.queryFrom((java.time.temporal.TemporalAccessor)month33);
+java.lang.Boolean boolean35 = dayOfWeek31.query(booleanTemporalQuery32);
+java.util.GregorianCalendar gregorianCalendar39 = new java.util.GregorianCalendar(5, (int)(short)-1, (int)'a');
+java.time.ZonedDateTime zonedDateTime40 = gregorianCalendar39.toZonedDateTime();
+int int41 = zonedDateTime40.getDayOfMonth();
+java.time.Duration duration42 = java.time.Duration.ZERO;
+java.time.Duration duration44 = duration42.plusSeconds(1L);
+java.time.Duration duration45 = duration44.abs();
+java.time.chrono.ChronoZonedDateTime<java.time.LocalDate> localDateChronoZonedDateTime46 = zonedDateTime40.plus((java.time.temporal.TemporalAmount)duration45);
+java.lang.Boolean boolean47 = booleanTemporalQuery32.queryFrom((java.time.temporal.TemporalAccessor)localDateChronoZonedDateTime46);
+java.lang.Boolean boolean48 = offsetTime30.query(booleanTemporalQuery32);
+boolean boolean49 = offsetTime6.isBefore(offsetTime30);
+java.time.OffsetTime offsetTime51 = offsetTime30.withSecond(34560475);
+
+
+Progress update: steps=5000, test inputs generated=3592, failing inputs=4      (2022-02-21T09:38:43.090Z     4.02G used)Long generation time 6217 msec (= 6217 + 0) for
+java.nio.ByteBuffer byteBuffer1 = java.nio.ByteBuffer.allocateDirect((int)(short)100);
+java.nio.ByteBuffer byteBuffer2 = byteBuffer1.duplicate();
+java.nio.charset.Charset charset3 = java.nio.charset.Charset.defaultCharset();
+org.joda.time.LocalDate localDate4 = new org.joda.time.LocalDate();
+int int5 = localDate4.getYear();
+int int6 = localDate4.getYearOfCentury();
+org.joda.time.LocalDate localDate8 = localDate4.withDayOfYear(10);
+org.joda.time.DateTimeZone dateTimeZone9 = org.joda.time.DateTimeZone.UTC;
+org.joda.time.DateMidnight dateMidnight10 = org.joda.time.DateMidnight.now(dateTimeZone9);
+org.joda.time.Interval interval11 = localDate8.toInterval(dateTimeZone9);
+boolean boolean12 = charset3.equals((java.lang.Object)dateTimeZone9);
+java.nio.charset.CharsetEncoder charsetEncoder13 = charset3.newEncoder();
+java.net.InetAddress inetAddress14 = java.net.InetAddress.getLoopbackAddress();
+boolean boolean15 = inetAddress14.isLinkLocalAddress();
+byte[] byteArray16 = inetAddress14.getAddress();
+boolean boolean17 = inetAddress14.isMCSiteLocal();
+boolean boolean18 = inetAddress14.isMCLinkLocal();
+byte[] byteArray19 = inetAddress14.getAddress();
+boolean boolean20 = charsetEncoder13.isLegalReplacement(byteArray19);
+java.nio.ByteBuffer byteBuffer23 = byteBuffer2.put(byteArray19, 34442181, 2022);
+
+Long generation time 2601 msec (= 2600 + 0) for
+java.util.stream.DoubleStream.Builder builder0 = java.util.stream.DoubleStream.builder();
+java.util.stream.DoubleStream doubleStream2 = java.util.stream.DoubleStream.of((double)259199999L);
+java.util.PrimitiveIterator.OfDouble ofDouble3 = doubleStream2.iterator();
+boolean boolean4 = ofDouble3.hasNext();
+java.util.stream.DoubleStream.Builder builder5 = java.util.stream.DoubleStream.builder();
+ofDouble3.forEachRemaining((java.util.function.DoubleConsumer)builder5);
+java.util.stream.DoubleStream doubleStream7 = builder5.build();
+java.util.function.DoubleConsumer doubleConsumer8 = builder0.andThen((java.util.function.DoubleConsumer)builder5);
+java.util.stream.DoubleStream.Builder builder10 = builder0.add((double)(short)0);
+
+
+Progress update: steps=5172, test inputs generated=3732, failing inputs=4      (2022-02-21T09:39:33.967Z     3.97G used)Long generation time 28611 msec (= 28611 + 0) for
+org.joda.time.DateTimeZone dateTimeZone2 = null;
+org.joda.time.Interval interval3 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone2);
+org.joda.time.DateTime dateTime4 = interval3.getEnd();
+org.joda.time.LocalDate localDate5 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime6 = dateTime4.withFields((org.joda.time.ReadablePartial)localDate5);
+org.joda.time.Chronology chronology7 = dateTime6.getChronology();
+org.joda.time.DateTimeZone dateTimeZone10 = null;
+org.joda.time.Interval interval11 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone10);
+org.joda.time.DateTime dateTime12 = interval11.getEnd();
+org.joda.time.LocalDate localDate13 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime14 = dateTime12.withFields((org.joda.time.ReadablePartial)localDate13);
+boolean boolean16 = dateTime12.isAfter((long)(short)100);
+org.joda.time.Days days17 = org.joda.time.Days.daysBetween((org.joda.time.ReadableInstant)dateTime6, (org.joda.time.ReadableInstant)dateTime12);
+org.joda.time.Hours hours18 = org.joda.time.Hours.TWO;
+org.joda.time.DateTime dateTime20 = dateTime6.withPeriodAdded((org.joda.time.ReadablePeriod)hours18, 34452094);
+
+Long generation time 4374 msec (= 4374 + 0) for
+java.util.Date date0 = new java.util.Date();
+
+Long generation time 4461 msec (= 4461 + 0) for
+java.nio.ByteBuffer byteBuffer1 = java.nio.ByteBuffer.allocateDirect((int)(short)100);
+java.nio.ByteBuffer byteBuffer3 = java.nio.ByteBuffer.allocateDirect((int)(short)100);
+java.nio.DoubleBuffer doubleBuffer4 = byteBuffer3.asDoubleBuffer();
+java.nio.ByteBuffer byteBuffer5 = byteBuffer1.put(byteBuffer3);
+java.nio.ByteBuffer byteBuffer6 = byteBuffer5.asReadOnlyBuffer();
+java.nio.ByteBuffer byteBuffer8 = byteBuffer6.putChar('x');
+
+Long generation time 2094 msec (= 2094 + 0) for
+org.joda.time.PeriodType periodType1 = null;
+java.util.Properties properties2 = null;
+java.util.Properties properties3 = new java.util.Properties(properties2);
+org.joda.time.DateTimeZone dateTimeZone7 = null;
+org.joda.time.Interval interval8 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone7);
+org.joda.time.DateTime dateTime9 = interval8.getEnd();
+org.joda.time.LocalDate localDate10 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime11 = dateTime9.withFields((org.joda.time.ReadablePartial)localDate10);
+org.joda.time.Chronology chronology12 = dateTime11.getChronology();
+java.util.Locale locale13 = null;
+org.joda.time.format.DateTimeParserBucket dateTimeParserBucket16 = new org.joda.time.format.DateTimeParserBucket((long)(byte)-1, chronology12, locale13, (java.lang.Integer)16, 16);
+org.joda.time.Chronology chronology17 = chronology12.withUTC();
+java.util.Comparator<org.joda.time.base.BaseDuration> baseDurationComparator18 = java.util.Comparator.naturalOrder();
+boolean boolean19 = properties3.remove((java.lang.Object)chronology12, (java.lang.Object)baseDurationComparator18);
+org.joda.time.MutablePeriod mutablePeriod20 = new org.joda.time.MutablePeriod((long)' ', periodType1, chronology12);
+org.joda.time.Period period21 = mutablePeriod20.toPeriod();
+org.joda.time.DateTimeZone dateTimeZone24 = null;
+org.joda.time.Interval interval25 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone24);
+org.joda.time.DateTime dateTime26 = interval25.getEnd();
+org.joda.time.DateTimeZone dateTimeZone29 = null;
+org.joda.time.Interval interval30 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone29);
+org.joda.time.DateTime dateTime31 = interval30.getEnd();
+boolean boolean32 = interval25.abuts((org.joda.time.ReadableInterval)interval30);
+org.joda.time.MutableInterval mutableInterval33 = interval30.toMutableInterval();
+mutablePeriod20.add((org.joda.time.ReadableInterval)interval30);
+int int35 = mutablePeriod20.getDays();
+
+Long generation time 14228 msec (= 14228 + 0) for
+java.util.stream.DoubleStream doubleStream0 = java.util.stream.DoubleStream.empty();
+java.util.stream.DoubleStream doubleStream2 = doubleStream0.limit((-31557014167219200L));
+
+Long generation time 1286 msec (= 1286 + 0) for
+org.joda.time.DateTimeZone dateTimeZone2 = null;
+org.joda.time.Interval interval3 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone2);
+org.joda.time.DateTime dateTime4 = interval3.getEnd();
+org.joda.time.LocalDate localDate5 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime6 = dateTime4.withFields((org.joda.time.ReadablePartial)localDate5);
+org.joda.time.Chronology chronology7 = dateTime6.getChronology();
+org.joda.time.DateMidnight dateMidnight8 = new org.joda.time.DateMidnight(chronology7);
+org.joda.time.DateMidnight.Property property9 = dateMidnight8.era();
+org.joda.time.DateMidnight dateMidnight10 = property9.roundHalfFloorCopy();
+org.joda.time.DateMidnight dateMidnight11 = property9.withMinimumValue();
+org.joda.time.DateMidnight dateMidnight12 = property9.getDateMidnight();
+
+Long generation time 1158 msec (= 1158 + 0) for
+org.joda.time.DateTimeZone dateTimeZone2 = null;
+org.joda.time.Interval interval3 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone2);
+org.joda.time.DateTime dateTime4 = interval3.getEnd();
+org.joda.time.LocalDate localDate5 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime6 = dateTime4.withFields((org.joda.time.ReadablePartial)localDate5);
+org.joda.time.Chronology chronology7 = dateTime6.getChronology();
+org.joda.time.DateTimeField dateTimeField8 = chronology7.hourOfHalfday();
+org.joda.time.DurationField durationField9 = dateTimeField8.getDurationField();
+org.joda.time.DateTimeZone dateTimeZone14 = null;
+org.joda.time.Interval interval15 = new org.joda.time.Interval((-1L), (long)(short)-1, dateTimeZone14);
+org.joda.time.DateTime dateTime16 = interval15.getEnd();
+org.joda.time.LocalDate localDate17 = new org.joda.time.LocalDate();
+org.joda.time.DateTime dateTime18 = dateTime16.withFields((org.joda.time.ReadablePartial)localDate17);
+org.joda.time.Chronology chronology19 = dateTime18.getChronology();
+org.joda.time.DateMidnight dateMidnight20 = new org.joda.time.DateMidnight(chronology19);
+org.joda.time.DateMidnight.Property property21 = dateMidnight20.era();
+org.joda.time.DateMidnight dateMidnight23 = property21.addWrapFieldToCopy(3);
+java.util.Locale locale24 = java.util.Locale.CHINA;
+int int25 = property21.getMaximumTextLength(locale24);
+java.lang.String str26 = locale24.getDisplayLanguage();
+long long27 = dateTimeField8.set((long)34673681, "2022-02-21T09:35:29.728Z/2022-02-21T09:35:29.728Z", locale24);
+
+Long generation time 2342 msec (= 2342 + 0) for
+org.joda.time.MutableDateTime mutableDateTime0 = org.joda.time.MutableDateTime.now();
+int int1 = mutableDateTime0.getRoundingMode();
+org.joda.time.MutableDateTime.Property property2 = mutableDateTime0.dayOfWeek();
+org.joda.time.MutableDateTime.Property property3 = mutableDateTime0.minuteOfDay();
+org.joda.time.DurationField durationField4 = property3.getLeapDurationField();
+org.joda.time.DateTimeField dateTimeField5 = property3.getField();
+
+
+Progress update: steps=5530, test inputs generated=4012, failing inputs=4      (2022-02-21T09:40:34.499Z     3,98G used)Long generation time 15780 msec (= 15780 + 0) for
+java.nio.file.attribute.FileTime fileTime1 = java.nio.file.attribute.FileTime.fromMillis((long)34449823);
+java.util.concurrent.TimeUnit timeUnit2 = java.util.concurrent.TimeUnit.DAYS;
+long long3 = fileTime1.to(timeUnit2);
+timeUnit2.timedWait((java.lang.Object)52L, (long)34659333);
+
+
+Progress update: steps=5584, test inputs generated=4055, failing inputs=4      (2022-02-21T09:41:34.515Z     3,98G used)Long execution time 68 sec for
+java.util.concurrent.TimeUnit timeUnit0 = java.util.concurrent.TimeUnit.NANOSECONDS;
+java.util.concurrent.TimeUnit timeUnit2 = java.util.concurrent.TimeUnit.NANOSECONDS;
+long long3 = timeUnit0.convert((long)34441826, timeUnit2);
+long long5 = timeUnit2.toMinutes((long)34467531);
+timeUnit2.sleep(68596536713L);
+
+Long generation time 1243 msec (= 1243 + 0) for
+java.time.Period period3 = java.time.Period.of((int)(byte)-1, (int)(short)0, 16);
+java.time.chrono.IsoChronology isoChronology4 = period3.getChronology();
+java.time.LocalDate localDate7 = isoChronology4.dateYearDay((int)(byte)0, (int)'#');
+java.lang.String str8 = isoChronology4.toString();
+java.time.chrono.ChronoLocalDate chronoLocalDate9 = isoChronology4.dateNow();
+java.time.ZoneId zoneId11 = java.time.ZoneId.of("-1");
+java.time.LocalDate localDate12 = java.time.LocalDate.now(zoneId11);
+java.time.LocalDate localDate13 = isoChronology4.dateNow(zoneId11);
+java.time.LocalDate localDate14 = isoChronology4.dateNow();
+java.time.OffsetDateTime offsetDateTime15 = java.time.OffsetDateTime.MIN;
+java.time.LocalDateTime localDateTime16 = isoChronology4.localDateTime((java.time.temporal.TemporalAccessor)offsetDateTime15);
+java.lang.String str17 = isoChronology4.getId();
+
+Long generation time 1214 msec for null sequence.
+Long generation time 1104 msec (= 1104 + 0) for
+org.joda.time.LocalTime localTime0 = org.joda.time.LocalTime.now();
+int int1 = localTime0.getMillisOfDay();
+org.joda.time.LocalTime.Property property2 = localTime0.minuteOfHour();
+org.joda.time.LocalTime localTime3 = property2.roundCeilingCopy();
+org.joda.time.Chronology chronology4 = localTime3.getChronology();
+org.joda.time.DateTimeField dateTimeField5 = chronology4.millisOfSecond();
+org.joda.time.DateTimeField dateTimeField6 = chronology4.dayOfMonth();
+org.joda.time.DateTimeField dateTimeField7 = chronology4.secondOfMinute();
+int int9 = dateTimeField7.getMaximumValue((long)34569760);
+
+
+Progress update: steps=6000, test inputs generated=4390, failing inputs=4      (2022-02-21T09:42:41.397Z     3,98G used)
+Progress update: steps=6261, test inputs generated=4595, failing inputs=4      (2022-02-21T09:43:05.160Z     3,97G used)Long generation time 1029 msec (= 1029 + 0) for
+java.time.LocalTime localTime0 = java.time.LocalTime.now();
+int int1 = localTime0.getSecond();
+java.time.OffsetDateTime offsetDateTime2 = java.time.OffsetDateTime.MAX;
+java.time.OffsetDateTime offsetDateTime4 = offsetDateTime2.minusNanos((long)10);
+java.time.LocalDate localDate5 = java.time.LocalDate.now();
+java.time.LocalDate localDate7 = localDate5.minusMonths((long)34442580);
+java.time.LocalTime localTime8 = java.time.LocalTime.MAX;
+java.time.LocalTime localTime10 = localTime8.withMinute((int)' ');
+java.time.LocalDateTime localDateTime11 = java.time.LocalDateTime.of(localDate7, localTime8);
+int int12 = localDateTime11.getNano();
+java.time.LocalTime localTime13 = localDateTime11.toLocalTime();
+java.time.temporal.ChronoField chronoField14 = java.time.temporal.ChronoField.ERA;
+boolean boolean15 = localDateTime11.isSupported((java.time.temporal.TemporalField)chronoField14);
+int int16 = offsetDateTime2.get((java.time.temporal.TemporalField)chronoField14);
+java.time.LocalDate localDate17 = java.time.LocalDate.now();
+java.time.LocalDate localDate19 = localDate17.minusMonths((long)34442580);
+java.time.LocalTime localTime20 = java.time.LocalTime.MAX;
+java.time.LocalTime localTime22 = localTime20.withMinute((int)' ');
+java.time.LocalDateTime localDateTime23 = java.time.LocalDateTime.of(localDate19, localTime20);
+java.time.LocalDate localDate24 = java.time.LocalDate.now();
+java.lang.String str25 = localDate24.toString();
+java.time.LocalDate localDate26 = java.time.LocalDate.now();
+java.lang.String str27 = localDate26.toString();
+java.time.chrono.ChronoPeriod chronoPeriod28 = java.time.chrono.ChronoPeriod.between((java.time.chrono.ChronoLocalDate)localDate24, (java.time.chrono.ChronoLocalDate)localDate26);
+int int29 = localDate24.lengthOfYear();
+boolean boolean30 = localDate19.isEqual((java.time.chrono.ChronoLocalDate)localDate24);
+java.time.temporal.Temporal temporal31 = offsetDateTime2.with((java.time.temporal.TemporalAdjuster)localDate24);
+java.time.LocalDate localDate32 = java.time.LocalDate.now();
+java.time.LocalDate localDate34 = localDate32.minusMonths((long)34442580);
+java.time.LocalTime localTime35 = java.time.LocalTime.MAX;
+java.time.LocalTime localTime37 = localTime35.withMinute((int)' ');
+java.time.LocalDateTime localDateTime38 = java.time.LocalDateTime.of(localDate34, localTime35);
+java.time.LocalTime localTime40 = java.time.LocalTime.ofSecondOfDay((long)16);
+java.time.Duration duration42 = java.time.Duration.ofMillis((long)1);
+java.time.LocalTime localTime43 = localTime40.minus((java.time.temporal.TemporalAmount)duration42);
+java.time.LocalDate localDate44 = java.time.LocalDate.now();
+java.lang.String str45 = localDate44.toString();
+java.time.LocalDate localDate46 = java.time.LocalDate.now();
+java.lang.String str47 = localDate46.toString();
+java.time.chrono.ChronoPeriod chronoPeriod48 = java.time.chrono.ChronoPeriod.between((java.time.chrono.ChronoLocalDate)localDate44, (java.time.chrono.ChronoLocalDate)localDate46);
+int int49 = localDate44.lengthOfYear();
+java.time.LocalDateTime localDateTime50 = localTime40.atDate(localDate44);
+java.time.chrono.ChronoPeriod chronoPeriod51 = java.time.chrono.ChronoPeriod.between((java.time.chrono.ChronoLocalDate)localDate34, (java.time.chrono.ChronoLocalDate)localDate44);
+int int52 = localDate44.lengthOfYear();
+java.time.temporal.ChronoField chronoField53 = java.time.temporal.ChronoField.ERA;
+java.time.temporal.TemporalUnit temporalUnit54 = chronoField53.getRangeUnit();
+java.util.Optional<java.time.temporal.TemporalUnit> temporalUnitOptional55 = java.util.Optional.of(temporalUnit54);
+java.time.temporal.TemporalUnit temporalUnit56 = temporalUnitOptional55.get();
+java.time.temporal.TemporalUnit temporalUnit57 = temporalUnitOptional55.get();
+boolean boolean58 = localDate44.isSupported(temporalUnit57);
+boolean boolean59 = offsetDateTime2.isSupported(temporalUnit57);
+boolean boolean60 = localTime0.isSupported(temporalUnit57);
+
+
+Progress update: steps=6716, test inputs generated=4970, failing inputs=4      (2022-02-21T09:43:54.376Z     3,98G used)
+Normal method executions: 5046233
+Exceptional method executions: 1296
+
+Average method execution time (normal termination):      0,0179
+Average method execution time (exceptional termination): 14,5
+Approximate memory usage 3,98G
+Explorer = ForwardGenerator(steps: 6716, null steps: 1746, num_sequences_generated: 4970;
+    allSequences: 4970, regresson seqs: 4781, error seqs: 4=4=4, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 185;
+    runtimePrimitivesSeen:541)
+
+Error-revealing test output:
+Error-revealing test count: 4
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.ZonedChronology$ZonedDateTimeField-org.joda.time.DateTimeZone-2/ErrorTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.ZonedChronology$ZonedDateTimeField-org.joda.time.DateTimeZone-2/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 2655 regression sequences.
+
+Regression test output:
+Regression test count: 2655
+Writing regression JUnit tests...
+                                                                                                                                                                                                       
