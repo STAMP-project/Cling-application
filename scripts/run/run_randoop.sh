@@ -3,7 +3,7 @@ project=$2
 caller_class=$3
 callee_class=$4
 budget=$5
-TIMEOUT=10m
+TIMEOUT=20m
 
 timeInMinute=$((budget / 60))
 
