@@ -15,6 +15,7 @@ preparedCPs=$( python scripts/python/reassemble-cps.py $CPEntriesContent "$proje
 RANDOOP_JAR="tools/randoop-all-4.3.0.jar"
 RANDOOP_COVERED_CLASS="tools/covered-class-4.3.0.jar"
 TestsDir="results/randoop$timeInMinute/$project-$caller_class-$callee_class-$execution_id"
+seed=$(date +%s)
 
   if [ -f "$TestsDir/RegressionTest0.java" ]; then
     echo "Already exists: $TestsDir/RegressionTest0.java"
@@ -22,6 +23,8 @@ TestsDir="results/randoop$timeInMinute/$project-$caller_class-$callee_class-$exe
     timeout -k $TIMEOUT $TIMEOUT java -Xmx4000m -javaagent:${RANDOOP_COVERED_CLASS} -classpath ${preparedCPs}:${RANDOOP_JAR} randoop.main.Main gentests \
     --classlist="deps/$caller_class-$callee_class-randoopdeps.txt" \
     --require-covered-classes="deps/caller_callee_list/$caller_class-$callee_class.txt" \
+    --testsperfile=200 \
+    --randomseed=$seed \
     --junit-output-dir=${TestsDir} --time-limit=$budget > "logs/randoop$timeInMinute/$project-$caller_class-$callee_class-$execution_id-out.txt" 2> "logs/randoop$timeInMinute/$project-$caller_class-$callee_class-$execution_id-err.txt" &
   fi
 
