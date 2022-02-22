@@ -1,0 +1,90 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+Cannot instantiate non-accessible class org.mockito.asm.AnnotationWriter specified via --testclass or --classlist.
+
+Will try to generate tests for 11 out of 12 classes.
+PUBLIC MEMBERS=120
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-21T14:33:32.849Z     193M used)
+Progress update: steps=1000, test inputs generated=687, failing inputs=0      (2022-02-21T14:33:46.987Z     956M used)
+Progress update: steps=2000, test inputs generated=1422, failing inputs=0      (2022-02-21T14:33:58.119Z     288M used)
+Progress update: steps=3000, test inputs generated=2167, failing inputs=0      (2022-02-21T14:34:09.548Z     211M used)
+Progress update: steps=4000, test inputs generated=2903, failing inputs=0      (2022-02-21T14:34:27.157Z     3.49G used)
+Progress update: steps=4468, test inputs generated=3248, failing inputs=0      (2022-02-21T14:34:32.861Z     2.69G used)
+Progress update: steps=5000, test inputs generated=3647, failing inputs=0      (2022-02-21T14:34:38.981Z     3.45G used)
+Progress update: steps=6000, test inputs generated=4348, failing inputs=0      (2022-02-21T14:35:01.091Z     3.59G used)
+Progress update: steps=7000, test inputs generated=5068, failing inputs=0      (2022-02-21T14:35:11.955Z     3.03G used)
+Progress update: steps=8000, test inputs generated=5777, failing inputs=0      (2022-02-21T14:35:23.592Z     3.71G used)
+Progress update: steps=8870, test inputs generated=6392, failing inputs=0      (2022-02-21T14:35:32.862Z     3.57G used)
+Progress update: steps=9000, test inputs generated=6477, failing inputs=0      (2022-02-21T14:35:34.137Z     3.55G used)
+Progress update: steps=10000, test inputs generated=7169, failing inputs=0      (2022-02-21T14:35:46.037Z     3.49G used)
+Progress update: steps=11000, test inputs generated=7877, failing inputs=0      (2022-02-21T14:36:05.638Z     3.71G used)
+Progress update: steps=11971, test inputs generated=8575, failing inputs=0      (2022-02-21T14:36:32.940Z     3.72G used)
+Progress update: steps=12000, test inputs generated=8594, failing inputs=0      (2022-02-21T14:36:33.655Z     3.73G used)
+Progress update: steps=13000, test inputs generated=9295, failing inputs=0      (2022-02-21T14:37:07.385Z     3.74G used)
+Progress update: steps=13634, test inputs generated=9729, failing inputs=0      (2022-02-21T14:37:32.982Z     3.74G used)
+Progress update: steps=14000, test inputs generated=9986, failing inputs=0      (2022-02-21T14:37:51.812Z     3.75G used)
+Progress update: steps=14506, test inputs generated=10351, failing inputs=0      (2022-02-21T14:38:33.082Z     3.74G used)
+Progress update: steps=14841, test inputs generated=10579, failing inputs=0      (2022-02-21T14:39:33.244Z     3.75G used)
+Progress update: steps=14973, test inputs generated=10672, failing inputs=0      (2022-02-21T14:40:33.384Z     3.75G used)
+Progress update: steps=15000, test inputs generated=10691, failing inputs=0      (2022-02-21T14:40:48.355Z     3.75G used)
+Progress update: steps=15103, test inputs generated=10759, failing inputs=0      (2022-02-21T14:41:33.467Z     3.75G used)
+Progress update: steps=15148, test inputs generated=10789, failing inputs=0      (2022-02-21T14:42:34.459Z     3.75G used)
+Progress update: steps=15150, test inputs generated=10791, failing inputs=0      (2022-02-21T14:43:43.476Z     3.75G used)
+Progress update: steps=15150, test inputs generated=10791, failing inputs=0      (2022-02-21T14:44:50.157Z     3.75G used)
+
+*** Randoop has spent over 10 seconds executing the following test.
+See https://randoop.github.io/randoop/manual/index.html#no-input-generation .
+
+org.mockito.asm.ClassWriter classWriter1 = new org.mockito.asm.ClassWriter((int)(short)100);
+java.lang.String[] strArray9 = new java.lang.String[] { "", "hi!" };
+classWriter1.visit((int)(short)100, 10, "java.io.IOException", "java.io.IOException", "java.io.IOException: hi!", strArray9);
+byte[] byteArray11 = classWriter1.toByteArray();
+org.mockito.asm.ClassReader classReader12 = new org.mockito.asm.ClassReader(byteArray11);
+java.lang.String[] strArray13 = classReader12.getInterfaces();
+int int15 = classReader12.readByte(8);
+org.mockito.asm.ClassWriter classWriter17 = new org.mockito.asm.ClassWriter((int)(short)100);
+java.lang.String[] strArray25 = new java.lang.String[] { "", "hi!" };
+classWriter17.visit((int)(short)100, 10, "java.io.IOException", "java.io.IOException", "java.io.IOException: hi!", strArray25);
+org.mockito.asm.FieldVisitor fieldVisitor32 = classWriter17.visitField(1, "java.io.IOException: hi!", "java.io.IOException: hi!", "hi!", (java.lang.Object)(byte)1);
+org.mockito.asm.Attribute attribute33 = null;
+org.mockito.asm.Attribute[] attributeArray34 = new org.mockito.asm.Attribute[] { attribute33 };
+classReader12.accept((org.mockito.asm.ClassVisitor)classWriter17, attributeArray34, 0);
+classWriter17.visitOuterClass("L1928203073", "L171816469", "");
+int int42 = classWriter17.newUTF8("L1876868262");
+int int44 = classWriter17.newUTF8("L1928203073");
+org.mockito.asm.ClassWriter classWriter50 = new org.mockito.asm.ClassWriter((int)(short)100);
+java.lang.String[] strArray58 = new java.lang.String[] { "", "hi!" };
+classWriter50.visit((int)(short)100, 10, "java.io.IOException", "java.io.IOException", "java.io.IOException: hi!", strArray58);
+byte[] byteArray60 = classWriter50.toByteArray();
+org.mockito.asm.ClassReader classReader61 = new org.mockito.asm.ClassReader(byteArray60);
+java.lang.String[] strArray62 = classReader61.getInterfaces();
+int int63 = classReader61.header;
+byte[] byteArray64 = classReader61.b;
+java.lang.String[] strArray65 = classReader61.getInterfaces();
+org.mockito.asm.MethodVisitor methodVisitor66 = classWriter17.visitMethod(18767, "L12978560", "L1027313747", "L589562870", strArray65);
+methodVisitor66.visitFieldInsn((-889275714), "L646456050", "L1602768955", "L254956859");
+
+
+Will dump a heap profile to randoop-slow.hprof.
+
+Progress update: steps=15150, test inputs generated=10791, failing inputs=0      (2022-02-21T14:47:02.908Z     3.75G used)
+Normal method executions: 4719362
+Exceptional method executions: 2092
+
+Average method execution time (normal termination):      0.000772
+Average method execution time (exceptional termination): 9.94
+Approximate memory usage 3.75G
+Explorer = ForwardGenerator(steps: 15150, null steps: 4359, num_sequences_generated: 10791;
+    allSequences: 10791, regresson seqs: 10774, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 17;
+    runtimePrimitivesSeen:541)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 6012 regression sequences.
+
+Regression test output:
+Regression test count: 6012
+Writing regression JUnit tests...

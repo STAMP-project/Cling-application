@@ -1,0 +1,539 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 53 classes.
+PUBLIC MEMBERS=1800
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-21T14:47:06.975Z     333M used)
+Progress update: steps=1000, test inputs generated=832, failing inputs=44      (2022-02-21T14:47:22.411Z     572M used)
+Progress update: steps=2000, test inputs generated=1806, failing inputs=84      (2022-02-21T14:47:41.485Z     194M used)
+Progress update: steps=3000, test inputs generated=2772, failing inputs=115      (2022-02-21T14:48:01.320Z     495M used)
+Progress update: steps=3232, test inputs generated=2995, failing inputs=125      (2022-02-21T14:48:06.987Z     1,24G used)Long execution time 13 sec for
+org.joda.time.DateTimeZone dateTimeZone1 = null;
+org.joda.time.DateMidnight dateMidnight2 = new org.joda.time.DateMidnight(1L, dateTimeZone1);
+org.joda.time.DateMidnight.Property property3 = dateMidnight2.dayOfMonth();
+org.joda.time.DateMidnight dateMidnight5 = dateMidnight2.minusDays((int)'a');
+org.joda.time.DateMidnight.Property property6 = dateMidnight2.dayOfMonth();
+org.joda.time.Period period7 = org.joda.time.Period.ZERO;
+org.joda.time.MutablePeriod mutablePeriod8 = period7.toMutablePeriod();
+org.joda.time.DateMidnight dateMidnight9 = dateMidnight2.plus((org.joda.time.ReadablePeriod)period7);
+org.joda.time.DateTimeZone dateTimeZone11 = null;
+org.joda.time.DateMidnight dateMidnight12 = new org.joda.time.DateMidnight(1L, dateTimeZone11);
+org.joda.time.DateMidnight dateMidnight14 = dateMidnight12.minusMonths((int)(short)100);
+org.joda.time.DateTimeFieldType dateTimeFieldType15 = org.joda.time.DateTimeFieldType.weekyear();
+org.joda.time.DateMidnight dateMidnight17 = dateMidnight14.withField(dateTimeFieldType15, (int)'a');
+boolean boolean18 = dateMidnight9.isSupported(dateTimeFieldType15);
+org.joda.time.YearMonthDay yearMonthDay19 = dateMidnight9.toYearMonthDay();
+int int20 = yearMonthDay19.getYear();
+org.joda.time.YearMonthDay yearMonthDay22 = yearMonthDay19.withYear(2022);
+org.joda.time.DateTimeZone dateTimeZone24 = null;
+org.joda.time.LocalDate localDate25 = new org.joda.time.LocalDate((long)'a', dateTimeZone24);
+org.joda.time.DateTimeZone dateTimeZone27 = null;
+org.joda.time.LocalDate localDate28 = new org.joda.time.LocalDate((long)'a', dateTimeZone27);
+org.joda.time.Period period29 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate25, (org.joda.time.ReadablePartial)localDate28);
+org.joda.time.LocalDate localDate31 = localDate25.withDayOfMonth(13);
+org.joda.time.Chronology chronology32 = localDate31.getChronology();
+long long36 = chronology32.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType38 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone40 = null;
+org.joda.time.LocalDate localDate41 = new org.joda.time.LocalDate((long)'a', dateTimeZone40);
+org.joda.time.DateTimeZone dateTimeZone43 = null;
+org.joda.time.LocalDate localDate44 = new org.joda.time.LocalDate((long)'a', dateTimeZone43);
+org.joda.time.Period period45 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate41, (org.joda.time.ReadablePartial)localDate44);
+org.joda.time.LocalDate localDate47 = localDate41.withDayOfMonth(13);
+org.joda.time.Chronology chronology48 = localDate47.getChronology();
+org.joda.time.MutablePeriod mutablePeriod49 = new org.joda.time.MutablePeriod((long)0, periodType38, chronology48);
+int[] intArray52 = chronology32.get((org.joda.time.ReadablePeriod)mutablePeriod49, (long)596, (long)53221161);
+int int53 = mutablePeriod49.getMonths();
+int int54 = mutablePeriod49.getMinutes();
+org.joda.time.YearMonthDay yearMonthDay55 = yearMonthDay19.minus((org.joda.time.ReadablePeriod)mutablePeriod49);
+org.joda.time.DateTimeZone dateTimeZone57 = null;
+org.joda.time.LocalDate localDate58 = new org.joda.time.LocalDate((long)'a', dateTimeZone57);
+org.joda.time.DateTimeZone dateTimeZone60 = null;
+org.joda.time.LocalDate localDate61 = new org.joda.time.LocalDate((long)'a', dateTimeZone60);
+org.joda.time.Period period62 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate58, (org.joda.time.ReadablePartial)localDate61);
+org.joda.time.LocalDate localDate64 = localDate58.withDayOfMonth(13);
+org.joda.time.Chronology chronology65 = localDate64.getChronology();
+long long69 = chronology65.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType71 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone73 = null;
+org.joda.time.LocalDate localDate74 = new org.joda.time.LocalDate((long)'a', dateTimeZone73);
+org.joda.time.DateTimeZone dateTimeZone76 = null;
+org.joda.time.LocalDate localDate77 = new org.joda.time.LocalDate((long)'a', dateTimeZone76);
+org.joda.time.Period period78 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate74, (org.joda.time.ReadablePartial)localDate77);
+org.joda.time.LocalDate localDate80 = localDate74.withDayOfMonth(13);
+org.joda.time.Chronology chronology81 = localDate80.getChronology();
+org.joda.time.MutablePeriod mutablePeriod82 = new org.joda.time.MutablePeriod((long)0, periodType71, chronology81);
+int[] intArray85 = chronology65.get((org.joda.time.ReadablePeriod)mutablePeriod82, (long)596, (long)53221161);
+int int86 = mutablePeriod82.getMonths();
+int int87 = mutablePeriod82.getMinutes();
+int int88 = mutablePeriod82.getHours();
+mutablePeriod82.addWeeks(234);
+int int91 = mutablePeriod82.getWeeks();
+mutablePeriod82.setDays(31);
+org.joda.time.YearMonthDay yearMonthDay95 = yearMonthDay19.withPeriodAdded((org.joda.time.ReadablePeriod)mutablePeriod82, 53221887);
+
+
+Progress update: steps=4000, test inputs generated=3730, failing inputs=154      (2022-02-21T14:48:37.934Z     421M used)
+Progress update: steps=5000, test inputs generated=4677, failing inputs=161      (2022-02-21T14:49:02.148Z     1.11G used)
+Progress update: steps=5216, test inputs generated=4887, failing inputs=161      (2022-02-21T14:49:07.221Z     687M used)Long execution time 13 sec for
+org.joda.time.DateTimeZone dateTimeZone1 = null;
+org.joda.time.DateMidnight dateMidnight2 = new org.joda.time.DateMidnight(1L, dateTimeZone1);
+org.joda.time.DateMidnight.Property property3 = dateMidnight2.dayOfMonth();
+org.joda.time.DateMidnight dateMidnight5 = dateMidnight2.minusDays((int)'a');
+org.joda.time.DateMidnight.Property property6 = dateMidnight2.dayOfMonth();
+org.joda.time.Period period7 = org.joda.time.Period.ZERO;
+org.joda.time.MutablePeriod mutablePeriod8 = period7.toMutablePeriod();
+org.joda.time.DateMidnight dateMidnight9 = dateMidnight2.plus((org.joda.time.ReadablePeriod)period7);
+org.joda.time.DateTimeZone dateTimeZone11 = null;
+org.joda.time.DateMidnight dateMidnight12 = new org.joda.time.DateMidnight(1L, dateTimeZone11);
+org.joda.time.DateMidnight dateMidnight14 = dateMidnight12.minusMonths((int)(short)100);
+org.joda.time.DateTimeFieldType dateTimeFieldType15 = org.joda.time.DateTimeFieldType.weekyear();
+org.joda.time.DateMidnight dateMidnight17 = dateMidnight14.withField(dateTimeFieldType15, (int)'a');
+boolean boolean18 = dateMidnight9.isSupported(dateTimeFieldType15);
+org.joda.time.YearMonthDay yearMonthDay19 = dateMidnight9.toYearMonthDay();
+int int20 = yearMonthDay19.getYear();
+org.joda.time.YearMonthDay yearMonthDay22 = yearMonthDay19.withYear(2022);
+org.joda.time.DateTimeZone dateTimeZone24 = null;
+org.joda.time.LocalDate localDate25 = new org.joda.time.LocalDate((long)'a', dateTimeZone24);
+org.joda.time.DateTimeZone dateTimeZone27 = null;
+org.joda.time.LocalDate localDate28 = new org.joda.time.LocalDate((long)'a', dateTimeZone27);
+org.joda.time.Period period29 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate25, (org.joda.time.ReadablePartial)localDate28);
+org.joda.time.LocalDate localDate31 = localDate25.withDayOfMonth(13);
+org.joda.time.Chronology chronology32 = localDate31.getChronology();
+long long36 = chronology32.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType38 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone40 = null;
+org.joda.time.LocalDate localDate41 = new org.joda.time.LocalDate((long)'a', dateTimeZone40);
+org.joda.time.DateTimeZone dateTimeZone43 = null;
+org.joda.time.LocalDate localDate44 = new org.joda.time.LocalDate((long)'a', dateTimeZone43);
+org.joda.time.Period period45 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate41, (org.joda.time.ReadablePartial)localDate44);
+org.joda.time.LocalDate localDate47 = localDate41.withDayOfMonth(13);
+org.joda.time.Chronology chronology48 = localDate47.getChronology();
+org.joda.time.MutablePeriod mutablePeriod49 = new org.joda.time.MutablePeriod((long)0, periodType38, chronology48);
+int[] intArray52 = chronology32.get((org.joda.time.ReadablePeriod)mutablePeriod49, (long)596, (long)53221161);
+int int53 = mutablePeriod49.getMonths();
+int int54 = mutablePeriod49.getMinutes();
+org.joda.time.YearMonthDay yearMonthDay55 = yearMonthDay19.minus((org.joda.time.ReadablePeriod)mutablePeriod49);
+org.joda.time.DateTimeZone dateTimeZone57 = null;
+org.joda.time.LocalDate localDate58 = new org.joda.time.LocalDate((long)'a', dateTimeZone57);
+org.joda.time.DateTimeZone dateTimeZone60 = null;
+org.joda.time.LocalDate localDate61 = new org.joda.time.LocalDate((long)'a', dateTimeZone60);
+org.joda.time.Period period62 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate58, (org.joda.time.ReadablePartial)localDate61);
+org.joda.time.LocalDate localDate64 = localDate58.withDayOfMonth(13);
+org.joda.time.Chronology chronology65 = localDate64.getChronology();
+long long69 = chronology65.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType71 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone73 = null;
+org.joda.time.LocalDate localDate74 = new org.joda.time.LocalDate((long)'a', dateTimeZone73);
+org.joda.time.DateTimeZone dateTimeZone76 = null;
+org.joda.time.LocalDate localDate77 = new org.joda.time.LocalDate((long)'a', dateTimeZone76);
+org.joda.time.Period period78 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate74, (org.joda.time.ReadablePartial)localDate77);
+org.joda.time.LocalDate localDate80 = localDate74.withDayOfMonth(13);
+org.joda.time.Chronology chronology81 = localDate80.getChronology();
+org.joda.time.MutablePeriod mutablePeriod82 = new org.joda.time.MutablePeriod((long)0, periodType71, chronology81);
+int[] intArray85 = chronology65.get((org.joda.time.ReadablePeriod)mutablePeriod82, (long)596, (long)53221161);
+int int86 = mutablePeriod82.getMonths();
+int int87 = mutablePeriod82.getMinutes();
+int int88 = mutablePeriod82.getHours();
+mutablePeriod82.addWeeks(234);
+int int91 = mutablePeriod82.getWeeks();
+mutablePeriod82.setDays(31);
+org.joda.time.YearMonthDay yearMonthDay95 = yearMonthDay19.withPeriodAdded((org.joda.time.ReadablePeriod)mutablePeriod82, 53221887);
+org.joda.time.YearMonthDay.Property property96 = yearMonthDay95.dayOfMonth();
+
+
+Progress update: steps=6000, test inputs generated=5630, failing inputs=161      (2022-02-21T14:49:40.639Z     1,42G used)
+Progress update: steps=7000, test inputs generated=6578, failing inputs=163      (2022-02-21T14:50:02.041Z     1,07G used)
+Progress update: steps=7181, test inputs generated=6750, failing inputs=163      (2022-02-21T14:50:07.221Z     510M used)
+Progress update: steps=8000, test inputs generated=7518, failing inputs=163      (2022-02-21T14:50:23.362Z     727M used)
+Progress update: steps=9000, test inputs generated=8455, failing inputs=164      (2022-02-21T14:50:55.303Z     1,09G used)
+Progress update: steps=9325, test inputs generated=8757, failing inputs=164      (2022-02-21T14:51:07.280Z     713M used)Long execution time 13 sec for
+org.joda.time.DateTimeZone dateTimeZone1 = null;
+org.joda.time.DateMidnight dateMidnight2 = new org.joda.time.DateMidnight(1L, dateTimeZone1);
+org.joda.time.DateMidnight.Property property3 = dateMidnight2.dayOfMonth();
+org.joda.time.DateMidnight dateMidnight5 = dateMidnight2.minusDays((int)'a');
+org.joda.time.DateMidnight.Property property6 = dateMidnight2.dayOfMonth();
+org.joda.time.Period period7 = org.joda.time.Period.ZERO;
+org.joda.time.MutablePeriod mutablePeriod8 = period7.toMutablePeriod();
+org.joda.time.DateMidnight dateMidnight9 = dateMidnight2.plus((org.joda.time.ReadablePeriod)period7);
+org.joda.time.DateTimeZone dateTimeZone11 = null;
+org.joda.time.DateMidnight dateMidnight12 = new org.joda.time.DateMidnight(1L, dateTimeZone11);
+org.joda.time.DateMidnight dateMidnight14 = dateMidnight12.minusMonths((int)(short)100);
+org.joda.time.DateTimeFieldType dateTimeFieldType15 = org.joda.time.DateTimeFieldType.weekyear();
+org.joda.time.DateMidnight dateMidnight17 = dateMidnight14.withField(dateTimeFieldType15, (int)'a');
+boolean boolean18 = dateMidnight9.isSupported(dateTimeFieldType15);
+org.joda.time.YearMonthDay yearMonthDay19 = dateMidnight9.toYearMonthDay();
+int int20 = yearMonthDay19.getYear();
+org.joda.time.YearMonthDay yearMonthDay22 = yearMonthDay19.withYear(2022);
+org.joda.time.DateTimeZone dateTimeZone24 = null;
+org.joda.time.LocalDate localDate25 = new org.joda.time.LocalDate((long)'a', dateTimeZone24);
+org.joda.time.DateTimeZone dateTimeZone27 = null;
+org.joda.time.LocalDate localDate28 = new org.joda.time.LocalDate((long)'a', dateTimeZone27);
+org.joda.time.Period period29 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate25, (org.joda.time.ReadablePartial)localDate28);
+org.joda.time.LocalDate localDate31 = localDate25.withDayOfMonth(13);
+org.joda.time.Chronology chronology32 = localDate31.getChronology();
+long long36 = chronology32.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType38 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone40 = null;
+org.joda.time.LocalDate localDate41 = new org.joda.time.LocalDate((long)'a', dateTimeZone40);
+org.joda.time.DateTimeZone dateTimeZone43 = null;
+org.joda.time.LocalDate localDate44 = new org.joda.time.LocalDate((long)'a', dateTimeZone43);
+org.joda.time.Period period45 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate41, (org.joda.time.ReadablePartial)localDate44);
+org.joda.time.LocalDate localDate47 = localDate41.withDayOfMonth(13);
+org.joda.time.Chronology chronology48 = localDate47.getChronology();
+org.joda.time.MutablePeriod mutablePeriod49 = new org.joda.time.MutablePeriod((long)0, periodType38, chronology48);
+int[] intArray52 = chronology32.get((org.joda.time.ReadablePeriod)mutablePeriod49, (long)596, (long)53221161);
+int int53 = mutablePeriod49.getMonths();
+int int54 = mutablePeriod49.getMinutes();
+org.joda.time.YearMonthDay yearMonthDay55 = yearMonthDay19.minus((org.joda.time.ReadablePeriod)mutablePeriod49);
+org.joda.time.DateTimeZone dateTimeZone57 = null;
+org.joda.time.LocalDate localDate58 = new org.joda.time.LocalDate((long)'a', dateTimeZone57);
+org.joda.time.DateTimeZone dateTimeZone60 = null;
+org.joda.time.LocalDate localDate61 = new org.joda.time.LocalDate((long)'a', dateTimeZone60);
+org.joda.time.Period period62 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate58, (org.joda.time.ReadablePartial)localDate61);
+org.joda.time.LocalDate localDate64 = localDate58.withDayOfMonth(13);
+org.joda.time.Chronology chronology65 = localDate64.getChronology();
+long long69 = chronology65.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType71 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone73 = null;
+org.joda.time.LocalDate localDate74 = new org.joda.time.LocalDate((long)'a', dateTimeZone73);
+org.joda.time.DateTimeZone dateTimeZone76 = null;
+org.joda.time.LocalDate localDate77 = new org.joda.time.LocalDate((long)'a', dateTimeZone76);
+org.joda.time.Period period78 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate74, (org.joda.time.ReadablePartial)localDate77);
+org.joda.time.LocalDate localDate80 = localDate74.withDayOfMonth(13);
+org.joda.time.Chronology chronology81 = localDate80.getChronology();
+org.joda.time.MutablePeriod mutablePeriod82 = new org.joda.time.MutablePeriod((long)0, periodType71, chronology81);
+int[] intArray85 = chronology65.get((org.joda.time.ReadablePeriod)mutablePeriod82, (long)596, (long)53221161);
+int int86 = mutablePeriod82.getMonths();
+int int87 = mutablePeriod82.getMinutes();
+int int88 = mutablePeriod82.getHours();
+mutablePeriod82.addWeeks(234);
+int int91 = mutablePeriod82.getWeeks();
+mutablePeriod82.setDays(31);
+org.joda.time.YearMonthDay yearMonthDay95 = yearMonthDay19.withPeriodAdded((org.joda.time.ReadablePeriod)mutablePeriod82, 53221887);
+mutablePeriod82.setDays(53281896);
+
+
+Progress update: steps=10000, test inputs generated=9380, failing inputs=164      (2022-02-21T14:51:44.790Z     1,37G used)
+Progress update: steps=10845, test inputs generated=10158, failing inputs=165      (2022-02-21T14:52:07.543Z     370M used)
+Progress update: steps=11000, test inputs generated=10295, failing inputs=165      (2022-02-21T14:52:10.786Z     750M used)Long execution time 14 sec for
+org.joda.time.DateTimeZone dateTimeZone1 = null;
+org.joda.time.DateMidnight dateMidnight2 = new org.joda.time.DateMidnight(1L, dateTimeZone1);
+org.joda.time.DateMidnight.Property property3 = dateMidnight2.dayOfMonth();
+org.joda.time.DateMidnight dateMidnight5 = dateMidnight2.minusDays((int)'a');
+org.joda.time.DateMidnight.Property property6 = dateMidnight2.dayOfMonth();
+org.joda.time.Period period7 = org.joda.time.Period.ZERO;
+org.joda.time.MutablePeriod mutablePeriod8 = period7.toMutablePeriod();
+org.joda.time.DateMidnight dateMidnight9 = dateMidnight2.plus((org.joda.time.ReadablePeriod)period7);
+org.joda.time.DateTimeZone dateTimeZone11 = null;
+org.joda.time.DateMidnight dateMidnight12 = new org.joda.time.DateMidnight(1L, dateTimeZone11);
+org.joda.time.DateMidnight dateMidnight14 = dateMidnight12.minusMonths((int)(short)100);
+org.joda.time.DateTimeFieldType dateTimeFieldType15 = org.joda.time.DateTimeFieldType.weekyear();
+org.joda.time.DateMidnight dateMidnight17 = dateMidnight14.withField(dateTimeFieldType15, (int)'a');
+boolean boolean18 = dateMidnight9.isSupported(dateTimeFieldType15);
+org.joda.time.YearMonthDay yearMonthDay19 = dateMidnight9.toYearMonthDay();
+int int20 = yearMonthDay19.getYear();
+org.joda.time.YearMonthDay yearMonthDay22 = yearMonthDay19.withYear(2022);
+org.joda.time.DateTimeZone dateTimeZone24 = null;
+org.joda.time.LocalDate localDate25 = new org.joda.time.LocalDate((long)'a', dateTimeZone24);
+org.joda.time.DateTimeZone dateTimeZone27 = null;
+org.joda.time.LocalDate localDate28 = new org.joda.time.LocalDate((long)'a', dateTimeZone27);
+org.joda.time.Period period29 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate25, (org.joda.time.ReadablePartial)localDate28);
+org.joda.time.LocalDate localDate31 = localDate25.withDayOfMonth(13);
+org.joda.time.Chronology chronology32 = localDate31.getChronology();
+long long36 = chronology32.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType38 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone40 = null;
+org.joda.time.LocalDate localDate41 = new org.joda.time.LocalDate((long)'a', dateTimeZone40);
+org.joda.time.DateTimeZone dateTimeZone43 = null;
+org.joda.time.LocalDate localDate44 = new org.joda.time.LocalDate((long)'a', dateTimeZone43);
+org.joda.time.Period period45 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate41, (org.joda.time.ReadablePartial)localDate44);
+org.joda.time.LocalDate localDate47 = localDate41.withDayOfMonth(13);
+org.joda.time.Chronology chronology48 = localDate47.getChronology();
+org.joda.time.MutablePeriod mutablePeriod49 = new org.joda.time.MutablePeriod((long)0, periodType38, chronology48);
+int[] intArray52 = chronology32.get((org.joda.time.ReadablePeriod)mutablePeriod49, (long)596, (long)53221161);
+int int53 = mutablePeriod49.getMonths();
+int int54 = mutablePeriod49.getMinutes();
+org.joda.time.YearMonthDay yearMonthDay55 = yearMonthDay19.minus((org.joda.time.ReadablePeriod)mutablePeriod49);
+org.joda.time.DateTimeZone dateTimeZone57 = null;
+org.joda.time.LocalDate localDate58 = new org.joda.time.LocalDate((long)'a', dateTimeZone57);
+org.joda.time.DateTimeZone dateTimeZone60 = null;
+org.joda.time.LocalDate localDate61 = new org.joda.time.LocalDate((long)'a', dateTimeZone60);
+org.joda.time.Period period62 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate58, (org.joda.time.ReadablePartial)localDate61);
+org.joda.time.LocalDate localDate64 = localDate58.withDayOfMonth(13);
+org.joda.time.Chronology chronology65 = localDate64.getChronology();
+long long69 = chronology65.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType71 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone73 = null;
+org.joda.time.LocalDate localDate74 = new org.joda.time.LocalDate((long)'a', dateTimeZone73);
+org.joda.time.DateTimeZone dateTimeZone76 = null;
+org.joda.time.LocalDate localDate77 = new org.joda.time.LocalDate((long)'a', dateTimeZone76);
+org.joda.time.Period period78 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate74, (org.joda.time.ReadablePartial)localDate77);
+org.joda.time.LocalDate localDate80 = localDate74.withDayOfMonth(13);
+org.joda.time.Chronology chronology81 = localDate80.getChronology();
+org.joda.time.MutablePeriod mutablePeriod82 = new org.joda.time.MutablePeriod((long)0, periodType71, chronology81);
+int[] intArray85 = chronology65.get((org.joda.time.ReadablePeriod)mutablePeriod82, (long)596, (long)53221161);
+int int86 = mutablePeriod82.getMonths();
+int int87 = mutablePeriod82.getMinutes();
+int int88 = mutablePeriod82.getHours();
+mutablePeriod82.addWeeks(234);
+int int91 = mutablePeriod82.getWeeks();
+mutablePeriod82.setDays(31);
+org.joda.time.YearMonthDay yearMonthDay95 = yearMonthDay19.withPeriodAdded((org.joda.time.ReadablePeriod)mutablePeriod82, 53221887);
+org.joda.time.YearMonthDay.Property property96 = yearMonthDay95.dayOfMonth();
+org.joda.time.YearMonthDay yearMonthDay98 = yearMonthDay95.minusDays(41);
+
+
+Progress update: steps=12000, test inputs generated=11224, failing inputs=166      (2022-02-21T14:52:55.244Z     457M used)
+Progress update: steps=12392, test inputs generated=11596, failing inputs=167      (2022-02-21T14:53:07.543Z     189M used)Long execution time 14 sec for
+org.joda.time.DateTimeZone dateTimeZone1 = null;
+org.joda.time.DateMidnight dateMidnight2 = new org.joda.time.DateMidnight(1L, dateTimeZone1);
+org.joda.time.DateMidnight.Property property3 = dateMidnight2.dayOfMonth();
+org.joda.time.DateMidnight dateMidnight5 = dateMidnight2.minusDays((int)'a');
+org.joda.time.DateMidnight.Property property6 = dateMidnight2.dayOfMonth();
+org.joda.time.Period period7 = org.joda.time.Period.ZERO;
+org.joda.time.MutablePeriod mutablePeriod8 = period7.toMutablePeriod();
+org.joda.time.DateMidnight dateMidnight9 = dateMidnight2.plus((org.joda.time.ReadablePeriod)period7);
+org.joda.time.DateTimeZone dateTimeZone11 = null;
+org.joda.time.DateMidnight dateMidnight12 = new org.joda.time.DateMidnight(1L, dateTimeZone11);
+org.joda.time.DateMidnight dateMidnight14 = dateMidnight12.minusMonths((int)(short)100);
+org.joda.time.DateTimeFieldType dateTimeFieldType15 = org.joda.time.DateTimeFieldType.weekyear();
+org.joda.time.DateMidnight dateMidnight17 = dateMidnight14.withField(dateTimeFieldType15, (int)'a');
+boolean boolean18 = dateMidnight9.isSupported(dateTimeFieldType15);
+org.joda.time.YearMonthDay yearMonthDay19 = dateMidnight9.toYearMonthDay();
+int int20 = yearMonthDay19.getYear();
+org.joda.time.YearMonthDay yearMonthDay22 = yearMonthDay19.withYear(2022);
+org.joda.time.DateTimeZone dateTimeZone24 = null;
+org.joda.time.LocalDate localDate25 = new org.joda.time.LocalDate((long)'a', dateTimeZone24);
+org.joda.time.DateTimeZone dateTimeZone27 = null;
+org.joda.time.LocalDate localDate28 = new org.joda.time.LocalDate((long)'a', dateTimeZone27);
+org.joda.time.Period period29 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate25, (org.joda.time.ReadablePartial)localDate28);
+org.joda.time.LocalDate localDate31 = localDate25.withDayOfMonth(13);
+org.joda.time.Chronology chronology32 = localDate31.getChronology();
+long long36 = chronology32.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType38 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone40 = null;
+org.joda.time.LocalDate localDate41 = new org.joda.time.LocalDate((long)'a', dateTimeZone40);
+org.joda.time.DateTimeZone dateTimeZone43 = null;
+org.joda.time.LocalDate localDate44 = new org.joda.time.LocalDate((long)'a', dateTimeZone43);
+org.joda.time.Period period45 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate41, (org.joda.time.ReadablePartial)localDate44);
+org.joda.time.LocalDate localDate47 = localDate41.withDayOfMonth(13);
+org.joda.time.Chronology chronology48 = localDate47.getChronology();
+org.joda.time.MutablePeriod mutablePeriod49 = new org.joda.time.MutablePeriod((long)0, periodType38, chronology48);
+int[] intArray52 = chronology32.get((org.joda.time.ReadablePeriod)mutablePeriod49, (long)596, (long)53221161);
+int int53 = mutablePeriod49.getMonths();
+int int54 = mutablePeriod49.getMinutes();
+org.joda.time.YearMonthDay yearMonthDay55 = yearMonthDay19.minus((org.joda.time.ReadablePeriod)mutablePeriod49);
+org.joda.time.DateTimeZone dateTimeZone57 = null;
+org.joda.time.LocalDate localDate58 = new org.joda.time.LocalDate((long)'a', dateTimeZone57);
+org.joda.time.DateTimeZone dateTimeZone60 = null;
+org.joda.time.LocalDate localDate61 = new org.joda.time.LocalDate((long)'a', dateTimeZone60);
+org.joda.time.Period period62 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate58, (org.joda.time.ReadablePartial)localDate61);
+org.joda.time.LocalDate localDate64 = localDate58.withDayOfMonth(13);
+org.joda.time.Chronology chronology65 = localDate64.getChronology();
+long long69 = chronology65.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType71 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone73 = null;
+org.joda.time.LocalDate localDate74 = new org.joda.time.LocalDate((long)'a', dateTimeZone73);
+org.joda.time.DateTimeZone dateTimeZone76 = null;
+org.joda.time.LocalDate localDate77 = new org.joda.time.LocalDate((long)'a', dateTimeZone76);
+org.joda.time.Period period78 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate74, (org.joda.time.ReadablePartial)localDate77);
+org.joda.time.LocalDate localDate80 = localDate74.withDayOfMonth(13);
+org.joda.time.Chronology chronology81 = localDate80.getChronology();
+org.joda.time.MutablePeriod mutablePeriod82 = new org.joda.time.MutablePeriod((long)0, periodType71, chronology81);
+int[] intArray85 = chronology65.get((org.joda.time.ReadablePeriod)mutablePeriod82, (long)596, (long)53221161);
+int int86 = mutablePeriod82.getMonths();
+int int87 = mutablePeriod82.getMinutes();
+int int88 = mutablePeriod82.getHours();
+mutablePeriod82.addWeeks(234);
+int int91 = mutablePeriod82.getWeeks();
+mutablePeriod82.setDays(31);
+org.joda.time.YearMonthDay yearMonthDay95 = yearMonthDay19.withPeriodAdded((org.joda.time.ReadablePeriod)mutablePeriod82, 53221887);
+org.joda.time.YearMonthDay.Property property96 = yearMonthDay95.dayOfMonth();
+org.joda.time.YearMonthDay.Property property97 = yearMonthDay95.dayOfMonth();
+
+
+Progress update: steps=13000, test inputs generated=12170, failing inputs=167      (2022-02-21T14:53:38.296Z     1.29G used)
+Progress update: steps=14000, test inputs generated=13108, failing inputs=167      (2022-02-21T14:54:07.297Z     488M used)
+Progress update: steps=14377, test inputs generated=13454, failing inputs=167      (2022-02-21T14:54:19.291Z     1,20G used)
+Progress update: steps=15000, test inputs generated=14033, failing inputs=169      (2022-02-21T14:54:39.533Z     549M used)
+Progress update: steps=16000, test inputs generated=14947, failing inputs=170      (2022-02-21T14:55:09.564Z     939M used)
+Progress update: steps=16276, test inputs generated=15201, failing inputs=170      (2022-02-21T14:55:19.291Z     1,27G used)Long execution time 11 sec for
+org.joda.time.DateTimeZone dateTimeZone1 = null;
+org.joda.time.DateMidnight dateMidnight2 = new org.joda.time.DateMidnight(1L, dateTimeZone1);
+org.joda.time.DateMidnight.Property property3 = dateMidnight2.dayOfMonth();
+org.joda.time.DateMidnight dateMidnight5 = dateMidnight2.minusDays((int)'a');
+org.joda.time.DateMidnight.Property property6 = dateMidnight2.dayOfMonth();
+org.joda.time.Period period7 = org.joda.time.Period.ZERO;
+org.joda.time.MutablePeriod mutablePeriod8 = period7.toMutablePeriod();
+org.joda.time.DateMidnight dateMidnight9 = dateMidnight2.plus((org.joda.time.ReadablePeriod)period7);
+org.joda.time.DateTimeZone dateTimeZone11 = null;
+org.joda.time.DateMidnight dateMidnight12 = new org.joda.time.DateMidnight(1L, dateTimeZone11);
+org.joda.time.DateMidnight dateMidnight14 = dateMidnight12.minusMonths((int)(short)100);
+org.joda.time.DateTimeFieldType dateTimeFieldType15 = org.joda.time.DateTimeFieldType.weekyear();
+org.joda.time.DateMidnight dateMidnight17 = dateMidnight14.withField(dateTimeFieldType15, (int)'a');
+boolean boolean18 = dateMidnight9.isSupported(dateTimeFieldType15);
+org.joda.time.YearMonthDay yearMonthDay19 = dateMidnight9.toYearMonthDay();
+int int20 = yearMonthDay19.getYear();
+org.joda.time.YearMonthDay yearMonthDay22 = yearMonthDay19.withYear(2022);
+org.joda.time.DateTimeZone dateTimeZone24 = null;
+org.joda.time.LocalDate localDate25 = new org.joda.time.LocalDate((long)'a', dateTimeZone24);
+org.joda.time.DateTimeZone dateTimeZone27 = null;
+org.joda.time.LocalDate localDate28 = new org.joda.time.LocalDate((long)'a', dateTimeZone27);
+org.joda.time.Period period29 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate25, (org.joda.time.ReadablePartial)localDate28);
+org.joda.time.LocalDate localDate31 = localDate25.withDayOfMonth(13);
+org.joda.time.Chronology chronology32 = localDate31.getChronology();
+long long36 = chronology32.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType38 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone40 = null;
+org.joda.time.LocalDate localDate41 = new org.joda.time.LocalDate((long)'a', dateTimeZone40);
+org.joda.time.DateTimeZone dateTimeZone43 = null;
+org.joda.time.LocalDate localDate44 = new org.joda.time.LocalDate((long)'a', dateTimeZone43);
+org.joda.time.Period period45 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate41, (org.joda.time.ReadablePartial)localDate44);
+org.joda.time.LocalDate localDate47 = localDate41.withDayOfMonth(13);
+org.joda.time.Chronology chronology48 = localDate47.getChronology();
+org.joda.time.MutablePeriod mutablePeriod49 = new org.joda.time.MutablePeriod((long)0, periodType38, chronology48);
+int[] intArray52 = chronology32.get((org.joda.time.ReadablePeriod)mutablePeriod49, (long)596, (long)53221161);
+int int53 = mutablePeriod49.getMonths();
+int int54 = mutablePeriod49.getMinutes();
+org.joda.time.YearMonthDay yearMonthDay55 = yearMonthDay19.minus((org.joda.time.ReadablePeriod)mutablePeriod49);
+org.joda.time.DateTimeZone dateTimeZone57 = null;
+org.joda.time.LocalDate localDate58 = new org.joda.time.LocalDate((long)'a', dateTimeZone57);
+org.joda.time.DateTimeZone dateTimeZone60 = null;
+org.joda.time.LocalDate localDate61 = new org.joda.time.LocalDate((long)'a', dateTimeZone60);
+org.joda.time.Period period62 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate58, (org.joda.time.ReadablePartial)localDate61);
+org.joda.time.LocalDate localDate64 = localDate58.withDayOfMonth(13);
+org.joda.time.Chronology chronology65 = localDate64.getChronology();
+long long69 = chronology65.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType71 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone73 = null;
+org.joda.time.LocalDate localDate74 = new org.joda.time.LocalDate((long)'a', dateTimeZone73);
+org.joda.time.DateTimeZone dateTimeZone76 = null;
+org.joda.time.LocalDate localDate77 = new org.joda.time.LocalDate((long)'a', dateTimeZone76);
+org.joda.time.Period period78 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate74, (org.joda.time.ReadablePartial)localDate77);
+org.joda.time.LocalDate localDate80 = localDate74.withDayOfMonth(13);
+org.joda.time.Chronology chronology81 = localDate80.getChronology();
+org.joda.time.MutablePeriod mutablePeriod82 = new org.joda.time.MutablePeriod((long)0, periodType71, chronology81);
+int[] intArray85 = chronology65.get((org.joda.time.ReadablePeriod)mutablePeriod82, (long)596, (long)53221161);
+int int86 = mutablePeriod82.getMonths();
+int int87 = mutablePeriod82.getMinutes();
+int int88 = mutablePeriod82.getHours();
+mutablePeriod82.addWeeks(234);
+int int91 = mutablePeriod82.getWeeks();
+mutablePeriod82.setDays(31);
+org.joda.time.YearMonthDay yearMonthDay95 = yearMonthDay19.withPeriodAdded((org.joda.time.ReadablePeriod)mutablePeriod82, 53221887);
+mutablePeriod82.setDays(53281896);
+org.joda.time.DurationFieldType[] durationFieldTypeArray98 = mutablePeriod82.getFieldTypes();
+
+
+Progress update: steps=17000, test inputs generated=15878, failing inputs=170      (2022-02-21T14:55:52.247Z     1,22G used)
+Progress update: steps=17472, test inputs generated=16319, failing inputs=170      (2022-02-21T14:56:19.292Z     981M used)Long execution time 11 sec for
+org.joda.time.DateTimeZone dateTimeZone1 = null;
+org.joda.time.DateMidnight dateMidnight2 = new org.joda.time.DateMidnight(1L, dateTimeZone1);
+org.joda.time.DateMidnight.Property property3 = dateMidnight2.dayOfMonth();
+org.joda.time.DateMidnight dateMidnight5 = dateMidnight2.minusDays((int)'a');
+org.joda.time.DateMidnight.Property property6 = dateMidnight2.dayOfMonth();
+org.joda.time.Period period7 = org.joda.time.Period.ZERO;
+org.joda.time.MutablePeriod mutablePeriod8 = period7.toMutablePeriod();
+org.joda.time.DateMidnight dateMidnight9 = dateMidnight2.plus((org.joda.time.ReadablePeriod)period7);
+org.joda.time.DateTimeZone dateTimeZone11 = null;
+org.joda.time.DateMidnight dateMidnight12 = new org.joda.time.DateMidnight(1L, dateTimeZone11);
+org.joda.time.DateMidnight dateMidnight14 = dateMidnight12.minusMonths((int)(short)100);
+org.joda.time.DateTimeFieldType dateTimeFieldType15 = org.joda.time.DateTimeFieldType.weekyear();
+org.joda.time.DateMidnight dateMidnight17 = dateMidnight14.withField(dateTimeFieldType15, (int)'a');
+boolean boolean18 = dateMidnight9.isSupported(dateTimeFieldType15);
+org.joda.time.YearMonthDay yearMonthDay19 = dateMidnight9.toYearMonthDay();
+int int20 = yearMonthDay19.getYear();
+org.joda.time.YearMonthDay yearMonthDay22 = yearMonthDay19.withYear(2022);
+org.joda.time.DateTimeZone dateTimeZone24 = null;
+org.joda.time.LocalDate localDate25 = new org.joda.time.LocalDate((long)'a', dateTimeZone24);
+org.joda.time.DateTimeZone dateTimeZone27 = null;
+org.joda.time.LocalDate localDate28 = new org.joda.time.LocalDate((long)'a', dateTimeZone27);
+org.joda.time.Period period29 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate25, (org.joda.time.ReadablePartial)localDate28);
+org.joda.time.LocalDate localDate31 = localDate25.withDayOfMonth(13);
+org.joda.time.Chronology chronology32 = localDate31.getChronology();
+long long36 = chronology32.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType38 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone40 = null;
+org.joda.time.LocalDate localDate41 = new org.joda.time.LocalDate((long)'a', dateTimeZone40);
+org.joda.time.DateTimeZone dateTimeZone43 = null;
+org.joda.time.LocalDate localDate44 = new org.joda.time.LocalDate((long)'a', dateTimeZone43);
+org.joda.time.Period period45 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate41, (org.joda.time.ReadablePartial)localDate44);
+org.joda.time.LocalDate localDate47 = localDate41.withDayOfMonth(13);
+org.joda.time.Chronology chronology48 = localDate47.getChronology();
+org.joda.time.MutablePeriod mutablePeriod49 = new org.joda.time.MutablePeriod((long)0, periodType38, chronology48);
+int[] intArray52 = chronology32.get((org.joda.time.ReadablePeriod)mutablePeriod49, (long)596, (long)53221161);
+int int53 = mutablePeriod49.getMonths();
+int int54 = mutablePeriod49.getMinutes();
+org.joda.time.YearMonthDay yearMonthDay55 = yearMonthDay19.minus((org.joda.time.ReadablePeriod)mutablePeriod49);
+org.joda.time.DateTimeZone dateTimeZone57 = null;
+org.joda.time.LocalDate localDate58 = new org.joda.time.LocalDate((long)'a', dateTimeZone57);
+org.joda.time.DateTimeZone dateTimeZone60 = null;
+org.joda.time.LocalDate localDate61 = new org.joda.time.LocalDate((long)'a', dateTimeZone60);
+org.joda.time.Period period62 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate58, (org.joda.time.ReadablePartial)localDate61);
+org.joda.time.LocalDate localDate64 = localDate58.withDayOfMonth(13);
+org.joda.time.Chronology chronology65 = localDate64.getChronology();
+long long69 = chronology65.add((long)(short)-1, (long)1961, 15);
+org.joda.time.PeriodType periodType71 = org.joda.time.PeriodType.standard();
+org.joda.time.DateTimeZone dateTimeZone73 = null;
+org.joda.time.LocalDate localDate74 = new org.joda.time.LocalDate((long)'a', dateTimeZone73);
+org.joda.time.DateTimeZone dateTimeZone76 = null;
+org.joda.time.LocalDate localDate77 = new org.joda.time.LocalDate((long)'a', dateTimeZone76);
+org.joda.time.Period period78 = new org.joda.time.Period((org.joda.time.ReadablePartial)localDate74, (org.joda.time.ReadablePartial)localDate77);
+org.joda.time.LocalDate localDate80 = localDate74.withDayOfMonth(13);
+org.joda.time.Chronology chronology81 = localDate80.getChronology();
+org.joda.time.MutablePeriod mutablePeriod82 = new org.joda.time.MutablePeriod((long)0, periodType71, chronology81);
+int[] intArray85 = chronology65.get((org.joda.time.ReadablePeriod)mutablePeriod82, (long)596, (long)53221161);
+int int86 = mutablePeriod82.getMonths();
+int int87 = mutablePeriod82.getMinutes();
+int int88 = mutablePeriod82.getHours();
+mutablePeriod82.addWeeks(234);
+int int91 = mutablePeriod82.getWeeks();
+mutablePeriod82.setDays(31);
+org.joda.time.YearMonthDay yearMonthDay95 = yearMonthDay19.withPeriodAdded((org.joda.time.ReadablePeriod)mutablePeriod82, 53221887);
+org.joda.time.YearMonthDay.Property property96 = yearMonthDay95.dayOfMonth();
+org.joda.time.YearMonthDay yearMonthDay98 = yearMonthDay95.minusDays(41);
+int int99 = yearMonthDay98.getYear();
+
+
+Progress update: steps=18000, test inputs generated=16797, failing inputs=170      (2022-02-21T14:56:34.179Z     825M used)
+Progress update: steps=19000, test inputs generated=17719, failing inputs=171      (2022-02-21T14:57:02.800Z     861M used)
+Progress update: steps=19228, test inputs generated=17929, failing inputs=171      (2022-02-21T14:57:07.286Z     753M used)
+Normal method executions: 27955904
+Exceptional method executions: 5314
+
+Average method execution time (normal termination):      0,00913
+Average method execution time (exceptional termination): 0,0551
+Approximate memory usage 753M
+Explorer = ForwardGenerator(steps: 19228, null steps: 1299, num_sequences_generated: 17929;
+    allSequences: 17929, regresson seqs: 16786, error seqs: 171=171=171, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 972;
+    runtimePrimitivesSeen:1901)
+
+Error-revealing test output:
+Error-revealing test count: 171
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/ErrorTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 9406 regression sequences.
+
+Regression test output:
+Regression test count: 9406
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest0.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest1.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest2.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest3.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest4.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest5.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest6.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest7.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest8.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest9.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest10.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest11.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonthDay-3/RegressionTest12.java
