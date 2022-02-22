@@ -19,10 +19,13 @@ TestsDir="results/randoop$timeInMinute/$project-$caller_class-$callee_class-$exe
   if [ -f "$TestsDir/RegressionTest0.java" ]; then
     echo "Already exists: $TestsDir/RegressionTest0.java"
   else
-    timeout -k $TIMEOUT $TIMEOUT java -Xmx4000m -classpath ${preparedCPs}:${RANDOOP_JAR} randoop.main.Main gentests \
+    timeout -k $TIMEOUT $TIMEOUT java -Xmx4000m -javaagent:${RANDOOP_COVERED_CLASS} -classpath ${preparedCPs}:${RANDOOP_JAR} randoop.main.Main gentests \
     --classlist="deps/$caller_class-$callee_class-randoopdeps.txt" \
+    --require-covered-classes="deps/caller_callee_list/$caller_class-$callee_class.txt" \
     --junit-output-dir=${TestsDir} --time-limit=$budget > "logs/randoop$timeInMinute/$project-$caller_class-$callee_class-$execution_id-out.txt" 2> "logs/randoop$timeInMinute/$project-$caller_class-$callee_class-$execution_id-err.txt" &
   fi
+
+
 # --testjar="defects4j/framework/projects/Time/lib/joda-convert-1.2.jar" \
 # projects/time/build/classes:defects4j/framework/projects/Time/lib/joda-convert-1.2.jar
 # --classlist="deps/$caller_class-$callee_class-randoopdeps.txt" \
