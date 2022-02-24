@@ -1,0 +1,914 @@
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.head.Kit.codeBug(Kit.java:449)
+	at com.google.javascript.rhino.head.ast.AstNode.codeBug(AstNode.java:501)
+	at com.google.javascript.rhino.head.ast.ScriptNode.setBaseLineno(ScriptNode.java:182)
+	at com.google.javascript.rhino.head.Parser.parse(Parser.java:627)
+	at com.google.javascript.rhino.head.Parser.parse(Parser.java:519)
+	at com.google.javascript.rhino.head.Context.compileImpl(Context.java:2378)
+	at com.google.javascript.rhino.head.Context.compileFunction(Context.java:1406)
+	at com.google.javascript.rhino.head.Context.compileFunction(Context.java:1395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:54)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:176)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.head.Kit.codeBug(Kit.java:449)
+	at com.google.javascript.rhino.head.Context.compileImpl(Context.java:2355)
+	at com.google.javascript.rhino.head.Context.compileReader(Context.java:1326)
+	at com.google.javascript.rhino.head.Context.compileReader(Context.java:1298)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:54)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:176)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: hi! of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: hi! of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7d15891a of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@27ba7c01 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@586daf49 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@714b9d97 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7a756dd7 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@94c14fd of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@62cdb370 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@a79ae25 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@14f31233 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7798a38e of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5ade2b94 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.head.Kit.codeBug(Kit.java:449)
+	at com.google.javascript.rhino.head.Context.compileImpl(Context.java:2355)
+	at com.google.javascript.rhino.head.Context.compileReader(Context.java:1326)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:54)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:176)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@722211ff of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4f5cab13 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@19866e72 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object class java.util.Locale of class java.lang.Class where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@45798671 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object DISPLAY of class java.util.Locale$Category where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4d37b1c2 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: hi! of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@13667a00 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6f4ca42c of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.UniqueTag@21b3d356: NOT_FOUND of class com.google.javascript.rhino.head.UniqueTag where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@63322052 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1b93f397 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1517d7e8 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6e006437 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@efa3d1 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@12d8bf83 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1c63d2ce of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@563e39d6 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@297d55e7 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1b4c6901 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@177d9564 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@36dab6f7 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4d9a919e of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6d8d90f9 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.head.Kit.codeBug(Kit.java:449)
+	at com.google.javascript.rhino.head.Context.compileImpl(Context.java:2355)
+	at com.google.javascript.rhino.head.Context.compileReader(Context.java:1326)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:54)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:176)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@2d230486 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: hi! of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@141ed5f2 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object [] of class java.util.ArrayList where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3402a435 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7b27a75b of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@68d91aee of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5f78521a of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@2b48fcb4 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4a183307 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@69dbedb0 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6d30a027 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.DefiningClassLoader@28dc300a of class com.google.javascript.rhino.head.DefiningClassLoader where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3ace1d09 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7a9d0620 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@22ebb507 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@67ab4c83 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@2aca559d of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1c68d0cf of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@59948779 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1f1cf50e of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7d15fd68 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@2fc214c8 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@789eb8ea of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@69622ad5 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@72ca866c of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@63c101c7 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@66ede1d6 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5762ad1 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@23046189 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@739c9ae2 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4971c9eb of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object [] of class java.util.ArrayList where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1084e897 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@708091fe of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1553c838 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@372ca4c2 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@64a73a5 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object [] of class java.util.ArrayList where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.head.Kit.codeBug(Kit.java:449)
+	at com.google.javascript.rhino.head.Context.compileImpl(Context.java:2355)
+	at com.google.javascript.rhino.head.Context.compileReader(Context.java:1326)
+	at com.google.javascript.rhino.head.Context.compileReader(Context.java:1298)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:54)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:176)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5ae2c774 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@39586ba1 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7ac60266 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4cb84e96 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@2d65ca7d of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@53f30ff of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object  of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: ??? of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1b0b0b17 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6ac74a92 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object [] of class java.util.ArrayList where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3ef13961 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@288d5e03 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6942bd20 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: hi! of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@70cf67e8 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3e4edd51 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@21c761ca of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object de_DE of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@445e2d22 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7f111f8 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6cc8e271 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6914e803 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6b60ca93 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@d16483d of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: ??? of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1b29d2bf of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.head.Kit.codeBug(Kit.java:449)
+	at com.google.javascript.rhino.head.Context.compileImpl(Context.java:2355)
+	at com.google.javascript.rhino.head.Context.compileReader(Context.java:1326)
+	at com.google.javascript.rhino.head.Context.compileReader(Context.java:1298)
+	at com.google.javascript.rhino.head.Context.evaluateReader(Context.java:1137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:54)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:176)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.WrapFactory@d32cb1c of class com.google.javascript.rhino.head.WrapFactory where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@58bcbe74 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@eefb424 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: hi! of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1710d6b7 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@2a85bdde of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@10460d5d of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1ff43ddf of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@47e313ca of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3186c59c of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@339ee93 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1cf5b82d of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: hi! of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6b5d62e6 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7d17d51e of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3e16f53b of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6139dcef of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@33fd1f96 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@37c0b17d of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3d94568b of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.io.ioexception: ca_ZH_CN_French of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1789c7d6 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@613dd249 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6bee4480 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object class java.util.Locale of class java.lang.Class where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4c42bfaf of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7a367919 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.DefaultErrorReporter@1142866c of class com.google.javascript.rhino.head.DefaultErrorReporter where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object DISPLAY of class java.util.Locale$Category where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6998001f of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.xml.XMLLib$Factory$1@119e05d7 of class com.google.javascript.rhino.head.xml.XMLLib$Factory$1 where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@2b600b33 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.DefiningClassLoader@533fef8f of class com.google.javascript.rhino.head.DefiningClassLoader where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7b6a2bcf of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5ceb02a9 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@658d26b0 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: ??? of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5167dd7b of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.DefiningClassLoader@2957766e of class com.google.javascript.rhino.head.DefiningClassLoader where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7f2d8696 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@48b08498 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object en_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@565443e3 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@360d7b47 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7095b78b of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@29ada60a of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@43004b60 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: ??? of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: language version of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1e8c28c8 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6e8ba858 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: com.google.javascript.rhino.head.EvaluatorException: zho (hi!#10) of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object en_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4363b749 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@25aaae54 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.io.ioexception: ca_ZH_CN_French of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.lang.IllegalArgumentException: BAD FUNCTION ID=52 MASTER=null of class java.lang.IllegalArgumentException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.ContextFactory@36214f40 of class com.google.javascript.rhino.head.ContextFactory where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7a21aa20 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5ce65074 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@e707d5d of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@59befe21 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@78bfdfc0 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5c46b13 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6c385c1b of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3d25577 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4efa184c of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5cf156 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@719f0279 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object [java.util.Locale$LanguageRange@4027d3f9, java.util.Locale$LanguageRange@4027d3f9, java.util.Locale$LanguageRange@57114e2b, java.util.Locale$LanguageRange@4027d3f9] of class java.util.ArrayList where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6e553769 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@571c4d14 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.head.Kit.codeBug(Kit.java:449)
+	at com.google.javascript.rhino.head.Context.compileImpl(Context.java:2355)
+	at com.google.javascript.rhino.head.Context.compileReader(Context.java:1326)
+	at sun.reflect.GeneratedMethodAccessor296.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:54)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:176)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4ad30e71 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.ContextFactory@36214f40 of class com.google.javascript.rhino.head.ContextFactory where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@341fbab7 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@905773c of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5fe4cba7 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5bc0061c of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@28415366 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.DefiningClassLoader@4fa1faea of class com.google.javascript.rhino.head.DefiningClassLoader where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object DISPLAY of class java.util.Locale$Category where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1d465b43 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7d9bd766 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@766cc207 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object AUTOSELECT_FILTERING of class java.util.Locale$FilteringMode where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object DISPLAY of class java.util.Locale$Category where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object language version of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6dea399a of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7f642de3 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object language version of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@38016c8a of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1cba8c76 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.DefiningClassLoader@3858c2db of class com.google.javascript.rhino.head.DefiningClassLoader where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@59b33183 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@73881cd9 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: hi! of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@2202799b of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@15ea0980 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@51a9cd69 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@13d23906 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: hi! of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5b48aff5 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@e00fac1 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@748453f2 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: ??? of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@cb1c336 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object en_GB of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@11b457f8 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7ee8e760 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3b6a66a9 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1ca9cbf5 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object [] of class java.util.Collections$EmptySet where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object [java.util.Locale$LanguageRange@4027d3f9, java.util.Locale$LanguageRange@4027d3f9, java.util.Locale$LanguageRange@57114e2b, java.util.Locale$LanguageRange@4027d3f9] of class java.util.ArrayList where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object sun.misc.Launcher$AppClassLoader@18b4aac2 of class sun.misc.Launcher$AppClassLoader where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3ecae6ab of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object DISPLAY of class java.util.Locale$Category where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6e571b57 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@57be557e of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.DefiningClassLoader@71ef3f35 of class com.google.javascript.rhino.head.DefiningClassLoader where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1b3094de of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@2181d6e9 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@2806e4fd of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4271f394 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object language version of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@709b5219 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1e4186ec of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7ee3931a of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@85bb32d of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3f2c1fb0 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: hi! of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EcmaError: InternalError: [object Object] (com.google.javascript.rhino.head.EvaluatorException: TW#97) of class com.google.javascript.rhino.head.EcmaError where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4dca7fa3 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@2b8c1772 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.head.Kit.codeBug(Kit.java:449)
+	at com.google.javascript.rhino.head.Context.compileImpl(Context.java:2355)
+	at com.google.javascript.rhino.head.Context.compileReader(Context.java:1326)
+	at com.google.javascript.rhino.head.Context.compileReader(Context.java:1298)
+	at sun.reflect.GeneratedMethodAccessor303.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:54)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:176)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object de_DE of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1a58cdac of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6ec04cfe of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object [] of class java.util.ArrayList where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@27d368cd of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object  of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1fffeb34 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@57e5ca45 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object sun.misc.Launcher$AppClassLoader@18b4aac2 of class sun.misc.Launcher$AppClassLoader where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5117fa26 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@42838d9 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object fr_FR of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@eea2da of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@78cfd6fe of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3bcd95e of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@a63c478 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3bede5cc of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@50453af6 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object sun.misc.Launcher$AppClassLoader@18b4aac2 of class sun.misc.Launcher$AppClassLoader where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@21afc4c9 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object it_IT of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@69da65ad of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.Context@434b2e0c of class com.google.javascript.rhino.head.Context where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3ae4e29a of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@6d981c28 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: hi! of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@4c322a67 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object DISPLAY of class java.util.Locale$Category where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: ??? of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object com.google.javascript.rhino.head.EvaluatorException: language version of class com.google.javascript.rhino.head.EvaluatorException where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@7e09f2f7 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@74dc618c of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.io.ioexception: ca_ZH_CN_French of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object zh_TW of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@3e7e5eb3 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@327d8c19 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@5169f29a of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object en_CA of class java.util.Locale where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object java.util.Locale$Builder@1b17a5b8 of class java.util.Locale$Builder where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.
+RHINO USAGE WARNING: Missed Context.javaToJS() conversion:
+Rhino runtime detected object [] of class java.util.Collections$EmptySet where it expected String, Number, Boolean or Scriptable instance. Please check your code for missing Context.javaToJS() call.

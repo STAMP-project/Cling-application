@@ -1,0 +1,111 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+Cannot instantiate non-accessible class org.mockito.asm.MethodWriter specified via --testclass or --classlist; will use its static methods.
+
+Will try to generate tests for 8 classes.
+PUBLIC MEMBERS=92
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-22T16:00:54.952Z     226M used)
+Progress update: steps=1000, test inputs generated=676, failing inputs=0      (2022-02-22T16:01:15.924Z     209M used)
+Progress update: steps=2000, test inputs generated=1497, failing inputs=0      (2022-02-22T16:01:34.309Z     1.09G used)
+Progress update: steps=3000, test inputs generated=2304, failing inputs=0      (2022-02-22T16:01:51.524Z     1.33G used)
+Progress update: steps=3194, test inputs generated=2468, failing inputs=0      (2022-02-22T16:01:54.972Z     862M used)
+Progress update: steps=4000, test inputs generated=3091, failing inputs=0      (2022-02-22T16:02:06.345Z     153M used)
+Progress update: steps=5000, test inputs generated=3878, failing inputs=0      (2022-02-22T16:02:21.435Z     402M used)
+Progress update: steps=6000, test inputs generated=4676, failing inputs=0      (2022-02-22T16:02:36.720Z     1.08G used)
+Progress update: steps=7000, test inputs generated=5457, failing inputs=0      (2022-02-22T16:02:50.915Z     1.51G used)
+Progress update: steps=7257, test inputs generated=5669, failing inputs=0      (2022-02-22T16:02:54.973Z     1.40G used)
+Progress update: steps=8000, test inputs generated=6228, failing inputs=0      (2022-02-22T16:03:05.251Z     718M used)
+Progress update: steps=9000, test inputs generated=7030, failing inputs=0      (2022-02-22T16:03:17.344Z     461M used)
+Progress update: steps=10000, test inputs generated=7804, failing inputs=0      (2022-02-22T16:03:27.152Z     1.33G used)
+Progress update: steps=11000, test inputs generated=8568, failing inputs=0      (2022-02-22T16:03:37.621Z     1.20G used)
+Progress update: steps=12000, test inputs generated=9349, failing inputs=0      (2022-02-22T16:03:47.748Z     1.21G used)
+Progress update: steps=12775, test inputs generated=9941, failing inputs=0      (2022-02-22T16:03:54.974Z     799M used)
+Progress update: steps=13000, test inputs generated=10122, failing inputs=0      (2022-02-22T16:03:56.880Z     1.85G used)
+Progress update: steps=14000, test inputs generated=10895, failing inputs=0      (2022-02-22T16:04:08.661Z     1.29G used)
+Progress update: steps=15000, test inputs generated=11661, failing inputs=0      (2022-02-22T16:04:18.150Z     2.22G used)
+Progress update: steps=16000, test inputs generated=12427, failing inputs=0      (2022-02-22T16:04:26.663Z     1.49G used)
+Progress update: steps=17000, test inputs generated=13202, failing inputs=0      (2022-02-22T16:04:36.157Z     1.79G used)
+Progress update: steps=18000, test inputs generated=13962, failing inputs=0      (2022-02-22T16:04:44.511Z     2.32G used)
+Progress update: steps=18776, test inputs generated=14551, failing inputs=0      (2022-02-22T16:04:56.668Z     1.66G used)
+Progress update: steps=19000, test inputs generated=14718, failing inputs=0      (2022-02-22T16:04:58.707Z     2.63G used)
+Progress update: steps=20000, test inputs generated=15479, failing inputs=0      (2022-02-22T16:05:07.361Z     2.88G used)
+Progress update: steps=21000, test inputs generated=16262, failing inputs=0      (2022-02-22T16:05:16.640Z     2.39G used)
+Progress update: steps=22000, test inputs generated=17013, failing inputs=0      (2022-02-22T16:05:29.685Z     2.26G used)
+Progress update: steps=23000, test inputs generated=17772, failing inputs=0      (2022-02-22T16:05:49.610Z     2.48G used)
+Progress update: steps=23696, test inputs generated=18287, failing inputs=0      (2022-02-22T16:05:56.668Z     2.57G used)
+Progress update: steps=24000, test inputs generated=18533, failing inputs=0      (2022-02-22T16:06:03.944Z     3.58G used)
+Progress update: steps=25000, test inputs generated=19304, failing inputs=0      (2022-02-22T16:06:25.893Z     3.36G used)
+Progress update: steps=26000, test inputs generated=20027, failing inputs=0      (2022-02-22T16:06:49.914Z     3.41G used)
+Progress update: steps=26117, test inputs generated=20117, failing inputs=0      (2022-02-22T16:06:57.179Z     3.40G used)
+Progress update: steps=26925, test inputs generated=20745, failing inputs=0      (2022-02-22T16:07:57.220Z     3.48G used)
+Progress update: steps=27000, test inputs generated=20798, failing inputs=0      (2022-02-22T16:08:03.989Z     3.48G used)
+Progress update: steps=27160, test inputs generated=20922, failing inputs=0      (2022-02-22T16:08:57.616Z     3.50G used)
+Problem with sequence:
+createAndClassifySequences threw an exception
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at randoop.ExceptionalExecution.toString(ExceptionalExecution.java:37)
+	at randoop.sequence.ExecutableSequence.toString(ExecutableSequence.java:135)
+	at java.util.Formatter$FormatSpecifier.printString(Formatter.java:2886)
+	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2763)
+	at java.util.Formatter.format(Formatter.java:2520)
+	at java.io.PrintStream.format(PrintStream.java:970)
+	at java.io.PrintStream.printf(PrintStream.java:871)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:349)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+
+
+Throwable thrown while handling command: java.lang.ArrayIndexOutOfBoundsException: 0
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at randoop.ExceptionalExecution.toString(ExceptionalExecution.java:37)
+	at randoop.sequence.ExecutableSequence.toString(ExecutableSequence.java:135)
+	at java.util.Formatter$FormatSpecifier.printString(Formatter.java:2886)
+	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2763)
+	at java.util.Formatter.format(Formatter.java:2520)
+	at java.io.PrintStream.format(PrintStream.java:970)
+	at java.io.PrintStream.printf(PrintStream.java:871)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:349)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+
+Randoop failed.
+Last sequence under execution: 
+org.mockito.asm.Label label0 = new org.mockito.asm.Label();
+label0.info = (byte)-1;
+java.lang.Object obj3 = label0.info;
+label0.info = "L330787274";
+org.mockito.asm.ClassWriter classWriter7 = new org.mockito.asm.ClassWriter((int)(byte)10);
+int int12 = classWriter7.newMethod("", "", "", true);
+byte[] byteArray13 = classWriter7.toByteArray();
+org.mockito.asm.ClassReader classReader14 = new org.mockito.asm.ClassReader(byteArray13);
+java.lang.String str15 = classReader14.getSuperName();
+byte[] byteArray16 = classReader14.b;
+org.mockito.asm.ClassWriter classWriter18 = new org.mockito.asm.ClassWriter(classReader14, (int)'4');
+label0.info = classReader14;
+int int20 = classReader14.getAccess();
+int int21 = classReader14.getAccess();
+short short23 = classReader14.readShort(7);
+org.mockito.asm.ClassWriter classWriter26 = new org.mockito.asm.ClassWriter((int)(byte)10);
+int int31 = classWriter26.newMethod("", "", "", true);
+byte[] byteArray32 = classWriter26.toByteArray();
+org.mockito.asm.ClassReader classReader33 = new org.mockito.asm.ClassReader(byteArray32);
+short short35 = classReader33.readShort((int)(short)10);
+int int37 = classReader33.readUnsignedShort(5);
+byte[] byteArray38 = classReader33.b;
+org.mockito.asm.ClassReader classReader39 = new org.mockito.asm.ClassReader(byteArray38);
+org.mockito.asm.ClassWriter classWriter42 = new org.mockito.asm.ClassWriter((int)(byte)10);
+int int47 = classWriter42.newMethod("", "", "", true);
+byte[] byteArray48 = classWriter42.toByteArray();
+org.mockito.asm.ClassReader classReader49 = new org.mockito.asm.ClassReader(byteArray48);
+short short51 = classReader49.readShort((int)(short)10);
+int int53 = classReader49.readUnsignedShort(5);
+byte[] byteArray54 = classReader49.b;
+char[] charArray60 = new char[] { 'a', '#', 'a', '4' };
+java.lang.Object obj61 = classReader49.readConst(3, charArray60);
+java.lang.String str62 = classReader39.readUTF8(24, charArray60);
+java.lang.String str63 = classReader14.readUTF8(19505, charArray60);

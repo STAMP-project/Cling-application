@@ -1,0 +1,374 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 8 classes.
+PUBLIC MEMBERS=222
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-22T18:45:42.180Z     215M used)
+Progress update: steps=1000, test inputs generated=935, failing inputs=36      (2022-02-22T18:46:02.611Z     1.32G used)
+Progress update: steps=2000, test inputs generated=1837, failing inputs=75      (2022-02-22T18:46:20.403Z     815M used)
+Progress update: steps=2807, test inputs generated=2544, failing inputs=96      (2022-02-22T18:46:42.191Z     799M used)
+Progress update: steps=3000, test inputs generated=2715, failing inputs=98      (2022-02-22T18:46:45.715Z     1.27G used)
+Progress update: steps=4000, test inputs generated=3557, failing inputs=125      (2022-02-22T18:47:04.630Z     87.1M used)
+Progress update: steps=4396, test inputs generated=3888, failing inputs=144      (2022-02-22T18:47:42.192Z     3.36G used)Long execution time 193 sec for
+org.apache.commons.math.linear.BigMatrix bigMatrix1 = org.apache.commons.math.linear.MatrixUtils.createBigIdentityMatrix((int)(short)25884);
+
+
+Progress update: steps=4457, test inputs generated=3946, failing inputs=146      (2022-02-22T18:52:17.187Z     2.74G used)Long generation time 103365 msec (= 103365 + 0) for
+java.math.BigDecimal bigDecimal1 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal3 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal5 = bigDecimal3.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray6 = new java.math.BigDecimal[] { bigDecimal1, bigDecimal5 };
+org.apache.commons.math.linear.BigMatrix bigMatrix7 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray6);
+java.math.BigDecimal bigDecimal9 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal11 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal13 = bigDecimal11.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray14 = new java.math.BigDecimal[] { bigDecimal9, bigDecimal13 };
+org.apache.commons.math.linear.BigMatrix bigMatrix15 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray14);
+java.math.BigDecimal[] bigDecimalArray16 = bigMatrix7.preMultiply(bigDecimalArray14);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl17 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray16);
+java.math.BigDecimal bigDecimal18 = bigMatrixImpl17.getDeterminant();
+org.apache.commons.math.linear.BigMatrix bigMatrix19 = bigMatrixImpl17.inverse();
+int int20 = bigMatrixImpl17.getRoundingMode();
+java.math.BigDecimal bigDecimal21 = bigMatrixImpl17.getNorm();
+java.math.BigDecimal bigDecimal23 = bigDecimal21.movePointRight((int)(short)1);
+java.lang.String str24 = bigDecimal23.toString();
+java.math.BigDecimal bigDecimal26 = bigDecimal23.setScale((-1));
+double[] doubleArray33 = new double[] { (short)-1, 0, (-1), 1.0d, 1.0f, 0 };
+org.apache.commons.math.linear.RealMatrix realMatrix34 = org.apache.commons.math.linear.MatrixUtils.createRowRealMatrix(doubleArray33);
+org.apache.commons.math.linear.RealMatrix realMatrix35 = realMatrix34.copy();
+double[] doubleArray42 = new double[] { (short)-1, 0, (-1), 1.0d, 1.0f, 0 };
+org.apache.commons.math.linear.RealMatrix realMatrix43 = org.apache.commons.math.linear.MatrixUtils.createRowRealMatrix(doubleArray42);
+org.apache.commons.math.linear.RealMatrix realMatrix44 = realMatrix43.copy();
+org.apache.commons.math.linear.RealMatrix realMatrix45 = realMatrix34.subtract(realMatrix43);
+double[][] doubleArray46 = realMatrix43.getData();
+org.apache.commons.math.linear.BigMatrix bigMatrix47 = org.apache.commons.math.linear.MatrixUtils.createBigMatrix(doubleArray46);
+java.math.BigDecimal bigDecimal49 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal51 = bigDecimal49.movePointLeft((int)(short)1);
+java.lang.String str52 = bigDecimal51.toPlainString();
+java.math.BigDecimal bigDecimal53 = bigDecimal51.stripTrailingZeros();
+org.apache.commons.math.linear.BigMatrix bigMatrix54 = bigMatrix47.scalarMultiply(bigDecimal53);
+java.lang.String str55 = bigDecimal53.toString();
+java.math.MathContext mathContext56 = null;
+java.math.BigDecimal[] bigDecimalArray57 = bigDecimal23.divideAndRemainder(bigDecimal53, mathContext56);
+
+Long generation time 13663 msec (= 13663 + 0) for
+java.math.BigDecimal bigDecimal1 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal3 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal5 = bigDecimal3.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray6 = new java.math.BigDecimal[] { bigDecimal1, bigDecimal5 };
+org.apache.commons.math.linear.BigMatrix bigMatrix7 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray6);
+java.math.BigDecimal bigDecimal9 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal11 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal13 = bigDecimal11.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray14 = new java.math.BigDecimal[] { bigDecimal9, bigDecimal13 };
+org.apache.commons.math.linear.BigMatrix bigMatrix15 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray14);
+java.math.BigDecimal[] bigDecimalArray16 = bigMatrix7.preMultiply(bigDecimalArray14);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl17 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray16);
+java.math.BigDecimal bigDecimal19 = new java.math.BigDecimal((long)(-1));
+short short20 = bigDecimal19.shortValueExact();
+java.math.BigDecimal bigDecimal22 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal24 = bigDecimal22.movePointLeft((int)(short)1);
+boolean boolean25 = bigDecimal19.equals((java.lang.Object)bigDecimal22);
+org.apache.commons.math.linear.BigMatrix bigMatrix26 = bigMatrixImpl17.scalarAdd(bigDecimal19);
+org.apache.commons.math.linear.BigMatrix bigMatrix27 = bigMatrixImpl17.transpose();
+java.lang.String str28 = bigMatrixImpl17.toString();
+java.math.BigDecimal[][] bigDecimalArray29 = bigMatrixImpl17.getDataRef();
+java.math.BigDecimal bigDecimal31 = new java.math.BigDecimal((double)100.0f);
+java.math.BigDecimal bigDecimal32 = bigDecimal31.negate();
+java.math.BigDecimal bigDecimal33 = bigDecimal32.negate();
+org.apache.commons.math.linear.BigMatrix bigMatrix34 = bigMatrixImpl17.scalarAdd(bigDecimal33);
+java.math.BigDecimal bigDecimal35 = bigDecimal33.plus();
+
+Long generation time 8795 msec for null sequence.
+
+Progress update: steps=4806, test inputs generated=4236, failing inputs=156      (2022-02-22T18:54:22.176Z     2.77G used)Long generation time 90606 msec (= 90606 + 0) for
+java.math.BigDecimal bigDecimal1 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal3 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal5 = bigDecimal3.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray6 = new java.math.BigDecimal[] { bigDecimal1, bigDecimal5 };
+org.apache.commons.math.linear.BigMatrix bigMatrix7 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray6);
+java.math.BigDecimal bigDecimal9 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal11 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal13 = bigDecimal11.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray14 = new java.math.BigDecimal[] { bigDecimal9, bigDecimal13 };
+org.apache.commons.math.linear.BigMatrix bigMatrix15 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray14);
+java.math.BigDecimal[] bigDecimalArray16 = bigMatrix7.preMultiply(bigDecimalArray14);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl17 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray16);
+java.math.BigDecimal bigDecimal19 = new java.math.BigDecimal((long)(-1));
+short short20 = bigDecimal19.shortValueExact();
+java.math.BigDecimal bigDecimal22 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal24 = bigDecimal22.movePointLeft((int)(short)1);
+boolean boolean25 = bigDecimal19.equals((java.lang.Object)bigDecimal22);
+org.apache.commons.math.linear.BigMatrix bigMatrix26 = bigMatrixImpl17.scalarAdd(bigDecimal19);
+java.math.BigDecimal bigDecimal28 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal30 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal32 = bigDecimal30.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray33 = new java.math.BigDecimal[] { bigDecimal28, bigDecimal32 };
+org.apache.commons.math.linear.BigMatrix bigMatrix34 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray33);
+java.math.BigDecimal bigDecimal36 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal38 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal40 = bigDecimal38.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray41 = new java.math.BigDecimal[] { bigDecimal36, bigDecimal40 };
+org.apache.commons.math.linear.BigMatrix bigMatrix42 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray41);
+java.math.BigDecimal[] bigDecimalArray43 = bigMatrix34.preMultiply(bigDecimalArray41);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl44 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray43);
+java.math.BigDecimal[] bigDecimalArray45 = bigMatrix26.preMultiply(bigDecimalArray43);
+org.apache.commons.math.linear.BigMatrix bigMatrix46 = org.apache.commons.math.linear.MatrixUtils.createRowBigMatrix(bigDecimalArray43);
+java.math.BigDecimal bigDecimal48 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal50 = bigDecimal48.movePointLeft((int)(short)1);
+double double51 = bigDecimal50.doubleValue();
+java.math.BigDecimal bigDecimal53 = new java.math.BigDecimal((long)(-1));
+java.math.BigDecimal bigDecimal54 = bigDecimal50.min(bigDecimal53);
+java.math.BigDecimal bigDecimal55 = bigDecimal54.plus();
+org.apache.commons.math.linear.BigMatrix bigMatrix56 = bigMatrix46.scalarMultiply(bigDecimal54);
+java.math.BigDecimal bigDecimal58 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal60 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal62 = bigDecimal60.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray63 = new java.math.BigDecimal[] { bigDecimal58, bigDecimal62 };
+org.apache.commons.math.linear.BigMatrix bigMatrix64 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray63);
+java.math.BigDecimal bigDecimal66 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal68 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal70 = bigDecimal68.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray71 = new java.math.BigDecimal[] { bigDecimal66, bigDecimal70 };
+org.apache.commons.math.linear.BigMatrix bigMatrix72 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray71);
+java.math.BigDecimal[] bigDecimalArray73 = bigMatrix64.preMultiply(bigDecimalArray71);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl74 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray73);
+java.math.BigDecimal bigDecimal75 = bigMatrixImpl74.getDeterminant();
+org.apache.commons.math.linear.BigMatrix bigMatrix76 = bigMatrixImpl74.inverse();
+int int77 = bigMatrixImpl74.getRoundingMode();
+org.apache.commons.math.linear.BigMatrix bigMatrix78 = bigMatrix46.subtract((org.apache.commons.math.linear.BigMatrix)bigMatrixImpl74);
+java.math.BigDecimal bigDecimal80 = new java.math.BigDecimal((long)(-1));
+java.math.BigDecimal bigDecimal81 = bigDecimal80.plus();
+org.apache.commons.math.linear.BigMatrix bigMatrix82 = bigMatrix46.scalarAdd(bigDecimal80);
+java.math.BigDecimal[][] bigDecimalArray83 = bigMatrix82.getData();
+org.apache.commons.math.linear.BigMatrix bigMatrix84 = org.apache.commons.math.linear.MatrixUtils.createBigMatrix(bigDecimalArray83);
+
+
+Progress update: steps=5000, test inputs generated=4400, failing inputs=164      (2022-02-22T18:54:31.568Z     3.96G used)Long generation time 11025 msec (= 11025 + 0) for
+java.math.BigDecimal bigDecimal1 = java.math.BigDecimal.valueOf((double)100);
+java.math.BigDecimal bigDecimal2 = bigDecimal1.negate();
+java.math.BigInteger bigInteger3 = bigDecimal1.toBigInteger();
+short short4 = bigDecimal1.shortValueExact();
+java.math.BigInteger bigInteger5 = bigDecimal1.toBigIntegerExact();
+java.math.MathContext mathContext7 = null;
+java.math.BigDecimal bigDecimal8 = new java.math.BigDecimal(0.0d, mathContext7);
+java.math.BigDecimal bigDecimal10 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal12 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal14 = bigDecimal12.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray15 = new java.math.BigDecimal[] { bigDecimal10, bigDecimal14 };
+org.apache.commons.math.linear.BigMatrix bigMatrix16 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray15);
+java.math.BigDecimal bigDecimal18 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal20 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal22 = bigDecimal20.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray23 = new java.math.BigDecimal[] { bigDecimal18, bigDecimal22 };
+org.apache.commons.math.linear.BigMatrix bigMatrix24 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray23);
+java.math.BigDecimal[] bigDecimalArray25 = bigMatrix16.preMultiply(bigDecimalArray23);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl26 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray25);
+java.math.BigDecimal bigDecimal27 = bigMatrixImpl26.getDeterminant();
+org.apache.commons.math.linear.BigMatrix bigMatrix28 = bigMatrixImpl26.inverse();
+int int29 = bigMatrixImpl26.getRoundingMode();
+java.math.BigDecimal bigDecimal30 = bigMatrixImpl26.getNorm();
+java.math.BigDecimal bigDecimal32 = bigDecimal30.movePointRight((int)(short)1);
+java.math.BigDecimal bigDecimal34 = bigDecimal30.pow(1);
+java.lang.String str35 = bigDecimal30.toEngineeringString();
+java.math.BigDecimal bigDecimal36 = bigDecimal8.remainder(bigDecimal30);
+java.math.BigDecimal bigDecimal37 = bigDecimal1.min(bigDecimal8);
+java.math.BigInteger bigInteger38 = bigDecimal1.toBigIntegerExact();
+
+Long generation time 13121 msec (= 13121 + 0) for
+java.math.BigDecimal bigDecimal1 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal3 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal5 = bigDecimal3.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray6 = new java.math.BigDecimal[] { bigDecimal1, bigDecimal5 };
+org.apache.commons.math.linear.BigMatrix bigMatrix7 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray6);
+java.math.BigDecimal bigDecimal9 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal11 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal13 = bigDecimal11.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray14 = new java.math.BigDecimal[] { bigDecimal9, bigDecimal13 };
+org.apache.commons.math.linear.BigMatrix bigMatrix15 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray14);
+java.math.BigDecimal[] bigDecimalArray16 = bigMatrix7.preMultiply(bigDecimalArray14);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl17 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray16);
+java.math.BigDecimal bigDecimal19 = new java.math.BigDecimal((long)(-1));
+short short20 = bigDecimal19.shortValueExact();
+java.math.BigDecimal bigDecimal22 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal24 = bigDecimal22.movePointLeft((int)(short)1);
+boolean boolean25 = bigDecimal19.equals((java.lang.Object)bigDecimal22);
+org.apache.commons.math.linear.BigMatrix bigMatrix26 = bigMatrixImpl17.scalarAdd(bigDecimal19);
+java.math.BigDecimal bigDecimal28 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal30 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal32 = bigDecimal30.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray33 = new java.math.BigDecimal[] { bigDecimal28, bigDecimal32 };
+org.apache.commons.math.linear.BigMatrix bigMatrix34 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray33);
+java.math.BigDecimal bigDecimal36 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal38 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal40 = bigDecimal38.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray41 = new java.math.BigDecimal[] { bigDecimal36, bigDecimal40 };
+org.apache.commons.math.linear.BigMatrix bigMatrix42 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray41);
+java.math.BigDecimal[] bigDecimalArray43 = bigMatrix34.preMultiply(bigDecimalArray41);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl44 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray43);
+java.math.BigDecimal[] bigDecimalArray45 = bigMatrix26.preMultiply(bigDecimalArray43);
+org.apache.commons.math.linear.BigMatrix bigMatrix46 = org.apache.commons.math.linear.MatrixUtils.createRowBigMatrix(bigDecimalArray43);
+java.math.BigDecimal bigDecimal48 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal50 = bigDecimal48.movePointLeft((int)(short)1);
+double double51 = bigDecimal50.doubleValue();
+java.math.BigDecimal bigDecimal53 = new java.math.BigDecimal((long)(-1));
+java.math.BigDecimal bigDecimal54 = bigDecimal50.min(bigDecimal53);
+java.math.BigDecimal bigDecimal55 = bigDecimal54.plus();
+org.apache.commons.math.linear.BigMatrix bigMatrix56 = bigMatrix46.scalarMultiply(bigDecimal54);
+java.math.BigDecimal bigDecimal58 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal60 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal62 = bigDecimal60.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray63 = new java.math.BigDecimal[] { bigDecimal58, bigDecimal62 };
+org.apache.commons.math.linear.BigMatrix bigMatrix64 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray63);
+java.math.BigDecimal bigDecimal66 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal68 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal70 = bigDecimal68.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray71 = new java.math.BigDecimal[] { bigDecimal66, bigDecimal70 };
+org.apache.commons.math.linear.BigMatrix bigMatrix72 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray71);
+java.math.BigDecimal[] bigDecimalArray73 = bigMatrix64.preMultiply(bigDecimalArray71);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl74 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray73);
+java.math.BigDecimal bigDecimal75 = bigMatrixImpl74.getDeterminant();
+org.apache.commons.math.linear.BigMatrix bigMatrix76 = bigMatrixImpl74.inverse();
+int int77 = bigMatrixImpl74.getRoundingMode();
+org.apache.commons.math.linear.BigMatrix bigMatrix78 = bigMatrix46.subtract((org.apache.commons.math.linear.BigMatrix)bigMatrixImpl74);
+int int79 = bigMatrixImpl74.getRoundingMode();
+double[] doubleArray86 = new double[] { (short)-1, 0, (-1), 1.0d, 1.0f, 0 };
+org.apache.commons.math.linear.RealMatrix realMatrix87 = org.apache.commons.math.linear.MatrixUtils.createRowRealMatrix(doubleArray86);
+org.apache.commons.math.linear.RealMatrix realMatrix88 = realMatrix87.copy();
+double[] doubleArray95 = new double[] { 100, (short)10, 1.0f, (byte)10, (byte)-1, 100L };
+org.apache.commons.math.linear.RealMatrix realMatrix96 = org.apache.commons.math.linear.MatrixUtils.createRowRealMatrix(doubleArray95);
+double[] doubleArray97 = realMatrix88.operate(doubleArray95);
+org.apache.commons.math.linear.RealMatrix realMatrix98 = org.apache.commons.math.linear.MatrixUtils.createColumnRealMatrix(doubleArray95);
+java.math.BigDecimal[] bigDecimalArray99 = bigMatrixImpl74.operate(doubleArray95);
+
+Long generation time 9883 msec (= 9883 + 0) for
+java.math.BigDecimal bigDecimal1 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal3 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal5 = bigDecimal3.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray6 = new java.math.BigDecimal[] { bigDecimal1, bigDecimal5 };
+org.apache.commons.math.linear.BigMatrix bigMatrix7 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray6);
+java.math.BigDecimal bigDecimal9 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal11 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal13 = bigDecimal11.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray14 = new java.math.BigDecimal[] { bigDecimal9, bigDecimal13 };
+org.apache.commons.math.linear.BigMatrix bigMatrix15 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray14);
+java.math.BigDecimal[] bigDecimalArray16 = bigMatrix7.preMultiply(bigDecimalArray14);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl17 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray16);
+java.math.BigDecimal bigDecimal18 = bigMatrixImpl17.getDeterminant();
+org.apache.commons.math.linear.BigMatrix bigMatrix19 = bigMatrixImpl17.transpose();
+int int20 = bigMatrixImpl17.getRowDimension();
+org.apache.commons.math.linear.BigMatrix bigMatrix21 = bigMatrixImpl17.transpose();
+java.lang.String str22 = bigMatrixImpl17.toString();
+java.math.BigDecimal bigDecimal23 = bigMatrixImpl17.getTrace();
+java.math.BigDecimal bigDecimal24 = bigDecimal23.negate();
+int int25 = bigDecimal24.scale();
+int int26 = bigDecimal24.scale();
+long long27 = bigDecimal24.longValueExact();
+
+
+Progress update: steps=5425, test inputs generated=4765, failing inputs=175      (2022-02-22T18:55:22.183Z     3.50G used)Long generation time 1461 msec (= 1461 + 0) for
+java.math.BigDecimal bigDecimal1 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal3 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal5 = bigDecimal3.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray6 = new java.math.BigDecimal[] { bigDecimal1, bigDecimal5 };
+org.apache.commons.math.linear.BigMatrix bigMatrix7 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray6);
+java.math.BigDecimal bigDecimal9 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal11 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal13 = bigDecimal11.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray14 = new java.math.BigDecimal[] { bigDecimal9, bigDecimal13 };
+org.apache.commons.math.linear.BigMatrix bigMatrix15 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray14);
+java.math.BigDecimal[] bigDecimalArray16 = bigMatrix7.preMultiply(bigDecimalArray14);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl17 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray16);
+java.lang.String str18 = bigMatrixImpl17.toString();
+java.math.BigDecimal bigDecimal20 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal22 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal24 = bigDecimal22.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray25 = new java.math.BigDecimal[] { bigDecimal20, bigDecimal24 };
+org.apache.commons.math.linear.BigMatrix bigMatrix26 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray25);
+java.math.BigDecimal bigDecimal28 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal30 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal32 = bigDecimal30.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray33 = new java.math.BigDecimal[] { bigDecimal28, bigDecimal32 };
+org.apache.commons.math.linear.BigMatrix bigMatrix34 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray33);
+java.math.BigDecimal[] bigDecimalArray35 = bigMatrix26.preMultiply(bigDecimalArray33);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl36 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray35);
+java.math.BigDecimal bigDecimal37 = bigMatrixImpl36.getDeterminant();
+org.apache.commons.math.linear.BigMatrix bigMatrix38 = bigMatrixImpl36.transpose();
+double[] doubleArray40 = bigMatrixImpl36.getColumnAsDoubleArray((int)(byte)0);
+java.math.BigDecimal[] bigDecimalArray41 = bigMatrixImpl17.operate(doubleArray40);
+java.math.BigDecimal bigDecimal43 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal45 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal47 = bigDecimal45.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray48 = new java.math.BigDecimal[] { bigDecimal43, bigDecimal47 };
+org.apache.commons.math.linear.BigMatrix bigMatrix49 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray48);
+java.math.BigDecimal bigDecimal51 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal53 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal55 = bigDecimal53.movePointLeft((int)(short)1);
+java.math.BigDecimal[] bigDecimalArray56 = new java.math.BigDecimal[] { bigDecimal51, bigDecimal55 };
+org.apache.commons.math.linear.BigMatrix bigMatrix57 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(bigDecimalArray56);
+java.math.BigDecimal[] bigDecimalArray58 = bigMatrix49.preMultiply(bigDecimalArray56);
+org.apache.commons.math.linear.BigMatrixImpl bigMatrixImpl59 = new org.apache.commons.math.linear.BigMatrixImpl(bigDecimalArray58);
+java.math.BigDecimal bigDecimal60 = bigMatrixImpl59.getDeterminant();
+org.apache.commons.math.linear.BigMatrix bigMatrix61 = bigMatrixImpl59.transpose();
+double[] doubleArray63 = bigMatrixImpl59.getColumnAsDoubleArray((int)(byte)0);
+org.apache.commons.math.linear.BigMatrix bigMatrix64 = org.apache.commons.math.linear.MatrixUtils.createColumnBigMatrix(doubleArray63);
+java.math.BigDecimal[] bigDecimalArray65 = bigMatrixImpl17.operate(doubleArray63);
+java.math.BigDecimal[][] bigDecimalArray66 = bigMatrixImpl17.getData();
+java.math.BigDecimal bigDecimal67 = bigMatrixImpl17.getNorm();
+java.math.BigDecimal[][] bigDecimalArray68 = bigMatrixImpl17.getDataRef();
+java.math.BigDecimal[] bigDecimalArray70 = bigMatrixImpl17.getColumn(1);
+
+Long generation time 11666 msec (= 11666 + 0) for
+java.math.BigDecimal bigDecimal1 = new java.math.BigDecimal((long)(short)100);
+java.math.BigDecimal bigDecimal3 = bigDecimal1.movePointLeft((int)(short)1);
+double double4 = bigDecimal3.doubleValue();
+java.math.BigDecimal bigDecimal6 = bigDecimal3.pow((int)(byte)0);
+java.math.BigDecimal bigDecimal8 = bigDecimal3.setScale((int)(short)10);
+long long9 = bigDecimal8.longValue();
+int int10 = bigDecimal8.scale();
+
+
+Progress update: steps=5665, test inputs generated=4964, failing inputs=181      (2022-02-22T18:55:42.232Z     3.52G used)
+Normal method executions: 16042305
+Exceptional method executions: 1827
+
+Average method execution time (normal termination):      0.0122
+Average method execution time (exceptional termination): 0.120
+Approximate memory usage 3.52G
+Explorer = ForwardGenerator(steps: 5665, null steps: 701, num_sequences_generated: 4964;
+    allSequences: 4964, regresson seqs: 3897, error seqs: 181=181=181, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 886;
+    runtimePrimitivesSeen:130)
+
+Error-revealing test output:
+Error-revealing test count: 181
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/ErrorTest0.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 2483 regression sequences.
+
+Regression test output:
+Regression test count: 2483
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest0.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest1.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest2.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest3.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest4.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest5.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest6.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest7.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest8.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest9.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest10.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest11.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest12.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-14/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0

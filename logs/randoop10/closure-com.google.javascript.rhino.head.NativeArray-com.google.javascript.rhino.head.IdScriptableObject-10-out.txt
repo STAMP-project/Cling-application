@@ -1,0 +1,109 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+Cannot instantiate non-accessible class com.google.javascript.rhino.head.ScriptableObject$Slot specified via --testclass or --classlist; will use its static methods.
+
+Will try to generate tests for 39 classes.
+PUBLIC MEMBERS=589
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-23T04:00:35.055Z     301M used)
+Progress update: steps=1000, test inputs generated=689, failing inputs=0      (2022-02-23T04:00:43.482Z     152M used)
+Progress update: steps=2000, test inputs generated=1413, failing inputs=1      (2022-02-23T04:00:52.888Z     791M used)
+Progress update: steps=3000, test inputs generated=2107, failing inputs=1      (2022-02-23T04:01:02.094Z     739M used)
+Progress update: steps=4000, test inputs generated=2770, failing inputs=1      (2022-02-23T04:01:09.707Z     1.02G used)
+Progress update: steps=5000, test inputs generated=3450, failing inputs=2      (2022-02-23T04:01:17.614Z     801M used)
+Progress update: steps=6000, test inputs generated=4141, failing inputs=2      (2022-02-23T04:01:25.319Z     996M used)
+Progress update: steps=7000, test inputs generated=4779, failing inputs=3      (2022-02-23T04:01:33.231Z     1.11G used)
+Progress update: steps=7255, test inputs generated=4946, failing inputs=3      (2022-02-23T04:01:35.074Z     1.04G used)
+Progress update: steps=8000, test inputs generated=5414, failing inputs=3      (2022-02-23T04:01:40.776Z     813M used)
+Progress update: steps=9000, test inputs generated=6068, failing inputs=3      (2022-02-23T04:01:49.407Z     957M used)
+Progress update: steps=10000, test inputs generated=6712, failing inputs=3      (2022-02-23T04:01:58.543Z     147M used)
+Progress update: steps=11000, test inputs generated=7354, failing inputs=3      (2022-02-23T04:02:07.110Z     738M used)
+Progress update: steps=12000, test inputs generated=7992, failing inputs=3      (2022-02-23T04:02:15.216Z     1,32G used)
+Progress update: steps=13000, test inputs generated=8614, failing inputs=3      (2022-02-23T04:02:22.927Z     488M used)
+Progress update: steps=14000, test inputs generated=9269, failing inputs=3      (2022-02-23T04:02:31.034Z     1.26G used)
+Progress update: steps=14472, test inputs generated=9568, failing inputs=3      (2022-02-23T04:02:35.075Z     1.45G used)
+Progress update: steps=15000, test inputs generated=9904, failing inputs=3      (2022-02-23T04:02:39.656Z     500M used)
+Progress update: steps=16000, test inputs generated=10516, failing inputs=3      (2022-02-23T04:02:47.641Z     1.08G used)
+Progress update: steps=17000, test inputs generated=11144, failing inputs=3      (2022-02-23T04:02:55.229Z     240M used)
+Progress update: steps=18000, test inputs generated=11750, failing inputs=4      (2022-02-23T04:03:03.214Z     841M used)
+Progress update: steps=19000, test inputs generated=12381, failing inputs=4      (2022-02-23T04:03:12.388Z     630M used)
+Progress update: steps=20000, test inputs generated=13014, failing inputs=4      (2022-02-23T04:03:21.565Z     391M used)
+Progress update: steps=21000, test inputs generated=13650, failing inputs=4      (2022-02-23T04:03:30.167Z     1.18G used)
+Progress update: steps=21582, test inputs generated=14008, failing inputs=4      (2022-02-23T04:03:35.076Z     975M used)
+Progress update: steps=22000, test inputs generated=14274, failing inputs=4      (2022-02-23T04:03:38.550Z     729M used)
+Progress update: steps=23000, test inputs generated=14920, failing inputs=4      (2022-02-23T04:03:51.358Z     407M used)
+Progress update: steps=24000, test inputs generated=15530, failing inputs=4      (2022-02-23T04:04:01.450Z     1.31G used)
+Progress update: steps=25000, test inputs generated=16136, failing inputs=5      (2022-02-23T04:04:12.549Z     608M used)
+Progress update: steps=26000, test inputs generated=16758, failing inputs=5      (2022-02-23T04:04:21.418Z     1.32G used)
+Progress update: steps=27000, test inputs generated=17389, failing inputs=5      (2022-02-23T04:04:33.592Z     265M used)
+Progress update: steps=27161, test inputs generated=17488, failing inputs=5      (2022-02-23T04:04:35.077Z     1.41G used)
+Progress update: steps=28000, test inputs generated=17986, failing inputs=5      (2022-02-23T04:04:43.629Z     1,30G used)createAndClassifySequences threw an exception
+randoop.main.RandoopBug: code=Call to public com.google.javascript.rhino.head.Scriptable com.google.javascript.rhino.head.Context.newArray(com.google.javascript.rhino.head.Scriptable,int) receiver: com.google.javascript.rhino.head.Context@694abbdc args: [com.google.javascript.rhino.head.NativeArray@163ed53b, -1] failed to run
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:169)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:176)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: randoop.util.ReflectionCode$ReflectionCodeException: error invoking public com.google.javascript.rhino.head.Scriptable com.google.javascript.rhino.head.Context.newArray(com.google.javascript.rhino.head.Scriptable,int) on 3 arguments:
+  com.google.javascript.rhino.head.Context@694abbdc
+  com.google.javascript.rhino.head.NativeArray@163ed53b
+  -1
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:83)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
+	... 12 more
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0
+	at com.google.javascript.rhino.head.NativeArray.listIterator(NativeArray.java:1806)
+	at com.google.javascript.rhino.head.NativeArray.iterator(NativeArray.java:1791)
+	at randoop.org.plumelib.util.StringsPlume.listToString(StringsPlume.java:1068)
+	at randoop.org.plumelib.util.StringsPlume.listToStringAndClass(StringsPlume.java:1047)
+	at randoop.org.plumelib.util.StringsPlume.toStringAndClass(StringsPlume.java:1022)
+	at randoop.org.plumelib.util.StringsPlume.toStringAndClass(StringsPlume.java:999)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:57)
+	... 14 more
+
+
+Randoop failed in an unexpected way.
+Please report at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .
+randoop.main.RandoopBug: code=Call to public com.google.javascript.rhino.head.Scriptable com.google.javascript.rhino.head.Context.newArray(com.google.javascript.rhino.head.Scriptable,int) receiver: com.google.javascript.rhino.head.Context@694abbdc args: [com.google.javascript.rhino.head.NativeArray@163ed53b, -1] failed to run
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:169)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
+	at randoop.operation.MethodCall.execute(MethodCall.java:176)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: randoop.util.ReflectionCode$ReflectionCodeException: error invoking public com.google.javascript.rhino.head.Scriptable com.google.javascript.rhino.head.Context.newArray(com.google.javascript.rhino.head.Scriptable,int) on 3 arguments:
+  com.google.javascript.rhino.head.Context@694abbdc
+  com.google.javascript.rhino.head.NativeArray@163ed53b
+  -1
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:83)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:59)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
+	... 12 more
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0
+	at com.google.javascript.rhino.head.NativeArray.listIterator(NativeArray.java:1806)
+	at com.google.javascript.rhino.head.NativeArray.iterator(NativeArray.java:1791)
+	at randoop.org.plumelib.util.StringsPlume.listToString(StringsPlume.java:1068)
+	at randoop.org.plumelib.util.StringsPlume.listToStringAndClass(StringsPlume.java:1047)
+	at randoop.org.plumelib.util.StringsPlume.toStringAndClass(StringsPlume.java:1022)
+	at randoop.org.plumelib.util.StringsPlume.toStringAndClass(StringsPlume.java:999)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:57)
+	... 14 more

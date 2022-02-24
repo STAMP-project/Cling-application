@@ -1,0 +1,97 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 6 classes.
+PUBLIC MEMBERS=113
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-22T18:05:50.192Z     204M used)Long execution time 28 sec for
+double double1 = org.apache.commons.math.util.MathUtils.factorialDouble(1074790400);
+
+
+Progress update: steps=595, test inputs generated=531, failing inputs=2      (2022-02-22T18:06:50.241Z     229M used)Long execution time 30 sec for
+double double1 = org.apache.commons.math.util.MathUtils.factorialDouble(1079574528);
+
+
+Progress update: steps=786, test inputs generated=712, failing inputs=2      (2022-02-22T18:08:07.241Z     1.10G used)Long execution time 63 sec for
+double double2 = org.apache.commons.math.util.MathUtils.binomialCoefficientDouble(2, (-1074790400));
+
+
+Progress update: steps=1000, test inputs generated=914, failing inputs=2      (2022-02-22T18:08:19.070Z     921M used)
+Progress update: steps=1142, test inputs generated=1046, failing inputs=3      (2022-02-22T18:09:26.045Z     478M used)Long execution time 64 sec for
+double double2 = org.apache.commons.math.util.MathUtils.binomialCoefficientDouble((int)'4', (-1074790400));
+
+
+Progress update: steps=1236, test inputs generated=1135, failing inputs=3      (2022-02-22T18:10:35.462Z     919M used)Long execution time 68 sec for
+long long2 = org.apache.commons.math.util.MathUtils.binomialCoefficient((int)(byte)1, (-1073741838));
+
+Long execution time 26 sec for
+double double1 = org.apache.commons.math.util.MathUtils.factorialLog(793020318);
+
+
+Progress update: steps=1599, test inputs generated=1471, failing inputs=4      (2022-02-22T18:11:35.463Z     406M used)Long execution time 59 sec for
+double double2 = org.apache.commons.math.util.MathUtils.binomialCoefficientDouble(793020318, (-73376843));
+
+
+Progress update: steps=2000, test inputs generated=1822, failing inputs=4      (2022-02-22T18:12:17.409Z     2.51G used)Long execution time 13 sec for
+org.apache.commons.math.linear.RealMatrixImpl realMatrixImpl2 = new org.apache.commons.math.linear.RealMatrixImpl(142, 2097124);
+org.apache.commons.math.linear.RealMatrixImpl realMatrixImpl5 = new org.apache.commons.math.linear.RealMatrixImpl((int)(byte)100, (int)(byte)10);
+int int6 = realMatrixImpl5.getColumnDimension();
+boolean boolean8 = realMatrixImpl5.equals((java.lang.Object)10);
+org.apache.commons.math.linear.RealMatrixImpl realMatrixImpl11 = new org.apache.commons.math.linear.RealMatrixImpl((int)(byte)100, (int)(byte)10);
+int int12 = realMatrixImpl11.getColumnDimension();
+boolean boolean14 = realMatrixImpl11.equals((java.lang.Object)10);
+org.apache.commons.math.linear.RealMatrix realMatrix15 = realMatrixImpl11.copy();
+int int16 = realMatrix15.getColumnDimension();
+org.apache.commons.math.linear.RealMatrix realMatrix18 = realMatrix15.scalarMultiply(3.948148009134034E13d);
+org.apache.commons.math.linear.RealMatrix realMatrix19 = realMatrixImpl5.subtract(realMatrix15);
+int int20 = realMatrixImpl5.getColumnDimension();
+org.apache.commons.math.linear.RealMatrix realMatrix21 = realMatrixImpl5.transpose();
+org.apache.commons.math.linear.RealMatrix realMatrix23 = realMatrixImpl5.getRowMatrix((int)'4');
+int int24 = realMatrix23.getRowDimension();
+org.apache.commons.math.linear.RealMatrix realMatrix25 = realMatrixImpl2.add(realMatrix23);
+
+Long execution time 25 sec for
+long long1 = org.apache.commons.math.util.MathUtils.factorial(793020318);
+
+
+Progress update: steps=2239, test inputs generated=2041, failing inputs=4      (2022-02-22T18:13:08.114Z     2.91G used)Long execution time 20 sec for
+double double1 = org.apache.commons.math.util.MathUtils.factorialDouble(592090993);
+
+Long execution time 35 sec for
+long long2 = org.apache.commons.math.util.MathUtils.binomialCoefficient(131, (-593085655));
+
+
+Progress update: steps=2270, test inputs generated=2069, failing inputs=4      (2022-02-22T18:14:24.384Z     2.95G used)Long execution time 316 sec for
+double double2 = org.apache.commons.math.util.MathUtils.round((double)(-1043332096), (-73376843));
+
+
+Progress update: steps=2270, test inputs generated=2070, failing inputs=4      (2022-02-22T18:19:18.018Z     2.97G used)
+Normal method executions: 371529
+Exceptional method executions: 755
+
+Average method execution time (normal termination):      1.94
+Average method execution time (exceptional termination): 55.2
+Approximate memory usage 2.97G
+Explorer = ForwardGenerator(steps: 2270, null steps: 200, num_sequences_generated: 2070;
+    allSequences: 2070, regresson seqs: 2005, error seqs: 4=4=4, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 61;
+    runtimePrimitivesSeen:275)
+
+Error-revealing test output:
+Error-revealing test count: 4
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.RealMatrixImpl-org.apache.commons.math.util.MathUtils-9/ErrorTest0.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.RealMatrixImpl-org.apache.commons.math.util.MathUtils-9/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 1539 regression sequences.
+
+Regression test output:
+Regression test count: 1539
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.RealMatrixImpl-org.apache.commons.math.util.MathUtils-9/RegressionTest0.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.RealMatrixImpl-org.apache.commons.math.util.MathUtils-9/RegressionTest1.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.RealMatrixImpl-org.apache.commons.math.util.MathUtils-9/RegressionTest2.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.RealMatrixImpl-org.apache.commons.math.util.MathUtils-9/RegressionTest3.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.RealMatrixImpl-org.apache.commons.math.util.MathUtils-9/RegressionTest4.java

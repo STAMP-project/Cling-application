@@ -1,0 +1,59 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 8 classes.
+PUBLIC MEMBERS=222
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-22T18:45:43.435Z     215M used)
+Progress update: steps=1000, test inputs generated=915, failing inputs=156      (2022-02-22T18:45:57.636Z     378M used)
+Progress update: steps=1926, test inputs generated=1789, failing inputs=198      (2022-02-22T18:46:43.448Z     675M used)Long execution time 563 sec for
+java.math.BigDecimal bigDecimal1 = java.math.BigDecimal.valueOf((long)6);
+java.math.BigDecimal bigDecimal3 = java.math.BigDecimal.valueOf((long)6);
+java.math.BigDecimal bigDecimal5 = bigDecimal1.divide(bigDecimal3, (int)(short)0);
+int int6 = bigDecimal1.precision();
+java.math.BigDecimal bigDecimal7 = java.math.BigDecimal.TEN;
+java.math.BigInteger bigInteger8 = bigDecimal7.toBigInteger();
+java.math.BigDecimal bigDecimal9 = bigDecimal1.remainder(bigDecimal7);
+java.math.MathContext mathContext11 = null;
+java.math.BigDecimal bigDecimal12 = new java.math.BigDecimal((double)0L, mathContext11);
+int int13 = bigDecimal9.compareTo(bigDecimal12);
+java.math.BigDecimal bigDecimal14 = bigDecimal9.plus();
+java.math.BigDecimal bigDecimal16 = bigDecimal14.setScale((-129542144));
+
+
+Progress update: steps=2000, test inputs generated=1855, failing inputs=201      (2022-02-22T18:55:40.194Z     557M used)
+Progress update: steps=2047, test inputs generated=1895, failing inputs=204      (2022-02-22T18:55:43.527Z     815M used)
+Normal method executions: 1141763
+Exceptional method executions: 797
+
+Average method execution time (normal termination):      0.00120
+Average method execution time (exceptional termination): 708
+Approximate memory usage 815M
+Explorer = ForwardGenerator(steps: 2047, null steps: 152, num_sequences_generated: 1895;
+    allSequences: 1895, regresson seqs: 1200, error seqs: 204=204=204, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 491;
+    runtimePrimitivesSeen:86)
+
+Error-revealing test output:
+Error-revealing test count: 204
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-16/ErrorTest0.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-16/ErrorTest1.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-16/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 765 regression sequences.
+
+Regression test output:
+Regression test count: 765
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-16/RegressionTest0.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-16/RegressionTest1.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-16/RegressionTest2.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-16/RegressionTest3.java
+Created file /experiment/results/randoop10/math-org.apache.commons.math.linear.MatrixUtils-org.apache.commons.math.linear.BigMatrixImpl-16/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0

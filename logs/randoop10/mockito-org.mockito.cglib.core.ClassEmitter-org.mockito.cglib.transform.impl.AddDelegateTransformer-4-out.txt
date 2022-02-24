@@ -1,0 +1,353 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 20 classes.
+PUBLIC MEMBERS=294
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-22T15:09:40.698Z     247M used)
+Progress update: steps=1000, test inputs generated=272, failing inputs=86      (2022-02-22T15:09:44.088Z     202M used)
+Progress update: steps=2000, test inputs generated=505, failing inputs=147      (2022-02-22T15:09:46.340Z     43.3M used)
+Progress update: steps=3000, test inputs generated=774, failing inputs=231      (2022-02-22T15:09:48.868Z     852M used)
+Progress update: steps=4000, test inputs generated=1123, failing inputs=316      (2022-02-22T15:09:51.804Z     881M used)
+Progress update: steps=5000, test inputs generated=1536, failing inputs=376      (2022-02-22T15:09:54.649Z     780M used)
+Progress update: steps=6000, test inputs generated=1960, failing inputs=432      (2022-02-22T15:09:57.151Z     822M used)
+Progress update: steps=7000, test inputs generated=2408, failing inputs=517      (2022-02-22T15:09:59.618Z     912M used)
+Progress update: steps=8000, test inputs generated=2841, failing inputs=578      (2022-02-22T15:10:01.982Z     1.03G used)
+Progress update: steps=9000, test inputs generated=3266, failing inputs=655      (2022-02-22T15:10:04.455Z     1.10G used)
+Progress update: steps=10000, test inputs generated=3687, failing inputs=741      (2022-02-22T15:10:06.994Z     1.10G used)
+Progress update: steps=11000, test inputs generated=4098, failing inputs=816      (2022-02-22T15:10:09.364Z     1.03G used)
+Progress update: steps=12000, test inputs generated=4522, failing inputs=896      (2022-02-22T15:10:11.526Z     1.06G used)
+Progress update: steps=13000, test inputs generated=4928, failing inputs=963      (2022-02-22T15:10:14.024Z     1.17G used)
+Progress update: steps=14000, test inputs generated=5344, failing inputs=1043      (2022-02-22T15:10:16.751Z     1.29G used)
+Progress update: steps=15000, test inputs generated=5734, failing inputs=1108      (2022-02-22T15:10:18.888Z     1.27G used)
+Progress update: steps=16000, test inputs generated=6156, failing inputs=1181      (2022-02-22T15:10:21.456Z     95.6M used)
+Progress update: steps=17000, test inputs generated=6559, failing inputs=1250      (2022-02-22T15:10:23.714Z     178M used)
+Progress update: steps=18000, test inputs generated=6980, failing inputs=1318      (2022-02-22T15:10:26.413Z     369M used)
+Progress update: steps=19000, test inputs generated=7373, failing inputs=1390      (2022-02-22T15:10:28.685Z     316M used)
+Progress update: steps=20000, test inputs generated=7809, failing inputs=1475      (2022-02-22T15:10:31.709Z     637M used)
+Progress update: steps=21000, test inputs generated=8236, failing inputs=1556      (2022-02-22T15:10:34.696Z     826M used)
+Progress update: steps=22000, test inputs generated=8673, failing inputs=1642      (2022-02-22T15:10:36.878Z     881M used)
+Progress update: steps=23000, test inputs generated=9104, failing inputs=1713      (2022-02-22T15:10:39.655Z     1.15G used)
+Progress update: steps=23438, test inputs generated=9295, failing inputs=1745      (2022-02-22T15:10:40.711Z     442M used)
+Progress update: steps=24000, test inputs generated=9539, failing inputs=1795      (2022-02-22T15:10:42.231Z     1.38G used)
+Progress update: steps=25000, test inputs generated=9921, failing inputs=1863      (2022-02-22T15:10:45.294Z     243M used)
+Progress update: steps=26000, test inputs generated=10319, failing inputs=1929      (2022-02-22T15:10:48.039Z     325M used)
+Progress update: steps=27000, test inputs generated=10734, failing inputs=1996      (2022-02-22T15:10:51.041Z     677M used)
+Progress update: steps=28000, test inputs generated=11140, failing inputs=2076      (2022-02-22T15:10:54.175Z     1.16G used)
+Progress update: steps=29000, test inputs generated=11551, failing inputs=2142      (2022-02-22T15:10:57.486Z     171M used)
+Progress update: steps=30000, test inputs generated=11950, failing inputs=2199      (2022-02-22T15:11:00.172Z     415M used)
+Progress update: steps=31000, test inputs generated=12348, failing inputs=2257      (2022-02-22T15:11:02.818Z     497M used)
+Progress update: steps=32000, test inputs generated=12776, failing inputs=2336      (2022-02-22T15:11:05.390Z     526M used)
+Progress update: steps=33000, test inputs generated=13146, failing inputs=2402      (2022-02-22T15:11:07.884Z     662M used)
+Progress update: steps=34000, test inputs generated=13572, failing inputs=2475      (2022-02-22T15:11:10.830Z     1.04G used)
+Progress update: steps=35000, test inputs generated=13986, failing inputs=2535      (2022-02-22T15:11:13.624Z     1.31G used)
+Progress update: steps=36000, test inputs generated=14410, failing inputs=2607      (2022-02-22T15:11:16.535Z     263M used)
+Progress update: steps=37000, test inputs generated=14812, failing inputs=2662      (2022-02-22T15:11:19.244Z     454M used)
+Progress update: steps=38000, test inputs generated=15233, failing inputs=2733      (2022-02-22T15:11:21.868Z     701M used)
+Progress update: steps=39000, test inputs generated=15654, failing inputs=2804      (2022-02-22T15:11:25.168Z     1.16G used)
+Progress update: steps=40000, test inputs generated=16090, failing inputs=2880      (2022-02-22T15:11:27.959Z     135M used)
+Progress update: steps=41000, test inputs generated=16525, failing inputs=2963      (2022-02-22T15:11:30.837Z     625M used)
+Progress update: steps=42000, test inputs generated=16910, failing inputs=3030      (2022-02-22T15:11:32.970Z     708M used)
+Progress update: steps=43000, test inputs generated=17299, failing inputs=3103      (2022-02-22T15:11:35.287Z     897M used)
+Progress update: steps=44000, test inputs generated=17715, failing inputs=3157      (2022-02-22T15:11:38.430Z     119M used)
+Progress update: steps=44848, test inputs generated=18085, failing inputs=3218      (2022-02-22T15:11:40.745Z     128M used)
+Progress update: steps=45000, test inputs generated=18150, failing inputs=3228      (2022-02-22T15:11:41.131Z     344M used)
+Progress update: steps=46000, test inputs generated=18546, failing inputs=3288      (2022-02-22T15:11:43.522Z     496M used)
+Progress update: steps=47000, test inputs generated=18965, failing inputs=3356      (2022-02-22T15:11:46.353Z     958M used)
+Progress update: steps=48000, test inputs generated=19372, failing inputs=3429      (2022-02-22T15:11:49.168Z     1.17G used)
+Progress update: steps=49000, test inputs generated=19779, failing inputs=3494      (2022-02-22T15:11:51.928Z     206M used)
+Progress update: steps=50000, test inputs generated=20159, failing inputs=3544      (2022-02-22T15:11:53.932Z     289M used)
+Progress update: steps=51000, test inputs generated=20581, failing inputs=3610      (2022-02-22T15:11:56.469Z     478M used)
+Progress update: steps=52000, test inputs generated=20991, failing inputs=3663      (2022-02-22T15:11:59.106Z     775M used)
+Progress update: steps=53000, test inputs generated=21414, failing inputs=3724      (2022-02-22T15:12:02.112Z     1.26G used)
+Progress update: steps=54000, test inputs generated=21807, failing inputs=3795      (2022-02-22T15:12:05.187Z     241M used)
+Progress update: steps=55000, test inputs generated=22202, failing inputs=3864      (2022-02-22T15:12:08.052Z     701M used)
+Progress update: steps=56000, test inputs generated=22627, failing inputs=3944      (2022-02-22T15:12:10.774Z     1.05G used)
+Progress update: steps=57000, test inputs generated=23028, failing inputs=4017      (2022-02-22T15:12:13.712Z     140M used)
+Progress update: steps=58000, test inputs generated=23401, failing inputs=4084      (2022-02-22T15:12:16.442Z     437M used)
+Progress update: steps=59000, test inputs generated=23793, failing inputs=4145      (2022-02-22T15:12:18.991Z     707M used)
+Progress update: steps=60000, test inputs generated=24175, failing inputs=4204      (2022-02-22T15:12:21.071Z     899M used)
+Progress update: steps=61000, test inputs generated=24571, failing inputs=4262      (2022-02-22T15:12:23.292Z     1.17G used)
+Progress update: steps=62000, test inputs generated=24993, failing inputs=4328      (2022-02-22T15:12:26.066Z     364M used)
+Progress update: steps=63000, test inputs generated=25400, failing inputs=4401      (2022-02-22T15:12:28.793Z     930M used)
+Progress update: steps=64000, test inputs generated=25788, failing inputs=4456      (2022-02-22T15:12:30.881Z     1.09G used)
+Progress update: steps=65000, test inputs generated=26218, failing inputs=4531      (2022-02-22T15:12:33.216Z     1.44G used)
+Progress update: steps=66000, test inputs generated=26612, failing inputs=4601      (2022-02-22T15:12:35.848Z     532M used)
+Progress update: steps=67000, test inputs generated=27028, failing inputs=4664      (2022-02-22T15:12:38.655Z     993M used)
+Progress update: steps=67894, test inputs generated=27387, failing inputs=4718      (2022-02-22T15:12:40.747Z     1.21G used)
+Progress update: steps=68000, test inputs generated=27430, failing inputs=4727      (2022-02-22T15:12:41.003Z     1.38G used)
+Progress update: steps=69000, test inputs generated=27827, failing inputs=4785      (2022-02-22T15:12:43.402Z     214M used)
+Progress update: steps=70000, test inputs generated=28206, failing inputs=4842      (2022-02-22T15:12:45.727Z     540M used)
+Progress update: steps=71000, test inputs generated=28609, failing inputs=4897      (2022-02-22T15:12:48.083Z     783M used)
+Progress update: steps=72000, test inputs generated=29002, failing inputs=4955      (2022-02-22T15:12:50.255Z     1.03G used)
+Progress update: steps=73000, test inputs generated=29379, failing inputs=5025      (2022-02-22T15:12:52.457Z     1.16G used)
+Progress update: steps=74000, test inputs generated=29755, failing inputs=5087      (2022-02-22T15:12:55.076Z     1.44G used)
+Progress update: steps=75000, test inputs generated=30151, failing inputs=5155      (2022-02-22T15:12:57.320Z     278M used)
+Progress update: steps=76000, test inputs generated=30530, failing inputs=5213      (2022-02-22T15:13:00.136Z     686M used)
+Progress update: steps=77000, test inputs generated=30914, failing inputs=5283      (2022-02-22T15:13:02.628Z     1.14G used)
+Progress update: steps=78000, test inputs generated=31318, failing inputs=5352      (2022-02-22T15:13:04.850Z     1.44G used)
+Progress update: steps=79000, test inputs generated=31714, failing inputs=5433      (2022-02-22T15:13:07.520Z     555M used)
+Progress update: steps=80000, test inputs generated=32105, failing inputs=5509      (2022-02-22T15:13:09.805Z     963M used)
+Progress update: steps=81000, test inputs generated=32484, failing inputs=5564      (2022-02-22T15:13:11.815Z     1.05G used)
+Progress update: steps=82000, test inputs generated=32851, failing inputs=5628      (2022-02-22T15:13:13.721Z     1.18G used)
+Progress update: steps=83000, test inputs generated=33234, failing inputs=5695      (2022-02-22T15:13:16.123Z     267M used)
+Progress update: steps=84000, test inputs generated=33630, failing inputs=5771      (2022-02-22T15:13:18.695Z     620M used)
+Progress update: steps=85000, test inputs generated=34023, failing inputs=5837      (2022-02-22T15:13:21.615Z     1.13G used)
+Progress update: steps=86000, test inputs generated=34400, failing inputs=5900      (2022-02-22T15:13:24.180Z     1.43G used)
+Progress update: steps=87000, test inputs generated=34807, failing inputs=5957      (2022-02-22T15:13:27.012Z     517M used)
+Progress update: steps=88000, test inputs generated=35216, failing inputs=6028      (2022-02-22T15:13:29.782Z     1.09G used)
+Progress update: steps=89000, test inputs generated=35605, failing inputs=6081      (2022-02-22T15:13:32.748Z     252M used)
+Progress update: steps=90000, test inputs generated=35995, failing inputs=6140      (2022-02-22T15:13:35.210Z     630M used)
+Progress update: steps=91000, test inputs generated=36365, failing inputs=6208      (2022-02-22T15:13:37.996Z     1.04G used)
+Progress update: steps=91990, test inputs generated=36756, failing inputs=6277      (2022-02-22T15:13:40.748Z     207M used)
+Progress update: steps=92000, test inputs generated=36758, failing inputs=6277      (2022-02-22T15:13:40.762Z     207M used)
+Progress update: steps=93000, test inputs generated=37165, failing inputs=6342      (2022-02-22T15:13:42.931Z     582M used)
+Progress update: steps=94000, test inputs generated=37561, failing inputs=6394      (2022-02-22T15:13:45.576Z     1.10G used)
+Progress update: steps=95000, test inputs generated=37975, failing inputs=6465      (2022-02-22T15:13:48.155Z     234M used)
+Progress update: steps=96000, test inputs generated=38369, failing inputs=6538      (2022-02-22T15:13:50.660Z     803M used)
+Progress update: steps=97000, test inputs generated=38759, failing inputs=6614      (2022-02-22T15:13:53.049Z     1.24G used)
+Progress update: steps=98000, test inputs generated=39174, failing inputs=6687      (2022-02-22T15:13:55.978Z     511M used)
+Progress update: steps=99000, test inputs generated=39567, failing inputs=6752      (2022-02-22T15:13:58.398Z     862M used)
+Progress update: steps=100000, test inputs generated=39961, failing inputs=6825      (2022-02-22T15:14:01.003Z     1.30G used)
+Progress update: steps=101000, test inputs generated=40342, failing inputs=6900      (2022-02-22T15:14:03.498Z     275M used)
+Progress update: steps=102000, test inputs generated=40768, failing inputs=6979      (2022-02-22T15:14:06.477Z     895M used)
+Progress update: steps=103000, test inputs generated=41182, failing inputs=7049      (2022-02-22T15:14:09.464Z     1.33G used)
+Progress update: steps=104000, test inputs generated=41560, failing inputs=7117      (2022-02-22T15:14:11.925Z     306M used)
+Progress update: steps=105000, test inputs generated=41935, failing inputs=7172      (2022-02-22T15:14:14.659Z     875M used)
+Progress update: steps=106000, test inputs generated=42326, failing inputs=7238      (2022-02-22T15:14:17.373Z     1.28G used)
+Progress update: steps=107000, test inputs generated=42730, failing inputs=7303      (2022-02-22T15:14:20.425Z     583M used)
+Progress update: steps=108000, test inputs generated=43133, failing inputs=7376      (2022-02-22T15:14:22.905Z     1.07G used)
+Progress update: steps=109000, test inputs generated=43525, failing inputs=7440      (2022-02-22T15:14:25.370Z     1.45G used)
+Progress update: steps=110000, test inputs generated=43909, failing inputs=7501      (2022-02-22T15:14:27.810Z     508M used)
+Progress update: steps=111000, test inputs generated=44281, failing inputs=7561      (2022-02-22T15:14:30.095Z     888M used)
+Progress update: steps=112000, test inputs generated=44678, failing inputs=7627      (2022-02-22T15:14:32.345Z     1.24G used)
+Progress update: steps=113000, test inputs generated=45076, failing inputs=7699      (2022-02-22T15:14:34.894Z     405M used)
+Progress update: steps=114000, test inputs generated=45487, failing inputs=7757      (2022-02-22T15:14:37.706Z     865M used)
+Progress update: steps=115000, test inputs generated=45860, failing inputs=7818      (2022-02-22T15:14:40.334Z     1.30G used)
+Progress update: steps=115217, test inputs generated=45935, failing inputs=7829      (2022-02-22T15:14:40.749Z     278M used)
+Progress update: steps=116000, test inputs generated=46242, failing inputs=7873      (2022-02-22T15:14:42.893Z     410M used)
+Progress update: steps=117000, test inputs generated=46619, failing inputs=7928      (2022-02-22T15:14:45.588Z     952M used)
+Progress update: steps=118000, test inputs generated=46999, failing inputs=7987      (2022-02-22T15:14:48.044Z     1.36G used)
+Progress update: steps=119000, test inputs generated=47355, failing inputs=8047      (2022-02-22T15:14:50.857Z     523M used)
+Progress update: steps=120000, test inputs generated=47724, failing inputs=8108      (2022-02-22T15:14:53.124Z     715M used)
+Progress update: steps=121000, test inputs generated=48121, failing inputs=8173      (2022-02-22T15:14:55.868Z     1.15G used)
+Progress update: steps=122000, test inputs generated=48499, failing inputs=8233      (2022-02-22T15:14:58.967Z     394M used)
+Progress update: steps=123000, test inputs generated=48903, failing inputs=8302      (2022-02-22T15:15:01.653Z     1.04G used)
+Progress update: steps=124000, test inputs generated=49324, failing inputs=8364      (2022-02-22T15:15:04.492Z     1.39G used)
+Progress update: steps=125000, test inputs generated=49718, failing inputs=8438      (2022-02-22T15:15:07.437Z     588M used)
+Progress update: steps=126000, test inputs generated=50133, failing inputs=8522      (2022-02-22T15:15:10.175Z     1.10G used)
+Progress update: steps=127000, test inputs generated=50515, failing inputs=8585      (2022-02-22T15:15:13.040Z     297M used)
+Progress update: steps=128000, test inputs generated=50898, failing inputs=8642      (2022-02-22T15:15:15.605Z     676M used)
+Progress update: steps=129000, test inputs generated=51265, failing inputs=8698      (2022-02-22T15:15:18.376Z     1.11G used)
+Progress update: steps=130000, test inputs generated=51669, failing inputs=8752      (2022-02-22T15:15:21.096Z     1.54G used)
+Progress update: steps=131000, test inputs generated=52066, failing inputs=8806      (2022-02-22T15:15:24.232Z     949M used)
+Progress update: steps=132000, test inputs generated=52483, failing inputs=8876      (2022-02-22T15:15:27.435Z     279M used)
+Progress update: steps=133000, test inputs generated=52869, failing inputs=8947      (2022-02-22T15:15:30.479Z     683M used)
+Progress update: steps=134000, test inputs generated=53249, failing inputs=9007      (2022-02-22T15:15:33.546Z     1.14G used)
+Progress update: steps=135000, test inputs generated=53616, failing inputs=9064      (2022-02-22T15:15:36.718Z     1.60G used)
+Progress update: steps=136000, test inputs generated=53996, failing inputs=9118      (2022-02-22T15:15:40.299Z     772M used)
+Progress update: steps=136142, test inputs generated=54054, failing inputs=9129      (2022-02-22T15:15:40.749Z     1.02G used)
+Progress update: steps=137000, test inputs generated=54368, failing inputs=9186      (2022-02-22T15:15:43.556Z     1.18G used)
+Progress update: steps=138000, test inputs generated=54761, failing inputs=9245      (2022-02-22T15:15:47.044Z     534M used)
+Progress update: steps=139000, test inputs generated=55160, failing inputs=9304      (2022-02-22T15:15:50.299Z     1.02G used)
+Progress update: steps=140000, test inputs generated=55572, failing inputs=9373      (2022-02-22T15:15:53.667Z     1.56G used)
+Progress update: steps=141000, test inputs generated=55969, failing inputs=9434      (2022-02-22T15:15:57.038Z     729M used)
+Progress update: steps=142000, test inputs generated=56365, failing inputs=9497      (2022-02-22T15:15:59.772Z     918M used)
+Progress update: steps=143000, test inputs generated=56763, failing inputs=9570      (2022-02-22T15:16:03.225Z     1.57G used)
+Progress update: steps=144000, test inputs generated=57159, failing inputs=9620      (2022-02-22T15:16:06.311Z     545M used)
+Progress update: steps=145000, test inputs generated=57550, failing inputs=9690      (2022-02-22T15:16:09.580Z     1.01G used)
+Progress update: steps=146000, test inputs generated=57941, failing inputs=9745      (2022-02-22T15:16:12.524Z     1.28G used)
+Progress update: steps=147000, test inputs generated=58316, failing inputs=9808      (2022-02-22T15:16:15.496Z     1.58G used)
+Progress update: steps=148000, test inputs generated=58724, failing inputs=9870      (2022-02-22T15:16:19.246Z     717M used)
+Progress update: steps=149000, test inputs generated=59085, failing inputs=9924      (2022-02-22T15:16:22.901Z     1.34G used)
+Progress update: steps=150000, test inputs generated=59477, failing inputs=9997      (2022-02-22T15:16:26.137Z     444M used)
+Progress update: steps=151000, test inputs generated=59893, failing inputs=10055      (2022-02-22T15:16:29.639Z     1.04G used)
+Progress update: steps=152000, test inputs generated=60275, failing inputs=10120      (2022-02-22T15:16:32.885Z     1.51G used)
+Progress update: steps=153000, test inputs generated=60643, failing inputs=10181      (2022-02-22T15:16:35.932Z     536M used)
+Progress update: steps=154000, test inputs generated=61043, failing inputs=10230      (2022-02-22T15:16:39.619Z     1.13G used)
+Progress update: steps=154322, test inputs generated=61163, failing inputs=10260      (2022-02-22T15:16:40.750Z     326M used)
+Progress update: steps=155000, test inputs generated=61417, failing inputs=10293      (2022-02-22T15:16:43.011Z     1.59G used)
+Progress update: steps=156000, test inputs generated=61797, failing inputs=10352      (2022-02-22T15:16:46.127Z     596M used)
+Progress update: steps=157000, test inputs generated=62162, failing inputs=10413      (2022-02-22T15:16:49.162Z     1.00G used)
+Progress update: steps=158000, test inputs generated=62536, failing inputs=10471      (2022-02-22T15:16:52.313Z     1.46G used)
+Progress update: steps=159000, test inputs generated=62895, failing inputs=10524      (2022-02-22T15:16:55.315Z     496M used)
+Progress update: steps=160000, test inputs generated=63295, failing inputs=10589      (2022-02-22T15:16:58.490Z     927M used)
+Progress update: steps=161000, test inputs generated=63674, failing inputs=10650      (2022-02-22T15:17:01.525Z     1.25G used)
+Progress update: steps=162000, test inputs generated=64042, failing inputs=10699      (2022-02-22T15:17:04.189Z     1.44G used)
+Progress update: steps=163000, test inputs generated=64444, failing inputs=10750      (2022-02-22T15:17:07.640Z     638M used)
+Progress update: steps=164000, test inputs generated=64808, failing inputs=10823      (2022-02-22T15:17:10.621Z     1.02G used)
+Progress update: steps=165000, test inputs generated=65219, failing inputs=10891      (2022-02-22T15:17:14.158Z     1.55G used)
+Progress update: steps=166000, test inputs generated=65621, failing inputs=10966      (2022-02-22T15:17:17.699Z     830M used)
+Progress update: steps=167000, test inputs generated=66019, failing inputs=11028      (2022-02-22T15:17:21.103Z     1.45G used)
+Progress update: steps=168000, test inputs generated=66397, failing inputs=11100      (2022-02-22T15:17:24.294Z     585M used)
+Progress update: steps=169000, test inputs generated=66784, failing inputs=11156      (2022-02-22T15:17:27.462Z     1.13G used)
+Progress update: steps=170000, test inputs generated=67171, failing inputs=11230      (2022-02-22T15:17:30.689Z     448M used)
+Progress update: steps=171000, test inputs generated=67553, failing inputs=11297      (2022-02-22T15:17:34.169Z     1.20G used)
+Progress update: steps=172000, test inputs generated=67924, failing inputs=11355      (2022-02-22T15:17:37.473Z     487M used)
+Progress update: steps=172985, test inputs generated=68295, failing inputs=11417      (2022-02-22T15:17:40.750Z     1.06G used)
+Progress update: steps=173000, test inputs generated=68302, failing inputs=11419      (2022-02-22T15:17:40.846Z     1.11G used)
+Progress update: steps=174000, test inputs generated=68681, failing inputs=11471      (2022-02-22T15:17:44.108Z     1.68G used)
+Progress update: steps=175000, test inputs generated=69058, failing inputs=11539      (2022-02-22T15:17:47.226Z     609M used)
+Progress update: steps=176000, test inputs generated=69436, failing inputs=11595      (2022-02-22T15:17:50.715Z     1.01G used)
+Progress update: steps=177000, test inputs generated=69822, failing inputs=11660      (2022-02-22T15:17:54.141Z     1.61G used)
+Progress update: steps=178000, test inputs generated=70202, failing inputs=11733      (2022-02-22T15:17:57.181Z     561M used)
+Progress update: steps=179000, test inputs generated=70588, failing inputs=11794      (2022-02-22T15:18:00.593Z     1.02G used)
+Progress update: steps=180000, test inputs generated=70971, failing inputs=11864      (2022-02-22T15:18:03.937Z     1.56G used)
+Progress update: steps=181000, test inputs generated=71354, failing inputs=11917      (2022-02-22T15:18:06.973Z     593M used)
+Progress update: steps=182000, test inputs generated=71723, failing inputs=11982      (2022-02-22T15:18:10.493Z     1.13G used)
+Progress update: steps=183000, test inputs generated=72113, failing inputs=12036      (2022-02-22T15:18:13.793Z     1.43G used)
+Progress update: steps=184000, test inputs generated=72467, failing inputs=12092      (2022-02-22T15:18:16.594Z     412M used)
+Progress update: steps=185000, test inputs generated=72844, failing inputs=12158      (2022-02-22T15:18:20.078Z     1.01G used)
+Progress update: steps=186000, test inputs generated=73218, failing inputs=12227      (2022-02-22T15:18:23.765Z     1.52G used)
+Progress update: steps=187000, test inputs generated=73584, failing inputs=12295      (2022-02-22T15:18:27.192Z     661M used)
+Progress update: steps=188000, test inputs generated=73983, failing inputs=12360      (2022-02-22T15:18:30.390Z     1.07G used)
+Progress update: steps=189000, test inputs generated=74351, failing inputs=12428      (2022-02-22T15:18:33.645Z     1.47G used)
+Progress update: steps=190000, test inputs generated=74733, failing inputs=12488      (2022-02-22T15:18:36.898Z     640M used)
+Progress update: steps=191000, test inputs generated=75118, failing inputs=12562      (2022-02-22T15:18:40.316Z     1.13G used)
+Progress update: steps=191155, test inputs generated=75176, failing inputs=12570      (2022-02-22T15:18:40.751Z     1.34G used)
+Progress update: steps=192000, test inputs generated=75498, failing inputs=12624      (2022-02-22T15:18:43.525Z     1.42G used)
+Progress update: steps=193000, test inputs generated=75902, failing inputs=12692      (2022-02-22T15:18:46.924Z     725M used)
+Progress update: steps=194000, test inputs generated=76283, failing inputs=12763      (2022-02-22T15:18:50.146Z     1.13G used)
+Progress update: steps=195000, test inputs generated=76679, failing inputs=12822      (2022-02-22T15:18:53.781Z     1.65G used)
+Progress update: steps=196000, test inputs generated=77047, failing inputs=12883      (2022-02-22T15:18:56.559Z     570M used)
+Progress update: steps=197000, test inputs generated=77440, failing inputs=12937      (2022-02-22T15:18:59.823Z     1.11G used)
+Progress update: steps=198000, test inputs generated=77837, failing inputs=12987      (2022-02-22T15:19:03.005Z     1.52G used)
+Progress update: steps=199000, test inputs generated=78246, failing inputs=13054      (2022-02-22T15:19:06.579Z     792M used)
+Progress update: steps=200000, test inputs generated=78637, failing inputs=13120      (2022-02-22T15:19:09.707Z     1.23G used)
+Progress update: steps=201000, test inputs generated=79021, failing inputs=13174      (2022-02-22T15:19:12.869Z     1.66G used)
+Progress update: steps=202000, test inputs generated=79418, failing inputs=13249      (2022-02-22T15:19:16.591Z     959M used)
+Progress update: steps=203000, test inputs generated=79825, failing inputs=13314      (2022-02-22T15:19:20.158Z     1.61G used)
+Progress update: steps=204000, test inputs generated=80198, failing inputs=13371      (2022-02-22T15:19:23.355Z     722M used)
+Progress update: steps=205000, test inputs generated=80594, failing inputs=13432      (2022-02-22T15:19:27.083Z     1.37G used)
+Progress update: steps=206000, test inputs generated=80992, failing inputs=13484      (2022-02-22T15:19:30.588Z     590M used)
+Progress update: steps=207000, test inputs generated=81378, failing inputs=13537      (2022-02-22T15:19:33.783Z     1.08G used)
+Progress update: steps=208000, test inputs generated=81731, failing inputs=13591      (2022-02-22T15:19:36.795Z     1.40G used)
+Progress update: steps=209000, test inputs generated=82098, failing inputs=13645      (2022-02-22T15:19:39.855Z     459M used)
+Progress update: steps=209256, test inputs generated=82203, failing inputs=13667      (2022-02-22T15:19:40.699Z     1,000M used)
+Normal method executions: 46210666
+Exceptional method executions: 59220
+
+Average method execution time (normal termination):      8.67e-05
+Average method execution time (exceptional termination): 0.0458
+Approximate memory usage 1,000M
+Explorer = ForwardGenerator(steps: 209256, null steps: 127053, num_sequences_generated: 82203;
+    allSequences: 82203, regresson seqs: 27123, error seqs: 13667=13667=13667, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 41413;
+    runtimePrimitivesSeen:8202)
+
+Error-revealing test output:
+Error-revealing test count: 13667
+Writing error-revealing JUnit tests...
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest0.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest1.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest2.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest3.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest4.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest5.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest6.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest7.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest8.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest9.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest10.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest11.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest12.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest13.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest14.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest15.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest16.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest17.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest18.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest19.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest20.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest21.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest22.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest23.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest24.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest25.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest26.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest27.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest28.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest29.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest30.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest31.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest32.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest33.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest34.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest35.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest36.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest37.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest38.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest39.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest40.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest41.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest42.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest43.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest44.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest45.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest46.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest47.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest48.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest49.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest50.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest51.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest52.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest53.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest54.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest55.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest56.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest57.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest58.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest59.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest60.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest61.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest62.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest63.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest64.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest65.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest66.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest67.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest68.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 21329 regression sequences.
+
+Regression test output:
+Regression test count: 21329
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest0.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest1.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest2.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest3.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest4.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest5.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest6.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest7.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest8.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest9.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest10.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest11.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest12.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest13.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest14.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest15.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest16.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest17.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest18.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest19.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest20.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest21.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest22.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest23.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest24.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest25.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest26.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest27.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest28.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest29.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest30.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest31.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest32.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest33.java
+Created file /experiment/results/randoop10/mockito-org.mockito.cglib.core.ClassEmitter-org.mockito.cglib.transform.impl.AddDelegateTransformer-4/RegressionTest34.java

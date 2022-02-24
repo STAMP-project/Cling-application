@@ -1,0 +1,157 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 38 classes.
+PUBLIC MEMBERS=1441
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-23T01:31:50.998Z     322M used)
+Progress update: steps=1000, test inputs generated=847, failing inputs=7      (2022-02-23T01:32:05.271Z     168M used)
+Progress update: steps=2000, test inputs generated=1817, failing inputs=17      (2022-02-23T01:32:20.233Z     490M used)
+Progress update: steps=3000, test inputs generated=2776, failing inputs=23      (2022-02-23T01:32:36.965Z     313M used)
+Progress update: steps=3824, test inputs generated=3553, failing inputs=28      (2022-02-23T01:32:51.029Z     88.8M used)
+Progress update: steps=4000, test inputs generated=3716, failing inputs=29      (2022-02-23T01:32:53.788Z     77.4M used)
+Progress update: steps=5000, test inputs generated=4662, failing inputs=39      (2022-02-23T01:33:12.264Z     1.27G used)
+Progress update: steps=6000, test inputs generated=5597, failing inputs=45      (2022-02-23T01:33:32.928Z     124M used)
+Progress update: steps=6894, test inputs generated=6447, failing inputs=48      (2022-02-23T01:33:51.030Z     376M used)
+Progress update: steps=7000, test inputs generated=6548, failing inputs=48      (2022-02-23T01:33:53.468Z     104M used)
+Progress update: steps=8000, test inputs generated=7490, failing inputs=53      (2022-02-23T01:34:14.605Z     432M used)
+Progress update: steps=9000, test inputs generated=8416, failing inputs=61      (2022-02-23T01:34:36.114Z     231M used)
+Progress update: steps=9661, test inputs generated=9033, failing inputs=65      (2022-02-23T01:34:51.030Z     1.22G used)
+Progress update: steps=10000, test inputs generated=9343, failing inputs=68      (2022-02-23T01:34:58.161Z     223M used)
+Progress update: steps=11000, test inputs generated=10269, failing inputs=77      (2022-02-23T01:35:21.548Z     340M used)
+Progress update: steps=12000, test inputs generated=11202, failing inputs=82      (2022-02-23T01:35:46.481Z     1.04G used)
+Progress update: steps=12196, test inputs generated=11386, failing inputs=82      (2022-02-23T01:35:51.031Z     1.34G used)
+Progress update: steps=13000, test inputs generated=12112, failing inputs=82      (2022-02-23T01:36:10.463Z     1.24G used)
+Progress update: steps=14000, test inputs generated=13042, failing inputs=85      (2022-02-23T01:36:35.054Z     554M used)
+Progress update: steps=14619, test inputs generated=13614, failing inputs=87      (2022-02-23T01:36:51.031Z     1.05G used)
+Progress update: steps=15000, test inputs generated=13965, failing inputs=89      (2022-02-23T01:37:01.553Z     832M used)
+Progress update: steps=16000, test inputs generated=14894, failing inputs=93      (2022-02-23T01:37:28.979Z     1.49G used)
+Progress update: steps=16833, test inputs generated=15666, failing inputs=96      (2022-02-23T01:37:51.032Z     1.42G used)
+Progress update: steps=17000, test inputs generated=15821, failing inputs=96      (2022-02-23T01:37:55.295Z     207M used)
+Progress update: steps=18000, test inputs generated=16717, failing inputs=97      (2022-02-23T01:38:21.413Z     216M used)
+Progress update: steps=19000, test inputs generated=17630, failing inputs=99      (2022-02-23T01:38:46.687Z     1.01G used)
+Progress update: steps=19172, test inputs generated=17784, failing inputs=99      (2022-02-23T01:38:51.032Z     1.29G used)
+Progress update: steps=20000, test inputs generated=18537, failing inputs=100      (2022-02-23T01:39:11.282Z     722M used)
+Progress update: steps=21000, test inputs generated=19454, failing inputs=101      (2022-02-23T01:39:36.165Z     1.22G used)
+Progress update: steps=21577, test inputs generated=19974, failing inputs=101      (2022-02-23T01:39:51.033Z     1.01G used)
+Progress update: steps=22000, test inputs generated=20365, failing inputs=102      (2022-02-23T01:40:01.934Z     1.23G used)
+Progress update: steps=23000, test inputs generated=21281, failing inputs=104      (2022-02-23T01:40:25.827Z     317M used)
+Progress update: steps=24000, test inputs generated=22189, failing inputs=106      (2022-02-23T01:40:48.457Z     435M used)
+Progress update: steps=24116, test inputs generated=22295, failing inputs=106      (2022-02-23T01:40:51.049Z     247M used)
+Progress update: steps=25000, test inputs generated=23114, failing inputs=110      (2022-02-23T01:41:10.432Z     390M used)
+Progress update: steps=26000, test inputs generated=24018, failing inputs=112      (2022-02-23T01:41:30.432Z     669M used)
+Progress update: steps=27000, test inputs generated=24930, failing inputs=114      (2022-02-23T01:41:48.499Z     1.19G used)
+Progress update: steps=27128, test inputs generated=25050, failing inputs=114      (2022-02-23T01:41:51.004Z     1.38G used)
+Normal method executions: 30507206
+Exceptional method executions: 7473
+
+Average method execution time (normal termination):      0.000238
+Average method execution time (exceptional termination): 0.0491
+Approximate memory usage 1.38G
+Explorer = ForwardGenerator(steps: 27128, null steps: 2078, num_sequences_generated: 25050;
+    allSequences: 25050, regresson seqs: 22036, error seqs: 114=114=114, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 2900;
+    runtimePrimitivesSeen:1396)
+
+Error-revealing test output:
+Error-revealing test count: 114
+Writing error-revealing JUnit tests...
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/ErrorTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 12319 regression sequences.
+
+Regression test output:
+Regression test count: 12319
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest1.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest2.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest3.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest4.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest5.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest6.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest7.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest8.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest9.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest10.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest11.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest12.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest13.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest14.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest15.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest16.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest17.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest18.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest19.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest20.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest21.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest22.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest23.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest24.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest25.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest26.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest27.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest28.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest29.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest30.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest31.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest32.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest33.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest34.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest35.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest36.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest37.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest38.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest39.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest40.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest41.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest42.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest43.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest44.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest45.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest46.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest47.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest48.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest49.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest50.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest51.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest52.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest53.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest54.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest55.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest56.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest57.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest58.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest59.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest60.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest61.java
+Created file /experiment/results/randoop10/time-org.joda.time.DateTimeUtils-org.joda.time.DateTimeZone-18/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.PeriodType.dayTime()
+  Possibly flaky:  org.joda.time.DurationFieldType.halfdays()
+  Possibly flaky:  org.joda.time.DateTimeFieldType.dayOfMonth()
+  Possibly flaky:  org.joda.time.DateTime.toLocalDate()
+  Possibly flaky:  java.util.TimeZone.getDefault()
+  Possibly flaky:  java.util.Set.toArray(java.time.ZoneId[])
+  Possibly flaky:  java.util.Set.toArray(java.util.Date[])
+  Possibly flaky:  java.util.Calendar.set(int,int,int,int,int)
+  Possibly flaky:  java.util.Calendar.getInstance()
+  Possibly flaky:  java.util.Calendar.compareTo(java.util.Calendar)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 16).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

@@ -1,0 +1,189 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+Cannot instantiate non-accessible class org.joda.time.format.DateTimeFormatterBuilder$NumberFormatter specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber specified via --testclass or --classlist; will use its static methods.
+
+Will try to generate tests for 34 classes.
+PUBLIC MEMBERS=1204
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-23T03:02:30.650Z     312M used)
+Progress update: steps=1000, test inputs generated=782, failing inputs=6      (2022-02-23T03:02:41.928Z     679M used)
+Progress update: steps=2000, test inputs generated=1699, failing inputs=12      (2022-02-23T03:02:54.141Z     192M used)
+Progress update: steps=3000, test inputs generated=2634, failing inputs=17      (2022-02-23T03:03:07.544Z     172M used)
+Progress update: steps=4000, test inputs generated=3561, failing inputs=20      (2022-02-23T03:03:19.647Z     260M used)
+Progress update: steps=4905, test inputs generated=4378, failing inputs=26      (2022-02-23T03:03:30.674Z     387M used)
+Progress update: steps=5000, test inputs generated=4469, failing inputs=27      (2022-02-23T03:03:31.836Z     1.06G used)
+Progress update: steps=6000, test inputs generated=5377, failing inputs=33      (2022-02-23T03:03:44.486Z     786M used)
+Progress update: steps=7000, test inputs generated=6284, failing inputs=38      (2022-02-23T03:03:57.511Z     986M used)
+Progress update: steps=8000, test inputs generated=7197, failing inputs=42      (2022-02-23T03:04:11.303Z     913M used)
+Progress update: steps=9000, test inputs generated=8108, failing inputs=47      (2022-02-23T03:04:25.998Z     840M used)
+Progress update: steps=9281, test inputs generated=8366, failing inputs=49      (2022-02-23T03:04:30.675Z     498M used)
+Progress update: steps=10000, test inputs generated=9028, failing inputs=54      (2022-02-23T03:04:43.183Z     928M used)
+Progress update: steps=11000, test inputs generated=9926, failing inputs=56      (2022-02-23T03:05:01.468Z     909M used)
+Progress update: steps=12000, test inputs generated=10840, failing inputs=58      (2022-02-23T03:05:21.735Z     235M used)
+Progress update: steps=12458, test inputs generated=11248, failing inputs=59      (2022-02-23T03:05:30.676Z     762M used)
+Progress update: steps=13000, test inputs generated=11737, failing inputs=61      (2022-02-23T03:05:41.384Z     413M used)
+Progress update: steps=14000, test inputs generated=12644, failing inputs=61      (2022-02-23T03:06:02.002Z     1.37G used)
+Progress update: steps=15000, test inputs generated=13525, failing inputs=77      (2022-02-23T03:06:26.376Z     1.58G used)
+Progress update: steps=15201, test inputs generated=13708, failing inputs=81      (2022-02-23T03:06:30.677Z     1.88G used)
+Progress update: steps=16000, test inputs generated=14427, failing inputs=85      (2022-02-23T03:06:48.913Z     1.94G used)
+Progress update: steps=17000, test inputs generated=15338, failing inputs=87      (2022-02-23T03:07:10.845Z     1.84G used)
+Progress update: steps=17917, test inputs generated=16160, failing inputs=92      (2022-02-23T03:07:30.678Z     1.85G used)
+Progress update: steps=18000, test inputs generated=16234, failing inputs=92      (2022-02-23T03:07:32.464Z     1.20G used)
+Progress update: steps=19000, test inputs generated=17117, failing inputs=101      (2022-02-23T03:07:54.878Z     1.91G used)
+Progress update: steps=20000, test inputs generated=18010, failing inputs=104      (2022-02-23T03:08:16.297Z     755M used)
+Progress update: steps=20630, test inputs generated=18569, failing inputs=106      (2022-02-23T03:08:30.678Z     815M used)
+Progress update: steps=21000, test inputs generated=18907, failing inputs=108      (2022-02-23T03:08:40.037Z     1.47G used)
+Progress update: steps=22000, test inputs generated=19793, failing inputs=114      (2022-02-23T03:09:11.243Z     174M used)
+Progress update: steps=22808, test inputs generated=20497, failing inputs=131      (2022-02-23T03:09:30.679Z     1.47G used)
+Progress update: steps=23000, test inputs generated=20663, failing inputs=132      (2022-02-23T03:09:35.297Z     343M used)
+Progress update: steps=24000, test inputs generated=21566, failing inputs=135      (2022-02-23T03:10:06.237Z     649M used)
+Progress update: steps=24958, test inputs generated=22404, failing inputs=139      (2022-02-23T03:10:30.680Z     1.28G used)
+Progress update: steps=25000, test inputs generated=22440, failing inputs=139      (2022-02-23T03:10:31.876Z     411M used)
+Progress update: steps=26000, test inputs generated=23317, failing inputs=141      (2022-02-23T03:10:57.236Z     420M used)
+Progress update: steps=27000, test inputs generated=24206, failing inputs=143      (2022-02-23T03:11:22.530Z     1.48G used)
+Progress update: steps=27254, test inputs generated=24431, failing inputs=143      (2022-02-23T03:11:30.848Z     801M used)Long execution time 85 sec for
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder2 = dateTimeFormatterBuilder0.appendTwoDigitWeekyear((int)'4');
+org.joda.time.DateTimeFieldType dateTimeFieldType3 = org.joda.time.DateTimeFieldType.millisOfDay();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder6 = dateTimeFormatterBuilder2.appendSignedDecimal(dateTimeFieldType3, 292278993, 54);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder8 = dateTimeFormatterBuilder2.appendSecondOfMinute(2);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder10 = dateTimeFormatterBuilder8.appendSecondOfDay(0);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder11 = dateTimeFormatterBuilder10.appendHalfdayOfDayText();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder13 = dateTimeFormatterBuilder10.appendLiteral(' ');
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder15 = dateTimeFormatterBuilder10.appendLiteral('4');
+boolean boolean16 = dateTimeFormatterBuilder15.canBuildParser();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder19 = dateTimeFormatterBuilder15.appendCenturyOfEra(15, 10969);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter20 = dateTimeFormatterBuilder15.toFormatter();
+org.joda.time.DateTimeZone dateTimeZone21 = null;
+org.joda.time.MutableDateTime mutableDateTime22 = new org.joda.time.MutableDateTime(dateTimeZone21);
+org.joda.time.DateTimeZone dateTimeZone23 = null;
+org.joda.time.MutableDateTime mutableDateTime24 = new org.joda.time.MutableDateTime(dateTimeZone23);
+org.joda.time.Chronology chronology25 = null;
+mutableDateTime24.setChronology(chronology25);
+int int27 = mutableDateTime22.compareTo((org.joda.time.ReadableInstant)mutableDateTime24);
+org.joda.time.DateTimeZone dateTimeZone28 = null;
+org.joda.time.DateTime dateTime29 = mutableDateTime22.toDateTime(dateTimeZone28);
+org.joda.time.DateTime dateTime31 = dateTime29.withMillisOfSecond(0);
+org.joda.time.DateTime dateTime33 = dateTime31.plusMonths((int)(short)10);
+org.joda.time.DateTime dateTime35 = dateTime31.withMinuteOfHour(4);
+org.joda.time.Chronology chronology37 = null;
+org.joda.time.LocalDate localDate38 = new org.joda.time.LocalDate((long)(short)-1, chronology37);
+org.joda.time.LocalDate localDate40 = localDate38.minusYears((int)(byte)-1);
+org.joda.time.LocalDate.Property property41 = localDate38.dayOfMonth();
+boolean boolean42 = dateTime35.equals((java.lang.Object)property41);
+org.joda.time.LocalDate localDate43 = property41.roundHalfFloorCopy();
+org.joda.time.DateTimeZone dateTimeZone45 = org.joda.time.DateTimeZone.forOffsetMillis(22);
+boolean boolean46 = dateTimeZone45.isFixed();
+int int48 = dateTimeZone45.getStandardOffset((long)0);
+org.joda.time.DateTime dateTime49 = localDate43.toDateTimeAtMidnight(dateTimeZone45);
+org.joda.time.LocalDate localDate51 = localDate43.minusWeeks(608);
+org.joda.time.LocalDate localDate53 = localDate43.plusYears(20);
+org.joda.time.LocalDate localDate55 = localDate53.plusWeeks(11139);
+java.lang.String str56 = dateTimeFormatter20.print((org.joda.time.ReadablePartial)localDate55);
+
+
+Progress update: steps=27254, test inputs generated=24432, failing inputs=143      (2022-02-23T03:12:54.271Z     2.00G used)
+Normal method executions: 30338629
+Exceptional method executions: 7071
+
+Average method execution time (normal termination):      0.00335
+Average method execution time (exceptional termination): 0.638
+Approximate memory usage 2.00G
+Explorer = ForwardGenerator(steps: 27254, null steps: 2822, num_sequences_generated: 24432;
+    allSequences: 24432, regresson seqs: 18829, error seqs: 143=143=143, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 5460;
+    runtimePrimitivesSeen:2170)
+
+Error-revealing test output:
+Error-revealing test count: 143
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/ErrorTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 10308 regression sequences.
+
+Regression test output:
+Regression test count: 10308
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest1.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest2.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest3.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest4.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest5.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest6.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest7.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest8.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest9.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest10.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest11.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest12.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest13.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest14.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest15.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest16.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest17.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest18.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest19.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest20.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest21.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest22.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest23.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest24.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest25.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest26.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest27.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest28.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest29.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest30.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest31.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest32.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest33.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest34.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest35.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest36.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest37.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest38.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest39.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest40.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest41.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest42.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest43.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest44.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest45.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest46.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest47.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest48.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest49.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest50.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest51.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber-org.joda.time.format.DateTimeFormatterBuilder-5/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.LocalTime.fromDateFields(java.util.Date)
+  Possibly flaky:  org.joda.time.LocalDate.toDateTime(org.joda.time.LocalTime)
+  Possibly flaky:  java.util.Set.toArray(org.joda.time.ReadWritableDateTime[])
+  Possibly flaky:  java.util.Calendar.toString()
+  Possibly flaky:  org.joda.time.base.AbstractInstant.toDate()
+  Possibly flaky:  org.joda.time.base.AbstractDateTime.toCalendar(java.util.Locale)
+  Possibly flaky:  org.joda.time.MutableDateTime.clone()
+  Possibly flaky:  org.joda.time.LocalDateTime.fromDateFields(java.util.Date)
+  Possibly flaky:  org.joda.time.ReadableInstant.toString()
+  Possibly flaky:  org.joda.time.LocalDate.fromCalendarFields(java.util.Calendar)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 82).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

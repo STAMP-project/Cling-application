@@ -1,0 +1,234 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 22 classes.
+PUBLIC MEMBERS=264
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-22T19:10:42.704Z     226M used)
+Progress update: steps=1000, test inputs generated=737, failing inputs=1      (2022-02-22T19:10:52.373Z     407M used)
+Progress update: steps=2000, test inputs generated=1546, failing inputs=2      (2022-02-22T19:11:00.804Z     1.03G used)
+Progress update: steps=3000, test inputs generated=2355, failing inputs=5      (2022-02-22T19:11:09.872Z     959M used)
+Progress update: steps=4000, test inputs generated=3151, failing inputs=6      (2022-02-22T19:11:19.939Z     1.51G used)
+Progress update: steps=5000, test inputs generated=3931, failing inputs=9      (2022-02-22T19:11:28.571Z     2.22G used)
+Progress update: steps=6000, test inputs generated=4742, failing inputs=9      (2022-02-22T19:11:38.073Z     2.12G used)
+Progress update: steps=6298, test inputs generated=4980, failing inputs=9      (2022-02-22T19:11:45.238Z     2.14G used)
+Progress update: steps=7000, test inputs generated=5538, failing inputs=9      (2022-02-22T19:11:53.994Z     3.21G used)
+Progress update: steps=8000, test inputs generated=6314, failing inputs=11      (2022-02-22T19:12:13.554Z     3.12G used)
+Progress update: steps=9000, test inputs generated=7096, failing inputs=12      (2022-02-22T19:12:42.165Z     3.48G used)
+Progress update: steps=9066, test inputs generated=7151, failing inputs=12      (2022-02-22T19:12:45.254Z     3.42G used)
+Progress update: steps=9535, test inputs generated=7515, failing inputs=15      (2022-02-22T19:13:45.495Z     3.50G used)Long execution time 17 sec for
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs0 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+boolean boolean2 = sumOfLogs0.equals((java.lang.Object)299061075968L);
+org.apache.commons.math.stat.descriptive.SummaryStatistics summaryStatistics3 = new org.apache.commons.math.stat.descriptive.SummaryStatistics();
+org.apache.commons.math.stat.descriptive.summary.SumOfSquares sumOfSquares4 = new org.apache.commons.math.stat.descriptive.summary.SumOfSquares();
+long long5 = sumOfSquares4.getN();
+sumOfSquares4.increment((double)(-1));
+summaryStatistics3.setMeanImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)sumOfSquares4);
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs9 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+summaryStatistics3.setVarianceImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)sumOfLogs9);
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs11 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+summaryStatistics3.setSumsqImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)sumOfLogs11);
+org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic storelessUnivariateStatistic13 = summaryStatistics3.getSumsqImpl();
+org.apache.commons.math.stat.descriptive.rank.Min min14 = new org.apache.commons.math.stat.descriptive.rank.Min();
+long long15 = min14.getN();
+summaryStatistics3.setSumsqImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)min14);
+double double17 = summaryStatistics3.getGeometricMean();
+double double18 = summaryStatistics3.getStandardDeviation();
+double double19 = summaryStatistics3.getSum();
+org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic storelessUnivariateStatistic20 = summaryStatistics3.getSumsqImpl();
+org.apache.commons.math.stat.descriptive.summary.Sum sum21 = new org.apache.commons.math.stat.descriptive.summary.Sum();
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl22 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray23 = new double[] {  };
+empiricalDistributionImpl22.load(doubleArray23);
+java.util.List list25 = empiricalDistributionImpl22.getBinStats();
+double[] doubleArray26 = empiricalDistributionImpl22.getUpperBounds();
+double double29 = sum21.evaluate(doubleArray26, 0, (int)(byte)100);
+double double30 = sum21.getResult();
+long long31 = sum21.getN();
+org.apache.commons.math.stat.descriptive.moment.FirstMoment firstMoment32 = new org.apache.commons.math.stat.descriptive.moment.FirstMoment();
+org.apache.commons.math.stat.descriptive.moment.Mean mean33 = new org.apache.commons.math.stat.descriptive.moment.Mean(firstMoment32);
+double double34 = firstMoment32.getResult();
+double double35 = firstMoment32.getResult();
+firstMoment32.increment((double)10);
+org.apache.commons.math.stat.descriptive.rank.Max max38 = new org.apache.commons.math.stat.descriptive.rank.Max();
+double double39 = max38.getResult();
+org.apache.commons.math.stat.descriptive.moment.Variance variance40 = new org.apache.commons.math.stat.descriptive.moment.Variance();
+variance40.clear();
+variance40.setBiasCorrected(true);
+org.apache.commons.math.stat.descriptive.moment.FirstMoment firstMoment44 = new org.apache.commons.math.stat.descriptive.moment.FirstMoment();
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl45 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray46 = new double[] {  };
+empiricalDistributionImpl45.load(doubleArray46);
+firstMoment44.incrementAll(doubleArray46);
+double double50 = variance40.evaluate(doubleArray46, 1.0d);
+long long51 = variance40.getN();
+variance40.increment((double)280462651392L);
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs54 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+org.apache.commons.math.stat.descriptive.moment.GeometricMean geometricMean55 = new org.apache.commons.math.stat.descriptive.moment.GeometricMean(sumOfLogs54);
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl56 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray57 = new double[] {  };
+empiricalDistributionImpl56.load(doubleArray57);
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl59 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray60 = new double[] {  };
+empiricalDistributionImpl59.load(doubleArray60);
+empiricalDistributionImpl56.load(doubleArray60);
+double[] doubleArray63 = empiricalDistributionImpl56.getUpperBounds();
+double double66 = sumOfLogs54.evaluate(doubleArray63, (int)':', 1);
+double double68 = variance40.evaluate(doubleArray63, (double)'a');
+double double69 = max38.evaluate(doubleArray63);
+double double72 = firstMoment32.evaluate(doubleArray63, 0, (int)'a');
+double double75 = sum21.evaluate(doubleArray63, 55, (int)'4');
+storelessUnivariateStatistic20.incrementAll(doubleArray63);
+double double79 = sumOfLogs0.evaluate(doubleArray63, (int)(byte)10, 0);
+long long80 = sumOfLogs0.getN();
+
+
+Progress update: steps=9535, test inputs generated=7516, failing inputs=15      (2022-02-22T19:14:48.228Z     3.50G used)
+
+*** Randoop has spent over 10 seconds executing the following test.
+See https://randoop.github.io/randoop/manual/index.html#no-input-generation .
+
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs0 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+boolean boolean2 = sumOfLogs0.equals((java.lang.Object)299061075968L);
+org.apache.commons.math.stat.descriptive.SummaryStatistics summaryStatistics3 = new org.apache.commons.math.stat.descriptive.SummaryStatistics();
+org.apache.commons.math.stat.descriptive.summary.SumOfSquares sumOfSquares4 = new org.apache.commons.math.stat.descriptive.summary.SumOfSquares();
+long long5 = sumOfSquares4.getN();
+sumOfSquares4.increment((double)(-1));
+summaryStatistics3.setMeanImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)sumOfSquares4);
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs9 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+summaryStatistics3.setVarianceImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)sumOfLogs9);
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs11 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+summaryStatistics3.setSumsqImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)sumOfLogs11);
+org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic storelessUnivariateStatistic13 = summaryStatistics3.getSumsqImpl();
+org.apache.commons.math.stat.descriptive.rank.Min min14 = new org.apache.commons.math.stat.descriptive.rank.Min();
+long long15 = min14.getN();
+summaryStatistics3.setSumsqImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)min14);
+double double17 = summaryStatistics3.getGeometricMean();
+double double18 = summaryStatistics3.getStandardDeviation();
+double double19 = summaryStatistics3.getSum();
+org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic storelessUnivariateStatistic20 = summaryStatistics3.getSumsqImpl();
+org.apache.commons.math.stat.descriptive.summary.Sum sum21 = new org.apache.commons.math.stat.descriptive.summary.Sum();
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl22 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray23 = new double[] {  };
+empiricalDistributionImpl22.load(doubleArray23);
+java.util.List list25 = empiricalDistributionImpl22.getBinStats();
+double[] doubleArray26 = empiricalDistributionImpl22.getUpperBounds();
+double double29 = sum21.evaluate(doubleArray26, 0, (int)(byte)100);
+double double30 = sum21.getResult();
+long long31 = sum21.getN();
+org.apache.commons.math.stat.descriptive.moment.FirstMoment firstMoment32 = new org.apache.commons.math.stat.descriptive.moment.FirstMoment();
+org.apache.commons.math.stat.descriptive.moment.Mean mean33 = new org.apache.commons.math.stat.descriptive.moment.Mean(firstMoment32);
+double double34 = firstMoment32.getResult();
+double double35 = firstMoment32.getResult();
+firstMoment32.increment((double)10);
+org.apache.commons.math.stat.descriptive.rank.Max max38 = new org.apache.commons.math.stat.descriptive.rank.Max();
+double double39 = max38.getResult();
+org.apache.commons.math.stat.descriptive.moment.Variance variance40 = new org.apache.commons.math.stat.descriptive.moment.Variance();
+variance40.clear();
+variance40.setBiasCorrected(true);
+org.apache.commons.math.stat.descriptive.moment.FirstMoment firstMoment44 = new org.apache.commons.math.stat.descriptive.moment.FirstMoment();
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl45 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray46 = new double[] {  };
+empiricalDistributionImpl45.load(doubleArray46);
+firstMoment44.incrementAll(doubleArray46);
+double double50 = variance40.evaluate(doubleArray46, 1.0d);
+long long51 = variance40.getN();
+variance40.increment((double)280462651392L);
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs54 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+org.apache.commons.math.stat.descriptive.moment.GeometricMean geometricMean55 = new org.apache.commons.math.stat.descriptive.moment.GeometricMean(sumOfLogs54);
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl56 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray57 = new double[] {  };
+empiricalDistributionImpl56.load(doubleArray57);
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl59 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray60 = new double[] {  };
+empiricalDistributionImpl59.load(doubleArray60);
+empiricalDistributionImpl56.load(doubleArray60);
+double[] doubleArray63 = empiricalDistributionImpl56.getUpperBounds();
+double double66 = sumOfLogs54.evaluate(doubleArray63, (int)':', 1);
+double double68 = variance40.evaluate(doubleArray63, (double)'a');
+double double69 = max38.evaluate(doubleArray63);
+double double72 = firstMoment32.evaluate(doubleArray63, 0, (int)'a');
+double double75 = sum21.evaluate(doubleArray63, 55, (int)'4');
+storelessUnivariateStatistic20.incrementAll(doubleArray63);
+double double79 = sumOfLogs0.evaluate(doubleArray63, (int)(byte)10, 0);
+long long80 = sumOfLogs0.getN();
+
+
+Will dump a heap profile to randoop-slow.hprof.
+
+Problem with sequence:
+createAndClassifySequences threw an exception
+java.lang.OutOfMemoryError: Java heap space
+
+
+Throwable thrown while handling command: java.lang.OutOfMemoryError: Java heap space
+java.lang.OutOfMemoryError: Java heap space
+
+Randoop failed.
+Last sequence under execution: 
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs0 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+boolean boolean2 = sumOfLogs0.equals((java.lang.Object)299061075968L);
+org.apache.commons.math.stat.descriptive.SummaryStatistics summaryStatistics3 = new org.apache.commons.math.stat.descriptive.SummaryStatistics();
+org.apache.commons.math.stat.descriptive.summary.SumOfSquares sumOfSquares4 = new org.apache.commons.math.stat.descriptive.summary.SumOfSquares();
+long long5 = sumOfSquares4.getN();
+sumOfSquares4.increment((double)(-1));
+summaryStatistics3.setMeanImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)sumOfSquares4);
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs9 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+summaryStatistics3.setVarianceImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)sumOfLogs9);
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs11 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+summaryStatistics3.setSumsqImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)sumOfLogs11);
+org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic storelessUnivariateStatistic13 = summaryStatistics3.getSumsqImpl();
+org.apache.commons.math.stat.descriptive.rank.Min min14 = new org.apache.commons.math.stat.descriptive.rank.Min();
+long long15 = min14.getN();
+summaryStatistics3.setSumsqImpl((org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic)min14);
+double double17 = summaryStatistics3.getGeometricMean();
+double double18 = summaryStatistics3.getStandardDeviation();
+double double19 = summaryStatistics3.getSum();
+org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic storelessUnivariateStatistic20 = summaryStatistics3.getSumsqImpl();
+org.apache.commons.math.stat.descriptive.summary.Sum sum21 = new org.apache.commons.math.stat.descriptive.summary.Sum();
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl22 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray23 = new double[] {  };
+empiricalDistributionImpl22.load(doubleArray23);
+java.util.List list25 = empiricalDistributionImpl22.getBinStats();
+double[] doubleArray26 = empiricalDistributionImpl22.getUpperBounds();
+double double29 = sum21.evaluate(doubleArray26, 0, (int)(byte)100);
+double double30 = sum21.getResult();
+long long31 = sum21.getN();
+org.apache.commons.math.stat.descriptive.moment.FirstMoment firstMoment32 = new org.apache.commons.math.stat.descriptive.moment.FirstMoment();
+org.apache.commons.math.stat.descriptive.moment.Mean mean33 = new org.apache.commons.math.stat.descriptive.moment.Mean(firstMoment32);
+double double34 = firstMoment32.getResult();
+double double35 = firstMoment32.getResult();
+firstMoment32.increment((double)10);
+org.apache.commons.math.stat.descriptive.rank.Max max38 = new org.apache.commons.math.stat.descriptive.rank.Max();
+double double39 = max38.getResult();
+org.apache.commons.math.stat.descriptive.moment.Variance variance40 = new org.apache.commons.math.stat.descriptive.moment.Variance();
+variance40.clear();
+variance40.setBiasCorrected(true);
+org.apache.commons.math.stat.descriptive.moment.FirstMoment firstMoment44 = new org.apache.commons.math.stat.descriptive.moment.FirstMoment();
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl45 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray46 = new double[] {  };
+empiricalDistributionImpl45.load(doubleArray46);
+firstMoment44.incrementAll(doubleArray46);
+double double50 = variance40.evaluate(doubleArray46, 1.0d);
+long long51 = variance40.getN();
+variance40.increment((double)280462651392L);
+org.apache.commons.math.stat.descriptive.summary.SumOfLogs sumOfLogs54 = new org.apache.commons.math.stat.descriptive.summary.SumOfLogs();
+org.apache.commons.math.stat.descriptive.moment.GeometricMean geometricMean55 = new org.apache.commons.math.stat.descriptive.moment.GeometricMean(sumOfLogs54);
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl56 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray57 = new double[] {  };
+empiricalDistributionImpl56.load(doubleArray57);
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl59 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray60 = new double[] {  };
+empiricalDistributionImpl59.load(doubleArray60);
+empiricalDistributionImpl56.load(doubleArray60);
+double[] doubleArray63 = empiricalDistributionImpl56.getUpperBounds();
+double double66 = sumOfLogs54.evaluate(doubleArray63, (int)':', 1);
+double double68 = variance40.evaluate(doubleArray63, (double)'a');
+double double69 = max38.evaluate(doubleArray63);
+double double72 = firstMoment32.evaluate(doubleArray63, 0, (int)'a');
+double double75 = sum21.evaluate(doubleArray63, 55, (int)'4');
+storelessUnivariateStatistic20.incrementAll(doubleArray63);
+double double79 = sumOfLogs0.evaluate(doubleArray63, (int)(byte)10, 0);
+long long80 = sumOfLogs0.getN();

@@ -1,0 +1,166 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 22 classes.
+PUBLIC MEMBERS=264
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-22T19:11:07.899Z     226M used)
+Progress update: steps=1000, test inputs generated=738, failing inputs=5      (2022-02-22T19:11:15.689Z     668M used)
+Progress update: steps=2000, test inputs generated=1566, failing inputs=7      (2022-02-22T19:11:24.943Z     862M used)
+Progress update: steps=3000, test inputs generated=2405, failing inputs=12      (2022-02-22T19:11:33.719Z     958M used)
+Progress update: steps=4000, test inputs generated=3208, failing inputs=14      (2022-02-22T19:11:43.742Z     878M used)
+Progress update: steps=5000, test inputs generated=4013, failing inputs=16      (2022-02-22T19:11:56.516Z     905M used)
+Progress update: steps=5718, test inputs generated=4594, failing inputs=17      (2022-02-22T19:12:07.917Z     1.25G used)
+Progress update: steps=6000, test inputs generated=4822, failing inputs=18      (2022-02-22T19:12:15.197Z     1.14G used)
+Progress update: steps=7000, test inputs generated=5656, failing inputs=20      (2022-02-22T19:12:34.729Z     1.98G used)
+Progress update: steps=8000, test inputs generated=6461, failing inputs=21      (2022-02-22T19:12:50.809Z     2.25G used)
+Progress update: steps=9000, test inputs generated=7249, failing inputs=21      (2022-02-22T19:13:07.422Z     2.70G used)
+Progress update: steps=9047, test inputs generated=7290, failing inputs=21      (2022-02-22T19:13:08.192Z     1.89G used)
+Progress update: steps=10000, test inputs generated=8059, failing inputs=23      (2022-02-22T19:13:25.413Z     2.54G used)
+Progress update: steps=11000, test inputs generated=8851, failing inputs=24      (2022-02-22T19:13:47.663Z     2.34G used)
+Progress update: steps=12000, test inputs generated=9652, failing inputs=26      (2022-02-22T19:14:05.379Z     2.77G used)
+Progress update: steps=12222, test inputs generated=9836, failing inputs=26      (2022-02-22T19:14:08.193Z     3.07G used)
+Progress update: steps=13000, test inputs generated=10478, failing inputs=26      (2022-02-22T19:14:21.945Z     2.90G used)
+Progress update: steps=14000, test inputs generated=11271, failing inputs=28      (2022-02-22T19:14:39.769Z     3.73G used)
+Progress update: steps=15000, test inputs generated=12076, failing inputs=29      (2022-02-22T19:15:03.100Z     3.40G used)
+Progress update: steps=15107, test inputs generated=12155, failing inputs=29      (2022-02-22T19:15:08.225Z     3.57G used)
+Progress update: steps=16000, test inputs generated=12878, failing inputs=29      (2022-02-22T19:15:33.231Z     3.74G used)
+Progress update: steps=16471, test inputs generated=13265, failing inputs=29      (2022-02-22T19:16:08.470Z     3.80G used)Long execution time 11 sec for
+java.io.File file2 = java.io.File.createTempFile("hi!", "hi!");
+boolean boolean3 = file2.exists();
+long long4 = file2.getFreeSpace();
+java.lang.String str5 = file2.getPath();
+java.net.URL uRL6 = file2.toURL();
+java.net.URL uRL8 = new java.net.URL(uRL6, "hi!");
+java.net.URI uRI9 = uRL6.toURI();
+java.net.URL uRL11 = new java.net.URL(uRL6, "hi!");
+java.lang.Object obj12 = uRL6.getContent();
+java.net.URI uRI13 = uRL6.toURI();
+java.io.File file16 = java.io.File.createTempFile("hi!", "hi!");
+boolean boolean17 = file16.exists();
+long long18 = file16.getFreeSpace();
+java.io.File file19 = file16.getParentFile();
+java.nio.file.Path path20 = file19.toPath();
+java.io.File file21 = file19.getAbsoluteFile();
+java.net.URL uRL22 = file21.toURL();
+java.net.URI uRI23 = uRL22.toURI();
+java.io.File file26 = java.io.File.createTempFile("hi!", "hi!");
+boolean boolean27 = file26.canWrite();
+java.lang.String str28 = file26.getName();
+java.net.URL uRL29 = file26.toURL();
+boolean boolean30 = uRL22.sameFile(uRL29);
+java.io.InputStream inputStream31 = uRL22.openStream();
+boolean boolean32 = uRL6.sameFile(uRL22);
+java.net.URL uRL34 = new java.net.URL(uRL6, "/tmp/hi!2698121870749247917hi!");
+java.net.Proxy proxy35 = null;
+java.net.URLConnection uRLConnection36 = uRL34.openConnection(proxy35);
+
+Long execution time 13 sec for
+java.io.File file2 = java.io.File.createTempFile("hi!", "hi!");
+boolean boolean3 = file2.exists();
+long long4 = file2.getFreeSpace();
+java.io.File file5 = file2.getParentFile();
+java.nio.file.Path path6 = file5.toPath();
+java.io.File file7 = file5.getAbsoluteFile();
+java.net.URL uRL8 = file7.toURL();
+java.net.URI uRI9 = uRL8.toURI();
+java.io.File file12 = java.io.File.createTempFile("hi!", "hi!");
+boolean boolean13 = file12.canWrite();
+java.lang.String str14 = file12.getName();
+java.net.URL uRL15 = file12.toURL();
+boolean boolean16 = uRL8.sameFile(uRL15);
+java.io.InputStream inputStream17 = uRL8.openStream();
+java.lang.String str18 = uRL8.toString();
+
+createAndClassifySequences threw an exception
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.regex.Matcher.<init>(Matcher.java:225)
+	at java.util.regex.Pattern.matcher(Pattern.java:1093)
+	at randoop.reflection.OmitMethodsPredicate.shouldOmitExact(OmitMethodsPredicate.java:214)
+	at randoop.reflection.OmitMethodsPredicate.shouldOmitMethod(OmitMethodsPredicate.java:177)
+	at randoop.reflection.OmitMethodsPredicate.shouldOmit(OmitMethodsPredicate.java:92)
+	at randoop.test.RegressionCaptureGenerator.isAssertableMethod(RegressionCaptureGenerator.java:250)
+	at randoop.test.RegressionCaptureGenerator.generateTestChecks(RegressionCaptureGenerator.java:167)
+	at randoop.test.RegressionCaptureGenerator.generateTestChecks(RegressionCaptureGenerator.java:47)
+	at randoop.test.ExtendGenerator.generateTestChecks(ExtendGenerator.java:43)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:343)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+
+
+Throwable thrown while handling command: java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.regex.Matcher.<init>(Matcher.java:225)
+	at java.util.regex.Pattern.matcher(Pattern.java:1093)
+	at randoop.reflection.OmitMethodsPredicate.shouldOmitExact(OmitMethodsPredicate.java:214)
+	at randoop.reflection.OmitMethodsPredicate.shouldOmitMethod(OmitMethodsPredicate.java:177)
+	at randoop.reflection.OmitMethodsPredicate.shouldOmit(OmitMethodsPredicate.java:92)
+	at randoop.test.RegressionCaptureGenerator.isAssertableMethod(RegressionCaptureGenerator.java:250)
+	at randoop.test.RegressionCaptureGenerator.generateTestChecks(RegressionCaptureGenerator.java:167)
+	at randoop.test.RegressionCaptureGenerator.generateTestChecks(RegressionCaptureGenerator.java:47)
+	at randoop.test.ExtendGenerator.generateTestChecks(ExtendGenerator.java:43)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:343)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:510)
+	at randoop.main.Main.nonStaticMain(Main.java:71)
+	at randoop.main.Main.main(Main.java:31)
+
+Randoop failed.
+Last sequence under execution: 
+org.apache.commons.math.random.EmpiricalDistributionImpl empiricalDistributionImpl0 = new org.apache.commons.math.random.EmpiricalDistributionImpl();
+double[] doubleArray2 = new double[] { '4' };
+empiricalDistributionImpl0.load(doubleArray2);
+double[] doubleArray4 = empiricalDistributionImpl0.getUpperBounds();
+boolean boolean5 = empiricalDistributionImpl0.isLoaded();
+java.util.List list6 = empiricalDistributionImpl0.getBinStats();
+java.util.List list7 = empiricalDistributionImpl0.getBinStats();
+org.apache.commons.math.stat.descriptive.StatisticalSummary statisticalSummary8 = empiricalDistributionImpl0.getSampleStats();
+boolean boolean9 = empiricalDistributionImpl0.isLoaded();
+org.apache.commons.math.stat.descriptive.StatisticalSummary statisticalSummary10 = empiricalDistributionImpl0.getSampleStats();
+int int11 = empiricalDistributionImpl0.getBinCount();
+java.io.File file14 = java.io.File.createTempFile("hi!", "hi!");
+boolean boolean15 = file14.exists();
+long long16 = file14.getFreeSpace();
+java.lang.String str17 = file14.getPath();
+java.net.URL uRL18 = file14.toURL();
+java.net.URL uRL20 = new java.net.URL(uRL18, "hi!");
+java.net.URI uRI21 = uRL18.toURI();
+java.net.URL uRL23 = new java.net.URL(uRL18, "hi!");
+java.lang.Object obj24 = uRL18.getContent();
+java.io.File file27 = java.io.File.createTempFile("hi!", "hi!");
+boolean boolean28 = file27.exists();
+long long29 = file27.getFreeSpace();
+java.lang.String str30 = file27.getPath();
+java.net.URL uRL31 = file27.toURL();
+java.net.URL uRL33 = new java.net.URL(uRL31, "hi!");
+java.net.URLConnection uRLConnection34 = uRL33.openConnection();
+java.lang.String str35 = uRL33.getQuery();
+java.net.URL uRL37 = new java.net.URL(uRL33, "/tmp/hi!2226790778094039867hi!");
+java.lang.String str38 = uRL37.toExternalForm();
+java.lang.Class[] classArray39 = new java.lang.Class[] {  };
+java.lang.Object obj40 = uRL37.getContent(classArray39);
+java.lang.Object obj41 = uRL18.getContent(classArray39);
+java.lang.String str42 = uRL18.getPath();
+java.net.URL uRL44 = new java.net.URL(uRL18, "hi!8073374045986813787hi!");
+java.io.File file47 = java.io.File.createTempFile("hi!", "hi!");
+boolean boolean48 = file47.exists();
+long long49 = file47.getFreeSpace();
+java.lang.String str50 = file47.getPath();
+java.net.URL uRL51 = file47.toURL();
+java.net.URL uRL53 = new java.net.URL(uRL51, "hi!");
+java.net.URLConnection uRLConnection54 = uRL53.openConnection();
+java.lang.String str55 = uRL53.getAuthority();
+java.net.URL uRL57 = new java.net.URL(uRL53, "/tmp/hi!4665898544194089012hi!");
+boolean boolean58 = uRL18.sameFile(uRL57);
+java.net.URLStreamHandler uRLStreamHandler60 = null;
+java.net.URL uRL61 = new java.net.URL(uRL18, "/tmp/hi!5662600987435781941hi!", uRLStreamHandler60);
+int int62 = uRL18.getDefaultPort();
+empiricalDistributionImpl0.load(uRL18);

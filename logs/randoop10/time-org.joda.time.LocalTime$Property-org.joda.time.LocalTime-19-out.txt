@@ -1,0 +1,242 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 46 classes.
+PUBLIC MEMBERS=1757
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-23T00:33:49.289Z     365M used)
+Progress update: steps=1000, test inputs generated=813, failing inputs=0      (2022-02-23T00:33:53.124Z     597M used)
+Progress update: steps=2000, test inputs generated=1753, failing inputs=0      (2022-02-23T00:33:57.413Z     416M used)
+Progress update: steps=3000, test inputs generated=2722, failing inputs=0      (2022-02-23T00:34:02.479Z     189M used)
+Progress update: steps=4000, test inputs generated=3686, failing inputs=0      (2022-02-23T00:34:07.003Z     698M used)
+Progress update: steps=5000, test inputs generated=4634, failing inputs=0      (2022-02-23T00:34:11.924Z     408M used)
+Progress update: steps=6000, test inputs generated=5584, failing inputs=0      (2022-02-23T00:34:16.557Z     304M used)
+Progress update: steps=7000, test inputs generated=6540, failing inputs=0      (2022-02-23T00:34:21.773Z     628M used)
+Progress update: steps=8000, test inputs generated=7482, failing inputs=0      (2022-02-23T00:34:31.095Z     201M used)
+Progress update: steps=9000, test inputs generated=8433, failing inputs=0      (2022-02-23T00:34:36.497Z     717M used)
+Progress update: steps=10000, test inputs generated=9380, failing inputs=1      (2022-02-23T00:34:41.797Z     1,36G used)
+Progress update: steps=11000, test inputs generated=10324, failing inputs=1      (2022-02-23T00:34:47.009Z     712M used)
+Progress update: steps=11409, test inputs generated=10709, failing inputs=2      (2022-02-23T00:34:49.306Z     1,32G used)
+Progress update: steps=12000, test inputs generated=11267, failing inputs=2      (2022-02-23T00:34:52.640Z     227M used)Long execution time 10 sec for
+org.joda.time.DateTimeZone dateTimeZone0 = null;
+org.joda.time.YearMonthDay yearMonthDay1 = new org.joda.time.YearMonthDay(dateTimeZone0);
+org.joda.time.YearMonthDay yearMonthDay3 = yearMonthDay1.minusDays(8);
+org.joda.time.YearMonthDay yearMonthDay5 = yearMonthDay3.withYear((int)(byte)1);
+org.joda.time.YearMonthDay.Property property6 = yearMonthDay3.dayOfMonth();
+org.joda.time.ReadableDuration readableDuration7 = null;
+org.joda.time.Chronology chronology8 = null;
+org.joda.time.DateMidnight dateMidnight9 = new org.joda.time.DateMidnight(chronology8);
+org.joda.time.DateTimeFieldType dateTimeFieldType10 = org.joda.time.DateTimeFieldType.weekOfWeekyear();
+org.joda.time.Chronology chronology11 = null;
+org.joda.time.DateTimeField dateTimeField12 = dateTimeFieldType10.getField(chronology11);
+boolean boolean13 = dateMidnight9.isSupported(dateTimeFieldType10);
+boolean boolean14 = dateMidnight9.isEqualNow();
+org.joda.time.DateMidnight dateMidnight16 = dateMidnight9.withMillis((long)'4');
+boolean boolean18 = dateMidnight16.isEqual((long)(short)1);
+org.joda.time.DateMidnight dateMidnight20 = dateMidnight16.withWeekOfWeekyear(10);
+org.joda.time.MutablePeriod mutablePeriod21 = new org.joda.time.MutablePeriod(readableDuration7, (org.joda.time.ReadableInstant)dateMidnight20);
+org.joda.time.YearMonthDay yearMonthDay22 = yearMonthDay3.plus((org.joda.time.ReadablePeriod)mutablePeriod21);
+org.joda.time.YearMonthDay.Property property23 = yearMonthDay3.monthOfYear();
+org.joda.time.YearMonthDay yearMonthDay25 = yearMonthDay3.plusDays((-1036799999));
+
+
+Progress update: steps=13000, test inputs generated=12191, failing inputs=2      (2022-02-23T00:35:11.906Z     1,16G used)
+Progress update: steps=14000, test inputs generated=13133, failing inputs=2      (2022-02-23T00:35:17.759Z     504M used)
+Progress update: steps=15000, test inputs generated=14080, failing inputs=2      (2022-02-23T00:35:23.096Z     922M used)
+Progress update: steps=16000, test inputs generated=15022, failing inputs=2      (2022-02-23T00:35:28.359Z     184M used)
+Progress update: steps=17000, test inputs generated=15962, failing inputs=2      (2022-02-23T00:35:34.190Z     1,23G used)
+Progress update: steps=18000, test inputs generated=16893, failing inputs=2      (2022-02-23T00:35:40.267Z     1,23G used)
+Progress update: steps=18608, test inputs generated=17456, failing inputs=2      (2022-02-23T00:35:49.307Z     914M used)Long execution time 10 sec for
+org.joda.time.MutableDateTime mutableDateTime3 = new org.joda.time.MutableDateTime((long)'4');
+org.joda.time.Chronology chronology4 = mutableDateTime3.getChronology();
+org.joda.time.DateMidnight dateMidnight5 = new org.joda.time.DateMidnight((long)3, chronology4);
+org.joda.time.LocalDateTime localDateTime6 = new org.joda.time.LocalDateTime((long)53, chronology4);
+int int7 = localDateTime6.getEra();
+org.joda.time.LocalDateTime localDateTime9 = localDateTime6.minusYears(23);
+org.joda.time.LocalDateTime localDateTime11 = localDateTime9.minusWeeks(20);
+org.joda.time.PeriodType periodType14 = org.joda.time.PeriodType.seconds();
+org.joda.time.PeriodType periodType15 = periodType14.withMillisRemoved();
+org.joda.time.Period period16 = new org.joda.time.Period((long)32770, 0L, periodType15);
+org.joda.time.LocalDateTime localDateTime17 = localDateTime9.plus((org.joda.time.ReadablePeriod)period16);
+int int18 = localDateTime17.getMonthOfYear();
+org.joda.time.LocalDateTime localDateTime20 = localDateTime17.plusMonths(3969);
+org.joda.time.DateTimeZone dateTimeZone21 = null;
+org.joda.time.YearMonthDay yearMonthDay22 = new org.joda.time.YearMonthDay(dateTimeZone21);
+org.joda.time.YearMonthDay yearMonthDay24 = yearMonthDay22.minusDays(8);
+org.joda.time.YearMonthDay yearMonthDay26 = yearMonthDay24.withYear((int)(byte)1);
+org.joda.time.YearMonthDay.Property property27 = yearMonthDay24.dayOfMonth();
+org.joda.time.ReadableDuration readableDuration28 = null;
+org.joda.time.Chronology chronology29 = null;
+org.joda.time.DateMidnight dateMidnight30 = new org.joda.time.DateMidnight(chronology29);
+org.joda.time.DateTimeFieldType dateTimeFieldType31 = org.joda.time.DateTimeFieldType.weekOfWeekyear();
+org.joda.time.Chronology chronology32 = null;
+org.joda.time.DateTimeField dateTimeField33 = dateTimeFieldType31.getField(chronology32);
+boolean boolean34 = dateMidnight30.isSupported(dateTimeFieldType31);
+boolean boolean35 = dateMidnight30.isEqualNow();
+org.joda.time.DateMidnight dateMidnight37 = dateMidnight30.withMillis((long)'4');
+boolean boolean39 = dateMidnight37.isEqual((long)(short)1);
+org.joda.time.DateMidnight dateMidnight41 = dateMidnight37.withWeekOfWeekyear(10);
+org.joda.time.MutablePeriod mutablePeriod42 = new org.joda.time.MutablePeriod(readableDuration28, (org.joda.time.ReadableInstant)dateMidnight41);
+org.joda.time.YearMonthDay yearMonthDay43 = yearMonthDay24.plus((org.joda.time.ReadablePeriod)mutablePeriod42);
+org.joda.time.YearMonthDay.Property property44 = yearMonthDay24.monthOfYear();
+org.joda.time.YearMonthDay yearMonthDay46 = yearMonthDay24.plusDays((-1036799999));
+int int47 = localDateTime20.compareTo((org.joda.time.ReadablePartial)yearMonthDay46);
+
+
+Progress update: steps=19000, test inputs generated=17822, failing inputs=2      (2022-02-23T00:35:57.230Z     850M used)
+Progress update: steps=20000, test inputs generated=18759, failing inputs=2      (2022-02-23T00:36:03.629Z     937M used)
+Progress update: steps=21000, test inputs generated=19675, failing inputs=3      (2022-02-23T00:36:09.730Z     473M used)
+Progress update: steps=22000, test inputs generated=20604, failing inputs=3      (2022-02-23T00:36:16.128Z     670M used)
+Progress update: steps=23000, test inputs generated=21516, failing inputs=4      (2022-02-23T00:36:22.568Z     589M used)
+Progress update: steps=24000, test inputs generated=22432, failing inputs=5      (2022-02-23T00:36:28.244Z     234M used)
+Progress update: steps=25000, test inputs generated=23358, failing inputs=5      (2022-02-23T00:36:34.978Z     374M used)
+Progress update: steps=26000, test inputs generated=24279, failing inputs=5      (2022-02-23T00:36:41.698Z     129M used)
+Progress update: steps=27000, test inputs generated=25197, failing inputs=5      (2022-02-23T00:36:47.805Z     1,32G used)
+Progress update: steps=27961, test inputs generated=26069, failing inputs=5      (2022-02-23T00:36:53.955Z     883M used)
+Progress update: steps=28000, test inputs generated=26104, failing inputs=5      (2022-02-23T00:36:54.178Z     1,05G used)
+Progress update: steps=29000, test inputs generated=27028, failing inputs=5      (2022-02-23T00:37:00.391Z     1,13G used)
+Progress update: steps=30000, test inputs generated=27950, failing inputs=5      (2022-02-23T00:37:07.757Z     279M used)
+Progress update: steps=31000, test inputs generated=28874, failing inputs=5      (2022-02-23T00:37:14.730Z     502M used)
+Progress update: steps=32000, test inputs generated=29786, failing inputs=5      (2022-02-23T00:37:21.753Z     532M used)
+Progress update: steps=33000, test inputs generated=30700, failing inputs=5      (2022-02-23T00:37:28.648Z     507M used)
+Progress update: steps=34000, test inputs generated=31628, failing inputs=5      (2022-02-23T00:37:35.865Z     1,20G used)
+Progress update: steps=35000, test inputs generated=32533, failing inputs=6      (2022-02-23T00:37:43.386Z     348M used)
+Progress update: steps=35993, test inputs generated=33443, failing inputs=6      (2022-02-23T00:37:53.955Z     1,45G used)
+Progress update: steps=36000, test inputs generated=33450, failing inputs=6      (2022-02-23T00:37:58.885Z     602M used)
+Progress update: steps=37000, test inputs generated=34370, failing inputs=6      (2022-02-23T00:38:05.897Z     959M used)
+Progress update: steps=38000, test inputs generated=35292, failing inputs=6      (2022-02-23T00:38:15.512Z     1,49G used)
+Progress update: steps=39000, test inputs generated=36200, failing inputs=6      (2022-02-23T00:38:23.510Z     965M used)
+Progress update: steps=40000, test inputs generated=37105, failing inputs=6      (2022-02-23T00:38:32.430Z     719M used)
+Progress update: steps=41000, test inputs generated=38011, failing inputs=7      (2022-02-23T00:38:40.160Z     1,08G used)
+Progress update: steps=42000, test inputs generated=38920, failing inputs=7      (2022-02-23T00:38:48.060Z     147M used)
+Progress update: steps=43000, test inputs generated=39823, failing inputs=10      (2022-02-23T00:38:56.353Z     204M used)
+Progress update: steps=43299, test inputs generated=40089, failing inputs=11      (2022-02-23T00:38:58.835Z     703M used)
+Progress update: steps=44000, test inputs generated=40721, failing inputs=12      (2022-02-23T00:39:04.752Z     786M used)
+Progress update: steps=45000, test inputs generated=41619, failing inputs=13      (2022-02-23T00:39:12.336Z     760M used)
+Progress update: steps=46000, test inputs generated=42532, failing inputs=13      (2022-02-23T00:39:20.591Z     1,20G used)
+Progress update: steps=47000, test inputs generated=43443, failing inputs=15      (2022-02-23T00:39:29.266Z     298M used)
+Progress update: steps=48000, test inputs generated=44328, failing inputs=16      (2022-02-23T00:39:37.333Z     273M used)
+Progress update: steps=49000, test inputs generated=45255, failing inputs=16      (2022-02-23T00:39:46.156Z     1,32G used)
+Progress update: steps=50000, test inputs generated=46175, failing inputs=16      (2022-02-23T00:39:55.650Z     802M used)
+Progress update: steps=50359, test inputs generated=46496, failing inputs=16      (2022-02-23T00:39:58.835Z     474M used)
+Progress update: steps=51000, test inputs generated=47076, failing inputs=16      (2022-02-23T00:40:04.201Z     253M used)
+Progress update: steps=52000, test inputs generated=47979, failing inputs=16      (2022-02-23T00:40:14.750Z     340M used)
+Progress update: steps=53000, test inputs generated=48882, failing inputs=16      (2022-02-23T00:40:24.509Z     423M used)
+Progress update: steps=54000, test inputs generated=49789, failing inputs=16      (2022-02-23T00:40:33.246Z     1,03G used)
+Progress update: steps=55000, test inputs generated=50689, failing inputs=16      (2022-02-23T00:40:41.026Z     1,04G used)
+Progress update: steps=56000, test inputs generated=51595, failing inputs=16      (2022-02-23T00:40:51.217Z     1,53G used)
+Progress update: steps=56717, test inputs generated=52254, failing inputs=16      (2022-02-23T00:40:58.836Z     600M used)
+Progress update: steps=57000, test inputs generated=52518, failing inputs=16      (2022-02-23T00:41:01.919Z     986M used)
+Progress update: steps=58000, test inputs generated=53424, failing inputs=17      (2022-02-23T00:41:11.405Z     1,10G used)
+Progress update: steps=59000, test inputs generated=54332, failing inputs=18      (2022-02-23T00:41:21.292Z     524M used)
+Progress update: steps=60000, test inputs generated=55254, failing inputs=18      (2022-02-23T00:41:31.067Z     966M used)
+Progress update: steps=61000, test inputs generated=56156, failing inputs=18      (2022-02-23T00:41:40.276Z     1,38G used)
+Progress update: steps=62000, test inputs generated=57063, failing inputs=20      (2022-02-23T00:41:49.423Z     1.55G used)
+Progress update: steps=62881, test inputs generated=57845, failing inputs=22      (2022-02-23T00:41:58.846Z     203M used)
+Progress update: steps=63000, test inputs generated=57948, failing inputs=22      (2022-02-23T00:42:00.164Z     1,00G used)
+Progress update: steps=64000, test inputs generated=58856, failing inputs=24      (2022-02-23T00:42:10.615Z     1,56G used)
+Progress update: steps=65000, test inputs generated=59751, failing inputs=25      (2022-02-23T00:42:21.830Z     1,06G used)
+Progress update: steps=66000, test inputs generated=60672, failing inputs=28      (2022-02-23T00:42:38.896Z     1,40G used)
+Progress update: steps=67000, test inputs generated=61557, failing inputs=29      (2022-02-23T00:42:48.430Z     573M used)
+Progress update: steps=67887, test inputs generated=62342, failing inputs=29      (2022-02-23T00:42:58.846Z     740M used)
+Progress update: steps=68000, test inputs generated=62442, failing inputs=29      (2022-02-23T00:43:00.105Z     1,51G used)
+Progress update: steps=69000, test inputs generated=63347, failing inputs=29      (2022-02-23T00:43:10.783Z     1,30G used)
+Progress update: steps=70000, test inputs generated=64236, failing inputs=29      (2022-02-23T00:43:20.662Z     526M used)
+Progress update: steps=71000, test inputs generated=65128, failing inputs=30      (2022-02-23T00:43:31.884Z     941M used)
+Progress update: steps=72000, test inputs generated=66020, failing inputs=30      (2022-02-23T00:43:48.623Z     1,05G used)
+Progress update: steps=72052, test inputs generated=66068, failing inputs=30      (2022-02-23T00:43:49.306Z     1,52G used)
+Normal method executions: 104046044
+Exceptional method executions: 19887
+
+Average method execution time (normal termination):      0,000889
+Average method execution time (exceptional termination): 0,0336
+Approximate memory usage 1,52G
+Explorer = ForwardGenerator(steps: 72052, null steps: 5984, num_sequences_generated: 66068;
+    allSequences: 66068, regresson seqs: 11812, error seqs: 30=30=30, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 54226;
+    runtimePrimitivesSeen:3532)
+
+Error-revealing test output:
+Error-revealing test count: 30
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/ErrorTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 8720 regression sequences.
+
+Regression test output:
+Regression test count: 8720
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest1.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest2.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest3.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest4.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest5.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest6.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest7.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest8.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest9.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest10.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest11.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest12.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest13.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest14.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest15.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest16.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest17.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest18.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest19.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest20.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest21.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest22.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest23.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest24.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest25.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest26.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest27.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest28.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest29.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest30.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest31.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest32.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest33.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest34.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest35.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest36.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest37.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest38.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest39.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest40.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest41.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest42.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest43.java
+Created file /experiment/results/randoop10/time-org.joda.time.LocalTime$Property-org.joda.time.LocalTime-19/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.TimeOfDay.fromCalendarFields(java.util.Calendar)
+  Possibly flaky:  org.joda.time.PeriodType.dayTime()
+  Possibly flaky:  org.joda.time.MutableDateTime.now()
+  Possibly flaky:  org.joda.time.LocalDateTime.fromCalendarFields(java.util.Calendar)
+  Possibly flaky:  org.joda.time.DateTimeField.set(long,java.lang.String,java.util.Locale)
+  Possibly flaky:  java.util.TimeZone.useDaylightTime()
+  Possibly flaky:  java.util.TimeZone.getDSTSavings()
+  Possibly flaky:  java.util.Date.setHours(int)
+  Possibly flaky:  java.util.Date.compareTo(java.util.Date)
+  Possibly flaky:  java.util.Date.after(java.util.Date)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 7).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

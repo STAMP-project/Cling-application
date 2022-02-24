@@ -1,0 +1,316 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+Cannot instantiate non-accessible class org.joda.time.chrono.BasicChronology specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class org.joda.time.chrono.BasicGJChronology specified via --testclass or --classlist; will use its static methods.
+
+Will try to generate tests for 31 classes.
+PUBLIC MEMBERS=1066
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-23T00:54:53.538Z     312M used)
+Progress update: steps=1000, test inputs generated=759, failing inputs=61      (2022-02-23T00:55:05.996Z     339M used)
+Progress update: steps=2000, test inputs generated=1596, failing inputs=129      (2022-02-23T00:55:18.371Z     459M used)
+Progress update: steps=3000, test inputs generated=2483, failing inputs=203      (2022-02-23T00:55:31.621Z     389M used)
+Progress update: steps=3881, test inputs generated=3256, failing inputs=266      (2022-02-23T00:55:53.551Z     1,18G used)
+Progress update: steps=4000, test inputs generated=3361, failing inputs=275      (2022-02-23T00:55:55.274Z     475M used)
+Progress update: steps=5000, test inputs generated=4245, failing inputs=344      (2022-02-23T00:56:12.197Z     1.09G used)
+Progress update: steps=6000, test inputs generated=5114, failing inputs=425      (2022-02-23T00:56:29.821Z     437M used)
+Progress update: steps=7000, test inputs generated=5987, failing inputs=513      (2022-02-23T00:56:49.193Z     1,37G used)
+Progress update: steps=7025, test inputs generated=6008, failing inputs=514      (2022-02-23T00:56:53.552Z     165M used)Long execution time 30 sec for
+org.joda.time.DateTimeZone dateTimeZone1 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long3 = dateTimeZone1.previousTransition(10L);
+org.joda.time.Instant instant4 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology5 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone1, (org.joda.time.ReadableInstant)instant4);
+org.joda.time.DurationField durationField6 = gJChronology5.years();
+org.joda.time.DurationField durationField7 = gJChronology5.hours();
+org.joda.time.DateTimeField dateTimeField8 = gJChronology5.dayOfYear();
+int int10 = dateTimeField8.getLeapAmount(7092000097L);
+org.joda.time.DateTimeZone dateTimeZone12 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long14 = dateTimeZone12.previousTransition(10L);
+org.joda.time.Instant instant15 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology16 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone12, (org.joda.time.ReadableInstant)instant15);
+org.joda.time.DurationField durationField17 = gJChronology16.years();
+org.joda.time.DurationField durationField18 = gJChronology16.hours();
+org.joda.time.DateTimeField dateTimeField19 = gJChronology16.dayOfYear();
+org.joda.time.DateTimeField dateTimeField20 = gJChronology16.weekOfWeekyear();
+java.util.Locale locale21 = java.util.Locale.TAIWAN;
+java.lang.String str22 = locale21.getScript();
+java.lang.String str23 = locale21.getCountry();
+int int24 = dateTimeField20.getMaximumTextLength(locale21);
+org.joda.time.DateTimeZone dateTimeZone27 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long29 = dateTimeZone27.previousTransition(10L);
+org.joda.time.Instant instant30 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology31 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone27, (org.joda.time.ReadableInstant)instant30);
+org.joda.time.DurationField durationField32 = gJChronology31.minutes();
+org.joda.time.LocalDateTime localDateTime33 = new org.joda.time.LocalDateTime((long)1, (org.joda.time.Chronology)gJChronology31);
+java.util.Locale locale35 = java.util.Locale.UK;
+java.lang.String str36 = dateTimeField20.getAsText((org.joda.time.ReadablePartial)localDateTime33, 292278993, locale35);
+org.joda.time.chrono.JulianChronology julianChronology38 = org.joda.time.chrono.JulianChronology.getInstance();
+java.lang.String str39 = julianChronology38.toString();
+org.joda.time.DateTimeField dateTimeField40 = julianChronology38.centuryOfEra();
+org.joda.time.LocalDateTime localDateTime41 = org.joda.time.LocalDateTime.now();
+org.joda.time.LocalDateTime.Property property42 = localDateTime41.hourOfDay();
+int[] intArray44 = julianChronology38.get((org.joda.time.ReadablePartial)localDateTime41, (long)(byte)0);
+int[] intArray46 = dateTimeField8.addWrapPartial((org.joda.time.ReadablePartial)localDateTime33, 0, intArray44, 360600000);
+org.joda.time.LocalDateTime localDateTime48 = localDateTime33.withWeekyear((int)' ');
+
+Long execution time 32 sec for
+org.joda.time.DateTimeZone dateTimeZone1 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long3 = dateTimeZone1.previousTransition(10L);
+org.joda.time.Instant instant4 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology5 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone1, (org.joda.time.ReadableInstant)instant4);
+org.joda.time.DurationField durationField6 = gJChronology5.years();
+org.joda.time.DurationField durationField7 = gJChronology5.hours();
+org.joda.time.DateTimeField dateTimeField8 = gJChronology5.dayOfYear();
+int int10 = dateTimeField8.getLeapAmount(7092000097L);
+org.joda.time.DateTimeZone dateTimeZone12 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long14 = dateTimeZone12.previousTransition(10L);
+org.joda.time.Instant instant15 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology16 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone12, (org.joda.time.ReadableInstant)instant15);
+org.joda.time.DurationField durationField17 = gJChronology16.years();
+org.joda.time.DurationField durationField18 = gJChronology16.hours();
+org.joda.time.DateTimeField dateTimeField19 = gJChronology16.dayOfYear();
+org.joda.time.DateTimeField dateTimeField20 = gJChronology16.weekOfWeekyear();
+java.util.Locale locale21 = java.util.Locale.TAIWAN;
+java.lang.String str22 = locale21.getScript();
+java.lang.String str23 = locale21.getCountry();
+int int24 = dateTimeField20.getMaximumTextLength(locale21);
+org.joda.time.DateTimeZone dateTimeZone27 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long29 = dateTimeZone27.previousTransition(10L);
+org.joda.time.Instant instant30 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology31 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone27, (org.joda.time.ReadableInstant)instant30);
+org.joda.time.DurationField durationField32 = gJChronology31.minutes();
+org.joda.time.LocalDateTime localDateTime33 = new org.joda.time.LocalDateTime((long)1, (org.joda.time.Chronology)gJChronology31);
+java.util.Locale locale35 = java.util.Locale.UK;
+java.lang.String str36 = dateTimeField20.getAsText((org.joda.time.ReadablePartial)localDateTime33, 292278993, locale35);
+org.joda.time.chrono.JulianChronology julianChronology38 = org.joda.time.chrono.JulianChronology.getInstance();
+java.lang.String str39 = julianChronology38.toString();
+org.joda.time.DateTimeField dateTimeField40 = julianChronology38.centuryOfEra();
+org.joda.time.LocalDateTime localDateTime41 = org.joda.time.LocalDateTime.now();
+org.joda.time.LocalDateTime.Property property42 = localDateTime41.hourOfDay();
+int[] intArray44 = julianChronology38.get((org.joda.time.ReadablePartial)localDateTime41, (long)(byte)0);
+int[] intArray46 = dateTimeField8.addWrapPartial((org.joda.time.ReadablePartial)localDateTime33, 0, intArray44, 360600000);
+org.joda.time.LocalDateTime localDateTime48 = localDateTime33.withWeekyear((int)' ');
+org.joda.time.LocalDateTime.Property property49 = localDateTime33.weekyear();
+
+
+Progress update: steps=7942, test inputs generated=6812, failing inputs=586      (2022-02-23T00:58:20.364Z     880M used)
+Progress update: steps=8000, test inputs generated=6862, failing inputs=591      (2022-02-23T00:58:21.916Z     108M used)
+Progress update: steps=9000, test inputs generated=7746, failing inputs=684      (2022-02-23T00:58:53.936Z     246M used)
+Progress update: steps=9848, test inputs generated=8493, failing inputs=752      (2022-02-23T00:59:20.365Z     783M used)Long execution time 51 sec for
+org.joda.time.DateTimeZone dateTimeZone1 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long3 = dateTimeZone1.previousTransition(10L);
+org.joda.time.Instant instant4 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology5 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone1, (org.joda.time.ReadableInstant)instant4);
+org.joda.time.DurationField durationField6 = gJChronology5.years();
+org.joda.time.DurationField durationField7 = gJChronology5.hours();
+org.joda.time.DateTimeField dateTimeField8 = gJChronology5.dayOfYear();
+int int10 = dateTimeField8.getLeapAmount(7092000097L);
+org.joda.time.DateTimeZone dateTimeZone12 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long14 = dateTimeZone12.previousTransition(10L);
+org.joda.time.Instant instant15 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology16 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone12, (org.joda.time.ReadableInstant)instant15);
+org.joda.time.DurationField durationField17 = gJChronology16.years();
+org.joda.time.DurationField durationField18 = gJChronology16.hours();
+org.joda.time.DateTimeField dateTimeField19 = gJChronology16.dayOfYear();
+org.joda.time.DateTimeField dateTimeField20 = gJChronology16.weekOfWeekyear();
+java.util.Locale locale21 = java.util.Locale.TAIWAN;
+java.lang.String str22 = locale21.getScript();
+java.lang.String str23 = locale21.getCountry();
+int int24 = dateTimeField20.getMaximumTextLength(locale21);
+org.joda.time.DateTimeZone dateTimeZone27 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long29 = dateTimeZone27.previousTransition(10L);
+org.joda.time.Instant instant30 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology31 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone27, (org.joda.time.ReadableInstant)instant30);
+org.joda.time.DurationField durationField32 = gJChronology31.minutes();
+org.joda.time.LocalDateTime localDateTime33 = new org.joda.time.LocalDateTime((long)1, (org.joda.time.Chronology)gJChronology31);
+java.util.Locale locale35 = java.util.Locale.UK;
+java.lang.String str36 = dateTimeField20.getAsText((org.joda.time.ReadablePartial)localDateTime33, 292278993, locale35);
+org.joda.time.chrono.JulianChronology julianChronology38 = org.joda.time.chrono.JulianChronology.getInstance();
+java.lang.String str39 = julianChronology38.toString();
+org.joda.time.DateTimeField dateTimeField40 = julianChronology38.centuryOfEra();
+org.joda.time.LocalDateTime localDateTime41 = org.joda.time.LocalDateTime.now();
+org.joda.time.LocalDateTime.Property property42 = localDateTime41.hourOfDay();
+int[] intArray44 = julianChronology38.get((org.joda.time.ReadablePartial)localDateTime41, (long)(byte)0);
+int[] intArray46 = dateTimeField8.addWrapPartial((org.joda.time.ReadablePartial)localDateTime33, 0, intArray44, 360600000);
+org.joda.time.LocalDateTime localDateTime48 = localDateTime33.withWeekyear((int)' ');
+org.joda.time.LocalDateTime.Property property49 = localDateTime48.minuteOfHour();
+
+
+Progress update: steps=10000, test inputs generated=8630, failing inputs=762      (2022-02-23T01:00:16.775Z     911M used)
+Progress update: steps=10118, test inputs generated=8731, failing inputs=777      (2022-02-23T01:00:20.365Z     799M used)
+Progress update: steps=11000, test inputs generated=9504, failing inputs=850      (2022-02-23T01:00:48.584Z     685M used)
+Progress update: steps=11974, test inputs generated=10362, failing inputs=926      (2022-02-23T01:01:20.366Z     226M used)
+Progress update: steps=12000, test inputs generated=10386, failing inputs=930      (2022-02-23T01:01:21.305Z     416M used)
+Progress update: steps=13000, test inputs generated=11279, failing inputs=1018      (2022-02-23T01:01:54.877Z     171M used)
+Progress update: steps=13704, test inputs generated=11902, failing inputs=1073      (2022-02-23T01:02:20.367Z     323M used)Long execution time 75 sec for
+org.joda.time.DateTimeZone dateTimeZone1 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long3 = dateTimeZone1.previousTransition(10L);
+org.joda.time.Instant instant4 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology5 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone1, (org.joda.time.ReadableInstant)instant4);
+org.joda.time.DurationField durationField6 = gJChronology5.minutes();
+org.joda.time.DateTimeField dateTimeField7 = gJChronology5.minuteOfDay();
+org.joda.time.DateTimeField dateTimeField8 = gJChronology5.dayOfYear();
+int int9 = gJChronology5.getMinimumDaysInFirstWeek();
+org.joda.time.ReadablePeriod readablePeriod10 = null;
+long long13 = gJChronology5.add(readablePeriod10, 44311260002L, 8);
+org.joda.time.DateTimeField dateTimeField14 = gJChronology5.weekOfWeekyear();
+org.joda.time.DateTimeField dateTimeField15 = gJChronology5.weekyear();
+org.joda.time.DateTimeField dateTimeField16 = gJChronology5.monthOfYear();
+org.joda.time.DurationField durationField17 = gJChronology5.years();
+java.lang.Object obj18 = null;
+org.joda.time.DateTimeZone dateTimeZone21 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long23 = dateTimeZone21.previousTransition(10L);
+org.joda.time.Instant instant24 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology25 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone21, (org.joda.time.ReadableInstant)instant24);
+org.joda.time.DurationField durationField26 = gJChronology25.minutes();
+org.joda.time.LocalDateTime localDateTime27 = new org.joda.time.LocalDateTime((long)1, (org.joda.time.Chronology)gJChronology25);
+org.joda.time.DateTimeZone dateTimeZone29 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long31 = dateTimeZone29.previousTransition(10L);
+org.joda.time.Instant instant32 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology33 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone29, (org.joda.time.ReadableInstant)instant32);
+org.joda.time.MutableDateTime mutableDateTime34 = org.joda.time.MutableDateTime.now(dateTimeZone29);
+mutableDateTime34.setWeekyear(0);
+org.joda.time.DateTimeFieldType dateTimeFieldType37 = org.joda.time.DateTimeFieldType.weekyear();
+int int38 = mutableDateTime34.get(dateTimeFieldType37);
+org.joda.time.LocalDateTime.Property property39 = localDateTime27.property(dateTimeFieldType37);
+org.joda.time.DateTimeZone dateTimeZone41 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long43 = dateTimeZone41.previousTransition(10L);
+org.joda.time.Instant instant44 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology45 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone41, (org.joda.time.ReadableInstant)instant44);
+org.joda.time.DurationField durationField46 = gJChronology45.minutes();
+org.joda.time.DateTimeField dateTimeField47 = dateTimeFieldType37.getField((org.joda.time.Chronology)gJChronology45);
+org.joda.time.Chronology chronology48 = gJChronology45.withUTC();
+org.joda.time.LocalDateTime localDateTime49 = new org.joda.time.LocalDateTime(obj18, (org.joda.time.Chronology)gJChronology45);
+org.joda.time.DateTimeZone dateTimeZone51 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long53 = dateTimeZone51.previousTransition(10L);
+org.joda.time.Instant instant54 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology55 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone51, (org.joda.time.ReadableInstant)instant54);
+org.joda.time.DurationField durationField56 = gJChronology55.years();
+org.joda.time.DurationField durationField57 = gJChronology55.hours();
+org.joda.time.DateTimeField dateTimeField58 = gJChronology55.dayOfYear();
+int int60 = dateTimeField58.getLeapAmount(7092000097L);
+org.joda.time.DateTimeZone dateTimeZone62 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long64 = dateTimeZone62.previousTransition(10L);
+org.joda.time.Instant instant65 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology66 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone62, (org.joda.time.ReadableInstant)instant65);
+org.joda.time.DurationField durationField67 = gJChronology66.years();
+org.joda.time.DurationField durationField68 = gJChronology66.hours();
+org.joda.time.DateTimeField dateTimeField69 = gJChronology66.dayOfYear();
+org.joda.time.DateTimeField dateTimeField70 = gJChronology66.weekOfWeekyear();
+java.util.Locale locale71 = java.util.Locale.TAIWAN;
+java.lang.String str72 = locale71.getScript();
+java.lang.String str73 = locale71.getCountry();
+int int74 = dateTimeField70.getMaximumTextLength(locale71);
+org.joda.time.DateTimeZone dateTimeZone77 = org.joda.time.DateTimeZone.forOffsetMillis((int)(byte)100);
+long long79 = dateTimeZone77.previousTransition(10L);
+org.joda.time.Instant instant80 = org.joda.time.Instant.now();
+org.joda.time.chrono.GJChronology gJChronology81 = org.joda.time.chrono.GJChronology.getInstance(dateTimeZone77, (org.joda.time.ReadableInstant)instant80);
+org.joda.time.DurationField durationField82 = gJChronology81.minutes();
+org.joda.time.LocalDateTime localDateTime83 = new org.joda.time.LocalDateTime((long)1, (org.joda.time.Chronology)gJChronology81);
+java.util.Locale locale85 = java.util.Locale.UK;
+java.lang.String str86 = dateTimeField70.getAsText((org.joda.time.ReadablePartial)localDateTime83, 292278993, locale85);
+org.joda.time.chrono.JulianChronology julianChronology88 = org.joda.time.chrono.JulianChronology.getInstance();
+java.lang.String str89 = julianChronology88.toString();
+org.joda.time.DateTimeField dateTimeField90 = julianChronology88.centuryOfEra();
+org.joda.time.LocalDateTime localDateTime91 = org.joda.time.LocalDateTime.now();
+org.joda.time.LocalDateTime.Property property92 = localDateTime91.hourOfDay();
+int[] intArray94 = julianChronology88.get((org.joda.time.ReadablePartial)localDateTime91, (long)(byte)0);
+int[] intArray96 = dateTimeField58.addWrapPartial((org.joda.time.ReadablePartial)localDateTime83, 0, intArray94, 360600000);
+gJChronology5.validate((org.joda.time.ReadablePartial)localDateTime49, intArray94);
+
+
+Progress update: steps=14000, test inputs generated=12162, failing inputs=1091      (2022-02-23T01:03:43.394Z     219M used)
+Progress update: steps=15000, test inputs generated=13047, failing inputs=1171      (2022-02-23T01:04:16.330Z     236M used)
+Progress update: steps=15561, test inputs generated=13545, failing inputs=1224      (2022-02-23T01:04:33.069Z     200M used)
+Progress update: steps=16000, test inputs generated=13941, failing inputs=1267      (2022-02-23T01:04:45.260Z     473M used)
+Progress update: steps=16335, test inputs generated=14221, failing inputs=1289      (2022-02-23T01:04:53.537Z     315M used)
+Normal method executions: 8004648
+Exceptional method executions: 2525
+
+Average method execution time (normal termination):      0.0262
+Average method execution time (exceptional termination): 0.251
+Approximate memory usage 315M
+Explorer = ForwardGenerator(steps: 16335, null steps: 2114, num_sequences_generated: 14221;
+    allSequences: 14221, regresson seqs: 11222, error seqs: 1289=1289=1289, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1710;
+    runtimePrimitivesSeen:1678)
+
+Error-revealing test output:
+Error-revealing test count: 1289
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/ErrorTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/ErrorTest1.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/ErrorTest2.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/ErrorTest3.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/ErrorTest4.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/ErrorTest5.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/ErrorTest6.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 6451 regression sequences.
+
+Regression test output:
+Regression test count: 6451
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest1.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest2.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest3.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest4.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest5.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest6.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest7.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest8.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest9.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest10.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest11.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest12.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest13.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest14.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest15.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest16.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest17.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest18.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest19.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest20.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest21.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest22.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest23.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest24.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest25.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest26.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest27.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest28.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest29.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest30.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest31.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest32.java
+Created file /experiment/results/randoop10/time-org.joda.time.chrono.GJChronology-org.joda.time.chrono.JulianChronology-17/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.chrono.GJChronology.toString()
+  Possibly flaky:  org.joda.time.base.AbstractInstant.toMutableDateTime(org.joda.time.DateTimeZone)
+  Possibly flaky:  org.joda.time.Instant.getMillis()
+  Possibly flaky:  org.joda.time.DateTimeFieldType.clockhourOfHalfday()
+  Possibly flaky:  org.joda.time.DateTimeField.set(org.joda.time.ReadablePartial,int,int[],java.lang.String,java.util.Locale)
+  Possibly flaky:  java.util.Set.toArray(java.util.RandomAccess[])
+  Possibly flaky:  java.util.Locale.getDefault()
+  Possibly flaky:  org.joda.time.ReadableInstant.getMillis()
+  Possibly flaky:  org.joda.time.base.AbstractInstant.toDate()
+  Possibly flaky:  org.joda.time.base.AbstractDateTime.getMinuteOfHour()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 4).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

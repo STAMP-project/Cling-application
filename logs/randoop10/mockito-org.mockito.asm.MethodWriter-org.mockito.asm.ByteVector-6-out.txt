@@ -1,0 +1,74 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+Cannot instantiate non-accessible class org.mockito.asm.MethodWriter specified via --testclass or --classlist; will use its static methods.
+
+Will try to generate tests for 8 classes.
+PUBLIC MEMBERS=92
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-22T15:55:25.463Z     226M used)
+Progress update: steps=1000, test inputs generated=517, failing inputs=0      (2022-02-22T15:55:36.319Z     63.9M used)
+Progress update: steps=2000, test inputs generated=1144, failing inputs=0      (2022-02-22T15:55:47.050Z     950M used)
+Progress update: steps=3000, test inputs generated=1749, failing inputs=0      (2022-02-22T15:56:08.291Z     300M used)
+Progress update: steps=3964, test inputs generated=2487, failing inputs=0      (2022-02-22T15:56:25.478Z     1.59G used)
+Progress update: steps=4000, test inputs generated=2516, failing inputs=0      (2022-02-22T15:56:26.037Z     1.78G used)
+Progress update: steps=5000, test inputs generated=3312, failing inputs=0      (2022-02-22T15:56:45.146Z     2.45G used)
+Progress update: steps=6000, test inputs generated=4075, failing inputs=0      (2022-02-22T15:57:03.012Z     1.99G used)
+Progress update: steps=6972, test inputs generated=4815, failing inputs=0      (2022-02-22T15:57:25.479Z     2.09G used)
+Progress update: steps=7000, test inputs generated=4836, failing inputs=0      (2022-02-22T15:57:25.829Z     2.23G used)
+Progress update: steps=8000, test inputs generated=5568, failing inputs=0      (2022-02-22T15:57:48.256Z     1.78G used)
+Progress update: steps=9000, test inputs generated=6346, failing inputs=0      (2022-02-22T15:58:09.550Z     2.82G used)
+Progress update: steps=9758, test inputs generated=6908, failing inputs=0      (2022-02-22T15:58:25.480Z     3.52G used)
+Progress update: steps=10000, test inputs generated=7101, failing inputs=0      (2022-02-22T15:58:31.235Z     3.47G used)
+Progress update: steps=11000, test inputs generated=7839, failing inputs=0      (2022-02-22T15:59:04.586Z     3.94G used)
+Progress update: steps=11510, test inputs generated=8223, failing inputs=0      (2022-02-22T15:59:25.480Z     3.90G used)
+Progress update: steps=12000, test inputs generated=8596, failing inputs=0      (2022-02-22T15:59:46.707Z     3.93G used)
+Progress update: steps=12806, test inputs generated=9212, failing inputs=0      (2022-02-22T16:00:25.489Z     3.92G used)
+Progress update: steps=13000, test inputs generated=9343, failing inputs=0      (2022-02-22T16:00:38.597Z     3.93G used)
+Problem with sequence:
+org.mockito.asm.ByteVector byteVector0 = new org.mockito.asm.ByteVector(); // [NormalExecution org.mockito.asm.ByteVector@6921362 [class org.mockito.asm.ByteVector]]
+int int1 = 10; // [NormalExecution 10 [class java.lang.Integer]]
+org.mockito.asm.ByteVector byteVector2 = byteVector0.putShort(10); // [NormalExecution org.mockito.asm.ByteVector@6921362 [class org.mockito.asm.ByteVector]]
+char char3 = '4'; // [NormalExecution 4 [class java.lang.Character]]
+org.mockito.asm.ByteVector byteVector4 = byteVector2.putInt((int)'4'); // [NormalExecution org.mockito.asm.ByteVector@6921362 [class org.mockito.asm.ByteVector]]
+byte byte5 = (byte)1; // [NormalExecution 1 [class java.lang.Byte]]
+org.mockito.asm.ByteVector byteVector6 = byteVector2.putInt((int)(byte)1); // [NormalExecution org.mockito.asm.ByteVector@6921362 [class org.mockito.asm.ByteVector]]
+java.lang.String str7 = "L308380898"; // [NormalExecution L308380898 [class java.lang.String]]
+org.mockito.asm.ByteVector byteVector8 = byteVector6.putUTF8("L308380898"); // [NormalExecution org.mockito.asm.ByteVector@6921362 [class org.mockito.asm.ByteVector]]
+char char9 = 'a'; // [NormalExecution a [class java.lang.Character]]
+org.mockito.asm.ByteVector byteVector10 = byteVector8.putShort((int)'a'); // [NormalExecution org.mockito.asm.ByteVector@6921362 [class org.mockito.asm.ByteVector]]
+int int11 = 100; // [NormalExecution 100 [class java.lang.Integer]]
+org.mockito.asm.ByteVector byteVector12 = byteVector8.putInt(100); // [NormalExecution org.mockito.asm.ByteVector@6921362 [class org.mockito.asm.ByteVector]]
+byte byte13 = (byte)-1; // [NormalExecution -1 [class java.lang.Byte]]
+org.mockito.asm.ByteVector byteVector14 = byteVector8.putShort((int)(byte)-1); // [NormalExecution org.mockito.asm.ByteVector@6921362 [class org.mockito.asm.ByteVector]]
+int int15 = (-1161953280); // [NormalExecution -1161953280 [class java.lang.Integer]]
+org.mockito.asm.ByteVector byteVector16 = byteVector14.putLong((long)(-1161953280)); // [NormalExecution org.mockito.asm.ByteVector@6921362 [class org.mockito.asm.ByteVector]]
+<randoop.contract.IsNotNull@1f [byteVector2]>
+<randoop.contract.IsNotNull@1f [byteVector4]>
+<randoop.contract.IsNotNull@1f [byteVector6]>
+<randoop.contract.IsNotNull@1f [byteVector8]>
+<randoop.contract.IsNotNull@1f [byteVector10]>
+<randoop.contract.IsNotNull@1f [byteVector12]>
+<randoop.contract.IsNotNull@1f [byteVector14]>
+<randoop.contract.IsNotNull@1f [byteVector16]>
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+createAndClassifySequences threw an exception
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+
+Throwable thrown while handling command: java.lang.OutOfMemoryError: GC overhead limit exceeded
+java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+Randoop failed.
+Last sequence under execution: 
+org.mockito.asm.ByteVector byteVector0 = new org.mockito.asm.ByteVector();
+org.mockito.asm.ByteVector byteVector2 = byteVector0.putShort(10);
+org.mockito.asm.ByteVector byteVector4 = byteVector2.putInt((int)'4');
+org.mockito.asm.ByteVector byteVector6 = byteVector2.putInt((int)(byte)1);
+org.mockito.asm.ByteVector byteVector8 = byteVector6.putUTF8("L308380898");
+org.mockito.asm.ByteVector byteVector10 = byteVector8.putShort((int)'a');
+org.mockito.asm.ByteVector byteVector12 = byteVector8.putInt(100);
+org.mockito.asm.ByteVector byteVector14 = byteVector8.putShort((int)(byte)-1);
+org.mockito.asm.ByteVector byteVector16 = byteVector14.putLong((long)(-1161953280));

@@ -1,0 +1,232 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 52 classes.
+PUBLIC MEMBERS=1852
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-22T22:48:09.761Z     376M used)
+Progress update: steps=1000, test inputs generated=816, failing inputs=45      (2022-02-22T22:48:20.031Z     615M used)
+Progress update: steps=2000, test inputs generated=1777, failing inputs=66      (2022-02-22T22:48:30.809Z     673M used)
+Progress update: steps=3000, test inputs generated=2735, failing inputs=66      (2022-02-22T22:48:42.495Z     93.2M used)
+Progress update: steps=4000, test inputs generated=3674, failing inputs=67      (2022-02-22T22:48:53.511Z     1.38G used)
+Progress update: steps=5000, test inputs generated=4631, failing inputs=67      (2022-02-22T22:49:04.830Z     138M used)
+Progress update: steps=5419, test inputs generated=5024, failing inputs=67      (2022-02-22T22:49:09.783Z     935M used)
+Progress update: steps=6000, test inputs generated=5563, failing inputs=67      (2022-02-22T22:49:22.049Z     1.25G used)
+Progress update: steps=7000, test inputs generated=6492, failing inputs=67      (2022-02-22T22:49:39.332Z     1.40G used)
+Progress update: steps=8000, test inputs generated=7432, failing inputs=75      (2022-02-22T22:49:51.349Z     846M used)
+Progress update: steps=9000, test inputs generated=8373, failing inputs=75      (2022-02-22T22:50:06.290Z     824M used)
+Progress update: steps=9439, test inputs generated=8784, failing inputs=75      (2022-02-22T22:50:12.262Z     812M used)
+Progress update: steps=10000, test inputs generated=9313, failing inputs=75      (2022-02-22T22:50:19.424Z     808M used)
+Progress update: steps=11000, test inputs generated=10261, failing inputs=80      (2022-02-22T22:50:31.748Z     658M used)
+Progress update: steps=12000, test inputs generated=11203, failing inputs=99      (2022-02-22T22:50:44.511Z     126M used)
+Progress update: steps=13000, test inputs generated=12128, failing inputs=101      (2022-02-22T22:50:59.341Z     1.40G used)
+Progress update: steps=13943, test inputs generated=13003, failing inputs=102      (2022-02-22T22:51:12.262Z     931M used)
+Progress update: steps=14000, test inputs generated=13058, failing inputs=102      (2022-02-22T22:51:12.932Z     1.42G used)
+Progress update: steps=15000, test inputs generated=13990, failing inputs=112      (2022-02-22T22:51:31.510Z     801M used)
+Progress update: steps=16000, test inputs generated=14916, failing inputs=135      (2022-02-22T22:51:47.882Z     323M used)
+Progress update: steps=17000, test inputs generated=15842, failing inputs=148      (2022-02-22T22:52:07.134Z     686M used)
+Progress update: steps=17349, test inputs generated=16162, failing inputs=148      (2022-02-22T22:52:12.263Z     1.21G used)
+Progress update: steps=18000, test inputs generated=16757, failing inputs=151      (2022-02-22T22:52:23.212Z     557M used)
+Progress update: steps=19000, test inputs generated=17683, failing inputs=152      (2022-02-22T22:52:42.655Z     1.19G used)
+Progress update: steps=20000, test inputs generated=18616, failing inputs=153      (2022-02-22T22:53:07.341Z     1.28G used)
+Progress update: steps=20264, test inputs generated=18856, failing inputs=153      (2022-02-22T22:53:12.264Z     1.23G used)
+Progress update: steps=21000, test inputs generated=19535, failing inputs=168      (2022-02-22T22:53:25.681Z     1.43G used)
+Progress update: steps=22000, test inputs generated=20446, failing inputs=178      (2022-02-22T22:53:45.274Z     1.14G used)
+Progress update: steps=23000, test inputs generated=21384, failing inputs=193      (2022-02-22T22:54:11.542Z     985M used)
+Progress update: steps=23029, test inputs generated=21413, failing inputs=193      (2022-02-22T22:54:12.265Z     1.29G used)
+Progress update: steps=24000, test inputs generated=22310, failing inputs=202      (2022-02-22T22:54:38.038Z     1.56G used)
+Progress update: steps=25000, test inputs generated=23225, failing inputs=217      (2022-02-22T22:55:02.901Z     378M used)
+Progress update: steps=25370, test inputs generated=23575, failing inputs=217      (2022-02-22T22:55:12.265Z     1.52G used)
+Progress update: steps=26000, test inputs generated=24146, failing inputs=217      (2022-02-22T22:55:31.149Z     1.50G used)Long execution time 19 sec for
+org.joda.time.LocalDate localDate1 = org.joda.time.LocalDate.now();
+int int2 = localDate1.getWeekyear();
+org.joda.time.Chronology chronology3 = localDate1.getChronology();
+org.joda.time.DateTimeField dateTimeField4 = chronology3.yearOfEra();
+org.joda.time.DateTimeField dateTimeField5 = chronology3.monthOfYear();
+org.joda.time.DurationField durationField6 = chronology3.halfdays();
+org.joda.time.MutableDateTime mutableDateTime7 = new org.joda.time.MutableDateTime((long)4, chronology3);
+org.joda.time.DateTimeZone dateTimeZone8 = mutableDateTime7.getZone();
+long long10 = dateTimeZone8.previousTransition((long)(byte)10);
+org.joda.time.YearMonthDay yearMonthDay11 = new org.joda.time.YearMonthDay(dateTimeZone8);
+org.joda.time.YearMonthDay.Property property12 = yearMonthDay11.dayOfMonth();
+org.joda.time.DurationField durationField13 = property12.getRangeDurationField();
+org.joda.time.YearMonthDay yearMonthDay15 = property12.addToCopy((int)(short)1);
+int int16 = yearMonthDay15.getYear();
+org.joda.time.YearMonthDay yearMonthDay18 = yearMonthDay15.minusDays(1962491260);
+
+
+Progress update: steps=26742, test inputs generated=24835, failing inputs=218      (2022-02-22T22:56:12.266Z     613M used)
+Progress update: steps=27000, test inputs generated=25068, failing inputs=220      (2022-02-22T22:56:19.096Z     642M used)
+Progress update: steps=28000, test inputs generated=25989, failing inputs=265      (2022-02-22T22:56:47.728Z     353M used)Long execution time 10 sec for
+org.joda.time.LocalDate localDate1 = org.joda.time.LocalDate.now();
+int int2 = localDate1.getWeekyear();
+org.joda.time.Chronology chronology3 = localDate1.getChronology();
+org.joda.time.DateTimeField dateTimeField4 = chronology3.yearOfEra();
+org.joda.time.DateTimeField dateTimeField5 = chronology3.monthOfYear();
+org.joda.time.DurationField durationField6 = chronology3.halfdays();
+org.joda.time.MutableDateTime mutableDateTime7 = new org.joda.time.MutableDateTime((long)4, chronology3);
+org.joda.time.DateTimeZone dateTimeZone8 = mutableDateTime7.getZone();
+long long10 = dateTimeZone8.previousTransition((long)(byte)10);
+org.joda.time.YearMonthDay yearMonthDay11 = new org.joda.time.YearMonthDay(dateTimeZone8);
+org.joda.time.ReadablePeriod readablePeriod12 = null;
+org.joda.time.YearMonthDay yearMonthDay14 = yearMonthDay11.withPeriodAdded(readablePeriod12, (int)' ');
+org.joda.time.DateTimeFieldType[] dateTimeFieldTypeArray15 = yearMonthDay14.getFieldTypes();
+org.joda.time.Period period17 = org.joda.time.Period.seconds((-1));
+org.joda.time.YearMonthDay yearMonthDay18 = yearMonthDay14.plus((org.joda.time.ReadablePeriod)period17);
+org.joda.time.PeriodType periodType27 = null;
+org.joda.time.Period period28 = new org.joda.time.Period((int)'4', (int)(short)100, (int)'a', 0, 0, (int)' ', 0, (int)'4', periodType27);
+org.joda.time.ReadableInstant readableInstant29 = null;
+org.joda.time.Duration duration30 = period28.toDurationFrom(readableInstant29);
+org.joda.time.Period period32 = period28.minusMonths(16);
+org.joda.time.YearMonthDay yearMonthDay33 = yearMonthDay18.plus((org.joda.time.ReadablePeriod)period28);
+org.joda.time.DateTime dateTime34 = yearMonthDay18.toDateTimeAtCurrentTime();
+java.lang.String str35 = yearMonthDay18.toString();
+org.joda.time.YearMonthDay yearMonthDay37 = yearMonthDay18.minusDays(1033940278);
+
+
+Progress update: steps=28522, test inputs generated=26480, failing inputs=265      (2022-02-22T22:57:12.266Z     385M used)
+Progress update: steps=29000, test inputs generated=26913, failing inputs=265      (2022-02-22T22:57:25.662Z     1.48G used)
+Progress update: steps=30000, test inputs generated=27829, failing inputs=276      (2022-02-22T22:57:52.195Z     670M used)
+Progress update: steps=30384, test inputs generated=28182, failing inputs=276      (2022-02-22T22:58:12.267Z     812M used)Long execution time 10 sec for
+org.joda.time.LocalDate localDate0 = org.joda.time.LocalDate.now();
+int int1 = localDate0.getWeekyear();
+org.joda.time.LocalDate localDate2 = org.joda.time.LocalDate.now();
+int int3 = localDate0.compareTo((org.joda.time.ReadablePartial)localDate2);
+org.joda.time.LocalDate localDate5 = localDate2.minusMonths((int)(byte)100);
+org.joda.time.LocalDate localDate6 = org.joda.time.LocalDate.now();
+boolean boolean7 = localDate2.isEqual((org.joda.time.ReadablePartial)localDate6);
+org.joda.time.LocalDate localDate9 = localDate2.minusYears(1);
+org.joda.time.LocalDate localDate10 = org.joda.time.LocalDate.now();
+int int11 = localDate10.getWeekyear();
+org.joda.time.PeriodType periodType20 = null;
+org.joda.time.Period period21 = new org.joda.time.Period((int)'4', (int)(short)100, (int)'a', 0, 0, (int)' ', 0, (int)'4', periodType20);
+int int22 = period21.getWeeks();
+org.joda.time.LocalDate localDate23 = localDate10.plus((org.joda.time.ReadablePeriod)period21);
+org.joda.time.LocalDate localDate25 = org.joda.time.LocalDate.now();
+int int26 = localDate25.getWeekyear();
+org.joda.time.Chronology chronology27 = localDate25.getChronology();
+org.joda.time.DateTimeField dateTimeField28 = chronology27.yearOfEra();
+org.joda.time.DateTimeField dateTimeField29 = chronology27.monthOfYear();
+org.joda.time.DurationField durationField30 = chronology27.halfdays();
+org.joda.time.MutableDateTime mutableDateTime31 = new org.joda.time.MutableDateTime((long)4, chronology27);
+org.joda.time.DateTimeZone dateTimeZone32 = mutableDateTime31.getZone();
+org.joda.time.DateTime dateTime33 = localDate10.toDateTimeAtStartOfDay(dateTimeZone32);
+org.joda.time.DateTime dateTime34 = localDate9.toDateTimeAtStartOfDay(dateTimeZone32);
+org.joda.time.LocalDate.Property property35 = localDate9.weekyear();
+org.joda.time.LocalDate localDate36 = property35.roundHalfFloorCopy();
+org.joda.time.LocalDate localDate37 = property35.roundHalfEvenCopy();
+org.joda.time.LocalDate.Property property38 = localDate37.dayOfWeek();
+org.joda.time.LocalDate.Property property39 = localDate37.dayOfMonth();
+org.joda.time.LocalDate localDate40 = property39.roundHalfEvenCopy();
+org.joda.time.MutablePeriod mutablePeriod45 = new org.joda.time.MutablePeriod((int)(byte)-1, 0, 14903327, 218);
+int int46 = mutablePeriod45.getMinutes();
+mutablePeriod45.setSeconds(0);
+org.joda.time.DurationFieldType durationFieldType49 = org.joda.time.DurationFieldType.minutes();
+java.lang.String str50 = durationFieldType49.toString();
+boolean boolean51 = mutablePeriod45.isSupported(durationFieldType49);
+boolean boolean52 = localDate40.isSupported(durationFieldType49);
+org.joda.time.LocalDate localDate54 = org.joda.time.LocalDate.now();
+int int55 = localDate54.getWeekyear();
+org.joda.time.Chronology chronology56 = localDate54.getChronology();
+org.joda.time.DateTimeField dateTimeField57 = chronology56.yearOfEra();
+org.joda.time.DateTimeField dateTimeField58 = chronology56.monthOfYear();
+org.joda.time.DurationField durationField59 = chronology56.halfdays();
+org.joda.time.MutableDateTime mutableDateTime60 = new org.joda.time.MutableDateTime((long)4, chronology56);
+org.joda.time.DateTimeZone dateTimeZone61 = mutableDateTime60.getZone();
+long long63 = dateTimeZone61.previousTransition((long)(byte)10);
+org.joda.time.YearMonthDay yearMonthDay64 = new org.joda.time.YearMonthDay(dateTimeZone61);
+org.joda.time.ReadablePeriod readablePeriod65 = null;
+org.joda.time.YearMonthDay yearMonthDay67 = yearMonthDay64.withPeriodAdded(readablePeriod65, (int)' ');
+org.joda.time.DateTimeFieldType[] dateTimeFieldTypeArray68 = yearMonthDay67.getFieldTypes();
+org.joda.time.Period period70 = org.joda.time.Period.seconds((-1));
+org.joda.time.YearMonthDay yearMonthDay71 = yearMonthDay67.plus((org.joda.time.ReadablePeriod)period70);
+org.joda.time.PeriodType periodType80 = null;
+org.joda.time.Period period81 = new org.joda.time.Period((int)'4', (int)(short)100, (int)'a', 0, 0, (int)' ', 0, (int)'4', periodType80);
+org.joda.time.ReadableInstant readableInstant82 = null;
+org.joda.time.Duration duration83 = period81.toDurationFrom(readableInstant82);
+org.joda.time.Period period85 = period81.minusMonths(16);
+org.joda.time.YearMonthDay yearMonthDay86 = yearMonthDay71.plus((org.joda.time.ReadablePeriod)period81);
+org.joda.time.DateTime dateTime87 = yearMonthDay71.toDateTimeAtCurrentTime();
+java.lang.String str88 = yearMonthDay71.toString();
+org.joda.time.YearMonthDay yearMonthDay90 = yearMonthDay71.minusDays(1033940278);
+org.joda.time.LocalDate localDate91 = localDate40.withFields((org.joda.time.ReadablePartial)yearMonthDay90);
+
+
+Progress update: steps=30384, test inputs generated=28183, failing inputs=276      (2022-02-22T22:58:15.458Z     1.25G used)
+Normal method executions: 37298044
+Exceptional method executions: 8708
+
+Average method execution time (normal termination):      0.00274
+Average method execution time (exceptional termination): 0.0475
+Approximate memory usage 1.25G
+Explorer = ForwardGenerator(steps: 30384, null steps: 2201, num_sequences_generated: 28183;
+    allSequences: 28183, regresson seqs: 24186, error seqs: 276=276=276, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 3721;
+    runtimePrimitivesSeen:1946)
+
+Error-revealing test output:
+Error-revealing test count: 276
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/ErrorTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/ErrorTest1.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 13620 regression sequences.
+
+Regression test output:
+Regression test count: 13620
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest1.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest2.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest3.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest4.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest5.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest6.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest7.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest8.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest9.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest10.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest11.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest12.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest13.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest14.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest15.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest16.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest17.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest18.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest19.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest20.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest21.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest22.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest23.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest24.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest25.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest26.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest27.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest28.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest29.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest30.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest31.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest32.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest33.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest34.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest35.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest36.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest37.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest38.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest39.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest40.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest41.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest42.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest43.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest44.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest45.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest46.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest47.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest48.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest49.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest50.java
+Created file /experiment/results/randoop10/time-org.joda.time.base.AbstractPartial-org.joda.time.YearMonth-13/RegressionTest51.java

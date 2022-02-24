@@ -1,0 +1,172 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 47 classes.
+PUBLIC MEMBERS=1618
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-23T03:01:37.617Z     365M used)
+Progress update: steps=1000, test inputs generated=767, failing inputs=2      (2022-02-23T03:01:46.882Z     844M used)
+Progress update: steps=2000, test inputs generated=1706, failing inputs=6      (2022-02-23T03:01:57.397Z     219M used)
+Progress update: steps=3000, test inputs generated=2663, failing inputs=8      (2022-02-23T03:02:09.280Z     1.35G used)
+Progress update: steps=4000, test inputs generated=3632, failing inputs=9      (2022-02-23T03:02:20.990Z     71.1M used)
+Progress update: steps=5000, test inputs generated=4593, failing inputs=10      (2022-02-23T03:02:34.089Z     806M used)
+Progress update: steps=5249, test inputs generated=4837, failing inputs=11      (2022-02-23T03:02:37.631Z     1,36G used)
+Progress update: steps=6000, test inputs generated=5565, failing inputs=12      (2022-02-23T03:02:47.191Z     1.40G used)
+Progress update: steps=7000, test inputs generated=6524, failing inputs=14      (2022-02-23T03:03:02.529Z     1.26G used)
+Progress update: steps=8000, test inputs generated=7485, failing inputs=18      (2022-02-23T03:03:17.668Z     374M used)
+Progress update: steps=9000, test inputs generated=8431, failing inputs=22      (2022-02-23T03:03:33.381Z     1,29G used)
+Progress update: steps=9244, test inputs generated=8659, failing inputs=23      (2022-02-23T03:03:37.632Z     1.15G used)
+Progress update: steps=10000, test inputs generated=9373, failing inputs=24      (2022-02-23T03:03:49.820Z     1.12G used)
+Progress update: steps=11000, test inputs generated=10328, failing inputs=26      (2022-02-23T03:04:07.566Z     406M used)
+Progress update: steps=11958, test inputs generated=11243, failing inputs=26      (2022-02-23T03:04:37.633Z     498M used)Long execution time 16 sec for
+org.joda.time.YearMonthDay yearMonthDay1 = new org.joda.time.YearMonthDay((long)3);
+org.joda.time.Chronology chronology4 = null;
+java.util.Locale locale5 = null;
+org.joda.time.format.DateTimeParserBucket dateTimeParserBucket6 = new org.joda.time.format.DateTimeParserBucket((long)100, chronology4, locale5);
+org.joda.time.DateTimeZone dateTimeZone7 = dateTimeParserBucket6.getZone();
+int int9 = dateTimeZone7.getOffset((long)10898954);
+org.joda.time.DateTime dateTime10 = new org.joda.time.DateTime((long)100, dateTimeZone7);
+org.joda.time.DateMidnight dateMidnight11 = yearMonthDay1.toDateMidnight(dateTimeZone7);
+org.joda.time.ReadablePeriod readablePeriod12 = null;
+org.joda.time.DateMidnight dateMidnight14 = dateMidnight11.withPeriodAdded(readablePeriod12, (int)(byte)100);
+org.joda.time.LocalDate localDate15 = dateMidnight11.toLocalDate();
+org.joda.time.DateMidnight.Property property16 = dateMidnight11.centuryOfEra();
+org.joda.time.YearMonthDay yearMonthDay18 = new org.joda.time.YearMonthDay((long)10898954);
+org.joda.time.YearMonthDay yearMonthDay20 = yearMonthDay18.minusMonths(784);
+org.joda.time.YearMonthDay yearMonthDay22 = yearMonthDay20.minusMonths((int)' ');
+org.joda.time.LocalDate localDate23 = new org.joda.time.LocalDate();
+org.joda.time.LocalDate localDate25 = localDate23.withDayOfYear((int)(short)10);
+org.joda.time.DateTime dateTime26 = localDate23.toDateTimeAtMidnight();
+org.joda.time.MutableDateTime mutableDateTime27 = dateTime26.toMutableDateTime();
+java.util.Date date28 = mutableDateTime27.toDate();
+mutableDateTime27.addHours((int)(byte)-1);
+org.joda.time.Chronology chronology32 = null;
+java.util.Locale locale33 = null;
+org.joda.time.format.DateTimeParserBucket dateTimeParserBucket34 = new org.joda.time.format.DateTimeParserBucket((long)100, chronology32, locale33);
+org.joda.time.DateTimeZone dateTimeZone35 = dateTimeParserBucket34.getZone();
+mutableDateTime27.setZone(dateTimeZone35);
+long long39 = dateTimeZone35.convertLocalToUTC((long)'a', true);
+org.joda.time.Interval interval40 = yearMonthDay20.toInterval(dateTimeZone35);
+org.joda.time.ReadablePeriod readablePeriod41 = null;
+org.joda.time.YearMonthDay yearMonthDay43 = yearMonthDay20.withPeriodAdded(readablePeriod41, 22);
+org.joda.time.YearMonthDay.Property property44 = yearMonthDay43.monthOfYear();
+int[] intArray45 = yearMonthDay43.getValues();
+org.joda.time.DateMidnight dateMidnight46 = dateMidnight11.withFields((org.joda.time.ReadablePartial)yearMonthDay43);
+org.joda.time.DateTime dateTime47 = yearMonthDay43.toDateTimeAtMidnight();
+org.joda.time.YearMonthDay.Property property48 = yearMonthDay43.year();
+org.joda.time.DurationField durationField49 = property48.getRangeDurationField();
+org.joda.time.YearMonthDay yearMonthDay50 = property48.getYearMonthDay();
+org.joda.time.YearMonthDay yearMonthDay52 = property48.addToCopy(826);
+org.joda.time.YearMonthDay yearMonthDay54 = yearMonthDay52.minusMonths(2122);
+org.joda.time.Chronology chronology56 = null;
+java.util.Locale locale57 = null;
+org.joda.time.format.DateTimeParserBucket dateTimeParserBucket58 = new org.joda.time.format.DateTimeParserBucket((long)100, chronology56, locale57);
+org.joda.time.DateTimeZone dateTimeZone59 = dateTimeParserBucket58.getZone();
+org.joda.time.DateTimeZone.setDefault(dateTimeZone59);
+org.joda.time.DateMidnight dateMidnight61 = yearMonthDay54.toDateMidnight(dateTimeZone59);
+org.joda.time.YearMonthDay yearMonthDay62 = new org.joda.time.YearMonthDay();
+org.joda.time.YearMonthDay yearMonthDay64 = yearMonthDay62.plusYears((int)' ');
+org.joda.time.DurationFieldType durationFieldType65 = org.joda.time.DurationFieldType.days();
+org.joda.time.YearMonthDay yearMonthDay67 = yearMonthDay64.withFieldAdded(durationFieldType65, 2);
+org.joda.time.YearMonthDay yearMonthDay69 = yearMonthDay54.withFieldAdded(durationFieldType65, (-1720317730));
+
+
+Progress update: steps=12000, test inputs generated=11285, failing inputs=27      (2022-02-23T03:04:42.556Z     1.44G used)
+Progress update: steps=13000, test inputs generated=12226, failing inputs=30      (2022-02-23T03:05:05.484Z     720M used)
+Progress update: steps=14000, test inputs generated=13180, failing inputs=32      (2022-02-23T03:05:32.943Z     623M used)
+Progress update: steps=14328, test inputs generated=13491, failing inputs=32      (2022-02-23T03:05:41.507Z     819M used)
+Progress update: steps=15000, test inputs generated=14131, failing inputs=33      (2022-02-23T03:06:02.464Z     359M used)
+Progress update: steps=16000, test inputs generated=15085, failing inputs=36      (2022-02-23T03:06:29.010Z     1.21G used)
+Progress update: steps=16423, test inputs generated=15486, failing inputs=36      (2022-02-23T03:06:41.508Z     1.27G used)
+Progress update: steps=17000, test inputs generated=16022, failing inputs=36      (2022-02-23T03:06:56.569Z     811M used)
+Progress update: steps=18000, test inputs generated=16949, failing inputs=36      (2022-02-23T03:07:23.866Z     220M used)
+Progress update: steps=18605, test inputs generated=17517, failing inputs=37      (2022-02-23T03:07:41.508Z     419M used)
+Progress update: steps=19000, test inputs generated=17873, failing inputs=37      (2022-02-23T03:07:52.395Z     285M used)
+Progress update: steps=20000, test inputs generated=18804, failing inputs=38      (2022-02-23T03:08:19.861Z     1.13G used)
+Progress update: steps=20763, test inputs generated=19521, failing inputs=38      (2022-02-23T03:08:41.509Z     1.11G used)
+Progress update: steps=21000, test inputs generated=19738, failing inputs=38      (2022-02-23T03:08:49.008Z     463M used)
+Progress update: steps=22000, test inputs generated=20664, failing inputs=38      (2022-02-23T03:09:18.519Z     336M used)
+Progress update: steps=22757, test inputs generated=21365, failing inputs=38      (2022-02-23T03:09:41.509Z     940M used)
+Progress update: steps=23000, test inputs generated=21592, failing inputs=38      (2022-02-23T03:09:49.556Z     588M used)
+Progress update: steps=24000, test inputs generated=22534, failing inputs=39      (2022-02-23T03:10:18.892Z     570M used)
+Progress update: steps=24705, test inputs generated=23188, failing inputs=40      (2022-02-23T03:10:41.510Z     303M used)
+Progress update: steps=25000, test inputs generated=23458, failing inputs=41      (2022-02-23T03:10:50.729Z     306M used)
+Progress update: steps=26000, test inputs generated=24403, failing inputs=42      (2022-02-23T03:11:23.244Z     395M used)
+Progress update: steps=26461, test inputs generated=24833, failing inputs=44      (2022-02-23T03:11:37.632Z     1.49G used)
+Normal method executions: 28427656
+Exceptional method executions: 8555
+
+Average method execution time (normal termination):      0.00154
+Average method execution time (exceptional termination): 0.0472
+Approximate memory usage 1.49G
+Explorer = ForwardGenerator(steps: 26461, null steps: 1628, num_sequences_generated: 24833;
+    allSequences: 24833, regresson seqs: 20081, error seqs: 44=44=44, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 4708;
+    runtimePrimitivesSeen:1734)
+
+Error-revealing test output:
+Error-revealing test count: 44
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/ErrorTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 11165 regression sequences.
+
+Regression test output:
+Regression test count: 11165
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest0.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest1.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest2.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest3.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest4.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest5.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest6.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest7.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest8.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest9.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest10.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest11.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest12.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest13.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest14.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest15.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest16.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest17.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest18.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest19.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest20.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest21.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest22.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest23.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest24.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest25.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest26.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest27.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest28.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest29.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest30.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest31.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest32.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest33.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest34.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest35.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest36.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest37.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest38.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest39.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest40.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest41.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest42.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest43.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest44.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest45.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest46.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest47.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest48.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest49.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest50.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest51.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.format.DateTimeParserBucket-10/RegressionTest52.java

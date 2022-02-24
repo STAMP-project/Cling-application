@@ -1,0 +1,263 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+
+Will try to generate tests for 47 classes.
+PUBLIC MEMBERS=1618
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-23T02:09:23.442Z     365M used)
+Progress update: steps=1000, test inputs generated=776, failing inputs=1      (2022-02-23T02:09:35.456Z     649M used)
+Progress update: steps=2000, test inputs generated=1732, failing inputs=4      (2022-02-23T02:09:47.336Z     301M used)
+Progress update: steps=3000, test inputs generated=2696, failing inputs=11      (2022-02-23T02:10:01.074Z     701M used)
+Progress update: steps=4000, test inputs generated=3657, failing inputs=25      (2022-02-23T02:10:15.082Z     1.18G used)
+Progress update: steps=4531, test inputs generated=4166, failing inputs=32      (2022-02-23T02:10:23.457Z     148M used)
+Progress update: steps=5000, test inputs generated=4610, failing inputs=38      (2022-02-23T02:10:30.816Z     914M used)
+Progress update: steps=6000, test inputs generated=5551, failing inputs=48      (2022-02-23T02:10:47.415Z     629M used)
+Progress update: steps=7000, test inputs generated=6496, failing inputs=58      (2022-02-23T02:11:06.687Z     612M used)
+Progress update: steps=7848, test inputs generated=7308, failing inputs=66      (2022-02-23T02:11:23.457Z     1,09G used)
+Progress update: steps=8000, test inputs generated=7448, failing inputs=68      (2022-02-23T02:11:26.507Z     1.03G used)
+Progress update: steps=9000, test inputs generated=8382, failing inputs=82      (2022-02-23T02:11:48.662Z     738M used)Long execution time 16 sec for
+java.util.Date date1 = new java.util.Date(10L);
+int int2 = date1.getMonth();
+date1.setSeconds((int)(short)100);
+java.lang.String str5 = date1.toGMTString();
+int int6 = date1.getSeconds();
+org.joda.time.YearMonthDay yearMonthDay7 = org.joda.time.YearMonthDay.fromDateFields(date1);
+org.joda.time.YearMonthDay yearMonthDay9 = yearMonthDay7.plusYears((int)(short)1);
+org.joda.time.Chronology chronology11 = null;
+org.joda.time.MutableDateTime mutableDateTime12 = new org.joda.time.MutableDateTime(0L, chronology11);
+org.joda.time.MutableDateTime mutableDateTime13 = mutableDateTime12.toMutableDateTimeISO();
+org.joda.time.DateTimeZone dateTimeZone14 = null;
+org.joda.time.DateTime dateTime15 = mutableDateTime13.toDateTime(dateTimeZone14);
+org.joda.time.ReadablePeriod readablePeriod16 = null;
+org.joda.time.DateTime dateTime18 = dateTime15.withPeriodAdded(readablePeriod16, 0);
+boolean boolean19 = dateTime18.isAfterNow();
+org.joda.time.DateTime dateTime21 = dateTime18.withWeekOfWeekyear(1);
+org.joda.time.ReadablePeriod readablePeriod22 = null;
+org.joda.time.DateTime dateTime24 = dateTime21.withPeriodAdded(readablePeriod22, 19);
+org.joda.time.DateTime.Property property25 = dateTime21.weekyear();
+org.joda.time.DateTime dateTime26 = property25.getDateTime();
+org.joda.time.DateTime dateTime27 = property25.getDateTime();
+org.joda.time.Chronology chronology29 = null;
+org.joda.time.MutableDateTime mutableDateTime30 = new org.joda.time.MutableDateTime(0L, chronology29);
+org.joda.time.MutableDateTime mutableDateTime31 = mutableDateTime30.toMutableDateTimeISO();
+org.joda.time.DateTimeZone dateTimeZone32 = null;
+org.joda.time.DateTime dateTime33 = mutableDateTime31.toDateTime(dateTimeZone32);
+mutableDateTime31.setMillis((long)(short)0);
+org.joda.time.MutableDateTime.Property property36 = mutableDateTime31.dayOfYear();
+boolean boolean37 = dateTime27.isBefore((org.joda.time.ReadableInstant)mutableDateTime31);
+org.joda.time.Chronology chronology39 = null;
+org.joda.time.MutableDateTime mutableDateTime40 = new org.joda.time.MutableDateTime(0L, chronology39);
+org.joda.time.MutableDateTime mutableDateTime41 = mutableDateTime40.toMutableDateTimeISO();
+org.joda.time.DateTimeZone dateTimeZone42 = null;
+org.joda.time.DateTime dateTime43 = mutableDateTime41.toDateTime(dateTimeZone42);
+mutableDateTime41.setMillis((long)(short)0);
+org.joda.time.MutableDateTime.Property property46 = mutableDateTime41.dayOfYear();
+org.joda.time.DateTime dateTime48 = new org.joda.time.DateTime((long)0);
+org.joda.time.ReadablePeriod readablePeriod49 = null;
+org.joda.time.DateTime dateTime50 = dateTime48.minus(readablePeriod49);
+org.joda.time.DateTimeFieldType dateTimeFieldType51 = org.joda.time.DateTimeFieldType.monthOfYear();
+boolean boolean52 = dateTime48.isSupported(dateTimeFieldType51);
+mutableDateTime41.set(dateTimeFieldType51, (int)(short)10);
+org.joda.time.DurationFieldType durationFieldType55 = dateTimeFieldType51.getRangeDurationType();
+mutableDateTime31.add(durationFieldType55, 496);
+org.joda.time.YearMonthDay yearMonthDay59 = yearMonthDay7.withFieldAdded(durationFieldType55, 14);
+org.joda.time.YearMonthDay yearMonthDay61 = yearMonthDay59.minusDays(1645582183);
+
+
+Progress update: steps=9703, test inputs generated=9042, failing inputs=88      (2022-02-23T02:12:23.458Z     160M used)
+Progress update: steps=10000, test inputs generated=9316, failing inputs=90      (2022-02-23T02:12:30.873Z     1.18G used)
+Progress update: steps=11000, test inputs generated=10252, failing inputs=105      (2022-02-23T02:12:57.163Z     1,13G used)
+Progress update: steps=11705, test inputs generated=10904, failing inputs=110      (2022-02-23T02:13:23.459Z     1,14G used)Long execution time 15 sec for
+java.util.Date date1 = new java.util.Date(10L);
+date1.setMinutes(20);
+org.joda.time.LocalTime localTime4 = org.joda.time.LocalTime.fromDateFields(date1);
+org.joda.time.ReadablePeriod readablePeriod5 = null;
+org.joda.time.LocalTime localTime6 = localTime4.plus(readablePeriod5);
+org.joda.time.LocalTime.Property property7 = localTime6.secondOfMinute();
+org.joda.time.LocalTime localTime9 = property7.addNoWrapToCopy((-1));
+org.joda.time.LocalTime localTime10 = property7.roundHalfEvenCopy();
+org.joda.time.LocalTime localTime11 = property7.roundHalfFloorCopy();
+org.joda.time.DateTimeField dateTimeField12 = property7.getField();
+org.joda.time.LocalTime localTime14 = property7.addWrapFieldToCopy(946);
+org.joda.time.LocalTime localTime16 = localTime14.plusSeconds(2000);
+java.util.Date date18 = new java.util.Date(10L);
+int int19 = date18.getMonth();
+date18.setSeconds((int)(short)100);
+java.lang.String str22 = date18.toGMTString();
+int int23 = date18.getSeconds();
+org.joda.time.YearMonthDay yearMonthDay24 = org.joda.time.YearMonthDay.fromDateFields(date18);
+org.joda.time.YearMonthDay yearMonthDay26 = yearMonthDay24.plusYears((int)(short)1);
+org.joda.time.Chronology chronology28 = null;
+org.joda.time.MutableDateTime mutableDateTime29 = new org.joda.time.MutableDateTime(0L, chronology28);
+org.joda.time.MutableDateTime mutableDateTime30 = mutableDateTime29.toMutableDateTimeISO();
+org.joda.time.DateTimeZone dateTimeZone31 = null;
+org.joda.time.DateTime dateTime32 = mutableDateTime30.toDateTime(dateTimeZone31);
+org.joda.time.ReadablePeriod readablePeriod33 = null;
+org.joda.time.DateTime dateTime35 = dateTime32.withPeriodAdded(readablePeriod33, 0);
+boolean boolean36 = dateTime35.isAfterNow();
+org.joda.time.DateTime dateTime38 = dateTime35.withWeekOfWeekyear(1);
+org.joda.time.ReadablePeriod readablePeriod39 = null;
+org.joda.time.DateTime dateTime41 = dateTime38.withPeriodAdded(readablePeriod39, 19);
+org.joda.time.DateTime.Property property42 = dateTime38.weekyear();
+org.joda.time.DateTime dateTime43 = property42.getDateTime();
+org.joda.time.DateTime dateTime44 = property42.getDateTime();
+org.joda.time.Chronology chronology46 = null;
+org.joda.time.MutableDateTime mutableDateTime47 = new org.joda.time.MutableDateTime(0L, chronology46);
+org.joda.time.MutableDateTime mutableDateTime48 = mutableDateTime47.toMutableDateTimeISO();
+org.joda.time.DateTimeZone dateTimeZone49 = null;
+org.joda.time.DateTime dateTime50 = mutableDateTime48.toDateTime(dateTimeZone49);
+mutableDateTime48.setMillis((long)(short)0);
+org.joda.time.MutableDateTime.Property property53 = mutableDateTime48.dayOfYear();
+boolean boolean54 = dateTime44.isBefore((org.joda.time.ReadableInstant)mutableDateTime48);
+org.joda.time.Chronology chronology56 = null;
+org.joda.time.MutableDateTime mutableDateTime57 = new org.joda.time.MutableDateTime(0L, chronology56);
+org.joda.time.MutableDateTime mutableDateTime58 = mutableDateTime57.toMutableDateTimeISO();
+org.joda.time.DateTimeZone dateTimeZone59 = null;
+org.joda.time.DateTime dateTime60 = mutableDateTime58.toDateTime(dateTimeZone59);
+mutableDateTime58.setMillis((long)(short)0);
+org.joda.time.MutableDateTime.Property property63 = mutableDateTime58.dayOfYear();
+org.joda.time.DateTime dateTime65 = new org.joda.time.DateTime((long)0);
+org.joda.time.ReadablePeriod readablePeriod66 = null;
+org.joda.time.DateTime dateTime67 = dateTime65.minus(readablePeriod66);
+org.joda.time.DateTimeFieldType dateTimeFieldType68 = org.joda.time.DateTimeFieldType.monthOfYear();
+boolean boolean69 = dateTime65.isSupported(dateTimeFieldType68);
+mutableDateTime58.set(dateTimeFieldType68, (int)(short)10);
+org.joda.time.DurationFieldType durationFieldType72 = dateTimeFieldType68.getRangeDurationType();
+mutableDateTime48.add(durationFieldType72, 496);
+org.joda.time.YearMonthDay yearMonthDay76 = yearMonthDay24.withFieldAdded(durationFieldType72, 14);
+org.joda.time.YearMonthDay yearMonthDay78 = yearMonthDay76.minusDays(1645582183);
+org.joda.time.LocalTime localTime79 = localTime14.withFields((org.joda.time.ReadablePartial)yearMonthDay78);
+
+
+Progress update: steps=12000, test inputs generated=11179, failing inputs=114      (2022-02-23T02:13:40.839Z     469M used)
+Progress update: steps=13000, test inputs generated=12123, failing inputs=132      (2022-02-23T02:14:10.958Z     530M used)
+Progress update: steps=13685, test inputs generated=12758, failing inputs=136      (2022-02-23T02:14:32.165Z     1.45G used)
+Progress update: steps=14000, test inputs generated=13049, failing inputs=145      (2022-02-23T02:14:41.534Z     161M used)
+Progress update: steps=15000, test inputs generated=13971, failing inputs=154      (2022-02-23T02:15:11.238Z     495M used)
+Progress update: steps=15673, test inputs generated=14603, failing inputs=158      (2022-02-23T02:15:32.166Z     689M used)
+Progress update: steps=16000, test inputs generated=14912, failing inputs=161      (2022-02-23T02:15:41.679Z     610M used)Long execution time 14 sec for
+org.joda.time.YearMonthDay yearMonthDay3 = new org.joda.time.YearMonthDay((int)(byte)1, (int)(short)1, (int)(byte)1);
+org.joda.time.Interval interval4 = yearMonthDay3.toInterval();
+org.joda.time.Interval interval5 = yearMonthDay3.toInterval();
+org.joda.time.DateTime dateTime6 = yearMonthDay3.toDateTimeAtCurrentTime();
+org.joda.time.YearMonthDay yearMonthDay8 = yearMonthDay3.plusDays(1645582183);
+
+
+Progress update: steps=17000, test inputs generated=15845, failing inputs=175      (2022-02-23T02:16:26.279Z     185M used)
+Progress update: steps=17191, test inputs generated=16026, failing inputs=175      (2022-02-23T02:16:32.166Z     486M used)
+Progress update: steps=18000, test inputs generated=16766, failing inputs=189      (2022-02-23T02:16:55.774Z     708M used)
+Progress update: steps=19000, test inputs generated=17698, failing inputs=191      (2022-02-23T02:17:26.548Z     528M used)
+Progress update: steps=19195, test inputs generated=17879, failing inputs=195      (2022-02-23T02:17:32.167Z     911M used)
+Progress update: steps=20000, test inputs generated=18620, failing inputs=207      (2022-02-23T02:17:56.255Z     1.35G used)
+Progress update: steps=21000, test inputs generated=19559, failing inputs=218      (2022-02-23T02:18:27.147Z     1.25G used)
+Progress update: steps=21166, test inputs generated=19710, failing inputs=219      (2022-02-23T02:18:32.167Z     1.39G used)
+Progress update: steps=22000, test inputs generated=20494, failing inputs=221      (2022-02-23T02:18:54.948Z     933M used)
+Progress update: steps=23000, test inputs generated=21430, failing inputs=223      (2022-02-23T02:19:21.712Z     561M used)
+Progress update: steps=23075, test inputs generated=21501, failing inputs=223      (2022-02-23T02:19:23.454Z     1.16G used)
+Normal method executions: 18986128
+Exceptional method executions: 6921
+
+Average method execution time (normal termination):      0.00311
+Average method execution time (exceptional termination): 0.0488
+Approximate memory usage 1.16G
+Explorer = ForwardGenerator(steps: 23075, null steps: 1574, num_sequences_generated: 21501;
+    allSequences: 21501, regresson seqs: 19386, error seqs: 223=223=223, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1892;
+    runtimePrimitivesSeen:4570)
+
+Error-revealing test output:
+Error-revealing test count: 223
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/ErrorTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/ErrorTest1.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 10833 regression sequences.
+
+Regression test output:
+Regression test count: 10833
+Writing regression JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest1.java
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest2.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest3.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest4.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest5.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest6.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest7.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest8.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest9.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest10.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest11.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest12.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest13.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest14.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest15.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest16.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest17.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest18.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest19.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest20.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest21.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest22.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest23.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest24.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest25.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest26.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest27.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest28.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest29.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest30.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest31.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest32.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest33.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest34.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest35.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest36.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest37.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest38.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest39.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest40.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest41.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest42.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest43.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest44.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest45.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest46.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest47.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest48.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest49.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest50.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest51.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest52.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest53.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest54.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatter-org.joda.time.DateTimeZone-8/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.base.AbstractPartial.isSupported(org.joda.time.DateTimeFieldType)
+  Possibly flaky:  org.joda.time.base.AbstractInterval.toPeriod()
+  Possibly flaky:  org.joda.time.base.AbstractInterval.isBefore(org.joda.time.ReadableInterval)
+  Possibly flaky:  org.joda.time.base.AbstractInterval.contains(org.joda.time.ReadableInterval)
+  Possibly flaky:  org.joda.time.YearMonthDay.toDateTime(org.joda.time.TimeOfDay,org.joda.time.DateTimeZone)
+  Possibly flaky:  org.joda.time.YearMonthDay.minus(org.joda.time.ReadablePeriod)
+  Possibly flaky:  org.joda.time.TimeOfDay.withPeriodAdded(org.joda.time.ReadablePeriod,int)
+  Possibly flaky:  org.joda.time.TimeOfDay.plus(org.joda.time.ReadablePeriod)
+  Possibly flaky:  org.joda.time.ReadablePeriod.toString()
+  Possibly flaky:  org.joda.time.ReadablePeriod.toPeriod()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 37).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

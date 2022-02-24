@@ -1,0 +1,801 @@
+Randoop for Java version "4.3.0, local changes, branch master, commit 7af20ae, 2022-01-31".
+Cannot instantiate non-accessible class org.joda.time.format.DateTimeFormatterBuilder$TextField specified via --testclass or --classlist; will use its static methods.
+
+Will try to generate tests for 33 classes.
+PUBLIC MEMBERS=1204
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    runtimePrimitivesSeen:38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2022-02-23T03:21:19.759Z     312M used)
+Progress update: steps=1000, test inputs generated=807, failing inputs=0      (2022-02-23T03:21:23.825Z     101M used)Long execution time 21 sec for
+org.joda.time.LocalTime localTime1 = new org.joda.time.LocalTime((long)(byte)100);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder2 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder5 = dateTimeFormatterBuilder2.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder8 = dateTimeFormatterBuilder5.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter9 = dateTimeFormatterBuilder8.toFormatter();
+org.joda.time.Chronology chronology10 = dateTimeFormatter9.getChronology();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter11 = dateTimeFormatter9.withZoneUTC();
+java.lang.String str12 = localTime1.toString(dateTimeFormatter9);
+
+Long execution time 21 sec for
+org.joda.time.DurationFieldType durationFieldType0 = org.joda.time.DurationFieldType.weeks();
+org.joda.time.DateTime dateTime3 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime5 = dateTime3.plusMonths(0);
+org.joda.time.Chronology chronology6 = dateTime5.getChronology();
+org.joda.time.LocalTime localTime7 = org.joda.time.LocalTime.now(chronology6);
+org.joda.time.DateTimeField dateTimeField8 = chronology6.weekOfWeekyear();
+org.joda.time.MutableDateTime mutableDateTime9 = new org.joda.time.MutableDateTime((long)2, chronology6);
+org.joda.time.DurationField durationField10 = durationFieldType0.getField(chronology6);
+org.joda.time.LocalTime localTime11 = org.joda.time.LocalTime.now(chronology6);
+org.joda.time.Chronology chronology12 = localTime11.getChronology();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder13 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder16 = dateTimeFormatterBuilder13.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder19 = dateTimeFormatterBuilder16.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter20 = dateTimeFormatterBuilder19.toFormatter();
+org.joda.time.format.DateTimeParser dateTimeParser21 = dateTimeFormatter20.getParser();
+org.joda.time.DateTimeZone dateTimeZone23 = org.joda.time.DateTimeZone.forOffsetHours((int)(byte)0);
+long long26 = dateTimeZone23.convertLocalToUTC((long)(-1), false);
+org.joda.time.DateTime dateTime27 = org.joda.time.DateTime.now(dateTimeZone23);
+org.joda.time.MutableDateTime mutableDateTime28 = org.joda.time.MutableDateTime.now(dateTimeZone23);
+long long30 = dateTimeZone23.previousTransition((long)10);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter31 = dateTimeFormatter20.withZone(dateTimeZone23);
+java.lang.String str32 = localTime11.toString(dateTimeFormatter20);
+
+
+Progress update: steps=2000, test inputs generated=1740, failing inputs=0      (2022-02-23T03:22:11.775Z     1.38G used)
+Progress update: steps=3000, test inputs generated=2670, failing inputs=0      (2022-02-23T03:22:17.780Z     1,90G used)
+Progress update: steps=3432, test inputs generated=3073, failing inputs=0      (2022-02-23T03:22:19.782Z     1,65G used)Long execution time 22 sec for
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder3 = dateTimeFormatterBuilder0.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder6 = dateTimeFormatterBuilder3.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter7 = dateTimeFormatterBuilder6.toFormatter();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter9 = dateTimeFormatter7.withPivotYear((java.lang.Integer)456);
+org.joda.time.DateTime dateTime12 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime14 = dateTime12.plusMonths(0);
+org.joda.time.Chronology chronology15 = dateTime14.getChronology();
+org.joda.time.LocalTime localTime16 = org.joda.time.LocalTime.now(chronology15);
+org.joda.time.LocalTime localTime17 = org.joda.time.LocalTime.fromMillisOfDay((long)10, chronology15);
+org.joda.time.DateTimeField dateTimeField18 = chronology15.hourOfHalfday();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter19 = dateTimeFormatter7.withChronology(chronology15);
+org.joda.time.DateTime dateTime21 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime23 = new org.joda.time.DateTime((long)(byte)10);
+int int24 = dateTime21.compareTo((org.joda.time.ReadableInstant)dateTime23);
+org.joda.time.LocalTime localTime25 = dateTime23.toLocalTime();
+org.joda.time.LocalTime localTime27 = localTime25.withMillisOfSecond(100);
+org.joda.time.DateTime dateTime29 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime31 = new org.joda.time.DateTime((long)(byte)10);
+int int32 = dateTime29.compareTo((org.joda.time.ReadableInstant)dateTime31);
+org.joda.time.DateTime dateTime34 = dateTime29.minusMonths((int)(byte)100);
+org.joda.time.DateTime dateTime37 = dateTime29.withDurationAdded((long)(short)1, 8);
+org.joda.time.DateTime dateTime39 = dateTime37.plusDays(1330053681);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder40 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder43 = dateTimeFormatterBuilder40.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder46 = dateTimeFormatterBuilder43.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.DateTime dateTime48 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime50 = dateTime48.plusMonths(0);
+org.joda.time.Chronology chronology51 = dateTime50.getChronology();
+org.joda.time.LocalTime localTime52 = org.joda.time.LocalTime.now(chronology51);
+org.joda.time.DateTime dateTime53 = new org.joda.time.DateTime(chronology51);
+org.joda.time.DateTimeField dateTimeField54 = chronology51.secondOfMinute();
+org.joda.time.DateTimeFieldType dateTimeFieldType55 = dateTimeField54.getType();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder58 = dateTimeFormatterBuilder46.appendSignedDecimal(dateTimeFieldType55, 70, 2000);
+org.joda.time.DateTime.Property property59 = dateTime37.property(dateTimeFieldType55);
+int int60 = localTime25.get(dateTimeFieldType55);
+java.lang.String str61 = dateTimeFormatter7.print((org.joda.time.ReadablePartial)localTime25);
+
+
+Progress update: steps=4000, test inputs generated=3594, failing inputs=1      (2022-02-23T03:22:45.644Z     2,29G used)
+Progress update: steps=5000, test inputs generated=4529, failing inputs=3      (2022-02-23T03:22:51.153Z     2,22G used)Long execution time 21 sec for
+org.joda.time.DateTime dateTime2 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime4 = dateTime2.plusMonths(0);
+org.joda.time.Chronology chronology5 = dateTime4.getChronology();
+org.joda.time.LocalTime localTime6 = org.joda.time.LocalTime.fromMillisOfDay((long)2, chronology5);
+org.joda.time.DateTimeField dateTimeField7 = chronology5.millisOfDay();
+org.joda.time.LocalTime localTime8 = new org.joda.time.LocalTime(chronology5);
+org.joda.time.DateTimeFieldType dateTimeFieldType9 = org.joda.time.DateTimeFieldType.millisOfSecond();
+org.joda.time.DurationFieldType durationFieldType10 = dateTimeFieldType9.getRangeDurationType();
+java.lang.String str11 = durationFieldType10.toString();
+org.joda.time.DateTime dateTime14 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime16 = dateTime14.plusMonths(0);
+org.joda.time.Chronology chronology17 = dateTime16.getChronology();
+org.joda.time.LocalTime localTime18 = org.joda.time.LocalTime.now(chronology17);
+org.joda.time.LocalTime localTime19 = org.joda.time.LocalTime.fromMillisOfDay((long)10, chronology17);
+org.joda.time.DateTimeField dateTimeField20 = chronology17.monthOfYear();
+org.joda.time.DurationField durationField21 = chronology17.centuries();
+org.joda.time.DateTimeField dateTimeField22 = chronology17.year();
+org.joda.time.DurationField durationField23 = chronology17.seconds();
+org.joda.time.DurationField durationField24 = chronology17.weeks();
+org.joda.time.DateTimeField dateTimeField25 = chronology17.secondOfMinute();
+org.joda.time.DurationField durationField26 = durationFieldType10.getField(chronology17);
+org.joda.time.LocalTime localTime28 = localTime8.withFieldAdded(durationFieldType10, 55);
+org.joda.time.ReadablePeriod readablePeriod29 = null;
+org.joda.time.LocalTime localTime30 = localTime28.minus(readablePeriod29);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder31 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder34 = dateTimeFormatterBuilder31.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder37 = dateTimeFormatterBuilder34.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter38 = dateTimeFormatterBuilder37.toFormatter();
+org.joda.time.format.DateTimeParser dateTimeParser39 = dateTimeFormatter38.getParser();
+org.joda.time.DateTimeZone dateTimeZone41 = org.joda.time.DateTimeZone.forOffsetHours((int)(byte)0);
+long long44 = dateTimeZone41.convertLocalToUTC((long)(-1), false);
+org.joda.time.DateTime dateTime45 = org.joda.time.DateTime.now(dateTimeZone41);
+org.joda.time.MutableDateTime mutableDateTime46 = org.joda.time.MutableDateTime.now(dateTimeZone41);
+long long48 = dateTimeZone41.previousTransition((long)10);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter49 = dateTimeFormatter38.withZone(dateTimeZone41);
+java.lang.Integer int50 = dateTimeFormatter38.getPivotYear();
+java.lang.String str51 = localTime28.toString(dateTimeFormatter38);
+
+
+Progress update: steps=6000, test inputs generated=5465, failing inputs=3      (2022-02-23T03:23:17.686Z     1,75G used)
+Progress update: steps=7000, test inputs generated=6390, failing inputs=3      (2022-02-23T03:23:22.146Z     2,04G used)
+Progress update: steps=8000, test inputs generated=7318, failing inputs=4      (2022-02-23T03:23:27.707Z     2.22G used)
+Progress update: steps=9000, test inputs generated=8237, failing inputs=4      (2022-02-23T03:23:32.757Z     1,89G used)
+Progress update: steps=10000, test inputs generated=9169, failing inputs=5      (2022-02-23T03:23:39.113Z     2,46G used)
+Progress update: steps=10545, test inputs generated=9668, failing inputs=6      (2022-02-23T03:23:42.607Z     2.43G used)Long execution time 21 sec for
+org.joda.time.DurationFieldType durationFieldType0 = org.joda.time.DurationFieldType.weeks();
+org.joda.time.DateTime dateTime3 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime5 = dateTime3.plusMonths(0);
+org.joda.time.Chronology chronology6 = dateTime5.getChronology();
+org.joda.time.LocalTime localTime7 = org.joda.time.LocalTime.now(chronology6);
+org.joda.time.DateTimeField dateTimeField8 = chronology6.weekOfWeekyear();
+org.joda.time.MutableDateTime mutableDateTime9 = new org.joda.time.MutableDateTime((long)2, chronology6);
+org.joda.time.DurationField durationField10 = durationFieldType0.getField(chronology6);
+org.joda.time.LocalTime localTime11 = org.joda.time.LocalTime.now(chronology6);
+org.joda.time.LocalTime.Property property12 = localTime11.hourOfDay();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder13 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder16 = dateTimeFormatterBuilder13.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder17 = dateTimeFormatterBuilder13.appendHalfdayOfDayText();
+org.joda.time.format.DateTimeParser dateTimeParser18 = dateTimeFormatterBuilder17.toParser();
+java.util.Map<java.lang.String,org.joda.time.DateTimeZone> strMap19 = null;
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder20 = dateTimeFormatterBuilder17.appendTimeZoneName(strMap19);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder23 = dateTimeFormatterBuilder20.appendYearOfEra(70, (int)(byte)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder24 = dateTimeFormatterBuilder23.appendMonthOfYearShortText();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder25 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder28 = dateTimeFormatterBuilder25.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder29 = dateTimeFormatterBuilder25.appendHalfdayOfDayText();
+org.joda.time.DateTimeZone dateTimeZone31 = org.joda.time.DateTimeZone.forOffsetHours((int)(byte)0);
+long long34 = dateTimeZone31.convertLocalToUTC((long)(-1), false);
+org.joda.time.DateTime dateTime35 = org.joda.time.DateTime.now(dateTimeZone31);
+org.joda.time.MutableDateTime mutableDateTime36 = org.joda.time.MutableDateTime.now(dateTimeZone31);
+org.joda.time.MutableDateTime.Property property37 = mutableDateTime36.minuteOfHour();
+org.joda.time.MutableDateTime mutableDateTime38 = property37.roundFloor();
+mutableDateTime38.setMinuteOfDay(10);
+org.joda.time.DateTimeFieldType dateTimeFieldType41 = org.joda.time.DateTimeFieldType.dayOfWeek();
+org.joda.time.DateTime dateTime44 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime46 = dateTime44.plusMonths(0);
+org.joda.time.Chronology chronology47 = dateTime46.getChronology();
+org.joda.time.LocalTime localTime48 = org.joda.time.LocalTime.now(chronology47);
+org.joda.time.LocalTime localTime49 = org.joda.time.LocalTime.fromMillisOfDay((long)10, chronology47);
+org.joda.time.DateTimeField dateTimeField50 = chronology47.monthOfYear();
+org.joda.time.DurationField durationField51 = chronology47.centuries();
+boolean boolean52 = dateTimeFieldType41.isSupported(chronology47);
+org.joda.time.MutableDateTime.Property property53 = mutableDateTime38.property(dateTimeFieldType41);
+org.joda.time.DurationFieldType durationFieldType54 = dateTimeFieldType41.getRangeDurationType();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder56 = dateTimeFormatterBuilder25.appendFixedDecimal(dateTimeFieldType41, (int)'x');
+java.util.Map<java.lang.String,org.joda.time.DateTimeZone> strMap57 = null;
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder58 = dateTimeFormatterBuilder56.appendTimeZoneName(strMap57);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder61 = dateTimeFormatterBuilder58.appendFractionOfHour(21, 2000);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder63 = dateTimeFormatterBuilder58.appendDayOfWeek(12080);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder64 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder67 = dateTimeFormatterBuilder64.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder70 = dateTimeFormatterBuilder67.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder71 = dateTimeFormatterBuilder70.appendDayOfWeekText();
+org.joda.time.format.DateTimePrinter dateTimePrinter72 = dateTimeFormatterBuilder71.toPrinter();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder73 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder76 = dateTimeFormatterBuilder73.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder77 = dateTimeFormatterBuilder73.appendHalfdayOfDayText();
+org.joda.time.format.DateTimeParser dateTimeParser78 = dateTimeFormatterBuilder77.toParser();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder79 = dateTimeFormatterBuilder58.append(dateTimePrinter72, dateTimeParser78);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder80 = dateTimeFormatterBuilder24.appendOptional(dateTimeParser78);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder81 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder84 = dateTimeFormatterBuilder81.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder87 = dateTimeFormatterBuilder84.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter88 = dateTimeFormatterBuilder87.toFormatter();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder89 = dateTimeFormatterBuilder80.append(dateTimeFormatter88);
+boolean boolean90 = dateTimeFormatter88.isOffsetParsed();
+java.lang.String str91 = localTime11.toString(dateTimeFormatter88);
+
+
+Progress update: steps=11000, test inputs generated=10081, failing inputs=7      (2022-02-23T03:24:06.769Z     590M used)Long execution time 20 sec for
+org.joda.time.LocalTime localTime1 = new org.joda.time.LocalTime((-259200000L));
+org.joda.time.LocalTime.Property property2 = localTime1.millisOfDay();
+org.joda.time.DateTimeField dateTimeField3 = property2.getField();
+org.joda.time.LocalTime localTime5 = property2.addNoWrapToCopy(19);
+org.joda.time.LocalTime localTime7 = property2.addCopy((long)12060);
+org.joda.time.DateTimeFieldType dateTimeFieldType8 = org.joda.time.DateTimeFieldType.hourOfHalfday();
+org.joda.time.LocalTime.Property property9 = localTime7.property(dateTimeFieldType8);
+org.joda.time.LocalTime localTime10 = property9.roundCeilingCopy();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder11 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder14 = dateTimeFormatterBuilder11.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder17 = dateTimeFormatterBuilder14.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter18 = dateTimeFormatterBuilder17.toFormatter();
+org.joda.time.Chronology chronology19 = dateTimeFormatter18.getChronology();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter20 = dateTimeFormatter18.withZoneUTC();
+boolean boolean21 = dateTimeFormatter20.isParser();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter22 = dateTimeFormatter20.withOffsetParsed();
+java.lang.String str23 = localTime10.toString(dateTimeFormatter22);
+
+
+Progress update: steps=12000, test inputs generated=10991, failing inputs=8      (2022-02-23T03:24:31.906Z     2.03G used)
+Progress update: steps=12995, test inputs generated=11907, failing inputs=8      (2022-02-23T03:24:42.608Z     1.84G used)Long execution time 20 sec for
+org.joda.time.DateTime dateTime2 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime4 = dateTime2.plusMonths(0);
+org.joda.time.Chronology chronology5 = dateTime4.getChronology();
+org.joda.time.LocalTime localTime6 = org.joda.time.LocalTime.now(chronology5);
+org.joda.time.LocalTime localTime7 = org.joda.time.LocalTime.fromMillisOfDay((long)10, chronology5);
+org.joda.time.LocalTime localTime8 = new org.joda.time.LocalTime(chronology5);
+org.joda.time.LocalTime localTime10 = localTime8.minusMinutes((int)(byte)100);
+org.joda.time.LocalTime.Property property11 = localTime10.millisOfDay();
+java.lang.String str12 = localTime10.toString();
+org.joda.time.ReadablePeriod readablePeriod13 = null;
+org.joda.time.LocalTime localTime15 = localTime10.withPeriodAdded(readablePeriod13, (int)'a');
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder16 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder19 = dateTimeFormatterBuilder16.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder22 = dateTimeFormatterBuilder19.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter23 = dateTimeFormatterBuilder22.toFormatter();
+org.joda.time.Chronology chronology24 = dateTimeFormatter23.getChronology();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter26 = dateTimeFormatter23.withPivotYear((java.lang.Integer)2);
+org.joda.time.format.DateTimeParser dateTimeParser27 = dateTimeFormatter23.getParser();
+java.lang.String str28 = localTime10.toString(dateTimeFormatter23);
+
+
+Progress update: steps=13000, test inputs generated=11912, failing inputs=8      (2022-02-23T03:24:58.567Z     1.44G used)Long execution time 22 sec for
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder3 = dateTimeFormatterBuilder0.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder6 = dateTimeFormatterBuilder3.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder7 = dateTimeFormatterBuilder6.appendTimeZoneId();
+org.joda.time.DateTimeZone dateTimeZone9 = null;
+org.joda.time.LocalDate localDate10 = new org.joda.time.LocalDate((long)(short)1, dateTimeZone9);
+org.joda.time.DateTime dateTime11 = localDate10.toDateTimeAtCurrentTime();
+org.joda.time.LocalDate.Property property12 = localDate10.dayOfYear();
+org.joda.time.LocalDate localDate13 = property12.withMinimumValue();
+org.joda.time.LocalDate localDate15 = localDate13.withYear((int)'x');
+org.joda.time.DateTimeZone dateTimeZone17 = org.joda.time.DateTimeZone.forOffsetHours((int)(byte)0);
+long long20 = dateTimeZone17.convertLocalToUTC((long)(-1), false);
+org.joda.time.DateTime dateTime21 = localDate15.toDateTimeAtMidnight(dateTimeZone17);
+int int22 = localDate15.getDayOfYear();
+org.joda.time.DateTimeZone dateTimeZone24 = null;
+org.joda.time.LocalDate localDate25 = new org.joda.time.LocalDate((long)(short)1, dateTimeZone24);
+org.joda.time.DateTime dateTime26 = localDate25.toDateTimeAtCurrentTime();
+org.joda.time.LocalDate localDate28 = localDate25.minusWeeks((int)' ');
+org.joda.time.LocalDate localDate30 = localDate25.withWeekyear(8);
+org.joda.time.DateTimeZone dateTimeZone32 = org.joda.time.DateTimeZone.forOffsetHours((int)(byte)0);
+org.joda.time.DateMidnight dateMidnight33 = localDate30.toDateMidnight(dateTimeZone32);
+org.joda.time.LocalDate.Property property34 = localDate30.weekOfWeekyear();
+java.lang.String str35 = property34.toString();
+java.util.Locale locale36 = java.util.Locale.getDefault();
+java.lang.String str37 = property34.getAsText(locale36);
+org.joda.time.LocalDate localDate38 = property34.roundHalfCeilingCopy();
+org.joda.time.DateTimeFieldType dateTimeFieldType40 = localDate38.getFieldType(1);
+int int41 = localDate15.indexOf(dateTimeFieldType40);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder42 = dateTimeFormatterBuilder7.appendText(dateTimeFieldType40);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter43 = dateTimeFormatterBuilder7.toFormatter();
+org.joda.time.LocalTime localTime45 = new org.joda.time.LocalTime((-259200000L));
+org.joda.time.LocalTime.Property property46 = localTime45.millisOfDay();
+org.joda.time.LocalTime localTime47 = property46.withMaximumValue();
+org.joda.time.LocalTime localTime49 = localTime47.withMillisOfSecond(1);
+org.joda.time.LocalTime localTime51 = localTime47.plusMillis(2022);
+org.joda.time.LocalTime localTime53 = localTime47.plusSeconds(79);
+java.lang.String str54 = dateTimeFormatter43.print((org.joda.time.ReadablePartial)localTime47);
+
+
+Progress update: steps=14000, test inputs generated=12838, failing inputs=8      (2022-02-23T03:25:26.371Z     1.05G used)
+Progress update: steps=15000, test inputs generated=13765, failing inputs=8      (2022-02-23T03:25:31.679Z     1,21G used)
+Progress update: steps=16000, test inputs generated=14667, failing inputs=8      (2022-02-23T03:25:36.354Z     2.04G used)
+Progress update: steps=17000, test inputs generated=15585, failing inputs=10      (2022-02-23T03:25:41.783Z     2,01G used)
+Progress update: steps=18000, test inputs generated=16514, failing inputs=12      (2022-02-23T03:25:47.345Z     2.19G used)
+Progress update: steps=19000, test inputs generated=17425, failing inputs=12      (2022-02-23T03:25:52.998Z     1,01G used)
+Progress update: steps=19850, test inputs generated=18202, failing inputs=14      (2022-02-23T03:25:58.540Z     1.52G used)
+Progress update: steps=20000, test inputs generated=18342, failing inputs=14      (2022-02-23T03:25:59.135Z     1,99G used)
+Progress update: steps=21000, test inputs generated=19270, failing inputs=14      (2022-02-23T03:26:05.404Z     1,25G used)Long execution time 19 sec for
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder3 = dateTimeFormatterBuilder0.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder6 = dateTimeFormatterBuilder3.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter7 = dateTimeFormatterBuilder6.toFormatter();
+org.joda.time.Chronology chronology8 = dateTimeFormatter7.getChronology();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter9 = dateTimeFormatter7.withZoneUTC();
+org.joda.time.format.DateTimePrinter dateTimePrinter10 = dateTimeFormatter9.getPrinter();
+org.joda.time.DateTime dateTime13 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime15 = dateTime13.plusMonths(0);
+org.joda.time.Chronology chronology16 = dateTime15.getChronology();
+org.joda.time.LocalTime localTime17 = org.joda.time.LocalTime.now(chronology16);
+org.joda.time.DateTimeField dateTimeField18 = chronology16.weekOfWeekyear();
+org.joda.time.MutableDateTime mutableDateTime19 = new org.joda.time.MutableDateTime((long)2, chronology16);
+org.joda.time.DateTime dateTime21 = org.joda.time.DateTime.parse("2022");
+org.joda.time.DateTimeZone dateTimeZone22 = null;
+org.joda.time.DateTime dateTime23 = dateTime21.toDateTime(dateTimeZone22);
+org.joda.time.DateTime dateTime24 = dateTime23.withLaterOffsetAtOverlap();
+boolean boolean25 = dateTime24.isBeforeNow();
+org.joda.time.DateTime.Property property26 = dateTime24.minuteOfHour();
+mutableDateTime19.setMillis((org.joda.time.ReadableInstant)dateTime24);
+org.joda.time.MutableDateTime.Property property28 = mutableDateTime19.secondOfDay();
+int int31 = dateTimeFormatter9.parseInto((org.joda.time.ReadWritableInstant)mutableDateTime19, "+00:00", 484);
+org.joda.time.DateTime dateTime33 = org.joda.time.DateTime.parse("2022");
+org.joda.time.DateTimeZone dateTimeZone34 = null;
+org.joda.time.DateTime dateTime35 = dateTime33.toDateTime(dateTimeZone34);
+org.joda.time.DateTime dateTime36 = dateTime35.withLaterOffsetAtOverlap();
+boolean boolean37 = dateTime36.isBeforeNow();
+org.joda.time.DateTime.Property property38 = dateTime36.minuteOfHour();
+org.joda.time.DateTime dateTime39 = property38.roundHalfFloorCopy();
+org.joda.time.LocalTime localTime40 = new org.joda.time.LocalTime((java.lang.Object)dateTime39);
+org.joda.time.LocalTime localTime42 = localTime40.minusSeconds(939);
+org.joda.time.LocalTime localTime44 = localTime40.plusMinutes(487);
+org.joda.time.LocalTime.Property property45 = localTime44.millisOfSecond();
+org.joda.time.DateTime dateTime47 = org.joda.time.DateTime.parse("2022");
+org.joda.time.DateTimeZone dateTimeZone48 = null;
+org.joda.time.DateTime dateTime49 = dateTime47.toDateTime(dateTimeZone48);
+org.joda.time.Instant instant50 = dateTime49.toInstant();
+boolean boolean51 = dateTime49.isEqualNow();
+org.joda.time.DateTime dateTime53 = dateTime49.plusDays(22);
+boolean boolean54 = localTime44.equals((java.lang.Object)22);
+java.lang.String str55 = dateTimeFormatter9.print((org.joda.time.ReadablePartial)localTime44);
+
+Long execution time 22 sec for
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder3 = dateTimeFormatterBuilder0.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder6 = dateTimeFormatterBuilder3.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter7 = dateTimeFormatterBuilder6.toFormatter();
+org.joda.time.Chronology chronology8 = dateTimeFormatter7.getChronology();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter9 = dateTimeFormatter7.withZoneUTC();
+boolean boolean10 = dateTimeFormatter7.isParser();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter12 = dateTimeFormatter7.withPivotYear((java.lang.Integer)556);
+boolean boolean13 = dateTimeFormatter7.isParser();
+org.joda.time.DateTime dateTime15 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime17 = dateTime15.plusMonths(0);
+org.joda.time.Chronology chronology18 = dateTime17.getChronology();
+org.joda.time.LocalTime localTime19 = org.joda.time.LocalTime.now(chronology18);
+org.joda.time.LocalTime localTime21 = localTime19.withMillisOfDay(2);
+org.joda.time.LocalTime localTime23 = localTime19.withMinuteOfHour(22);
+org.joda.time.DateTimeZone dateTimeZone25 = org.joda.time.DateTimeZone.forOffsetHours((int)(byte)0);
+long long28 = dateTimeZone25.convertLocalToUTC((long)(-1), false);
+org.joda.time.DateTime dateTime29 = org.joda.time.DateTime.now(dateTimeZone25);
+org.joda.time.MutableDateTime mutableDateTime30 = org.joda.time.MutableDateTime.now(dateTimeZone25);
+java.lang.Object obj31 = mutableDateTime30.clone();
+org.joda.time.DateTime dateTime33 = org.joda.time.DateTime.parse("2022");
+org.joda.time.DateTimeZone dateTimeZone34 = null;
+org.joda.time.DateTime dateTime35 = dateTime33.toDateTime(dateTimeZone34);
+org.joda.time.DateTime dateTime36 = dateTime35.withLaterOffsetAtOverlap();
+boolean boolean37 = dateTime36.isBeforeNow();
+org.joda.time.DateTime.Property property38 = dateTime36.minuteOfHour();
+org.joda.time.DateTime dateTime39 = property38.roundHalfFloorCopy();
+org.joda.time.LocalTime localTime40 = new org.joda.time.LocalTime((java.lang.Object)dateTime39);
+org.joda.time.LocalTime localTime42 = localTime40.minusSeconds(939);
+org.joda.time.DateTimeFieldType dateTimeFieldType43 = org.joda.time.DateTimeFieldType.millisOfSecond();
+org.joda.time.DurationFieldType durationFieldType44 = dateTimeFieldType43.getRangeDurationType();
+java.lang.String str45 = durationFieldType44.toString();
+org.joda.time.DateTime dateTime48 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime50 = dateTime48.plusMonths(0);
+org.joda.time.Chronology chronology51 = dateTime50.getChronology();
+org.joda.time.LocalTime localTime52 = org.joda.time.LocalTime.now(chronology51);
+org.joda.time.LocalTime localTime53 = org.joda.time.LocalTime.fromMillisOfDay((long)10, chronology51);
+org.joda.time.DateTimeField dateTimeField54 = chronology51.monthOfYear();
+org.joda.time.DurationField durationField55 = chronology51.centuries();
+org.joda.time.DateTimeField dateTimeField56 = chronology51.year();
+org.joda.time.DurationField durationField57 = chronology51.seconds();
+org.joda.time.DurationField durationField58 = chronology51.weeks();
+org.joda.time.DateTimeField dateTimeField59 = chronology51.secondOfMinute();
+org.joda.time.DurationField durationField60 = durationFieldType44.getField(chronology51);
+org.joda.time.LocalTime localTime62 = localTime42.withFieldAdded(durationFieldType44, 602);
+mutableDateTime30.add(durationFieldType44, 0);
+org.joda.time.DateTime dateTime68 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime70 = dateTime68.plusMonths(0);
+org.joda.time.Chronology chronology71 = dateTime70.getChronology();
+org.joda.time.LocalTime localTime72 = org.joda.time.LocalTime.fromMillisOfDay((long)2, chronology71);
+org.joda.time.DateTimeField dateTimeField73 = chronology71.millisOfSecond();
+java.util.Locale locale74 = java.util.Locale.CANADA_FRENCH;
+org.joda.time.format.DateTimeParserBucket dateTimeParserBucket75 = new org.joda.time.format.DateTimeParserBucket((long)2032, chronology71, locale74);
+org.joda.time.DurationField durationField76 = chronology71.months();
+org.joda.time.DateTimeField dateTimeField77 = chronology71.weekyearOfCentury();
+boolean boolean78 = durationFieldType44.isSupported(chronology71);
+org.joda.time.LocalTime localTime80 = localTime23.withFieldAdded(durationFieldType44, 44347273);
+org.joda.time.LocalTime.Property property81 = localTime80.millisOfSecond();
+org.joda.time.LocalTime localTime83 = localTime80.plusHours((int)(byte)1);
+java.lang.String str84 = dateTimeFormatter7.print((org.joda.time.ReadablePartial)localTime80);
+
+
+Progress update: steps=22000, test inputs generated=20173, failing inputs=16      (2022-02-23T03:26:53.442Z     1.24G used)
+Progress update: steps=22116, test inputs generated=20280, failing inputs=16      (2022-02-23T03:26:58.541Z     1.50G used)Long execution time 22 sec for
+org.joda.time.DateTime dateTime1 = org.joda.time.DateTime.parse("2022");
+org.joda.time.DateTimeZone dateTimeZone2 = null;
+org.joda.time.DateTime dateTime3 = dateTime1.toDateTime(dateTimeZone2);
+org.joda.time.DateTime dateTime4 = dateTime3.withLaterOffsetAtOverlap();
+boolean boolean5 = dateTime4.isBeforeNow();
+org.joda.time.DateTime.Property property6 = dateTime4.minuteOfHour();
+org.joda.time.DateTime dateTime7 = property6.roundHalfFloorCopy();
+org.joda.time.LocalTime localTime8 = new org.joda.time.LocalTime((java.lang.Object)dateTime7);
+org.joda.time.LocalTime localTime10 = localTime8.minusSeconds(939);
+org.joda.time.LocalTime localTime12 = localTime8.plusMinutes(487);
+org.joda.time.LocalTime.Property property13 = localTime12.millisOfSecond();
+org.joda.time.LocalTime localTime14 = property13.roundHalfEvenCopy();
+org.joda.time.LocalTime localTime15 = property13.roundCeilingCopy();
+int int16 = localTime15.getMillisOfDay();
+org.joda.time.LocalTime localTime18 = localTime15.minusSeconds(395);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder19 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder22 = dateTimeFormatterBuilder19.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder23 = dateTimeFormatterBuilder19.appendHalfdayOfDayText();
+org.joda.time.DateTimeZone dateTimeZone25 = org.joda.time.DateTimeZone.forOffsetHours((int)(byte)0);
+long long28 = dateTimeZone25.convertLocalToUTC((long)(-1), false);
+org.joda.time.DateTime dateTime29 = org.joda.time.DateTime.now(dateTimeZone25);
+org.joda.time.MutableDateTime mutableDateTime30 = org.joda.time.MutableDateTime.now(dateTimeZone25);
+org.joda.time.MutableDateTime.Property property31 = mutableDateTime30.minuteOfHour();
+org.joda.time.MutableDateTime mutableDateTime32 = property31.roundFloor();
+mutableDateTime32.setMinuteOfDay(10);
+org.joda.time.DateTimeFieldType dateTimeFieldType35 = org.joda.time.DateTimeFieldType.dayOfWeek();
+org.joda.time.DateTime dateTime38 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime40 = dateTime38.plusMonths(0);
+org.joda.time.Chronology chronology41 = dateTime40.getChronology();
+org.joda.time.LocalTime localTime42 = org.joda.time.LocalTime.now(chronology41);
+org.joda.time.LocalTime localTime43 = org.joda.time.LocalTime.fromMillisOfDay((long)10, chronology41);
+org.joda.time.DateTimeField dateTimeField44 = chronology41.monthOfYear();
+org.joda.time.DurationField durationField45 = chronology41.centuries();
+boolean boolean46 = dateTimeFieldType35.isSupported(chronology41);
+org.joda.time.MutableDateTime.Property property47 = mutableDateTime32.property(dateTimeFieldType35);
+org.joda.time.DurationFieldType durationFieldType48 = dateTimeFieldType35.getRangeDurationType();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder50 = dateTimeFormatterBuilder19.appendFixedDecimal(dateTimeFieldType35, (int)'x');
+java.util.Map<java.lang.String,org.joda.time.DateTimeZone> strMap51 = null;
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder52 = dateTimeFormatterBuilder50.appendTimeZoneName(strMap51);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder55 = dateTimeFormatterBuilder52.appendFractionOfHour(21, 2000);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder57 = dateTimeFormatterBuilder52.appendDayOfWeek(12080);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder58 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder61 = dateTimeFormatterBuilder58.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder64 = dateTimeFormatterBuilder61.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder65 = dateTimeFormatterBuilder64.appendDayOfWeekText();
+org.joda.time.format.DateTimePrinter dateTimePrinter66 = dateTimeFormatterBuilder65.toPrinter();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder67 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder70 = dateTimeFormatterBuilder67.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder71 = dateTimeFormatterBuilder67.appendHalfdayOfDayText();
+org.joda.time.format.DateTimeParser dateTimeParser72 = dateTimeFormatterBuilder71.toParser();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder73 = dateTimeFormatterBuilder52.append(dateTimePrinter66, dateTimeParser72);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder74 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder77 = dateTimeFormatterBuilder74.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder80 = dateTimeFormatterBuilder77.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter81 = dateTimeFormatterBuilder80.toFormatter();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter83 = dateTimeFormatter81.withPivotYear((java.lang.Integer)456);
+org.joda.time.DateTime dateTime86 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime88 = dateTime86.plusMonths(0);
+org.joda.time.Chronology chronology89 = dateTime88.getChronology();
+org.joda.time.LocalTime localTime90 = org.joda.time.LocalTime.now(chronology89);
+org.joda.time.LocalTime localTime91 = org.joda.time.LocalTime.fromMillisOfDay((long)10, chronology89);
+org.joda.time.DateTimeField dateTimeField92 = chronology89.hourOfHalfday();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter93 = dateTimeFormatter81.withChronology(chronology89);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder94 = dateTimeFormatterBuilder73.append(dateTimeFormatter81);
+org.joda.time.Chronology chronology95 = dateTimeFormatter81.getChronolgy();
+boolean boolean96 = dateTimeFormatter81.isParser();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter97 = dateTimeFormatter81.withOffsetParsed();
+java.lang.String str98 = localTime15.toString(dateTimeFormatter81);
+
+
+Progress update: steps=23000, test inputs generated=21079, failing inputs=16      (2022-02-23T03:27:20.403Z     1.69G used)Long execution time 18 sec for
+org.joda.time.LocalTime localTime1 = new org.joda.time.LocalTime((long)(byte)100);
+int int2 = localTime1.getMillisOfDay();
+org.joda.time.LocalTime localTime4 = localTime1.plusHours(292);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder5 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder8 = dateTimeFormatterBuilder5.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder11 = dateTimeFormatterBuilder8.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter12 = dateTimeFormatterBuilder11.toFormatter();
+org.joda.time.Chronology chronology13 = dateTimeFormatter12.getChronology();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter14 = dateTimeFormatter12.withZoneUTC();
+boolean boolean15 = dateTimeFormatter14.isParser();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter16 = dateTimeFormatter14.withOffsetParsed();
+int int17 = dateTimeFormatter16.getDefaultYear();
+org.joda.time.Chronology chronology18 = dateTimeFormatter16.getChronology();
+java.lang.String str19 = localTime1.toString(dateTimeFormatter16);
+
+
+Progress update: steps=24000, test inputs generated=22005, failing inputs=16      (2022-02-23T03:27:45.487Z     3.48G used)Long execution time 20 sec for
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder3 = dateTimeFormatterBuilder0.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder6 = dateTimeFormatterBuilder3.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter7 = dateTimeFormatterBuilder6.toFormatter();
+org.joda.time.Chronology chronology8 = dateTimeFormatter7.getChronology();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter9 = dateTimeFormatter7.withZoneUTC();
+org.joda.time.format.DateTimePrinter dateTimePrinter10 = dateTimeFormatter7.getPrinter();
+org.joda.time.DateTimeZone dateTimeZone12 = org.joda.time.DateTimeZone.forOffsetHours((int)(byte)0);
+long long15 = dateTimeZone12.convertLocalToUTC((long)(-1), false);
+org.joda.time.DateTime dateTime16 = org.joda.time.DateTime.now(dateTimeZone12);
+org.joda.time.MutableDateTime mutableDateTime17 = org.joda.time.MutableDateTime.now(dateTimeZone12);
+org.joda.time.MutableDateTime.Property property18 = mutableDateTime17.minuteOfHour();
+org.joda.time.MutableDateTime mutableDateTime19 = property18.roundFloor();
+mutableDateTime19.setMinuteOfDay(10);
+org.joda.time.ReadablePeriod readablePeriod22 = null;
+mutableDateTime19.add(readablePeriod22);
+mutableDateTime19.addMonths((int)(short)0);
+org.joda.time.DateTime dateTime28 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime30 = dateTime28.plusMonths(0);
+org.joda.time.Chronology chronology31 = dateTime30.getChronology();
+org.joda.time.LocalTime localTime32 = org.joda.time.LocalTime.fromMillisOfDay((long)2, chronology31);
+org.joda.time.DateTimeField dateTimeField33 = chronology31.millisOfDay();
+mutableDateTime19.setChronology(chronology31);
+org.joda.time.DateTimeField dateTimeField35 = chronology31.weekyear();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter36 = dateTimeFormatter7.withChronology(chronology31);
+org.joda.time.DateTime dateTime39 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime41 = dateTime39.plusMonths(0);
+org.joda.time.Chronology chronology42 = dateTime41.getChronology();
+org.joda.time.LocalTime localTime43 = org.joda.time.LocalTime.fromMillisOfDay((long)2, chronology42);
+org.joda.time.DateTimeField dateTimeField44 = chronology42.millisOfDay();
+org.joda.time.LocalTime localTime45 = new org.joda.time.LocalTime(chronology42);
+org.joda.time.DateTimeFieldType dateTimeFieldType46 = org.joda.time.DateTimeFieldType.millisOfSecond();
+org.joda.time.DurationFieldType durationFieldType47 = dateTimeFieldType46.getRangeDurationType();
+java.lang.String str48 = durationFieldType47.toString();
+org.joda.time.DateTime dateTime51 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime53 = dateTime51.plusMonths(0);
+org.joda.time.Chronology chronology54 = dateTime53.getChronology();
+org.joda.time.LocalTime localTime55 = org.joda.time.LocalTime.now(chronology54);
+org.joda.time.LocalTime localTime56 = org.joda.time.LocalTime.fromMillisOfDay((long)10, chronology54);
+org.joda.time.DateTimeField dateTimeField57 = chronology54.monthOfYear();
+org.joda.time.DurationField durationField58 = chronology54.centuries();
+org.joda.time.DateTimeField dateTimeField59 = chronology54.year();
+org.joda.time.DurationField durationField60 = chronology54.seconds();
+org.joda.time.DurationField durationField61 = chronology54.weeks();
+org.joda.time.DateTimeField dateTimeField62 = chronology54.secondOfMinute();
+org.joda.time.DurationField durationField63 = durationFieldType47.getField(chronology54);
+org.joda.time.LocalTime localTime65 = localTime45.withFieldAdded(durationFieldType47, 55);
+org.joda.time.ReadablePeriod readablePeriod66 = null;
+org.joda.time.LocalTime localTime67 = localTime45.minus(readablePeriod66);
+java.lang.String str68 = dateTimeFormatter7.print((org.joda.time.ReadablePartial)localTime45);
+
+
+Progress update: steps=25000, test inputs generated=22914, failing inputs=17      (2022-02-23T03:28:12.174Z     2.36G used)
+Progress update: steps=25899, test inputs generated=23737, failing inputs=19      (2022-02-23T03:28:16.252Z     1,49G used)
+Progress update: steps=26000, test inputs generated=23828, failing inputs=19      (2022-02-23T03:28:16.865Z     2,00G used)Long execution time 19 sec for
+org.joda.time.LocalTime localTime1 = new org.joda.time.LocalTime(43491601970L);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder2 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder5 = dateTimeFormatterBuilder2.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder8 = dateTimeFormatterBuilder5.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter9 = dateTimeFormatterBuilder8.toFormatter();
+org.joda.time.Chronology chronology10 = dateTimeFormatter9.getChronology();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter12 = dateTimeFormatter9.withPivotYear((java.lang.Integer)2);
+java.util.Locale locale13 = dateTimeFormatter12.getLocale();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter15 = dateTimeFormatter12.withPivotYear(384);
+boolean boolean16 = dateTimeFormatter15.isPrinter();
+java.lang.String str17 = localTime1.toString(dateTimeFormatter15);
+
+
+Progress update: steps=27000, test inputs generated=24729, failing inputs=19      (2022-02-23T03:28:42.364Z     2.33G used)
+Progress update: steps=28000, test inputs generated=25648, failing inputs=20      (2022-02-23T03:28:48.102Z     2.41G used)
+Progress update: steps=29000, test inputs generated=26562, failing inputs=22      (2022-02-23T03:28:54.604Z     2,08G used)
+Progress update: steps=30000, test inputs generated=27457, failing inputs=23      (2022-02-23T03:29:01.063Z     2,95G used)
+Progress update: steps=31000, test inputs generated=28378, failing inputs=24      (2022-02-23T03:29:07.347Z     2.43G used)
+Progress update: steps=31659, test inputs generated=28984, failing inputs=27      (2022-02-23T03:29:16.253Z     1,58G used)Long execution time 19 sec for
+org.joda.time.DateTime dateTime1 = org.joda.time.DateTime.parse("2022");
+org.joda.time.DurationFieldType durationFieldType2 = org.joda.time.DurationFieldType.weeks();
+org.joda.time.DateTime dateTime5 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime7 = dateTime5.plusMonths(0);
+org.joda.time.Chronology chronology8 = dateTime7.getChronology();
+org.joda.time.LocalTime localTime9 = org.joda.time.LocalTime.now(chronology8);
+org.joda.time.DateTimeField dateTimeField10 = chronology8.weekOfWeekyear();
+org.joda.time.MutableDateTime mutableDateTime11 = new org.joda.time.MutableDateTime((long)2, chronology8);
+org.joda.time.DurationField durationField12 = durationFieldType2.getField(chronology8);
+org.joda.time.DateTime dateTime14 = dateTime1.withFieldAdded(durationFieldType2, (int)(short)100);
+org.joda.time.DateTime dateTime16 = dateTime14.withWeekyear((int)(short)-1);
+org.joda.time.LocalTime localTime17 = dateTime16.toLocalTime();
+org.joda.time.LocalTime localTime19 = localTime17.withMillisOfSecond(539);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder20 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder23 = dateTimeFormatterBuilder20.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder26 = dateTimeFormatterBuilder23.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter27 = dateTimeFormatterBuilder26.toFormatter();
+org.joda.time.format.DateTimeParser dateTimeParser28 = dateTimeFormatter27.getParser();
+org.joda.time.DateTimeZone dateTimeZone30 = org.joda.time.DateTimeZone.forOffsetHours((int)(byte)0);
+long long33 = dateTimeZone30.convertLocalToUTC((long)(-1), false);
+org.joda.time.DateTime dateTime34 = org.joda.time.DateTime.now(dateTimeZone30);
+org.joda.time.MutableDateTime mutableDateTime35 = org.joda.time.MutableDateTime.now(dateTimeZone30);
+long long37 = dateTimeZone30.previousTransition((long)10);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter38 = dateTimeFormatter27.withZone(dateTimeZone30);
+int int39 = dateTimeFormatter38.getDefaultYear();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter40 = dateTimeFormatter38.withZoneUTC();
+org.joda.time.format.DateTimeParser dateTimeParser41 = dateTimeFormatter38.getParser();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter43 = dateTimeFormatter38.withPivotYear(322);
+java.lang.String str44 = localTime17.toString(dateTimeFormatter43);
+
+
+Progress update: steps=32000, test inputs generated=29289, failing inputs=28      (2022-02-23T03:29:32.554Z     2.73G used)Long execution time 19 sec for
+org.joda.time.LocalTime localTime1 = new org.joda.time.LocalTime((-259200000L));
+org.joda.time.LocalTime.Property property2 = localTime1.millisOfDay();
+boolean boolean3 = property2.isLeap();
+org.joda.time.LocalTime localTime4 = property2.roundHalfCeilingCopy();
+org.joda.time.LocalTime localTime6 = property2.addWrapFieldToCopy(796);
+org.joda.time.LocalTime localTime7 = property2.roundHalfCeilingCopy();
+org.joda.time.LocalTime localTime8 = property2.roundHalfCeilingCopy();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder9 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder12 = dateTimeFormatterBuilder9.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder13 = dateTimeFormatterBuilder9.appendHalfdayOfDayText();
+org.joda.time.format.DateTimeParser dateTimeParser14 = dateTimeFormatterBuilder13.toParser();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder16 = dateTimeFormatterBuilder13.appendSecondOfDay(1970);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder18 = dateTimeFormatterBuilder16.appendHourOfDay(201);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder19 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder22 = dateTimeFormatterBuilder19.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder25 = dateTimeFormatterBuilder22.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter26 = dateTimeFormatterBuilder25.toFormatter();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter28 = dateTimeFormatter26.withPivotYear((java.lang.Integer)456);
+java.util.Locale locale29 = dateTimeFormatter26.getLocale();
+org.joda.time.DateTime dateTime31 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime33 = dateTime31.plusMonths(0);
+org.joda.time.Chronology chronology34 = dateTime33.getChronology();
+org.joda.time.LocalTime localTime35 = org.joda.time.LocalTime.now(chronology34);
+org.joda.time.DateTimeField dateTimeField36 = chronology34.weekyear();
+org.joda.time.DateTimeField dateTimeField37 = chronology34.halfdayOfDay();
+org.joda.time.DurationField durationField38 = chronology34.halfdays();
+org.joda.time.DurationField durationField39 = chronology34.hours();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter40 = dateTimeFormatter26.withChronology(chronology34);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder41 = dateTimeFormatterBuilder18.append(dateTimeFormatter40);
+java.lang.String str42 = localTime8.toString(dateTimeFormatter40);
+
+
+Progress update: steps=33000, test inputs generated=30206, failing inputs=31      (2022-02-23T03:29:57.887Z     2.13G used)
+Progress update: steps=34000, test inputs generated=31111, failing inputs=32      (2022-02-23T03:30:03.309Z     1,53G used)
+Progress update: steps=35000, test inputs generated=32002, failing inputs=32      (2022-02-23T03:30:10.469Z     2,34G used)
+Progress update: steps=36000, test inputs generated=32913, failing inputs=32      (2022-02-23T03:30:16.409Z     2,24G used)
+Progress update: steps=37000, test inputs generated=33830, failing inputs=33      (2022-02-23T03:30:23.093Z     2.07G used)
+Progress update: steps=37384, test inputs generated=34165, failing inputs=34      (2022-02-23T03:30:30.249Z     2,28G used)Long execution time 19 sec for
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder3 = dateTimeFormatterBuilder0.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder6 = dateTimeFormatterBuilder3.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder7 = dateTimeFormatterBuilder6.appendDayOfWeekText();
+org.joda.time.format.DateTimePrinter dateTimePrinter8 = dateTimeFormatterBuilder7.toPrinter();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder11 = dateTimeFormatterBuilder7.appendFractionOfDay(255, 100);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter12 = dateTimeFormatterBuilder11.toFormatter();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter13 = dateTimeFormatterBuilder11.toFormatter();
+org.joda.time.format.DateTimeParser dateTimeParser14 = dateTimeFormatter13.getParser();
+boolean boolean15 = dateTimeFormatter13.isPrinter();
+org.joda.time.DurationFieldType durationFieldType16 = org.joda.time.DurationFieldType.weeks();
+org.joda.time.DateTime dateTime19 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime21 = dateTime19.plusMonths(0);
+org.joda.time.Chronology chronology22 = dateTime21.getChronology();
+org.joda.time.LocalTime localTime23 = org.joda.time.LocalTime.now(chronology22);
+org.joda.time.DateTimeField dateTimeField24 = chronology22.weekOfWeekyear();
+org.joda.time.MutableDateTime mutableDateTime25 = new org.joda.time.MutableDateTime((long)2, chronology22);
+org.joda.time.DurationField durationField26 = durationFieldType16.getField(chronology22);
+org.joda.time.LocalTime localTime27 = org.joda.time.LocalTime.now(chronology22);
+org.joda.time.LocalTime.Property property28 = localTime27.hourOfDay();
+org.joda.time.LocalTime localTime30 = localTime27.minusMinutes(284);
+java.lang.String str31 = dateTimeFormatter13.print((org.joda.time.ReadablePartial)localTime30);
+
+Long execution time 19 sec for
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder3 = dateTimeFormatterBuilder0.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder6 = dateTimeFormatterBuilder3.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter7 = dateTimeFormatterBuilder6.toFormatter();
+org.joda.time.Chronology chronology8 = dateTimeFormatter7.getChronology();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter9 = dateTimeFormatter7.withZoneUTC();
+org.joda.time.format.DateTimeFormatter dateTimeFormatter10 = dateTimeFormatter7.withZoneUTC();
+boolean boolean11 = dateTimeFormatter10.isPrinter();
+boolean boolean12 = dateTimeFormatter10.isPrinter();
+org.joda.time.LocalTime localTime14 = new org.joda.time.LocalTime((-259200000L));
+org.joda.time.LocalTime.Property property15 = localTime14.millisOfDay();
+org.joda.time.DateTimeField dateTimeField16 = property15.getField();
+org.joda.time.LocalTime localTime18 = property15.addNoWrapToCopy(19);
+org.joda.time.LocalTime localTime20 = property15.addCopy((long)12060);
+org.joda.time.LocalTime localTime22 = property15.addNoWrapToCopy(618);
+java.lang.String str23 = dateTimeFormatter10.print((org.joda.time.ReadablePartial)localTime22);
+
+
+Progress update: steps=38000, test inputs generated=34727, failing inputs=34      (2022-02-23T03:31:08.063Z     2,59G used)Long execution time 19 sec for
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder0 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder3 = dateTimeFormatterBuilder0.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder4 = dateTimeFormatterBuilder0.appendHalfdayOfDayText();
+org.joda.time.format.DateTimeParser dateTimeParser5 = dateTimeFormatterBuilder4.toParser();
+java.util.Map<java.lang.String,org.joda.time.DateTimeZone> strMap6 = null;
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder7 = dateTimeFormatterBuilder4.appendTimeZoneName(strMap6);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder10 = dateTimeFormatterBuilder7.appendYearOfEra(70, (int)(byte)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder11 = dateTimeFormatterBuilder10.appendMonthOfYearShortText();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder12 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder15 = dateTimeFormatterBuilder12.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder16 = dateTimeFormatterBuilder12.appendHalfdayOfDayText();
+org.joda.time.DateTimeZone dateTimeZone18 = org.joda.time.DateTimeZone.forOffsetHours((int)(byte)0);
+long long21 = dateTimeZone18.convertLocalToUTC((long)(-1), false);
+org.joda.time.DateTime dateTime22 = org.joda.time.DateTime.now(dateTimeZone18);
+org.joda.time.MutableDateTime mutableDateTime23 = org.joda.time.MutableDateTime.now(dateTimeZone18);
+org.joda.time.MutableDateTime.Property property24 = mutableDateTime23.minuteOfHour();
+org.joda.time.MutableDateTime mutableDateTime25 = property24.roundFloor();
+mutableDateTime25.setMinuteOfDay(10);
+org.joda.time.DateTimeFieldType dateTimeFieldType28 = org.joda.time.DateTimeFieldType.dayOfWeek();
+org.joda.time.DateTime dateTime31 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime33 = dateTime31.plusMonths(0);
+org.joda.time.Chronology chronology34 = dateTime33.getChronology();
+org.joda.time.LocalTime localTime35 = org.joda.time.LocalTime.now(chronology34);
+org.joda.time.LocalTime localTime36 = org.joda.time.LocalTime.fromMillisOfDay((long)10, chronology34);
+org.joda.time.DateTimeField dateTimeField37 = chronology34.monthOfYear();
+org.joda.time.DurationField durationField38 = chronology34.centuries();
+boolean boolean39 = dateTimeFieldType28.isSupported(chronology34);
+org.joda.time.MutableDateTime.Property property40 = mutableDateTime25.property(dateTimeFieldType28);
+org.joda.time.DurationFieldType durationFieldType41 = dateTimeFieldType28.getRangeDurationType();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder43 = dateTimeFormatterBuilder12.appendFixedDecimal(dateTimeFieldType28, (int)'x');
+java.util.Map<java.lang.String,org.joda.time.DateTimeZone> strMap44 = null;
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder45 = dateTimeFormatterBuilder43.appendTimeZoneName(strMap44);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder48 = dateTimeFormatterBuilder45.appendFractionOfHour(21, 2000);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder50 = dateTimeFormatterBuilder45.appendDayOfWeek(12080);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder51 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder54 = dateTimeFormatterBuilder51.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder57 = dateTimeFormatterBuilder54.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder58 = dateTimeFormatterBuilder57.appendDayOfWeekText();
+org.joda.time.format.DateTimePrinter dateTimePrinter59 = dateTimeFormatterBuilder58.toPrinter();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder60 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder63 = dateTimeFormatterBuilder60.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder64 = dateTimeFormatterBuilder60.appendHalfdayOfDayText();
+org.joda.time.format.DateTimeParser dateTimeParser65 = dateTimeFormatterBuilder64.toParser();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder66 = dateTimeFormatterBuilder45.append(dateTimePrinter59, dateTimeParser65);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder67 = dateTimeFormatterBuilder11.appendOptional(dateTimeParser65);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder68 = new org.joda.time.format.DateTimeFormatterBuilder();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder71 = dateTimeFormatterBuilder68.appendFractionOfHour(1, (int)(short)-1);
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder74 = dateTimeFormatterBuilder71.appendYearOfEra(22167561, (int)(short)1);
+org.joda.time.format.DateTimeFormatter dateTimeFormatter75 = dateTimeFormatterBuilder74.toFormatter();
+org.joda.time.format.DateTimeFormatterBuilder dateTimeFormatterBuilder76 = dateTimeFormatterBuilder67.append(dateTimeFormatter75);
+boolean boolean77 = dateTimeFormatter75.isOffsetParsed();
+org.joda.time.format.DateTimeParser dateTimeParser78 = dateTimeFormatter75.getParser();
+org.joda.time.DateTime dateTime80 = new org.joda.time.DateTime((long)(byte)10);
+org.joda.time.DateTime dateTime82 = dateTime80.plusMonths(0);
+org.joda.time.Chronology chronology83 = dateTime82.getChronology();
+org.joda.time.LocalTime localTime84 = org.joda.time.LocalTime.now(chronology83);
+int int85 = localTime84.getSecondOfMinute();
+org.joda.time.LocalTime localTime87 = localTime84.minusHours((int)'x');
+org.joda.time.LocalTime.Property property88 = localTime84.hourOfDay();
+org.joda.time.ReadablePeriod readablePeriod89 = null;
+org.joda.time.LocalTime localTime90 = localTime84.minus(readablePeriod89);
+java.lang.String str91 = dateTimeFormatter75.print((org.joda.time.ReadablePartial)localTime90);
+
+
+Progress update: steps=38285, test inputs generated=34990, failing inputs=35      (2022-02-23T03:31:29.142Z     1.49G used)
+Normal method executions: 27728924
+Exceptional method executions: 10960
+
+Average method execution time (normal termination):      0.0157
+Average method execution time (exceptional termination): 1.05
+Approximate memory usage 1.49G
+Explorer = ForwardGenerator(steps: 38285, null steps: 3295, num_sequences_generated: 34990;
+    allSequences: 34990, regresson seqs: 4957, error seqs: 35=35=35, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 29998;
+    runtimePrimitivesSeen:3049)
+
+Error-revealing test output:
+Error-revealing test count: 35
+Writing error-revealing JUnit tests...
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/ErrorTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 2957 regression sequences.
+
+Regression test output:
+Regression test count: 2957
+Writing regression JUnit tests...
+                                                                                                                                                                                                       Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest0.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest1.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest2.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest3.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest4.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest5.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest6.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest7.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest8.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest9.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest10.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest11.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest12.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest13.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest14.java
+Created file /experiment/results/randoop10/time-org.joda.time.format.DateTimeFormatterBuilder-org.joda.time.format.DateTimeFormatterBuilder$TextField-20/RegressionTest.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  org.joda.time.field.AbstractReadableInstantFieldProperty.getAsString()
+  Possibly flaky:  org.joda.time.base.AbstractPartial.toDateTime(org.joda.time.ReadableInstant)
+  Possibly flaky:  org.joda.time.base.AbstractPartial.isBefore(org.joda.time.ReadablePartial)
+  Possibly flaky:  org.joda.time.base.AbstractDateTime.getYear()
+  Possibly flaky:  org.joda.time.ReadablePartial.size()
+  Possibly flaky:  org.joda.time.ReadableInstant.isAfter(org.joda.time.ReadableInstant)
+  Possibly flaky:  org.joda.time.MutableDateTime.setRounding(org.joda.time.DateTimeField)
+  Possibly flaky:  org.joda.time.MutableDateTime.addWeekyears(int)
+  Possibly flaky:  org.joda.time.MutableDateTime.add(org.joda.time.DurationFieldType,int)
+  Possibly flaky:  org.joda.time.LocalTime.getValue(int)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 42).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .
