@@ -43,6 +43,9 @@ do
     elif [[ "$tool" == "randoop-caller5" ]]; then
         echo "Find the compiled test class. tool: Randoop, execution id: $execution_id, project: $project, target class: $caller_class"
         resultDir="results/randoop5/$project-$caller_class-$execution_id"
+    elif [[ "$tool" == "randoop" ]]; then
+        echo "Detecting the generated test suite by Randoop. execution id: $execution_id, project: $project, caller class: $caller_class, callee class: $callee_class"
+        resultDir="results/randoop10/$project-$caller_class-$callee_class-$execution_id"
     else
         echo "WARNING: The tool $tool does not exist."
         continue
@@ -96,7 +99,7 @@ do
                     fi
                 done
             done
-
+            
             # Add @Ignore to flaky tests
             if (( ${#flaky_tests[@]} )); then
                 for mainTest in `find $resultDir -name "*_ESTest.java" -type f`; do

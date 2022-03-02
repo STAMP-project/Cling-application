@@ -25,6 +25,9 @@ do
     elif [[ "$tool" == "randoop-callee5" ]]; then
         echo "Detecting the generated test suite by Randoop. execution id: $execution_id, project: $project, target class: $callee_class"
         resultDir="results/randoop5/$project-$callee_class-$execution_id"
+    elif [[ "$tool" == "randoop" ]]; then
+        echo "Detecting the generated test suite by Randoop. execution id: $execution_id, project: $project, caller class: $caller_class, callee class: $callee_class"
+        resultDir="results/randoop10/$project-$caller_class-$callee_class-$execution_id"
     fi
 
 

@@ -58,6 +58,8 @@ elif [[ "$tool" == "randoop-callee5" ]]; then
     executionLogDir="logs/pit/randoopcallee5-$project-$caller_class-$callee_class-$execution_id.txt"
 elif [[ "$tool" == "randoop-caller5" ]]; then
     executionLogDir="logs/pit/randoopcaller5-$project-$caller_class-$callee_class-$execution_id.txt"
+elif [[ "$tool" == "randoop" ]]; then
+    executionLogDir="logs/pit/randoop10-$project-$caller_class-$callee_class-$execution_id.txt"
 fi
 
 

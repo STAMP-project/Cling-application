@@ -39,6 +39,10 @@ do
         echo "Applying PIT on the generated test suite by Randoop. execution id: $execution_id, project: $project, target class: $caller_class"
         resultDir="results/randoop5/$project-$caller_class-$execution_id"
         outDir="data/rq2/pit/$tool/$project-$caller_class-$callee_class-$execution_id"
+    elif [[ "$tool" == "randoop" ]]; then
+        echo "Applying PIT on the generated test suite by Randoop. execution id: $execution_id, project: $project, caller class: $caller_class, callee class: $callee_class"
+        resultDir="results/randoop10/$project-$caller_class-$callee_class-$execution_id"
+        outDir="data/rq2/pit/randoop10/$project-$caller_class-$callee_class-$execution_id"
   else
     echo "WARNING: coud not find tool $tool"
   fi
