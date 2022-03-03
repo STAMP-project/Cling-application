@@ -20,7 +20,7 @@ toolTyoe=$2
 #     . scripts/test/compile_tests.sh
 # else
 #     echo "Re-compile the modified tests"
-#     . scripts/test/compile_modified_randoop_tests.sh
+    . scripts/test/compile_modified_randoop_tests.sh
 # fi
 
 
