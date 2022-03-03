@@ -7,7 +7,7 @@ toolTyoe=$2
 #     . scripts/test/prepare_tests.sh
 #     # compile the generated tests
 #     echo "compiling the generated tests"
-#     . scripts/test/compile_tests.sh
+    . scripts/test/compile_tests.sh
 # fi
 
 # detect and remove flaky tests from the generated test suites
@@ -20,7 +20,7 @@ toolTyoe=$2
 #     . scripts/test/compile_tests.sh
 # else
 #     echo "Re-compile the modified tests"
-    . scripts/test/compile_modified_randoop_tests.sh
+    # . scripts/test/compile_modified_randoop_tests.sh
 # fi
 
 
