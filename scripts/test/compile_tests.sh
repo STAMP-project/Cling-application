@@ -58,6 +58,12 @@ do
               numberOfRegressionTests=$((numberOfRegressionTests-1))
               break
             fi
+
+
+            while (( $(pgrep -l java | wc -l) >= 21 ))
+            do
+                sleep 1
+            done
           done 
            # Here, we need to check if all of the compilations are done
            while (( $(pgrep -l java | wc -l) >= 1 ))

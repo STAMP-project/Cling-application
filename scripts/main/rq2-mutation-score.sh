@@ -25,4 +25,4 @@ toolTyoe=$2
 
 
 echo "Running pitest"
-. scripts/mutation/mutation-score-calculator.sh $LIMIT
+# . scripts/mutation/mutation-score-calculator.sh $LIMIT
