@@ -52,7 +52,7 @@ do
             if [[ -f "$resultDir/RegressionTest$numberOfRegressionTests.java" ]]; then
               # compile detected regression test test
               detectedTest="$resultDir/RegressionTest$numberOfRegressionTests.java"
-              javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest &
+              javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest
               numberOfRegressionTests=$((numberOfRegressionTests+1))
             else
               numberOfRegressionTests=$((numberOfRegressionTests-1))
@@ -71,7 +71,7 @@ do
                 sleep 1
             done
             echo "Compilation of regression tests are done. Compile the main test"
-            javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" "$resultDir/RegressionTest.java" &
+            javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" "$resultDir/RegressionTest.java" 
 
             # Now, lets move to error tests
             mainErrorTest="$resultDir/ErrorTest.java"
@@ -88,7 +88,7 @@ do
               if [[ -f "$resultDir/ErrorTest$numberOfRegressionTests.java" ]]; then
                 # compile detected regression test test
                 detectedTest="$resultDir/ErrorTest$numberOfRegressionTests.java"
-                javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest &
+                javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest
                 numberOfErrorTests=$((numberOfErrorTests+1))
               else
                 numberOfErrorTests=$((numberOfErrorTests-1))
@@ -102,7 +102,7 @@ do
             done
 
             echo "Compilation of error tests are done. Compile the main test"
-            javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" "$mainErrorTest" &
+            javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" "$mainErrorTest"
         else
           echo "Compiling scaffolding tests"
           for scaffoldingTest in `find $resultDir -name "*_scaffolding.java" -type f`; do
