@@ -87,9 +87,9 @@ do
             numberOfErrorTests=0
             while :
             do
-              if [[ -f "$resultDir/ErrorTest$numberOfRegressionTests.java" ]]; then
+              if [[ -f "$resultDir/ErrorTest$numberOfErrorTests.java" ]]; then
                 # compile detected regression test test
-                detectedTest="$resultDir/ErrorTest$numberOfRegressionTests.java"
+                detectedTest="$resultDir/ErrorTest$numberOfErrorTests.java"
                 echo "Compiling sub-test: $detectedTest"
                 timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest
                 numberOfErrorTests=$((numberOfErrorTests+1))
