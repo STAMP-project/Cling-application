@@ -53,6 +53,7 @@ do
             if [[ -f "$resultDir/RegressionTest$numberOfRegressionTests.java" ]]; then
               # compile detected regression test test
               detectedTest="$resultDir/RegressionTest$numberOfRegressionTests.java"
+              echo "Compiling sub-test: $detectedTest"
               timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest
               numberOfRegressionTests=$((numberOfRegressionTests+1))
             else
@@ -89,6 +90,7 @@ do
               if [[ -f "$resultDir/ErrorTest$numberOfRegressionTests.java" ]]; then
                 # compile detected regression test test
                 detectedTest="$resultDir/ErrorTest$numberOfRegressionTests.java"
+                echo "Compiling sub-test: $detectedTest"
                 timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest
                 numberOfErrorTests=$((numberOfErrorTests+1))
               else
