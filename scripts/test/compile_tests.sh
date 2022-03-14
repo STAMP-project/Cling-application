@@ -1,4 +1,5 @@
 INPUT="subject_generator/subjects.csv"
+TIMEOUT=10m
 OLDIFS=$IFS
 IFS=,
 [ ! -f $INPUT ] && { echo "$INPUT file not found"; }
@@ -52,7 +53,7 @@ do
             if [[ -f "$resultDir/RegressionTest$numberOfRegressionTests.java" ]]; then
               # compile detected regression test test
               detectedTest="$resultDir/RegressionTest$numberOfRegressionTests.java"
-              javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest
+              timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest
               numberOfRegressionTests=$((numberOfRegressionTests+1))
             else
               numberOfRegressionTests=$((numberOfRegressionTests-1))
@@ -65,13 +66,13 @@ do
                 sleep 1
             done
           done 
-           # Here, we need to check if all of the compilations are done
-           while (( $(pgrep -l java | wc -l) >= 1 ))
-            do
-                sleep 1
-            done
+          #  # Here, we need to check if all of the compilations are done
+          #  while (( $(pgrep -l java | wc -l) >= 1 ))
+          #   do
+          #       sleep 1
+          #   done
             echo "Compilation of regression tests are done. Compile the main test"
-            javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" "$resultDir/RegressionTest.java" 
+            timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" "$resultDir/RegressionTest.java" 
 
             # Now, lets move to error tests
             mainErrorTest="$resultDir/ErrorTest.java"
@@ -88,7 +89,7 @@ do
               if [[ -f "$resultDir/ErrorTest$numberOfRegressionTests.java" ]]; then
                 # compile detected regression test test
                 detectedTest="$resultDir/ErrorTest$numberOfRegressionTests.java"
-                javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest
+                timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest
                 numberOfErrorTests=$((numberOfErrorTests+1))
               else
                 numberOfErrorTests=$((numberOfErrorTests-1))
@@ -96,22 +97,22 @@ do
               fi
             done
             # Here, we need to check if all of the compilations are done
-            while (( $(pgrep -l java | wc -l) >= 1 ))
-            do
-                sleep 1
-            done
+            # while (( $(pgrep -l java | wc -l) >= 1 ))
+            # do
+            #     sleep 1
+            # done
 
             echo "Compilation of error tests are done. Compile the main test"
-            javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" "$mainErrorTest"
+            timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" "$mainErrorTest"
         else
           echo "Compiling scaffolding tests"
           for scaffoldingTest in `find $resultDir -name "*_scaffolding.java" -type f`; do
-            javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $scaffoldingTest &
+            timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $scaffoldingTest &
           done
 
           echo "Compiling the main test class"
           for mainTest in `find $resultDir -name "*_ESTest.java" -type f`; do
-            javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" $mainTest &
+            timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" $mainTest &
           done
           sleep 1
         fi
