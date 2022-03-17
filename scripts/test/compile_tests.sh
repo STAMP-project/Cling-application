@@ -42,38 +42,38 @@ do
     if [[ -d $resultDir ]]; then
 
         if [[ "$tool" == randoop* ]]; then
-          if [[ -f "$resultDir/RegressionTest.class" ]]; then
-            echo "Tests in $resultDir are already compiled"
-            continue
-          fi
-          echo "Compiling Regression tests"
-          numberOfRegressionTests=0
-          while :
-          do
-            if [[ -f "$resultDir/RegressionTest$numberOfRegressionTests.java" ]]; then
-              # compile detected regression test test
-              detectedTest="$resultDir/RegressionTest$numberOfRegressionTests.java"
-              echo "Compiling sub-test: $detectedTest"
-              timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest
-              numberOfRegressionTests=$((numberOfRegressionTests+1))
-            else
-              numberOfRegressionTests=$((numberOfRegressionTests-1))
-              break
-            fi
+          # if [[ -f "$resultDir/RegressionTest.class" ]]; then
+          #   echo "Tests in $resultDir are already compiled"
+          #   continue
+          # fi
+          # echo "Compiling Regression tests"
+          # numberOfRegressionTests=0
+          # while :
+          # do
+          #   if [[ -f "$resultDir/RegressionTest$numberOfRegressionTests.java" ]]; then
+          #     # compile detected regression test test
+          #     detectedTest="$resultDir/RegressionTest$numberOfRegressionTests.java"
+          #     echo "Compiling sub-test: $detectedTest"
+          #     timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$(cat libs/test_execution/classpath.txt)" $detectedTest
+          #     numberOfRegressionTests=$((numberOfRegressionTests+1))
+          #   else
+          #     numberOfRegressionTests=$((numberOfRegressionTests-1))
+          #     break
+          #   fi
 
 
-            while (( $(pgrep -l java | wc -l) >= 21 ))
-            do
-                sleep 1
-            done
-          done 
-          #  # Here, we need to check if all of the compilations are done
-          #  while (( $(pgrep -l java | wc -l) >= 1 ))
+          #   while (( $(pgrep -l java | wc -l) >= 21 ))
           #   do
           #       sleep 1
           #   done
-            echo "Compilation of regression tests are done. Compile the main test"
-            timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" "$resultDir/RegressionTest.java" 
+          # done 
+          # #  # Here, we need to check if all of the compilations are done
+          # #  while (( $(pgrep -l java | wc -l) >= 1 ))
+          # #   do
+          # #       sleep 1
+          # #   done
+          #   echo "Compilation of regression tests are done. Compile the main test"
+          #   timeout -k $TIMEOUT $TIMEOUT javac -cp "$preparedCPs:$resultDir:$(cat libs/test_execution/classpath.txt)" "$resultDir/RegressionTest.java" 
 
             # Now, lets move to error tests
             mainErrorTest="$resultDir/ErrorTest.java"

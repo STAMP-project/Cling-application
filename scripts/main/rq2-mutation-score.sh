@@ -7,7 +7,7 @@ toolTyoe=$2
 #     . scripts/test/prepare_tests.sh
 #     # compile the generated tests
 #     echo "compiling the generated tests"
-    # . scripts/test/compile_tests.sh
+    . scripts/test/compile_tests.sh
 # fi
 
 # detect and remove flaky tests from the generated test suites
@@ -25,4 +25,4 @@ toolTyoe=$2
 
 
 echo "Running pitest"
-. scripts/mutation/mutation-score-calculator.sh $LIMIT
+# . scripts/mutation/mutation-score-calculator.sh $LIMIT
