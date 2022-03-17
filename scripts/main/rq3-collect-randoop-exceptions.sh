@@ -20,6 +20,9 @@ do
     # echo "Find the compiled test class. tool: $tool, execution id: $execution_id, project: $project, target class: $callee_class"
     resultDir="results/randoop5/$project-$callee_class-$execution_id"
     testClass="ErrorTest"
+  elif [[ "$tool" == "randoop" ]]; then
+    resultDir="results/randoop10/$project-$caller_class-$callee_class-$execution_id"
+    testClass="ErrorTest"
   else
     continue
   fi
