@@ -31,6 +31,7 @@ then
 
     # Add @Ignore to failing tests
     for mainTest in `find $resultDir -name "*_ESTest.java" -type f`; do
+          echo "Add ignore to $failedTest in $mainTest"
           java -jar tools/IgnoreAdder.jar $mainTest "$failedTest"
           CPEntriesDir="projects/$project/cp-entries.txt"
           CPEntriesContent=$( cat $CPEntriesDir)
