@@ -79,6 +79,7 @@ if [[ "$tool" != randoop* ]]; then
 
 else 
     # Run PIT
+    echo "Run PIT on Randoop cases"
     java -cp $classPaths org.pitest.mutationtest.commandline.MutationCoverageReport \
     --reportDir $outDir \
     --targetClasses $callee_class \
