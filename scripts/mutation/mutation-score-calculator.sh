@@ -64,7 +64,7 @@ do
 done < $INPUT
 
 
-  while (( $(pgrep -l java | wc -l) > 1 ))
+  while (( $(pgrep -l java | wc -l) > 0 ))
   do
     sleep 1
   done
