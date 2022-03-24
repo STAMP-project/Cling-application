@@ -32,6 +32,8 @@ do
     elif [[ "$tool" == "randoop-caller5" ]]; then
         resultDir="results/randoop5/$project-$caller_class-$execution_id"
         # echo $resultDir
+    elif [[ "$tool" == "randoop" ]]; then
+         resultDir="results/randoop10/$project-$caller_class-$callee_class-$execution_id"
     else
         # CBC coverage is only for Cling and evosuite or Randoop on caller class
         continue
