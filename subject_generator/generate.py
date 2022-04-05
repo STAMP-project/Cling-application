@@ -4,10 +4,10 @@ import csv
 dir_path = os.path.dirname(os.path.realpath(__file__))
 csvDir = os.path.join(dir_path,"selected-class-pairs.csv")
 
-# tools = ["cling","evosuite-callee5","evosuite-caller5","randoop"]
-tools = ["randoop"]
+tools = ["cling","evosuite-callee5","evosuite-caller5","randoop"]
+# tools = ["randoop"]
 
-rounds = range(1, 6)
+rounds = range(1, 21)
 
 fieldnames = ['tool', 'execution_id', 'project', 'caller_class', 'callee_class', 'type']
 
