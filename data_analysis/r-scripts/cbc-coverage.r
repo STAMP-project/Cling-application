@@ -12,7 +12,6 @@ source('data_analysis/r-scripts/applyfriedmantest.R')
 results <- getResultsOfRQ1() %>%
   filter(tool != "randoop-caller5")
 
-
 results<- results %>%
   filter(total_cb > 0) %>%
   mutate(CBC = if_else(total_cb > 0, covered_cb / total_cb, NaN))
@@ -34,7 +33,8 @@ show(results %>%
        group_by(tool, project) %>%
        summarise(avg = mean(CBC),
                  median = median(CBC),
-                 IQR = IQR(CBC)))
+                 IQR = IQR(CBC))%>%
+       arrange(tool, avg))
 
 # Comparison per case
 
