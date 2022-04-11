@@ -78,8 +78,8 @@ with open(os.path.join(data_path, "killedM-C-R.csv"), 'r') as _filehandler:
         tableWriter.writerow(finalRow)
 
 
-#C - RanE - RanR
-with open(os.path.join(data_path, "killedM-C-RanE-RanR.csv"), 'r') as _filehandler:
+#C - RanE - RanR - Ran10
+with open(os.path.join(data_path, "killedM-C-RanE-RanR-Ran10.csv"), 'r') as _filehandler:
     csv_file_reader = csv.DictReader(_filehandler)
     for row in csv_file_reader:
         project= row["project"]
@@ -94,7 +94,7 @@ with open(os.path.join(data_path, "killedM-C-RanE-RanR.csv"), 'r') as _filehandl
        
         perc=float(killedMutants)/float(totalM)
         print perc
-        finalRow=['CRanERanR',project,exeId,caller,callee,totalM,killedMutants,perc]
+        finalRow=['CRanERanRRan10',project,exeId,caller,callee,totalM,killedMutants,perc]
         tableWriter.writerow(finalRow)
 
 
@@ -137,6 +137,27 @@ with open(os.path.join(data_path, "killedM-C-RanR.csv"), 'r') as _filehandler:
         print perc
         finalRow=['CRanR',project,exeId,caller,callee,totalM,killedMutants,perc]
         tableWriter.writerow(finalRow)       
+
+
+#C - Ran10
+with open(os.path.join(data_path, "killedM-C-Ran10.csv"), 'r') as _filehandler:
+    csv_file_reader = csv.DictReader(_filehandler)
+    for row in csv_file_reader:
+        project= row["project"]
+        exeId = row["executionId"]
+        caller = row["caller"]
+        callee = row["callee"]
+        killedMutants = row["killedM"]
+
+        if exeId == "executionId":
+            continue
+        # find total mutants
+        totalM =find_total_mutants(exeId,project,caller,callee)
+
+        perc=float(killedMutants)/float(totalM)
+        print perc
+        finalRow=['CRan10',project,exeId,caller,callee,totalM,killedMutants,perc]
+        tableWriter.writerow(finalRow)    
 
 # C only
 

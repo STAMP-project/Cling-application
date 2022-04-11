@@ -30,13 +30,21 @@ fieldnames = ['execution_id','project', 'caller_class', 'callee_class','mutator'
 randoopRKilledWriter.writerow(fieldnames)
 
 
+## Same csvs for randoop10
+randoopKilledDir = os.path.join(data_path,"randoopKilled.csv")
+randoopKilledFile = open(randoopKilledDir,"wb")
+randoopKilledWriter = csv.writer(randoopKilledFile)
+fieldnames = ['execution_id','project', 'caller_class', 'callee_class','mutator','method','line','killer']
+randoopKilledWriter.writerow(fieldnames)
+
+
 with open(os.path.join(root_path, "subject_generator", "subjects.csv"), 'r') as _filehandler:
     csv_file_reader = csv.DictReader(_filehandler)
     for row in csv_file_reader:
         tool=row["tool"]
         project=row["project"]
         execution_id=row["execution_id"]
-        if tool.startswith("randoop"):
+        if tool.startswith("randoop") or tool == "randoop":
             caller_class=row["caller_class"]
             callee_class=row["callee_class"]
             if tool == "randoop-callee5":
@@ -68,6 +76,36 @@ with open(os.path.join(root_path, "subject_generator", "subjects.csv"), 'r') as 
                 randoopERow = ["randoopE",execution_id, project, caller_class, callee_class, str(randoopEKilled/totalMutants),int(randoopEKilled),int(totalMutants)]
                 print randoopERow
                 mutationCoverageWriter.writerow(randoopERow)
+            elif tool == "randoop":
+                pitestReportDir=os.path.join(data_path,"pit","randoop10",project+"-"+caller_class+"-"+callee_class+"-"+execution_id)
+
+                totalMutants = 0.0
+                randoopKilled = 0.0
+                if not os.path.isfile(os.path.join(pitestReportDir, "mutations.csv")):
+                    print [execution_id, project, caller_class, callee_class, mutator,method,line,killer]
+                    continue
+                with open(os.path.join(pitestReportDir, "mutations.csv"), 'r') as _reporthandler:
+                    for mutant in csv.reader(_reporthandler):
+                        if len(mutant) < 7:
+                            continue
+                        totalMutants+=1
+                        targetClass = mutant[1]
+                        mutator = mutant[2]
+                        method = mutant[3]
+                        line = mutant[4]
+                        status = mutant[5]
+                        killer = mutant[6]
+
+                        if status == "KILLED":
+                            row = [execution_id, project, caller_class, callee_class, mutator,method,line,killer]
+                            randoopKilled+=1
+                            randoopKilledWriter.writerow(row)  
+                if (totalMutants == 0):
+                    print os.path.join(pitestReportDir, "mutations.csv")
+                    exit()
+                randoopRow = ["randoop",execution_id, project, caller_class, callee_class, str(randoopKilled/totalMutants),int(randoopKilled),int(totalMutants)]
+                print randoopRow
+                mutationCoverageWriter.writerow(randoopRow)
             else:
                 # Run randoopR
 

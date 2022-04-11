@@ -33,10 +33,10 @@ def checkTrace(trace,current_directory_without_execution_id,against):
                             # print "bingo "+modified_line.strip()+" VS. "+trace[index].strip()
                             index+=1
                         else:
-                            print "X in "+against_log+" -->"+line.strip()+" VS. "+trace[index].strip()
+                            # print( "X in "+against_log+" -->"+line.strip()+" VS. "+trace[index].strip())
                             monitor=False
                     else:
-                        print "ERROR!"
+                        print ("ERROR!")
                 else:
                     continue
     # If the execution raches here, we could not find any match, so we return false
@@ -63,7 +63,7 @@ for filename in os.listdir(interesting_stackTraces_path):
         caller=arr[1]
         callee=arr[2]
         execution_id=arr[3]
-        print "project: "+project+", caller: "+caller+", callee: "+callee+", execution_id: "+execution_id
+        print ("project: "+project+", caller: "+caller+", callee: "+callee+", execution_id: "+execution_id)
 
         # ToDo: Loop on stacktraces in interesting files
 
@@ -75,13 +75,15 @@ for filename in os.listdir(interesting_stackTraces_path):
                 if "----------" in line and len(current_stacktrace) > 1:
                     # TODO: end of the stacktrace. Lets check randoop can capture this stacktrace or not
                     current_directory_without_execution_id = os.path.join(stackTraces_path,project+"-"+caller+"-"+callee)
-                    exists_in_randoop_callee=checkTrace(current_stacktrace,current_directory_without_execution_id,"randoop-callee5")
-                    exists_in_randoop_caller=checkTrace(current_stacktrace,current_directory_without_execution_id,"randoop-caller5")
-                    if exists_in_randoop_callee or exists_in_randoop_caller:
-                        print current_stacktrace
-                        print exists_in_randoop_callee
-                        print exists_in_randoop_caller
-                        print "------------"
+                    # exists_in_randoop_callee=checkTrace(current_stacktrace,current_directory_without_execution_id,"randoop-callee5")
+                    # exists_in_randoop_caller=checkTrace(current_stacktrace,current_directory_without_execution_id,"randoop-caller5")
+                    exits_in_randoop_10= checkTrace(current_stacktrace,current_directory_without_execution_id,"randoop")
+                    # if exists_in_randoop_callee or exists_in_randoop_caller or exits_in_randoop_10:
+                    if exits_in_randoop_10:
+                        print (current_stacktrace)
+                        print (exists_in_randoop_callee)
+                        print (exists_in_randoop_caller)
+                        print ("------------")
                 elif line.startswith("test"):
                     current_stacktrace = []
                     # We are begining a new stacktrace

@@ -221,11 +221,15 @@ lineCoverageWriter.writerow(fieldnames)
 fieldnames = ['tool','execution_id','project', 'caller_class', 'callee_class','line_number', 'covered']
 allLinesWriter.writerow(fieldnames)
 
+totalCounter = 0
+foundCounter = 0
 # Next, we check the line coverage for each case
 with open(subjects_file_dir, 'r') as _filehandler:
     csv_file_reader = csv.DictReader(_filehandler)
     for row in csv_file_reader:
+        totalCounter+=1
         tool=row["tool"]
+        tool = "randoop10" if tool == "randoop" else tool
         project=row["project"]
         execution_id=row["execution_id"]
         caller_class=row["caller_class"]
@@ -236,6 +240,12 @@ with open(subjects_file_dir, 'r') as _filehandler:
         pit_report_dir = get_pit_report_dir(pit_path, tool, project, caller_class, callee_class, execution_id)
 
         report=find_html_report(pit_report_dir)
+        if report is not None:
+            foundCounter+=1
+        else:
+            print "Not found "+pit_report_dir
+
+
 
         # Get total lines from target class' html report
         if report is None:
@@ -273,7 +283,7 @@ with open(subjects_file_dir, 'r') as _filehandler:
         # Save each line status
         save_line_statuses(root_path, tool, project, caller_class, callee_class, execution_id,total_lines,allLinesWriter)
 
-
+print (str(foundCounter)+"/"+str(totalCounter))
 # close csv files
 lineCoverageFile.close()
 allLinesFile.close()

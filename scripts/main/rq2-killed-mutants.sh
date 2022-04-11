@@ -22,6 +22,9 @@ python scripts/python/mutation/cling-randoope.py
 # Detect mutants killed by Cling but not by RandoopR
 python scripts/python/mutation/cling-randoopr.py
 
+# # Detect mutants killed by Cling but not by Randoop10
+python scripts/python/mutation/cling-randoop10.py
+
 # Detect mutants killed only by Cling but not with Randoop
 python scripts/python/mutation/cling-randoop.py
 

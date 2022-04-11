@@ -18,21 +18,31 @@ with open(os.path.join(data_path,'cling-randoopE.csv'), 'r') as CE:
             tempCE = ",".join(lineCE.split(',')[0:-1])
             outFile.write(tempCE+"\r\n")
 
-with open(os.path.join(data_path,'cling-randoopE-raw.csv'), 'r') as t1, open(os.path.join(data_path,'cling-randoopR-raw.csv'), 'r') as t2:
+
+
+with open(os.path.join(data_path,'cling-randoop10.csv'), 'r') as CE:
+    with open(os.path.join(data_path,'cling-randoop10-raw.csv'), 'w') as outFile:
+        for lineCE in CE:
+            tempCE = ",".join(lineCE.split(',')[0:-1])
+            outFile.write(tempCE+"\r\n")
+
+
+with open(os.path.join(data_path,'cling-randoopE-raw.csv'), 'r') as t1, open(os.path.join(data_path,'cling-randoopR-raw.csv'), 'r') as t2, open(os.path.join(data_path,'cling-randoop10-raw.csv'), 'r') as t3:
     fileone = frozenset(t1)
+    filethree = frozenset(t3)
 
     with open(os.path.join(data_path,'cling-randoop.csv'), 'w') as outFile:
         counter = 0
         for line in t2:
             counter+=1
             print counter
-            if line in fileone:
+            if line in fileone and line in filethree:
                 outFile.write(line)
 
 
 with open(os.path.join(data_path,'cling-randoop.csv'), 'r') as CER:
     with open(os.path.join(data_path,'cling-randoop-final.csv'), 'w') as outFile:
-        outFile.write("executionId"+",project"+",caller"+",callee"+",mutator"+",method"+",line"+",TRstatus"+",TEstatus"+"\r\n")
+        outFile.write("executionId"+",project"+",caller"+",callee"+",mutator"+",method"+",line"+",TRstatus"+",TEstatus"+",T10status"+"\r\n")
         counter = 0
         for line in CER:
             tempArr = line.split(',')
@@ -95,7 +105,33 @@ with open(os.path.join(data_path,'cling-randoop.csv'), 'r') as CER:
                 Rstatus="NO_COVERAGE"
 
 
+             # open 10
+            randoop10ReportDir = os.path.join(data_path,"pit","randoop10",project+"-"+caller+"-"+callee+"-"+execution_id,"mutations.csv")
+            print randoop10ReportDir
+            tenstatus=""
+            if os.path.isfile(randoop10ReportDir):
+                with open(randoop10ReportDir, 'r') as _reporthandler:
+                    for mutant in csv.reader(_reporthandler):
+                        # print
+                        if len(mutant) < 7:
+                            continue
+                        targetClass = mutant[1]
+                        mutator = mutant[2]
+                        method = mutant[3]
+                        mline = mutant[4]
+                        status = mutant[5]
+                        killer = mutant[6]
+                        if mutator == targetmutator and targetmethod == method and targetline == mline:
+                            tenstatus=status
+            else:
+                tenstatus="NO_COVERAGE"
+
+            if tenstatus == "":
+                print "Empty: "+line
+                tenstatus="NO_COVERAGE"
 
 
-            outFile.write(line.replace('\n', '').replace('\r', '')+","+Rstatus+","+Estatus+"\r\n")
+
+
+            outFile.write(line.replace('\n', '').replace('\r', '')+","+Rstatus+","+Estatus+","+tenstatus+"\r\n")
 

@@ -7,7 +7,10 @@ def find_value(execution_id,project,caller_class,callee_class,index):
     csv_file = csv.reader(open(finishedCasesDir, "r"), delimiter=",")
     #loop through the csv list
     for row in csv_file:
+        if len(row) < 5 or len(row) < index +1:
+            continue
         if row[0] == "cling" and row[1] == execution_id and row[2] == project and row[3] == caller_class and row[4] == callee_class:
+            # print row , index
             return row[index]
 
 
@@ -54,6 +57,8 @@ with open(os.path.join(dir_path, "..","..","..", "subject_generator", "subjects.
             pitestResultDir=os.path.join(dir_path,"..","..","..","data","rq2","pit",tool,project+"-"+callee_class+"-"+execution_id)
         elif tool == "evosuite-caller5" or tool == "randoop-caller5":
             pitestResultDir=os.path.join(dir_path,"..","..","..","data","rq2","pit",tool,project+"-"+caller_class+"-"+callee_class+"-"+execution_id)
+        elif tool == "randoop":
+            pitestResultDir=os.path.join(dir_path,"..","..","..","data","rq2","pit","randoop10",project+"-"+caller_class+"-"+callee_class+"-"+execution_id)
         else:
             print "Warning: "+tool+" is not supported!"
         htmlReport=os.path.join(pitestResultDir,"index.html")
@@ -75,7 +80,7 @@ with open(os.path.join(dir_path, "..","..","..", "subject_generator", "subjects.
                     if counter >= 2:
                         break
             finishedCasesWriter.writerow(finalRow)
-        elif not tool.startswith("randoop"):
+        elif not tool.startswith("randoop") or tool == "randoop":
             finalRow.append(0)
             finalRow.append(190)
             finalRow.append(0)

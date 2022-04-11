@@ -34,6 +34,7 @@ with open(os.path.join(data_path,'evoeKilled.csv'), 'r') as t1, open(os.path.joi
                 EvoEReportDir = os.path.join(data_path,"pit","evosuite-callee5",project+"-"+callee+"-"+execution_id,"mutations.csv")
                 statusInE=""
                 with open(EvoEReportDir, 'r') as _reporthandler:
+                    print "YAY "+ EvoEReportDir
                     for mutant in csv.reader(_reporthandler):
                         if len(mutant) >= 7:
                             targetClass = mutant[1]
