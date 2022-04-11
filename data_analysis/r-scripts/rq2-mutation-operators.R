@@ -4,10 +4,11 @@ require(dplyr)
 library(stringr)
 source('data_analysis/r-scripts/inputdata.r')
 
-
+# EvoSuite caller and callee
 CER <- unique(getCER())
+# Randoop
+RAN_CER <- unique(getC_Ran10())
 
-RAN_CER <- unique(getC_RanE_RanR())
 STATUS <- c("NO_COVERAGE","SURVIVED")
 df <- CER %>% group_by(project) %>%
   summarise(count = n())
@@ -81,36 +82,61 @@ for (p in PROJECTS) {
 }
 
 cat(" \\\\", "\n")
+# 
+# # RanE
+# cat("$T_{RanE}$")
+# for (p in PROJECTS) {
+#   for (s in STATUS) {
+#     tempDF <- RAN_CER %>%
+#       filter(project == p & TEstatus == s)
+#     
+#     tempPerc <- mutantPerc %>%
+#       filter(project == head(tempDF,1)$project) %>%
+#       group_by(project,caller_class,callee_class) %>%
+#       summarise(total = min(totalMutants)) %>%
+#       group_by(project) %>%
+#       summarise(total = sum(total))
+#     
+#     #  filter(caller_class == head(tempDF,1)$caller & callee_class == head(tempDF,1)$callee)
+#     totalMutants <- head(tempPerc,1)$total*20 
+#     cat( "& ",formatC(nrow(tempDF), format = "f", big.mark = ",", drop0trailing = TRUE),"(",
+#          formatC(nrow(tempDF)/totalMutants, digits = 2, format = "f"),")")
+#   }
+# }
+# 
+# cat(" \\\\", "\n")
+# 
+# # RanR
+# cat("$T_{RanR}$")
+# for (p in PROJECTS) {
+#   for (s in STATUS) {
+#     tempDF <- RAN_CER %>%
+#       filter(project == p & TRstatus == s)
+#     
+#     tempPerc <- mutantPerc %>%
+#       filter(project == head(tempDF,1)$project) %>%
+#       group_by(project,caller_class,callee_class) %>%
+#       summarise(total = min(totalMutants)) %>%
+#       group_by(project) %>%
+#       summarise(total = sum(total))
+#     
+#     #  filter(caller_class == head(tempDF,1)$caller & callee_class == head(tempDF,1)$callee)
+#     totalMutants <- head(tempPerc,1)$total*20 
+#     cat( "& ",formatC(nrow(tempDF), format = "f", big.mark = ",", drop0trailing = TRUE),"(",
+#          formatC(nrow(tempDF)/totalMutants, digits = 2, format = "f"),")")
+#   }
+# }
+# 
+# cat(" \\\\", "\n")
 
-# RanE
-cat("$T_{RanE}$")
+
+# Ran10
+cat("$T_{Ran}$")
+
 for (p in PROJECTS) {
   for (s in STATUS) {
     tempDF <- RAN_CER %>%
-      filter(project == p & TEstatus == s)
-    
-    tempPerc <- mutantPerc %>%
-      filter(project == head(tempDF,1)$project) %>%
-      group_by(project,caller_class,callee_class) %>%
-      summarise(total = min(totalMutants)) %>%
-      group_by(project) %>%
-      summarise(total = sum(total))
-    
-    #  filter(caller_class == head(tempDF,1)$caller & callee_class == head(tempDF,1)$callee)
-    totalMutants <- head(tempPerc,1)$total*20 
-    cat( "& ",formatC(nrow(tempDF), format = "f", big.mark = ",", drop0trailing = TRUE),"(",
-         formatC(nrow(tempDF)/totalMutants, digits = 2, format = "f"),")")
-  }
-}
-
-cat(" \\\\", "\n")
-
-# RanR
-cat("$T_{RanR}$")
-for (p in PROJECTS) {
-  for (s in STATUS) {
-    tempDF <- RAN_CER %>%
-      filter(project == p & TRstatus == s)
+      filter(project == p & grepl(s, T10status, fixed=TRUE))
     
     tempPerc <- mutantPerc %>%
       filter(project == head(tempDF,1)$project) %>%
@@ -172,11 +198,13 @@ for(row in seq(from=1, to=nrow(mutators),by=1)){
 }
 cat("\\end{tabular}")
 sink()
+
+
 # Analyze Cling - Randoop mutators
 
 
 interestingCases <- RAN_CER %>%
-  group_by(caller,callee,mutator,method,line,TRstatus,TEstatus) %>%
+  group_by(caller,callee,mutator,method,line,T10status) %>%
   summarise(count = n())
 
 mutators <- interestingCases %>%
@@ -192,7 +220,7 @@ switchMutatorsCount <- sum(switchMutators$count)
 mutators <- mutators %>%
   filter(!str_detect(mutators$mutator,"RemoveSwitchMutator"))
 
-mutators[nrow(mutators) + 1,] = c("RemoveSwitchMutator",switchMutatorsCount)
+mutators[nrow(mutators) + 1,] = list("RemoveSwitchMutator",as.integer(switchMutatorsCount))
 # print the most 20 operators in a tex table
 
 outputFile <- "data_analysis/tables/mutation-operators-table-randoop.tex"

@@ -36,7 +36,7 @@ CERDF <- CERInitialDF %>%
   group_by(executionId,project,caller,callee) %>%
   summarise(killedM=n())
 
-write.csv(CERDF, file = paste(dataDir,"killedM-C-RanE-RanR.csv",sep=""))
+write.csv(CERDF, file = paste(dataDir,"killedM-C-RanE-RanR-Ran10.csv",sep=""))
 
 # Collect mutants killed by Cling but not by RandoopR
 CRInitialDF <- getC_RanR()
@@ -56,6 +56,15 @@ CEDF <- CEInitialDF %>%
 
 write.csv(CEDF, file = paste(dataDir,"killedM-C-RanE.csv",sep=""))
 
+
+# Collect mutants killed by Cling but not by Randoop10
+C10InitialDF <- getC_Ran10()
+
+C10DF <- C10InitialDF %>%
+  group_by(executionId,project,caller,callee) %>%
+  summarise(killedM=n())
+
+write.csv(C10DF, file = paste(dataDir,"killedM-C-Ran10.csv",sep=""))
 
 # Collect mutants killed by Cling
 

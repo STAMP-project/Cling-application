@@ -9,13 +9,16 @@ source('data_analysis/r-scripts/inputdata.r')
 source('data_analysis/r-scripts/applyfriedmantest.R')
 
 
-results <- getResultsOfRQ1()
+results <- getResultsOfRQ1() %>%
+  filter(tool != "randoop-caller5")
+
 
 results<- results %>%
   filter(total_cb > 0) %>%
   mutate(CBC = if_else(total_cb > 0, covered_cb / total_cb, NaN))
 
 results$coveragePercentage <- results$covered_cb/results$total_cb
+
 
 # General comparision
 
@@ -65,7 +68,7 @@ show(ranking)
 
 CBC_comparison <- avgCBCPerCase %>%
   inner_join(avgCBCPerCase, by=c('project', 'caller_class', 'callee_class'), suffix = c('.alg1', '.alg2')) %>%
-  filter(testsuite.alg1 == "Cling" & testsuite.alg2 == "RanR" & avgCBC.alg1 < avgCBC.alg2)
+  filter(testsuite.alg1 == "Cling" & testsuite.alg2 %in% c("RanR","Ran") & avgCBC.alg1 < avgCBC.alg2)
 
 avgCBCPP <- results %>%
   group_by(tool, project) %>%

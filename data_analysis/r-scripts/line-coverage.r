@@ -12,6 +12,11 @@ lcov$tool[lcov$tool %in% "evosuite-caller5"] <- "EvoR"
 lcov$tool[lcov$tool %in% "randoop-callee5"] <- "RanE"
 lcov$tool[lcov$tool %in% "randoop-caller5"] <- "RanR"
 lcov$tool[lcov$tool %in% "cling"] <- "Cling"
+lcov$tool[lcov$tool %in% "randoop10"] <- "Ran"
+
+lcov <- lcov %>%
+  filter(!tool %in% c("RanE","RanR") )
+
 
 lcov$line_coverage_perc <- lcov$covered_lines/lcov$total_lines
 
@@ -24,7 +29,7 @@ show(testdf)
 # Plot line coverage
 
 lcov$project_f = factor(lcov$project, levels=c('closure','mockito','time','lang','math'))
-p <- 	ggplot(lcov, aes(x=factor(tool,levels = c("EvoE","EvoR", "RanE","RanR","Cling")), y=line_coverage_perc, fill=factor(tool))) + 
+p <- 	ggplot(lcov, aes(x=factor(tool,levels = c("EvoE","EvoR", "RanE","RanR","Ran","Cling")), y=line_coverage_perc, fill=factor(tool))) + 
   geom_boxplot() +
   xlab("") + 
   ylab("line coverage") + 
@@ -52,9 +57,12 @@ RanE_lines <- df2 %>%
 RanR_lines <- df2 %>%
   filter( tool == "randoop-caller5")
 
+Ran10_lines <- df2 %>%
+  filter( tool == "randoop10")
+
 lines_stats_C_Ran <- C_lines %>%
-  left_join(RanE_lines, by=c('project', 'caller_class', 'callee_class','line_number'), copy=FALSE, suffix = c('.C', '.RanE')) %>%
-  filter(tool.C == "cling" & tool.RanE == "randoop-callee5") 
+  left_join(Ran10_lines, by=c('project', 'caller_class', 'callee_class','line_number'), copy=FALSE, suffix = c('.C', '.RanE')) %>%
+  filter(tool.C == "cling" & tool.RanE == "randoop10") 
 
 show(lines_stats_C_Ran)
 
@@ -71,6 +79,10 @@ combined_lcov$tool[combined_lcov$tool %in% "evosuite-caller5"] <- "EvoR"
 combined_lcov$tool[combined_lcov$tool %in% "randoop-callee5"] <- "RanE"
 combined_lcov$tool[combined_lcov$tool %in% "randoop-caller5"] <- "RanR"
 combined_lcov$tool[combined_lcov$tool %in% "cling"] <- "Cling"
+combined_lcov$tool[combined_lcov$tool %in% "randoop10"] <- "Ran"
+
+combined_lcov <- combined_lcov %>%
+  filter(!tool %in% c("RanE","RanR") )
 
 # Adding EvoE+R and RanE+R
 
@@ -78,15 +90,15 @@ combined_lcov <- combined_lcov %>%
   union(
     combined_lcov%>%
       filter(tool %in% c("EvoE", "EvoR"))%>%
-      mutate(tool = "EvoE+R") %>%
+      mutate(tool = "Evo_all") %>%
       group_by(tool, execution_id, project, caller_class, callee_class, line_number, total_lines) %>%
       mutate(covered = TRUE %in% covered) %>% #Check if the line is covered in one of the executions
       ungroup() %>%
       distinct(tool, execution_id, project, caller_class, callee_class, line_number, covered, total_lines)
   ) %>% union(
     combined_lcov%>%
-      filter(tool %in% c("RanE", "RanR"))%>%
-      mutate(tool = "RanE+R") %>%
+      filter(tool %in% c("RanE", "RanR", "Ran"))%>%
+      mutate(tool = "Ran_all") %>%
       group_by(tool, execution_id, project, caller_class, callee_class, line_number, total_lines) %>%
       mutate(covered = TRUE %in% covered) %>% #Check if the line is covered in one of the executions
       ungroup() %>%
@@ -106,9 +118,13 @@ diff_lcov <- combined_lcov %>%
   right_join(combined_lcov %>% #Add missing values 
                distinct(tool.x, execution_id, project, caller_class, callee_class, total_lines)) %>%
   mutate(lcov = if_else(is.na(lcov), 0.0, lcov))
-diff_lcov$tool = factor(diff_lcov$tool.x, levels = c( "EvoE", "EvoR", "EvoE+R", "RanE", "RanR", "RanE+R"))
+diff_lcov$tool = factor(diff_lcov$tool.x, levels = c( "EvoE", "EvoR", "Evo_all", "RanE", "RanR", "Ran", "Ran_all"))
 diff_lcov$project_f = factor(diff_lcov$project, levels=c('closure','mockito','time','lang','math'))
 
+
+
+diff_lcov <- diff_lcov %>%
+  filter(tool != "Ran_all")
 p <- diff_lcov %>%
   ggplot(aes(x=tool, y=lcov, fill=tool)) +
   geom_boxplot() +

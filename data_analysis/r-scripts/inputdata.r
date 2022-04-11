@@ -15,8 +15,9 @@ getResultsOfRQ1 <- function(){
   df$testsuite[df$tool %in% "evosuite-caller5"] <- "EvoR"
   df$testsuite[df$tool %in% "randoop-callee5"] <- "RanE"
   df$testsuite[df$tool %in% "randoop-caller5"] <- "RanR"
+  df$testsuite[df$tool %in% "randoop"] <- "Ran"
   df$testsuite[df$tool %in% "cling"] <- "Cling"
-  df$testsuite_f <- factor(df$testsuite,levels = c("EvoE","EvoR", "RanE","RanR","Cling"))
+  df$testsuite_f <- factor(df$testsuite,levels = c("EvoE","EvoR", "RanE","RanR", "Ran","Cling"))
   df$project_f = factor(df$project, levels=c('closure','mockito','time','lang','math','all'))
   return(df)
 }
@@ -54,10 +55,18 @@ getC_RanR <- function(){
   return(df)
 }
 
+
+getC_Ran10 <- function(){
+  df <- read.csv("data/rq2/cling-randoop10.csv", stringsAsFactors = FALSE)
+  return(df)
+}
+
 getC_RanE_RanR <- function(){
   df <- read.csv("data/rq2/cling-randoop-final.csv", stringsAsFactors = FALSE)
   return(df)
 }
+
+
 
 getOnlyC <- function(){
   df <- read.csv("data/rq2/cling-only-final.csv", stringsAsFactors = FALSE)
