@@ -53,7 +53,7 @@ diffdf$tool[diffdf$tool %in% "CR"] <- "EvoR"
 diffdf$tool[diffdf$tool %in% "CER"] <- "EvoE+R"
 diffdf$tool[diffdf$tool %in% "CRanE"] <- "RanE"
 diffdf$tool[diffdf$tool %in% "CRanR"] <- "RanR"
-diffdf$tool[diffdf$tool %in% "CRan10"] <- "Ran10"
+diffdf$tool[diffdf$tool %in% "CRan10"] <- "Ran"
 diffdf$tool[diffdf$tool %in% "CRanERanRRan10"] <- "Ran_all"
 
 diffdf$project_f = factor(diffdf$project, levels=c('closure','mockito','time','lang','math'))
@@ -63,7 +63,7 @@ diffdf$project_f = factor(diffdf$project, levels=c('closure','mockito','time','l
 diffdf <- diffdf %>%
   filter(!tool %in% c("RanE","RanR", "Ran_all") )
 
-p <- 	ggplot(diffdf, aes(x=factor(tool,levels = c( "EvoE", "EvoR", "EvoE+R", "RanE", "RanR", "Ran_all", "Ran10")), y=perc, fill=factor(tool))) + 
+p <- 	ggplot(diffdf, aes(x=factor(tool,levels = c( "EvoE", "EvoR", "EvoE+R", "RanE", "RanR", "Ran_all", "Ran")), y=perc, fill=factor(tool))) + 
   geom_boxplot() +
   xlab("") + 
   ylab(paste0(greek$Delta,"(score(x), score(Cling + x))")) + 
