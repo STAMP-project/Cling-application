@@ -1,3 +1,16 @@
+  # Exception Type
+  | Type                                           | Count |
+|------------------------------------------------|-------|
+| java.lang.NullPointerException                 | 36    |
+| java.lang.IllegalArgumentException             | 4     |
+| org.joda.time.IllegalFieldValueException       | 3     |
+| com.google.javascript.rhino.head.EcmaError     | 2     |
+| java.lang.ClassCastException                   | 2     |
+| java.lang.ArrayIndexOutOfBoundsException       | 1     |
+| java.lang.StringIndexOutOfBoundsException      | 1     |
+| org.mockito.cglib.core.CodeGenerationException | 1     |
+
+
 # Closure
 
 ## closure-16-com.google.javascript.rhino.head.NativeArray-com.google.javascript.rhino.head.ScriptRuntime-18

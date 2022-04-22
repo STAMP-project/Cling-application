@@ -45,6 +45,16 @@ Those test cases are not relevant anymore as the source code they exercise has b
   - [Closure - ST49](#st49)
   - [Closure - ST50](#st50)
 
+
+  # Exception Type
+| Type                                           | Count |
+|------------------------------------------------|-------|
+| java.lang.NullPointerException                 | 20    |
+| com.google.javascript.rhino.head.EcmaError     | 2     |
+| java.lang.ArrayIndexOutOfBoundsException       | 1     |
+| java.lang.ClassCastException                   | 1     |
+| org.mockito.cglib.core.CodeGenerationException | 1     |
+
 # Mockito
 
 ## ST16
